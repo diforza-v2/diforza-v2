@@ -672,18 +672,24 @@
       "id": "guante-moteado",
       "linea": "epp",
       "subcategoria": "proteccion-manos",
-      "nombre": "Guante moteado Gamisol",
+      "nombre": "Guante moteado de algodón Gamisol 1100FER",
       "marca": "Gamisol",
       "codigo": "GUAMOTGA",
-      "descripcion": "Tejido de algodón con moteado antideslizante.",
+      "descripcion": "Tejido de algodón sin costuras con motas de PVC azules en una cara.",
       "atributos": [
         {
-          "tipo": "texto",
-          "valor": "Uso general"
+          "tipo": "colores",
+          "valores": [
+            "blanco"
+          ]
+        },
+        {
+          "tipo": "talles",
+          "valor": "8"
         }
       ],
       "foto": {
-        "src": "/img/productos/guante-moteado.webp",
+        "src": "/img/catalogo/guante-moteado-blanco-1100fer-gamisol--blanco-con-motas-azules.webp",
         "estado": "producto"
       },
       "empresas": 41,
@@ -740,18 +746,24 @@
       "id": "guante-vaqueta",
       "linea": "epp",
       "subcategoria": "proteccion-manos",
-      "nombre": "Guante de vaqueta",
+      "nombre": "Guante de vaqueta Lincoln medio paseo De Pascale",
       "marca": null,
       "codigo": "GUAVQT10C",
-      "descripcion": "Cuero vaqueta medio paseo, puño corto. Certificado.",
+      "descripcion": "Cuero vaqueta amarillo, puño elastizado. El clásico de mantenimiento.",
       "atributos": [
         {
+          "tipo": "colores",
+          "valores": [
+            "amarillo"
+          ]
+        },
+        {
           "tipo": "talles",
-          "valor": "10 y 11"
+          "valor": "8 al 11"
         }
       ],
       "foto": {
-        "src": "/img/productos/guante-vaqueta.webp",
+        "src": "/img/catalogo/guante-vaqueta-certificado--amarillo.webp",
         "estado": "producto"
       },
       "empresas": 29,
@@ -783,18 +795,24 @@
       "id": "guante-nitrilo",
       "linea": "epp",
       "subcategoria": "proteccion-manos",
-      "nombre": "Guante de acrilonitrilo WorkSafe 15 mil",
+      "nombre": "Guante de acrilo nitrilo verde 15 mil WorkSafe",
       "marca": "WorkSafe",
       "codigo": "AN15MIL",
-      "descripcion": "Guante pesado de acrilonitrilo, 15 mil de espesor, largo ±33 cm.",
+      "descripcion": "Nitrilo verde 0,38 mm, largo 33 cm. Para químicos, aceites y solventes.",
       "atributos": [
+        {
+          "tipo": "colores",
+          "valores": [
+            "verde"
+          ]
+        },
         {
           "tipo": "talles",
           "valor": "7 al 11"
         }
       ],
       "foto": {
-        "src": "/img/productos/guante-nitrilo.webp",
+        "src": "/img/catalogo/guante-acrilo-nitrilo-ws-15mil--verde.webp",
         "estado": "producto"
       },
       "empresas": 25,
@@ -804,18 +822,24 @@
       "id": "guante-anticorte",
       "linea": "epp",
       "subcategoria": "proteccion-manos",
-      "nombre": "Guante anticorte WorkSafe H2101",
+      "nombre": "Guante anticorte HPPE WorkSafe H2101",
       "marca": "WorkSafe",
       "codigo": "H2101",
-      "descripcion": "Tejido resistente al corte, galga 10, con baño de nitrilo.",
+      "descripcion": "Fibra HPPE anticorte nivel C con palma de nitrilo negro.",
       "atributos": [
         {
+          "tipo": "colores",
+          "valores": [
+            "gris"
+          ]
+        },
+        {
           "tipo": "talles",
-          "valor": "7 al 11"
+          "valor": "8 al 11"
         }
       ],
       "foto": {
-        "src": "/img/productos/guante-anticorte.webp",
+        "src": "/img/catalogo/guante-anticorte-ws-h2101--gris-y-negro.webp",
         "estado": "producto"
       },
       "empresas": 19,

@@ -1200,24 +1200,89 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (señalización): unificado en el modelo equivalente del fabricante."
   },
   {
    "id": "bandolera-con-reflectivo-naranja",
-   "nombre": "Bandolera con Reflectivo Naranja",
-   "marca": "Diforza",
+   "nombre": "Bandolera reflectiva De Pascale",
+   "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
-    "BANREFLNJA"
+    "BANREFLNJA",
+    "BANREFLAM"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "naranja",
+    "amarillo"
+   ],
+   "talles": "Único",
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 200,
     "empresas": 1
-   }
+   },
+   "nombreWeb": "Bandolera reflectiva De Pascale",
+   "descripcion": "Bandolera flúo con cinta reflectiva. Naranja o amarilla, talle único.",
+   "descripcionLarga": "Bandolera de alta visibilidad en tela flúo con cinta reflectiva, la alternativa más liviana al chaleco para ser visto de día y de noche. Se coloca en segundos sobre cualquier prenda y se ajusta a todos los cuerpos (talle único). En naranja o amarillo flúo. Línea NUBUS de De Pascale.",
+   "specs": {
+    "material": "Tela flúo + cinta reflectiva",
+    "talle": "Único",
+    "código fabricante": "NUB8406 / NUB8407"
+   },
+   "beneficios": [
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Tela flúo + cinta reflectiva."
+    },
+    {
+     "titulo": "Liviana",
+     "texto": "Más fresca y cómoda que un chaleco."
+    },
+    {
+     "titulo": "Talle único",
+     "texto": "Se ajusta a todos."
+    },
+    {
+     "titulo": "Dos colores",
+     "texto": "Naranja o amarillo flúo."
+    },
+    {
+     "titulo": "Sobre cualquier prenda",
+     "texto": "Ideal para personal de tránsito y visitas."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Vía pública y tránsito",
+    "Playas de carga",
+    "Obras",
+    "Eventos",
+    "Visitas a planta"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja flúo",
+     "foto": "/img/catalogo/bandolera-con-reflectivo-naranja--naranja-fluo.webp",
+     "fichaTecnica": "/assets/docs/fichas/bandolera-con-reflectivo-naranja--naranja-fluo.pdf",
+     "fotoGenerada": false
+    },
+    {
+     "color": "amarillo",
+     "colorFabricante": "Amarillo flúo",
+     "foto": "/img/catalogo/bandolera-con-reflectivo-naranja--amarillo-fluo.webp",
+     "fichaTecnica": "/assets/docs/fichas/bandolera-con-reflectivo-naranja--amarillo-fluo.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/bandolera-con-reflectivo-naranja--naranja-fluo.webp",
+   "fichaTecnica": "/assets/docs/fichas/bandolera-con-reflectivo-naranja--naranja-fluo.pdf",
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Códigos ERP ['BANREFLAM', 'BANREFLNJA']."
   },
   {
    "id": "bandolera-pvc-fluo-con-reflectivo",
@@ -1230,7 +1295,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (señalización): unificado en el modelo equivalente del fabricante."
   },
   {
    "id": "barbijo-1730-sin-valvula",
@@ -2921,7 +2987,8 @@
     "naranja"
    ],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (señalización): unificado en el modelo equivalente del fabricante."
   },
   {
    "id": "cadena-de-senalizacion-vial",
@@ -2934,21 +3001,93 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (señalización): unificado en el modelo equivalente del fabricante."
   },
   {
    "id": "cadena-plastica-rojo-blanco-x-25-mts",
-   "nombre": "Cadena Plastica Rojo/Blanco X 25 Mts.",
-   "marca": "Diforza",
+   "nombre": "Cadena plástica de señalización Conoflex",
+   "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
-    "CADENAMIX"
+    "CADENAMIX",
+    "CADE25",
+    "CADSEÑVI"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "rojo",
+    "amarillo",
+    "naranja"
+   ],
+   "talles": "—",
    "visible": true,
-   "foto": "/img/catalogo/cadena-plastica-rojo-blanco-x-25-mts.webp"
+   "foto": "/img/catalogo/cadena-plastica-rojo-blanco-x-25-mts--roja-y-blanca.webp",
+   "nombreWeb": "Cadena plástica de señalización Conoflex",
+   "descripcion": "Cadena de polietileno con filtro UV. Roja/blanca, amarilla/negra o naranja.",
+   "descripcionLarga": "Cadena plástica de señalización fabricada en polietileno con filtro UV, que no se decolora ni se oxida a la intemperie. Eslabones de 4,9 × 2,9 cm, livianos y resistentes, para delimitar obras, sectores de planta, estacionamientos y filas, combinada con conos o postes. Se vende por metro, en roja y blanca, amarilla y negra o naranja. Fabricada por Conoflex; somos distribuidores.",
+   "specs": {
+    "material": "Polietileno con filtro UV",
+    "eslabón": "4,9 × 2,9 cm",
+    "venta": "Por metro"
+   },
+   "beneficios": [
+    {
+     "titulo": "Filtro UV",
+     "texto": "No se decolora ni se cuartea al sol."
+    },
+    {
+     "titulo": "No se oxida",
+     "texto": "Polietileno: ideal para exterior y ambientes húmedos."
+    },
+    {
+     "titulo": "Liviana",
+     "texto": "Fácil de colocar y retirar."
+    },
+    {
+     "titulo": "Tres combinaciones",
+     "texto": "Roja/blanca, amarilla/negra y naranja."
+    },
+    {
+     "titulo": "Por metro",
+     "texto": "Cortamos el largo que necesites."
+    },
+    {
+     "titulo": "Fabricante Conoflex",
+     "texto": "Ficha técnica oficial descargable."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Plantas industriales",
+    "Estacionamientos",
+    "Ordenadores de fila",
+    "Eventos"
+   ],
+   "variantes": [
+    {
+     "color": "rojo",
+     "colorFabricante": "Roja y blanca",
+     "foto": "/img/catalogo/cadena-plastica-rojo-blanco-x-25-mts--roja-y-blanca.webp",
+     "fichaTecnica": "/assets/docs/fichas/cadena-plastica-rojo-blanco-x-25-mts.pdf",
+     "fotoGenerada": false
+    },
+    {
+     "color": "amarillo",
+     "colorFabricante": "Amarilla y negra",
+     "foto": "/img/catalogo/cadena-plastica-rojo-blanco-x-25-mts--amarilla-y-negra.webp",
+     "fotoGenerada": false
+    },
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/cadena-plastica-rojo-blanco-x-25-mts--naranja.webp",
+     "fotoGenerada": false
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/cadena-plastica-rojo-blanco-x-25-mts.pdf",
+   "ventasEneJun2026": null,
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['CADE25', 'CADENAMIX', 'CADSEÑVI']."
   },
   {
    "id": "camisa-clasica-diforza",
@@ -4654,16 +4793,73 @@
   },
   {
    "id": "cinta-de-precaucion-amarilla-y-negra-x-200mts",
-   "nombre": "Cinta de Precaución Amarilla y Negra x 200Mts",
-   "marca": "Diforza",
+   "nombre": "Cinta de precaución amarilla y negra 200 m De Pascale",
+   "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
     "CINPRECA"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": true
+   "colores": [
+    "amarillo"
+   ],
+   "talles": "—",
+   "visible": true,
+   "nombreWeb": "Cinta de precaución amarilla y negra 200 m De Pascale",
+   "descripcion": "Cinta de señalización \"PRECAUCIÓN\", rollo de 200 m.",
+   "descripcionLarga": "Cinta de señalización amarilla y negra con la leyenda \"PRECAUCIÓN\", liviana (30 micrones), en rollo de 200 m. Para delimitar en forma rápida zonas de trabajo, derrames, sectores en mantenimiento o áreas restringidas. Línea UCU de De Pascale.",
+   "specs": {
+    "material": "Polietileno 30 micrones",
+    "largo": "200 m",
+    "leyenda": "PRECAUCIÓN",
+    "código fabricante": "UCU0205SI"
+   },
+   "beneficios": [
+    {
+     "titulo": "Rollo de 200 m",
+     "texto": "Rinde para perímetros grandes."
+    },
+    {
+     "titulo": "Leyenda \"PRECAUCIÓN\"",
+     "texto": "Mensaje claro y visible."
+    },
+    {
+     "titulo": "Amarilla y negra",
+     "texto": "Alto contraste."
+    },
+    {
+     "titulo": "Liviana",
+     "texto": "Fácil de desplegar y atar."
+    },
+    {
+     "titulo": "Económica",
+     "texto": "Para uso temporal."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Mantenimiento en planta",
+    "Obras",
+    "Derrames y limpieza",
+    "Eventos",
+    "Vía pública"
+   ],
+   "variantes": [
+    {
+     "color": "amarillo",
+     "colorFabricante": "Amarilla y negra",
+     "foto": "/img/catalogo/cinta-de-precaucion-amarilla-y-negra-x-200mts--amarilla-y-negra.webp",
+     "fichaTecnica": "/assets/docs/fichas/cinta-de-precaucion-amarilla-y-negra-x-200mts.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/cinta-de-precaucion-amarilla-y-negra-x-200mts--amarilla-y-negra.webp",
+   "fichaTecnica": "/assets/docs/fichas/cinta-de-precaucion-amarilla-y-negra-x-200mts.pdf",
+   "ventasEneJun2026": null,
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Códigos ERP ['CINPRECA']."
   },
   {
    "id": "cinta-peligro-x-100-mts",
@@ -4698,16 +4894,92 @@
   },
   {
    "id": "cinta-reflectiva-roja",
-   "nombre": "Cinta Reflectiva Roja",
-   "marca": "Diforza",
+   "nombre": "Cinta reflectiva vehicular De Pascale",
+   "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
-    "CINRERJ"
+    "CINRERJ",
+    "CINRBL",
+    "CINRECEBBYR"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": true
+   "colores": [
+    "rojo",
+    "blanco"
+   ],
+   "talles": "—",
+   "visible": true,
+   "nombreWeb": "Cinta reflectiva vehicular De Pascale",
+   "descripcion": "Rollo de 45,7 m. Roja, blanca o cebrada roja/blanca.",
+   "descripcionLarga": "Cinta reflectiva autoadhesiva para vehículos, maquinaria, contenedores y estructuras: hace visibles los bordes y laterales de noche con la luz de los faros. Rollos de 45,7 m, en roja y blanca de 5 cm y cebrada roja/blanca de 7,5 cm. Línea DPC de De Pascale.",
+   "specs": {
+    "tipo": "Cinta reflectiva vehicular autoadhesiva",
+    "largo": "45,7 m",
+    "ancho": "5 cm (roja, blanca) · 7,5 cm (cebrada)"
+   },
+   "beneficios": [
+    {
+     "titulo": "Autoadhesiva",
+     "texto": "Se aplica directo sobre chapa o plástico."
+    },
+    {
+     "titulo": "Alta reflectividad",
+     "texto": "Visible de noche con la luz de los faros."
+    },
+    {
+     "titulo": "Rollo de 45,7 m",
+     "texto": "Rinde para flotas completas."
+    },
+    {
+     "titulo": "Tres opciones",
+     "texto": "Roja, blanca o cebrada."
+    },
+    {
+     "titulo": "Para exterior",
+     "texto": "Resiste la intemperie."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Camiones y utilitarios",
+    "Autoelevadores y maquinaria",
+    "Contenedores",
+    "Portones y columnas",
+    "Acoplados"
+   ],
+   "variantes": [
+    {
+     "color": "rojo",
+     "colorFabricante": "Roja 5 cm",
+     "foto": "/img/catalogo/cinta-reflectiva-roja--roja-5-cm.webp",
+     "fichaTecnica": "/assets/docs/fichas/cinta-reflectiva-roja--roja-5-cm.pdf",
+     "fotoGenerada": false,
+     "etiqueta": "Roja 5 cm"
+    },
+    {
+     "color": "blanco",
+     "colorFabricante": "Blanca 5 cm",
+     "foto": "/img/catalogo/cinta-reflectiva-roja--blanca-5-cm.webp",
+     "fichaTecnica": "/assets/docs/fichas/cinta-reflectiva-roja--blanca-5-cm.pdf",
+     "fotoGenerada": false,
+     "etiqueta": "Blanca 5 cm"
+    },
+    {
+     "color": "rojo",
+     "colorFabricante": "Cebrada roja y blanca 7,5 cm",
+     "foto": "/img/catalogo/cinta-reflectiva-roja--cebrada-roja-y-blanca-7-5-cm.webp",
+     "fichaTecnica": "/assets/docs/fichas/cinta-reflectiva-roja--cebrada-roja-y-blanca-7-5-cm.pdf",
+     "fotoGenerada": false,
+     "etiqueta": "Cebrada roja y blanca 7,5 cm"
+    }
+   ],
+   "foto": "/img/catalogo/cinta-reflectiva-roja--roja-5-cm.webp",
+   "fichaTecnica": "/assets/docs/fichas/cinta-reflectiva-roja--roja-5-cm.pdf",
+   "ventasEneJun2026": null,
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Códigos ERP ['CINRBL', 'CINRECEBBYR', 'CINRERJ']."
   },
   {
    "id": "cinta-reflectiva-blanca",
@@ -4720,7 +4992,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (señalización): unificado en el modelo equivalente del fabricante."
   },
   {
    "id": "cinta-reflectiva-cebrada-blanco-y-roja",
@@ -4733,7 +5006,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (señalización): unificado en el modelo equivalente del fabricante."
   },
   {
    "id": "cinturon-linero-hercules-con-porta-herramientas",
@@ -5163,29 +5437,147 @@
   },
   {
    "id": "cono-autopista-2pie-120-cm-2401-2p",
-   "nombre": "Cono Autopista 2Pie 120 Cm 2401-2P",
+   "nombre": "Cono Autopista 120 cm Conoflex",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
     "CONAUTOPIST"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": true
+   "colores": [
+    "naranja"
+   ],
+   "visible": true,
+   "nombreWeb": "Cono Autopista 120 cm Conoflex",
+   "descripcion": "PVC flexible, 120 cm, reflectivo 1 x 15 cm.+ 1 x 10 cm.",
+   "descripcionLarga": "Cono de señalización vial de 120 cm de altura, fabricado en material polietileno semirrígido, con filtro UV para protección solar. Conformado en “2 piezas” llamadas: Cono y Base de Contrapeso. El diámetro mayor del cono es de 30 cm y 11 cm en su diámetro menor. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "2400-2R",
+    "material": "PVC flexible",
+    "altura": "120 cm",
+    "peso": "10 kg",
+    "base": "50 x 50 cm. Base Octogonal",
+    "reflectivo": "1 x 15 cm.+ 1 x 10 cm"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "PVC flexible: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Bandas reflectivas 1 x 15 cm.+ 1 x 10 cm."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 120 cm · base 50 x 50 cm. Base Octogonal."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 10 kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Rutas y autopistas",
+    "Playas de estacionamiento",
+    "Depósitos y plantas industriales",
+    "Eventos",
+    "Desvíos de tránsito"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/cono-autopista-2pie-120-cm-2401-2p--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-autopista-2pie-120-cm-2401-2p.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/cono-autopista-2pie-120-cm-2401-2p--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/cono-autopista-2pie-120-cm-2401-2p.pdf",
+   "ventasEneJun2026": null,
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['CONAUTOPIST']."
   },
   {
    "id": "cono-ciudad-semiflexible-con-base-50-cm-2051-1r",
-   "nombre": "Cono Ciudad Semiflexible con Base 50 Cm 2051-1R",
+   "nombre": "Cono Ciudad semiflexible con base 50 cm Conoflex",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
     "CONCIUSEMFLEX"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": true
+   "colores": [
+    "naranja"
+   ],
+   "visible": true,
+   "nombreWeb": "Cono Ciudad semiflexible con base 50 cm Conoflex",
+   "descripcion": "Polietileno con aditivo UV, 50 cm, reflectivo 1 x 10 cm.",
+   "descripcionLarga": "Cono de señalización vial de 50 cm de altura, fabricado en material polietileno semirrígido, con filtro UV para protección solar. Conformado en “2 piezas”, llamadas: Cono y Base de Contrapeso. Presenta 1 banda reflectiva de 10 cm de ancho, con características HIP (HIGH INTENSITY PRISMATIC) según normas IRAM ASTM D4956 Tipo-3. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "2051-1R",
+    "material": "Polietileno con aditivo UV",
+    "altura": "50 cm",
+    "peso": "2 kg",
+    "base": "35 x 35 cm",
+    "reflectivo": "1 x 10 cm"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "Polietileno con aditivo UV: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Bandas reflectivas 1 x 10 cm."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 50 cm · base 35 x 35 cm."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 2 kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Rutas y autopistas",
+    "Playas de estacionamiento",
+    "Depósitos y plantas industriales",
+    "Eventos",
+    "Desvíos de tránsito"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/cono-ciudad-semiflexible-con-base-50-cm-2051-1r--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-ciudad-semiflexible-con-base-50-cm-2051-1r.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/cono-ciudad-semiflexible-con-base-50-cm-2051-1r--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/cono-ciudad-semiflexible-con-base-50-cm-2051-1r.pdf",
+   "ventasEneJun2026": null,
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['CONCIUSEMFLEX']."
   },
   {
    "id": "cono-con-base-de-goma-1m-ucu0003pv",
@@ -5198,12 +5590,13 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 21,
     "empresas": 2
    },
-   "foto": "/img/catalogo/cono-con-base-de-goma-1m-ucu0003pv.webp"
+   "foto": "/img/catalogo/cono-con-base-de-goma-1m-ucu0003pv.webp",
+   "nota": "Oculto 10 oct (conos): unificado en el modelo equivalente o sin match con fabricante."
   },
   {
    "id": "cono-flexible-50-cm-con-reflectivos",
@@ -5216,55 +5609,247 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (conos): unificado en el modelo equivalente o sin match con fabricante."
   },
   {
    "id": "cono-flexible-75-cm-con-reflectivos-ucu0002pv",
-   "nombre": "Cono Flexible 75 cm Con Reflectivos UCU0002PV",
-   "marca": "Diforza",
+   "nombre": "Cono de PE rígido con base de goma De Pascale",
+   "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
-    "CON75REF"
+    "CON75REF",
+    "CON1M",
+    "CON50REF"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "naranja"
+   ],
    "visible": true,
    "ventasEneJun2026": {
-    "unidades": 288,
-    "empresas": 8
+    "unidades": 309,
+    "empresas": 9
    },
-   "foto": "/img/catalogo/cono-flexible-75-cm-con-reflectivos-ucu0002pv.webp"
+   "foto": "/img/catalogo/cono-flexible-75-cm-con-reflectivos-ucu0002pv--50-cm.webp",
+   "nombreWeb": "Cono de PE rígido con base de goma De Pascale",
+   "descripcion": "Cono rígido de PE con base de goma. 50, 75 y 100 cm.",
+   "descripcionLarga": "El cono económico más vendido de nuestro catálogo: cuerpo de polietileno rígido naranja con bandas reflectivas de 10 cm y base de goma pesada que lo mantiene firme. Se ofrece en tres alturas: 50 cm (1 banda), 75 cm y 100 cm (2 bandas). Ideal para demarcar obras, desvíos, playas de estacionamiento y sectores de planta. Línea UCU de De Pascale.",
+   "specs": {
+    "material": "Polietileno rígido + base de goma",
+    "reflectivo": "Bandas de 10 cm",
+    "alturas": "50 cm (1,5 kg) · 75 cm (2,5 kg) · 100 cm (5 kg)",
+    "línea": "UCU (De Pascale)"
+   },
+   "beneficios": [
+    {
+     "titulo": "Base de goma",
+     "texto": "Pesada y estable: no se vuela con el viento."
+    },
+    {
+     "titulo": "Bandas reflectivas de 10 cm",
+     "texto": "Visibles de día y de noche."
+    },
+    {
+     "titulo": "Tres alturas",
+     "texto": "50, 75 y 100 cm según la necesidad."
+    },
+    {
+     "titulo": "Polietileno rígido",
+     "texto": "Resistente y económico."
+    },
+    {
+     "titulo": "El más vendido",
+     "texto": "Lo eligen empresas de obra, logística y servicios."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original con ficha técnica."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Rutas y autopistas",
+    "Playas de estacionamiento",
+    "Depósitos y plantas industriales",
+    "Eventos",
+    "Desvíos de tránsito"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "50 cm",
+     "foto": "/img/catalogo/cono-flexible-75-cm-con-reflectivos-ucu0002pv--50-cm.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-flexible-75-cm-con-reflectivos-ucu0002pv--50-cm.pdf",
+     "fotoGenerada": false,
+     "etiqueta": "50 cm"
+    },
+    {
+     "color": "naranja",
+     "colorFabricante": "75 cm",
+     "foto": "/img/catalogo/cono-flexible-75-cm-con-reflectivos-ucu0002pv--75-cm.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-flexible-75-cm-con-reflectivos-ucu0002pv--75-cm.pdf",
+     "fotoGenerada": false,
+     "etiqueta": "75 cm"
+    },
+    {
+     "color": "naranja",
+     "colorFabricante": "100 cm",
+     "foto": "/img/catalogo/cono-flexible-75-cm-con-reflectivos-ucu0002pv--100-cm.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-flexible-75-cm-con-reflectivos-ucu0002pv--100-cm.pdf",
+     "fotoGenerada": false,
+     "etiqueta": "100 cm"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/cono-flexible-75-cm-con-reflectivos-ucu0002pv--50-cm.pdf",
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Códigos ERP ['CON1M', 'CON50REF', 'CON75REF']. La foto vieja de GBP para UCU0002PV era de un cono Conoflex: estaba mal; UCU000xPV = conos económicos De Pascale."
   },
   {
    "id": "cono-king-cone-semiflex-70-cm-1570lsf-2r",
-   "nombre": "Cono King Cone Semiflex 70 Cm 1570LSF-2R",
+   "nombre": "Cono King Cone semiflexible 70 cm Conoflex",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
     "CONMODKICON"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "naranja"
+   ],
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 180,
     "empresas": 3
-   }
+   },
+   "nombreWeb": "Cono King Cone semiflexible 70 cm Conoflex",
+   "descripcion": "Polietileno con aditivo UV, 70 cm, reflectivo 10 y 5 cm.",
+   "descripcionLarga": "Cono de señalización vial de 70 cm de altura, fabricado en material polietileno semirrígido, con filtro UV para protección solar. Conformado en “una sola pieza”. El cono tiene en su diámetro mayor 18 cm y 4 cm en su diámetro menor. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "1570LSF-2R",
+    "material": "Polietileno con aditivo UV",
+    "altura": "70 cm",
+    "peso": "1,2 kg",
+    "base": "26 x 26 cm",
+    "reflectivo": "10 y 5 cm"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "Polietileno con aditivo UV: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Bandas reflectivas 10 y 5 cm."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 70 cm · base 26 x 26 cm."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 1,2 kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Rutas y autopistas",
+    "Playas de estacionamiento",
+    "Depósitos y plantas industriales",
+    "Eventos",
+    "Desvíos de tránsito"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/cono-king-cone-semiflex-70-cm-1570lsf-2r--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-king-cone-semiflex-70-cm-1570lsf-2r.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/cono-king-cone-semiflex-70-cm-1570lsf-2r--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/cono-king-cone-semiflex-70-cm-1570lsf-2r.pdf",
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['CONMODKICON']."
   },
   {
    "id": "cono-obrador-classic-2pie-120-cm-2301-classic-2r",
-   "nombre": "Cono Obrador Classic 2Pie 120 Cm 2301-CLASSIC -2R",
+   "nombre": "Cono Obrador Classic 120 cm Conoflex",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
     "CONOBRADCLA"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": true
+   "colores": [
+    "naranja"
+   ],
+   "visible": true,
+   "nombreWeb": "Cono Obrador Classic 120 cm Conoflex",
+   "descripcion": "PVC flexible, 120 cm, reflectivo 1 x 15 cm + 1 x 10 cm.",
+   "descripcionLarga": "Cono de señalización vial de 120 cm de altura, fabricado en material polietileno semirrígido, con filtro UV para protección solar. Conformado en “2 piezas” llamadas: Cono y Base de Contrapeso. Cuenta con un mango anatómico para su fácil manejo e incluye una perforación para pasar cadenas plásticas o cintas perimetrales. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "2301 CLASSIC-2R",
+    "material": "PVC flexible",
+    "altura": "120 cm",
+    "peso": "8,5 kg",
+    "base": "45 x 45 cm Base Octogonal",
+    "reflectivo": "1 x 15 cm + 1 x 10 cm"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "PVC flexible: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Bandas reflectivas 1 x 15 cm + 1 x 10 cm."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 120 cm · base 45 x 45 cm Base Octogonal."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 8,5 kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Rutas y autopistas",
+    "Playas de estacionamiento",
+    "Depósitos y plantas industriales",
+    "Eventos",
+    "Desvíos de tránsito"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/cono-obrador-classic-2pie-120-cm-2301-classic-2r--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-obrador-classic-2pie-120-cm-2301-classic-2r.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/cono-obrador-classic-2pie-120-cm-2301-classic-2r--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/cono-obrador-classic-2pie-120-cm-2301-classic-2r.pdf",
+   "ventasEneJun2026": null,
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['CONOBRADCLA']."
   },
   {
    "id": "cono-rigido-100-cm-2-tiras-reflectivas-base-negra",
@@ -5277,11 +5862,12 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 2,
     "empresas": 1
-   }
+   },
+   "nota": "Oculto 10 oct (conos): unificado en el modelo equivalente o sin match con fabricante."
   },
   {
    "id": "cono-rigido-75-cm-1-tira-reflectiva-negra",
@@ -5294,50 +5880,227 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (conos): unificado en el modelo equivalente o sin match con fabricante."
   },
   {
    "id": "cono-rutero-light-1pie-90-cm-1200l-2r-na",
-   "nombre": "Cono Rutero Light 1Pie 90 Cm 1200L-2R NA",
+   "nombre": "Cono Rutero Light PVC 90 cm Conoflex",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
     "CONRUTLIG"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": true
+   "colores": [
+    "naranja"
+   ],
+   "visible": true,
+   "nombreWeb": "Cono Rutero Light PVC 90 cm Conoflex",
+   "descripcion": "PVC flexible con memoria, 90 cm, reflectivo 1 x 15 cm. + 1 x 10 cm.",
+   "descripcionLarga": "Cono de señalización vial de 90 cm de altura, fabricado en “una sola pieza” de PVC flexible con memoria. Color naranja vial, dureza 80 shore A, peso 5 kg±0,2 kg con filtro UV para protección solar. Presenta 2 bandas reflectivas una de 15 cm de ancho y otra de 10 cm de ancho, con características HIP (HIGH INTENSITY PRISMATIC) según normas IRAM ASTM D4956 Tipo-3. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "1200L-2R",
+    "material": "PVC flexible con memoria",
+    "altura": "90 cm",
+    "peso": "5 kg",
+    "base": "40 x 40 cm",
+    "reflectivo": "1 x 15 cm. + 1 x 10 cm"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "PVC flexible con memoria: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Bandas reflectivas 1 x 15 cm. + 1 x 10 cm."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 90 cm · base 40 x 40 cm."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 5 kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Rutas y autopistas",
+    "Playas de estacionamiento",
+    "Depósitos y plantas industriales",
+    "Eventos",
+    "Desvíos de tránsito"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/cono-rutero-light-1pie-90-cm-1200l-2r-na--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-rutero-light-1pie-90-cm-1200l-2r-na.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/cono-rutero-light-1pie-90-cm-1200l-2r-na--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/cono-rutero-light-1pie-90-cm-1200l-2r-na.pdf",
+   "ventasEneJun2026": null,
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['CONRUTLIG']."
   },
   {
    "id": "cono-vencedor-2pie-120-cm-2300-2r",
-   "nombre": "Cono Vencedor 2Pie 120 Cm 2300-2R",
+   "nombre": "Cono Vencedor 120 cm Conoflex",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
     "CONVENCED"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": true
+   "colores": [
+    "naranja"
+   ],
+   "visible": true,
+   "nombreWeb": "Cono Vencedor 120 cm Conoflex",
+   "descripcion": "PVC flexible, 120 cm, reflectivo 15 y 10 cm.",
+   "descripcionLarga": "Cono de señalización vial de 120 cm de altura, fabricado en material polietileno semirrígido, con filtro UV para protección solar. Conformado en “2 piezas” llamadas: Cono y Base de Contrapeso. El diámetro mayor del cono es de 20 cm y 10 cm en su diámetro menor. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "2300-2R",
+    "material": "PVC flexible",
+    "altura": "120 cm",
+    "peso": "6,5 kg",
+    "base": "45 x 45 cm. Base Octogonal",
+    "reflectivo": "15 y 10 cm"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "PVC flexible: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Bandas reflectivas 15 y 10 cm."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 120 cm · base 45 x 45 cm. Base Octogonal."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 6,5 kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Rutas y autopistas",
+    "Playas de estacionamiento",
+    "Depósitos y plantas industriales",
+    "Eventos",
+    "Desvíos de tránsito"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/cono-vencedor-2pie-120-cm-2300-2r--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-vencedor-2pie-120-cm-2300-2r.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/cono-vencedor-2pie-120-cm-2300-2r--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/cono-vencedor-2pie-120-cm-2300-2r.pdf",
+   "ventasEneJun2026": null,
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['CONVENCED']."
   },
   {
    "id": "cono-vencedor-light-2pie-120-cm-2300l-2r",
-   "nombre": "Cono Vencedor Light 2Pie 120 Cm 2300L-2R",
+   "nombre": "Cono Vencedor Light 120 cm Conoflex",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
     "CONVENLIGHT"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "naranja"
+   ],
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 42,
     "empresas": 2
-   }
+   },
+   "nombreWeb": "Cono Vencedor Light 120 cm Conoflex",
+   "descripcion": "Polietileno semiflexible con aditivo UV, 120 cm, reflectivo 15 y 10 cm",
+   "descripcionLarga": "Cono modelo Vencedor Light código 2300L-2R. Fabricado en polietileno semiflexible de alta calidad, con aditivo UV para protección solar , que garantiza su durabilidad frente a condiciones climáticas extremas. Cumple con las normas de visibilidad exigidas para aplicaciones viales y urbanas. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "2300L-2R",
+    "material": "Polietileno semiflexible con aditivo UV",
+    "altura": "120 cm",
+    "peso": "4 kg",
+    "base": "35 x 35 cm. Base Cuadrada",
+    "reflectivo": "15 y 10 cm"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "Polietileno semiflexible con aditivo UV: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Bandas reflectivas 15 y 10 cm."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 120 cm · base 35 x 35 cm. Base Cuadrada."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 4 kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Rutas y autopistas",
+    "Playas de estacionamiento",
+    "Depósitos y plantas industriales",
+    "Eventos",
+    "Desvíos de tránsito"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/cono-vencedor-light-2pie-120-cm-2300l-2r--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-vencedor-light-2pie-120-cm-2300l-2r.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/cono-vencedor-light-2pie-120-cm-2300l-2r--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/cono-vencedor-light-2pie-120-cm-2300l-2r.pdf",
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['CONVENLIGHT']."
   },
   {
    "id": "cristal-rectangular-2mm-incoloro",
@@ -5763,7 +6526,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (conos): unificado en el modelo equivalente o sin match con fabricante."
   },
   {
    "id": "dispositivo-antitrauma",
@@ -5784,33 +6548,150 @@
   },
   {
    "id": "econo-semiflex-c-base-2pie-70-cm-2071le-2r",
-   "nombre": "Econo semiflex C/Base 2Pie 70 Cm 2071LE-2R",
+   "nombre": "Cono Econo semiflexible con base 70 cm Conoflex",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
     "ECONSEMFLEX"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "naranja"
+   ],
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 4,
     "empresas": 1
-   }
+   },
+   "nombreWeb": "Cono Econo semiflexible con base 70 cm Conoflex",
+   "descripcion": "PVC flexible, 70 cm, reflectivo 1 x 10 y 1 x 5 cm.",
+   "descripcionLarga": "Econo Semiflexible con base Fabricado con material de polietileno semiflexible de alta calidad, con aditivo UV para protección solar, garantizando una excelente resistencia frente a las condiciones climáticas severas y la exposición a la intemperie. Conformado en dos piezas, cono y base de contrapeso. Cuerpo del Cono: Altura total: 70 cm. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "2071LE-2R",
+    "material": "PVC flexible",
+    "altura": "70 cm",
+    "peso": "2,3 kg",
+    "base": "35 x 35 cm",
+    "reflectivo": "1 x 10 y 1 x 5 cm"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "PVC flexible: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Bandas reflectivas 1 x 10 y 1 x 5 cm."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 70 cm · base 35 x 35 cm."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 2,3 kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Rutas y autopistas",
+    "Playas de estacionamiento",
+    "Depósitos y plantas industriales",
+    "Eventos",
+    "Desvíos de tránsito"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/econo-semiflex-c-base-2pie-70-cm-2071le-2r--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/econo-semiflex-c-base-2pie-70-cm-2071le-2r.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/econo-semiflex-c-base-2pie-70-cm-2071le-2r--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/econo-semiflex-c-base-2pie-70-cm-2071le-2r.pdf",
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['ECONSEMFLEX']."
   },
   {
    "id": "economax-1pie-100-cm-2081-2r-na",
-   "nombre": "Economax 1Pie 100 Cm 2081-2R NA",
+   "nombre": "Cono Economax 100 cm Conoflex",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
     "ECOMAX"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": true
+   "colores": [
+    "naranja"
+   ],
+   "visible": true,
+   "nombreWeb": "Cono Economax 100 cm Conoflex",
+   "descripcion": "Polietileno con aditivo UV, 100 cm, reflectivo 2 x 10 cm.",
+   "descripcionLarga": "Cono de señalización vial de 100 cm de altura, fabricado en material polietileno semirrígido. Color naranja vial, con filtro UV para protección solar. Conformado en “una sola pieza”. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "2081-2R",
+    "material": "Polietileno con aditivo UV",
+    "altura": "100 cm",
+    "peso": "3 kg",
+    "base": "45 x 45 cm",
+    "reflectivo": "2 x 10 cm"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "Polietileno con aditivo UV: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Bandas reflectivas 2 x 10 cm."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 100 cm · base 45 x 45 cm."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 3 kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Rutas y autopistas",
+    "Playas de estacionamiento",
+    "Depósitos y plantas industriales",
+    "Eventos",
+    "Desvíos de tránsito"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/economax-1pie-100-cm-2081-2r-na--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/economax-1pie-100-cm-2081-2r-na.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/economax-1pie-100-cm-2081-2r-na--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/economax-1pie-100-cm-2081-2r-na.pdf",
+   "ventasEneJun2026": null,
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['ECOMAX']."
   },
   {
    "id": "equipo-primera-piel",
@@ -6098,7 +6979,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "gabinete-estacion-lavaojo-2-botellas-sin-solucion",
@@ -6312,14 +7194,15 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-descarne-soldador-rojo",
    "nombre": "Guante Descarne Soldador rojo",
    "marca": "Diforza",
    "linea": "epp",
-   "subcategoria": "proteccion-manos",
+   "subcategoria": "proteccion-soldadura",
    "codigosERP": [
     "GUADESSOL"
    ],
@@ -6332,7 +7215,8 @@
    "ventasEneJun2026": {
     "unidades": 128,
     "empresas": 9
-   }
+   },
+   "nota": "Movido de manos a soldadura 10 oct."
   },
   {
    "id": "guante-moteado-pesado-gris",
@@ -6345,7 +7229,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-acrilo-nitrilo",
@@ -6360,46 +7245,163 @@
     "verde"
    ],
    "talles": "7 al 11",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 72,
     "empresas": 1
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-acrilo-nitrilo-ws-15mil",
-   "nombre": "Guante Acrilo Nitrilo WS 15mil",
+   "nombre": "Guante de acrilo nitrilo verde 15 mil WorkSafe",
    "marca": "WorkSafe",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
-    "GUACRINITWS15MIL"
+    "GUACRINITWS15MIL",
+    "GUAACR"
    ],
-   "colores": [],
+   "colores": [
+    "verde"
+   ],
    "talles": "7 al 11",
    "visible": true,
    "ventasEneJun2026": {
-    "unidades": 1218,
-    "empresas": 10
+    "unidades": 1290,
+    "empresas": 11
    },
-   "foto": "/img/catalogo/guante-acrilo-nitrilo-ws-15mil.webp"
+   "foto": "/img/catalogo/guante-acrilo-nitrilo-ws-15mil--verde.webp",
+   "nombreWeb": "Guante de acrilo nitrilo verde 15 mil WorkSafe",
+   "descripcion": "Nitrilo verde 0,38 mm, largo 33 cm. Para químicos, aceites y solventes.",
+   "descripcionLarga": "Guante estanco de acrilo nitrilo verde de 15 mil (0,38 mm), libre de látex, con largo de unos 33 cm que protege mano y medio antebrazo. Barrera confiable frente a aceites, grasas, solventes y otros productos químicos, con palma texturizada para agarre en superficies húmedas o secas. Resistencia a la abrasión nivel 4.",
+   "specs": {
+    "material": "Acrilo nitrilo verde, sin látex",
+    "espesor": "15 mil (0,38 mm)",
+    "largo": "± 33 cm",
+    "norma": "EN 388: 4101X",
+    "código fabricante": "AN15MIL"
+   },
+   "beneficios": [
+    {
+     "titulo": "Protección química",
+     "texto": "Aceites, grasas, solventes, ácidos y bases."
+    },
+    {
+     "titulo": "15 mil (0,38 mm)",
+     "texto": "Más resistente que los guantes de menor espesor."
+    },
+    {
+     "titulo": "Largo 33 cm",
+     "texto": "Protege mano y medio antebrazo."
+    },
+    {
+     "titulo": "Palma texturizada",
+     "texto": "Agarre firme en húmedo y en seco."
+    },
+    {
+     "titulo": "Libre de látex",
+     "texto": "Sin riesgo de alergias al látex."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Pinturas, barnices y disolventes",
+    "Industria química",
+    "Derivados del petróleo",
+    "Aplicación de pesticidas",
+    "Industria automotriz",
+    "Limpieza industrial"
+   ],
+   "variantes": [
+    {
+     "color": "verde",
+     "colorFabricante": "Verde",
+     "foto": "/img/catalogo/guante-acrilo-nitrilo-ws-15mil--verde.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-acrilo-nitrilo-ws-15mil.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-acrilo-nitrilo-ws-15mil.pdf",
+   "nota": "Material oficial del fabricante (WorkSafe) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUAACR', 'GUACRINITWS15MIL']. Talles a validar con Diforza."
   },
   {
    "id": "guante-anti-impacto",
-   "nombre": "Guante Anti Impacto",
+   "nombre": "Guante de vaqueta anti-impacto con forro anticorte De Pascale",
    "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
     "GUAIMPAC"
    ],
-   "colores": [],
+   "colores": [
+    "amarillo"
+   ],
    "talles": "8 al 11",
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 85,
     "empresas": 1
-   }
+   },
+   "nombreWeb": "Guante de vaqueta anti-impacto con forro anticorte De Pascale",
+   "descripcion": "Vaqueta con refuerzo TPR anti-impacto y forro interior anticorte.",
+   "descripcionLarga": "El guante de vaqueta para trabajo rudo: cuero vaqueta amarillo con forro interior anticorte de HPPE, refuerzo cadenero y protecciones de TPR en el dorso de los dedos y del metacarpo que absorben golpes y aplastamientos. Puño corto de cuero descarne. Pensado para mantenimiento pesado, petróleo, metalurgia y obra, donde hay riesgo de impacto y de corte a la vez. Certificado EN 388 con nivel de corte D.",
+   "specs": {
+    "material": "Cuero vaqueta amarillo + forro HPPE anticorte",
+    "refuerzos": "Cadenero + TPR anti-impacto en dorso",
+    "puño": "Corto, cuero descarne",
+    "norma": "EN 388: 4544DP · EN 420",
+    "código fabricante": "125225X"
+   },
+   "beneficios": [
+    {
+     "titulo": "Anti-impacto",
+     "texto": "Protecciones de TPR en dorso y dedos contra golpes y aplastamientos."
+    },
+    {
+     "titulo": "Forro anticorte HPPE",
+     "texto": "Corte nivel D según EN 388."
+    },
+    {
+     "titulo": "Cuero vaqueta",
+     "texto": "Resistente y con buena destreza."
+    },
+    {
+     "titulo": "Refuerzo cadenero",
+     "texto": "Más duración en la zona de mayor desgaste."
+    },
+    {
+     "titulo": "EN 388: 4544DP",
+     "texto": "Abrasión 4 · corte 5 · desgarro 4 · punción 4 · corte D · impacto P."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original De Pascale, certificado y con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Petróleo y gas",
+    "Metalurgia",
+    "Mantenimiento pesado",
+    "Construcción",
+    "Movimiento de cargas",
+    "Minería"
+   ],
+   "variantes": [
+    {
+     "color": "amarillo",
+     "colorFabricante": "Amarillo y naranja",
+     "foto": "/img/catalogo/guante-anti-impacto--amarillo-y-naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-anti-impacto.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/guante-anti-impacto--amarillo-y-naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/guante-anti-impacto.pdf",
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUAIMPAC']. Talles a validar con Diforza."
   },
   {
    "id": "guante-anticorte",
@@ -6412,15 +7414,16 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 1099,
     "empresas": 6
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-anticorte-ap1306-ws",
-   "nombre": "Guante anticorte AP1306 WS",
+   "nombre": "Guante anticorte HPPE WorkSafe AP1306",
    "marca": "WorkSafe",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
@@ -6428,13 +7431,70 @@
     "GUANTAP1306WS",
     "9GUANTAPI306WS"
    ],
-   "colores": [],
+   "colores": [
+    "gris"
+   ],
    "talles": "7 al 10",
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 200,
     "empresas": 1
-   }
+   },
+   "nombreWeb": "Guante anticorte HPPE WorkSafe AP1306",
+   "descripcion": "Máxima resistencia al corte (nivel F) con palma de poliuretano.",
+   "descripcionLarga": "Guante anticorte de máxima protección: tejido HPPE con resistencia al corte nivel F según EN 388 (el más alto de la norma) y palma recubierta en poliuretano gris, fina y con mucha sensibilidad. Para tareas con alto riesgo de corte que además exigen precisión. Certificado EN 388 4X43F, CE y UL.",
+   "specs": {
+    "tejido": "HPPE",
+    "recubrimiento": "Poliuretano gris en palma",
+    "norma": "EN 388: 4X43F · CE · UL AR 2036",
+    "código fabricante": "AP1306"
+   },
+   "beneficios": [
+    {
+     "titulo": "Corte nivel F",
+     "texto": "Máxima resistencia al corte de la norma EN 388."
+    },
+    {
+     "titulo": "Fibra HPPE",
+     "texto": "Liviana, fresca y resistente."
+    },
+    {
+     "titulo": "Palma de poliuretano",
+     "texto": "Fina, con gran sensibilidad al tacto."
+    },
+    {
+     "titulo": "Certificado",
+     "texto": "EN 388: 4X43F · CE · UL AR 2036."
+    },
+    {
+     "titulo": "Puño tejido",
+     "texto": "Se ajusta a la muñeca."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Industria del vidrio",
+    "Manipuleo de chapas filosas",
+    "Autopartes",
+    "Industria alimenticia",
+    "Reciclado",
+    "Metalmecánica"
+   ],
+   "variantes": [
+    {
+     "color": "gris",
+     "colorFabricante": "Gris",
+     "foto": "/img/catalogo/guante-anticorte-ap1306-ws--gris.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-anticorte-ap1306-ws.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/guante-anticorte-ap1306-ws--gris.webp",
+   "fichaTecnica": "/assets/docs/fichas/guante-anticorte-ap1306-ws.pdf",
+   "nota": "Material oficial del fabricante (WorkSafe) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['9GUANTAPI306WS', 'GUANTAP1306WS']. Talles a validar con Diforza."
   },
   {
    "id": "guante-anticorte-bano-nit-anti-impacto-tx2000",
@@ -6447,25 +7507,83 @@
    ],
    "colores": [],
    "talles": "8 al 11",
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-anticorte-ws-h2101",
-   "nombre": "Guante Anticorte WS H2101",
+   "nombre": "Guante anticorte HPPE WorkSafe H2101",
    "marca": "WorkSafe",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
-    "GUANTWSH2101"
+    "GUANTWSH2101",
+    "GUADINE"
    ],
-   "colores": [],
+   "colores": [
+    "gris"
+   ],
    "talles": "8 al 11",
    "visible": true,
    "ventasEneJun2026": {
-    "unidades": 1309,
-    "empresas": 6
+    "unidades": 2408,
+    "empresas": 12
    },
-   "foto": "/img/catalogo/guante-anticorte-ws-h2101.webp"
+   "foto": "/img/catalogo/guante-anticorte-ws-h2101--gris-y-negro.webp",
+   "nombreWeb": "Guante anticorte HPPE WorkSafe H2101",
+   "descripcion": "Fibra HPPE anticorte nivel C con palma de nitrilo negro.",
+   "descripcionLarga": "El guante anticorte más vendido de nuestro catálogo: tejido de polietileno de alto rendimiento (HPPE) resistente al corte, con recubrimiento de nitrilo liso negro en la palma para un agarre firme. Certificado EN 388 4X43C, con marca CE y certificación UL. Liviano y fresco, permite trabajar con precisión en tareas con riesgo de corte.",
+   "specs": {
+    "tejido": "HPPE",
+    "recubrimiento": "Nitrilo liso negro en palma",
+    "norma": "EN 388: 4X43C · CE · UL AR 2036",
+    "código fabricante": "H2101"
+   },
+   "beneficios": [
+    {
+     "titulo": "Anticorte nivel C",
+     "texto": "EN 388: 4X43C."
+    },
+    {
+     "titulo": "Fibra HPPE",
+     "texto": "Polietileno de alto rendimiento, liviano y fresco."
+    },
+    {
+     "titulo": "Palma de nitrilo",
+     "texto": "Agarre firme y resistencia a la abrasión."
+    },
+    {
+     "titulo": "Certificado",
+     "texto": "CE · UL AR 2036."
+    },
+    {
+     "titulo": "Talles 8 al 11",
+     "texto": "Para todo el personal."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Manipuleo de chapas y vidrio",
+    "Metalmecánica",
+    "Autopartes",
+    "Logística",
+    "Mantenimiento",
+    "Industria alimenticia"
+   ],
+   "variantes": [
+    {
+     "color": "gris",
+     "colorFabricante": "Gris y negro",
+     "foto": "/img/catalogo/guante-anticorte-ws-h2101--gris-y-negro.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-anticorte-ws-h2101.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-anticorte-ws-h2101.pdf",
+   "nota": "Material oficial del fabricante (WorkSafe) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUADINE', 'GUANTWSH2101']. Talles a validar con Diforza. La web vieja de Diforza mostraba la foto del W2101 (guante para frío) en este producto: estaba mal."
   },
   {
    "id": "guante-anticorte-ws-h5101",
@@ -6478,11 +7596,12 @@
    ],
    "colores": [],
    "talles": "8 al 9",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 9,
     "empresas": 1
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-bano-compl-puno-teijdo-1615-ws",
@@ -6495,11 +7614,12 @@
    ],
    "colores": [],
    "talles": "8 al 11",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 273,
     "empresas": 4
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-cobertor-dielec-vaqueta-tipo-north",
@@ -6512,11 +7632,12 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 40,
     "empresas": 1
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-de-latex-c-polvo",
@@ -6531,8 +7652,9 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
-   "foto": "/img/catalogo/guante-de-latex-c-polvo.webp"
+   "visible": false,
+   "foto": "/img/catalogo/guante-de-latex-c-polvo.webp",
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-de-latex-s-polvo",
@@ -6548,11 +7670,12 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 11,
     "empresas": 1
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-de-nitrilo-azul",
@@ -6568,11 +7691,12 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 7,
     "empresas": 2
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-de-nitrilo-negro",
@@ -6588,12 +7712,13 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 44,
     "empresas": 1
    },
-   "foto": "/img/catalogo/guante-de-nitrilo-negro.webp"
+   "foto": "/img/catalogo/guante-de-nitrilo-negro.webp",
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-de-nitrilo-violeta",
@@ -6609,26 +7734,85 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
-   "foto": "/img/catalogo/guante-de-nitrilo-violeta.webp"
+   "visible": false,
+   "foto": "/img/catalogo/guante-de-nitrilo-violeta.webp",
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-descarne-puno-corto",
-   "nombre": "Guante Descarne Puño Corto",
-   "marca": "Diforza",
+   "nombre": "Guante de descarne americano puño corto De Pascale",
+   "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
-    "GUADESPCO"
+    "GUADESPCO",
+    "GUADES"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "gris"
+   ],
+   "talles": "10",
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 1163,
     "empresas": 11
    },
-   "foto": "/img/catalogo/guante-descarne-puno-corto.webp"
+   "foto": "/img/catalogo/guante-descarne-puno-corto--gris.webp",
+   "nombreWeb": "Guante de descarne americano puño corto De Pascale",
+   "descripcion": "Cuero descarne gris, puño corto. Resistente a la abrasión y la punción.",
+   "descripcionLarga": "El guante americano de cuero descarne gris es el guante de trabajo pesado de uso general: resistente a la abrasión, al desgarro y a la punción, para manipular materiales ásperos, chapas, maderas y escombros. Puño corto y refuerzo simple en la palma. Certificado según IRAM 3607-3608.",
+   "specs": {
+    "material": "Cuero descarne gris",
+    "modelo": "Americano",
+    "puño": "Corto",
+    "norma": "IRAM 3607-3608 (3-1-4-4)",
+    "código fabricante": "111215"
+   },
+   "beneficios": [
+    {
+     "titulo": "Cuero descarne",
+     "texto": "Resistente a la abrasión y a la punción."
+    },
+    {
+     "titulo": "Refuerzo en palma",
+     "texto": "Más duración donde más se gasta."
+    },
+    {
+     "titulo": "Puño corto",
+     "texto": "Cómodo y fácil de poner y sacar."
+    },
+    {
+     "titulo": "IRAM 3608: 3-1-4-4",
+     "texto": "Abrasión 3 · corte 1 · desgarro 4 · punción 4."
+    },
+    {
+     "titulo": "Uso general pesado",
+     "texto": "Para materiales ásperos y trabajo rudo."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original De Pascale, certificado y con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Construcción",
+    "Metalmecánica",
+    "Logística y carga",
+    "Mantenimiento",
+    "Petróleo",
+    "Agro"
+   ],
+   "variantes": [
+    {
+     "color": "gris",
+     "colorFabricante": "Gris",
+     "foto": "/img/catalogo/guante-descarne-puno-corto--gris.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-descarne-puno-corto.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-descarne-puno-corto.pdf",
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUADES', 'GUADESPCO']. Talles a validar con Diforza."
   },
   {
    "id": "guante-descarne-puno-largo",
@@ -6641,12 +7825,13 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 1,
     "empresas": 1
    },
-   "foto": "/img/catalogo/guante-descarne-puno-largo.webp"
+   "foto": "/img/catalogo/guante-descarne-puno-largo.webp",
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-descarne-ref-pistola-puno-corto",
@@ -6659,7 +7844,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-dielectrico-glovex-1000v-clase-0",
@@ -6672,8 +7858,9 @@
    ],
    "colores": [],
    "talles": "9 al 11",
-   "visible": true,
-   "foto": "/img/catalogo/guante-dielectrico-glovex-1000v-clase-0.webp"
+   "visible": false,
+   "foto": "/img/catalogo/guante-dielectrico-glovex-1000v-clase-0.webp",
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-dielectrico-glovex-20000v-clase2",
@@ -6686,27 +7873,111 @@
    ],
    "colores": [],
    "talles": "9 al 11",
-   "visible": true,
-   "foto": "/img/catalogo/guante-dielectrico-glovex-20000v-clase2.webp"
+   "visible": false,
+   "foto": "/img/catalogo/guante-dielectrico-glovex-20000v-clase2.webp",
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
-   "id": "guante-dielectrico-glovex-2500v-clase-00",
-   "nombre": "Guante Dielectrico Glovex 2500V (Clase 00)",
-   "marca": "Glovex",
+   "id": "guante-dielectrico-de-pascale",
+   "nombre": "Guante dieléctrico de látex De Pascale (clases 00 a 2)",
+   "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
     "GUADIEL00",
-    "GUADIE00"
+    "GUADIE00",
+    "GUADIE0",
+    "GUADIE02"
    ],
-   "colores": [],
+   "colores": [
+    "naranja"
+   ],
    "talles": "9 al 11",
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 100,
     "empresas": 3
    },
-   "foto": "/img/catalogo/guante-dielectrico-glovex-2500v-clase-00.webp"
+   "foto": "/img/catalogo/guante-dielectrico-glovex-2500v-clase-00--clase-00-500-v.webp",
+   "nombreWeb": "Guante dieléctrico de látex De Pascale (clases 00 a 2)",
+   "descripcion": "Guante aislante para trabajos con tensión. Clases 00, 0, 1 y 2.",
+   "descripcionLarga": "Guantes aislantes de látex para trabajar con tensión, certificados según EN 60903. La clase define hasta qué tensión se puede trabajar: clase 00 hasta 500 V, clase 0 hasta 1.000 V, clase 1 hasta 7.500 V y clase 2 hasta 17.000 V (corriente alterna). Se usan siempre con un guante cobertor de vaqueta encima, que los protege de cortes y pinchazos, y deben ensayarse periódicamente.",
+   "specs": {
+    "material": "Látex natural aislante",
+    "norma": "EN 60903:2003",
+    "categoría": "R C (ácido, aceite, ozono, frío)",
+    "largo": "36 cm (clase 00 y 0) · 41 cm (clase 1 y 2)",
+    "clases": "00 · 0 · 1 · 2"
+   },
+   "beneficios": [
+    {
+     "titulo": "Certificado EN 60903",
+     "texto": "Guante aislante para trabajo bajo tensión."
+    },
+    {
+     "titulo": "4 clases",
+     "texto": "Clase 00 (500 V) · 0 (1.000 V) · 1 (7.500 V) · 2 (17.000 V)."
+    },
+    {
+     "titulo": "Resistente a ácidos, aceite y ozono",
+     "texto": "Categoría R C."
+    },
+    {
+     "titulo": "Para muy bajas temperaturas",
+     "texto": "Mantiene sus propiedades en frío."
+    },
+    {
+     "titulo": "Usar con cobertor",
+     "texto": "Recomendamos el cobertor de vaqueta para protegerlo."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original De Pascale, certificado y con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Electricistas",
+    "Distribuidoras eléctricas",
+    "Tableros y subestaciones",
+    "Mantenimiento eléctrico industrial",
+    "Energía"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Clase 00 (500 V)",
+     "foto": "/img/catalogo/guante-dielectrico-glovex-2500v-clase-00--clase-00-500-v.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-dielectrico-glovex-2500v-clase-00--clase-00-500-v.pdf",
+     "fotoGenerada": false,
+     "etiqueta": "Clase 00"
+    },
+    {
+     "color": "naranja",
+     "colorFabricante": "Clase 0 (1.000 V)",
+     "foto": "/img/catalogo/guante-dielectrico-glovex-2500v-clase-00--clase-0-1-000-v.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-dielectrico-glovex-2500v-clase-00--clase-0-1-000-v.pdf",
+     "fotoGenerada": false,
+     "etiqueta": "Clase 0"
+    },
+    {
+     "color": "naranja",
+     "colorFabricante": "Clase 1 (7.500 V)",
+     "foto": "/img/catalogo/guante-dielectrico-glovex-2500v-clase-00--clase-1-7-500-v.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-dielectrico-glovex-2500v-clase-00--clase-1-7-500-v.pdf",
+     "fotoGenerada": false,
+     "etiqueta": "Clase 1"
+    },
+    {
+     "color": "naranja",
+     "colorFabricante": "Clase 2 (17.000 V)",
+     "foto": "/img/catalogo/guante-dielectrico-glovex-2500v-clase-00--clase-2-17-000-v.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-dielectrico-glovex-2500v-clase-00--clase-2-17-000-v.pdf",
+     "fotoGenerada": false,
+     "etiqueta": "Clase 2"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-dielectrico-glovex-2500v-clase-00--clase-00-500-v.pdf",
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUADIE0', 'GUADIE00', 'GUADIE02', 'GUADIEL00']. Talles a validar con Diforza. Dieléctricos: el ERP factura \"Glovex\" (clase 00 y 0); se muestran De Pascale por decisión del usuario 10 oct (las fotos rosas viejas eran de Segutécnica/Bolt)."
   },
   {
    "id": "guante-g13-hppe-bano-total-dob-nitrilo",
@@ -6719,7 +7990,8 @@
    ],
    "colores": [],
    "talles": "9 al 10",
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-g7-aplique-de-descarne-gm-7101",
@@ -6732,7 +8004,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-g7-aplique-de-descarne-simple-7101-gamisol",
@@ -6745,7 +8018,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-g7-kevlar-hibrida",
@@ -6758,11 +8032,12 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 1740,
     "empresas": 1
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-g8-arps-moteado-doble-2-caras-10000a52",
@@ -6775,7 +8050,8 @@
    ],
    "colores": [],
    "talles": "8",
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-g8-kevlar-acero-moteado-2-caras-en-pvc",
@@ -6788,11 +8064,12 @@
    ],
    "colores": [],
    "talles": "8 al 9",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 240,
     "empresas": 1
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-harpon-mapa",
@@ -6806,7 +8083,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-latex-industrial-negro-ws",
@@ -6819,24 +8097,86 @@
    ],
    "colores": [],
    "talles": "8 al 10",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 230,
     "empresas": 3
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-latex-negro-industrial",
-   "nombre": "Guante Látex Negro Industrial",
-   "marca": "Diforza",
+   "nombre": "Guante de látex uso industrial negro De Pascale",
+   "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
-    "GUALATNE"
+    "GUALATNE",
+    "GUALATINDWS"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": true
+   "colores": [
+    "negro"
+   ],
+   "talles": "S al XL",
+   "visible": true,
+   "nombreWeb": "Guante de látex uso industrial negro De Pascale",
+   "descripcion": "Látex negro de 0,6 mm. Para albañilería, cemento y cerámica.",
+   "descripcionLarga": "Guante de látex negro de uso industrial, de 0,6 mm de espesor, flexible y cómodo. Es el guante indicado para albañilería, preparación de mezclas de cemento y colocación de cerámicos y porcelanatos: protege la piel de la cal y el cemento y resiste el uso diario. Certificado según IRAM 3607-3608.",
+   "specs": {
+    "material": "Látex natural negro",
+    "espesor": "0,6 mm",
+    "norma": "IRAM 3607-3608 (2-1-1-0)",
+    "código fabricante": "DPS71395"
+   },
+   "beneficios": [
+    {
+     "titulo": "Látex de 0,6 mm",
+     "texto": "Resistente y flexible."
+    },
+    {
+     "titulo": "Ideal para cemento y cal",
+     "texto": "Protege la piel en tareas de albañilería."
+    },
+    {
+     "titulo": "Alta flexibilidad",
+     "texto": "Buena destreza para colocar cerámicos."
+    },
+    {
+     "titulo": "Talles S al XL",
+     "texto": "Para todo el personal."
+    },
+    {
+     "titulo": "Uso industrial",
+     "texto": "Más grueso que un guante doméstico."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original De Pascale, certificado y con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Albañilería",
+    "Colocación de cerámicos",
+    "Preparación de mezclas",
+    "Construcción",
+    "Limpieza industrial"
+   ],
+   "variantes": [
+    {
+     "color": "negro",
+     "colorFabricante": "Negro",
+     "foto": "/img/catalogo/guante-latex-negro-industrial--negro.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-latex-negro-industrial.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/guante-latex-negro-industrial--negro.webp",
+   "fichaTecnica": "/assets/docs/fichas/guante-latex-negro-industrial.pdf",
+   "ventasEneJun2026": {
+    "unidades": 230,
+    "empresas": 3
+   },
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUALATINDWS', 'GUALATNE']. Talles a validar con Diforza."
   },
   {
    "id": "guante-latex-uso-domestico",
@@ -6849,7 +8189,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-mapa-559-anti-corte",
@@ -6862,7 +8203,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-mapa-duo-mix",
@@ -6875,7 +8217,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-mapa-technimix-415",
@@ -6888,7 +8231,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-mondongo-puno-de-lona-l1705-ws",
@@ -6903,25 +8247,84 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-moteado-blanco-1100fer-gamisol",
-   "nombre": "Guante Moteado Blanco 1100FER Gamisol",
+   "nombre": "Guante moteado de algodón Gamisol 1100FER",
    "marca": "Gamisol",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
     "GUAMOTGA"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "blanco"
+   ],
+   "talles": "8",
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 22511,
     "empresas": 40
    },
-   "foto": "/img/catalogo/guante-moteado-blanco-1100fer-gamisol.webp"
+   "foto": "/img/catalogo/guante-moteado-blanco-1100fer-gamisol--blanco-con-motas-azules.webp",
+   "nombreWeb": "Guante moteado de algodón Gamisol 1100FER",
+   "descripcion": "Tejido de algodón sin costuras con motas de PVC azules en una cara.",
+   "descripcionLarga": "El guante moteado Gamisol 1100FER es el guante de uso general más elegido por nuestros clientes. Tejido en una sola pieza de algodón galga 7, sin costuras que irriten la piel, con motas de PVC-NIT azules en la palma que dan agarre firme sin perder movimiento. El algodón deja respirar la mano y absorbe la transpiración, así que es cómodo para usar toda la jornada en tareas livianas de carga, armado y limpieza.",
+   "specs": {
+    "tejido": "Jersey galga 7, 100 % algodón, sin costuras",
+    "recubrimiento": "Motas de PVC-NIT azules en 1 cara",
+    "puño": "Elastizado",
+    "largo": "24 cm",
+    "norma": "EN 388: 0141X",
+    "embalaje": "240 pares"
+   },
+   "beneficios": [
+    {
+     "titulo": "100 % algodón",
+     "texto": "Fresco, absorbe la transpiración y es cómodo toda la jornada."
+    },
+    {
+     "titulo": "Motas de PVC en la palma",
+     "texto": "Agarre firme y antideslizante sin perder sensibilidad."
+    },
+    {
+     "titulo": "Sin costuras",
+     "texto": "Tejido en una pieza: no irrita ni marca la mano."
+    },
+    {
+     "titulo": "Puño elastizado",
+     "texto": "Se ajusta a la muñeca y no se sale."
+    },
+    {
+     "titulo": "EN 388: 0141X",
+     "texto": "Rasgado nivel 4 para tareas livianas de manipulación."
+    },
+    {
+     "titulo": "Marca Gamisol",
+     "texto": "Fabricante nacional con ficha técnica y declaración jurada."
+    }
+   ],
+   "usos": [
+    "Logística y depósitos",
+    "Construcción",
+    "Limpieza y mantenimiento",
+    "Armado y empaque",
+    "Jardinería",
+    "Uso general"
+   ],
+   "variantes": [
+    {
+     "color": "blanco",
+     "colorFabricante": "Blanco con motas azules",
+     "foto": "/img/catalogo/guante-moteado-blanco-1100fer-gamisol--blanco-con-motas-azules.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-moteado-blanco-1100fer-gamisol.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-moteado-blanco-1100fer-gamisol.pdf",
+   "nota": "Material oficial del fabricante (Gamisol) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUAMOTGA']. Talles a validar con Diforza."
   },
   {
    "id": "guante-nit-b-comp-azul-p-lona-antishock-dps11255x",
@@ -6934,7 +8337,8 @@
    ],
    "colores": [],
    "talles": "10",
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-nitrilo-g-ultrane-525",
@@ -6949,7 +8353,8 @@
     "negro"
    ],
    "talles": "8 al 11",
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-nitrilo-g-ultrane-526",
@@ -6964,7 +8369,8 @@
     "negro"
    ],
    "talles": "8 al 11",
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-nitrilo-med-bano-compl-anti-impacto",
@@ -6977,28 +8383,89 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 52,
     "empresas": 1
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-nitrilo-puno-de-lona",
-   "nombre": "Guante nitrilo puño de lona",
-   "marca": "Diforza",
+   "nombre": "Guante de nitrilo medio baño completo puño de lona De Pascale",
+   "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
-    "GUANITPUÑLON"
+    "GUANITPUÑLON",
+    "GUNPL1604WS",
+    "GUNPL1605WS"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "azul"
+   ],
+   "talles": "8 al 11",
    "visible": true,
    "ventasEneJun2026": {
-    "unidades": 3397,
-    "empresas": 7
-   }
+    "unidades": 4483,
+    "empresas": 11
+   },
+   "nombreWeb": "Guante de nitrilo medio baño completo puño de lona De Pascale",
+   "descripcion": "Baño completo de nitrilo azul con puño de lona. Para grasa y aceite.",
+   "descripcionLarga": "El guante de nitrilo con baño completo y puño de lona es el indicado para trabajar con piezas engrasadas, aceites y objetos con filo. Soporte interior de algodón interlock recubierto con dos capas de nitrilo (NBR) en palma y dorso, que lo hace impermeable a aceites y muy resistente a la abrasión. El puño de lona protege la muñeca. Certificado según IRAM 3607-3608.",
+   "specs": {
+    "recubrimiento": "Nitrilo (NBR) baño completo, 2 capas",
+    "soporte": "Interlock de algodón",
+    "puño": "De lona",
+    "norma": "IRAM 3607-3608 (3-1-2-1)",
+    "código fabricante": "DPS11255"
+   },
+   "beneficios": [
+    {
+     "titulo": "Baño completo de nitrilo",
+     "texto": "Palma y dorso protegidos de aceites y grasas."
+    },
+    {
+     "titulo": "Puño de lona",
+     "texto": "Protege la muñeca y es fácil de sacar."
+    },
+    {
+     "titulo": "Resistente a la abrasión",
+     "texto": "IRAM 3608: abrasión 3."
+    },
+    {
+     "titulo": "Buen agarre",
+     "texto": "Para piezas aceitosas y chapas."
+    },
+    {
+     "titulo": "Soporte de algodón",
+     "texto": "Cómodo por dentro."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original De Pascale, certificado y con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Metalmecánica",
+    "Mantenimiento",
+    "Petróleo",
+    "Talleres mecánicos",
+    "Manipuleo de chapas",
+    "Industria automotriz"
+   ],
+   "variantes": [
+    {
+     "color": "azul",
+     "colorFabricante": "Azul",
+     "foto": "/img/catalogo/guante-nitrilo-puno-de-lona--azul.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-nitrilo-puno-de-lona.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/guante-nitrilo-puno-de-lona--azul.webp",
+   "fichaTecnica": "/assets/docs/fichas/guante-nitrilo-puno-de-lona.pdf",
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUANITPUÑLON', 'GUNPL1604WS', 'GUNPL1605WS']. Talles a validar con Diforza."
   },
   {
    "id": "guante-nitrilo-puno-de-lona-1604-ws",
@@ -7011,11 +8478,12 @@
    ],
    "colores": [],
    "talles": "8 al 11",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 512,
     "empresas": 2
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-nitrilo-puno-de-lona-1605-ws",
@@ -7028,11 +8496,12 @@
    ],
    "colores": [],
    "talles": "8 al 11",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 574,
     "empresas": 5
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-nitrilo-puno-elastizado",
@@ -7045,7 +8514,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-nitrilo-term-2101-ws",
@@ -7058,11 +8528,12 @@
    ],
    "colores": [],
    "talles": "8 al 10",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 12,
     "empresas": 1
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-nylon-latex",
@@ -7075,11 +8546,12 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 12,
     "empresas": 1
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-nylon-nitrilo",
@@ -7092,29 +8564,90 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 52,
     "empresas": 2
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-nylon-pu-2101-2102-ws",
-   "nombre": "Guante Nylon PU 2101/2102 WS",
+   "nombre": "Guante de poliéster con baño de poliuretano WorkSafe PU2102",
    "marca": "WorkSafe",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
     "GUANYPU2101/2102WS",
-    "9GUANYLPU2101WS"
+    "9GUANYLPU2101WS",
+    "GUNYPUNGT10",
+    "GUNYPUNGT8",
+    "GUNYPUNGT9"
    ],
-   "colores": [],
+   "colores": [
+    "negro"
+   ],
    "talles": "7 al 10",
    "visible": true,
    "ventasEneJun2026": {
-    "unidades": 2770,
-    "empresas": 9
-   }
+    "unidades": 2864,
+    "empresas": 15
+   },
+   "nombreWeb": "Guante de poliéster con baño de poliuretano WorkSafe PU2102",
+   "descripcion": "Tejido liviano con palma de PU negra. Máxima sensibilidad.",
+   "descripcionLarga": "Guante tejido de poliéster liviano, flexible y transpirable, con palma y dedos recubiertos en poliuretano. Brinda una sensibilidad táctil excelente y destreza 5/5, ideal para tareas de precisión: armado, ensamble, manipulación de envases y logística. El dorso sin recubrir deja respirar la mano. Certificado EN 388 4131X.",
+   "specs": {
+    "tejido": "Poliéster",
+    "recubrimiento": "Poliuretano en palma y dedos",
+    "norma": "EN 388: 4131X",
+    "destreza": "5/5",
+    "código fabricante": "PU2102"
+   },
+   "beneficios": [
+    {
+     "titulo": "Máxima sensibilidad",
+     "texto": "Destreza nivel 5/5 para tareas finas."
+    },
+    {
+     "titulo": "Palma de poliuretano",
+     "texto": "Agarre en superficies secas y resistencia a la abrasión nivel 4."
+    },
+    {
+     "titulo": "Dorso transpirable",
+     "texto": "Menos transpiración en jornadas largas."
+    },
+    {
+     "titulo": "Liviano",
+     "texto": "Casi no se siente puesto."
+    },
+    {
+     "titulo": "EN 388: 4131X",
+     "texto": "Abrasión 4 · corte 1 · desgarro 3 · punción 1."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Montaje electrónico y mecánico",
+    "Ensamble industrial",
+    "Logística y paquetería",
+    "Manipulación de envases",
+    "Industria liviana"
+   ],
+   "variantes": [
+    {
+     "color": "negro",
+     "colorFabricante": "Negro",
+     "foto": "/img/catalogo/guante-nylon-pu-2101-2102-ws--negro.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-nylon-pu-2101-2102-ws.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/guante-nylon-pu-2101-2102-ws--negro.webp",
+   "fichaTecnica": "/assets/docs/fichas/guante-nylon-pu-2101-2102-ws.pdf",
+   "nota": "Material oficial del fabricante (WorkSafe) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['9GUANYLPU2101WS', 'GUANYPU2101/2102WS', 'GUNYPUNGT10', 'GUNYPUNGT8', 'GUNYPUNGT9']. Talles a validar con Diforza. Se muestra solo el negro (PU2102), decisión del usuario."
   },
   {
    "id": "guante-nylon-pu-negro",
@@ -7129,11 +8662,12 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 94,
     "empresas": 1
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-poliester-latex",
@@ -7146,12 +8680,13 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-pvc-rojo-30-cm",
-   "nombre": "Guante Pvc Rojo - 30 Cm",
-   "marca": "Prentex",
+   "nombre": "Guante de PVC rojo 30 cm De Pascale",
+   "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
@@ -7160,14 +8695,70 @@
     "0GUAPVCRJ35",
     "0GUAPVCRJ40"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "rojo"
+   ],
+   "talles": "9 al 11",
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 201,
-    "empresas": 5
+    "empresas": 7
    },
-   "foto": "/img/catalogo/guante-pvc-rojo-30-cm.webp"
+   "foto": "/img/catalogo/guante-pvc-rojo-30-cm--rojo.webp",
+   "nombreWeb": "Guante de PVC rojo 30 cm De Pascale",
+   "descripcion": "PVC rojo con soporte de algodón, largo 30 cm. Para líquidos y grasas.",
+   "descripcionLarga": "Guante de PVC rojo con soporte interior de algodón interlock y largo total de 30 cm, que protege la mano y parte del antebrazo de líquidos, grasas y aceites. Impermeable, resistente a la abrasión y cómodo por dentro. Para mantenimiento, petróleo, limpieza industrial y manipulación de productos húmedos.",
+   "specs": {
+    "material": "PVC con soporte interlock de algodón",
+    "largo": "30 cm",
+    "norma": "IRAM 3607-3608 (3-1-2-1)",
+    "código fabricante": "DPS31345"
+   },
+   "beneficios": [
+    {
+     "titulo": "PVC impermeable",
+     "texto": "No deja pasar agua, grasas ni aceites."
+    },
+    {
+     "titulo": "Largo 30 cm",
+     "texto": "Cubre mano y parte del antebrazo."
+    },
+    {
+     "titulo": "Soporte de algodón",
+     "texto": "Cómodo y fácil de poner."
+    },
+    {
+     "titulo": "Resistente a la abrasión",
+     "texto": "IRAM 3608: abrasión 3."
+    },
+    {
+     "titulo": "Liviano",
+     "texto": "Buena flexibilidad para el trabajo diario."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original De Pascale, certificado y con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Petróleo y petroquímica",
+    "Mantenimiento",
+    "Limpieza industrial",
+    "Metalmecánica",
+    "Lavaderos",
+    "Agro"
+   ],
+   "variantes": [
+    {
+     "color": "rojo",
+     "colorFabricante": "Rojo",
+     "foto": "/img/catalogo/guante-pvc-rojo-30-cm--rojo.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-pvc-rojo-30-cm.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-pvc-rojo-30-cm.pdf",
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['0GUAPVCRJ30', '0GUAPVCRJ35', '0GUAPVCRJ40', 'GUPVCRJ']. Talles a validar con Diforza."
   },
   {
    "id": "guante-rugoso-mapa-enduro-328",
@@ -7180,35 +8771,93 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 36,
     "empresas": 1
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-sin-cost-anticorte",
-   "nombre": "Guante Sin Cost Anticorte",
+   "nombre": "Guante anticorte sin costura recubierto en nitrilo De Pascale",
    "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
     "GUANTDPS"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "gris"
+   ],
+   "talles": "7 al 11",
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 600,
     "empresas": 1
-   }
+   },
+   "nombreWeb": "Guante anticorte sin costura recubierto en nitrilo De Pascale",
+   "descripcion": "HPPE anticorte nivel C con palma de nitrilo negro.",
+   "descripcionLarga": "Guante tejido anticorte de hilo HPPE (polietileno de muy alta densidad, 10 veces más resistente que el acero a igual peso) con palma recubierta en nitrilo negro. Máxima protección al corte con muy buena destreza (nivel 5) y agarre en piezas engrasadas. Resistente a la humedad y a los rayos UV. Certificado IRAM 3607-3608 con nivel de corte C.",
+   "specs": {
+    "tejido": "HPPE + spandex + nylon, sin costura",
+    "recubrimiento": "Nitrilo en palma",
+    "norma": "IRAM 3607-3608 (4544C)",
+    "código fabricante": "DPS88802–DPS88806"
+   },
+   "beneficios": [
+    {
+     "titulo": "Anticorte nivel C",
+     "texto": "IRAM 3608: abrasión 4 · corte 5 · desgarro 4 · punción 4 · corte C."
+    },
+    {
+     "titulo": "Hilo HPPE",
+     "texto": "Fibra de altísima resistencia, liviana y fresca."
+    },
+    {
+     "titulo": "Palma de nitrilo",
+     "texto": "Agarre firme en piezas con aceite."
+    },
+    {
+     "titulo": "Destreza nivel 5",
+     "texto": "Para trabajos de precisión."
+    },
+    {
+     "titulo": "Sin costuras",
+     "texto": "Cómodo toda la jornada."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original De Pascale, certificado y con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Manipuleo de chapas",
+    "Metalmecánica",
+    "Industria del vidrio",
+    "Mantenimiento",
+    "Autopartes",
+    "Reciclado"
+   ],
+   "variantes": [
+    {
+     "color": "gris",
+     "colorFabricante": "Gris y negro",
+     "foto": "/img/catalogo/guante-sin-cost-anticorte--gris-y-negro.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-sin-cost-anticorte.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/guante-sin-cost-anticorte--gris-y-negro.webp",
+   "fichaTecnica": "/assets/docs/fichas/guante-sin-cost-anticorte.pdf",
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUANTDPS']. Talles a validar con Diforza."
   },
   {
    "id": "guante-soldador-descarne-forrado-costura-kevlar",
    "nombre": "Guante soldador descarne forrado costura kevlar",
    "marca": "Diforza",
    "linea": "epp",
-   "subcategoria": "proteccion-manos",
+   "subcategoria": "proteccion-soldadura",
    "codigosERP": [
     "GUSOLKEV"
    ],
@@ -7222,7 +8871,8 @@
     "unidades": 184,
     "empresas": 4
    },
-   "foto": "/img/catalogo/guante-soldador-descarne-forrado-costura-kevlar.webp"
+   "foto": "/img/catalogo/guante-soldador-descarne-forrado-costura-kevlar.webp",
+   "nota": "Movido de manos a soldadura 10 oct."
   },
   {
    "id": "guante-tej-naranja-recub-en-latex-rugoso-dps89175",
@@ -7236,11 +8886,12 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 396,
     "empresas": 2
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-tej-naranja-recub-en-latex-rugoso-dps89174",
@@ -7253,11 +8904,12 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-tejido-bano-completo-nitrilo",
-   "nombre": "Guante Tejido Baño Completo Nitrilo",
+   "nombre": "Guante tejido sin costura recubierto completo en nitrilo De Pascale",
    "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
@@ -7265,9 +8917,68 @@
     "GUBAÑCNIT",
     "GUABAÑCNIT"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": true
+   "colores": [
+    "negro"
+   ],
+   "talles": "7 al 11",
+   "visible": true,
+   "nombreWeb": "Guante tejido sin costura recubierto completo en nitrilo De Pascale",
+   "descripcion": "Tejido de poliéster sin costura con baño completo de nitrilo negro.",
+   "descripcionLarga": "Guante tejido de poliéster sin costuras, recubierto completamente en nitrilo en palma y dorso. Combina la destreza de un guante tejido (nivel 5) con la protección de un baño completo: máximo agarre en piezas frías, húmedas o secas y resistencia a la abrasión y la humedad. Certificado según IRAM 3607-3608.",
+   "specs": {
+    "tejido": "Poliéster sin costura",
+    "recubrimiento": "Nitrilo completo (palma y dorso)",
+    "destreza": "Nivel 5",
+    "norma": "IRAM 3607-3608 (3-1-2-1)",
+    "código fabricante": "DPS88305"
+   },
+   "beneficios": [
+    {
+     "titulo": "Baño completo de nitrilo",
+     "texto": "Palma y dorso protegidos de la humedad."
+    },
+    {
+     "titulo": "Máximo agarre",
+     "texto": "Para piezas húmedas, frías o secas."
+    },
+    {
+     "titulo": "Sin costuras",
+     "texto": "Cómodo y con destreza nivel 5."
+    },
+    {
+     "titulo": "Resistente a la abrasión",
+     "texto": "IRAM 3608: abrasión 3."
+    },
+    {
+     "titulo": "Puño tejido",
+     "texto": "Se ajusta a la muñeca."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original De Pascale, certificado y con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Mantenimiento",
+    "Logística",
+    "Industria",
+    "Armado",
+    "Construcción",
+    "Frigoríficos"
+   ],
+   "variantes": [
+    {
+     "color": "negro",
+     "colorFabricante": "Negro",
+     "foto": "/img/catalogo/guante-tejido-bano-completo-nitrilo--negro.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-tejido-bano-completo-nitrilo.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/guante-tejido-bano-completo-nitrilo--negro.webp",
+   "fichaTecnica": "/assets/docs/fichas/guante-tejido-bano-completo-nitrilo.pdf",
+   "ventasEneJun2026": null,
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUABAÑCNIT', 'GUBAÑCNIT']. Talles a validar con Diforza."
   },
   {
    "id": "guante-tejido-g7-jersey-de-spectra-liso",
@@ -7280,7 +8991,8 @@
    ],
    "colores": [],
    "talles": "6 al 10",
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-terrycloth-acolchado-algodon-laminado-1-cara-pvc",
@@ -7293,11 +9005,12 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 2,
     "empresas": 1
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-terrycloth-algodon-pesado",
@@ -7310,7 +9023,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-terrycloth-kevlar-acol-algodon-puno-descarne",
@@ -7323,7 +9037,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-terrycloth-kevlar-acolchado-algodon",
@@ -7336,29 +9051,88 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 42,
     "empresas": 2
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guante-vaqueta-certificado",
-   "nombre": "Guante Vaqueta Certificado",
-   "marca": "Diforza",
+   "nombre": "Guante de vaqueta Lincoln medio paseo De Pascale",
+   "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
-    "GUAVQT10C"
+    "GUAVQT10C",
+    "GUAVQT11C"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "amarillo"
+   ],
+   "talles": "8 al 11",
    "visible": true,
    "ventasEneJun2026": {
-    "unidades": 4297,
+    "unidades": 4537,
     "empresas": 28
    },
-   "foto": "/img/catalogo/guante-vaqueta-certificado.webp"
+   "foto": "/img/catalogo/guante-vaqueta-certificado--amarillo.webp",
+   "nombreWeb": "Guante de vaqueta Lincoln medio paseo De Pascale",
+   "descripcion": "Cuero vaqueta amarillo, puño elastizado. El clásico de mantenimiento.",
+   "descripcionLarga": "El guante Lincoln o \"medio paseo\" de cuero vaqueta es el clásico de mantenimiento e industria, y el más pedido por nuestros clientes después del moteado. La vaqueta es un cuero fino y suave que da mucha destreza y sensibilidad, con puño elastizado que se ajusta a la muñeca. Sirve también para manipular piezas con grasa o aceite. Certificado según IRAM 3607-3608.",
+   "specs": {
+    "material": "Cuero vaqueta amarillo",
+    "modelo": "Lincoln / medio paseo",
+    "puño": "Elastizado",
+    "norma": "IRAM 3607-3608 (2-1-2-2)",
+    "código fabricante": "221023"
+   },
+   "beneficios": [
+    {
+     "titulo": "Cuero vaqueta",
+     "texto": "Suave, flexible y con alta destreza para tareas de precisión."
+    },
+    {
+     "titulo": "Puño elastizado",
+     "texto": "Se ajusta a la muñeca y no deja entrar suciedad."
+    },
+    {
+     "titulo": "Apto grasas y aceites",
+     "texto": "Se puede usar para manipular piezas engrasadas."
+    },
+    {
+     "titulo": "Certificado IRAM 3607-3608",
+     "texto": "Abrasión 2 · corte 1 · desgarro 2 · punción 2."
+    },
+    {
+     "titulo": "Talles 8 al 11",
+     "texto": "Para todo el personal."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original De Pascale, certificado y con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Mantenimiento",
+    "Metalmecánica",
+    "Petróleo y petroquímica",
+    "Logística",
+    "Construcción",
+    "Choferes y operarios de autoelevadores"
+   ],
+   "variantes": [
+    {
+     "color": "amarillo",
+     "colorFabricante": "Amarillo",
+     "foto": "/img/catalogo/guante-vaqueta-certificado--amarillo.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-vaqueta-certificado.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-vaqueta-certificado.pdf",
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUAVQT10C', 'GUAVQT11C']. Talles a validar con Diforza."
   },
   {
    "id": "guante-vaqueta-certificado-sve",
@@ -7371,11 +9145,12 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 240,
     "empresas": 1
-   }
+   },
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "guardapolvo-adulto",
@@ -7921,20 +9696,76 @@
   },
   {
    "id": "malla-senalizacion-liviana-naranja",
-   "nombre": "Malla Señalización Liviana Naranja",
+   "nombre": "Malla de señalización naranja De Pascale",
    "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
     "MALLASEÑ"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "naranja"
+   ],
+   "talles": "—",
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 718,
     "empresas": 7
-   }
+   },
+   "nombreWeb": "Malla de señalización naranja De Pascale",
+   "descripcion": "Malla plástica reticulada naranja, rollo de 1 × 45 m.",
+   "descripcionLarga": "Malla plástica reticulada naranja de alta visibilidad, liviana y fácil de instalar, para delimitar zanjas, excavaciones, obras y zonas de riesgo. Rollo de 1 m de alto por 45 m de largo (2,56 kg). Línea UCU de De Pascale.",
+   "specs": {
+    "material": "Polietileno reticulado",
+    "medida": "Rollo 1 × 45 m",
+    "peso": "2,56 kg",
+    "código fabricante": "UCU0500PV"
+   },
+   "beneficios": [
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Naranja intenso, se ve a distancia."
+    },
+    {
+     "titulo": "Rollo de 1 × 45 m",
+     "texto": "Cubre grandes perímetros con un solo rollo."
+    },
+    {
+     "titulo": "Liviana",
+     "texto": "Fácil de transportar e instalar."
+    },
+    {
+     "titulo": "Reticulada",
+     "texto": "Deja pasar el viento: no se vuela."
+    },
+    {
+     "titulo": "Reutilizable",
+     "texto": "Se enrolla y se vuelve a usar."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Obras y excavaciones",
+    "Vía pública",
+    "Eventos",
+    "Zonas de riesgo en planta",
+    "Mantenimiento de redes"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/malla-senalizacion-liviana-naranja--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/malla-senalizacion-liviana-naranja.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/malla-senalizacion-liviana-naranja--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/malla-senalizacion-liviana-naranja.pdf",
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Códigos ERP ['MALLASEÑ']."
   },
   {
    "id": "malla-vallado-naranja",
@@ -8482,8 +10313,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
-   "nota": "Manga (protección de antebrazo)"
+   "visible": false,
+   "nota": "Manga (protección de antebrazo) Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "manga-protectora-anti-corte-de-antebrazos",
@@ -8496,8 +10327,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
-   "nota": "Manga (protección de antebrazo)"
+   "visible": false,
+   "nota": "Manga (protección de antebrazo) Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
    "id": "manga-soldador",
@@ -8528,8 +10359,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
-   "nota": "Manga (protección de antebrazo)",
+   "visible": false,
+   "nota": "Manga (protección de antebrazo) Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde.",
    "ventasEneJun2026": {
     "unidades": 34,
     "empresas": 2
@@ -11746,68 +13577,356 @@
   },
   {
    "id": "cono-multiuso-flexible-20",
-   "nombre": "Cono multiuso flexible 20 cm",
+   "nombre": "Cono multiuso flexible 20 cm Conoflex",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "naranja"
+   ],
    "visible": true,
-   "nota": "Del catálogo PDF de Diforza (oct 2026); sin código ERP",
-   "codigoFabricante": "1025"
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP [].",
+   "codigoFabricante": "1025",
+   "nombreWeb": "Cono multiuso flexible 20 cm Conoflex",
+   "descripcion": "PVC flexible con memoria, 20 cm.",
+   "descripcionLarga": "Cono deportivo, fabricado en material PVC flexible con memoria y filtro UV para protección solar, dureza 80 shore A. Conformado en “una sola pieza”. Medidas: 20 cm de altura, con una base de 15 cm de diámetro, su peso es de 0.2 Kg +/- 0.2 KGRS . Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "1025",
+    "material": "PVC flexible con memoria",
+    "altura": "20 cm",
+    "peso": "0,2 kg",
+    "base": "ø 15 cm",
+    "reflectivo": "No aplica"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "PVC flexible con memoria: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Naranja de alta visibilidad."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 20 cm · base ø 15 cm."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 0,2 kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Entrenamiento y deportes",
+    "Estacionamientos",
+    "Demarcación interna en plantas",
+    "Eventos"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/cono-multiuso-flexible-20--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-multiuso-flexible-20.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/cono-multiuso-flexible-20--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/cono-multiuso-flexible-20.pdf",
+   "ventasEneJun2026": null
   },
   {
    "id": "cono-ciudad-light-50",
-   "nombre": "Cono Ciudad Light semiflexible 50 cm",
+   "nombre": "Cono Ciudad Light semiflexible 50 cm Conoflex",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "naranja"
+   ],
    "visible": true,
-   "nota": "Del catálogo PDF de Diforza (oct 2026); sin código ERP",
-   "codigoFabricante": "2051L-1R"
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP [].",
+   "codigoFabricante": "2051L-1R",
+   "nombreWeb": "Cono Ciudad Light semiflexible 50 cm Conoflex",
+   "descripcion": "Polietileno con aditivo UV, 50 cm, reflectivo 1 x 10 cm.",
+   "descripcionLarga": "Cono de señalización vial de 50 cm de altura, fabricado en material polietileno semirrígido, con filtro UV para protección solar. Conformado en “una sola pieza” Presenta 1 banda reflectiva de 10 cm de ancho, con características HIP (HIGH INTENSITY PRISMATIC) según normas IRAM ASTM D4956 Tipo-3. La misma se encuentra bajo relieve de 0,5 cm para su mayor protección. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "2051L-1R",
+    "material": "Polietileno con aditivo UV",
+    "altura": "50 cm",
+    "peso": "0,55 Kg",
+    "base": "ø 24 cm",
+    "reflectivo": "1 x 10 cm"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "Polietileno con aditivo UV: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Bandas reflectivas 1 x 10 cm."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 50 cm · base ø 24 cm."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 0,55 Kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Rutas y autopistas",
+    "Playas de estacionamiento",
+    "Depósitos y plantas industriales",
+    "Eventos",
+    "Desvíos de tránsito"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/cono-ciudad-light-50--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-ciudad-light-50.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/cono-ciudad-light-50--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/cono-ciudad-light-50.pdf",
+   "ventasEneJun2026": null
   },
   {
    "id": "cono-econo-classic-75",
-   "nombre": "Cono Econo Classic semiflexible 75 cm",
+   "nombre": "Cono Econo Classic semiflexible 75 cm Conoflex",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "naranja"
+   ],
    "visible": true,
-   "nota": "Del catálogo PDF de Diforza (oct 2026); sin código ERP",
-   "codigoFabricante": "2070-2R"
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP [].",
+   "codigoFabricante": "2070-2R",
+   "nombreWeb": "Cono Econo Classic semiflexible 75 cm Conoflex",
+   "descripcion": "Polietileno con aditivo UV, 75 cm, reflectivo 2 bandas Reflectivas de ",
+   "descripcionLarga": "Cono de señalización Vial de 75 cm de altura, fabricado en material Polietileno semirrígido con filtro UV para protección Solar. Conformado en 1 sola pieza. Posee 2 bandas Reflectivas de 7,5 cm de ancho cada una ,con características HIP ( High intensity Prismatic ) según normas IRAM ASTM D4956 Tipo -3. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "2070-2R",
+    "material": "Polietileno con aditivo UV",
+    "altura": "75 cm",
+    "peso": "1,3 Kg",
+    "base": "35 x 35 cm",
+    "reflectivo": "2 bandas Reflectivas de 7,5 cm"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "Polietileno con aditivo UV: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Bandas reflectivas 2 bandas Reflectivas de 7,5 cm."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 75 cm · base 35 x 35 cm."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 1,3 Kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Rutas y autopistas",
+    "Playas de estacionamiento",
+    "Depósitos y plantas industriales",
+    "Eventos",
+    "Desvíos de tránsito"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/cono-econo-classic-75--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-econo-classic-75.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/cono-econo-classic-75--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/cono-econo-classic-75.pdf",
+   "ventasEneJun2026": null
   },
   {
    "id": "econo-semiflexible-sin-base-70",
-   "nombre": "Econo semiflexible sin base 2 piezas 70 cm",
+   "nombre": "Cono Econo Light semiflexible 70 cm Conoflex",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "naranja"
+   ],
    "visible": true,
-   "nota": "Del catálogo PDF de Diforza (oct 2026); sin código ERP",
-   "codigoFabricante": "2071L-2R"
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP [].",
+   "codigoFabricante": "2071L-2R",
+   "nombreWeb": "Cono Econo Light semiflexible 70 cm Conoflex",
+   "descripcion": "Polietileno semiflexible con aditivo UV, 70 cm, reflectivo 1 x 10 y 1 ",
+   "descripcionLarga": "Econo Light Semiflexible Fabricado con material de polietileno semiflexible de alta calidad, con aditivo UV para protección solar, garantizando una excelente resistencia frente a las condiciones climáticas severas y la exposición a la intemperie. Cuerpo del Cono: Altura total: 70 cm. Dimensiones de la base: Ø 24 cm de diámetro, con una altura de 5 cm. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "2071L-2R",
+    "material": "Polietileno semiflexible con aditivo UV",
+    "altura": "70 cm",
+    "peso": "0,75 kg",
+    "diámetro base": "24 cm",
+    "reflectivo": "1 x 10 y 1 x 5 cm"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "Polietileno semiflexible con aditivo UV: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Bandas reflectivas 1 x 10 y 1 x 5 cm."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 70 cm."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 0,75 kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Rutas y autopistas",
+    "Playas de estacionamiento",
+    "Depósitos y plantas industriales",
+    "Eventos",
+    "Desvíos de tránsito"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/econo-semiflexible-sin-base-70--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/econo-semiflexible-sin-base-70.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/econo-semiflexible-sin-base-70--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/econo-semiflexible-sin-base-70.pdf",
+   "ventasEneJun2026": null
   },
   {
    "id": "rutero-semiflexible-36",
-   "nombre": "Rutero semiflexible 2 piezas 36×36 cm",
+   "nombre": "Cono Rutero semiflexible 90 cm Conoflex",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "naranja"
+   ],
    "visible": true,
-   "nota": "Del catálogo PDF de Diforza (oct 2026); sin código ERP",
-   "codigoFabricante": "1200LSF-2R"
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP [].",
+   "codigoFabricante": "1200LSF-2R",
+   "nombreWeb": "Cono Rutero semiflexible 90 cm Conoflex",
+   "descripcion": "PVC flexible, 90 cm, reflectivo 1X15 Y 1X10 cm.",
+   "descripcionLarga": "Cono de señalización y seguridad vial, fabricado en polietileno semiflexible con filtro UV para protección solar Conformado en dos piezas, cono y base de contrapeso. Presenta 2 bandas reflectivas una de 15 cm de ancho y otra de 10 cm de ancho, con características HIP (HIGH INTENSITY PRISMATIC) según normas IRAM ASTM D4956 Tipo-3. Las mismas se encuentran bajo relieve de 0,5 cm para su mayor protección. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "1200LSF-2R",
+    "material": "PVC flexible",
+    "altura": "90 cm",
+    "peso": "5 kg",
+    "base": "36 x 36 cm",
+    "reflectivo": "1X15 Y 1X10 cm"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "PVC flexible: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Bandas reflectivas 1X15 Y 1X10 cm."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 90 cm · base 36 x 36 cm."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 5 kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Obras y vía pública",
+    "Rutas y autopistas",
+    "Playas de estacionamiento",
+    "Depósitos y plantas industriales",
+    "Eventos",
+    "Desvíos de tránsito"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/rutero-semiflexible-36--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/rutero-semiflexible-36.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/rutero-semiflexible-36--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/rutero-semiflexible-36.pdf",
+   "ventasEneJun2026": null
   },
   {
    "id": "cono-economico-rigido-75",
@@ -11818,48 +13937,211 @@
    "codigosERP": [],
    "colores": [],
    "talles": null,
-   "visible": true,
-   "nota": "Del catálogo PDF de Diforza (oct 2026); sin código ERP",
+   "visible": false,
+   "nota": "Del catálogo PDF de Diforza (oct 2026); sin código ERP Oculto 10 oct (conos): unificado en el modelo equivalente o sin match con fabricante.",
    "codigoFabricante": "UCU0002PV"
   },
   {
    "id": "cono-delineador-flexible-60",
-   "nombre": "Cono delineador flexible 60 cm, hormigón/asfalto",
-   "marca": "Diforza",
+   "nombre": "Delineador flexible rebatible 60 cm Conoflex",
+   "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "amarillo"
+   ],
    "visible": true,
-   "nota": "Del catálogo PDF de Diforza (oct 2026); sin código ERP",
-   "codigoFabricante": "DR 600 LE"
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP [].",
+   "codigoFabricante": "DR 600 LE",
+   "nombreWeb": "Delineador flexible rebatible 60 cm Conoflex",
+   "descripcion": "Copolímero flexible con filtro UV, 60 cm, reflectivo 2 x 5 cm.",
+   "descripcionLarga": "Delineador rebatible para demarcación vial, fabricado en material copolimero flexible, con filtro UV para protección solar. Conformado en “una sola pieza”. Altura 60 cm, diámetro de 5,5 cm y un peso de 1 kg. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "DR",
+    "material": "Copolímero flexible con filtro UV",
+    "altura": "60 cm",
+    "peso": "1 kg",
+    "base": "ø 20 cm",
+    "reflectivo": "2 x 5 cm"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "Copolímero flexible con filtro UV: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Bandas reflectivas 2 x 5 cm."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura 60 cm · base ø 20 cm."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Peso total 1 kg."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Rutas y autopistas",
+    "Ciclovías y bicisendas",
+    "Estacionamientos",
+    "Accesos a plantas",
+    "Separación de carriles"
+   ],
+   "variantes": [
+    {
+     "color": "amarillo",
+     "colorFabricante": "Amarillo",
+     "foto": "/img/catalogo/cono-delineador-flexible-60--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-delineador-flexible-60.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/cono-delineador-flexible-60--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/cono-delineador-flexible-60.pdf",
+   "ventasEneJun2026": null
   },
   {
    "id": "cono-delineador-flexible-60-desmontable",
-   "nombre": "Cono delineador flexible 60 cm desmontable, fijación H/A",
-   "marca": "Diforza",
+   "nombre": "Delineador rebatible desmontable Conoflex",
+   "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
-   "codigosERP": [],
-   "colores": [],
-   "talles": null,
+   "codigosERP": [
+    "DELDESM"
+   ],
+   "colores": [
+    "amarillo"
+   ],
    "visible": true,
-   "nota": "Del catálogo PDF de Diforza (oct 2026); sin código ERP",
-   "codigoFabricante": "DR 600 LE BN"
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['DELDESM'].",
+   "codigoFabricante": "DR 600 LE BN",
+   "nombreWeb": "Delineador rebatible desmontable Conoflex",
+   "descripcion": "Polietileno con aditivo UV, .",
+   "descripcionLarga": " Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "DRD",
+    "material": "Polietileno con aditivo UV"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "Polietileno con aditivo UV: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Naranja de alta visibilidad."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura ."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Diseñado para mantenerse en pie con viento y tránsito."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Rutas y autopistas",
+    "Ciclovías",
+    "Estacionamientos",
+    "Accesos a plantas"
+   ],
+   "variantes": [
+    {
+     "color": "amarillo",
+     "colorFabricante": "Amarillo",
+     "foto": "/img/catalogo/cono-delineador-flexible-60-desmontable--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-delineador-flexible-60-desmontable.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/cono-delineador-flexible-60-desmontable--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/cono-delineador-flexible-60-desmontable.pdf",
+   "ventasEneJun2026": null
   },
   {
    "id": "tope-de-camion-90",
-   "nombre": "Tope de camión 90 cm, hormigón/asfalto",
-   "marca": "Diforza",
+   "nombre": "Tope de camión Conoflex",
+   "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "negro"
+   ],
    "visible": true,
-   "nota": "Del catálogo PDF de Diforza (oct 2026); sin código ERP",
-   "codigoFabricante": "MP3048HD"
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP [].",
+   "codigoFabricante": "MP3048HD",
+   "nombreWeb": "Tope de camión Conoflex",
+   "descripcion": "Polietileno con aditivo UV, .",
+   "descripcionLarga": " Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
+   "specs": {
+    "código fabricante": "MP3048HD",
+    "material": "Polietileno con aditivo UV"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fabricante líder",
+     "texto": "Conoflex: más de 25 años fabricando señalización vial en Argentina."
+    },
+    {
+     "titulo": "Material",
+     "texto": "Polietileno con aditivo UV: resiste golpes, sol e intemperie."
+    },
+    {
+     "titulo": "Alta visibilidad",
+     "texto": "Naranja de alta visibilidad."
+    },
+    {
+     "titulo": "Medidas",
+     "texto": "Altura ."
+    },
+    {
+     "titulo": "Estable",
+     "texto": "Diseñado para mantenerse en pie con viento y tránsito."
+    },
+    {
+     "titulo": "Ficha técnica",
+     "texto": "Descargá la ficha oficial del fabricante con todas las especificaciones."
+    }
+   ],
+   "usos": [
+    "Playas de carga y descarga",
+    "Depósitos y centros logísticos",
+    "Estacionamientos de camiones",
+    "Plantas industriales"
+   ],
+   "variantes": [
+    {
+     "color": "negro",
+     "colorFabricante": "Negro",
+     "foto": "/img/catalogo/tope-de-camion-90--naranja.webp",
+     "fichaTecnica": "/assets/docs/fichas/tope-de-camion-90.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/tope-de-camion-90--naranja.webp",
+   "fichaTecnica": "/assets/docs/fichas/tope-de-camion-90.pdf",
+   "ventasEneJun2026": null
   },
   {
    "id": "casco-m-class-visor",
@@ -12017,28 +14299,146 @@
   },
   {
    "id": "guante-aramida-g7",
-   "nombre": "Guante de aramida sin costura G7",
-   "marca": "Diforza",
+   "nombre": "Guante de aramida sin costura G7 De Pascale",
+   "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
-   "codigosERP": [],
-   "colores": [],
+   "codigosERP": [
+    "GUANKVHIBT"
+   ],
+   "colores": [
+    "amarillo"
+   ],
    "talles": "10",
    "visible": true,
-   "nota": "Del catálogo PDF de Diforza (oct 2026); sin código ERP",
-   "foto": "/img/catalogo/guante-aramida-g7.webp"
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUANKVHIBT']. Talles a validar con Diforza.",
+   "foto": "/img/catalogo/guante-aramida-g7--amarillo.webp",
+   "nombreWeb": "Guante de aramida sin costura G7 De Pascale",
+   "descripcion": "Tejido de aramida: resistencia al corte y al calor.",
+   "descripcionLarga": "Guante tejido sin costuras de hilo de aramida, una fibra de alta resistencia térmica y mecánica. Protege del corte (nivel 3) y del calor de contacto, por eso se usa en metalurgia, vidrio, chapa y manipulación de piezas calientes o con filo. Cómodo y flexible. Certificado según IRAM 3607-3608.",
+   "specs": {
+    "tejido": "Aramida G7 sin costura",
+    "protección": "Corte y calor de contacto",
+    "norma": "IRAM 3607-3608 (2-3-4-1)",
+    "código fabricante": "DPS80725"
+   },
+   "beneficios": [
+    {
+     "titulo": "Hilo de aramida",
+     "texto": "Alta resistencia al corte y al calor."
+    },
+    {
+     "titulo": "Corte nivel 3",
+     "texto": "IRAM 3608: abrasión 2 · corte 3 · desgarro 4 · punción 1."
+    },
+    {
+     "titulo": "Sin costuras",
+     "texto": "Cómodo y sin puntos de roce."
+    },
+    {
+     "titulo": "Galga 7",
+     "texto": "Tejido resistente y durable."
+    },
+    {
+     "titulo": "Para piezas calientes",
+     "texto": "Protege del calor de contacto."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original De Pascale, certificado y con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Metalurgia",
+    "Industria del vidrio",
+    "Manipulación de chapa",
+    "Fundición",
+    "Mantenimiento",
+    "Petroquímica"
+   ],
+   "variantes": [
+    {
+     "color": "amarillo",
+     "colorFabricante": "Amarillo",
+     "foto": "/img/catalogo/guante-aramida-g7--amarillo.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-aramida-g7.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-aramida-g7.pdf",
+   "ventasEneJun2026": {
+    "unidades": 1740,
+    "empresas": 1
+   }
   },
   {
    "id": "guante-latex-neoprene",
-   "nombre": "Guante látex neoprene mix flocado",
-   "marca": "Diforza",
+   "nombre": "Guante de látex neoprene mix flocado De Pascale",
+   "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "azul-marino"
+   ],
+   "talles": "7 al 11",
    "visible": true,
-   "nota": "Del catálogo PDF de Diforza (oct 2026); sin código ERP"
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos []. Talles a validar con Diforza.",
+   "nombreWeb": "Guante de látex neoprene mix flocado De Pascale",
+   "descripcion": "Látex + neoprene de 0,7 mm, flocado. Protección química.",
+   "descripcionLarga": "Guante de mezcla de látex y neoprene, extra pesado (0,70 mm), con interior flocado. Protege contra riesgos químicos y microorganismos: certificado para metanol (clase 2) y ácido sulfúrico 96 % (clase 5). Es el guante para pintura, manipulación de solventes y resinas, y limpieza industrial.",
+   "specs": {
+    "material": "Látex + neoprene, flocado",
+    "espesor": "0,70 mm",
+    "norma": "IRAM 3607 · IRAM 3609-2 · IRAM 3609-3",
+    "químicos": "Metanol clase 2 · ácido sulfúrico 96 % clase 5",
+    "código fabricante": "DPS91496"
+   },
+   "beneficios": [
+    {
+     "titulo": "Protección química",
+     "texto": "Metanol clase 2 · ácido sulfúrico 96 % clase 5."
+    },
+    {
+     "titulo": "Extra pesado",
+     "texto": "Espesor de 0,70 mm."
+    },
+    {
+     "titulo": "Interior flocado",
+     "texto": "Más cómodo y fácil de poner y sacar."
+    },
+    {
+     "titulo": "Protección biológica",
+     "texto": "Contra microorganismos (IRAM 3609)."
+    },
+    {
+     "titulo": "Flexible",
+     "texto": "Buen confort a pesar del espesor."
+    },
+    {
+     "titulo": "Distribuidores De Pascale",
+     "texto": "Producto original De Pascale, certificado y con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Pintura y productoras de pintura",
+    "Industria automotriz",
+    "Limpieza industrial",
+    "Industria aeronáutica",
+    "Resinas y materiales compuestos"
+   ],
+   "variantes": [
+    {
+     "color": "azul-marino",
+     "colorFabricante": "Azul",
+     "foto": "/img/catalogo/guante-latex-neoprene--azul.webp",
+     "fichaTecnica": "/assets/docs/fichas/guante-latex-neoprene.pdf",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/guante-latex-neoprene--azul.webp",
+   "fichaTecnica": "/assets/docs/fichas/guante-latex-neoprene.pdf",
+   "ventasEneJun2026": null
   },
   {
    "id": "arnes-3-puntos-sky",
