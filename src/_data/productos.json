@@ -561,85 +561,93 @@
       "id": "anteojo-argon",
       "linea": "epp",
       "subcategoria": "proteccion-ocular",
-      "nombre": "Anteojo Libus Argon",
+      "nombre": "Anteojo de seguridad Libus Argon",
       "marca": "Libus",
       "codigo": "900499",
-      "descripcion": "Anteojo de seguridad liviano. Versión antiempañante (AF).",
+      "descripcion": "El clásico Libus: patilla telescópica y protección lateral. HC o AF.",
       "atributos": [
         {
-          "tipo": "texto",
-          "valor": "Lente transparente o gris"
+          "tipo": "colores",
+          "valores": [
+            "transparente",
+            "gris",
+            "transparente",
+            "gris"
+          ]
         },
         {
-          "tipo": "texto",
-          "valor": "HC antirrayadura / AF antiempaño"
+          "tipo": "talles",
+          "valor": "Único"
         }
       ],
       "foto": {
-        "src": "/img/productos/anteojo-argon.webp",
+        "src": "/img/catalogo/anteojo-libus-argon--transparente-hc.webp",
         "estado": "producto"
       },
       "masVendido": true,
       "empresas": 72,
-      "catalogoId": "anteojo-argon-transparente-hc"
+      "catalogoId": "anteojo-libus-argon"
     },
     {
       "id": "casco-milenium",
       "linea": "epp",
       "subcategoria": "proteccion-craneal",
-      "nombre": "Casco Libus Milenium",
+      "nombre": "Casco de seguridad Libus Milenium Class S/V",
       "marca": "Libus",
       "codigo": "902386/95",
-      "descripcion": "Visera frontal y 8 ranuras de anclaje para accesorios.",
+      "descripcion": "Casco modular de polietileno, visera de 3,5 cm. Sin arnés.",
       "atributos": [
         {
           "tipo": "colores",
           "valores": [
-            "amarillo",
             "blanco",
-            "azul-marino",
-            "rojo",
-            "verde",
-            "naranja",
-            "gris"
+            "amarillo",
+            "azul"
           ]
         },
         {
-          "tipo": "texto",
-          "valor": "Arnés plástico o textil"
+          "tipo": "talles",
+          "valor": "Único"
         }
       ],
       "foto": {
-        "src": "/img/productos/casco-milenium.webp",
+        "src": "/img/catalogo/casco-libus-milenium-class--blanco.webp",
         "estado": "producto"
       },
       "empresas": 48,
-      "catalogoId": "casco-milenium"
+      "catalogoId": "casco-libus-milenium-class"
     },
     {
       "id": "anteojo-ecoline",
       "linea": "epp",
       "subcategoria": "proteccion-ocular",
-      "nombre": "Anteojo Libus Eco-line",
+      "nombre": "Anteojo de seguridad Libus Eco Line",
       "marca": "Libus",
       "codigo": "900558",
-      "descripcion": "Anteojo de seguridad económico, para uso diario.",
+      "descripcion": "Diseño ojo de gato liviano y económico. 4 colores de lente.",
       "atributos": [
         {
-          "tipo": "texto",
-          "valor": "Lente transparente o gris"
+          "tipo": "colores",
+          "valores": [
+            "transparente",
+            "gris",
+            "amarillo",
+            "in-out",
+            "transparente",
+            "gris"
+          ]
         },
         {
-          "tipo": "texto",
-          "valor": "HC antirrayadura / AF antiempaño"
+          "tipo": "talles",
+          "valor": "Único"
         }
       ],
       "foto": {
-        "src": "/img/productos/anteojo-ecoline.webp",
+        "src": "/img/catalogo/anteojo-libus-eco-line--transparente-hc.webp",
         "estado": "producto"
       },
       "empresas": 45,
-      "catalogoId": "anteojo-eco-line-transparente-hc"
+      "catalogoId": "anteojo-libus-eco-line"
     },
     {
       "id": "faja-lumbar",
@@ -700,47 +708,61 @@
       "id": "arnes-cremallera",
       "linea": "epp",
       "subcategoria": "proteccion-craneal",
-      "nombre": "Arnés Libus a cremallera",
+      "nombre": "Arnés para casco Libus Milenium",
       "marca": "Libus",
       "codigo": "902414",
-      "descripcion": "Arnés de repuesto para casco Milenium, ajuste por cremallera.",
+      "descripcion": "Arnés de recambio para cascos Milenium: estándar o cremallera, plástico o textil.",
       "atributos": [
         {
-          "tipo": "texto",
-          "valor": "Plástico o textil"
+          "tipo": "colores",
+          "valores": [
+            "negro",
+            "negro",
+            "negro",
+            "negro"
+          ]
+        },
+        {
+          "tipo": "talles",
+          "valor": "Único"
         }
       ],
       "foto": {
-        "src": "/img/productos/arnes-cremallera.webp",
+        "src": "/img/catalogo/arnes-libus-milenium--estandar-plastico.webp",
         "estado": "producto"
       },
       "empresas": 37,
-      "catalogoId": "arnes-a-cremallera-plastico-libus"
+      "catalogoId": "arnes-libus-milenium"
     },
     {
       "id": "protector-quantum",
       "linea": "epp",
       "subcategoria": "proteccion-auditiva",
-      "nombre": "Tapón auditivo Libus Quantum",
+      "nombre": "Protector auditivo endoaural Libus Quantum",
       "marca": "Libus",
       "codigo": "900473",
-      "descripcion": "Reutilizable y lavable, diseño de triple aleta. Con cordón.",
+      "descripcion": "Tapón premoldeado reutilizable con cordón. NRR 26 dB.",
       "atributos": [
         {
-          "tipo": "texto",
-          "valor": "Atenuación 26 dB"
+          "tipo": "colores",
+          "valores": [
+            "verde",
+            "verde",
+            "amarillo",
+            "verde"
+          ]
         },
         {
-          "tipo": "texto",
-          "valor": "Dispenser o caja para cinturón"
+          "tipo": "talles",
+          "valor": "Único"
         }
       ],
       "foto": {
-        "src": "/img/productos/protector-quantum.webp",
+        "src": "/img/catalogo/protector-auditivo-libus-quantum--dispenser.webp",
         "estado": "producto"
       },
       "pendiente": "26 dB según revendedor (ventasxmayor), no figura en la ficha oficial de Libus",
-      "catalogoId": "protector-auditivo-quantum"
+      "catalogoId": "protector-auditivo-libus-quantum"
     },
     {
       "id": "guante-vaqueta",
@@ -773,23 +795,29 @@
       "id": "protector-alternative",
       "linea": "epp",
       "subcategoria": "proteccion-auditiva",
-      "nombre": "Protector auditivo de copa Alternative",
+      "nombre": "Protector auditivo de copa Libus Alternative",
       "marca": "Libus",
       "codigo": "901374",
-      "descripcion": "Copa con vincha plástica flexible, almohadillas lavables.",
+      "descripcion": "Copa de vincha liviana y económica. NRR 23 dB.",
       "atributos": [
         {
-          "tipo": "texto",
-          "valor": "Atenuación 22 dB"
+          "tipo": "colores",
+          "valores": [
+            "gris"
+          ]
+        },
+        {
+          "tipo": "talles",
+          "valor": "Único"
         }
       ],
       "foto": {
-        "src": "/img/productos/protector-alternative.webp",
+        "src": "/img/catalogo/protector-auditivo-libus-alternative--vincha.webp",
         "estado": "producto"
       },
       "empresas": 26,
       "pendiente": "22 dB según revendedor (ventasxmayor), no figura en la ficha oficial de Libus",
-      "catalogoId": "protector-auditivo-alternative-vincha"
+      "catalogoId": "protector-auditivo-libus-alternative"
     },
     {
       "id": "guante-nitrilo",
@@ -850,51 +878,55 @@
       "id": "arnes-anticaida",
       "linea": "epp",
       "subcategoria": "altura",
-      "nombre": "Arnés anticaída SKY 10404F",
+      "nombre": "Arnés anticaídas SKY 10404F con toma frontal y protector lumbar",
       "marca": "SKY",
       "codigo": "SKY10404F",
-      "descripcion": "Toma dorsal y frontal, faja lumbar acolchada. Poliéster de alta tenacidad.",
+      "descripcion": "Tomas dorsal y frontal, 2 argollas en cintura y lumbar acolchado.",
       "atributos": [
         {
-          "tipo": "texto",
-          "valor": "Hebillas regulables en hombros y piernas"
+          "tipo": "colores",
+          "valores": [
+            "amarillo"
+          ]
         },
         {
-          "tipo": "texto",
-          "valor": "Colas de amarre por separado"
+          "tipo": "talles",
+          "valor": "Único, regulable"
         }
       ],
       "foto": {
-        "src": "/img/productos/arnes-anticaida.webp",
+        "src": "/img/catalogo/arnes-sky-10404f--amarillo-y-azul.webp",
         "estado": "producto"
       },
       "empresas": null,
-      "catalogoId": "arnes-completo-con-toma-frontal-y-faja-lumbar"
+      "catalogoId": "arnes-sky-10404f"
     },
     {
       "id": "semimascara",
       "linea": "epp",
       "subcategoria": "proteccion-respiratoria",
-      "nombre": "Semimáscara Libus 4000 Next",
+      "nombre": "Semimáscara reutilizable BLS 4000 Next R",
       "marca": "Libus",
       "codigo": "1051726",
-      "descripcion": "Semimáscara reutilizable con filtros intercambiables.",
+      "descripcion": "Media máscara de 2 filtros en caucho termoplástico, bayoneta b-lock.",
       "atributos": [
         {
-          "tipo": "texto",
-          "valor": "Talla M/L · TPE o silicona"
+          "tipo": "colores",
+          "valores": [
+            "gris"
+          ]
         },
         {
-          "tipo": "texto",
-          "valor": "Filtros para gases, vapores y partículas"
+          "tipo": "talles",
+          "valor": "M/L"
         }
       ],
       "foto": {
-        "src": "/img/productos/semimascara.webp",
+        "src": "/img/catalogo/semimascara-bls-4000-next-r--caucho-termoplastico-m-l.webp",
         "estado": "producto"
       },
       "empresas": null,
-      "catalogoId": "semimascara-4000-next-r-m-l"
+      "catalogoId": "semimascara-bls-4000-next-r"
     },
     {
       "id": "mameluco-ziao",
@@ -955,43 +987,55 @@
       "id": "respirador-522",
       "linea": "epp",
       "subcategoria": "proteccion-respiratoria",
-      "nombre": "Respirador descartable Libus 522",
+      "nombre": "Mascarilla desechable BLS 522 FFP2",
       "marca": "Libus",
       "codigo": "1051724",
-      "descripcion": "Respirador plegable para polvo y partículas, sin válvula.",
+      "descripcion": "Mascarilla plegable vertical FFP2, sin válvula, en envase individual.",
       "atributos": [
         {
-          "tipo": "texto",
-          "valor": "FFP2 NR D"
+          "tipo": "colores",
+          "valores": [
+            "blanco"
+          ]
+        },
+        {
+          "tipo": "talles",
+          "valor": "Único"
         }
       ],
       "foto": {
-        "src": "/img/productos/respirador-522.webp",
+        "src": "/img/catalogo/mascarilla-bls-522--ffp2-nr.webp",
         "estado": "producto"
       },
       "impulsar": true,
-      "catalogoId": "respirador-522"
+      "catalogoId": "mascarilla-bls-522"
     },
     {
       "id": "mascarilla-502",
       "linea": "epp",
       "subcategoria": "proteccion-respiratoria",
-      "nombre": "Mascarilla 502 tipo N95",
+      "nombre": "Mascarilla desechable BLS 502 FFP2",
       "marca": "Diforza",
       "codigo": "MASC502",
-      "descripcion": "Mascarilla descartable para polvo y partículas.",
+      "descripcion": "Mascarilla plegable en forma de pico FFP2, sin válvula.",
       "atributos": [
         {
-          "tipo": "texto",
-          "valor": "Tipo N95"
+          "tipo": "colores",
+          "valores": [
+            "blanco"
+          ]
+        },
+        {
+          "tipo": "talles",
+          "valor": "Único"
         }
       ],
       "foto": {
-        "src": "/img/productos/mascarilla-502.webp",
+        "src": "/img/catalogo/mascarilla-bls-502--ffp2-nr-d.webp",
         "estado": "producto"
       },
       "impulsar": true,
-      "catalogoId": "mascarilla-502-n95"
+      "catalogoId": "mascarilla-bls-502"
     },
     {
       "id": "botin-ombu-frances",

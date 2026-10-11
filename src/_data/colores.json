@@ -1,101 +1,109 @@
 {
-  "_nota": "Paleta de colores de producto (id → nombre y hex aproximado para el punto de color de la tarjeta).",
-  "colores": {
-    "negro": {
-      "nombre": "Negro",
-      "hex": "#1A1A1A"
-    },
-    "azul-marino": {
-      "nombre": "Azul marino",
-      "hex": "#1F2A44"
-    },
-    "blanco": {
-      "nombre": "Blanco",
-      "hex": "#FFFFFF"
-    },
-    "beige": {
-      "nombre": "Beige",
-      "hex": "#D8C7A3"
-    },
-    "gris": {
-      "nombre": "Gris",
-      "hex": "#8A8D91"
-    },
-    "marron": {
-      "nombre": "Marrón",
-      "hex": "#6B4228"
-    },
-    "verde": {
-      "nombre": "Verde",
-      "hex": "#2E7D32"
-    },
-    "verde-ingles": {
-      "nombre": "Verde inglés",
-      "hex": "#1F4D3A"
-    },
-    "naranja": {
-      "nombre": "Naranja",
-      "hex": "#F26B1D"
-    },
-    "gris-topo": {
-      "nombre": "Gris topo",
-      "hex": "#6E6259"
-    },
-    "verde-benetton": {
-      "nombre": "Verde Benetton",
-      "hex": "#00845A"
-    },
-    "azulino": {
-      "nombre": "Azulino",
-      "hex": "#4A7FC1"
-    },
-    "azul": {
-      "nombre": "Azul",
-      "hex": "#1E4FA0"
-    },
-    "verde-oliva": {
-      "nombre": "Verde oliva",
-      "hex": "#6B6B2E"
-    },
-    "amarillo": {
-      "nombre": "Amarillo",
-      "hex": "#F2C500"
-    },
-    "gris-melange": {
-      "nombre": "Gris melange",
-      "hex": "#A7A9AC"
-    },
-    "jean": {
-      "nombre": "Jean",
-      "hex": "#3E5C7E"
-    },
-    "celeste": {
-      "nombre": "Celeste",
-      "hex": "#8EC5E8"
-    },
-    "bordo": {
-      "nombre": "Bordó",
-      "hex": "#6D1A2B"
-    },
-    "camel": {
-      "nombre": "Camel",
-      "hex": "#B5835A"
-    },
-    "vison": {
-      "nombre": "Visón",
-      "hex": "#8C7B6B"
-    },
-    "rojo": {
-      "nombre": "Rojo",
-      "hex": "#C62828"
-    },
-    "verde-manzana": {
-      "nombre": "Verde manzana",
-      "hex": "#7CB342"
-    },
-    "azul-francia": {
-      "nombre": "Azul francia",
-      "hex": "#2B55A6"
-    }
+ "_nota": "Paleta de colores de producto (id → nombre y hex aproximado para el punto de color de la tarjeta).",
+ "colores": {
+  "negro": {
+   "nombre": "Negro",
+   "hex": "#1A1A1A"
+  },
+  "azul-marino": {
+   "nombre": "Azul marino",
+   "hex": "#1F2A44"
+  },
+  "blanco": {
+   "nombre": "Blanco",
+   "hex": "#FFFFFF"
+  },
+  "beige": {
+   "nombre": "Beige",
+   "hex": "#D8C7A3"
+  },
+  "gris": {
+   "nombre": "Gris",
+   "hex": "#8A8D91"
+  },
+  "marron": {
+   "nombre": "Marrón",
+   "hex": "#6B4228"
+  },
+  "verde": {
+   "nombre": "Verde",
+   "hex": "#2E7D32"
+  },
+  "verde-ingles": {
+   "nombre": "Verde inglés",
+   "hex": "#1F4D3A"
+  },
+  "naranja": {
+   "nombre": "Naranja",
+   "hex": "#F26B1D"
+  },
+  "gris-topo": {
+   "nombre": "Gris topo",
+   "hex": "#6E6259"
+  },
+  "verde-benetton": {
+   "nombre": "Verde Benetton",
+   "hex": "#00845A"
+  },
+  "azulino": {
+   "nombre": "Azulino",
+   "hex": "#4A7FC1"
+  },
+  "azul": {
+   "nombre": "Azul",
+   "hex": "#1E4FA0"
+  },
+  "verde-oliva": {
+   "nombre": "Verde oliva",
+   "hex": "#6B6B2E"
+  },
+  "amarillo": {
+   "nombre": "Amarillo",
+   "hex": "#F2C500"
+  },
+  "gris-melange": {
+   "nombre": "Gris melange",
+   "hex": "#A7A9AC"
+  },
+  "jean": {
+   "nombre": "Jean",
+   "hex": "#3E5C7E"
+  },
+  "celeste": {
+   "nombre": "Celeste",
+   "hex": "#8EC5E8"
+  },
+  "bordo": {
+   "nombre": "Bordó",
+   "hex": "#6D1A2B"
+  },
+  "camel": {
+   "nombre": "Camel",
+   "hex": "#B5835A"
+  },
+  "vison": {
+   "nombre": "Visón",
+   "hex": "#8C7B6B"
+  },
+  "rojo": {
+   "nombre": "Rojo",
+   "hex": "#C62828"
+  },
+  "verde-manzana": {
+   "nombre": "Verde manzana",
+   "hex": "#7CB342"
+  },
+  "azul-francia": {
+   "nombre": "Azul francia",
+   "hex": "#2B55A6"
+  },
+  "transparente": {
+   "nombre": "Transparente",
+   "hex": "#E6EEF2"
+  },
+  "in-out": {
+   "nombre": "Outdoor / Indoor",
+   "hex": "#AEB8BF"
   }
+ }
 }
