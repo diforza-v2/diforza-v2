@@ -1,6 +1,6 @@
 {
  "_nota": "Catálogo maestro completo de Diforza. Fuente: export ERP GBP 8 oct 2026 (SKU agrupados por código base) + ventas ene–jun 2026 + decisiones del usuario. Regenerar con 02_sitio-web/catalogo/catalogo_build.py. visible=false → no se muestra en el sitio. Categorías: categorias.json · colores: colores.json · fichas curadas (descripción, foto, destacados): productos.json. Incluye productos del catálogo PDF de Diforza (oct 2026) sin código ERP (catalogo_pdf_extra.py).",
- "actualizado": "2026-10-11",
+ "actualizado": "2026-10-09",
  "productos": [
   {
    "id": "adaptador-casco-facial-audit-l-400",
@@ -2765,7 +2765,7 @@
    "nombre": "Barbijo Tricapa Con Certificado ANMAT",
    "marca": "Diforza",
    "linea": "epp",
-   "subcategoria": "sanidad-y-gastronomia",
+   "subcategoria": "proteccion-respiratoria",
    "codigosERP": [
     "BATRAN",
     "9BARDESELAS"
@@ -2833,7 +2833,7 @@
    "foto": "/img/catalogo/barbijo-tricapa-con-certificado-anmat--celeste.webp",
    "nota": "Ventas ene–jun: 1.701 u / 4 (BATRAN) + 500 u / 1 barbijo descartable con elástico (unificado). Stock 1.600. Foto de la TiendaNube vieja de Diforza (barbijo SMS celeste). FOTOS PROVISORIAS (genéricas CC0 de internet + recoloreos, ver _creditos_licencias.txt) → reemplazar por fotos reales de Diforza. Specs con IA → validar.",
    "tambienEn": [
-    "proteccion-respiratoria"
+    "sanidad-y-gastronomia"
    ]
   },
   {
@@ -3203,7 +3203,10 @@
    "ventasEneJun2026": {
     "unidades": 20,
     "empresas": 1
-   }
+   },
+   "nombreWeb": "Botella lavaojos de emergencia",
+   "descripcion": "Botella de lavado ocular de emergencia con copa ocular.",
+   "nota": " 13 oct: visible sin foto (stock 47). Pedir a Diego foto o modelo/fabricante."
   },
   {
    "id": "botin-boro-con-puntera-de-acero-cas",
@@ -4003,7 +4006,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 13 oct (emergencias): sin stock ni ventas; decisión del usuario."
   },
   {
    "id": "botiquin-chapa-pintura-horneada-250x160x100",
@@ -4016,20 +4020,78 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 13 oct (emergencias): sin stock ni ventas; decisión del usuario."
   },
   {
-   "id": "botiquin-metalico-n16-24-unidades",
-   "nombre": "Botiquin Metalico N°16 (24 Unidades)",
-   "marca": "Practy Botiquin",
+   "id": "botiquin-practy-metalico-n16",
+   "nombre": "Botiquín metálico Practy N°16 (24 elementos)",
+   "marca": "Practy Botiquín",
    "linea": "epp",
    "subcategoria": "emergencias",
    "codigosERP": [
     "BOTMET24UN"
    ],
-   "colores": [],
+   "colores": [
+    "blanco"
+   ],
    "talles": null,
-   "visible": true
+   "visible": true,
+   "nombreWeb": "Botiquín metálico Practy N°16 (24 elementos)",
+   "descripcion": "Chapa con pintura horneada, 35,5 × 27 × 12,5 cm. 24 elementos.",
+   "descripcionLarga": "Botiquín de primeros auxilios Practy N°16, en gabinete de chapa de hierro con pintura horneada blanca, puerta con manija y estantes interiores. Mide 35,5 × 27 × 12,5 cm y viene completo con 24 elementos: gasas, algodón, vendas de 5, 7 y 10 cm, apósitos, tela adhesiva, antiséptico, solución para quemaduras, agua oxigenada, alcohol, guantes descartables, tijera, pinza, termómetro, copita lavaojos, espejo y más. Pensado para cumplir con el botiquín obligatorio en fábricas, obras, depósitos y oficinas.",
+   "specs": {
+    "material": "Chapa de hierro con pintura horneada",
+    "medidas": "355 × 270 × 125 mm",
+    "contenido": "24 elementos",
+    "incluye": "Gasas, algodón 75 g, vendas cambric 5/7/10 cm, apósitos, tela adhesiva 12,5 y 25 mm, antiséptico, solución para quemaduras, agua oxigenada y alcohol 500 cc, jeringa, ligadura, guantes, tijera, pinza, termómetro, copita lavaojos, bicarbonato, espejo"
+   },
+   "beneficios": [
+    {
+     "titulo": "Completo",
+     "texto": "24 elementos de primeros auxilios listos para usar."
+    },
+    {
+     "titulo": "Metálico",
+     "texto": "Chapa de hierro con pintura horneada, resistente y fácil de limpiar."
+    },
+    {
+     "titulo": "Para pared",
+     "texto": "Gabinete con puerta y estantes para ordenar el contenido."
+    },
+    {
+     "titulo": "Tamaño industrial",
+     "texto": "35,5 × 27 × 12,5 cm."
+    },
+    {
+     "titulo": "Reposición",
+     "texto": "Se reponen los elementos a medida que se usan."
+    },
+    {
+     "titulo": "Marca Practy",
+     "texto": "Fabricante argentino especializado en botiquines."
+    }
+   ],
+   "usos": [
+    "Fábricas e industria",
+    "Obras de construcción",
+    "Logística y depósitos",
+    "Oficinas",
+    "Comercios",
+    "Escuelas e instituciones"
+   ],
+   "variantes": [
+    {
+     "color": "blanco",
+     "colorFabricante": "Blanco",
+     "foto": "/img/catalogo/botiquin-practy-metalico-n16--blanco.webp"
+    }
+   ],
+   "foto": "/img/catalogo/botiquin-practy-metalico-n16--blanco.webp",
+   "galeria": [
+    "/img/catalogo/botiquin-practy-metalico-n16--vista-2.webp"
+   ],
+   "nota": "ERP BOTMET24UN. Sin stock ni ventas ene–jun. Fotos, medidas y contenido de lubeseguridad.com.ar (cód. 11274); Practy no tiene web propia."
   },
   {
    "id": "botiquin-plastico-11-elementos-13x8x7",
@@ -4042,7 +4104,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 13 oct (emergencias): sin stock ni ventas; decisión del usuario."
   },
   {
    "id": "botiquin-plastico-32-elementos",
@@ -4055,7 +4118,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 13 oct (emergencias): sin stock ni ventas; decisión del usuario."
   },
   {
    "id": "botiquin-plastico-n1-10-unidades",
@@ -4068,7 +4132,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 13 oct (emergencias): sin stock ni ventas; decisión del usuario."
   },
   {
    "id": "botiquin-plastico-n5-20-unidades",
@@ -4081,7 +4146,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 13 oct (emergencias): sin stock ni ventas; decisión del usuario."
   },
   {
    "id": "buzo-friza-diforza",
@@ -9062,17 +9128,77 @@
    "nota": "Oculto 10 oct (altura): solo se muestra SKY, decisión del usuario."
   },
   {
-   "id": "estacion-lavaojo-portatil",
-   "nombre": "Estacion Lavaojo Portatil",
-   "marca": "Paimun",
+   "id": "estacion-lavaojos-north-3826",
+   "nombre": "Estación lavaojos portátil de pared North 3826",
+   "marca": "North",
    "linea": "epp",
    "subcategoria": "emergencias",
    "codigosERP": [
     "ESTACIONLAVOJ"
    ],
-   "colores": [],
+   "colores": [
+    "blanco"
+   ],
    "talles": null,
-   "visible": true
+   "visible": true,
+   "nombreWeb": "Estación lavaojos portátil de pared North 3826",
+   "descripcion": "Estación de pared con 2 botellas de 1 litro para lavado ocular.",
+   "descripcionLarga": "La estación lavaojos portátil North/Servus 3826 da una respuesta inmediata ante salpicaduras de productos químicos, polvo o partículas en los ojos. Se fija a la pared con una base plástica de 4 orificios y lleva dos botellas de 1 litro. Cada botella tiene tapa contra la contaminación, tubo de pesca que toma el líquido desde el fondo, copa que se adapta al globo ocular y tubo de descarga con válvula para que el líquido usado no vuelva al recipiente. Se entrega vacía: se carga con solución fisiológica o agua con bactericida, y el contenido se revisa y recambia periódicamente.",
+   "specs": {
+    "capacidad": "2 botellas de 1 litro",
+    "montaje": "Pared (base plástica, 4 orificios)",
+    "botella": "Tapa, tubo de pesca, copa ocular y válvula antirretorno",
+    "entrega": "Vacía (cargar con solución fisiológica o agua con bactericida)",
+    "modelo": "North / Servus 3826"
+   },
+   "lineaMarca": "Paimun (distribuidor)",
+   "beneficios": [
+    {
+     "titulo": "Respuesta inmediata",
+     "texto": "Lavado ocular al alcance de la mano, en el puesto de trabajo."
+    },
+    {
+     "titulo": "2 botellas de 1 litro",
+     "texto": "Para lavar ambos ojos a la vez."
+    },
+    {
+     "titulo": "Copa ocular",
+     "texto": "Se adapta al ojo y dirige el chorro."
+    },
+    {
+     "titulo": "Sin contaminación",
+     "texto": "Tapa protectora y válvula antirretorno."
+    },
+    {
+     "titulo": "De pared",
+     "texto": "Base plástica con 4 orificios de fijación."
+    },
+    {
+     "titulo": "Recargable",
+     "texto": "Se llena con solución fisiológica o agua con bactericida."
+    }
+   ],
+   "usos": [
+    "Industria y metalmecánica",
+    "Laboratorios",
+    "Plantas químicas",
+    "Logística y depósitos",
+    "Talleres",
+    "Oficinas y comercios"
+   ],
+   "variantes": [
+    {
+     "color": "blanco",
+     "colorFabricante": "Blanco",
+     "foto": "/img/catalogo/estacion-lavaojos-north-3826--blanco.webp"
+    }
+   ],
+   "foto": "/img/catalogo/estacion-lavaojos-north-3826--blanco.webp",
+   "galeria": [
+    "/img/catalogo/estacion-lavaojos-north-3826--vista-2.webp",
+    "/img/catalogo/estacion-lavaojos-north-3826--vista-3.webp"
+   ],
+   "nota": "ERP: ESTACIONLAVOJ \"Paimun\" (distribuidor) = North/Servus 3826. Sin stock ni ventas ene–jun. Fotos y descripción de e-paimun.com.ar. Sin ficha técnica."
   },
   {
    "id": "faja-lumbar-2xl-ombu",
@@ -9087,17 +9213,24 @@
     "negro"
    ],
    "talles": "S al 2XL",
-   "visible": true,
-   "foto": "/img/catalogo/faja-lumbar-2xl-ombu.webp"
+   "visible": false,
+   "foto": "/img/catalogo/faja-lumbar-2xl-ombu.webp",
+   "nota": "Oculto 13 oct (ergonomía): decisión del usuario."
   },
   {
    "id": "faja-lumbar-diforza",
-   "nombre": "Faja lumbar Diforza",
+   "nombre": "Faja lumbar Diforza modelo Full",
    "marca": "Diforza",
    "linea": "epp",
    "subcategoria": "ergonomia",
    "codigosERP": [
-    "FAJLUDIF"
+    "FAJLUDIF",
+    "FAJLUDIF-NG-T.S",
+    "FAJLUDIF-NG-T.M",
+    "FAJLUDIF-NG-T.L",
+    "FAJLUDIF-NG-T.XL",
+    "FAJLUDIF-NG-T.2XL",
+    "FAJLUDIF-NG-T.3XL"
    ],
    "colores": [
     "negro"
@@ -9105,10 +9238,66 @@
    "talles": "S al 3XL",
    "visible": true,
    "ventasEneJun2026": {
-    "unidades": 676,
-    "empresas": 35
+    "unidades": 712,
+    "empresas": 37
    },
-   "foto": "/img/catalogo/faja-lumbar-diforza.webp"
+   "foto": "/img/catalogo/faja-lumbar-diforza--negro.webp",
+   "nombreWeb": "Faja lumbar Diforza modelo Full",
+   "descripcion": "Faja con tiradores cruzados y ballenas. Talles S a 3XL.",
+   "descripcionLarga": "La faja lumbar Diforza modelo Full da soporte a la zona lumbar en tareas de carga, descarga y manipulación de materiales, sin restar libertad de movimiento. Tiene cuerpo de elastano reforzado con malla respirable, ballenas traseras con banda antideslizante que mantienen la faja firme en su lugar, bandas laterales regulables y cierre de abrojo de alta resistencia. Los tiradores elásticos cruzados y regulables evitan que se baje durante la jornada. Es la faja que eligen empresas de logística, construcción, industria y transporte para equipar a todo su personal, con stock permanente en todos los talles.",
+   "specs": {
+    "material": "Elastano reforzado con malla elastizada",
+    "soporte": "Ballenas traseras con banda antideslizante",
+    "ajuste": "Bandas laterales regulables y cierre de abrojo",
+    "tiradores": "Elásticos, cruzados y regulables",
+    "color": "Negro con ribetes celestes",
+    "talles": "S (80–90 cm) · M (90–100) · L (100–110) · XL (110–120) · 2XL (120–130) · 3XL (130–140) — contorno de cintura"
+   },
+   "beneficios": [
+    {
+     "titulo": "Soporte lumbar",
+     "texto": "Ballenas traseras con banda antideslizante para un apoyo firme."
+    },
+    {
+     "titulo": "Tiradores cruzados",
+     "texto": "Elásticos y regulables: la faja no se baja con el movimiento."
+    },
+    {
+     "titulo": "Ajuste personalizado",
+     "texto": "Bandas laterales regulables y cierre de abrojo de alta resistencia."
+    },
+    {
+     "titulo": "Respirable",
+     "texto": "Malla elastizada que ventila durante toda la jornada."
+    },
+    {
+     "titulo": "Libertad de movimiento",
+     "texto": "Acompaña al cuerpo sin limitar la tarea."
+    },
+    {
+     "titulo": "Stock permanente",
+     "texto": "Talles S a 3XL para equipar a todo el personal."
+    }
+   ],
+   "usos": [
+    "Logística y depósitos",
+    "Carga y descarga",
+    "Construcción",
+    "Industria y metalmecánica",
+    "Transporte y distribución",
+    "Supermercados y retail"
+   ],
+   "variantes": [
+    {
+     "color": "negro",
+     "colorFabricante": "Negro",
+     "foto": "/img/catalogo/faja-lumbar-diforza--negro.webp"
+    }
+   ],
+   "galeria": [
+    "/img/catalogo/faja-lumbar-diforza--contexto.webp"
+   ],
+   "nota": "Ventas ene–jun 13 oct: 676 u con código FAJLUDIF (35 empresas) + 36 u manuales (Demaio 30, UNLP 6). Stock 2XL 169 · M 94 · XL 47 · L 33 · S 15 · 3XL −61. Marca Diforza (catálogo p. 20, ERP \"modelo full\"). Specs y tabla de talles de la faja Ombú art. 68077-13 (mismo diseño) → validar con Diego; 3XL extrapolado. Galería: foto en contexto del catálogo p. 20."
   },
   {
    "id": "filtro-2091-p100-3m",
@@ -9268,7 +9457,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 13 oct (emergencias): sin stock ni ventas; decisión del usuario."
   },
   {
    "id": "gorra-6-gajos-algodon-poliester",
@@ -11662,7 +11852,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 13 oct (emergencias): sin stock ni ventas; decisión del usuario."
   },
   {
    "id": "kit-cartucho-g01-ov",
@@ -11774,22 +11965,83 @@
    "nota": "Oculto 11 oct (respiratoria): unificado o fuera de la selección del usuario (BLS)."
   },
   {
-   "id": "kit-desmalezador",
-   "nombre": "Kit desmalezador",
+   "id": "kit-libus-desmalezador",
+   "nombre": "Kit desmalezador Libus",
    "marca": "Libus",
    "linea": "epp",
    "subcategoria": "kits",
    "codigosERP": [
     "KITDESM"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "naranja"
+   ],
+   "talles": "Único",
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 5,
     "empresas": 2
    },
-   "foto": "/img/catalogo/kit-desmalezador.webp"
+   "foto": "/img/catalogo/kit-libus-desmalezador--principal.webp",
+   "nombreWeb": "Kit desmalezador Libus",
+   "descripcion": "Malla forestal con soporte a cremallera + tapones Quantum. EN 1731.",
+   "descripcionLarga": "El kit desmalezador Libus reúne en una caja la protección facial y auditiva para desmalezar con motoguadaña o bordeadora. Trae soporte facial con arnés a cremallera, que se regula con una perilla para un ajuste firme, malla plástica forestal de 8 × 14\" que frena astillas, piedras y restos vegetales sin empañarse, y protectores auditivos Quantum en caja porta cinturón. La malla se monta en segundos y es rebatible. Cumple EN 1731.",
+   "beneficios": [
+    {
+     "titulo": "Malla forestal",
+     "texto": "Frena astillas, piedras y vegetación; no se empaña."
+    },
+    {
+     "titulo": "Arnés a cremallera",
+     "texto": "Ajuste firme con perilla, sin que se mueva."
+    },
+    {
+     "titulo": "Protección auditiva",
+     "texto": "Tapones Quantum en caja porta cinturón."
+    },
+    {
+     "titulo": "Rebatible",
+     "texto": "La malla se levanta cuando no se usa."
+    },
+    {
+     "titulo": "Listo para entregar",
+     "texto": "Viene prearmado en caja: un kit por operario."
+    },
+    {
+     "titulo": "Libus",
+     "texto": "Fabricante argentino líder en EPP, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Agro",
+    "Forestal",
+    "Mantenimiento de parques y espacios verdes",
+    "Mantenimiento vial",
+    "Municipios",
+    "Cosecha"
+   ],
+   "specs": {
+    "componentes": "901383 Soporte p/protector facial c/arnés cremallera · 901389 Malla plástica forestal 8 × 14\" · 901467 Protector auditivo Quantum caja porta cinturón",
+    "norma": "EN 1731:2006",
+    "código Libus": "902813"
+   },
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/kit-libus-desmalezador--principal.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/kit-libus-desmalezador.pdf"
+    }
+   ],
+   "galeria": [
+    "/img/catalogo/kit-libus-desmalezador--vista-2.webp",
+    "/img/catalogo/kit-libus-desmalezador--vista-3.webp",
+    "/img/catalogo/kit-libus-desmalezador--contexto-1.webp",
+    "/img/catalogo/kit-libus-desmalezador--contexto-2.webp"
+   ],
+   "fichaTecnica": "/assets/docs/fichas/kit-libus-desmalezador.pdf",
+   "nota": "13 oct: fotos y ficha oficial Libus que dejó el usuario en _assets/fotos_marcas/libus/kits/kit desmalezador/ (fondo gris → blanco en _procesadas/). ERP KITDESM: 5 u / 2 empresas, stock 0."
   },
   {
    "id": "kit-filtro-com-222-abek1p3r",
@@ -12131,22 +12383,82 @@
    "nota": "Oculto 11 oct (respiratoria): unificado o fuera de la selección del usuario (BLS)."
   },
   {
-   "id": "kit-forestal",
-   "nombre": "kit Forestal",
+   "id": "kit-libus-forestal",
+   "nombre": "Kit forestal Libus",
    "marca": "Libus",
    "linea": "epp",
    "subcategoria": "kits",
    "codigosERP": [
     "KITFOREST"
    ],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "naranja"
+   ],
+   "talles": "Único",
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 4,
     "empresas": 1
    },
-   "foto": "/img/catalogo/kit-forestal.webp"
+   "foto": "/img/catalogo/kit-libus-forestal--principal.webp",
+   "nombreWeb": "Kit forestal Libus",
+   "descripcion": "Casco Milenium Class + malla forestal + auditivos de copa. EN 1731.",
+   "descripcionLarga": "El kit forestal Libus es la protección completa de cabeza, cara y oídos para tareas forestales de escala industrial. Trae casco Milenium Class naranja con arnés a cremallera textil y mentonera, adaptador para montar en el casco la malla plástica forestal de 8 × 14\" (visor rebatible a 90°) y protectores auditivos de copa L-340 para casco. Protege de caída de objetos, astillas, vegetación, partículas y ruido. Malla certificada EN 1731.",
+   "beneficios": [
+    {
+     "titulo": "Protección integral",
+     "texto": "Cabeza, cara y oídos en un solo equipo."
+    },
+    {
+     "titulo": "Casco Milenium Class",
+     "texto": "Con arnés a cremallera textil y mentonera."
+    },
+    {
+     "titulo": "Visor rebatible 90°",
+     "texto": "Malla plástica de nylon que se levanta cuando no se usa."
+    },
+    {
+     "titulo": "Auditivos para casco",
+     "texto": "Copas L-340 montadas en el casco."
+    },
+    {
+     "titulo": "Listo para entregar",
+     "texto": "Viene prearmado en caja: un kit por operario."
+    },
+    {
+     "titulo": "Libus",
+     "texto": "Fabricante argentino líder en EPP, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Forestal",
+    "Aserraderos",
+    "Poda y tala",
+    "Agro",
+    "Mantenimiento de líneas eléctricas",
+    "Municipios"
+   ],
+   "specs": {
+    "componentes": "902391 Casco Milenium Class s/visor naranja · 902412 Arnés Milenium a cremallera textil · 902493 Adaptador casco facial/auditivo M · 901389 Malla plástica forestal 8 × 14\" · Mentonera 15 mm · Kit protector auditivo L-340 para casco (900487)",
+    "visor": "Rebatible 90°",
+    "norma": "EN 1731:2006 (malla)",
+    "código Libus": "902461"
+   },
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/kit-libus-forestal--principal.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/kit-libus-forestal.pdf"
+    }
+   ],
+   "galeria": [
+    "/img/catalogo/kit-libus-forestal--vista-2.webp",
+    "/img/catalogo/kit-libus-forestal--contexto-1.webp"
+   ],
+   "fichaTecnica": "/assets/docs/fichas/kit-libus-forestal.pdf",
+   "nota": "13 oct: fotos y ficha oficial Libus que dejó el usuario en _assets/fotos_marcas/libus/kits/kit forestal/ (fondo gris → blanco en _procesadas/). Componentes según ficha (malla 8×14 + mentonera 15 mm; Lube decía 8×12 sin mentonera). jardiner_1.jpg (carpeta forestal) muestra el kit forestal en uso. Stock ERP 6."
   },
   {
    "id": "kit-g01-901793-901950-901911-901913",
@@ -13197,7 +13509,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 13 oct (emergencias): sin stock ni ventas; decisión del usuario."
   },
   {
    "id": "mascara-3m-6800",
@@ -13752,18 +14065,80 @@
    "nota": "Oculto 11 oct (respiratoria): unificado o fuera de la selección del usuario (BLS)."
   },
   {
-   "id": "matafuego",
-   "nombre": "Matafuego",
-   "marca": "Eslingar",
+   "id": "extintor-melisam-polvo-abc",
+   "nombre": "Extintor de polvo ABC Melisam",
+   "marca": "Melisam",
    "linea": "epp",
    "subcategoria": "emergencias",
    "codigosERP": [
     "MATAFUEGO"
    ],
-   "colores": [],
+   "colores": [
+    "rojo"
+   ],
    "talles": null,
    "visible": true,
-   "foto": "/img/catalogo/matafuego.webp"
+   "foto": "/img/catalogo/extintor-melisam-polvo-abc--rojo-2-5-kg.webp",
+   "nombreWeb": "Extintor de polvo ABC Melisam",
+   "descripcion": "Polvo químico ABC, 2,5 kg (3A-20BC) y 5 kg (6A-40BC). Con manómetro.",
+   "descripcionLarga": "Extintor de polvo químico seco ABC Melisam, de fabricación nacional, apto para fuegos clase A (sólidos), B (líquidos inflamables) y C (equipos eléctricos energizados). Presurizado, con manómetro para controlar la carga de un vistazo, manija de transporte, manguera y soporte de pared. Disponible en 2,5 kg (potencial 3A-20BC) y 5 kg (potencial 6A-40BC), las capacidades más usadas en oficinas, comercios, vehículos y plantas industriales.",
+   "specs": {
+    "agente": "Polvo químico seco ABC",
+    "capacidades": "2,5 kg · 5 kg",
+    "potencial": "2,5 kg: 3A-20BC · 5 kg: 6A-40BC",
+    "presurización": "Presurizado, con manómetro",
+    "incluye": "Manguera y soporte de pared",
+    "certificación": "Sello IRAM"
+   },
+   "beneficios": [
+    {
+     "titulo": "Fuegos A, B y C",
+     "texto": "Polvo ABC multipropósito."
+    },
+    {
+     "titulo": "Con manómetro",
+     "texto": "Control visual de la presión."
+    },
+    {
+     "titulo": "2 capacidades",
+     "texto": "2,5 kg (3A-20BC) y 5 kg (6A-40BC)."
+    },
+    {
+     "titulo": "Soporte de pared",
+     "texto": "Listo para instalar en el puesto."
+    },
+    {
+     "titulo": "Fabricación nacional",
+     "texto": "Marca Melisam, con certificación IRAM."
+    },
+    {
+     "titulo": "Señalización",
+     "texto": "Combinalo con la chapa baliza y el soporte para extintor."
+    }
+   ],
+   "usos": [
+    "Industria",
+    "Oficinas y comercios",
+    "Obras de construcción",
+    "Logística y depósitos",
+    "Vehículos y flotas",
+    "Consorcios"
+   ],
+   "variantes": [
+    {
+     "color": "rojo",
+     "colorFabricante": "Rojo 2,5 kg",
+     "foto": "/img/catalogo/extintor-melisam-polvo-abc--rojo-2-5-kg.webp",
+     "etiqueta": "2,5 kg"
+    },
+    {
+     "color": "rojo",
+     "colorFabricante": "Rojo 5 kg",
+     "foto": "/img/catalogo/extintor-melisam-polvo-abc--rojo-5-kg.webp",
+     "etiqueta": "5 kg"
+    }
+   ],
+   "nota": "ERP MATAFUEGO (marca \"Eslingar\" en el ERP: error, Eslingar fabrica arneses). Fotos de la TiendaNube vieja de Diforza (SKU EXPQS004 2,5 kg 3A-20BC / EXPQS005 5 kg 6A-40BC) = Melisam. Soporte y manguera según Easy (5 kg). Sello IRAM → validar. También existe el de 1 kg vehicular (EXPQS002) en la TiendaNube vieja, no cargado."
   },
   {
    "id": "medias",
@@ -17093,11 +17468,12 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 33,
     "empresas": 2
-   }
+   },
+   "nota": "Oculto 13 oct (ergonomía): decisión del usuario."
   },
   {
    "id": "salvacaidas-sky-8206a",
@@ -17474,7 +17850,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 13 oct (emergencias): sin stock ni ventas; decisión del usuario."
   },
   {
    "id": "soporte-libus-protector-facial",
@@ -17607,7 +17984,8 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true
+   "visible": false,
+   "nota": "Oculto 13 oct (emergencias): sin stock ni ventas; decisión del usuario."
   },
   {
    "id": "traje-de-lluvia-diforza",
@@ -19191,32 +19569,152 @@
    "foto": "/img/catalogo/protector-auditivo-libus-b300.webp"
   },
   {
-   "id": "kit-mecanizado-liviano",
-   "nombre": "Kit mecanizado liviano",
+   "id": "kit-libus-mecanico",
+   "nombre": "Kit mecánico Libus (mecanizado liviano)",
    "marca": "Libus",
    "linea": "epp",
    "subcategoria": "kits",
    "codigosERP": [],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "transparente"
+   ],
+   "talles": "Único",
    "visible": true,
-   "nota": "Del catálogo PDF de Diforza (oct 2026); sin código ERP",
+   "nota": "13 oct: fotos y ficha oficial Libus que dejó el usuario en _assets/fotos_marcas/libus/kits/kit mecanizado/ (fondo gris → blanco en _procesadas/). Libus lo llama \"Kit Mecánico\"; el ERP/TiendaNube \"mecanizado liviano\". Sin código ERP. Ficha sin códigos de componentes (por analogía: 401442, 401440 + visor plano) → confirmar. Sin foto en contexto.",
    "codigoFabricante": "902660",
-   "foto": "/img/catalogo/kit-mecanizado-liviano.webp"
+   "foto": "/img/catalogo/kit-libus-mecanico--principal.webp",
+   "nombreWeb": "Kit mecánico Libus (mecanizado liviano)",
+   "descripcion": "Visor plano transparente + protector de copa Alternative. EN 166.",
+   "descripcionLarga": "El kit mecánico Libus, para mecanizado liviano, combina protector facial plano transparente y protector auditivo de copa Alternative en un equipo liviano: el visor se monta en el protector auditivo con una banda de nuca ergonómica de 2 posiciones, sin arnés aparte. Visor rebatible a 90°. Orientado a pulido, lijado y cepillado que no requieren protección facial de alto impacto. Visor marcado según EN 166.",
+   "beneficios": [
+    {
+     "titulo": "Liviano",
+     "texto": "Visor montado en el protector auditivo, sin arnés extra."
+    },
+    {
+     "titulo": "Visor plano transparente",
+     "texto": "Para pulido, lijado y cepillado."
+    },
+    {
+     "titulo": "Protección auditiva",
+     "texto": "Copa Alternative, NRR 23 dB."
+    },
+    {
+     "titulo": "Banda de nuca",
+     "texto": "Ergonómica, con 2 posiciones de regulación."
+    },
+    {
+     "titulo": "Listo para entregar",
+     "texto": "Viene prearmado en caja: un kit por operario."
+    },
+    {
+     "titulo": "Libus",
+     "texto": "Fabricante argentino líder en EPP, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Talleres",
+    "Carpintería",
+    "Metalmecánica liviana",
+    "Mantenimiento",
+    "Pulido y lijado",
+    "Laboratorios"
+   ],
+   "specs": {
+    "componentes": "Protector auditivo de copa Alternative (901374) · Sujetador de nuca para kit Alternative · Protector facial plano transparente · Conjunto soporte para kit Alternative",
+    "visor": "Rebatible 90°",
+    "norma": "EN 166 (visor)",
+    "código Libus": "902660"
+   },
+   "variantes": [
+    {
+     "color": "transparente",
+     "colorFabricante": "Transparente",
+     "foto": "/img/catalogo/kit-libus-mecanico--principal.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/kit-libus-mecanico.pdf"
+    }
+   ],
+   "galeria": [
+    "/img/catalogo/kit-libus-mecanico--vista-2.webp",
+    "/img/catalogo/kit-libus-mecanico--vista-3.webp"
+   ],
+   "fichaTecnica": "/assets/docs/fichas/kit-libus-mecanico.pdf",
+   "ventasEneJun2026": null
   },
   {
-   "id": "kit-herramientas-de-corte",
-   "nombre": "Kit herramientas de corte",
+   "id": "kit-libus-herramientas-de-corte",
+   "nombre": "Kit herramientas de corte Libus",
    "marca": "Libus",
    "linea": "epp",
    "subcategoria": "kits",
    "codigosERP": [],
-   "colores": [],
-   "talles": null,
+   "colores": [
+    "transparente"
+   ],
+   "talles": "Único",
    "visible": true,
-   "nota": "Del catálogo PDF de Diforza (oct 2026); sin código ERP",
+   "nota": "13 oct: fotos y ficha oficial Libus que dejó el usuario en _assets/fotos_marcas/libus/kits/kit herramientas corte/ (fondo gris → blanco en _procesadas/). Sin código ERP ni ventas. Componentes de la ficha + Lube.",
    "codigoFabricante": "902661",
-   "foto": "/img/catalogo/kit-herramientas-de-corte.webp"
+   "foto": "/img/catalogo/kit-libus-herramientas-de-corte--principal.webp",
+   "nombreWeb": "Kit herramientas de corte Libus",
+   "descripcion": "Visor burbuja transparente con soporte + protector de copa Alternative.",
+   "descripcionLarga": "El kit herramientas de corte Libus está pensado para corte y mecanizado con amoladora, sierra o cortadora, donde hace falta protección facial de alto impacto. Trae protector facial burbuja transparente, que cubre desde la frente hasta el mentón con excelente visibilidad, soporte facial con arnés a cremallera y protector auditivo de copa Alternative Multipropósito. Se vende en bultos de 3 kits.",
+   "beneficios": [
+    {
+     "titulo": "Alto impacto",
+     "texto": "Visor burbuja transparente para corte y mecanizado."
+    },
+    {
+     "titulo": "Cobertura total",
+     "texto": "De la frente al mentón, con excelente visibilidad."
+    },
+    {
+     "titulo": "Arnés a cremallera",
+     "texto": "Ajuste firme con perilla."
+    },
+    {
+     "titulo": "Protección auditiva",
+     "texto": "Copa Alternative Multipropósito, NRR 23 dB."
+    },
+    {
+     "titulo": "Listo para entregar",
+     "texto": "Viene prearmado en caja: un kit por operario."
+    },
+    {
+     "titulo": "Libus",
+     "texto": "Fabricante argentino líder en EPP, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Metalmecánica",
+    "Talleres",
+    "Construcción",
+    "Herrería",
+    "Mantenimiento industrial",
+    "Corte con amoladora"
+   ],
+   "specs": {
+    "componentes": "901386 Protector facial burbuja transparente · 901383 Soporte p/protector facial c/arnés cremallera · 901374 Protector auditivo de copa Alternative",
+    "presentación": "Bulto de 3 kits (2,6 kg)",
+    "código Libus": "902661"
+   },
+   "variantes": [
+    {
+     "color": "transparente",
+     "colorFabricante": "Transparente",
+     "foto": "/img/catalogo/kit-libus-herramientas-de-corte--principal.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/kit-libus-herramientas-de-corte.pdf"
+    }
+   ],
+   "galeria": [
+    "/img/catalogo/kit-libus-herramientas-de-corte--vista-2.webp",
+    "/img/catalogo/kit-libus-herramientas-de-corte--vista-3.webp",
+    "/img/catalogo/kit-libus-herramientas-de-corte--contexto-1.webp"
+   ],
+   "fichaTecnica": "/assets/docs/fichas/kit-libus-herramientas-de-corte.pdf",
+   "ventasEneJun2026": null
   },
   {
    "id": "anteojo-3m-securefit-3700",
@@ -20716,6 +21214,81 @@
    "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-quantum-foam-detect.pdf",
    "ventasEneJun2026": null,
    "nota": "Selección final del usuario (11 oct). Fotos y ficha oficial de libus.com.ar en _assets/fotos_marcas/libus/auditiva/quantum-detec/ (fondo gris claro normalizado a blanco en _procesadas/). Foto de Segutécnica."
+  },
+  {
+   "id": "kit-libus-jardinero",
+   "nombre": "Kit jardinero Libus",
+   "nombreWeb": "Kit jardinero Libus",
+   "marca": "Libus",
+   "linea": "epp",
+   "subcategoria": "kits",
+   "codigosERP": [],
+   "colores": [
+    "negro"
+   ],
+   "talles": "Único",
+   "visible": true,
+   "descripcion": "Malla forestal + protector de copa Alternative con banda de nuca. EN 1731.",
+   "descripcionLarga": "El kit jardinero Libus combina protección facial y auditiva en un equipo liviano, sin casco ni arnés: la malla plástica forestal de 8 × 14\" se monta directamente en el protector auditivo de copa Alternative, con una banda de nuca ergonómica de 2 posiciones que lo mantiene firme en la cabeza. El visor es rebatible a 90°. Pensado para desmalezamiento, cosecha y mantenimiento de parques y espacios verdes. Malla certificada EN 1731.",
+   "beneficios": [
+    {
+     "titulo": "Liviano",
+     "texto": "Malla montada en el protector auditivo, sin arnés extra."
+    },
+    {
+     "titulo": "Protección auditiva",
+     "texto": "Copa Alternative, NRR 23 dB."
+    },
+    {
+     "titulo": "Banda de nuca",
+     "texto": "Ergonómica, con 2 posiciones de regulación."
+    },
+    {
+     "titulo": "Visor rebatible 90°",
+     "texto": "Se levanta cuando no se usa."
+    },
+    {
+     "titulo": "Listo para entregar",
+     "texto": "Viene prearmado en caja: un kit por operario."
+    },
+    {
+     "titulo": "Libus",
+     "texto": "Fabricante argentino líder en EPP, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Agro",
+    "Forestal",
+    "Mantenimiento de parques y espacios verdes",
+    "Mantenimiento vial",
+    "Municipios",
+    "Cosecha"
+   ],
+   "specs": {
+    "componentes": "901374 Protector auditivo de copa Alternative · 401442 Sujetador de nuca para kit Alternative · 901389 Malla plástica forestal 8 × 14\" · 401440 Conjunto soporte malla para kit Alternative · 300317 Caja kits prearmados",
+    "visor": "Rebatible 90°",
+    "norma": "EN 1731:2006 (malla)",
+    "código Libus": "902462"
+   },
+   "variantes": [
+    {
+     "color": "negro",
+     "colorFabricante": "Negro",
+     "foto": "/img/catalogo/kit-libus-jardinero--principal.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/kit-libus-jardinero.pdf"
+    }
+   ],
+   "galeria": [
+    "/img/catalogo/kit-libus-jardinero--vista-2.webp",
+    "/img/catalogo/kit-libus-jardinero--vista-3.webp",
+    "/img/catalogo/kit-libus-jardinero--contexto-1.webp",
+    "/img/catalogo/kit-libus-jardinero--contexto-2.webp"
+   ],
+   "foto": "/img/catalogo/kit-libus-jardinero--principal.webp",
+   "fichaTecnica": "/assets/docs/fichas/kit-libus-jardinero.pdf",
+   "ventasEneJun2026": null,
+   "nota": "13 oct: fotos y ficha oficial Libus que dejó el usuario en _assets/fotos_marcas/libus/kits/kit jardinero/ (fondo gris → blanco en _procesadas/). Sin código ERP ni ventas. La ficha dice \"pulido, lijado\" (copia del Mecánico); el uso real es desmalezado/parques (Lube)."
   }
  ]
 }

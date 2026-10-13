@@ -656,7 +656,7 @@
       "nombre": "Faja lumbar Diforza modelo Full",
       "marca": "Diforza",
       "codigo": "FAJLUDIF",
-      "descripcion": "Soporte lumbar para tareas de carga y levantamiento.",
+      "descripcion": "Faja con tiradores cruzados y ballenas. Talles S a 3XL.",
       "atributos": [
         {
           "tipo": "colores",
@@ -670,7 +670,7 @@
         }
       ],
       "foto": {
-        "src": "/img/productos/faja-lumbar.webp",
+        "src": "/img/catalogo/faja-lumbar-diforza--negro.webp",
         "estado": "producto"
       },
       "empresas": 44,
