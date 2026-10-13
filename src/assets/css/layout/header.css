@@ -108,7 +108,7 @@
     position: static;
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 24px;
     align-items: center;
     padding: 0;
     background: none;
@@ -182,6 +182,21 @@
 @media (--lg) {
   .nav__catalog {
     border-left: 1px solid rgb(var(--rgb-white) / 25%);
+    padding-left: 24px;
+  }
+
+  .nav__catalog::after {
+    left: 24px;
+  }
+}
+
+/* Desktop: vuelve el aire original entre links (con "Productos" el menú tiene 5 items) */
+@media (--2xl) {
+  .nav {
+    gap: 32px;
+  }
+
+  .nav__catalog {
     padding-left: 32px;
   }
 
@@ -191,10 +206,11 @@
 }
 
 /* Notebook 13-14": achicar separaciones y usar el CTA corto para que entren
-   las 3 categorías, "Catálogo" y el CTA en una línea con aire */
+   "Productos", las 3 categorías, "Catálogo" y el CTA en una línea con aire */
 @media (--lg-only) {
   .nav {
-    gap: 22px;
+    gap: 16px;
+    margin: 0 24px 0 16px;
   }
 
   .nav a {
@@ -202,11 +218,11 @@
   }
 
   .nav__catalog {
-    padding-left: 22px;
+    padding-left: 16px;
   }
 
   .nav__catalog::after {
-    left: 22px;
+    left: 16px;
   }
 
   .header .btn--nav {

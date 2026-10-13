@@ -117,19 +117,19 @@
       {
         "id": "indumentaria",
         "label": "Indumentaria",
-        "href": "/indumentaria-de-trabajo/",
+        "href": "/productos/indumentaria/",
         "cta": "Ver toda la indumentaria"
       },
       {
         "id": "calzado",
         "label": "Calzado",
-        "href": "/calzado-de-seguridad/",
+        "href": "/productos/calzado/",
         "cta": "Ver todo el calzado"
       },
       {
         "id": "epp",
         "label": "EPP",
-        "href": "/epp-proteccion-industrial/",
+        "href": "/productos/epp/",
         "cta": "Ver todo el EPP"
       }
     ],

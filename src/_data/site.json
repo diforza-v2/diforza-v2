@@ -13,6 +13,10 @@
   "gtmId": "GTM-WKV5ZHCT",
   "nav": [
     {
+      "label": "Productos",
+      "href": "/productos/"
+    },
+    {
       "label": "Indumentaria",
       "href": "/indumentaria-de-trabajo/"
     },
@@ -28,6 +32,10 @@
   "footer": {
     "about": "Distribuidora de EPP e indumentaria de trabajo. Más de 15 años equipando a empresas de todo el país, con stock permanente.",
     "categorias": [
+      {
+        "label": "Todos los productos",
+        "href": "/productos/"
+      },
       {
         "label": "Indumentaria general de trabajo",
         "href": "/indumentaria-de-trabajo/"

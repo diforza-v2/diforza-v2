@@ -1,5 +1,6 @@
 {#- Productos destacados de la landing. Encabezado: L.productos (eyebrow/título) ·
-    productos: src/_data/productos.json → destacados[landingKey] (vía vitrina.js) -#}
+    productos: src/_data/productos.json → destacados[landingKey] (vía vitrina.js).
+    Al pie: link a la línea del catálogo online (/productos/<linea>/, la que tiene esta landing como `landing`). -#}
 {%- set P = L.productos %}
 <section class="products" id="productos">
   <div class="featured-products__top reveal">
@@ -11,5 +12,8 @@
   <div class="reveal reveal--1">
 {%- set items = vitrina[landingKey] %}
 {%- include "partials/product-grid.njk" %}
+{%- for l in catalogoWeb.lineas %}{% if l.landing == page.url %}
+    <a href="{{ l.url }}" class="featured-products__all">Ver todos los productos ({{ l.total }}) {% include "partials/icon-arrow.njk" %}</a>
+{%- endif %}{% endfor %}
   </div>
 </section>

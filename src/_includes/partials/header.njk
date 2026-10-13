@@ -4,7 +4,7 @@
   <a href="/" class="header__logo"><img src="/img/logo-blanco.webp" alt="{{ site.name }} — inicio"></a>
   <nav class="nav" id="mainNav" aria-label="Principal">
 {%- for item in site.nav %}
-    <a href="{{ item.href }}"{% if item.href == page.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+    <a href="{{ item.href }}"{% if page.url and page.url.startsWith(item.href) %} aria-current="page"{% endif %}>{{ item.label }}</a>
 {%- endfor %}
     <a href="{{ site.catalogo.href }}" class="nav__catalog" data-js="catalogo">{% include "partials/icon-download.njk" %}{{ site.catalogo.label }}</a>
   </nav>
