@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: catalogoWeb.subcategorias
+  size: 1
+  alias: s
+permalink: "/productos/{{ s.linea.id }}/{{ s.id }}/"
+pageJs: /assets/js/catalogo.js
+headerFlat: true
+eleventyComputed:
+  title: "{{ s.nombre }} para empresas | Diforza"
+  description: "{{ s.total }} productos de {{ s.nombre | lower }} con stock permanente, factura A y envíos a todo el país. Cotizá por WhatsApp."
+  waText: "Hola, quiero cotizar {{ s.nombre | lower }} para mi empresa."
+---
+{#- Página de subcategoría (/productos/<linea>/<subcategoria>/): listado filtrable + categorías hermanas. -#}
+{%- set LT = catalogoTextos.lineas[s.linea.id] %}
+{%- set crumbs = [{ nombre: "Productos", url: "/productos/" }, { nombre: LT.titulo, url: s.linea.url }, { nombre: s.nombre }] %}
+{%- set crumbsLd = [{ "@type": "ListItem", position: 1, name: "Productos", item: site.url + "/productos/" }, { "@type": "ListItem", position: 2, name: LT.titulo, item: site.url + s.linea.url }, { "@type": "ListItem", position: 3, name: s.nombre }] %}
+{%- set marcas = s.facetas.marcas | pluck("nombre") %}
+{%- set headTitle = s.nombre %}
+{%- set headLead = s.total + (" producto" if s.total == 1 else " productos") + (" de " + (marcas | listaY) if marcas.length else "") + ". Stock permanente, factura A y envíos a todo el país." %}
+<main class="catalog-page">
+{%- include "catalogo/head.njk" %}
+{%- set items = s.productos %}
+{%- set facetas = s.facetas %}
+{%- set scope = "sub" %}
+{%- include "catalogo/listado.njk" %}
+  <nav class="cat-siblings" aria-label="Otras categorías de {{ LT.titulo | lower }}">
+    <p class="cat-siblings__title">Más en {{ LT.titulo | lower }}</p>
+    <ul class="cat-siblings__list" role="list">
+{%- for h in s.hermanas %}
+      <li><a href="{{ h.url }}">{{ h.nombre }} <span>{{ h.total }}</span></a></li>
+{%- endfor %}
+    </ul>
+  </nav>
+</main>

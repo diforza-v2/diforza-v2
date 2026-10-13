@@ -1,0 +1,12 @@
+{#- Tarjetas de subcategoría (página de línea). Recibe `tiles` = subcategorías de catalogoWeb. -#}
+<nav class="cat-tiles" aria-label="Categorías">
+  <ul class="cat-tiles__list" role="list">
+{%- for s in tiles %}
+    <li><a class="cat-tile" href="{{ s.url }}">
+      <span class="cat-tile__media">{% if s.portada %}<img src="{{ s.portada }}" alt="" loading="lazy" width="200" height="250">{% endif %}</span>
+      <span class="cat-tile__name">{{ s.nombre }}</span>
+      <span class="cat-tile__n">{{ s.total }} {{ "producto" if s.total == 1 else "productos" }}</span>
+    </a></li>
+{%- endfor %}
+  </ul>
+</nav>

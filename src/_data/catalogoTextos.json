@@ -1,0 +1,12 @@
+{
+  "_nota": "Textos de las páginas del catálogo online (/productos/). Títulos por línea; el resto se arma con los datos.",
+  "productos": {
+    "titulo": "Catálogo de productos",
+    "lead": "Indumentaria de trabajo, calzado de seguridad y EPP para empresas. Stock permanente, factura A y envíos a todo el país: elegí y cotizá por WhatsApp."
+  },
+  "lineas": {
+    "indumentaria": { "titulo": "Indumentaria de trabajo", "lead": "Ropa de trabajo de fabricación propia y primeras marcas, personalizable con el logo de tu empresa.", "link": "Conocé la línea de indumentaria" },
+    "calzado": { "titulo": "Calzado de seguridad", "lead": "Botines, zapatos, zapatillas y botas de seguridad certificados, de Conwork, Ombú, Funcional y Voran.", "link": "Conocé la línea de calzado" },
+    "epp": { "titulo": "EPP y protección industrial", "lead": "Elementos de protección personal certificados para cada riesgo: cabeza, ojos, oídos, vías respiratorias, manos, altura y más.", "link": "Conocé la línea de EPP" }
+  }
+}

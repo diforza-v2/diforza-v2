@@ -9,3 +9,16 @@
   height: 1px;
   overflow: hidden;
 }
+
+/* Texto solo para lectores de pantalla (p. ej. nombre de un color en un selector de puntos) */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(50%);
+}

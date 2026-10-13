@@ -12,6 +12,8 @@ const subcats = {};
 for (const c of categorias) for (const s of c.subcategorias) subcats[s.id] = s.nombre;
 
 const porId = Object.fromEntries(productos.productos.map((p) => [p.id, p]));
+// Fichas del catálogo online (/productos/<id>/): solo productos visibles
+const enCatalogo = new Set(require("./catalogo.json").productos.filter((p) => p.visible).map((p) => p.id));
 
 function waUrl(p) {
   const ref = p.codigo ? ` (${p.codigo})` : "";
@@ -53,6 +55,7 @@ function tarjeta(id) {
     personalizable: p.linea === "indumentaria" && p.marca === "Diforza",
     atributos: atributos(p),
     wa: waUrl(p),
+    url: p.catalogoId && enCatalogo.has(p.catalogoId) ? `/productos/${p.catalogoId}/` : null,
   };
 }
 

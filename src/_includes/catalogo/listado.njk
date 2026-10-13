@@ -1,0 +1,88 @@
+{#- Listado filtrable del catálogo (todas las tarjetas se renderizan; el JS filtra, ordena y pagina).
+    Recibe: items (productos de catalogoWeb), facetas, scope ("todo" | "linea" | "sub"). JS: assets/js/catalogo.js -#}
+<section class="catalog-list" data-js="catalog" id="listado" aria-label="Productos">
+  <div class="catalog-list__inner">
+    <aside class="catalog-filters" id="catFilters" data-js="cat-filters" aria-label="Filtros">
+      <div class="catalog-filters__head">
+        <p class="catalog-filters__title">Filtrar</p>
+        <button type="button" class="catalog-filters__close" data-js="cat-filters-close" aria-label="Cerrar filtros"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </div>
+      <div class="catalog-filters__body">
+{%- if scope != "sub" and facetas.subcategorias.length > 1 %}
+        <fieldset class="catalog-facet" data-facet="sub">
+          <legend class="catalog-facet__title">Categoría</legend>
+{%- set lineaPrev = "" %}
+{%- for s in facetas.subcategorias %}
+{%- if scope == "todo" and s.linea != lineaPrev %}
+          <p class="catalog-facet__group">{{ s.lineaNombre }}</p>
+{%- set lineaPrev = s.linea %}
+{%- endif %}
+          <label class="catalog-check"><input type="checkbox" name="sub" value="{{ s.id }}"><span class="catalog-check__box" aria-hidden="true"></span><span class="catalog-check__label">{{ s.nombre }}</span><span class="catalog-check__n" data-n>{{ s.n }}</span></label>
+{%- endfor %}
+        </fieldset>
+{%- endif %}
+{%- if facetas.marcas.length > 1 %}
+        <fieldset class="catalog-facet{% if facetas.marcas.length > 8 %} is-collapsed{% endif %}" data-facet="marca">
+          <legend class="catalog-facet__title">Marca</legend>
+{%- for m in facetas.marcas %}
+          <label class="catalog-check{% if loop.index > 8 %} catalog-check--extra{% endif %}"><input type="checkbox" name="marca" value="{{ m.id }}"><span class="catalog-check__box" aria-hidden="true"></span><span class="catalog-check__label">{{ m.nombre }}</span><span class="catalog-check__n" data-n>{{ m.n }}</span></label>
+{%- endfor %}
+{%- if facetas.marcas.length > 8 %}
+          <button type="button" class="catalog-facet__more" data-js="facet-more">Ver todas ({{ facetas.marcas.length }})</button>
+{%- endif %}
+        </fieldset>
+{%- endif %}
+{%- if facetas.colores.length > 1 %}
+        <fieldset class="catalog-facet" data-facet="color">
+          <legend class="catalog-facet__title">Color</legend>
+          <div class="catalog-swatches">
+{%- for c in facetas.colores %}
+            <label class="catalog-swatch" title="{{ c.nombre }} ({{ c.n }})"><input type="checkbox" name="color" value="{{ c.id }}"><span class="catalog-swatch__dot" style="--dot: {{ c.hex }}" aria-hidden="true"></span><span class="visually-hidden">{{ c.nombre }}</span></label>
+{%- endfor %}
+          </div>
+        </fieldset>
+{%- endif %}
+      </div>
+      <div class="catalog-filters__foot">
+        <button type="button" class="catalog-filters__clear" data-js="cat-clear">Limpiar</button>
+        <button type="button" class="catalog-filters__apply" data-js="cat-filters-close">Ver <span data-js="cat-count-btn">{{ items.length }}</span> productos</button>
+      </div>
+    </aside>
+    <div class="catalog-filters__scrim" data-js="cat-filters-close" hidden></div>
+
+    <div class="catalog-results">
+      <div class="catalog-toolbar">
+        <p class="catalog-toolbar__count" aria-live="polite"><b data-js="cat-count">{{ items.length }}</b> <span data-js="cat-count-word">productos</span></p>
+        <button type="button" class="catalog-toolbar__filter" data-js="cat-filters-open" aria-controls="catFilters" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg> Filtrar <span class="catalog-toolbar__badge" data-js="cat-badge" hidden></span></button>
+        <label class="catalog-sort"><span class="visually-hidden">Ordenar por</span>
+          <select data-js="cat-sort">
+            <option value="vendidos">Más vendidos</option>
+            <option value="az">Nombre A–Z</option>
+            <option value="za">Nombre Z–A</option>
+          </select>
+        </label>
+      </div>
+      <div class="catalog-chips" data-js="cat-chips" hidden></div>
+
+      <ul class="catalog-grid" role="list" data-js="cat-grid">
+{%- for it in items %}
+{%- set p = it.card %}
+        <li class="catalog-grid__item" data-js="cat-item" data-i="{{ loop.index0 }}" data-n="{{ it.nombre }}" data-l="{{ it.filtro.l }}" data-s="{{ it.filtro.s }}" data-m="{{ it.filtro.m }}" data-c="{{ it.filtro.c }}" data-t="{{ it.filtro.t }}">
+{%- include "partials/product-card.njk" %}
+        </li>
+{%- endfor %}
+      </ul>
+
+      <div class="catalog-empty" data-js="cat-empty" hidden>
+        <p class="catalog-empty__title">No encontramos productos con esos filtros.</p>
+        <p class="catalog-empty__text">Probá con otra búsqueda o escribinos: trabajamos muchos más artículos de los que ves acá.</p>
+        <div class="catalog-empty__ctas">
+          <button type="button" class="catalog-empty__clear" data-js="cat-clear">Limpiar filtros</button>
+          <a class="btn btn--primary btn--icon" href="https://wa.me/{{ site.whatsapp.number }}?text={{ ('Hola, busco un producto que no encontré en el catálogo web.') | urlencode }}" target="_blank" rel="noopener" data-js="wa">{% include "partials/icon-wa.njk" %} Consultar por WhatsApp</a>
+        </div>
+      </div>
+
+      <button type="button" class="catalog-more" data-js="cat-more" hidden>Ver más productos</button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: catalogoWeb.lineas
+  size: 1
+  alias: l
+permalink: "/productos/{{ l.id }}/"
+pageJs: /assets/js/catalogo.js
+headerFlat: true
+eleventyComputed:
+  title: "{{ catalogoTextos.lineas[l.id].titulo }} para empresas: catálogo | Diforza"
+  description: "{{ l.total }} productos de {{ catalogoTextos.lineas[l.id].titulo | lower }}. {{ catalogoTextos.lineas[l.id].lead }}"
+  waText: "Hola, quiero cotizar {{ catalogoTextos.lineas[l.id].titulo | lower }} para mi empresa."
+---
+{#- Página de línea del catálogo (/productos/<linea>/): categorías + listado filtrable. La landing de la línea tiene la info comercial. -#}
+{%- set LT = catalogoTextos.lineas[l.id] %}
+{%- set crumbs = [{ nombre: "Productos", url: "/productos/" }, { nombre: LT.titulo }] %}
+{%- set crumbsLd = [{ "@type": "ListItem", position: 1, name: "Productos", item: site.url + "/productos/" }, { "@type": "ListItem", position: 2, name: LT.titulo }] %}
+{%- set headTitle = LT.titulo %}
+{%- set headLead = LT.lead %}
+{%- set headLink = { url: l.landing, texto: LT.link } %}
+<main class="catalog-page">
+{%- include "catalogo/head.njk" %}
+{%- set tiles = l.subcategorias %}
+{%- include "catalogo/tiles.njk" %}
+{%- set items = l.productos %}
+{%- set facetas = l.facetas %}
+{%- set scope = "linea" %}
+{%- include "catalogo/listado.njk" %}
+</main>

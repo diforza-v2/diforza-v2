@@ -48,6 +48,14 @@ module.exports = function (eleventyConfig) {
     s == null ? "" : String(s).replace(/\[\[(.+?)\]\]/g, '<span class="placeholder">$1</span>')
   );
 
+
+  // Lista de rutas → URLs absolutas (schema.org del catálogo)
+  // Lista de objetos → lista de un campo (p. ej. nombres de marcas)
+  eleventyConfig.addFilter("pluck", (list, key) => (list || []).map((o) => o[key]));
+  // ["A","B","C"] → "A, B y C"
+  eleventyConfig.addFilter("listaY", (l) => (!l || !l.length ? "" : l.length === 1 ? l[0] : l.slice(0, -1).join(", ") + " y " + l[l.length - 1]));
+  eleventyConfig.addFilter("absUrls", (list, base) => (list || []).map((u) => (base || "") + u));
+
   return {
     dir: {
       input: "src",

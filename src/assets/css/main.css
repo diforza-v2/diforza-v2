@@ -25,6 +25,7 @@
 @import "components/testimonial.css" layer(components);
 @import "components/form.css" layer(components);
 @import "components/wa-float.css" layer(components);
+@import "components/breadcrumbs.css" layer(components);
 
 /* layout */
 @import "layout/header.css" layer(layout);
@@ -50,6 +51,11 @@
 @import "sections/landing/quote.css" layer(sections);
 @import "sections/landing/catalog.css" layer(sections);
 @import "sections/legal.css" layer(sections);
+@import "sections/catalog/catalog-head.css" layer(sections);
+@import "sections/catalog/pdp.css" layer(sections);
+@import "sections/catalog/related.css" layer(sections);
+@import "sections/catalog/lines-tiles.css" layer(sections);
+@import "sections/catalog/catalog-list.css" layer(sections);
 
 /* utilities */
 @import "utilities.css" layer(utilities);

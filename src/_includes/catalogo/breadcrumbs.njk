@@ -1,0 +1,15 @@
+{#- Migas de pan del catálogo. Recibe `crumbs` = [{ nombre, url }]; el último es la página actual (sin link). -#}
+<nav class="breadcrumbs" aria-label="Estás en">
+  <ol class="breadcrumbs__list">
+{%- for c in crumbs %}
+    <li class="breadcrumbs__item">
+{%- if not loop.last %}<a href="{{ c.url }}">{{ c.nombre }}</a>{% else %}<span aria-current="page">{{ c.nombre }}</span>{% endif %}
+    </li>
+{%- endfor %}
+  </ol>
+</nav>
+<script type="application/ld+json">{{ {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": crumbsLd
+} | dump | safe }}</script>

@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Migas de pan (.breadcrumbs) — catálogo online (/productos/)
+   Marcado: src/_includes/catalogo/breadcrumbs.njk. Va sobre la banda azul (.catalog-head).
+   ========================================================================== */
+
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: var(--fs-12-5);
+  font-weight: var(--fw-medium);
+  color: rgb(var(--rgb-white) / 72%);
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.breadcrumbs__item + .breadcrumbs__item::before {
+  margin: 0 8px;
+  color: rgb(var(--rgb-white) / 40%);
+  content: "/";
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+  color: var(--white);
+}
+
+.breadcrumbs [aria-current] {
+  max-width: 60vw;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--white);
+  text-overflow: ellipsis;
+}
+
+@media (--md) {
+  .breadcrumbs__list {
+    font-size: var(--fs-13);
+  }
+}

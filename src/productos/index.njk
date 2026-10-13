@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+title: "Catálogo de productos: indumentaria, calzado y EPP | Diforza"
+description: "Catálogo online de Diforza: indumentaria de trabajo, calzado de seguridad y EPP para empresas. Buscá por producto, marca o código y cotizá por WhatsApp."
+waText: "Hola, quiero hacer una consulta sobre el catálogo de productos."
+pageJs: /assets/js/catalogo.js
+headerFlat: true
+---
+{#- Catálogo completo (/productos/): líneas + listado filtrable de todos los productos. Datos: _data/catalogoWeb.js -#}
+{%- set T = catalogoTextos.productos %}
+{%- set crumbs = [{ nombre: "Inicio", url: "/" }, { nombre: "Productos" }] %}
+{%- set crumbsLd = [{ "@type": "ListItem", position: 1, name: "Inicio", item: site.url + "/" }, { "@type": "ListItem", position: 2, name: "Productos" }] %}
+{%- set headTitle = T.titulo %}
+{%- set headLead = T.lead %}
+<main class="catalog-page">
+{%- include "catalogo/head.njk" %}
+  <nav class="cat-lines" aria-label="Líneas de productos">
+    <ul class="cat-lines__list" role="list">
+{%- for l in catalogoWeb.lineas %}
+{%- set LT = catalogoTextos.lineas[l.id] %}
+      <li><a class="cat-line" href="{{ l.url }}">
+        <span class="cat-line__media">{% for f in l.portadas %}<img src="{{ f }}" alt="" width="200" height="250">{% endfor %}</span>
+        <span class="cat-line__text"><span class="cat-line__name">{{ LT.titulo }}</span><span class="cat-line__n">{{ l.total }} productos · {{ l.subcategorias.length }} categorías</span></span>
+        <span class="cat-line__arrow" aria-hidden="true">{{ icons['ui-flecha'] | safe }}</span>
+      </a></li>
+{%- endfor %}
+    </ul>
+  </nav>
+{%- set items = catalogoWeb.productos %}
+{%- set facetas = catalogoWeb.facetas %}
+{%- set scope = "todo" %}
+{%- include "catalogo/listado.njk" %}
+</main>

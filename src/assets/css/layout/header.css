@@ -63,6 +63,11 @@
   opacity: 0;
 }
 
+/* Sobre una banda azul propia (catálogo /productos/): sin scrim, para que no se vea el corte */
+.header--flat::before {
+  opacity: 0;
+}
+
 .header__logo img {
   width: auto;
   height: 44px;

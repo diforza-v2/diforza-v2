@@ -297,3 +297,31 @@
     color: var(--color-whatsapp);
   }
 }
+
+/* ---- Link a la ficha (/productos/<id>/): el nombre cubre toda la tarjeta; el CTA queda encima ---- */
+.product-card__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card__link::after {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-layer-1);
+  content: "";
+}
+
+.product-card__link:focus-visible {
+  box-shadow: none;
+  outline: none;
+}
+
+.product-card:has(.product-card__link:focus-visible) {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.product-card:has(.product-card__link) .product-card__cta {
+  position: relative;
+  z-index: var(--z-layer-2);
+}

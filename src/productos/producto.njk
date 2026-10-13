@@ -1,0 +1,168 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: catalogoWeb.productos
+  size: 1
+  alias: p
+permalink: "/productos/{{ p.id }}/"
+pageJs: /assets/js/catalogo.js
+headerFlat: true
+eleventyComputed:
+  title: "{{ p.nombre }} | Diforza"
+  description: "{{ p.descripcion }} {{ p.sub.nombre }} para empresas, con stock permanente. Cotizá por WhatsApp."
+  waText: "Hola, quiero cotizar {{ p.nombre }} para mi empresa."
+---
+{#- Ficha de producto del catálogo online. Datos: _data/catalogoWeb.js (p = un producto).
+    Variante elegida: ?v=<n> (la maneja assets/js/catalogo.js: foto, ficha técnica y mensaje de WhatsApp). -#}
+{%- set v0 = p.variantes[0] %}
+{%- set LT = catalogoTextos.lineas[p.linea.id] %}
+{%- set crumbs = [{ nombre: "Productos", url: "/productos/" }, { nombre: LT.titulo, url: p.linea.url }, { nombre: p.sub.nombre, url: p.sub.url }, { nombre: p.nombre }] %}
+{%- set crumbsLd = [
+  { "@type": "ListItem", position: 1, name: "Productos", item: site.url + "/productos/" },
+  { "@type": "ListItem", position: 2, name: LT.titulo, item: site.url + p.linea.url },
+  { "@type": "ListItem", position: 3, name: p.sub.nombre, item: site.url + p.sub.url },
+  { "@type": "ListItem", position: 4, name: p.nombre }
+] %}
+<main class="catalog-page">
+  <div class="catalog-head catalog-head--compact">
+    <div class="catalog-head__inner">
+{%- include "catalogo/breadcrumbs.njk" %}
+    </div>
+  </div>
+
+  <article class="pdp" data-js="pdp">
+    <div class="pdp__top">
+      <div class="pdp-gallery" data-js="pdp-gallery">
+        <div class="pdp-gallery__main{% if not v0.foto %} is-placeholder{% endif %}">
+{%- if v0.foto %}
+          <img class="pdp-gallery__img" src="{{ v0.foto }}" alt="{{ p.nombre }}{% if v0.nombre and p.variantes.length > 1 %} — {{ v0.nombre }}{% endif %}" width="1000" height="1250" data-js="pdp-img">
+{%- else %}
+          <span class="pdp-gallery__ph">Foto a confirmar</span>
+{%- endif %}
+{%- if p.masVendido %}
+          <span class="product-card__flag pdp-gallery__flag">{{ icons['ui-mas-vendido'] | safe }} Más vendido</span>
+{%- endif %}
+          <span class="pdp-gallery__gen" data-js="pdp-gen"{% if not v0.fotoGenerada %} hidden{% endif %}>Color ilustrativo</span>
+        </div>
+{%- if p.fotos.length > 1 %}
+        <ul class="pdp-gallery__thumbs" role="list">
+{%- for f in p.fotos %}
+          <li><button type="button" class="pdp-gallery__thumb{% if loop.first %} is-active{% endif %}" data-js="pdp-thumb" data-src="{{ f }}" aria-label="Ver foto {{ loop.index }} de {{ p.fotos.length }}"{% if loop.first %} aria-current="true"{% endif %}><img src="{{ f }}" alt="" loading="lazy" width="80" height="100"></button></li>
+{%- endfor %}
+        </ul>
+{%- endif %}
+      </div>
+
+      <div class="pdp-info">
+        <p class="pdp-info__brand">{{ p.marca }}{% if p.lineaMarca %} <span>· Línea {{ p.lineaMarca }}</span>{% endif %}</p>
+        <h1 class="pdp-info__title">{{ p.nombre }}</h1>
+{%- if p.descripcion %}
+        <p class="pdp-info__lead">{{ p.descripcion }}</p>
+{%- endif %}
+
+{%- if p.variantes.length > 1 %}
+        <fieldset class="pdp-variants" data-js="pdp-variants">
+          <legend class="pdp-variants__label">{% if p.hayColores %}Color{% else %}Versión{% endif %}: <b data-js="pdp-var-name">{{ v0.nombre }}</b></legend>
+          <div class="pdp-variants__list">
+{%- for v in p.variantes %}
+            <button type="button" class="pdp-variant{% if v.etiqueta or not v.hex or not p.hayColores %} pdp-variant--chip{% endif %}{% if loop.first %} is-active{% endif %}" data-js="pdp-variant"
+              data-v="{{ v.slug }}" data-name="{{ v.nombre }}" data-foto="{{ v.foto or '' }}" data-ficha="{{ v.ficha or '' }}" data-wa="{{ v.wa }}" data-gen="{{ 'si' if v.fotoGenerada else '' }}"
+              aria-pressed="{{ 'true' if loop.first else 'false' }}" title="{{ v.nombre }}">
+{%- if v.hex and p.hayColores %}<span class="pdp-variant__dot" style="--dot: {{ v.hex }}" aria-hidden="true"></span>{% endif %}
+{%- if v.etiqueta or not v.hex or not p.hayColores %}<span class="pdp-variant__text">{{ v.etiqueta if (v.etiqueta and p.hayColores) else v.nombre }}</span>{% else %}<span class="visually-hidden">{{ v.nombre }}</span>{% endif %}
+            </button>
+{%- endfor %}
+          </div>
+        </fieldset>
+{%- elif v0.nombre and v0.colorNombre %}
+        <p class="pdp-info__meta"><b>{% if v0.etiqueta %}Versión{% else %}Color{% endif %}:</b> {{ v0.nombre }}</p>
+{%- endif %}
+
+{%- if p.talles %}
+        <p class="pdp-info__meta"><b>Talles:</b> {{ p.talles }}</p>
+{%- endif %}
+
+        <div class="pdp-info__ctas">
+          <a class="btn btn--primary btn--icon pdp-info__cta" href="{{ v0.wa }}" target="_blank" rel="noopener" data-js="wa-producto" data-prod-id="{{ p.id }}" data-prod-nombre="{{ p.nombre }}">{% include "partials/icon-wa.njk" %} Cotizar por WhatsApp</a>
+{%- if p.ficha %}
+          <a class="pdp-info__ficha" href="{{ v0.ficha or p.ficha }}" target="_blank" rel="noopener" data-js="pdp-ficha" data-prod-id="{{ p.id }}">{% include "partials/icon-download.njk" %} Ficha técnica (PDF)</a>
+{%- endif %}
+        </div>
+
+{%- if p.personalizable %}
+        <p class="pdp-info__perso"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L4.8 8.3l5-.7z"/></svg> Fabricación propia · personalizable con el logo de tu empresa</p>
+{%- endif %}
+
+        <ul class="pdp-trust" role="list">
+          <li>{{ icons['caja'] | safe }} Stock permanente</li>
+          <li>{{ icons['camion'] | safe }} Envíos a todo el país</li>
+          <li>{{ icons['documento'] | safe }} Factura A · sin pedido mínimo</li>
+          <li>{{ icons['ui-whatsapp'] | safe }} Te respondemos en el día</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pdp__details">
+{%- if p.descripcionLarga %}
+      <section class="pdp-block pdp-block--desc">
+        <h2 class="pdp-block__title">Descripción</h2>
+        <p>{{ p.descripcionLarga }}</p>
+      </section>
+{%- endif %}
+{%- if p.specs.length %}
+      <section class="pdp-block pdp-block--specs">
+        <h2 class="pdp-block__title">Especificaciones</h2>
+        <dl class="pdp-specs">
+{%- for s in p.specs %}
+          <div class="pdp-specs__row"><dt>{{ s.k }}</dt><dd>{{ s.v }}</dd></div>
+{%- endfor %}
+{%- if p.talles %}
+          <div class="pdp-specs__row"><dt>Talles</dt><dd>{{ p.talles }}</dd></div>
+{%- endif %}
+          <div class="pdp-specs__row"><dt>Marca</dt><dd>{{ p.marca }}{% if p.distribuidor %} (distribuidor: {{ p.distribuidor }}){% endif %}</dd></div>
+        </dl>
+      </section>
+{%- endif %}
+{%- if p.beneficios.length %}
+      <section class="pdp-block pdp-block--wide">
+        <h2 class="pdp-block__title">Por qué elegirlo</h2>
+        <ul class="pdp-benefits" role="list">
+{%- for b in p.beneficios %}
+          <li class="pdp-benefit"><span class="pdp-benefit__icon" aria-hidden="true">{{ icons['escudo-check-fino'] | safe }}</span><div><h3>{{ b.titulo }}</h3><p>{{ b.texto }}</p></div></li>
+{%- endfor %}
+        </ul>
+      </section>
+{%- endif %}
+{%- if p.usos.length %}
+      <section class="pdp-block pdp-block--wide">
+        <h2 class="pdp-block__title">Ideal para</h2>
+        <ul class="pdp-uses" role="list">
+{%- for u in p.usos %}<li>{{ u }}</li>{% endfor %}
+        </ul>
+      </section>
+{%- endif %}
+    </div>
+  </article>
+
+{%- if p.relacionados.length %}
+  <section class="catalog-related">
+    <div class="catalog-related__head">
+      <h2 class="catalog-related__title">Más productos de {{ p.sub.nombre }}</h2>
+      <a class="catalog-related__all" href="{{ p.sub.url }}">Ver todos {{ icons['ui-flecha'] | safe }}</a>
+    </div>
+{%- set items = p.relacionados %}
+{%- include "partials/product-grid.njk" %}
+  </section>
+{%- endif %}
+</main>
+<script type="application/ld+json">{{ {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": p.nombre,
+  "description": p.descripcionLarga or p.descripcion,
+  "brand": { "@type": "Brand", "name": p.marca },
+  "sku": p.codigo,
+  "category": p.linea.nombre + " > " + p.sub.nombre,
+  "image": p.fotos | absUrls(site.url),
+  "url": site.url + p.url
+} | dump | safe }}</script>

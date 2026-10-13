@@ -1,4 +1,5 @@
 {#- Tarjeta de producto única (home y landings). Recibe `p` = una tarjeta de vitrina.js.
+    Si trae `p.url` (ficha del catálogo online), el nombre es un link que cubre toda la tarjeta (el CTA queda por encima).
     Foto 4:5 protagonista → subcategoría + "Más vendido" sobre la foto → marca → nombre →
     descripción → 1–2 atributos (colores / talles / dato técnico) → "Personalizable" → CTA WhatsApp. -#}
 <article class="product-card">
@@ -22,7 +23,7 @@
 {%- if p.marca %}
     <p class="product-card__brand">{{ p.marca }}</p>
 {%- endif %}
-    <h3 class="product-card__name">{{ p.nombre }}</h3>
+    <h3 class="product-card__name">{% if p.url %}<a class="product-card__link" href="{{ p.url }}">{{ p.nombre }}</a>{% else %}{{ p.nombre }}{% endif %}</h3>
 {%- if p.descripcion %}
     <p class="product-card__desc">{{ p.descripcion }}</p>
 {%- endif %}

@@ -1,6 +1,6 @@
 {#- Header de todas las páginas. Links en site.nav; CTA principal = WhatsApp (texto por página: waText). -#}
 {%- set waHref = "https://wa.me/" + site.whatsapp.number + "?text=" + ((waText or site.whatsapp.text) | urlencode) %}
-<header class="header" id="siteHeader">
+<header class="header{% if headerFlat %} header--flat{% endif %}" id="siteHeader">
   <a href="/" class="header__logo"><img src="/img/logo-blanco.webp" alt="{{ site.name }} — inicio"></a>
   <nav class="nav" id="mainNav" aria-label="Principal">
 {%- for item in site.nav %}

@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Catálogo online · "Más productos de…" (.catalog-related) — pie de la ficha
+   La grilla es el componente compartido (components/product-grid.css).
+   ========================================================================== */
+
+.catalog-related {
+  padding: 48px 0 64px;
+  background: var(--slate-75);
+}
+
+@media (--lg) {
+  .catalog-related {
+    padding: 64px 0 88px;
+  }
+}
+
+.catalog-related__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 var(--pad);
+}
+
+.catalog-related__title {
+  margin: 0;
+  font-size: var(--fs-24);
+  line-height: 1.15;
+  color: var(--navy);
+}
+
+@media (--xl) {
+  .catalog-related__title {
+    font-size: var(--fs-32);
+  }
+}
+
+.catalog-related__all {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.catalog-related__all svg {
+  width: 16px;
+  height: 16px;
+}
+
+.catalog-related__all:hover {
+  text-decoration: underline;
+}
