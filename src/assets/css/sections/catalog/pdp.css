@@ -63,8 +63,11 @@
 }
 
 .pdp-gallery__img {
+  position: absolute;
+  top: 56px;
+  left: 6%;
   width: 88%;
-  height: 92%;
+  height: calc(100% - 76px);
   transition: opacity 0.18s ease;
   mix-blend-mode: multiply;
   object-fit: contain;

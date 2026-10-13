@@ -77,9 +77,9 @@
     "cuit": "30-71770058-5",
     "privacidad": "/politica-de-privacidad/",
     "dataFiscal": {
-      "url": "",
-      "img": "",
-      "_nota": "Data Fiscal de ARCA (F. 960/D): link y URL de la imagen del QR que da ARCA al generarlo con clave fiscal."
+      "url": "http://qr.afip.gob.ar/?qr=InhIVjSgmGnHEeaQWXKSrg,,",
+      "img": "/img/data-fiscal-arca.jpg",
+      "_nota": "Data Fiscal de ARCA (F. 960/D): código que pasó Diego (13 oct 2026). La imagen DATAWEB.jpg de afip.gob.ar se guardó en el sitio (la original es http y el navegador la bloquearía en https). El link queda tal cual lo da ARCA."
     }
   },
   "cta": {

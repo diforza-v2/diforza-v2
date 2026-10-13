@@ -549,6 +549,11 @@
     font-size: var(--fs-12-5);
   }
 
+  .catalog-grid .product-card__img {
+    top: 32px;
+    height: calc(100% - 40px);
+  }
+
   .catalog-grid .product-card__flag {
     top: 8px;
     right: 8px;

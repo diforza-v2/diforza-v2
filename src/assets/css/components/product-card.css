@@ -37,9 +37,14 @@
   border-bottom: 1px solid var(--slate-100);
 }
 
+/* La foto ocupa la zona debajo de las etiquetas (subcategoría / "Más vendido"),
+   así una prenda alta nunca queda tapada por ellas */
 .product-card__img {
+  position: absolute;
+  top: 44px;
+  left: 7%;
   width: 86%;
-  height: 90%;
+  height: calc(100% - 56px);
   mix-blend-mode: multiply;
   object-fit: contain;
   pointer-events: none;
