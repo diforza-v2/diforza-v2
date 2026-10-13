@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/docs"); // catálogo PDF
   eleventyConfig.addPassthroughCopy("src/img");     // imágenes compartidas
   eleventyConfig.addPassthroughCopy("src/*/img");   // imágenes propias de cada landing
+  eleventyConfig.addPassthroughCopy("src/_headers"); // encabezados de Cloudflare Pages (hoy: noindex)
 
   // ---- CSS con Lightning CSS ----
   // Solo se compila main.css (punto de entrada único). El resto son parciales:

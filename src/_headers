@@ -1,0 +1,5 @@
+# Cloudflare Pages — encabezados HTTP de todo el sitio.
+# [PENDIENTE] Mientras el sitio vive en diforza.pages.dev (sin dominio definitivo) no se indexa en Google.
+# Al conectar el dominio propio: borrar el bloque de X-Robots-Tag.
+/*
+  X-Robots-Tag: noindex
