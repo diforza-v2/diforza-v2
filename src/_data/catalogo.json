@@ -258,7 +258,10 @@
    ],
    "colores": [
     "blanco",
-    "amarillo"
+    "amarillo",
+    "azul",
+    "rojo",
+    "verde"
    ],
    "talles": "Único",
    "visible": true,
@@ -323,10 +326,31 @@
      "foto": "/img/catalogo/casco-libus-andes--amarillo.webp",
      "fotoGenerada": false,
      "fichaTecnica": "/assets/docs/fichas/casco-libus-andes.pdf"
+    },
+    {
+     "color": "azul",
+     "colorFabricante": "Azul",
+     "foto": "/img/catalogo/casco-libus-andes--azul.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/casco-libus-andes.pdf"
+    },
+    {
+     "color": "rojo",
+     "colorFabricante": "Rojo",
+     "foto": "/img/catalogo/casco-libus-andes--rojo.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/casco-libus-andes.pdf"
+    },
+    {
+     "color": "verde",
+     "colorFabricante": "Verde",
+     "foto": "/img/catalogo/casco-libus-andes--verde.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/casco-libus-andes.pdf"
     }
    ],
    "foto": "/img/catalogo/casco-libus-andes--blanco.webp",
-   "nota": "Material oficial de Libus que dejó el usuario (fotos + ficha/brochure) en _assets/fotos_marcas/libus/craneal/; fondo gris normalizado a blanco (_procesadas/). Ventas de los códigos ERP unificados.",
+   "nota": "Material oficial de Libus que dejó el usuario (fotos + ficha/brochure) en _assets/fotos_marcas/libus/craneal/; fondo gris normalizado a blanco (_procesadas/). Ventas de los códigos ERP unificados. 14 oct: + azul, rojo y verde (LISTA WEB de Diego), fotos de Segutécnica. 14 oct: colores nuevos con fotos oficiales de libus.com (reemplazan Segutécnica).",
    "fichaTecnica": "/assets/docs/fichas/casco-libus-andes.pdf",
    "galeria": [
     "/img/catalogo/casco-libus-andes--vista-2.webp",
@@ -347,7 +371,7 @@
    "colores": [],
    "talles": null,
    "visible": false,
-   "nota": "Oculto 11 oct (craneal): unificado en su modelo Libus o fuera de la selección del usuario."
+   "nota": "Oculto 11 oct (craneal): unificado en su modelo Libus o fuera de la selección del usuario. 14 oct: el verde pasa a ser variante de casco-libus-andes."
   },
   {
    "id": "anteojo-argon-elite-dark-green-w5-af",
@@ -425,13 +449,13 @@
    "foto": "/img/catalogo/anteojo-libus-argon-elite--transparente-hc.webp",
    "nombreWeb": "Anteojo de seguridad Libus Argon Elite",
    "descripcion": "Versión estilizada y más liviana del Argon. Incluye lente W5 para soldadura.",
-   "descripcionLarga": "El Argon Elite toma el diseño del Argon y lo hace más liviano y ergonómico, con la misma prestación: lente de policarbonato con filtro UV, protección frontal y lateral, marco y patillas flexibles de nylon y patilla telescópica ajustable a 4 largos. Lente transparente para uso general, gris fumé para exteriores, outdoor/indoor para quienes alternan entre luz artificial y sol, y verde oscuro W5 (ANSI Z87.1) para tareas auxiliares de soldadura y oxicorte. Certificado ANSI Z87.1 e IRAM EN 166.",
+   "descripcionLarga": "El Argon Elite toma el diseño del Argon y lo hace más liviano y ergonómico, con la misma prestación: lente de policarbonato con filtro UV, protección frontal y lateral, marco y patillas flexibles de nylon y patilla telescópica ajustable a 4 largos. Lente transparente para uso general, gris fumé para exteriores, outdoor/indoor para quienes alternan entre luz artificial y sol, y verde oscuro W3 o W5 (ANSI Z87.1) para tareas auxiliares de soldadura y oxicorte. Certificado ANSI Z87.1 e IRAM EN 166.",
    "specs": {
     "lente": "Policarbonato, filtro UV",
     "protección": "Frontal y lateral",
     "marco": "Nylon flexible",
     "patillas": "Telescópicas, 4 posiciones",
-    "colores de lente": "Transparente · gris · outdoor/indoor · verde oscuro W5",
+    "colores de lente": "Transparente · gris · outdoor/indoor · verde oscuro W3 · verde oscuro W5",
     "certificación": "ANSI Z87.1 · IRAM EN 166"
    },
    "beneficios": [
@@ -496,6 +520,14 @@
     },
     {
      "color": "verde-ingles",
+     "colorFabricante": "Verde oscuro W3 AF",
+     "foto": "/img/catalogo/anteojo-libus-argon-elite--verde-oscuro-w3-af.webp",
+     "fotoGenerada": false,
+     "etiqueta": "AF",
+     "fichaTecnica": "/assets/docs/fichas/anteojo-libus-argon-elite.pdf"
+    },
+    {
+     "color": "verde-ingles",
      "colorFabricante": "Verde oscuro W5 AF",
      "foto": "/img/catalogo/anteojo-libus-argon-elite--verde-oscuro-w5-af.webp",
      "fotoGenerada": false,
@@ -504,7 +536,7 @@
     }
    ],
    "fichaTecnica": "/assets/docs/fichas/anteojo-libus-argon-elite.pdf",
-   "nota": "Fotos de segutecnica.com, fichas técnicas oficiales de libus.com.ar (_assets/fotos_marcas/libus/ocular/argon-elite/). Unifica 4 productos del ERP; ventas ene–jun sumadas (empresas sumadas por variante: puede haber repetidas). \"Dark green W5\" del ERP (LENSOL) = Argon Elite verde oscuro DIN 5 AF → confirmar."
+   "nota": "Fotos de segutecnica.com, fichas técnicas oficiales de libus.com.ar (_assets/fotos_marcas/libus/ocular/argon-elite/). Unifica 4 productos del ERP; ventas ene–jun sumadas (empresas sumadas por variante: puede haber repetidas). \"Dark green W5\" del ERP (LENSOL) = Argon Elite verde oscuro DIN 5 AF → confirmar. 14 oct: + Verde oscuro W3 AF (902040) por LISTA WEB de Diego; se mantiene la W5."
   },
   {
    "id": "anteojo-argon-gris-af",
@@ -1153,7 +1185,8 @@
     "diseño": "Ojo de gato panorámico",
     "marco": "Nylon con puente nasal universal e insertos soft",
     "patillas": "Telescópicas, 4 posiciones",
-    "certificación": "IRAM EN 166"
+    "certificación": "IRAM EN 166",
+    "tratamientos": "HC antirrayadura · AF antiempaño"
    },
    "beneficios": [
     {
@@ -1205,10 +1238,26 @@
      "fotoGenerada": false,
      "etiqueta": "HC",
      "fichaTecnica": "/assets/docs/fichas/anteojo-libus-mig--hc.pdf"
+    },
+    {
+     "color": "transparente",
+     "colorFabricante": "Transparente AF",
+     "foto": "/img/catalogo/anteojo-libus-mig--transparente-af.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/anteojo-libus-mig--af.pdf",
+     "etiqueta": "AF"
+    },
+    {
+     "color": "gris",
+     "colorFabricante": "Gris AF",
+     "foto": "/img/catalogo/anteojo-libus-mig--gris-af.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/anteojo-libus-mig--af.pdf",
+     "etiqueta": "AF"
     }
    ],
    "fichaTecnica": "/assets/docs/fichas/anteojo-libus-mig--hc.pdf",
-   "nota": "Fotos de segutecnica.com, fichas técnicas oficiales de libus.com.ar (_assets/fotos_marcas/libus/ocular/mig/). Unifica 2 productos del ERP; ventas ene–jun sumadas (empresas sumadas por variante: puede haber repetidas)."
+   "nota": "Fotos de segutecnica.com, fichas técnicas oficiales de libus.com.ar (_assets/fotos_marcas/libus/ocular/mig/). Unifica 2 productos del ERP; ventas ene–jun sumadas (empresas sumadas por variante: puede haber repetidas). 14 oct: + variantes AF transparente (901443) y gris (901444) con ficha oficial AF (LISTA WEB de Diego)."
   },
   {
    "id": "anteojo-neon-gris-af",
@@ -2546,22 +2595,71 @@
    "nota": "Oculto 10 oct (gorras): el usuario define un solo producto, la gorra Diforza."
   },
   {
-   "id": "bandera-peligro-50-x70",
-   "nombre": "Bandera Peligro 50 x70",
+   "id": "bandera-peligro-diforza",
+   "nombre": "Bandera cebrada de peligro 50 × 70 cm Diforza",
    "marca": "Diforza",
    "linea": "epp",
    "subcategoria": "senalizacion",
    "codigosERP": [
     "BANDPELI"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": false,
+   "colores": [
+    "rojo"
+   ],
+   "talles": "50 × 70 cm",
+   "visible": true,
    "ventasEneJun2026": {
     "unidades": 102,
     "empresas": 2
    },
-   "nota": "Oculto 10 oct (señalización): sin fabricante con web, decisión del usuario."
+   "nota": "Reactivado 14 oct 2026 (ex bandera-peligro-50-x70) por LISTA WEB.xlsx de Diego, con material que dejó el usuario. ",
+   "nombreWeb": "Bandera cebrada de peligro 50 × 70 cm Diforza",
+   "descripcion": "Bandera cebrada roja y blanca con leyenda PELIGRO, con tiras para atar.",
+   "descripcionLarga": "Bandera de señalización cebrada en rojo y blanco con la leyenda PELIGRO, de 50 × 70 cm, con tiras para atarla. Se usa para marcar cargas que sobresalen de vehículos (caños, perfiles, tirantes), zonas de obra, pozos y sectores de riesgo en planta o en la vía pública. Muy visible a distancia.",
+   "beneficios": [
+    {
+     "titulo": "Leyenda PELIGRO",
+     "texto": "Advierte el riesgo de un vistazo."
+    },
+    {
+     "titulo": "Cebrado rojo y blanco",
+     "texto": "Alto contraste, visible a distancia."
+    },
+    {
+     "titulo": "50 × 70 cm",
+     "texto": "Tamaño estándar para cargas y obra."
+    },
+    {
+     "titulo": "Con tiras para atar",
+     "texto": "Se fija fácil a cargas, vallas o estructuras."
+    }
+   ],
+   "usos": [
+    "Cargas que sobresalen de vehículos",
+    "Obras y vía pública",
+    "Zonas de riesgo en planta",
+    "Transporte y logística",
+    "Mantenimiento"
+   ],
+   "specs": {
+    "medida": "50 × 70 cm",
+    "diseño": "Cebrado rojo y blanco",
+    "leyenda": "PELIGRO",
+    "sujeción": "Tiras para atar"
+   },
+   "galeria": [
+    "/img/catalogo/bandera-peligro-diforza--contexto-1.webp",
+    "/img/catalogo/bandera-peligro-diforza--contexto-2.webp"
+   ],
+   "variantes": [
+    {
+     "color": "rojo",
+     "colorFabricante": "Rojo y blanco",
+     "foto": "/img/catalogo/bandera-peligro-diforza--rojo.webp",
+     "fotoGenerada": false
+    }
+   ],
+   "foto": "/img/catalogo/bandera-peligro-diforza--rojo.webp"
   },
   {
    "id": "bandolera-con-reflectivo-amarillo",
@@ -3238,7 +3336,8 @@
    ],
    "colores": [
     "negro",
-    "marron"
+    "marron",
+    "blanco"
    ],
    "talles": "35 al 47",
    "visible": true,
@@ -3246,12 +3345,12 @@
     "unidades": 9048,
     "empresas": 78
    },
-   "nota": "Incluye el \"Botín Conwork negro\" del ERP (BOTCONW/9BOTCONW) = modelo 25BAF (confirmado por el usuario, 8 oct 2026)",
+   "nota": "Incluye el \"Botín Conwork negro\" del ERP (BOTCONW/9BOTCONW) = modelo 25BAF (confirmado por el usuario, 8 oct 2026) 14 oct: agregada la variante Blanco (línea White) por LISTA WEB de Diego; fotos de conwork.net (botin-25baf-white).",
    "foto": "/img/catalogo/botin-conwork-25baf--negro.webp",
    "nombreWeb": "Botín de seguridad Conwork 25BAF",
    "lineaMarca": "Industrial",
    "descripcion": "El clásico de la industria: cuero, puntera de acero y suela dieléctrica.",
-   "descripcionLarga": "El botín de seguridad más pedido por las empresas. Capellada 100 % cuero flor con doble frontura, cuello y lengüeta acolchados y puntera de acero. Pensado para el trabajo diario en industrias como la petrolera, metalúrgica, agropecuaria y de la construcción. Suela de poliuretano bidensidad dieléctrica, antideslizante y resistente a hidrocarburos. Sello IRAM 3610:2015. Opcional: plantilla antiperforación.",
+   "descripcionLarga": "El botín de seguridad más pedido por las empresas. Capellada 100 % cuero flor con doble frontura, cuello y lengüeta acolchados y puntera de acero. Pensado para el trabajo diario en industrias como la petrolera, metalúrgica, agropecuaria y de la construcción. Suela de poliuretano bidensidad dieléctrica, antideslizante y resistente a hidrocarburos. Sello IRAM 3610:2015. Opcional: plantilla antiperforación. También en blanco (línea White), fácil de limpiar, para laboratorios e industrias frigoríficas, lácteas y alimenticias.",
    "specs": {
     "puntera": "Acero",
     "suela": "PU bidensidad dieléctrica",
@@ -3267,6 +3366,11 @@
      "color": "marron",
      "colorFabricante": "Cedro",
      "foto": "/img/catalogo/botin-conwork-25baf--cedro.webp"
+    },
+    {
+     "color": "blanco",
+     "colorFabricante": "Blanco (línea White)",
+     "foto": "/img/catalogo/botin-conwork-25baf--blanco.webp"
     }
    ],
    "fichaTecnica": "/assets/docs/fichas/conwork-25baf.pdf"
@@ -4381,7 +4485,7 @@
      "color": "azul-marino",
      "colorFabricante": "Azul marino",
      "foto": "/img/catalogo/buzo-polar-medio-cierre-diforza--azul-marino.webp",
-     "fotoGenerada": true
+     "fotoGenerada": false
     },
     {
      "color": "negro",
@@ -4390,7 +4494,7 @@
      "fotoGenerada": false
     }
    ],
-   "nota": "Ventas ene–jun 10 oct: 1.515 u con código BUPOLDIF + ~1.100 u manuales (bordados, estampados, OC443 polar negro). Specs: placa del catálogo (buzos/7.png)."
+   "nota": "Ventas ene–jun 10 oct: 1.515 u con código BUPOLDIF + ~1.100 u manuales (bordados, estampados, OC443 polar negro). Specs: placa del catálogo (buzos/7.png). 14 oct: foto real nueva de Diego para Azul marino (diforza/buzos/buzo polar.png)."
   },
   {
    "id": "buzo-polar-combinado",
@@ -4690,7 +4794,7 @@
     "azul-marino",
     "azulino"
    ],
-   "talles": "38 al 60",
+   "talles": "36 al 60",
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 500,
@@ -4758,7 +4862,7 @@
      "foto": "/img/catalogo/camisa-clasica-ombu--azulino.webp"
     }
    ],
-   "nota": "Ventas ene–jun 10 oct: 58 u con código CAMCLOM (5 empresas) + ~450 u manuales (Ombú azulino, azul c/logo y reflectivo, etc.). Art. Ombú 55500-08 (beige), 55500-10 (azul marino), 55500-04 (azulino). Talles 38–60 (tabla de tiendaombu)."
+   "nota": "Ventas ene–jun 10 oct: 58 u con código CAMCLOM (5 empresas) + ~450 u manuales (Ombú azulino, azul c/logo y reflectivo, etc.). Art. Ombú 55500-08 (beige), 55500-10 (azul marino), 55500-04 (azulino). Talles 38–60 (tabla de tiendaombu). 14 oct: talles desde 36 (LISTA WEB de Diego)."
   },
   {
    "id": "camisa-clasica-ombu-grafil",
@@ -4869,7 +4973,7 @@
    "colores": [
     "amarillo"
    ],
-   "talles": "L al 4XL",
+   "talles": "L al 5XL",
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 26,
@@ -4928,7 +5032,7 @@
     "/img/catalogo/campera-depascale-descarne--vista-2.webp",
     "/img/catalogo/campera-depascale-descarne--contexto-1.webp"
    ],
-   "nota": "11 oct: el ERP lo tenía como Diforza; equivalente De Pascale elegido con el usuario. Fotos y ficha de la API De Pascale en _assets/fotos_marcas/depascale/soldador/campera-descarne/. Talles: el ERP vende L al 4XL; De Pascale numera 1 a 11 → confirmar equivalencia."
+   "nota": "11 oct: el ERP lo tenía como Diforza; equivalente De Pascale elegido con el usuario. Fotos y ficha de la API De Pascale en _assets/fotos_marcas/depascale/soldador/campera-descarne/. Talles: el ERP vende L al 4XL; De Pascale numera 1 a 11 → confirmar equivalencia. 14 oct: talles L al 5XL según LISTA WEB de Diego."
   },
   {
    "id": "campera-friza-diforza",
@@ -5059,7 +5163,7 @@
      "fotoGenerada": true
     }
    ],
-   "nota": "Specs, colores y talles armados con IA (sin info de Diforza, aprobado por el usuario 10 oct) — validar."
+   "nota": "Specs, colores y talles armados con IA (sin info de Diforza, aprobado por el usuario 10 oct) — validar. 14 oct: foto real nueva de Diego para Azul marino (diforza/camperas/campera polar.png)."
   },
   {
    "id": "campera-rompeviento-con-polar",
@@ -5568,7 +5672,15 @@
    "colores": [
     "blanco",
     "amarillo",
-    "azul"
+    "azul",
+    "rojo",
+    "verde",
+    "naranja",
+    "gris",
+    "celeste",
+    "marron",
+    "rosa",
+    "negro"
    ],
    "talles": "Único",
    "visible": true,
@@ -5588,7 +5700,8 @@
     "arnés": "No incluido (ver Arnés Milenium)",
     "códigos Libus": "902386 blanco · 902387 amarillo · 902389 azul",
     "suspensión": "No incluida: arnés Milenium de 6 u 8 puntos de anclaje a elección",
-    "certificación": "IRAM 3620 · ANSI/ISEA Z89.1"
+    "certificación": "IRAM 3620 · ANSI/ISEA Z89.1",
+    "colores": "Blanco · amarillo · azul · rojo · verde · naranja · gris · celeste · marrón · rosa · negro"
    },
    "beneficios": [
     {
@@ -5645,9 +5758,65 @@
      "foto": "/img/catalogo/casco-libus-milenium-class--azul.webp",
      "fotoGenerada": false,
      "fichaTecnica": "/assets/docs/fichas/casco-libus-milenium-class.pdf"
+    },
+    {
+     "color": "rojo",
+     "colorFabricante": "Rojo",
+     "foto": "/img/catalogo/casco-libus-milenium-class--rojo.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/casco-libus-milenium-class.pdf"
+    },
+    {
+     "color": "verde",
+     "colorFabricante": "Verde",
+     "foto": "/img/catalogo/casco-libus-milenium-class--verde.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/casco-libus-milenium-class.pdf"
+    },
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/casco-libus-milenium-class--naranja.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/casco-libus-milenium-class.pdf"
+    },
+    {
+     "color": "gris",
+     "colorFabricante": "Gris",
+     "foto": "/img/catalogo/casco-libus-milenium-class--gris.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/casco-libus-milenium-class.pdf"
+    },
+    {
+     "color": "celeste",
+     "colorFabricante": "Celeste",
+     "foto": "/img/catalogo/casco-libus-milenium-class--celeste.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/casco-libus-milenium-class.pdf"
+    },
+    {
+     "color": "marron",
+     "colorFabricante": "Marrón",
+     "foto": "/img/catalogo/casco-libus-milenium-class--marron.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/casco-libus-milenium-class.pdf"
+    },
+    {
+     "color": "rosa",
+     "colorFabricante": "Rosa",
+     "foto": "/img/catalogo/casco-libus-milenium-class--rosa.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/casco-libus-milenium-class.pdf"
+    },
+    {
+     "color": "negro",
+     "colorFabricante": "Negro",
+     "foto": "/img/catalogo/casco-libus-milenium-class--negro.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/casco-libus-milenium-class.pdf"
     }
    ],
-   "nota": "Material oficial de Libus que dejó el usuario (fotos + ficha/brochure) en _assets/fotos_marcas/libus/craneal/; fondo gris normalizado a blanco (_procesadas/). Ventas de los códigos ERP unificados.",
+   "nota": "Material oficial de Libus que dejó el usuario (fotos + ficha/brochure) en _assets/fotos_marcas/libus/craneal/; fondo gris normalizado a blanco (_procesadas/). Ventas de los códigos ERP unificados. 14 oct: + 8 colores (LISTA WEB de Diego), fotos de Segutécnica. 14 oct: colores nuevos con fotos oficiales de libus.com (reemplazan Segutécnica).",
    "fichaTecnica": "/assets/docs/fichas/casco-libus-milenium-class.pdf",
    "galeria": [
     "/img/catalogo/casco-libus-milenium-class--vista-2.webp",
@@ -5681,23 +5850,77 @@
    "nota": "Oculto 11 oct (craneal): unificado en su modelo Libus o fuera de la selección del usuario."
   },
   {
-   "id": "casquete-c-foam-p-gorra",
-   "nombre": "Casquete C/Foam p/Gorra",
+   "id": "casquete-libus-ventilado-gorra",
+   "nombre": "Casquete ventilado con foam para gorra textil Libus",
    "marca": "Libus",
    "linea": "epp",
    "subcategoria": "proteccion-craneal",
    "codigosERP": [
     "CASQPGOR"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": false,
-   "nota": "Gorra con casquete (bump cap) Oculto 11 oct (craneal): unificado en su modelo Libus o fuera de la selección del usuario.",
+   "colores": [
+    "negro"
+   ],
+   "talles": "Único",
+   "visible": true,
+   "nota": "Reactivado 14 oct 2026 (ex casquete-c-foam-p-gorra) por LISTA WEB.xlsx de Diego, con material que dejó el usuario. ",
    "ventasEneJun2026": {
     "unidades": 30,
     "empresas": 2
    },
-   "foto": "/img/catalogo/casquete-c-foam-p-gorra.webp"
+   "foto": "/img/catalogo/casquete-libus-ventilado-gorra--negro.webp",
+   "nombreWeb": "Casquete ventilado con foam para gorra textil Libus",
+   "codigoFabricante": "400973",
+   "descripcion": "Casquete de policarbonato con almohadillas soft, para colocar dentro de una gorra textil.",
+   "descripcionLarga": "Casquete plástico de policarbonato con almohadillas soft interna y externa que absorben golpes, para colocar dentro de una gorra textil y convertirla en gorra con casquete (bump cap). Ventilado para que no junte calor. Se usa donde hay riesgo de golpes leves contra herramientas, estructuras o maquinaria, pero no de caída de objetos. También sirve como repuesto de la gorra con casquete Libus.",
+   "beneficios": [
+    {
+     "titulo": "Policarbonato",
+     "texto": "Liviano y resistente a golpes leves."
+    },
+    {
+     "titulo": "Almohadillas soft",
+     "texto": "Interna y externa: absorben el golpe y dan confort."
+    },
+    {
+     "titulo": "Ventilado",
+     "texto": "No junta calor en la cabeza."
+    },
+    {
+     "titulo": "Para cualquier gorra textil",
+     "texto": "También repuesto de la gorra con casquete Libus."
+    },
+    {
+     "titulo": "Libus",
+     "texto": "Fabricante argentino líder en EPP, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Mantenimiento de maquinaria",
+    "Talleres mecánicos",
+    "Industria alimenticia",
+    "Logística y depósitos",
+    "Espacios con techos bajos"
+   ],
+   "specs": {
+    "material": "Policarbonato con almohadillas soft interna y externa",
+    "tipo": "Casquete para gorra textil (bump cap)",
+    "ventilación": "Sí",
+    "código Libus": "400973"
+   },
+   "galeria": [
+    "/img/catalogo/casquete-libus-ventilado-gorra--vista-2.webp"
+   ],
+   "variantes": [
+    {
+     "color": "negro",
+     "colorFabricante": "Negro",
+     "foto": "/img/catalogo/casquete-libus-ventilado-gorra--negro.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/casquete-libus-ventilado-gorra.pdf"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/casquete-libus-ventilado-gorra.pdf"
   },
   {
    "id": "chaleco-geologo-diforza",
@@ -6259,7 +6482,7 @@
      "fotoGenerada": true
     }
    ],
-   "nota": "Ventas ene–jun 10 oct: ~2.700 u con código CHDIAZ + ~1.400 u manuales (muchas personalizadas). Colores y talles definidos por el usuario (XS–6XL). Specs: placa del catálogo."
+   "nota": "Ventas ene–jun 10 oct: ~2.700 u con código CHDIAZ + ~1.400 u manuales (muchas personalizadas). Colores y talles definidos por el usuario (XS–6XL). Specs: placa del catálogo. 14 oct: foto real nueva de Diego para Azul marino (diforza/chombas/chomba.png)."
   },
   {
    "id": "chomba-pique-diforza-azul-francia",
@@ -9097,7 +9320,7 @@
      "fotoGenerada": false
     }
    ],
-   "nota": "Ventas ene–jun: 149 u / 2 empresas (todo talle 3). Stock 106. Talles 1–3 del ERP (EQUIPRPIEL). Foto = la que ya usaba el sitio (catálogo PDF, no es foto propia). Tela, composición y equivalencia de talles 1–3 armadas con IA → validar con Diego. Ocultos: medias térmicas Ombú (81 u / 2 empresas), pantalón térmico, cuello polar, medias, remeras T1–T3."
+   "nota": "Ventas ene–jun: 149 u / 2 empresas (todo talle 3). Stock 106. Talles 1–3 del ERP (EQUIPRPIEL). Foto = la que ya usaba el sitio (catálogo PDF, no es foto propia). Tela, composición y equivalencia de talles 1–3 armadas con IA → validar con Diego. Ocultos: medias térmicas Ombú (81 u / 2 empresas), pantalón térmico, cuello polar, medias, remeras T1–T3. 14 oct: foto real nueva de Diego para Negro (diforza/ropa-primera-piel/primera piel.png)."
   },
   {
    "id": "equipo-retractil-xr-10-en-cable-de-acero-x-10-mts",
@@ -10111,18 +10334,80 @@
    "nota": "Material oficial del fabricante (WorkSafe) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['9GUANTAPI306WS', 'GUANTAP1306WS']. Talles a validar con Diforza."
   },
   {
-   "id": "guante-anticorte-bano-nit-anti-impacto-tx2000",
-   "nombre": "Guante Anticorte baño nit Anti-Impacto TX2000",
+   "id": "guante-anticorte-anti-impacto-ws-tx2000",
+   "nombre": "Guante anticorte y anti-impacto WorkSafe TX2000",
    "marca": "WorkSafe",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
     "GUANTANTTX2000"
    ],
-   "colores": [],
+   "colores": [
+    "gris"
+   ],
    "talles": "8 al 11",
-   "visible": false,
-   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
+   "visible": true,
+   "nota": "Reactivado 14 oct 2026 (ex guante-anticorte-bano-nit-anti-impacto-tx2000) por LISTA WEB.xlsx de Diego. Material oficial WorkSafe en _assets/fotos_marcas/worksafe/TX2000_guante-resistente-al-corte-e-impactos-bano-de-nitrilo-espumado-anti-deslizante-tx2000/ (ficha, certificado y DJC de su Drive).",
+   "codigoFabricante": "TX2000",
+   "ventasEneJun2026": null,
+   "foto": "/img/catalogo/guante-anticorte-anti-impacto-ws-tx2000--gris.webp",
+   "nombreWeb": "Guante anticorte y anti-impacto WorkSafe TX2000",
+   "descripcion": "HPPE anticorte nivel C con TPR anti-impacto y palma de nitrilo espumado.",
+   "descripcionLarga": "Guante de alto rendimiento: tejido HPPE resistente al corte (nivel C), transpirable, con insertos de TPR en nudillos, dedos y dorso que absorben golpes y aplastamientos, y palma de nitrilo espumado antideslizante para agarre en superficies aceitosas, húmedas o secas. Certificado EN 388 4543CP.",
+   "specs": {
+    "tejido": "HPPE",
+    "recubrimiento": "Nitrilo espumado en palma",
+    "protecciones": "TPR anti-impacto en dorso",
+    "norma": "EN 388: 4543CP · CE · UL AR 2036",
+    "destreza": "5/5",
+    "código fabricante": "TX2000"
+   },
+   "beneficios": [
+    {
+     "titulo": "Anticorte nivel C",
+     "texto": "EN 388: corte 5 · ISO 13997 C."
+    },
+    {
+     "titulo": "Anti-impacto (P)",
+     "texto": "TPR en nudillos, dedos y dorso."
+    },
+    {
+     "titulo": "Nitrilo espumado",
+     "texto": "Agarre antideslizante con aceite o humedad."
+    },
+    {
+     "titulo": "Transpirable",
+     "texto": "Menos sudor en la jornada."
+    },
+    {
+     "titulo": "EN 388: 4543CP",
+     "texto": "Abrasión 4 · corte 5 · desgarro 4 · punción 3 · C · P."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Petróleo y minería",
+    "Industria del gas",
+    "Manipulación de vidrio y chapas",
+    "Materiales peligrosos o inestables",
+    "Industria automotriz y mecánica"
+   ],
+   "variantes": [
+    {
+     "color": "gris",
+     "colorFabricante": "Gris, negro y amarillo",
+     "foto": "/img/catalogo/guante-anticorte-anti-impacto-ws-tx2000--gris.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/guante-anticorte-anti-impacto-ws-tx2000.pdf"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-anticorte-anti-impacto-ws-tx2000.pdf",
+   "galeria": [
+    "/img/catalogo/guante-anticorte-anti-impacto-ws-tx2000--vista-2.webp"
+   ]
   },
   {
    "id": "guante-anticorte-ws-h2101",
@@ -10215,25 +10500,87 @@
     "unidades": 9,
     "empresas": 1
    },
-   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde. 14 oct: códigos unificados en guante-anticorte-anti-impacto-ws-h5101tpr (decisión del usuario)."
   },
   {
-   "id": "guante-bano-compl-puno-teijdo-1615-ws",
-   "nombre": "Guante Baño compl Puño Teijdo 1615 WS",
+   "id": "guante-nitrilo-pesado-puno-tejido-ws-n1615",
+   "nombre": "Guante de nitrilo pesado con puño tejido WorkSafe N1615",
    "marca": "WorkSafe",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
     "GUANPT1615WS"
    ],
-   "colores": [],
+   "colores": [
+    "azul"
+   ],
    "talles": "8 al 11",
-   "visible": false,
+   "visible": true,
    "ventasEneJun2026": {
     "unidades": 273,
     "empresas": 4
    },
-   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
+   "nota": "Reactivado 14 oct 2026 (ex guante-bano-compl-puno-teijdo-1615-ws) por LISTA WEB.xlsx de Diego. Material oficial WorkSafe en _assets/fotos_marcas/worksafe/N1615_guante-banado-en-nitrilo-pesado-con-puno-tejido-n1615/ (ficha, certificado y DJC de su Drive).",
+   "codigoFabricante": "N1615",
+   "foto": "/img/catalogo/guante-nitrilo-pesado-puno-tejido-ws-n1615--azul.webp",
+   "nombreWeb": "Guante de nitrilo pesado con puño tejido WorkSafe N1615",
+   "descripcion": "Baño completo de nitrilo azul pesado con puño tejido elástico.",
+   "descripcionLarga": "Guante con soporte de algodón y baño completo de nitrilo pesado azul, que resiste derivados del petróleo, aceites y grasas y da buen agarre en superficies secas. El puño tejido elástico se ajusta a la muñeca y no deja entrar polvo, virutas ni tierra. Durable, apto para trabajos pesados y repetitivos. Certificado EN 388 3111X.",
+   "specs": {
+    "soporte": "Algodón",
+    "recubrimiento": "Nitrilo pesado azul, baño completo",
+    "puño": "Tejido elástico",
+    "norma": "EN 388: 3111X · CE · UL AR 2036",
+    "destreza": "5/5",
+    "código fabricante": "N1615"
+   },
+   "beneficios": [
+    {
+     "titulo": "Nitrilo pesado",
+     "texto": "Resiste aceites, grasas y derivados del petróleo."
+    },
+    {
+     "titulo": "Baño completo",
+     "texto": "Palma y dorso protegidos."
+    },
+    {
+     "titulo": "Puño tejido elástico",
+     "texto": "No deja entrar polvo ni virutas."
+    },
+    {
+     "titulo": "Soporte de algodón",
+     "texto": "Firme y cómodo por dentro."
+    },
+    {
+     "titulo": "EN 388: 3111X",
+     "texto": "Abrasión 3 · destreza 5/5."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Industria automotriz y metalúrgica",
+    "Petroquímica y lubricantes",
+    "Petróleo y gas",
+    "Mantenimiento industrial",
+    "Minería y residuos",
+    "Maquinaria agrícola"
+   ],
+   "variantes": [
+    {
+     "color": "azul",
+     "colorFabricante": "Azul",
+     "foto": "/img/catalogo/guante-nitrilo-pesado-puno-tejido-ws-n1615--azul.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/guante-nitrilo-pesado-puno-tejido-ws-n1615.pdf"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-nitrilo-pesado-puno-tejido-ws-n1615.pdf",
+   "galeria": [
+    "/img/catalogo/guante-nitrilo-pesado-puno-tejido-ws-n1615--vista-2.webp"
+   ]
   },
   {
    "id": "guante-cobertor-dielec-vaqueta-tipo-north",
@@ -10701,22 +11048,84 @@
    "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
-   "id": "guante-latex-industrial-negro-ws",
-   "nombre": "Guante Latex Industrial Negro WS",
+   "id": "guante-latex-industrial-ws-latex80gr",
+   "nombre": "Guante de látex industrial 80 g WorkSafe LATEX80GR",
    "marca": "WorkSafe",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
     "GUALATINDWS"
    ],
-   "colores": [],
+   "colores": [
+    "negro"
+   ],
    "talles": "8 al 10",
-   "visible": false,
+   "visible": true,
    "ventasEneJun2026": {
     "unidades": 230,
     "empresas": 3
    },
-   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
+   "nota": "Reactivado 14 oct 2026 (ex guante-latex-industrial-negro-ws) por LISTA WEB.xlsx de Diego; convive con el látex De Pascale (decisión del usuario). Material oficial WorkSafe en _assets/fotos_marcas/worksafe/LATEX80GR_guante-de-latex-industrial-80gr-latex80gr/.",
+   "nombreWeb": "Guante de látex industrial 80 g WorkSafe LATEX80GR",
+   "codigoFabricante": "LATEX80GR",
+   "descripcion": "Látex negro de 80 g con interior flocado naranja, largo ± 31 cm. Estanco y texturizado.",
+   "descripcionLarga": "Guante de látex industrial de 80 g, impermeable y estanco, con largo de unos 31 cm que protege mano, muñeca y parte del antebrazo del contacto con líquidos. Palma y dedos texturizados para agarre firme en húmedo o en seco, e interior flocado naranja que lo hace más cómodo y fácil de poner. Ideal para albañilería y mezclas de cemento, limpieza industrial, lavado de vehículos, industria pesquera y frigoríficos. Certificado EN 388 1011X.",
+   "beneficios": [
+    {
+     "titulo": "Estanco",
+     "texto": "Látex de 80 g impermeable: no pasan líquidos."
+    },
+    {
+     "titulo": "Largo ± 31 cm",
+     "texto": "Protege mano, muñeca y parte del antebrazo."
+    },
+    {
+     "titulo": "Palma texturizada",
+     "texto": "Agarre firme en húmedo y en seco."
+    },
+    {
+     "titulo": "Interior flocado",
+     "texto": "Más cómodo y fácil de poner y sacar."
+    },
+    {
+     "titulo": "EN 388: 1011X",
+     "texto": "Destreza 5/5."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Albañilería y mezclas de cemento",
+    "Sector agroalimentario",
+    "Limpieza industrial",
+    "Lavado de vehículos y motores",
+    "Industria pesquera",
+    "Frigoríficos"
+   ],
+   "specs": {
+    "material": "Látex natural negro, 80 g",
+    "interior": "Flocado naranja",
+    "largo": "± 31 cm",
+    "norma": "EN 388: 1011X · CE · UL AR 2036",
+    "destreza": "5/5",
+    "código fabricante": "LATEX80GR"
+   },
+   "variantes": [
+    {
+     "color": "negro",
+     "colorFabricante": "Negro con interior naranja",
+     "foto": "/img/catalogo/guante-latex-industrial-ws-latex80gr--negro.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/guante-latex-industrial-ws-latex80gr.pdf"
+    }
+   ],
+   "foto": "/img/catalogo/guante-latex-industrial-ws-latex80gr--negro.webp",
+   "fichaTecnica": "/assets/docs/fichas/guante-latex-industrial-ws-latex80gr.pdf",
+   "galeria": [
+    "/img/catalogo/guante-latex-industrial-ws-latex80gr--vista-2.webp"
+   ]
   },
   {
    "id": "guante-latex-negro-industrial",
@@ -10725,8 +11134,7 @@
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
-    "GUALATNE",
-    "GUALATINDWS"
+    "GUALATNE"
    ],
    "colores": [
     "negro"
@@ -10786,11 +11194,8 @@
    ],
    "foto": "/img/catalogo/guante-latex-negro-industrial--negro.webp",
    "fichaTecnica": "/assets/docs/fichas/guante-latex-negro-industrial.pdf",
-   "ventasEneJun2026": {
-    "unidades": 230,
-    "empresas": 3
-   },
-   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUALATINDWS', 'GUALATNE']. Talles a validar con Diforza."
+   "ventasEneJun2026": null,
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUALATINDWS', 'GUALATNE']. Talles a validar con Diforza. 14 oct: el código GUALATINDWS pasó al látex WorkSafe LATEX80GR."
   },
   {
    "id": "guante-latex-uso-domestico",
@@ -10849,8 +11254,8 @@
    "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
-   "id": "guante-mondongo-puno-de-lona-l1705-ws",
-   "nombre": "Guante Mondongo Puño de Lona L1705 WS",
+   "id": "guante-mondongo-latex-ws-l1705",
+   "nombre": "Guante tipo mondongo de látex rugoso con puño de lona WorkSafe L1705",
    "marca": "WorkSafe",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
@@ -10859,10 +11264,73 @@
     "GUMONPLWST8",
     "GUMONDPLWST9"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": false,
-   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
+   "colores": [
+    "amarillo"
+   ],
+   "talles": "8 al 11",
+   "visible": true,
+   "nota": "Reactivado 14 oct 2026 (ex guante-mondongo-puno-de-lona-l1705-ws) por LISTA WEB.xlsx de Diego. Material oficial WorkSafe en _assets/fotos_marcas/worksafe/L1705_guante-banado-en-latex-rugoso-con-puno-de-lona-l1705/ (ficha, certificado y DJC de su Drive).",
+   "codigoFabricante": "L1705",
+   "ventasEneJun2026": null,
+   "foto": "/img/catalogo/guante-mondongo-latex-ws-l1705--amarillo.webp",
+   "nombreWeb": "Guante tipo mondongo de látex rugoso con puño de lona WorkSafe L1705",
+   "descripcion": "Baño completo de látex rugoso tipo mondongo con puño de lona.",
+   "descripcionLarga": "El clásico guante \"mondongo\": soporte de algodón con baño completo de látex texturado en dorso, palma y dedos, con acabado rugoso que agarra firme en múltiples superficies. El puño ancho de lona de seguridad protege ante atrapamientos, facilita sacar la mano y se pone fácil incluso sobre mangas voluminosas. Certificado EN 388 1121X.",
+   "specs": {
+    "soporte": "Algodón",
+    "recubrimiento": "Látex texturado, baño completo",
+    "puño": "Lona, tipo seguridad",
+    "norma": "EN 388: 1121X · CE · UL AR 2036",
+    "destreza": "5/5",
+    "código fabricante": "L1705"
+   },
+   "beneficios": [
+    {
+     "titulo": "Látex rugoso",
+     "texto": "Agarre firme en superficies variadas."
+    },
+    {
+     "titulo": "Baño completo",
+     "texto": "Protege dorso, palma y dedos."
+    },
+    {
+     "titulo": "Puño de lona de seguridad",
+     "texto": "Se libera rápido ante un atrapamiento."
+    },
+    {
+     "titulo": "Durable",
+     "texto": "Apto para trabajos continuos y repetitivos."
+    },
+    {
+     "titulo": "EN 388: 1121X",
+     "texto": "Destreza 5/5."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Industria pesquera",
+    "Plástico y reciclado",
+    "Forestal y maderera",
+    "Agro",
+    "Construcción",
+    "Servicios municipales"
+   ],
+   "variantes": [
+    {
+     "color": "amarillo",
+     "colorFabricante": "Amarillo",
+     "foto": "/img/catalogo/guante-mondongo-latex-ws-l1705--amarillo.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/guante-mondongo-latex-ws-l1705.pdf"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-mondongo-latex-ws-l1705.pdf",
+   "galeria": [
+    "/img/catalogo/guante-mondongo-latex-ws-l1705--vista-2.webp"
+   ]
   },
   {
    "id": "guante-moteado-blanco-1100fer-gamisol",
@@ -11002,7 +11470,7 @@
     "unidades": 52,
     "empresas": 1
    },
-   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde. 14 oct: códigos unificados en guante-nitrilo-anti-impacto-ws-n2005tpr (decisión del usuario)."
   },
   {
    "id": "guante-nitrilo-puno-de-lona",
@@ -11132,22 +11600,82 @@
    "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
   },
   {
-   "id": "guante-nitrilo-term-2101-ws",
-   "nombre": "Guante Nitrilo Term 2101 WS",
+   "id": "guante-termico-nitrilo-espumado-ws-w2101",
+   "nombre": "Guante para frío con interior de acrílico WorkSafe W2101",
    "marca": "WorkSafe",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
    "codigosERP": [
     "GUANITERM2101WS"
    ],
-   "colores": [],
-   "talles": "8 al 10",
-   "visible": false,
+   "colores": [
+    "azul"
+   ],
+   "talles": "7 al 10",
+   "visible": true,
    "ventasEneJun2026": {
     "unidades": 12,
     "empresas": 1
    },
-   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
+   "nota": "Reactivado 14 oct 2026 (ex guante-nitrilo-term-2101-ws) por LISTA WEB.xlsx de Diego. Material oficial WorkSafe en _assets/fotos_marcas/worksafe/W2101_guante-de-poliester-con-interior-de-acrilico-para-frio-w2101/ (ficha, certificado y DJC de su Drive).",
+   "codigoFabricante": "W2101",
+   "foto": "/img/catalogo/guante-termico-nitrilo-espumado-ws-w2101--azul.webp",
+   "nombreWeb": "Guante para frío con interior de acrílico WorkSafe W2101",
+   "descripcion": "Poliéster con forro de acrílico para frío y baño 3/4 de nitrilo espumado.",
+   "descripcionLarga": "Guante de trabajo para bajas temperaturas: exterior de poliéster y forro interior de acrílico que aísla del frío, con baño 3/4 de nitrilo espumado que agarra bien en superficies húmedas, aceitosas o secas. Muy resistente a la abrasión (nivel 4) y con ajuste ergonómico que reduce la fatiga. Certificado EN 388 4111X.",
+   "specs": {
+    "tejido": "Poliéster exterior + acrílico interior",
+    "recubrimiento": "Nitrilo espumado 3/4",
+    "norma": "EN 388: 4111X · CE · UL AR 2036",
+    "destreza": "5/5",
+    "código fabricante": "W2101"
+   },
+   "beneficios": [
+    {
+     "titulo": "Forro de acrílico",
+     "texto": "Aísla la mano en ambientes fríos."
+    },
+    {
+     "titulo": "Nitrilo espumado 3/4",
+     "texto": "Agarre en húmedo, seco o con aceite."
+    },
+    {
+     "titulo": "Abrasión nivel 4",
+     "texto": "Alta resistencia al desgaste."
+    },
+    {
+     "titulo": "Ajuste ergonómico",
+     "texto": "Menos fatiga en tareas largas."
+    },
+    {
+     "titulo": "EN 388: 4111X",
+     "texto": "Abrasión 4 · destreza 5/5."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Cámaras frigoríficas",
+    "Logística refrigerada",
+    "Automotriz, metalúrgica y petróleo en frío",
+    "Construcción en invierno",
+    "Agricultura en invierno"
+   ],
+   "variantes": [
+    {
+     "color": "azul",
+     "colorFabricante": "Azul y negro",
+     "foto": "/img/catalogo/guante-termico-nitrilo-espumado-ws-w2101--azul.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/guante-termico-nitrilo-espumado-ws-w2101.pdf"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-termico-nitrilo-espumado-ws-w2101.pdf",
+   "galeria": [
+    "/img/catalogo/guante-termico-nitrilo-espumado-ws-w2101--vista-2.webp"
+   ]
   },
   {
    "id": "guante-nylon-latex",
@@ -11201,7 +11729,7 @@
    "colores": [
     "negro"
    ],
-   "talles": "7 al 10",
+   "talles": "6 al 11",
    "visible": true,
    "ventasEneJun2026": {
     "unidades": 2864,
@@ -11295,11 +11823,11 @@
    "colores": [],
    "talles": null,
    "visible": false,
-   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde."
+   "nota": "Oculto 10 oct (manos): fuera de la selección del usuario; códigos sumados al modelo equivalente cuando corresponde. 14 oct: códigos unificados en guante-latex-texturado-ws-l1101 (decisión del usuario)."
   },
   {
    "id": "guante-pvc-rojo-30-cm",
-   "nombre": "Guante de PVC rojo 30 cm De Pascale",
+   "nombre": "Guante de PVC rojo De Pascale (30, 35 y 40 cm)",
    "marca": "De Pascale",
    "linea": "epp",
    "subcategoria": "proteccion-manos",
@@ -11318,15 +11846,15 @@
     "unidades": 201,
     "empresas": 7
    },
-   "foto": "/img/catalogo/guante-pvc-rojo-30-cm--rojo.webp",
-   "nombreWeb": "Guante de PVC rojo 30 cm De Pascale",
-   "descripcion": "PVC rojo con soporte de algodón, largo 30 cm. Para líquidos y grasas.",
-   "descripcionLarga": "Guante de PVC rojo con soporte interior de algodón interlock y largo total de 30 cm, que protege la mano y parte del antebrazo de líquidos, grasas y aceites. Impermeable, resistente a la abrasión y cómodo por dentro. Para mantenimiento, petróleo, limpieza industrial y manipulación de productos húmedos.",
+   "foto": "/img/catalogo/guante-pvc-rojo-30-cm--30-cm.webp",
+   "nombreWeb": "Guante de PVC rojo De Pascale (30, 35 y 40 cm)",
+   "descripcion": "PVC rojo con soporte de algodón, en largos de 30, 35 y 40 cm. Para líquidos y grasas.",
+   "descripcionLarga": "Guante de PVC rojo con soporte interior de algodón interlock, en tres largos: 30 cm (mano), 35 cm y 40 cm (mano y antebrazo). Protege de líquidos, grasas y aceites, es impermeable, resistente a la abrasión y cómodo por dentro. Para mantenimiento, petróleo, petroquímica, construcción, cerámicas, agro y limpieza industrial.",
    "specs": {
     "material": "PVC con soporte interlock de algodón",
-    "largo": "30 cm",
+    "largo": "30 · 35 · 40 cm",
     "norma": "IRAM 3607-3608 (3-1-2-1)",
-    "código fabricante": "DPS31345"
+    "código fabricante": "DPS31345 · DPS31445 · DPS31545"
    },
    "beneficios": [
     {
@@ -11365,14 +11893,31 @@
    "variantes": [
     {
      "color": "rojo",
-     "colorFabricante": "Rojo",
-     "foto": "/img/catalogo/guante-pvc-rojo-30-cm--rojo.webp",
-     "fichaTecnica": "/assets/docs/fichas/guante-pvc-rojo-30-cm.pdf",
-     "fotoGenerada": false
+     "colorFabricante": "Rojo 30 cm",
+     "etiqueta": "30 cm",
+     "foto": "/img/catalogo/guante-pvc-rojo-30-cm--30-cm.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/guante-pvc-rojo-30-cm--30-cm.pdf"
+    },
+    {
+     "color": "rojo",
+     "colorFabricante": "Rojo 35 cm",
+     "etiqueta": "35 cm",
+     "foto": "/img/catalogo/guante-pvc-rojo-30-cm--35-cm.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/guante-pvc-rojo-30-cm--35-cm.pdf"
+    },
+    {
+     "color": "rojo",
+     "colorFabricante": "Rojo 40 cm",
+     "etiqueta": "40 cm",
+     "foto": "/img/catalogo/guante-pvc-rojo-30-cm--40-cm.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/guante-pvc-rojo-30-cm--40-cm.pdf"
     }
    ],
-   "fichaTecnica": "/assets/docs/fichas/guante-pvc-rojo-30-cm.pdf",
-   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['0GUAPVCRJ30', '0GUAPVCRJ35', '0GUAPVCRJ40', 'GUPVCRJ']. Talles a validar con Diforza."
+   "fichaTecnica": "/assets/docs/fichas/guante-pvc-rojo-30-cm--30-cm.pdf",
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['0GUAPVCRJ30', '0GUAPVCRJ35', '0GUAPVCRJ40', 'GUPVCRJ']. Talles a validar con Diforza. 14 oct: agregados 35 y 40 cm como variantes (LISTA WEB de Diego); los códigos ERP 0GUAPVCRJ35/40 ya estaban unificados acá."
   },
   {
    "id": "guante-rugoso-mapa-enduro-328",
@@ -12149,8 +12694,8 @@
    "specs": {
     "compatibilidad": "Semimáscaras BLS 4000 Next · máscaras completas BLS 5000",
     "conexión": "Bayoneta b-lock",
-    "partículas": "201 P3 R · 201C P3 R + carbón · 202 P3 R / P100",
-    "gases": "211 A2 · 213 ABE1 · 214 ABEK1 · 244 K2",
+    "partículas": "201 P3 R · 201C P3 R + carbón · 202 P3 R / P100 · 202C P3 HF",
+    "gases": "211 A2 · 213 ABE1 · 214 ABEK1 · 242 ABE2 · 243 ABEK2 · 244 K2",
     "combinados": "222 ABEK1 P3 R · 226 ABE1 P3 R",
     "prefiltro": "301 P2 R",
     "normas": "EN 143:2000+A1:2006 · EN 14387:2004+A1:2008"
@@ -12217,6 +12762,14 @@
     },
     {
      "color": "gris",
+     "colorFabricante": "202C · P3 HF (ácido fluorhídrico)",
+     "etiqueta": "202C · P3 HF (ácido fluorhídrico)",
+     "foto": "/img/catalogo/filtros-bls-serie-200--202c.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/filtros-bls-serie-200--202c.pdf"
+    },
+    {
+     "color": "gris",
      "colorFabricante": "211 · A2 vapores orgánicos",
      "foto": "/img/catalogo/filtros-bls-serie-200--211-a2-vapores-organicos.webp",
      "fichaTecnica": "/assets/docs/fichas/filtros-bls-serie-200--211-a2-vapores-organicos.pdf",
@@ -12257,6 +12810,22 @@
     },
     {
      "color": "gris",
+     "colorFabricante": "242 · ABE2",
+     "etiqueta": "242 · ABE2",
+     "foto": "/img/catalogo/filtros-bls-serie-200--242.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/filtros-bls-serie-200--242.pdf"
+    },
+    {
+     "color": "gris",
+     "colorFabricante": "243 · ABEK2",
+     "etiqueta": "243 · ABEK2",
+     "foto": "/img/catalogo/filtros-bls-serie-200--243.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/filtros-bls-serie-200--243.pdf"
+    },
+    {
+     "color": "gris",
      "colorFabricante": "244 · K2 amoníaco",
      "foto": "/img/catalogo/filtros-bls-serie-200--244-k2-amoniaco.webp",
      "fichaTecnica": "/assets/docs/fichas/filtros-bls-serie-200--244-k2-amoniaco.pdf",
@@ -12274,7 +12843,7 @@
    ],
    "fichaTecnica": "/assets/docs/fichas/filtros-bls-serie-200--201-p3-r-particulas.pdf",
    "lineaMarca": "Libus (distribuidor)",
-   "nota": "Selección del usuario (11 oct). Marca real BLS (Libus distribuye). Fotos y fichas oficiales que dejó el usuario en _assets/fotos_marcas/libus/respiratoria/; fondo gris normalizado a blanco (_procesadas/). El 213 no estaba en la carpeta del usuario: foto de _assets/fotos_marcas/bls/213 y ficha común de la serie 200 → confirmar."
+   "nota": "Selección del usuario (11 oct). Marca real BLS (Libus distribuye). Fotos y fichas oficiales que dejó el usuario en _assets/fotos_marcas/libus/respiratoria/; fondo gris normalizado a blanco (_procesadas/). El 213 no estaba en la carpeta del usuario: foto de _assets/fotos_marcas/bls/213 y ficha común de la serie 200 → confirmar. 14 oct: agregados 242, 243 y 202C (LISTA WEB de Diego; blsgroup.com). 202C usa la foto del 202 (mismo cuerpo)."
   },
   {
    "id": "kit-filtro-gas-213-abek1",
@@ -14503,8 +15072,8 @@
   },
   {
    "id": "pantalon-cargo-elastizado-diforza",
-   "nombre": "Pantalon Cargo Elastizado Diforza",
-   "marca": "Diforza",
+   "nombre": "Pantalón de trabajo cargo elastizado Agio",
+   "marca": "Agio",
    "linea": "indumentaria",
    "subcategoria": "pantalones",
    "codigosERP": [
@@ -14512,6 +15081,7 @@
     "PANTCARGELAST"
    ],
    "colores": [
+    "negro",
     "azul",
     "gris",
     "beige",
@@ -14524,15 +15094,21 @@
     "empresas": 1
    },
    "foto": "/img/catalogo/pantalon-cargo-elastizado-diforza--azul.webp",
-   "nombreWeb": "Pantalón de trabajo cargo elastizado Diforza",
+   "nombreWeb": "Pantalón de trabajo cargo elastizado Agio",
    "descripcion": "Cargo con tela elastizada: más movilidad para trabajar.",
-   "descripcionLarga": "El cargo con libertad de movimiento. Suma tela elastizada al diseño cargo para tareas en las que hay que agacharse, subir escaleras o cargar peso todo el día. Confeccionado en nuestro taller, combina la practicidad de los bolsillos laterales con la comodidad de una prenda que acompaña cada movimiento.",
+   "descripcionLarga": "El cargo con libertad de movimiento. Suma tela elastizada al diseño cargo para tareas en las que hay que agacharse, subir escaleras o cargar peso todo el día. Es de Agio, nuestra marca propia, y se confecciona en nuestro taller, combina la practicidad de los bolsillos laterales con la comodidad de una prenda que acompaña cada movimiento.",
    "specs": {
     "tela": "Gabardina sanforizada elastizada",
     "bolsillos": "Cargo con tapa",
     "costuras": "Reforzadas"
    },
    "variantes": [
+    {
+     "color": "negro",
+     "colorFabricante": "Negro",
+     "foto": "/img/catalogo/pantalon-cargo-elastizado-diforza--negro.webp",
+     "fotoGenerada": false
+    },
     {
      "color": "azul",
      "colorFabricante": "Azul",
@@ -14554,7 +15130,8 @@
     {
      "color": "verde-oliva",
      "colorFabricante": "Verde",
-     "foto": "/img/catalogo/pantalon-cargo-elastizado-diforza--verde.webp"
+     "foto": "/img/catalogo/pantalon-cargo-elastizado-diforza--verde.webp",
+     "fotoGenerada": false
     }
    ],
    "beneficios": [
@@ -14575,8 +15152,8 @@
      "texto": "No encoge ni pierde la forma después del lavado."
     },
     {
-     "titulo": "4 colores",
-     "texto": "Azul, gris, beige y verde."
+     "titulo": "5 colores",
+     "texto": "Negro, azul, gris, beige y verde."
     },
     {
      "titulo": "Personalizable",
@@ -14589,7 +15166,8 @@
     "Instalaciones",
     "Construcción",
     "Técnicos en campo"
-   ]
+   ],
+   "nota": " 14 oct: foto real nueva de Diego para Verde (agio/agio pan elast.png). 14 oct: marca Agio (decisión del usuario; el Excel lo llama \"Modelo AGIO\") + color negro con foto real de Diego."
   },
   {
    "id": "pantalon-cargo-ombu",
@@ -14643,7 +15221,8 @@
     "verde-oliva",
     "verde-benetton",
     "verde-ingles",
-    "blanco"
+    "blanco",
+    "naranja"
    ],
    "talles": "36 al 68",
    "visible": true,
@@ -14654,7 +15233,7 @@
    "foto": "/img/catalogo/pantalon-clasico-diforza--azul-marino.webp",
    "nombreWeb": "Pantalón de trabajo clásico Diforza",
    "descripcion": "Gabardina 8 oz sanforizada, 4 bolsillos y costuras reforzadas.",
-   "descripcionLarga": "El pantalón de trabajo de toda la vida, confeccionado en nuestro taller. Hecho en gabardina 8 oz sanforizada, es la opción simple y resistente para equipar a todo el personal con una prenda prolija que aguanta el uso diario y los lavados. La mejor opción para uniformar equipos grandes con una prenda duradera y fácil de reponer.",
+   "descripcionLarga": "El pantalón de trabajo de toda la vida, confeccionado en nuestro taller. Hecho en gabardina 8 oz sanforizada, es la opción simple y resistente para equipar a todo el personal con una prenda prolija que aguanta el uso diario y los lavados. La mejor opción para uniformar equipos grandes con una prenda duradera y fácil de reponer. El naranja, de alta visibilidad, es el más pedido en petroleras, minería y obra vial, y combina con la camisa clásica naranja.",
    "specs": {
     "tela": "Gabardina 8 oz sanforizada",
     "bolsillos": "2 delanteros · 2 traseros",
@@ -14664,7 +15243,8 @@
     {
      "color": "azul-marino",
      "colorFabricante": "Azul marino",
-     "foto": "/img/catalogo/pantalon-clasico-diforza--azul-marino.webp"
+     "foto": "/img/catalogo/pantalon-clasico-diforza--azul-marino.webp",
+     "fotoGenerada": false
     },
     {
      "color": "beige",
@@ -14701,6 +15281,12 @@
      "colorFabricante": "Blanco",
      "foto": "/img/catalogo/pantalon-clasico-diforza--blanco.webp",
      "fotoGenerada": true
+    },
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja",
+     "foto": "/img/catalogo/pantalon-clasico-diforza--naranja.webp",
+     "fotoGenerada": false
     }
    ],
    "beneficios": [
@@ -14736,6 +15322,10 @@
     "Construcción",
     "Servicios generales",
     "Industria alimenticia (en blanco)"
+   ],
+   "nota": " 14 oct: agregado el naranja como variante (LISTA WEB de Diego; decisión del usuario: variante, no producto aparte). 14 oct: foto real nueva de Diego para Naranja (diforza/pantalones de trabajo/pant naranja.png). 14 oct: foto real nueva del azul marino (Diego) + vista 2 en galería.",
+   "galeria": [
+    "/img/catalogo/pantalon-clasico-diforza--vista-2.webp"
    ]
   },
   {
@@ -15821,23 +16411,79 @@
    ]
   },
   {
-   "id": "protector-auditivo-l-340-p-casco",
-   "nombre": "Protector Auditivo L-340 P/Casco",
+   "id": "protector-auditivo-libus-l-340-casco",
+   "nombre": "Protector auditivo de copa Libus L-340 para casco",
    "marca": "Libus",
    "linea": "epp",
    "subcategoria": "proteccion-auditiva",
    "codigosERP": [
     "PROTAUDCA340"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": false,
+   "colores": [
+    "gris"
+   ],
+   "talles": "Único",
+   "visible": true,
    "ventasEneJun2026": {
     "unidades": 100,
     "empresas": 1
    },
-   "foto": "/img/catalogo/protector-auditivo-l-340-p-casco.webp",
-   "nota": "Oculto 10 oct (auditiva): unificado en su modelo Libus, kit de repuesto o 3M sin ventas (decisión del usuario)."
+   "foto": "/img/catalogo/protector-auditivo-libus-l-340-casco--casco.webp",
+   "nota": "Reactivado 14 oct 2026 (ex protector-auditivo-l-340-p-casco) por LISTA WEB.xlsx de Diego, con material que dejó el usuario. ",
+   "nombreWeb": "Protector auditivo de copa Libus L-340 para casco",
+   "codigoFabricante": "900487",
+   "descripcion": "Copa para casco de atenuación media-alta, con 2 posiciones de trabajo. NRR 25 dB.",
+   "descripcionLarga": "Protector auditivo de copa L-340 para montar en el casco: más atenuación que el L-320 (NRR 25 dB), con horquillas de soporte giratorio y 2 posiciones de trabajo (sobre la oreja o retirado). Copas con orejera acolchada y lavable para jornadas largas. Incluye las fichas adaptadoras para los cascos Libus. Cumple EN 352-3.",
+   "beneficios": [
+    {
+     "titulo": "NRR 25 dB",
+     "texto": "Para ruido medio-alto."
+    },
+    {
+     "titulo": "Para casco",
+     "texto": "Horquillas giratorias con 2 posiciones de trabajo."
+    },
+    {
+     "titulo": "Orejera acolchada",
+     "texto": "Lavable y cómoda toda la jornada."
+    },
+    {
+     "titulo": "Fichas incluidas",
+     "texto": "Para cascos Libus."
+    },
+    {
+     "titulo": "Libus",
+     "texto": "Fabricante argentino líder en EPP, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Industria y metalmecánica",
+    "Construcción",
+    "Minería",
+    "Gas y petróleo",
+    "Mantenimiento con casco"
+   ],
+   "specs": {
+    "tipo": "Protector de copa para casco",
+    "montaje": "Horquillas con soporte giratorio, 2 posiciones",
+    "atenuación": "NRR 25 dB",
+    "incluye": "Fichas adaptadoras para cascos Libus",
+    "código Libus": "900487"
+   },
+   "galeria": [
+    "/img/catalogo/protector-auditivo-libus-l-340-casco--vista-2.webp"
+   ],
+   "variantes": [
+    {
+     "color": "gris",
+     "colorFabricante": "Para casco",
+     "etiqueta": "Para casco",
+     "foto": "/img/catalogo/protector-auditivo-libus-l-340-casco--casco.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-l-340-casco.pdf"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-l-340-casco.pdf"
   },
   {
    "id": "protector-auditivo-libus-l-340",
@@ -16127,8 +16773,8 @@
    "galeria": []
   },
   {
-   "id": "protector-auditivo-libus-quantum-detec",
-   "nombre": "Protector auditivo endoaural Libus Quantum DETEC (detectable)",
+   "id": "protector-auditivo-libus-quantum-dispenser-detect",
+   "nombre": "Protector auditivo endoaural Libus Quantum Dispenser DETECT (detectable)",
    "marca": "Libus",
    "linea": "epp",
    "subcategoria": "proteccion-auditiva",
@@ -16136,24 +16782,24 @@
     "PROTAUQUADET"
    ],
    "colores": [
-    "azul",
     "verde"
    ],
    "talles": "Único",
-   "visible": false,
+   "visible": true,
    "ventasEneJun2026": {
     "unidades": 250,
     "empresas": 1
    },
-   "nombreWeb": "Protector auditivo endoaural Libus Quantum DETEC (detectable)",
-   "descripcion": "Tapones detectables por detector de metales. Industria alimenticia.",
-   "descripcionLarga": "Versiones detectables del Quantum para la industria alimenticia y farmacéutica: si un tapón se cae en la línea de producción, lo encuentra el detector de metales. Quantum DETEC premoldeado de tres aletas, reutilizable, con anillo metálico oculto detrás de la aleta mayor y cordón azul, en dispenser o en caja plástica flip-top de cinturón (NRR 26 dB / SNR 29,4 dB). Quantum Foam RD detectable: espuma de poliuretano autoexpansible y descartable, con alma metálica en el cordel e inserto metálico en el tapón. Cumple EN 352-2.",
+   "nombreWeb": "Protector auditivo endoaural Libus Quantum Dispenser DETECT (detectable)",
+   "descripcion": "Tapones detectables con cordón azul, en dispenser. Para industria alimenticia.",
+   "descripcionLarga": "Versión detectable del Quantum en dispenser, para la industria alimenticia y farmacéutica: cada tapón lleva un inserto metálico, así que si se cae en la línea de producción lo encuentra el detector de metales. Tapón premoldeado de tres aletas en polímero ultra-soft hipoalergénico, reutilizable, con cordón azul de alto contraste. NRR 26 dB.",
    "specs": {
-    "tipo": "Tapones endoaurales detectables",
-    "versiones": "Dispenser 901609 · Caja plástica cinturón 900477 · Foam RD con cordel 903684",
-    "detección": "Anillo/inserto metálico en el tapón; alma metálica en el cordel (Foam)",
-    "atenuación": "NRR 26 dB · SNR 29,4 dB (premoldeado)",
-    "normas": "EN 352-2"
+    "tipo": "Tapón endoaural premoldeado detectable, con cordón",
+    "presentación": "Dispenser",
+    "detección": "Inserto metálico en el tapón",
+    "atenuación": "NRR 26 dB",
+    "normas": "EN 352-2",
+    "código Libus": "901609"
    },
    "beneficios": [
     {
@@ -16165,20 +16811,20 @@
      "texto": "Color de alto contraste en la línea de alimentos."
     },
     {
-     "titulo": "Premoldeado o espuma",
-     "texto": "Reutilizable de tres aletas o Foam descartable."
+     "titulo": "Reutilizable",
+     "texto": "Premoldeado de tres aletas, lavable."
     },
     {
      "titulo": "NRR 26 dB",
-     "texto": "SNR 29,4 dB en el premoldeado."
+     "texto": "Para ruido moderado."
     },
     {
-     "titulo": "Caja de cinturón",
-     "texto": "Estuche flip-top individual con hebilla."
+     "titulo": "Dispenser",
+     "texto": "Práctico para repartir en planta."
     },
     {
      "titulo": "Libus",
-     "texto": "Fabricante argentino, con ficha técnica descargable."
+     "texto": "Fabricante argentino líder en EPP, con ficha técnica descargable."
     }
    ],
    "usos": [
@@ -16191,33 +16837,18 @@
    ],
    "variantes": [
     {
-     "color": "azul",
-     "colorFabricante": "Dispenser",
-     "etiqueta": "Dispenser",
-     "foto": "/img/catalogo/protector-auditivo-libus-quantum-detec--dispenser-detectable.webp",
-     "fotoGenerada": false,
-     "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-quantum-detec--901609---tap-n-auditivo-quantum-dispenser-detectable-rev04.pdf"
-    },
-    {
-     "color": "azul",
-     "colorFabricante": "Caja plástica de cinturón",
-     "etiqueta": "Caja plástica de cinturón",
-     "foto": "/img/catalogo/protector-auditivo-libus-quantum-detec--caja-plastica-de-cinturon-detectable.webp",
-     "fotoGenerada": false,
-     "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-quantum-detec--tap-n-auditivo-quantum-caja-pl-stica-cinturon.rev03.pdf"
-    },
-    {
      "color": "verde",
-     "colorFabricante": "Foam RD con cordel (descartable)",
-     "etiqueta": "Foam RD con cordel (descartable)",
-     "foto": "/img/catalogo/protector-auditivo-libus-quantum-detec--foam-rd-con-cordel-detectable.webp",
+     "colorFabricante": "Dispenser DETECT",
+     "etiqueta": "Dispenser",
+     "foto": "/img/catalogo/protector-auditivo-libus-quantum-dispenser-detect--dispenser.webp",
      "fotoGenerada": false,
-     "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-quantum-detec--tap-n-auditivo-quantum-foam-rd-con-cordel-detectable-1.pdf"
+     "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-quantum-dispenser-detect.pdf"
     }
    ],
-   "foto": "/img/catalogo/protector-auditivo-libus-quantum-detec--dispenser-detectable.webp",
-   "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-quantum-detec--901609---tap-n-auditivo-quantum-dispenser-detectable-rev04.pdf",
-   "nota": "Fotos, fichas técnicas y certificaciones de segutecnica.com en _assets/fotos_marcas/libus/auditiva/quantum-detec/. Unifica 1 productos del ERP (ventas sumadas). Fichas de libus.com.ar: si el usuario las baja, reemplazar. 10 oct 23:50: fichas oficiales de libus.com.ar (las bajó el usuario); detectables según el catálogo de Diforza (900477 y 903684 fotos de Segutécnica). La caja DETECT usa la ficha de la caja estándar 901467 (misma familia). Oculto 11 oct (auditiva): fuera de la selección final del usuario."
+   "foto": "/img/catalogo/protector-auditivo-libus-quantum-dispenser-detect--dispenser.webp",
+   "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-quantum-dispenser-detect.pdf",
+   "nota": "Reactivado 14 oct 2026 (ex protector-auditivo-libus-quantum-detec) por LISTA WEB.xlsx de Diego, con material que dejó el usuario. ",
+   "codigoFabricante": "901609"
   },
   {
    "id": "protector-auditivo-quantum-foam-rd-s-cordel",
@@ -16234,19 +16865,77 @@
    "nota": "Oculto 10 oct (auditiva): unificado en su modelo Libus, kit de repuesto o 3M sin ventas (decisión del usuario)."
   },
   {
-   "id": "protector-auditivo-quantum-plast-cint",
-   "nombre": "Protector auditivo Quantum Plast Cint",
+   "id": "protector-auditivo-libus-quantum-caja",
+   "nombre": "Protector auditivo endoaural Libus Quantum Caja plástica cinturón",
    "marca": "Libus",
    "linea": "epp",
    "subcategoria": "proteccion-auditiva",
    "codigosERP": [
     "PROTAUQCJ"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": false,
-   "foto": "/img/catalogo/protector-auditivo-quantum-plast-cint.webp",
-   "nota": "Oculto 10 oct (auditiva): unificado en su modelo Libus, kit de repuesto o 3M sin ventas (decisión del usuario)."
+   "colores": [
+    "verde"
+   ],
+   "talles": "Único",
+   "visible": true,
+   "foto": "/img/catalogo/protector-auditivo-libus-quantum-caja--caja.webp",
+   "nota": "Reactivado 14 oct 2026 (ex protector-auditivo-quantum-plast-cint) por LISTA WEB.xlsx de Diego, con material que dejó el usuario. ",
+   "nombreWeb": "Protector auditivo endoaural Libus Quantum Caja plástica cinturón",
+   "codigoFabricante": "901467",
+   "descripcion": "Tapón reutilizable con cordón en estuche flip-top con hebilla de cinturón. NRR 26 dB.",
+   "descripcionLarga": "Tapón auditivo Quantum premoldeado de tres aletas, que se ajusta a todos los canales auditivos, en polímero ultra-soft hipoalergénico, reutilizable y con cordón. Color verde flúor para identificar fácil quién lo está usando. Viene en estuche plástico flip-top individual con hebilla para llevarlo en la cintura y tenerlo siempre a mano. Recomendado para niveles moderados de ruido.",
+   "beneficios": [
+    {
+     "titulo": "Caja de cinturón",
+     "texto": "Estuche flip-top individual con hebilla."
+    },
+    {
+     "titulo": "Tres aletas",
+     "texto": "Se ajusta a todos los canales auditivos."
+    },
+    {
+     "titulo": "Reutilizable con cordón",
+     "texto": "Se lava y no se pierde."
+    },
+    {
+     "titulo": "Verde flúor",
+     "texto": "Fácil de ver si el operario lo está usando."
+    },
+    {
+     "titulo": "NRR 26 dB",
+     "texto": "Para ruido moderado."
+    },
+    {
+     "titulo": "Libus",
+     "texto": "Fabricante argentino líder en EPP, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Industria y metalmecánica",
+    "Logística y depósitos",
+    "Construcción",
+    "Talleres",
+    "Agro"
+   ],
+   "specs": {
+    "tipo": "Tapón endoaural premoldeado, con cordón",
+    "presentación": "Estuche plástico flip-top con hebilla de cinturón",
+    "material": "Polímero ultra-soft hipoalergénico",
+    "atenuación": "NRR 26 dB",
+    "normas": "EN 352-2 · ANSI S3.19",
+    "código Libus": "901467"
+   },
+   "variantes": [
+    {
+     "color": "verde",
+     "colorFabricante": "Caja plástica de cinturón",
+     "etiqueta": "Caja plástica de cinturón",
+     "foto": "/img/catalogo/protector-auditivo-libus-quantum-caja--caja.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-quantum-caja.pdf"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-quantum-caja.pdf"
   },
   {
    "id": "protector-auditivo-quantum-smart",
@@ -16769,7 +17458,7 @@
      "color": "azul-marino",
      "colorFabricante": "Azul marino",
      "foto": "/img/catalogo/remera-diforza-ml--azul-marino.webp",
-     "fotoGenerada": true
+     "fotoGenerada": false
     },
     {
      "color": "negro",
@@ -16801,7 +17490,8 @@
      "foto": "/img/catalogo/remera-diforza-ml--verde-ingles.webp",
      "fotoGenerada": true
     }
-   ]
+   ],
+   "nota": " 14 oct: foto real nueva de Diego para Azul marino (diforza/remeras/remera manga larga.png)."
   },
   {
    "id": "remera-termica-t-1",
@@ -17034,19 +17724,83 @@
    "nota": "Oculto 9 oct: no figura en el catálogo actualizado de Diforza."
   },
   {
-   "id": "respirador-des-zer0-32c-fr-ffp3rd",
-   "nombre": "Respirador des Zer0 32C FR [FFP3RD]",
-   "marca": "Libus",
+   "id": "mascarilla-bls-zer0-32c-fr",
+   "nombre": "Mascarilla desechable BLS Zer0 32C FR FFP3 ignífuga con carbón activado",
+   "marca": "BLS",
    "linea": "epp",
    "subcategoria": "proteccion-respiratoria",
    "codigosERP": [
     "RESPDESECZ32C"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": false,
-   "foto": "/img/catalogo/respirador-des-zer0-32c-fr-ffp3rd.webp",
-   "nota": "Oculto 11 oct (respiratoria): unificado o fuera de la selección del usuario (BLS)."
+   "colores": [
+    "gris"
+   ],
+   "talles": "Único (ajuste regulable)",
+   "visible": true,
+   "foto": "/img/catalogo/mascarilla-bls-zer0-32c-fr--gris.webp",
+   "nota": "Reactivado 14 oct 2026 (ex respirador-des-zer0-32c-fr-ffp3rd) por LISTA WEB.xlsx de Diego. Foto de la Zer0 32C (blsgroup.com; la FR es igual por fuera) y ficha oficial serie Zer0 32.",
+   "nombreWeb": "Mascarilla desechable BLS Zer0 32C FR FFP3 ignífuga con carbón activado",
+   "lineaMarca": "Libus (distribuidor)",
+   "codigoFabricante": "1051718",
+   "fichaTecnica": "/assets/docs/fichas/mascarilla-bls-zer0-32c-fr.pdf",
+   "descripcion": "FFP3 R D con sello de espuma completo, arnés textil regulable, carbón activado y tejido retardante de llama.",
+   "descripcionLarga": "La Zer0 32C FR es la mascarilla más completa de la serie Zer0: protección FFP3 R D, sello facial de espuma completo, arnés textil regulable con sistema drop-off, válvula Eolo y capa de carbón activado contra olores molestos y ozono. Su capa externa es de fibra modacrílica retardante de llama (Flame Retardant), pensada para soldadura, fundición y tareas con chispas o proyecciones calientes. Certificada EN 149:2001+A1:2009.",
+   "beneficios": [
+    {
+     "titulo": "FFP3 R D",
+     "texto": "Máxima protección contra partículas tóxicas."
+    },
+    {
+     "titulo": "Retardante de llama (FR)",
+     "texto": "Capa externa modacrílica para chispas y soldadura."
+    },
+    {
+     "titulo": "Carbón activado",
+     "texto": "Contra olores molestos y ozono."
+    },
+    {
+     "titulo": "Sello de espuma completo",
+     "texto": "Hermeticidad y confort en todo el contorno."
+    },
+    {
+     "titulo": "Arnés textil regulable",
+     "texto": "Ajuste rápido con sistema drop-off."
+    },
+    {
+     "titulo": "BLS",
+     "texto": "Fabricante italiano especializado en protección respiratoria; Libus lo distribuye en Argentina."
+    }
+   ],
+   "usos": [
+    "Soldadura",
+    "Fundición y siderurgia",
+    "Metalurgia",
+    "Amolado y corte",
+    "Minería",
+    "Industria química"
+   ],
+   "specs": {
+    "tipo": "Mascarilla desechable anatómica",
+    "protección": "FFP3 R D",
+    "válvula": "Eolo",
+    "sello": "Espuma completo",
+    "arnés": "Textil regulable (drop-off)",
+    "capa externa": "Modacrílica retardante de llama (FR)",
+    "carbón activado": "Sí",
+    "norma": "EN 149:2001+A1:2009",
+    "código BLS": "1051718"
+   },
+   "variantes": [
+    {
+     "color": "gris",
+     "colorFabricante": "Zer0 32C FR",
+     "etiqueta": "Zer0 32C FR",
+     "foto": "/img/catalogo/mascarilla-bls-zer0-32c-fr--gris.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/mascarilla-bls-zer0-32c-fr.pdf"
+    }
+   ],
+   "ventasEneJun2026": null
   },
   {
    "id": "respirador-descart-particulas-pleg-3230-n95-904522",
@@ -17065,7 +17819,7 @@
   },
   {
    "id": "mascarilla-bls-zer0-30",
-   "nombre": "Mascarilla desechable BLS Zer0 30 FFP3",
+   "nombre": "Mascarilla desechable BLS Zer0 30 FFP3 (con o sin válvula)",
    "marca": "BLS",
    "linea": "epp",
    "subcategoria": "proteccion-respiratoria",
@@ -17082,15 +17836,16 @@
     "empresas": 2
    },
    "foto": "/img/catalogo/mascarilla-bls-zer0-30--ffp3-r-d-con-valvula.webp",
-   "nombreWeb": "Mascarilla desechable BLS Zer0 30 FFP3",
-   "descripcion": "Mascarilla anatómica FFP3 con válvula Eolo y capa protectora.",
+   "nombreWeb": "Mascarilla desechable BLS Zer0 30 FFP3 (con o sin válvula)",
+   "descripcion": "Mascarilla anatómica FFP3 con válvula Eolo (30) o sin válvula (30 NV).",
    "descripcionLarga": "La BLS Zer0 30 es la mascarilla de máxima protección de BLS: FFP3 R D, para polvos, humos y nieblas tóxicos. Anatómica, con soporte preformado elástico que se ajusta a todo tipo de caras, gran campo visual y compatibilidad con anteojos. Válvula Eolo de alta eficiencia (30 % más de paso de aire al exhalar que una válvula tradicional) y lámina protectora externa Armor® que evita que el filtro se obstruya o absorba líquidos, prolongando su eficiencia; se puede usar incluso con guantes. Excelente confort respiratorio. Certificada EN 149:2001+A1:2009.",
    "specs": {
-    "tipo": "Mascarilla desechable anatómica con válvula",
+    "tipo": "Mascarilla desechable anatómica",
     "protección": "FFP3 R D",
-    "válvula": "Eolo de alta eficiencia",
+    "válvula": "Eolo de alta eficiencia (30) · sin válvula (30 NV)",
     "capa externa": "Armor® protectora",
-    "norma": "EN 149:2001+A1:2009"
+    "norma": "EN 149:2001+A1:2009",
+    "código BLS": "1051715 (30) · 1052137 (30 NV)"
    },
    "beneficios": [
     {
@@ -17133,7 +17888,15 @@
      "foto": "/img/catalogo/mascarilla-bls-zer0-30--ffp3-r-d-con-valvula.webp",
      "fichaTecnica": "/assets/docs/fichas/mascarilla-bls-zer0-30.pdf",
      "fotoGenerada": false,
-     "etiqueta": "FFP3 R D con válvula"
+     "etiqueta": "Con válvula (30)"
+    },
+    {
+     "color": "blanco",
+     "colorFabricante": "FFP3 R D sin válvula (30 NV)",
+     "etiqueta": "Sin válvula (30 NV)",
+     "foto": "/img/catalogo/mascarilla-bls-zer0-30--30-nv.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/mascarilla-bls-zer0-30--30-nv.pdf"
     }
    ],
    "fichaTecnica": "/assets/docs/fichas/mascarilla-bls-zer0-30.pdf",
@@ -17141,22 +17904,95 @@
    "galeria": [
     "/img/catalogo/mascarilla-bls-zer0-30--vista-2.webp"
    ],
-   "nota": "Selección del usuario (11 oct). Marca real BLS (Libus distribuye). Fotos y fichas oficiales que dejó el usuario en _assets/fotos_marcas/libus/respiratoria/; fondo gris normalizado a blanco (_procesadas/)."
+   "nota": "Selección del usuario (11 oct). Marca real BLS (Libus distribuye). Fotos y fichas oficiales que dejó el usuario en _assets/fotos_marcas/libus/respiratoria/; fondo gris normalizado a blanco (_procesadas/). 14 oct: agregada la Zer0 30 NV como variante (LISTA WEB de Diego); foto y ficha de blsgroup.com."
   },
   {
-   "id": "respirador-desech-zer0-31-ffp3rd",
-   "nombre": "Respirador desech Zer0 31[FFP3RD]",
-   "marca": "Libus",
+   "id": "mascarilla-bls-zer0-31",
+   "nombre": "Mascarilla desechable BLS Zer0 31 FFP3 con sello facial",
+   "marca": "BLS",
    "linea": "epp",
    "subcategoria": "proteccion-respiratoria",
    "codigosERP": [
-    "RESPDESC031"
+    "RESPDESC031",
+    "RESPART31C"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": false,
-   "foto": "/img/catalogo/respirador-desech-zer0-31-ffp3rd.webp",
-   "nota": "Oculto 11 oct (respiratoria): unificado o fuera de la selección del usuario (BLS)."
+   "colores": [
+    "blanco",
+    "gris"
+   ],
+   "talles": "Único",
+   "visible": true,
+   "foto": "/img/catalogo/mascarilla-bls-zer0-31--31.webp",
+   "nota": "Reactivado 14 oct 2026 (ex respirador-desech-zer0-31-ffp3rd + respirador-para-particulas-zer0-31-c) por LISTA WEB.xlsx de Diego. Fotos y ficha de blsgroup.com (fondo gris → blanco).",
+   "nombreWeb": "Mascarilla desechable BLS Zer0 31 FFP3 con sello facial",
+   "lineaMarca": "Libus (distribuidor)",
+   "codigoFabricante": "1051881 (31) · 1051716 (31C)",
+   "fichaTecnica": "/assets/docs/fichas/mascarilla-bls-zer0-31.pdf",
+   "descripcion": "FFP3 R D con válvula Eolo y sello facial completo; versión 31C con carbón activado.",
+   "descripcionLarga": "La Zer0 31 es la versión de la serie Zer0 con sello facial completo de espuma térmica, que mejora la hermeticidad y el confort en jornadas largas. Protección FFP3 R D contra polvos, humos y nieblas tóxicos, con válvula de exhalación Eolo (más paso de aire y menos calor dentro de la mascarilla), lámina protectora externa Armor® y clip nasal interno compatible con anteojos. La 31C agrega una capa de carbón activado contra olores molestos de gases y vapores orgánicos y ácidos, incluido el ozono de la soldadura, por debajo del TLV. Certificada EN 149:2001+A1:2009.",
+   "beneficios": [
+    {
+     "titulo": "FFP3 R D",
+     "texto": "Máxima protección contra partículas tóxicas."
+    },
+    {
+     "titulo": "Sello facial completo",
+     "texto": "Espuma térmica: más hermeticidad y confort."
+    },
+    {
+     "titulo": "Válvula Eolo",
+     "texto": "Menos resistencia al exhalar y menos calor."
+    },
+    {
+     "titulo": "31C con carbón activado",
+     "texto": "Contra olores molestos y ozono de soldadura."
+    },
+    {
+     "titulo": "Capa Armor®",
+     "texto": "Protege el filtro de suciedad y líquidos."
+    },
+    {
+     "titulo": "BLS",
+     "texto": "Fabricante italiano especializado en protección respiratoria; Libus lo distribuye en Argentina."
+    }
+   ],
+   "usos": [
+    "Amianto y sílice",
+    "Industria farmacéutica",
+    "Minería",
+    "Fundición y metalurgia",
+    "Hospitales y laboratorios",
+    "Demolición",
+    "Soldadura (31C)"
+   ],
+   "specs": {
+    "tipo": "Mascarilla desechable anatómica con sello facial",
+    "protección": "FFP3 R D",
+    "válvula": "Eolo",
+    "sello": "Espuma térmica completa",
+    "carbón activado": "Solo 31C",
+    "norma": "EN 149:2001+A1:2009",
+    "código BLS": "1051881 (31) · 1051716 (31C)"
+   },
+   "variantes": [
+    {
+     "color": "blanco",
+     "colorFabricante": "Zer0 31 · FFP3 R D",
+     "etiqueta": "Zer0 31",
+     "foto": "/img/catalogo/mascarilla-bls-zer0-31--31.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/mascarilla-bls-zer0-31.pdf"
+    },
+    {
+     "color": "gris",
+     "colorFabricante": "Zer0 31C · FFP3 R D + carbón activado",
+     "etiqueta": "Zer0 31C (carbón)",
+     "foto": "/img/catalogo/mascarilla-bls-zer0-31--31c.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/mascarilla-bls-zer0-31.pdf"
+    }
+   ],
+   "ventasEneJun2026": null
   },
   {
    "id": "mascarilla-bls-classic-128bw",
@@ -17238,7 +18074,7 @@
   },
   {
    "id": "mascarilla-bls-522",
-   "nombre": "Mascarilla desechable BLS 522 FFP2",
+   "nombre": "Mascarilla desechable BLS 522 / 522V FFP2",
    "marca": "BLS",
    "linea": "epp",
    "subcategoria": "proteccion-respiratoria",
@@ -17255,17 +18091,17 @@
     "empresas": 3
    },
    "foto": "/img/catalogo/mascarilla-bls-522--ffp2-nr.webp",
-   "nombreWeb": "Mascarilla desechable BLS 522 FFP2",
-   "descripcion": "Mascarilla plegable vertical FFP2, sin válvula, en envase individual.",
-   "descripcionLarga": "La BLS 522 es la mascarilla descartable más vendida de Diforza. Protege contra partículas sólidas y líquidas en el aire (polvo, humos y nieblas), con clasificación FFP2 NR (hasta 12 veces el TLV). Forma vertical plegable de dos paneles que se adapta a distintos tipos de cara, clip nasal interno que no toca la piel ni se oxida, y elásticos de goma soldados por ultrasonido, sin partes metálicas. Viene en envase individual higiénico, fácil de guardar y repartir en planta. Sin válvula: ideal para industria alimenticia y donde hay que evitar la contaminación del ambiente. Certificada EN 149:2001+A1:2009.",
+   "nombreWeb": "Mascarilla desechable BLS 522 / 522V FFP2",
+   "descripcion": "Mascarilla plegable vertical FFP2, sin válvula (522) o con válvula (522V), en envase individual.",
+   "descripcionLarga": "La BLS 522 es la mascarilla descartable más vendida de Diforza. Protege contra partículas sólidas y líquidas en el aire (polvo, humos y nieblas), con clasificación FFP2 NR (hasta 12 veces el TLV). Forma vertical plegable de dos paneles que se adapta a distintos tipos de cara, clip nasal interno que no toca la piel ni se oxida, y elásticos de goma soldados por ultrasonido, sin partes metálicas. Viene en envase individual higiénico, fácil de guardar y repartir en planta. Viene sin válvula (522), ideal para industria alimenticia y donde hay que evitar contaminar el ambiente, o con válvula de exhalación (522V), que reduce el calor y la humedad dentro de la mascarilla en jornadas largas o trabajo físico intenso. Certificada EN 149:2001+A1:2009.",
    "specs": {
     "tipo": "Mascarilla desechable plegable vertical",
     "protección": "FFP2 NR · FPN 12 × TLV",
-    "válvula": "No",
+    "válvula": "Sin válvula (522) · con válvula (522V)",
     "elásticos": "Goma, soldados",
     "presentación": "Envase individual",
     "norma": "EN 149:2001+A1:2009",
-    "código BLS": "1051724"
+    "código BLS": "1051724 (522) · 1051725 (522V)"
    },
    "beneficios": [
     {
@@ -17305,11 +18141,19 @@
    "variantes": [
     {
      "color": "blanco",
-     "colorFabricante": "FFP2 NR",
+     "colorFabricante": "FFP2 NR D sin válvula (522)",
      "foto": "/img/catalogo/mascarilla-bls-522--ffp2-nr.webp",
      "fichaTecnica": "/assets/docs/fichas/mascarilla-bls-522.pdf",
      "fotoGenerada": false,
-     "etiqueta": "FFP2 NR"
+     "etiqueta": "Sin válvula (522)"
+    },
+    {
+     "color": "blanco",
+     "colorFabricante": "FFP2 NR D con válvula (522V)",
+     "etiqueta": "Con válvula (522V)",
+     "foto": "/img/catalogo/mascarilla-bls-522--522v.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/mascarilla-bls-522.pdf"
     }
    ],
    "fichaTecnica": "/assets/docs/fichas/mascarilla-bls-522.pdf",
@@ -17319,7 +18163,7 @@
     "/img/catalogo/mascarilla-bls-522--vista-3.webp",
     "/img/catalogo/mascarilla-bls-522--vista-4.webp"
    ],
-   "nota": "Selección del usuario (11 oct). Marca real BLS (Libus distribuye). Fotos y fichas oficiales que dejó el usuario en _assets/fotos_marcas/libus/respiratoria/; fondo gris normalizado a blanco (_procesadas/)."
+   "nota": "Selección del usuario (11 oct). Marca real BLS (Libus distribuye). Fotos y fichas oficiales que dejó el usuario en _assets/fotos_marcas/libus/respiratoria/; fondo gris normalizado a blanco (_procesadas/). 14 oct: agregada la 522V como variante (LISTA WEB de Diego); foto de Segutécnica, ficha oficial BLS 522/522V."
   },
   {
    "id": "respirador-desechable-bls-225b",
@@ -17441,7 +18285,7 @@
    "talles": null,
    "visible": false,
    "foto": "/img/catalogo/respirador-para-particulas-zer0-31-c.webp",
-   "nota": "Oculto 11 oct (respiratoria): unificado o fuera de la selección del usuario (BLS)."
+   "nota": "Oculto 11 oct (respiratoria): unificado o fuera de la selección del usuario (BLS). 14 oct: unificado en mascarilla-bls-zer0-31 (variante 31C)."
   },
   {
    "id": "retenedor-501-3m",
@@ -17458,22 +18302,79 @@
    "nota": "Oculto 11 oct (respiratoria): unificado o fuera de la selección del usuario (BLS)."
   },
   {
-   "id": "rodillera",
-   "nombre": "Rodillera",
-   "marca": "Diforza",
+   "id": "rodillera-ws-kp011",
+   "nombre": "Rodillera protectora con cubierta de PVC WorkSafe KP011",
+   "marca": "WorkSafe",
    "linea": "epp",
    "subcategoria": "ergonomia",
    "codigosERP": [
     "RODI"
    ],
-   "colores": [],
-   "talles": null,
-   "visible": false,
+   "colores": [
+    "negro"
+   ],
+   "talles": "Único (ajustable)",
+   "visible": true,
    "ventasEneJun2026": {
     "unidades": 33,
     "empresas": 2
    },
-   "nota": "Oculto 13 oct (ergonomía): decisión del usuario."
+   "nota": "Reactivado 14 oct 2026 (ex rodillera, código ERP RODI) por LISTA WEB.xlsx de Diego (Kp011 \"Rodillera importado\"). Material oficial WorkSafe en _assets/fotos_marcas/worksafe/KP011_rodillera-protectora-rodillerakp011/.",
+   "nombreWeb": "Rodillera protectora con cubierta de PVC WorkSafe KP011",
+   "codigoFabricante": "KP011",
+   "foto": "/img/catalogo/rodillera-ws-kp011--negro.webp",
+   "fichaTecnica": "/assets/docs/fichas/rodillera-ws-kp011.pdf",
+   "descripcion": "Cubierta externa de PVC, acolchado de espuma de alta densidad y ajuste con velcro.",
+   "descripcionLarga": "Rodillera para tareas prolongadas de rodillas sobre superficies duras o irregulares: cubierta externa de PVC resistente que protege de piedras y escombros, acolchado interior de espuma de alta densidad y estructura multicapa para mayor soporte. La tela elástica con cierre de velcro y la forma anatómica la mantienen en su lugar sin limitar el movimiento. Revestimiento de poliéster 600D, fácil de limpiar.",
+   "beneficios": [
+    {
+     "titulo": "Cubierta de PVC",
+     "texto": "Protege la rodilla de piedras, escombros y superficies duras."
+    },
+    {
+     "titulo": "Espuma de alta densidad",
+     "texto": "Confort en jornadas largas de rodillas."
+    },
+    {
+     "titulo": "Ajuste con velcro",
+     "texto": "Tela elástica regulable: no se desplaza."
+    },
+    {
+     "titulo": "Diseño anatómico",
+     "texto": "Se adapta a la rodilla y deja mover la pierna."
+    },
+    {
+     "titulo": "Poliéster 600D",
+     "texto": "Revestimiento resistente y fácil de limpiar."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Construcción y colocación de pisos",
+    "Industria y logística",
+    "Mantenimiento de maquinaria",
+    "Mecánica de vehículos",
+    "Jardinería y paisajismo"
+   ],
+   "specs": {
+    "cubierta": "PVC",
+    "acolchado": "Espuma de alta densidad, multicapa",
+    "revestimiento": "Poliéster 600D",
+    "ajuste": "Tela elástica con velcro",
+    "código fabricante": "KP011"
+   },
+   "variantes": [
+    {
+     "color": "negro",
+     "colorFabricante": "Negro",
+     "foto": "/img/catalogo/rodillera-ws-kp011--negro.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/rodillera-ws-kp011.pdf"
+    }
+   ]
   },
   {
    "id": "salvacaidas-sky-8206a",
@@ -18429,7 +19330,8 @@
    ],
    "colores": [
     "negro",
-    "marron"
+    "marron",
+    "blanco"
    ],
    "talles": "35 al 47",
    "visible": true,
@@ -18438,11 +19340,11 @@
     "empresas": 45
    },
    "foto": "/img/catalogo/zapato-conwork-41za--negro.webp",
-   "nota": "Incluye el \"Zapato Conwork\" genérico del ERP (ZAPCONW/9ZAPCONW), confirmado por el usuario 9 oct 2026. Empresas = suma (puede haber superposición).",
+   "nota": "Incluye el \"Zapato Conwork\" genérico del ERP (ZAPCONW/9ZAPCONW), confirmado por el usuario 9 oct 2026. Empresas = suma (puede haber superposición). 14 oct: agregada la variante Blanco (línea White) por LISTA WEB de Diego; fotos de conwork.net (zapato-41za-white).",
    "nombreWeb": "Zapato de seguridad Conwork 41ZA",
    "lineaMarca": "Industrial",
    "descripcion": "Zapato de seguridad bajo, de cuero, con puntera de acero.",
-   "descripcionLarga": "Zapato de seguridad de caña baja para quien necesita protección sin botín: tareas en planta, depósito, logística o mantenimiento. Cuero flor 100 %, forro textil antimicrobiano, cuello acolchado y puntera de acero. Suela de poliuretano bidensidad dieléctrica, antideslizante y resistente a hidrocarburos. Sello IRAM 3610:2015. Opcional: plantilla antiperforación.",
+   "descripcionLarga": "Zapato de seguridad de caña baja para quien necesita protección sin botín: tareas en planta, depósito, logística o mantenimiento. Cuero flor 100 %, forro textil antimicrobiano, cuello acolchado y puntera de acero. Suela de poliuretano bidensidad dieléctrica, antideslizante y resistente a hidrocarburos. Sello IRAM 3610:2015. Opcional: plantilla antiperforación. También en blanco (línea White), fácil de limpiar, para laboratorios e industrias frigoríficas, lácteas y alimenticias.",
    "specs": {
     "puntera": "Acero",
     "suela": "PU bidensidad dieléctrica",
@@ -18458,6 +19360,11 @@
      "color": "marron",
      "colorFabricante": "Cedro",
      "foto": "/img/catalogo/zapato-conwork-41za--cedro.webp"
+    },
+    {
+     "color": "blanco",
+     "colorFabricante": "Blanco (línea White)",
+     "foto": "/img/catalogo/zapato-conwork-41za--blanco.webp"
     }
    ],
    "fichaTecnica": "/assets/docs/fichas/conwork-41za.pdf"
@@ -18693,8 +19600,8 @@
    ]
   },
   {
-   "id": "zapato-prusiano",
-   "nombre": "Zapato Prusiano",
+   "id": "zapato-ombu-prusiano-puntera-acero",
+   "nombre": "Zapato de seguridad Ombú Prusiano con puntera de acero",
    "marca": "Ombú",
    "linea": "calzado",
    "subcategoria": "zapatos",
@@ -18704,14 +19611,70 @@
    "colores": [
     "negro"
    ],
-   "talles": "35 al 48",
-   "visible": false,
+   "talles": "36 al 47",
+   "visible": true,
    "ventasEneJun2026": {
     "unidades": 26,
     "empresas": 2
    },
-   "foto": "/img/catalogo/zapato-prusiano.webp",
-   "nota": "Oculto 9 oct: de Ombú solo se comunican 7 modelos (decisión del usuario)."
+   "foto": "/img/catalogo/zapato-ombu-prusiano-puntera-acero--negro.webp",
+   "nota": "Reactivado 14 oct 2026 (ex zapato-prusiano) por LISTA WEB.xlsx de Diego, con material que dejó el usuario. ",
+   "nombreWeb": "Zapato de seguridad Ombú Prusiano con puntera de acero",
+   "descripcion": "Cuero flor con puntera de acero, suela PU bidensidad dieléctrica y reflectivo lateral.",
+   "descripcionLarga": "El zapato de seguridad Prusiano de Ombú en su versión con puntera de acero bajo normas. Capellada de cuero flor con napa en el cuello, forro textil con refuerzo de cuero en la talonera y pasacordones de ojal. Suela de poliuretano bidensidad inyectada y dieléctrica: entresuela expandida para más confort y planta compacta para más durabilidad, autolimpiante y antideslizante. Cinta reflectiva gris en el lateral. A pedido: plantilla antiperforación o suela de caucho. Código IRAM 10131.",
+   "beneficios": [
+    {
+     "titulo": "Puntera de acero",
+     "texto": "Bajo normas IRAM."
+    },
+    {
+     "titulo": "Suela dieléctrica",
+     "texto": "PU bidensidad: confort y durabilidad."
+    },
+    {
+     "titulo": "Cuero flor",
+     "texto": "Con napa en el cuello y refuerzo en talonera."
+    },
+    {
+     "titulo": "Reflectivo lateral",
+     "texto": "Más visibilidad con poca luz."
+    },
+    {
+     "titulo": "Versiones a pedido",
+     "texto": "Plantilla antiperforación o suela de caucho."
+    }
+   ],
+   "usos": [
+    "Industria y planta",
+    "Logística y depósitos",
+    "Mantenimiento",
+    "Construcción",
+    "Talleres"
+   ],
+   "specs": {
+    "puntera": "Acero",
+    "capellada": "Cuero flor, napa en cuello",
+    "forro": "Textil con refuerzo de cuero en talonera",
+    "suela": "PU bidensidad inyectada, dieléctrica",
+    "plantilla": "Estándar 2 mm",
+    "reflectivo": "Cinta gris lateral",
+    "norma": "IRAM (cód. 10131)",
+    "artículo Ombú": "1PO-01F1-R10"
+   },
+   "fichaTecnica": "/assets/docs/fichas/zapato-ombu-prusiano-puntera-acero.pdf",
+   "galeria": [
+    "/img/catalogo/zapato-ombu-prusiano-puntera-acero--vista-2.webp",
+    "/img/catalogo/zapato-ombu-prusiano-puntera-acero--vista-3.webp"
+   ],
+   "variantes": [
+    {
+     "color": "negro",
+     "colorFabricante": "Negro",
+     "foto": "/img/catalogo/zapato-ombu-prusiano-puntera-acero--negro.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/zapato-ombu-prusiano-puntera-acero.pdf"
+    }
+   ]
   },
   {
    "id": "zapato-voran-jano",
@@ -19218,7 +20181,7 @@
   },
   {
    "id": "cono-delineador-flexible-60",
-   "nombre": "Delineador flexible rebatible 60 cm Conoflex",
+   "nombre": "Delineador flexible rebatible Conoflex (60, 80 y 90 cm)",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
@@ -19227,18 +20190,18 @@
     "amarillo"
    ],
    "visible": true,
-   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP [].",
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP []. 14 oct: + 80 y 90 cm (LISTA WEB de Diego).",
    "codigoFabricante": "DR 600 LE",
-   "nombreWeb": "Delineador flexible rebatible 60 cm Conoflex",
+   "nombreWeb": "Delineador flexible rebatible Conoflex (60, 80 y 90 cm)",
    "descripcion": "Copolímero flexible con filtro UV, 60 cm, reflectivo 2 x 5 cm.",
    "descripcionLarga": "Delineador rebatible para demarcación vial, fabricado en material copolimero flexible, con filtro UV para protección solar. Conformado en “una sola pieza”. Altura 60 cm, diámetro de 5,5 cm y un peso de 1 kg. Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
    "specs": {
-    "código fabricante": "DR",
+    "código fabricante": "DR 600 LE · DR 800 LE · DR 900 LE",
     "material": "Copolímero flexible con filtro UV",
-    "altura": "60 cm",
-    "peso": "1 kg",
+    "altura": "60 · 80 · 90 cm",
+    "peso": "1 kg · 1,2 kg · 1,35 kg",
     "base": "ø 20 cm",
-    "reflectivo": "2 x 5 cm"
+    "reflectivo": "2 × 5 cm (60) · 3 × 5 cm (80 y 90)"
    },
    "beneficios": [
     {
@@ -19276,10 +20239,27 @@
    "variantes": [
     {
      "color": "amarillo",
-     "colorFabricante": "Amarillo",
+     "colorFabricante": "Amarillo 60 cm",
      "foto": "/img/catalogo/cono-delineador-flexible-60--naranja.webp",
      "fichaTecnica": "/assets/docs/fichas/cono-delineador-flexible-60.pdf",
-     "fotoGenerada": false
+     "fotoGenerada": false,
+     "etiqueta": "60 cm"
+    },
+    {
+     "color": "amarillo",
+     "colorFabricante": "Amarillo 80 cm",
+     "etiqueta": "80 cm",
+     "fotoGenerada": false,
+     "foto": "/img/catalogo/cono-delineador-flexible-60--80-cm.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-delineador-flexible-60--80-cm.pdf"
+    },
+    {
+     "color": "amarillo",
+     "colorFabricante": "Amarillo 90 cm",
+     "etiqueta": "90 cm",
+     "fotoGenerada": false,
+     "foto": "/img/catalogo/cono-delineador-flexible-60--90-cm.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-delineador-flexible-60--90-cm.pdf"
     }
    ],
    "foto": "/img/catalogo/cono-delineador-flexible-60--naranja.webp",
@@ -19288,7 +20268,7 @@
   },
   {
    "id": "cono-delineador-flexible-60-desmontable",
-   "nombre": "Delineador rebatible desmontable Conoflex",
+   "nombre": "Delineador rebatible desmontable Conoflex (60 y 75 cm)",
    "marca": "Conoflex",
    "linea": "epp",
    "subcategoria": "senalizacion",
@@ -19299,14 +20279,19 @@
     "amarillo"
    ],
    "visible": true,
-   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['DELDESM'].",
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['DELDESM']. 14 oct: variantes 60 y 75 cm con foto y ficha de conoflex.com.ar (LISTA WEB de Diego).",
    "codigoFabricante": "DR 600 LE BN",
-   "nombreWeb": "Delineador rebatible desmontable Conoflex",
+   "nombreWeb": "Delineador rebatible desmontable Conoflex (60 y 75 cm)",
    "descripcion": "Polietileno con aditivo UV, .",
    "descripcionLarga": " Fabricado por Conoflex, empresa argentina con más de 25 años en señalización vial. Somos distribuidores de Conoflex.",
    "specs": {
-    "código fabricante": "DRD",
-    "material": "Polietileno con aditivo UV"
+    "código fabricante": "DRD 600 LE BN · DRD 750 LE BN",
+    "material": "Polietileno con aditivo UV",
+    "altura": "60 · 75 cm",
+    "ancho": "8 cm (forma T)",
+    "peso": "1,1 kg · 1,3 kg",
+    "base": "ø 20 cm, nylon, 4 orificios de anclaje",
+    "reflectivo": "2 × 7,5 cm"
    },
    "beneficios": [
     {
@@ -19343,14 +20328,23 @@
    "variantes": [
     {
      "color": "amarillo",
-     "colorFabricante": "Amarillo",
-     "foto": "/img/catalogo/cono-delineador-flexible-60-desmontable--naranja.webp",
-     "fichaTecnica": "/assets/docs/fichas/cono-delineador-flexible-60-desmontable.pdf",
-     "fotoGenerada": false
+     "colorFabricante": "Amarillo 60 cm",
+     "foto": "/img/catalogo/cono-delineador-flexible-60-desmontable--60-cm.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-delineador-flexible-60-desmontable--60-cm.pdf",
+     "fotoGenerada": false,
+     "etiqueta": "60 cm"
+    },
+    {
+     "color": "amarillo",
+     "colorFabricante": "Amarillo 75 cm",
+     "etiqueta": "75 cm",
+     "fotoGenerada": false,
+     "foto": "/img/catalogo/cono-delineador-flexible-60-desmontable--75-cm.webp",
+     "fichaTecnica": "/assets/docs/fichas/cono-delineador-flexible-60-desmontable--75-cm.pdf"
     }
    ],
-   "foto": "/img/catalogo/cono-delineador-flexible-60-desmontable--naranja.webp",
-   "fichaTecnica": "/assets/docs/fichas/cono-delineador-flexible-60-desmontable.pdf",
+   "foto": "/img/catalogo/cono-delineador-flexible-60-desmontable--60-cm.webp",
+   "fichaTecnica": "/assets/docs/fichas/cono-delineador-flexible-60-desmontable--60-cm.pdf",
    "ventasEneJun2026": null
   },
   {
@@ -21091,7 +22085,7 @@
     "verde"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "descripcion": "Tapón detectable en estuche flip-top con hebilla de cinturón.",
    "descripcionLarga": "Quantum detectable en caja plástica de cinturón, pensado para la industria alimenticia y farmacéutica: el tapón lleva un anillo metálico oculto detrás de la aleta mayor, así que si se cae en la línea de producción lo encuentra el detector de metales. Tapón premoldeado de tres aletas en polímero ultra-soft hipoalergénico, reutilizable y con cordón, en estuche plástico flip-top individual con hebilla para llevarlo en la cintura. NRR 26 dB / SNR 29,4 dB.",
    "beneficios": [
@@ -21145,7 +22139,7 @@
    "foto": "/img/catalogo/protector-auditivo-libus-quantum-caja-detect--principal.webp",
    "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-quantum-caja-detect.pdf",
    "ventasEneJun2026": null,
-   "nota": "Selección final del usuario (11 oct). Fotos y ficha oficial de libus.com.ar en _assets/fotos_marcas/libus/auditiva/quantum-detec/ (fondo gris claro normalizado a blanco en _procesadas/). Foto de Segutécnica; usa la ficha de la caja estándar 901467 (misma familia). El ERP tiene PROTAUQCJ = 901467 (no detectable) → confirmar cuál venden."
+   "nota": "Selección final del usuario (11 oct). Fotos y ficha oficial de libus.com.ar en _assets/fotos_marcas/libus/auditiva/quantum-detec/ (fondo gris claro normalizado a blanco en _procesadas/). Foto de Segutécnica; usa la ficha de la caja estándar 901467 (misma familia). El ERP tiene PROTAUQCJ = 901467 (no detectable) → confirmar cuál venden. Oculto 14 oct: reemplazado por protector-auditivo-libus-quantum-caja (901467), decisión del usuario según LISTA WEB de Diego."
   },
   {
    "id": "protector-auditivo-libus-quantum-foam-detect",
@@ -21289,6 +22283,1012 @@
    "fichaTecnica": "/assets/docs/fichas/kit-libus-jardinero.pdf",
    "ventasEneJun2026": null,
    "nota": "13 oct: fotos y ficha oficial Libus que dejó el usuario en _assets/fotos_marcas/libus/kits/kit jardinero/ (fondo gris → blanco en _procesadas/). Sin código ERP ni ventas. La ficha dice \"pulido, lijado\" (copia del Mecánico); el uso real es desmalezado/parques (Lube)."
+  },
+  {
+   "id": "guante-nitrilo-espumado-ws-n3605",
+   "nombre": "Guante de nitrilo espumado con puño de lona WorkSafe N3605",
+   "marca": "WorkSafe",
+   "linea": "epp",
+   "subcategoria": "proteccion-manos",
+   "codigosERP": [],
+   "codigoFabricante": "N3605",
+   "colores": [
+    "verde"
+   ],
+   "talles": "8 al 11",
+   "visible": true,
+   "ventasEneJun2026": null,
+   "foto": "/img/catalogo/guante-nitrilo-espumado-ws-n3605--verde.webp",
+   "nombreWeb": "Guante de nitrilo espumado con puño de lona WorkSafe N3605",
+   "descripcion": "Baño completo de nitrilo espumado verde y puño de lona. Agarre firme con aceite y grasa.",
+   "descripcionLarga": "Guante con soporte de algodón resistente y baño completo de nitrilo espumado, una textura microporosa que agarra mucho mejor que el nitrilo liso en piezas con aceite, grasa o humedad. El puño ancho de lona tipo seguridad ventila la muñeca, se pone y se saca fácil y reduce el riesgo de atrapamiento. Durable, apto para trabajos pesados, continuos y repetitivos. Certificado EN 388 3111X.",
+   "specs": {
+    "soporte": "Algodón",
+    "recubrimiento": "Nitrilo espumado verde, baño completo",
+    "puño": "Lona, tipo seguridad",
+    "norma": "EN 388: 3111X · CE · UL AR 2036",
+    "destreza": "5/5",
+    "código fabricante": "N3605"
+   },
+   "beneficios": [
+    {
+     "titulo": "Nitrilo espumado",
+     "texto": "Agarre superior al nitrilo liso en superficies aceitosas o húmedas."
+    },
+    {
+     "titulo": "Baño completo",
+     "texto": "Palma y dorso protegidos de aceites y grasas."
+    },
+    {
+     "titulo": "Puño de lona de seguridad",
+     "texto": "Ventila la muñeca y se libera rápido ante un atrapamiento."
+    },
+    {
+     "titulo": "Soporte de algodón",
+     "texto": "Firme, durable y cómodo por dentro."
+    },
+    {
+     "titulo": "EN 388: 3111X",
+     "texto": "Abrasión 3 · destreza 5/5."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Petróleo, gas y petroquímica",
+    "Talleres de mantenimiento industrial",
+    "Industria automotriz y autopartista",
+    "Metalúrgica",
+    "Manipulación de chapas no cortantes",
+    "Piezas con aceite o grasa"
+   ],
+   "variantes": [
+    {
+     "color": "verde",
+     "colorFabricante": "Verde con puño de lona",
+     "foto": "/img/catalogo/guante-nitrilo-espumado-ws-n3605--verde.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/guante-nitrilo-espumado-ws-n3605.pdf"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-nitrilo-espumado-ws-n3605.pdf",
+   "galeria": [
+    "/img/catalogo/guante-nitrilo-espumado-ws-n3605--vista-2.webp"
+   ],
+   "nota": "Agregado 14 oct 2026 por LISTA WEB.xlsx de Diego. Material oficial WorkSafe en _assets/fotos_marcas/worksafe/N3605_guante-banado-en-nitrilo-espumado-con-puno-de-lona-n3605/ (ficha, certificado y DJC de su Drive). Sin código ERP ni ventas ene–jun."
+  },
+  {
+   "id": "guante-anticorte-antivibratorio-ws-tx5000",
+   "nombre": "Guante anticorte anti-impacto y antivibratorio WorkSafe TX5000",
+   "marca": "WorkSafe",
+   "linea": "epp",
+   "subcategoria": "proteccion-manos",
+   "codigosERP": [],
+   "codigoFabricante": "TX5000",
+   "colores": [
+    "gris"
+   ],
+   "talles": "8 al 11",
+   "visible": true,
+   "ventasEneJun2026": null,
+   "foto": "/img/catalogo/guante-anticorte-antivibratorio-ws-tx5000--gris.webp",
+   "nombreWeb": "Guante anticorte anti-impacto y antivibratorio WorkSafe TX5000",
+   "descripcion": "HPPE anticorte nivel D, protecciones TPR anti-impacto y almohadillas antivibración en la palma.",
+   "descripcionLarga": "Guante de alto rendimiento para trabajo pesado: tejido HPPE resistente al corte (nivel D), insertos de TPR en nudillos, dedos y dorso que absorben golpes y aplastamientos, y almohadillas en la palma que reducen la vibración que llega a la mano. La palma de nitrilo arenoso da un agarre excelente en superficies secas, húmedas y aceitosas, y el puño con velcro asegura un calce firme. Certificado EN 388 4X43DP.",
+   "specs": {
+    "tejido": "HPPE (polietileno de alto rendimiento)",
+    "recubrimiento": "Nitrilo arenoso en palma",
+    "protecciones": "TPR anti-impacto en dorso · almohadillas antivibración en palma",
+    "puño": "Con velcro",
+    "norma": "EN 388: 4X43DP · CE · UL AR 2036",
+    "destreza": "5/5",
+    "código fabricante": "TX5000"
+   },
+   "beneficios": [
+    {
+     "titulo": "Anticorte nivel D",
+     "texto": "Tejido HPPE: EN 388 4X43D."
+    },
+    {
+     "titulo": "Anti-impacto (P)",
+     "texto": "TPR en nudillos, dedos y dorso contra golpes y aplastamientos."
+    },
+    {
+     "titulo": "Antivibratorio",
+     "texto": "Almohadillas en la palma que reducen la vibración en herramientas."
+    },
+    {
+     "titulo": "Nitrilo arenoso",
+     "texto": "Agarre en seco, húmedo y con aceite."
+    },
+    {
+     "titulo": "Puño con velcro",
+     "texto": "Calce firme que no se desliza."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Petróleo y minería",
+    "Industria del gas",
+    "Manipulación de vidrio y chapas",
+    "Herramientas con vibración",
+    "Trabajos pesados con riesgo de corte e impacto",
+    "Industria automotriz y mecánica"
+   ],
+   "variantes": [
+    {
+     "color": "gris",
+     "colorFabricante": "Gris y negro",
+     "foto": "/img/catalogo/guante-anticorte-antivibratorio-ws-tx5000--gris.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/guante-anticorte-antivibratorio-ws-tx5000.pdf"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-anticorte-antivibratorio-ws-tx5000.pdf",
+   "galeria": [
+    "/img/catalogo/guante-anticorte-antivibratorio-ws-tx5000--vista-2.webp"
+   ],
+   "nota": "Agregado 14 oct 2026 por LISTA WEB.xlsx de Diego. Material oficial WorkSafe en _assets/fotos_marcas/worksafe/TX5000_guante-resistente-al-corte-e-impactos-antivibratorio-tx5000/ (ficha, certificado y DJC de su Drive). Sin código ERP ni ventas ene–jun."
+  },
+  {
+   "id": "guante-soldador-reforzado-largo-ws-lbwr",
+   "nombre": "Guante de soldador reforzado largo WorkSafe LBWR",
+   "marca": "WorkSafe",
+   "linea": "epp",
+   "subcategoria": "proteccion-soldadura",
+   "codigosERP": [],
+   "codigoFabricante": "LBWR",
+   "colores": [
+    "naranja"
+   ],
+   "talles": "10",
+   "visible": true,
+   "ventasEneJun2026": null,
+   "foto": "/img/catalogo/guante-soldador-reforzado-largo-ws-lbwr--naranja.webp",
+   "nombreWeb": "Guante de soldador reforzado largo WorkSafe LBWR",
+   "descripcion": "Descarne naranja de 40 cm con refuerzos negros, costuras de Kevlar y forro interior.",
+   "descripcionLarga": "Guante de soldador de cuero descarne naranja de unos 40 cm de largo, con refuerzos de descarne negro en nudillos, palma completa y pulgar hasta la muñeca. Las costuras son de hilo de Kevlar resistente al calor y van protegidas con tapacosturas. El forro interior absorbe el sudor y lo hace cómodo en jornadas largas. Certificado EN 388 4244X y EN 407 413XXX (comportamiento ante el fuego nivel 4).",
+   "specs": {
+    "material": "Cuero descarne naranja + refuerzos de descarne negro",
+    "largo": "± 40 cm",
+    "costuras": "Hilo de Kevlar con tapacosturas",
+    "forro": "Interior",
+    "norma": "EN 388: 4244X · EN 407: 413XXX · CE · UL AR 2036",
+    "código fabricante": "LBWR"
+   },
+   "beneficios": [
+    {
+     "titulo": "Largo 40 cm",
+     "texto": "Protege mano, muñeca y antebrazo de chispas y salpicaduras."
+    },
+    {
+     "titulo": "Costuras de Kevlar",
+     "texto": "Hilo resistente al calor, protegido con tapacosturas."
+    },
+    {
+     "titulo": "Refuerzos de descarne",
+     "texto": "En nudillos, palma completa y pulgar."
+    },
+    {
+     "titulo": "EN 407: 413XXX",
+     "texto": "Comportamiento ante el fuego nivel 4 · calor convectivo 3."
+    },
+    {
+     "titulo": "Forro interior",
+     "texto": "Absorbe el sudor; cómodo en jornadas largas."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Soldadura",
+    "Metalmecánica",
+    "Metalúrgica y siderúrgica",
+    "Construcción",
+    "Fabricación de maquinaria",
+    "Industria automotriz"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Naranja y negro",
+     "foto": "/img/catalogo/guante-soldador-reforzado-largo-ws-lbwr--naranja.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/guante-soldador-reforzado-largo-ws-lbwr.pdf"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-soldador-reforzado-largo-ws-lbwr.pdf",
+   "galeria": [
+    "/img/catalogo/guante-soldador-reforzado-largo-ws-lbwr--vista-2.webp",
+    "/img/catalogo/guante-soldador-reforzado-largo-ws-lbwr--vista-3.webp"
+   ],
+   "nota": "Agregado 14 oct 2026 por LISTA WEB.xlsx de Diego. Material oficial WorkSafe en _assets/fotos_marcas/worksafe/LBWR_guante-soldador-reforzado-largo-lbwr/ (ficha, certificado y DJC de su Drive). Sin código ERP ni ventas ene–jun.",
+   "tambienEn": [
+    "proteccion-manos"
+   ]
+  },
+  {
+   "id": "guante-latex-texturado-ws-l1101",
+   "codigosERP": [
+    "GUANYPOL"
+   ],
+   "nombre": "Guante de poliéster con baño de látex texturado WorkSafe L1101",
+   "marca": "WorkSafe",
+   "linea": "epp",
+   "subcategoria": "proteccion-manos",
+   "codigoFabricante": "L1101",
+   "colores": [
+    "naranja"
+   ],
+   "talles": "7 al 11",
+   "visible": true,
+   "ventasEneJun2026": null,
+   "foto": "/img/catalogo/guante-latex-texturado-ws-l1101--naranja.webp",
+   "nombreWeb": "Guante de poliéster con baño de látex texturado WorkSafe L1101",
+   "descripcion": "Tejido de poliéster con palma de látex rugoso naranja y dorso ventilado.",
+   "descripcionLarga": "Guante tejido 100 % poliéster, flexible y resistente, con palma y dedos recubiertos en látex de acabado rugoso que agarra firme incluso con suciedad. El dorso queda sin recubrir para que la mano respire y no acumule calor en tareas continuas. Muy buena resistencia al desgarro. Certificado EN 388 2142X.",
+   "specs": {
+    "tejido": "100 % poliéster",
+    "recubrimiento": "Látex texturado en palma y dedos",
+    "dorso": "Ventilado",
+    "norma": "EN 388: 2142X · CE · UL AR 2036",
+    "destreza": "5/5",
+    "código fabricante": "L1101"
+   },
+   "beneficios": [
+    {
+     "titulo": "Látex texturado",
+     "texto": "Agarre firme incluso en superficies con suciedad."
+    },
+    {
+     "titulo": "Dorso ventilado",
+     "texto": "Menos transpiración en tareas continuas."
+    },
+    {
+     "titulo": "Resistente al desgarro",
+     "texto": "EN 388: desgarro nivel 4."
+    },
+    {
+     "titulo": "Destreza 5/5",
+     "texto": "Para manipular piezas y herramientas."
+    },
+    {
+     "titulo": "EN 388: 2142X",
+     "texto": "Abrasión 2 · corte 1 · desgarro 4 · punción 2."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Talleres",
+    "Ensamblaje e industria liviana",
+    "Logística y depósitos",
+    "Mantenimiento general",
+    "Construcción y albañilería",
+    "Agricultura y jardinería"
+   ],
+   "variantes": [
+    {
+     "color": "naranja",
+     "colorFabricante": "Amarillo con palma naranja",
+     "foto": "/img/catalogo/guante-latex-texturado-ws-l1101--naranja.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/guante-latex-texturado-ws-l1101.pdf"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-latex-texturado-ws-l1101.pdf",
+   "galeria": [
+    "/img/catalogo/guante-latex-texturado-ws-l1101--vista-2.webp"
+   ],
+   "nota": "Agregado 14 oct 2026 por LISTA WEB.xlsx de Diego. Material oficial WorkSafe en _assets/fotos_marcas/worksafe/L1101_guante-tejido-de-poliester-con-bano-latex-texturado-l1101/ (ficha, certificado y DJC de su Drive)."
+  },
+  {
+   "id": "guante-nitrilo-anti-impacto-ws-n2005tpr",
+   "codigosERP": [
+    "GUANIMDANIM"
+   ],
+   "nombre": "Guante de doble baño de nitrilo anti-impacto WorkSafe N2005TPR",
+   "marca": "WorkSafe",
+   "linea": "epp",
+   "subcategoria": "proteccion-manos",
+   "codigoFabricante": "N2005TPR",
+   "colores": [
+    "azul"
+   ],
+   "talles": "8 al 11",
+   "visible": true,
+   "ventasEneJun2026": {
+    "unidades": 52,
+    "empresas": 1
+   },
+   "foto": "/img/catalogo/guante-nitrilo-anti-impacto-ws-n2005tpr--azul.webp",
+   "nombreWeb": "Guante de doble baño de nitrilo anti-impacto WorkSafe N2005TPR",
+   "descripcion": "Poliéster con doble baño de nitrilo (liso + arenoso) y protecciones TPR anti-impacto.",
+   "descripcionLarga": "Guante anti-impacto para trabajo pesado: tejido de poliéster liviano con un primer baño completo de nitrilo liso que actúa como barrera frente a líquidos y un segundo baño de nitrilo arenoso en la palma que da máximo agarre en seco, húmedo y con aceite. Los insertos de TPR en nudillos, dedos y dorso absorben golpes. Certificado EN 388 4121XP.",
+   "specs": {
+    "tejido": "Poliéster",
+    "recubrimiento": "Nitrilo liso completo + nitrilo arenoso en palma",
+    "protecciones": "TPR anti-impacto en dorso",
+    "norma": "EN 388: 4121XP · CE · UL AR 2036",
+    "destreza": "5/5",
+    "código fabricante": "N2005TPR"
+   },
+   "beneficios": [
+    {
+     "titulo": "Anti-impacto (P)",
+     "texto": "TPR en nudillos, dedos y dorso."
+    },
+    {
+     "titulo": "Doble baño de nitrilo",
+     "texto": "Liso impermeable + arenoso en palma para el agarre."
+    },
+    {
+     "titulo": "Abrasión nivel 4",
+     "texto": "Alta durabilidad."
+    },
+    {
+     "titulo": "Apto aceite y grasa",
+     "texto": "Sujeción confiable con piezas engrasadas."
+    },
+    {
+     "titulo": "EN 388: 4121XP",
+     "texto": "Abrasión 4 · corte 1 · desgarro 2 · punción 1 · impacto P."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Petróleo, gas y petroquímica",
+    "Minería",
+    "Manipulación de piezas pesadas",
+    "Construcción",
+    "Materiales inestables con riesgo de golpes"
+   ],
+   "variantes": [
+    {
+     "color": "azul",
+     "colorFabricante": "Azul y negro",
+     "foto": "/img/catalogo/guante-nitrilo-anti-impacto-ws-n2005tpr--azul.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/guante-nitrilo-anti-impacto-ws-n2005tpr.pdf"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-nitrilo-anti-impacto-ws-n2005tpr.pdf",
+   "galeria": [
+    "/img/catalogo/guante-nitrilo-anti-impacto-ws-n2005tpr--vista-2.webp"
+   ],
+   "nota": "Agregado 14 oct 2026 por LISTA WEB.xlsx de Diego. Material oficial WorkSafe en _assets/fotos_marcas/worksafe/N2005TPR_guante-tejido-de-poliester-doble-bano-de-nitrilo-y-proteccion-anti-impacto-n2005tpr/ (ficha, certificado y DJC de su Drive)."
+  },
+  {
+   "id": "guante-anticorte-anti-impacto-ws-h5101tpr",
+   "codigosERP": [
+    "GUANTWSH5101"
+   ],
+   "nombre": "Guante anticorte y anti-impacto con doble baño de nitrilo WorkSafe H5101TPR",
+   "marca": "WorkSafe",
+   "linea": "epp",
+   "subcategoria": "proteccion-manos",
+   "codigoFabricante": "H5101TPR",
+   "colores": [
+    "azul"
+   ],
+   "talles": "8 al 11",
+   "visible": true,
+   "ventasEneJun2026": {
+    "unidades": 9,
+    "empresas": 1
+   },
+   "foto": "/img/catalogo/guante-anticorte-anti-impacto-ws-h5101tpr--azul.webp",
+   "nombreWeb": "Guante anticorte y anti-impacto con doble baño de nitrilo WorkSafe H5101TPR",
+   "descripcion": "HPPE anticorte nivel D, TPR anti-impacto y doble baño de nitrilo (liso + arenoso).",
+   "descripcionLarga": "Guante anticorte de tejido HPPE (nivel D) con doble recubrimiento: un baño completo de nitrilo liso que lo hace impermeable y un segundo baño de nitrilo arenoso en la palma para agarre en seco, húmedo y con aceite. Los insertos de TPR en el dorso absorben golpes y aplastamientos. Certificado EN 388 4X42DP.",
+   "specs": {
+    "tejido": "HPPE",
+    "recubrimiento": "Nitrilo liso completo + nitrilo arenoso en palma",
+    "protecciones": "TPR anti-impacto en dorso",
+    "norma": "EN 388: 4X42DP · CE · UL AR 2036",
+    "destreza": "5/5",
+    "código fabricante": "H5101TPR"
+   },
+   "beneficios": [
+    {
+     "titulo": "Anticorte nivel D",
+     "texto": "Tejido HPPE: ISO 13997 D."
+    },
+    {
+     "titulo": "Anti-impacto (P)",
+     "texto": "TPR en nudillos, dedos y dorso."
+    },
+    {
+     "titulo": "Doble baño de nitrilo",
+     "texto": "Impermeable y con agarre arenoso en palma."
+    },
+    {
+     "titulo": "Abrasión nivel 4",
+     "texto": "Alta durabilidad."
+    },
+    {
+     "titulo": "EN 388: 4X42DP",
+     "texto": "Abrasión 4 · desgarro 4 · punción 2 · D · P."
+    },
+    {
+     "titulo": "Distribuidores WorkSafe",
+     "texto": "Producto original WorkSafe, importado y certificado, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Petróleo y minería",
+    "Industria del gas",
+    "Manipulación de vidrio y chapas",
+    "Materiales peligrosos o inestables",
+    "Industria automotriz y mecánica"
+   ],
+   "variantes": [
+    {
+     "color": "azul",
+     "colorFabricante": "Gris, azul y negro",
+     "foto": "/img/catalogo/guante-anticorte-anti-impacto-ws-h5101tpr--azul.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/guante-anticorte-anti-impacto-ws-h5101tpr.pdf"
+    }
+   ],
+   "fichaTecnica": "/assets/docs/fichas/guante-anticorte-anti-impacto-ws-h5101tpr.pdf",
+   "galeria": [
+    "/img/catalogo/guante-anticorte-anti-impacto-ws-h5101tpr--vista-2.webp"
+   ],
+   "nota": "Agregado 14 oct 2026 por LISTA WEB.xlsx de Diego. Material oficial WorkSafe en _assets/fotos_marcas/worksafe/H5101TPR_guante-resistente-al-corte-e-impactos-h5101tpr/ (ficha, certificado y DJC de su Drive)."
+  },
+  {
+   "id": "kit-respirador-bls-4000-next",
+   "nombre": "Kit semimáscara BLS 4000 Next con filtros (4100 · 4300 · 4400)",
+   "marca": "BLS",
+   "lineaMarca": "Libus (distribuidor)",
+   "linea": "epp",
+   "subcategoria": "proteccion-respiratoria",
+   "codigosERP": [],
+   "codigoFabricante": "905474 · 905476 · 905477",
+   "colores": [
+    "gris"
+   ],
+   "talles": "M/L",
+   "visible": true,
+   "ventasEneJun2026": null,
+   "foto": "/img/catalogo/kit-respirador-bls-4000-next--4100.webp",
+   "fichaTecnica": "/assets/docs/fichas/kit-respirador-bls-4000-next.pdf",
+   "nombreWeb": "Kit semimáscara BLS 4000 Next con filtros (4100 · 4300 · 4400)",
+   "descripcion": "Semimáscara 4000 Next R con su par de filtros b-lock, lista para usar: A2P2, P3 o ABEK1P3.",
+   "descripcionLarga": "Kit listo para usar: la semimáscara reutilizable BLS 4000 Next R (caucho termoplástico, talle M/L) con el par de filtros de bayoneta b-lock ya elegido para el riesgo. El 4100 combina filtro de vapores orgánicos A2 con prefiltro P2; el 4300 trae filtros de partículas P3 R; y el 4400 filtros combinados ABEK1 P3 R para gases orgánicos, inorgánicos, ácidos, amoníaco y partículas. Los filtros se reponen por separado (serie BLS 200).",
+   "beneficios": [
+    {
+     "titulo": "Listo para usar",
+     "texto": "Semimáscara + par de filtros en un solo código."
+    },
+    {
+     "titulo": "3 combinaciones",
+     "texto": "4100 A2P2 · 4300 P3 R · 4400 ABEK1 P3 R."
+    },
+    {
+     "titulo": "Bayoneta b-lock",
+     "texto": "Los filtros se colocan y cambian en segundos."
+    },
+    {
+     "titulo": "Semimáscara 4000 Next R",
+     "texto": "Caucho termoplástico, cómoda y liviana."
+    },
+    {
+     "titulo": "Repuestos disponibles",
+     "texto": "Filtros de la serie BLS 200 por separado."
+    },
+    {
+     "titulo": "BLS",
+     "texto": "Fabricante italiano especializado en protección respiratoria; Libus lo distribuye en Argentina."
+    }
+   ],
+   "usos": [
+    "Pintura y solventes",
+    "Industria química",
+    "Agroquímicos",
+    "Metalmecánica y amolado",
+    "Construcción",
+    "Mantenimiento industrial"
+   ],
+   "specs": {
+    "semimáscara": "BLS 4000 Next R · caucho termoplástico · M/L",
+    "conexión": "Bayoneta b-lock (filtros serie 200)",
+    "kit 4100": "A2 P2 R (905474)",
+    "kit 4300": "P3 R (905476)",
+    "kit 4400": "ABEK1 P3 R (905477)",
+    "norma": "EN 140 · EN 14387 · EN 143"
+   },
+   "variantes": [
+    {
+     "color": "gris",
+     "colorFabricante": "Kit 4100 · A2 P2",
+     "etiqueta": "4100 · A2P2",
+     "foto": "/img/catalogo/kit-respirador-bls-4000-next--4100.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/kit-respirador-bls-4000-next.pdf"
+    },
+    {
+     "color": "gris",
+     "colorFabricante": "Kit 4300 · P3 R",
+     "etiqueta": "4300 · P3 R",
+     "foto": "/img/catalogo/kit-respirador-bls-4000-next--4300.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/kit-respirador-bls-4000-next.pdf"
+    },
+    {
+     "color": "gris",
+     "colorFabricante": "Kit 4400 · ABEK1 P3 R",
+     "etiqueta": "4400 · ABEK1P3R",
+     "foto": "/img/catalogo/kit-respirador-bls-4000-next--4100.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/kit-respirador-bls-4000-next.pdf"
+    }
+   ],
+   "nota": "Agregado 14 oct 2026 por LISTA WEB.xlsx de Diego. Fotos 4100/4300 de Segutécnica (_assets/fotos_marcas/bls/kit-4100, kit-4300); el 4400 no tiene foto propia (usa la del 4100) → pedir foto. Ficha = semimáscara 4000 Next R. Sin código ERP ni ventas."
+  },
+  {
+   "id": "filtros-bls-serie-400",
+   "nombre": "Filtros universales BLS serie 400 (rosca RD40)",
+   "marca": "BLS",
+   "lineaMarca": "Libus (distribuidor)",
+   "linea": "epp",
+   "subcategoria": "proteccion-respiratoria",
+   "codigosERP": [],
+   "codigoFabricante": "1051855 · 1051859 · 1051860 · 1051866 · 1051867 · 1051868",
+   "colores": [
+    "gris"
+   ],
+   "talles": "—",
+   "visible": true,
+   "ventasEneJun2026": null,
+   "foto": "/img/catalogo/filtros-bls-serie-400--401.webp",
+   "fichaTecnica": "/assets/docs/fichas/filtros-bls-serie-400.pdf",
+   "nombreWeb": "Filtros universales BLS serie 400 (rosca RD40)",
+   "descripcion": "Filtros de rosca universal RD40 (EN 148-1) para máscaras completas: partículas, gases y combinados.",
+   "descripcionLarga": "Filtros BLS serie 400 con conexión de rosca estándar RD40 según EN 148-1, universal entre equipos de protección respiratoria de un solo filtro (máscaras completas BLS 5000 Universal, 3000 y 2000, y semimáscara SGE46). Carbón activado sin cromo hexavalente. Disponibles: 401 partículas P3 R, 414 ABE2, 415 ABEK2, 430 ABEK2 Hg P3 R, 441 multigás ABEK2 Hg NO CO P3 R y 442 Reaktor A2 P3 R D contra yodo radiactivo. Importante: no se usan con las máscaras de bayoneta b-lock (5600 / 5700), que llevan filtros de la serie 200.",
+   "beneficios": [
+    {
+     "titulo": "Rosca universal RD40",
+     "texto": "Norma EN 148-1: compatible con máscaras de un filtro."
+    },
+    {
+     "titulo": "6 opciones",
+     "texto": "Partículas, gases, combinados, mercurio, multigás y yodo radiactivo."
+    },
+    {
+     "titulo": "Carbón activado de calidad",
+     "texto": "Sin cromo hexavalente (Cr VI)."
+    },
+    {
+     "titulo": "Código de colores",
+     "texto": "Banda de color según el tipo de riesgo."
+    },
+    {
+     "titulo": "Certificados",
+     "texto": "EN 14387 y EN 143."
+    },
+    {
+     "titulo": "BLS",
+     "texto": "Fabricante italiano especializado en protección respiratoria; Libus lo distribuye en Argentina."
+    }
+   ],
+   "usos": [
+    "Industria química y petroquímica",
+    "Plantas con amoníaco o refrigeración",
+    "Minería y metalurgia (mercurio)",
+    "Emergencias y bomberos (multigás)",
+    "Sector nuclear y hospitalario (Reaktor)",
+    "Tratamiento de efluentes"
+   ],
+   "specs": {
+    "conexión": "Rosca RD40 (EN 148-1)",
+    "compatibles": "BLS 5000 Universal (5150, 5400) · BLS 3000 · BLS 2000 · SGE46",
+    "no compatibles": "Máscaras b-lock 5600 / 5700 (usan serie 200)",
+    "modelos": "401 P3 R · 414 ABE2 · 415 ABEK2 · 430 ABEK2HgP3R · 441 ABEK2HgNOCOP3R · 442 Reaktor A2P3RD",
+    "norma": "EN 14387 · EN 143",
+    "presentación": "Por unidad"
+   },
+   "variantes": [
+    {
+     "color": "gris",
+     "colorFabricante": "BLS 401 · P3 R · partículas",
+     "etiqueta": "401 · P3 R",
+     "foto": "/img/catalogo/filtros-bls-serie-400--401.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/filtros-bls-serie-400.pdf"
+    },
+    {
+     "color": "gris",
+     "colorFabricante": "BLS 414 · ABE2 · gases orgánicos, inorgánicos y ácidos",
+     "etiqueta": "414 · ABE2",
+     "foto": "/img/catalogo/filtros-bls-serie-400--414.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/filtros-bls-serie-400.pdf"
+    },
+    {
+     "color": "gris",
+     "colorFabricante": "BLS 415 · ABEK2 · + amoníaco",
+     "etiqueta": "415 · ABEK2",
+     "foto": "/img/catalogo/filtros-bls-serie-400--415.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/filtros-bls-serie-400.pdf"
+    },
+    {
+     "color": "gris",
+     "colorFabricante": "BLS 430 · ABEK2 Hg P3 R · + mercurio y partículas",
+     "etiqueta": "430 · ABEK2 Hg P3 R",
+     "foto": "/img/catalogo/filtros-bls-serie-400--430.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/filtros-bls-serie-400.pdf"
+    },
+    {
+     "color": "gris",
+     "colorFabricante": "BLS 441 · ABEK2 Hg NO CO P3 R · multigás",
+     "etiqueta": "441 · ABEK2 Hg NO CO P3 R",
+     "foto": "/img/catalogo/filtros-bls-serie-400--441.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/filtros-bls-serie-400--441.pdf"
+    },
+    {
+     "color": "gris",
+     "colorFabricante": "BLS 442 · Reaktor A2 P3 R D · yodo radiactivo",
+     "etiqueta": "442 · Reaktor A2 P3 R D",
+     "foto": "/img/catalogo/filtros-bls-serie-400--442.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/filtros-bls-serie-400--442.pdf"
+    }
+   ],
+   "nota": "Agregado 14 oct 2026 por LISTA WEB.xlsx de Diego. Fotos (fondo gris → blanco) y fichas de blsgroup.com en _assets/fotos_marcas/bls/serie-400/. Sin código ERP ni ventas. Ojo: no compatibles con 5600/5700 b-lock."
+  },
+  {
+   "id": "anteojo-libus-hayat",
+   "nombre": "Anteojo de seguridad Libus Hayat",
+   "nombreWeb": "Anteojo de seguridad Libus Hayat",
+   "marca": "Libus",
+   "linea": "epp",
+   "subcategoria": "proteccion-ocular",
+   "codigosERP": [],
+   "codigoFabricante": "902779 · 902778",
+   "colores": [
+    "gris",
+    "transparente"
+   ],
+   "talles": "Único",
+   "visible": true,
+   "ventasEneJun2026": null,
+   "descripcion": "Diseño deportivo de medio marco con inserto de TPR y armazón para lentes recetados. AF.",
+   "descripcionLarga": "El Hayat es un anteojo de diseño deportivo que protege contra golpes, impacto de partículas, polvo y chispas. Lente de policarbonato de grado óptico con filtro UV y tratamiento antiempaño (AF), medio marco y patillas pintadas, puente nasal e insertos de TPR que dan más agarre y confort, y protección lateral. Su armazón desmontable permite colocar lentes recetados. Gris para exteriores o transparente para uso general.",
+   "beneficios": [
+    {
+     "titulo": "Diseño deportivo",
+     "texto": "Liviano, envolvente y con buen campo visual."
+    },
+    {
+     "titulo": "Armazón para receta",
+     "texto": "Inserto desmontable para lentes recetados."
+    },
+    {
+     "titulo": "Antiempaño (AF)",
+     "texto": "Para ambientes con calor y humedad."
+    },
+    {
+     "titulo": "Insertos de TPR",
+     "texto": "Más agarre y confort en nariz y patillas."
+    },
+    {
+     "titulo": "Filtro UV",
+     "texto": "Policarbonato de grado óptico."
+    },
+    {
+     "titulo": "Libus",
+     "texto": "Fabricante argentino líder en EPP."
+    }
+   ],
+   "usos": [
+    "Industria y mantenimiento",
+    "Construcción",
+    "Metalmecánica",
+    "Logística y depósitos",
+    "Laboratorios",
+    "Tareas al aire libre"
+   ],
+   "specs": {
+    "lente": "Policarbonato de grado óptico, filtro UV",
+    "marco": "Medio marco pintado",
+    "puente nasal": "TPR",
+    "armazón": "Desmontable para lentes recetados",
+    "tratamiento": "AF antiempaño",
+    "código Libus": "902779 (gris) · 902778 (transparente)"
+   },
+   "variantes": [
+    {
+     "color": "gris",
+     "colorFabricante": "Gris AF",
+     "etiqueta": "AF",
+     "foto": "/img/catalogo/anteojo-libus-hayat--gris-af.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/anteojo-libus-hayat--gris-af.pdf"
+    },
+    {
+     "color": "transparente",
+     "colorFabricante": "Transparente AF",
+     "etiqueta": "AF",
+     "foto": "/img/catalogo/anteojo-libus-hayat--transparente-af.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/anteojo-libus-hayat--transparente-af.pdf"
+    }
+   ],
+   "foto": "/img/catalogo/anteojo-libus-hayat--gris-af.webp",
+   "nota": "Agregado 14 oct 2026 por LISTA WEB.xlsx de Diego. Fotos y textos de segutecnica.com (Libus bloquea descargas). Sin código ERP ni ventas. 14 oct: fotos, galería y ficha oficiales de libus.com que bajó el usuario. La foto transparente sigue siendo de Segutécnica (Libus no la publica).",
+   "galeria": [
+    "/img/catalogo/anteojo-libus-hayat--vista-2.webp",
+    "/img/catalogo/anteojo-libus-hayat--vista-3.webp",
+    "/img/catalogo/anteojo-libus-hayat--vista-4.webp",
+    "/img/catalogo/anteojo-libus-hayat--vista-5.webp",
+    "/img/catalogo/anteojo-libus-hayat--contexto-1.webp"
+   ],
+   "fichaTecnica": "/assets/docs/fichas/anteojo-libus-hayat--gris-af.pdf"
+  },
+  {
+   "id": "antiparra-libus-explorer",
+   "nombre": "Antiparra de seguridad Libus Explorer",
+   "nombreWeb": "Antiparra de seguridad Libus Explorer",
+   "marca": "Libus",
+   "linea": "epp",
+   "subcategoria": "proteccion-ocular",
+   "codigosERP": [],
+   "codigoFabricante": "903367 · 903366",
+   "colores": [
+    "gris",
+    "transparente"
+   ],
+   "talles": "Único",
+   "visible": true,
+   "ventasEneJun2026": null,
+   "descripcion": "Antiparra deportiva con lente oléofugo, ventilación indirecta y correa con hebilla. Apta salpicaduras químicas.",
+   "descripcionLarga": "La Explorer protege contra golpes, impacto de partículas, polvo, chispas y salpicaduras químicas. Lente de policarbonato con filtro UV, protección frontal y lateral y tratamiento oléofugo que repele aceites y grasas y facilita la limpieza. Marco de polipropileno con sello de TPR que se apoya cómodo en la cara, ventilación indirecta y correa elástica con hebilla de ajuste. Gris fumé para exteriores con sol, o lente transparente con marco naranja para uso general. Tiene lente de repuesto (904058).",
+   "beneficios": [
+    {
+     "titulo": "Lente oléofugo",
+     "texto": "Repele aceites y grasas; se limpia fácil."
+    },
+    {
+     "titulo": "Ventilación indirecta",
+     "texto": "Circula el aire sin dejar entrar partículas."
+    },
+    {
+     "titulo": "Sello de TPR",
+     "texto": "Apoyo suave y cómodo sobre la cara."
+    },
+    {
+     "titulo": "Correa con hebilla",
+     "texto": "Elástica, con ajuste rápido."
+    },
+    {
+     "titulo": "Filtro UV",
+     "texto": "Policarbonato de grado óptico."
+    },
+    {
+     "titulo": "Libus",
+     "texto": "Fabricante argentino líder en EPP."
+    }
+   ],
+   "usos": [
+    "Industria y mantenimiento",
+    "Construcción",
+    "Metalmecánica",
+    "Logística y depósitos",
+    "Laboratorios",
+    "Tareas al aire libre",
+    "Ambientes con polvo"
+   ],
+   "specs": {
+    "lente": "Policarbonato de grado óptico, filtro UV",
+    "marco": "Polipropileno negro + TPR naranja",
+    "ventilación": "Indirecta",
+    "correa": "Elástica con hebilla de ajuste",
+    "tratamiento": "Oléofugo",
+    "repuesto": "Lente Explorer (904058)",
+    "código Libus": "903367 (gris) · 903366 (transparente / marco naranja)",
+    "protección": "Frontal y lateral · salpicaduras químicas"
+   },
+   "variantes": [
+    {
+     "color": "gris",
+     "colorFabricante": "Gris oléofugo",
+     "etiqueta": "Oléofugo",
+     "foto": "/img/catalogo/antiparra-libus-explorer--gris.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/antiparra-libus-explorer--gris.pdf"
+    },
+    {
+     "color": "transparente",
+     "colorFabricante": "Transparente, marco naranja, oléofugo",
+     "etiqueta": "Oléofugo",
+     "foto": "/img/catalogo/antiparra-libus-explorer--transparente-naranja.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/antiparra-libus-explorer--transparente-naranja.pdf"
+    }
+   ],
+   "foto": "/img/catalogo/antiparra-libus-explorer--gris.webp",
+   "nota": "Agregado 14 oct 2026 por LISTA WEB.xlsx de Diego. Fotos y textos de segutecnica.com (Libus bloquea descargas). Sin código ERP ni ventas. 14 oct: fotos, galería y ficha oficiales de libus.com que bajó el usuario. Según la ficha es oléofugo, no AF.",
+   "galeria": [
+    "/img/catalogo/antiparra-libus-explorer--vista-2.webp",
+    "/img/catalogo/antiparra-libus-explorer--vista-3.webp",
+    "/img/catalogo/antiparra-libus-explorer--vista-4.webp",
+    "/img/catalogo/antiparra-libus-explorer--vista-5.webp",
+    "/img/catalogo/antiparra-libus-explorer--contexto-1.webp",
+    "/img/catalogo/antiparra-libus-explorer--contexto-2.webp"
+   ],
+   "fichaTecnica": "/assets/docs/fichas/antiparra-libus-explorer--gris.pdf"
+  },
+  {
+   "id": "protector-auditivo-libus-l-320-vincha",
+   "nombre": "Protector auditivo de copa Libus L-320",
+   "nombreWeb": "Protector auditivo de copa Libus L-320",
+   "marca": "Libus",
+   "linea": "epp",
+   "subcategoria": "proteccion-auditiva",
+   "codigosERP": [],
+   "codigoFabricante": "900478",
+   "colores": [
+    "gris"
+   ],
+   "talles": "Único",
+   "visible": true,
+   "ventasEneJun2026": null,
+   "descripcion": "Copa de vincha liviana para ruido moderado. NRR 23 dB.",
+   "descripcionLarga": "Protector auditivo de copa L-320 con vincha: el modelo de entrada de la línea Libus L-300, liviano y cómodo para ruido industrial moderado (NRR 23 dB). Copas con orejera acolchada, vincha flexible con regulación de altura y soporte para llevarlo en el cinturón cuando no se usa. También existe en versión para casco.",
+   "beneficios": [
+    {
+     "titulo": "NRR 23 dB",
+     "texto": "Para ruido industrial moderado."
+    },
+    {
+     "titulo": "Liviano",
+     "texto": "Cómodo en jornadas largas."
+    },
+    {
+     "titulo": "Regulación de altura",
+     "texto": "Se adapta a cada usuario."
+    },
+    {
+     "titulo": "Orejera acolchada",
+     "texto": "Calce suave alrededor de la oreja."
+    },
+    {
+     "titulo": "Soporte para cinturón",
+     "texto": "Se cuelga cuando no se usa."
+    },
+    {
+     "titulo": "Libus",
+     "texto": "Fabricante argentino líder en EPP."
+    }
+   ],
+   "usos": [
+    "Industria y metalmecánica",
+    "Construcción",
+    "Minería",
+    "Logística y depósitos",
+    "Agro",
+    "Gas y petróleo"
+   ],
+   "specs": {
+    "tipo": "Protector de copa con vincha",
+    "atenuación": "NRR 23 dB",
+    "código Libus": "900478"
+   },
+   "variantes": [
+    {
+     "color": "gris",
+     "colorFabricante": "Vincha",
+     "etiqueta": "Vincha",
+     "foto": "/img/catalogo/protector-auditivo-libus-l-320-vincha--vincha.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-l-320-vincha.pdf"
+    }
+   ],
+   "foto": "/img/catalogo/protector-auditivo-libus-l-320-vincha--vincha.webp",
+   "nota": "Agregado 14 oct 2026 por LISTA WEB.xlsx de Diego. Fotos y textos de segutecnica.com (Libus bloquea descargas). Sin código ERP ni ventas. 14 oct: fotos, galería y ficha oficiales de libus.com que bajó el usuario.",
+   "galeria": [
+    "/img/catalogo/protector-auditivo-libus-l-320-vincha--vista-2.webp",
+    "/img/catalogo/protector-auditivo-libus-l-320-vincha--vista-3.webp",
+    "/img/catalogo/protector-auditivo-libus-l-320-vincha--vista-4.webp",
+    "/img/catalogo/protector-auditivo-libus-l-320-vincha--vista-5.webp",
+    "/img/catalogo/protector-auditivo-libus-l-320-vincha--contexto-1.webp"
+   ],
+   "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-l-320-vincha.pdf"
+  },
+  {
+   "id": "antiparra-libus-fall-mesh-forestal",
+   "nombre": "Antiparra forestal de malla Libus Fall Mesh",
+   "nombreWeb": "Antiparra forestal de malla Libus Fall Mesh",
+   "marca": "Libus",
+   "linea": "epp",
+   "subcategoria": "proteccion-ocular",
+   "codigosERP": [],
+   "codigoFabricante": "904932",
+   "colores": [
+    "negro"
+   ],
+   "talles": "Único",
+   "visible": true,
+   "ventasEneJun2026": null,
+   "foto": "/img/catalogo/antiparra-libus-fall-mesh-forestal--negra.webp",
+   "fichaTecnica": "/assets/docs/fichas/antiparra-libus-fall-mesh-forestal.pdf",
+   "descripcion": "Antiparra de malla metálica para desmalezado y tareas forestales. Sin empaño.",
+   "descripcionLarga": "La Fall Mesh es una antiparra de malla pensada para desmalezado, cosecha, embotellado y tareas con riesgo de impactos leves: protege los ojos de astillas, vegetación y partículas, y como no tiene lente no se empaña ni acumula calor. Armazón de elastómero termoplástico flexible y malla US Mesh 10 (retícula de 2 × 2 mm, hilo de 0,51 mm). Se complementa con el protector facial de malla forestal y el kit forestal Libus.",
+   "beneficios": [
+    {
+     "titulo": "Malla en lugar de lente",
+     "texto": "No se empaña ni junta calor en tareas al aire libre."
+    },
+    {
+     "titulo": "Protege de astillas",
+     "texto": "Vegetación, astillas y partículas en desmalezado."
+    },
+    {
+     "titulo": "Armazón flexible",
+     "texto": "Elastómero termoplástico que se adapta a la cara."
+    },
+    {
+     "titulo": "Malla US Mesh 10",
+     "texto": "Retícula de 2 × 2 mm, hilo de 0,51 mm."
+    },
+    {
+     "titulo": "Uso forestal",
+     "texto": "Ideal junto al kit forestal y la malla facial Libus."
+    },
+    {
+     "titulo": "Libus",
+     "texto": "Fabricante argentino líder en EPP, con ficha técnica descargable."
+    }
+   ],
+   "usos": [
+    "Desmalezado",
+    "Tareas forestales",
+    "Cosecha y agro",
+    "Jardinería y parques",
+    "Embotellado",
+    "Mantenimiento de espacios verdes"
+   ],
+   "specs": {
+    "tipo": "Antiparra de malla",
+    "armazón": "Elastómero termoplástico",
+    "malla": "US Mesh 10 · retícula 2 × 2 mm · hilo 0,51 mm",
+    "riesgo": "Impactos leves (astillas, vegetación, partículas)",
+    "código Libus": "904932"
+   },
+   "variantes": [
+    {
+     "color": "negro",
+     "colorFabricante": "Negra",
+     "etiqueta": "Malla",
+     "foto": "/img/catalogo/antiparra-libus-fall-mesh-forestal--negra.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/antiparra-libus-fall-mesh-forestal.pdf"
+    }
+   ],
+   "galeria": [
+    "/img/catalogo/antiparra-libus-fall-mesh-forestal--vista-2.webp",
+    "/img/catalogo/antiparra-libus-fall-mesh-forestal--vista-3.webp",
+    "/img/catalogo/antiparra-libus-fall-mesh-forestal--vista-4.webp",
+    "/img/catalogo/antiparra-libus-fall-mesh-forestal--vista-5.webp"
+   ],
+   "nota": "Agregado 14 oct 2026 por LISTA WEB.xlsx de Diego. Fotos y ficha oficiales de libus.com que bajó el usuario (_assets/fotos_marcas/libus/ocular/fall-mesh-forestal/). Sin código ERP ni ventas."
   }
  ]
 }

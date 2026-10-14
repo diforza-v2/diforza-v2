@@ -2,15 +2,15 @@
   "hero": {
     "modificador": "epp",
     "fondo": {
-      "src": "/epp-proteccion-industrial/img/bg-hero-epp.webp",
-      "ancho": "1376",
-      "alto": "768",
-      "alt": "Operario con antiparras y guantes de seguridad trabajando en un torno"
+      "src": "/epp-proteccion-industrial/img/hero-epp.webp",
+      "ancho": "1672",
+      "alto": "941",
+      "alt": "Operario con protector auditivo, anteojos y guantes de seguridad trabajando en una máquina industrial"
     },
     "eyebrow": "EPP y protección industrial",
     "acento": "siempre disponible",
-    "titulo": "EPP certificado para cada riesgo de tu planta,",
-    "bajada": "Protección craneal, auditiva, ocular, facial, respiratoria, de manos y anticaída. Con la documentación técnica que tus registros de SRT necesitan.[[Validar]]",
+    "titulo": "EPP certificado para cada entorno de trabajo,",
+    "bajada": "Protección craneal, auditiva, ocular, facial, respiratoria, de manos y anticaída. Con asesoramiento técnico, stock permanente y la documentación que tu empresa necesita.[[Validar]]",
     "beneficios": [
       {
         "icono": "escudo-check-fino",

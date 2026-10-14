@@ -66,8 +66,11 @@ _site/                        ← salida del build. NO se edita ni se sube a git
 - **Si agregás un archivo nuevo en `src/_data/`, reiniciá `npm start`** (11ty no siempre lo detecta en caliente).
 - Lo que no va al sitio (PSD, originales, scripts, notas) va en `_dev/`.
 
-## Publicación (Cloudflare Pages)
+## Publicación (GitHub + Cloudflare Pages)
 
-- Build command: `npm run build`
-- Output directory: `_site`
-- Versión de Node: la toma de `.nvmrc` (22).
+- Repo: `github.com/diforza-v2/diforza-v2` (organización `diforza-v2`). Se trabaja **directo en `main`**.
+- Cada `git push` a `main` publica en **https://diforza.pages.dev** (Cloudflare Pages, proyecto `diforza`).
+- Build command: `npm run build` · Output directory: `_site` · Node 22 (`NODE_VERSION=22` y `.nvmrc`).
+- `src/_headers` agrega `X-Robots-Tag: noindex` mientras no haya dominio propio: **borrarlo al conectar el dominio**.
+- Las ramas que no son `main` publican una vista previa en `https://<rama>.diforza.pages.dev`.
+- Detalle, pendientes (dominio, 404, formularios → Kommo) y cómo volver atrás: `../18_infraestructura_y_publicacion.md`.

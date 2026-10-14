@@ -966,40 +966,32 @@
   align-items: center;
 }
 
-/* Fondo propio de L2: la persona (pantalon cargo azul marino) esta en la
-   foto, a ~65% del ancho. Se ancla abajo para no cortarle los botines. */
-.hero--indumentaria .hero__bg img {
-  object-position: 68% bottom;
-}
-
 @media (--lg-only) {
-  .hero--indumentaria .hero__bg img {
-    object-position: 22% bottom;
-  }
-
   .hero--landing .hero__benefits {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 28px;
   }
+
+  .hero--landing .hero__benefits li {
+    border-left: none;
+    padding-left: 0;
+  }
 }
 
-/* Fondo de L3 (operario en torno, foto elegida por el usuario 30/09).
-   auditivo + cono a la derecha, con fundido blanco a la izquierda ya
-   incluido en la foto). Se ancla a la derecha para no cortar los EPP. */
-.hero--epp .hero__bg img {
-  object-position: right center;
+/* ---- Fotos de hero de las 3 landings (14 oct 2026, aprobadas por Diego) ----
+   Fotos completas (sin fundido quemado) en src/<landing>/img/hero-*.webp.
+   Desktop (>=1024): la foto ocupa la derecha del hero y se funde hacia el
+   blanco con un mask; la copy queda sobre blanco a la izquierda.
+   Mobile y tablet (<1024): la foto sale del fondo y pasa a ser una banda
+   debajo de los CTAs, asi la copy no se lee sobre la cara del operario.
+   El encuadre de cada foto se ajusta con --hero-pos (object-position). */
+.hero--landing {
+  background: var(--white);
 }
 
-@media (--lg) {
-  .hero--epp .hero__bg img {
-    object-position: 72% center;
-  }
-
-  .hero--epp .hero__bg {
-    left: 16%;
-    mask-image: linear-gradient(90deg, transparent 0, var(--black) 24%);
-  }
+.hero--landing .hero__bg {
+  overflow: hidden;
 }
 
 .hero--landing .hero__bg picture {
@@ -1008,43 +1000,117 @@
   height: 100%;
 }
 
-@media (--below-lg) {
-  .hero--indumentaria .hero__bg img {
-    object-position: 60% bottom;
+.hero--landing .hero__bg img {
+  object-position: var(--hero-pos, center);
+}
+
+.hero--indumentaria {
+  --hero-pos: 56% center;
+}
+
+.hero--calzado {
+  --hero-pos: 50% 78%;
+}
+
+.hero--epp {
+  --hero-pos: 46% center;
+}
+
+@media (--lg) {
+  .hero--landing .hero__bg {
+    left: 40%;
+    mask-image: linear-gradient(90deg, transparent 0, var(--black) 32%);
   }
 
-  .hero--epp .hero__bg img {
-    object-position: right bottom;
+  /* El reflejo claro cae sobre la copy (fondo blanco): no aporta */
+  .hero--landing .hero__shine .panel--light {
+    display: none;
+  }
+
+  .hero--indumentaria {
+    --hero-pos: 50% center;
+  }
+
+  .hero--calzado {
+    --hero-pos: 42% 80%;
+  }
+
+  .hero--epp {
+    --hero-pos: 38% center;
+  }
+}
+
+@media (--2xl) {
+  .hero--landing .hero__bg {
+    left: 42%;
+  }
+}
+
+/* El claim vertical va sobre la foto: sombra suave para que se lea
+   tambien sobre zonas claras (cielo de la foto de calzado). */
+.hero--landing .hero__claim {
+  text-shadow: 0 1px 8px rgb(var(--rgb-ink-875) / 55%);
+}
+
+/* Calzado: el claim cae sobre el cielo (no se lee). Indumentaria: hasta
+   3xl cae sobre la operaria. */
+.hero--calzado .hero__claim,
+.hero--indumentaria .hero__claim {
+  display: none;
+}
+
+@media (--3xl) {
+  .hero--indumentaria .hero__claim {
+    display: block;
+  }
+}
+
+@media (--below-lg) {
+  .hero--landing {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .hero--landing .hero__bg {
+    position: relative;
+    inset: auto;
+    order: 2;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    margin-top: -8px;
+    mask-image: linear-gradient(180deg, transparent 0, var(--black) 18%);
   }
 
   .hero--landing .hero__bg::after {
-    background: linear-gradient(
-      90deg,
-      rgb(var(--rgb-white)) 0%,
-      rgb(var(--rgb-white) / 44%) 55%,
-      rgb(var(--rgb-white) / 0%) 100%
-    );
+    content: none;
+  }
+
+  .hero--landing .hero__shine {
+    display: none;
+  }
+
+  .hero--landing .hero__inner {
+    padding-bottom: 32px;
+  }
+
+  .hero--landing .hero__lead,
+  .hero--landing .hero__benefits {
+    max-width: 100%;
+  }
+}
+
+@media (--md) and (--below-lg) {
+  .hero--landing .hero__bg {
+    aspect-ratio: 16 / 9;
+  }
+
+  .hero--landing .hero__copy {
+    max-width: 640px;
   }
 }
 
 @media (--below-sm) {
-  .hero--indumentaria .hero__bg img {
-    object-position: 50% bottom;
-  }
-
-  .hero--epp .hero__bg img {
-    object-position: 57% center;
-  }
-
   .hero--landing .hero__inner {
     width: 95%;
-    padding-bottom: 40px;
-  }
-}
-
-@media (--lg-only) {
-  .hero--landing .hero__benefits li {
-    border-left: none;
-    padding-left: 0;
   }
 }

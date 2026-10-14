@@ -2,17 +2,14 @@
   "hero": {
     "modificador": "indumentaria",
     "fondo": {
-      "src": "/indumentaria-de-trabajo/img/bg-hero-indumentaria.webp",
-      "ancho": "1376",
-      "alto": "768",
-      "alt": "Operario caminando con pantalón cargo Diforza azul marino y botines de seguridad",
-      "srcMobile": "/indumentaria-de-trabajo/img/bg-hero-indumentaria-m.webp",
-      "anchoMobile": "640",
-      "altoMobile": "768"
+      "src": "/indumentaria-de-trabajo/img/hero-indumentaria.webp",
+      "ancho": "1672",
+      "alto": "941",
+      "alt": "Operario y operaria con indumentaria de trabajo Diforza azul marino caminando en un depósito"
     },
     "eyebrow": "Indumentaria de trabajo para empresas",
     "acento": "con talles y reposición asegurada",
-    "titulo": "Indumentaria de trabajo para toda tu planta,",
+    "titulo": "Indumentaria de trabajo para tu empresa,",
     "bajada": "Camisas, pantalones, camperas y conjuntos de trabajo. Stock permanente, talles completos y la posibilidad de personalizar con el logo de tu empresa.[[Validar personalización]]",
     "beneficios": [
       {

@@ -1,20 +1,17 @@
 {
-  "_pendientes": "Fotos: hero provisorio (foto de indumentaria con botines) y productos con placeholder. Normas IRAM de calzado. Rango de talles. Validar marcas de cada producto.",
+  "_pendientes": "Fotos: productos con placeholder. Normas IRAM de calzado. Rango de talles. Validar marcas de cada producto.",
   "hero": {
-    "modificador": "indumentaria",
+    "modificador": "calzado",
     "fondo": {
-      "src": "/indumentaria-de-trabajo/img/bg-hero-indumentaria.webp",
-      "ancho": "1376",
-      "alto": "768",
-      "alt": "Operario con botines de seguridad y pantalón cargo de trabajo",
-      "srcMobile": "/indumentaria-de-trabajo/img/bg-hero-indumentaria-m.webp",
-      "anchoMobile": "640",
-      "altoMobile": "768"
+      "src": "/calzado-de-seguridad/img/hero-calzado.webp",
+      "ancho": "1536",
+      "alto": "1024",
+      "alt": "Trabajador con zapatos de seguridad parado sobre ripio en una obra en construcción"
     },
     "eyebrow": "Calzado de seguridad para empresas",
     "titulo": "Calzado de seguridad:",
-    "acento": "el EPP que tu gente usa todos los días",
-    "bajada": "Botines, zapatos, zapatillas y botas con puntera de acero. Talles completos, stock permanente y reposición sin demoras.[[Foto de hero provisoria]]",
+    "acento": "protección en cada paso.",
+    "bajada": "Botines, zapatos, zapatillas y botas de seguridad para empresas. Talles completos, stock permanente y soluciones para cada entorno de trabajo.",
     "beneficios": [
       {
         "icono": "talles",

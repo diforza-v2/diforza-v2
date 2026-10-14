@@ -104,6 +104,10 @@
   "in-out": {
    "nombre": "Outdoor / Indoor",
    "hex": "#AEB8BF"
+  },
+  "rosa": {
+   "nombre": "Rosa",
+   "hex": "#E98BB0"
   }
  }
 }
