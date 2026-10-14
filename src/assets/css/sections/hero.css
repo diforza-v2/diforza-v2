@@ -1017,7 +1017,10 @@
 }
 
 @media (--lg) {
+  /* La foto arranca debajo del navbar (fixed): si no, las cabezas quedan
+     tapadas por la barra. --nav-h lo mide el JS. */
   .hero--landing .hero__bg {
+    top: var(--nav-h);
     left: 40%;
     mask-image: linear-gradient(90deg, transparent 0, var(--black) 32%);
   }
@@ -1028,7 +1031,7 @@
   }
 
   .hero--indumentaria {
-    --hero-pos: 50% center;
+    --hero-pos: 50% top;
   }
 
   .hero--calzado {
@@ -1036,7 +1039,7 @@
   }
 
   .hero--epp {
-    --hero-pos: 38% center;
+    --hero-pos: 38% top;
   }
 }
 
