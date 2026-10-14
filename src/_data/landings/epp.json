@@ -10,11 +10,11 @@
     "eyebrow": "EPP y protección industrial",
     "acento": "siempre disponible",
     "titulo": "EPP certificado para cada entorno de trabajo,",
-    "bajada": "Protección craneal, auditiva, ocular, facial, respiratoria, de manos y anticaída. Con asesoramiento técnico, stock permanente y la documentación que tu empresa necesita.[[Validar]]",
+    "bajada": "Protección craneal, auditiva, ocular, facial, respiratoria, de manos y anticaída. Con asesoramiento técnico, stock permanente y la ficha técnica de cada elemento.",
     "beneficios": [
       {
-        "icono": "escudo-check-fino",
-        "texto": "Certificación IRAM[[Validar alcance]]"
+        "icono": "documento",
+        "texto": "Ficha técnica de cada elemento"
       },
       {
         "icono": "apreton",
@@ -30,7 +30,7 @@
   },
   "confianza": {
     "agrupado": true,
-    "texto": "Cada elemento se entrega con su ficha técnica y su respaldo de ensayo, para que lo sumes a tus registros de seguridad.",
+    "texto": "Cada elemento se entrega con su ficha técnica y, según el producto, el certificado del fabricante, para que lo sumes a tus registros de seguridad.",
     "marcas": [
       {
         "etiqueta": "Socio estratégico oficial",
@@ -49,19 +49,20 @@
       "etiqueta": "Marcas distribuidas",
       "logos": [
         {
-          "src": "/epp-proteccion-industrial/img/brand-glovex.webp",
-          "alt": "Glovex",
+          "src": "/img/logo-worksafe.webp",
+          "alt": "WorkSafe",
           "chico": true
         },
         {
           "src": "/img/brand-skiway.webp",
-          "alt": "Skiway",
+          "alt": "Skyway",
           "chico": true
         }
       ],
       "palabras": [
-        "Gamisol[[Logo]]",
-        "W|S[[Logo]]"
+        "BLS",
+        "De Pascale",
+        "Conoflex"
       ]
     }
   },
@@ -74,22 +75,22 @@
       {
         "icono": "casco",
         "titulo": "Craneal",
-        "descripcion": "Cascos, barbijos de casco, accesorios — línea Libus completa"
+        "descripcion": "Cascos, arneses, barbiquejos y accesorios — línea Libus completa"
       },
       {
         "icono": "auricular",
         "titulo": "Auditiva",
-        "descripcion": "Endoaurales, de copa, con arnés"
+        "descripcion": "Tapones endoaurales y protectores de copa, de vincha o para casco"
       },
       {
         "icono": "anteojos",
         "titulo": "Ocular",
-        "descripcion": "Antiparras, lentes de seguridad, filtros"
+        "descripcion": "Anteojos y antiparras de seguridad"
       },
       {
         "icono": "mascara-facial",
         "titulo": "Facial",
-        "descripcion": "Máscaras, protectores faciales, soldadura"
+        "descripcion": "Protectores faciales, máscaras y equipos de soldadura"
       },
       {
         "icono": "respirador",
@@ -127,7 +128,7 @@
       {
         "icono": "escudo-check",
         "titulo": "ZIAO, marca propia",
-        "texto": "Nuestra propia línea de EPP. Control sobre calidad, stock y precio.[[Pendiente alcance de categorías ZIAO]]"
+        "texto": "Nuestra línea importada: mamelucos descartables laminados con informe de ensayo SGS (EN 1149-1 · ISO 13934-1 · ASTM E96)."
       },
       {
         "icono": "persona",
@@ -173,7 +174,7 @@
   },
   "normativa": {
     "titulo": "Tu empresa <br/> protegida y en regla",
-    "bajada": "La normativa argentina obliga a proveer EPP certificado y a documentar su entrega. La responsabilidad es de la empresa y de quien firma como responsable de seguridad. Por eso cada elemento que entregamos viene con su respaldo documental.[[Validar]]",
+    "bajada": "La normativa argentina obliga a proveer EPP certificado y a registrar su entrega (Res. SRT 299/11). La responsabilidad es de la empresa y de quien firma como responsable de seguridad. Por eso cada elemento que entregamos viene con su ficha técnica y, según el producto, el certificado del fabricante.",
     "cta": "Consultar por la normativa de mi industria",
     "marcas": [
       {
@@ -193,19 +194,19 @@
   "pasos": [
     "Nos contás qué riesgos tiene cada puesto.",
     "Armamos la propuesta de EPP por puesto, con la norma que cumple cada elemento.",
-    "Cotizamos y coordinamos entrega.[[Validar plazo]]",
+    "Cotizamos en el día y coordinamos la entrega: lo que está en stock sale enseguida.",
     "Quedás con la documentación para tus registros y una cuenta para reponer."
   ],
   "garantia": {
-    "titulo": "Garantía[[Borrador · Validar]]",
+    "titulo": "Garantía",
     "items": [
       {
         "icono": "escudo-check-fino",
-        "texto": "Garantía por defectos de fabricación en todos nuestros productos."
+        "texto": "Garantía ante defectos de materiales, fabricación, confección o personalización."
       },
       {
         "icono": "cambio",
-        "texto": "Cambios sin cargo por talle o defecto dentro de [X] días con el producto sin uso."
+        "texto": "Cambios de productos estándar sin uso, con etiqueta y embalaje original. Revisá el pedido y avisanos dentro de las 48 h hábiles."
       },
       {
         "icono": "caja",
@@ -216,7 +217,7 @@
   "faq": [
     {
       "pregunta": "¿Qué elementos de protección personal vende Diforza?",
-      "respuesta": "Diforza vende EPP para empresas: protección craneal, auditiva, ocular, facial y respiratoria, guantes, equipos para trabajo en altura y elementos de señalización. Es socio oficial de Libus y trabaja también con 3M, MSA y su línea propia ZIAO."
+      "respuesta": "Diforza vende EPP para empresas: protección craneal, auditiva, ocular, facial y respiratoria, guantes, soldadura, equipos para trabajo en altura y elementos de señalización. Es socio oficial de Libus y trabaja también con BLS, WorkSafe, De Pascale, Skyway y Conoflex."
     },
     {
       "pregunta": "¿El EPP está certificado? ¿Entregan ficha técnica?",
@@ -236,7 +237,7 @@
     },
     {
       "pregunta": "¿Qué guantes de seguridad tienen?",
-      "respuesta": "Diforza tiene guantes para cada tarea: moteados, de vaqueta y descarne, de nitrilo, látex y PVC, anticorte, de aramida, descartables y guantes dieléctricos con certificación, de marcas como Gamisol, W|S y Glovex."
+      "respuesta": "Diforza tiene guantes para cada tarea: moteados, de vaqueta y descarne, de nitrilo, látex y PVC, anticorte, de aramida, para frío y guantes dieléctricos de látex (clases 00 a 2), de marcas como WorkSafe, De Pascale y Gamisol."
     },
     {
       "pregunta": "¿Trabajan con empresas de cualquier tamaño?",

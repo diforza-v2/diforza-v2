@@ -47,7 +47,7 @@
       "linea": "indumentaria",
       "subcategoria": "pantalones",
       "nombre": "Pantalón de trabajo clásico Diforza",
-      "marca": "Diforza / Ombú",
+      "marca": "Diforza",
       "codigo": "PANCLDZ",
       "descripcion": "Gabardina 8 oz sanforizada, 4 bolsillos y costuras reforzadas.",
       "atributos": [
@@ -80,7 +80,7 @@
       "linea": "indumentaria",
       "subcategoria": "pantalones",
       "nombre": "Pantalón de trabajo cargo elastizado Agio",
-      "marca": "Diforza",
+      "marca": "Agio",
       "codigo": "PANTCARGELAST",
       "descripcion": "Cargo con tela elastizada: más movilidad para trabajar.",
       "atributos": [
@@ -769,7 +769,7 @@
       "linea": "epp",
       "subcategoria": "proteccion-manos",
       "nombre": "Guante de vaqueta Lincoln medio paseo De Pascale",
-      "marca": null,
+      "marca": "De Pascale",
       "codigo": "GUAVQT10C",
       "descripcion": "Cuero vaqueta amarillo, puño elastizado. El clásico de mantenimiento.",
       "atributos": [
@@ -906,7 +906,7 @@
       "linea": "epp",
       "subcategoria": "proteccion-respiratoria",
       "nombre": "Semimáscara reutilizable BLS 4000 Next R",
-      "marca": "Libus",
+      "marca": "BLS",
       "codigo": "1051726",
       "descripcion": "Media máscara de 2 filtros en caucho termoplástico, bayoneta b-lock.",
       "atributos": [
@@ -988,7 +988,7 @@
       "linea": "epp",
       "subcategoria": "proteccion-respiratoria",
       "nombre": "Mascarilla desechable BLS 522 FFP2",
-      "marca": "Libus",
+      "marca": "BLS",
       "codigo": "1051724",
       "descripcion": "Mascarilla plegable vertical FFP2, sin válvula, en envase individual.",
       "atributos": [
@@ -1015,7 +1015,7 @@
       "linea": "epp",
       "subcategoria": "proteccion-respiratoria",
       "nombre": "Mascarilla desechable BLS 502 FFP2",
-      "marca": "Diforza",
+      "marca": "BLS",
       "codigo": "MASC502",
       "descripcion": "Mascarilla plegable en forma de pico FFP2, sin válvula.",
       "atributos": [

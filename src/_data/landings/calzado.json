@@ -1,5 +1,5 @@
 {
-  "_pendientes": "Fotos: productos con placeholder. Normas IRAM de calzado. Rango de talles. Validar marcas de cada producto.",
+  "_pendientes": "",
   "hero": {
     "modificador": "calzado",
     "fondo": {
@@ -15,7 +15,7 @@
     "beneficios": [
       {
         "icono": "talles",
-        "texto": "Talles completos[[Validar rango]]"
+        "texto": "Talles del 34 al 47"
       },
       {
         "icono": "caja",
@@ -30,8 +30,8 @@
     "ctaCatalogo": "Descargar catálogo"
   },
   "confianza": {
-    "agrupado": false,
-    "texto": "Calzado de seguridad con certificación según el riesgo de cada puesto.[[Validar normas]]",
+    "agrupado": true,
+    "texto": "Calzado de seguridad con sello IRAM y ficha técnica de cada modelo.",
     "marcas": [
       {
         "etiqueta": "Línea principal",
@@ -39,14 +39,22 @@
         "alt": "Conwork",
         "principal": true,
         "chico": true
-      },
-      {
-        "etiqueta": "Marca distribuida",
-        "src": "/img/logo-ombu.webp",
-        "alt": "Ombú",
-        "chico": true
       }
-    ]
+    ],
+    "grupo": {
+      "etiqueta": "Marcas distribuidas",
+      "logos": [
+        {
+          "src": "/img/logo-ombu.webp",
+          "alt": "Ombú",
+          "chico": true
+        }
+      ],
+      "palabras": [
+        "Funcional",
+        "Voran"
+      ]
+    }
   },
   "lineas": {
     "tituloAncho": false,
@@ -64,7 +72,7 @@
       },
       {
         "icono": "botin",
-        "texto": "Botines con puntera de acero"
+        "texto": "Botines con puntera de acero o aluminio"
       },
       {
         "icono": "botin",
@@ -72,16 +80,20 @@
       },
       {
         "icono": "bota",
-        "texto": "Botas industriales de caña larga"
+        "texto": "Botas de PVC de caña larga"
       },
       {
         "icono": "gota",
         "texto": "Calzado blanco para industria alimenticia"
+      },
+      {
+        "icono": "zapatilla",
+        "texto": "Modelos para mujer, del 34 al 42"
       }
     ]
   },
   "productos": {
-    "eyebrow": "Línea Conwork y Ombú",
+    "eyebrow": "Conwork y Ombú, los más pedidos",
     "titulo": "Productos destacados"
   },
   "diferenciales": {
@@ -89,12 +101,12 @@
       {
         "icono": "talles-trazo2",
         "titulo": "Talles completos, en serio",
-        "texto": "El talle grande y el talle chico son parte del stock, no un pedido especial.[[Validar rango real]]"
+        "texto": "Del 34 al 47 en casi todos los modelos (el botín francés llega al 49) y modelos para mujer del 34 al 42."
       },
       {
         "icono": "escudo-check",
-        "titulo": "Conwork y Ombú",
-        "texto": "Conwork es nuestra línea principal de calzado de seguridad: zapatillas, zapatos y botines con puntera, en negro, chocolate y blanco. Ombú cubre bota industrial y calzado para ambientes húmedos."
+        "titulo": "Conwork y las mejores marcas",
+        "texto": "Conwork es nuestra línea principal: botines, zapatos y zapatillas con puntera, en negro, marrón y blanco. Lo completamos con Ombú (botas de PVC y clásicos de cuero), Funcional y Voran."
       },
       {
         "icono": "caja-trazo2",
@@ -140,7 +152,7 @@
   },
   "normativa": {
     "titulo": "El calzado de seguridad <br> también se certifica",
-    "bajada": "El calzado de seguridad responde a normas específicas según el riesgo: impacto en la puntera, perforación de la suela, deslizamiento y riesgo eléctrico.[[Pendiente normas IRAM de calzado]]",
+    "bajada": "El calzado de seguridad se certifica según la norma IRAM 3610 y cada modelo indica qué riesgos cubre: impacto en la puntera, suela dieléctrica, aislación al calor y al frío, absorción de energía en el talón y resistencia al agua. Te lo detallamos en la ficha técnica.",
     "cta": "Consultar qué corresponde a mi actividad",
     "marcas": [
       {
@@ -153,26 +165,26 @@
       },
       {
         "icono": "rayo",
-        "texto": "Riesgo<br>eléctrico[[Validar]]"
+        "texto": "Suela<br>dieléctrica"
       }
     ]
   },
   "pasos": [
     "Nos contás cuántas personas equipás, qué tareas hacen y qué talles necesitás.",
     "Te proponemos el calzado adecuado para cada puesto de trabajo.",
-    "Cotizamos y coordinamos entrega.[[Validar plazo]]",
+    "Cotizamos en el día y coordinamos la entrega: lo que está en stock sale enseguida.",
     "Quedás con una cuenta y la curva de talles registrada para reponer rápido."
   ],
   "garantia": {
-    "titulo": "Garantía[[Borrador · Validar]]",
+    "titulo": "Garantía",
     "items": [
       {
         "icono": "escudo-check-fino",
-        "texto": "Garantía por defectos de fabricación en todos nuestros productos."
+        "texto": "Garantía ante defectos de materiales, fabricación, confección o personalización."
       },
       {
         "icono": "cambio",
-        "texto": "Cambios sin cargo por talle o defecto dentro de [X] días con el producto sin uso."
+        "texto": "Cambios de productos estándar sin uso, con etiqueta y embalaje original. Revisá el pedido y avisanos dentro de las 48 h hábiles."
       },
       {
         "icono": "caja",
@@ -183,23 +195,23 @@
   "faq": [
     {
       "pregunta": "¿Qué calzado de seguridad vende Diforza?",
-      "respuesta": "Diforza vende botines, zapatos y zapatillas de seguridad CONWORK —su línea principal, con el botín negro como el más pedido— y calzado Ombú, además de botas de lluvia, botas industriales de caña larga y botas frigoríficas."
+      "respuesta": "Diforza vende botines, zapatos y zapatillas de seguridad CONWORK —su línea principal, con el botín negro como el más pedido— y calzado Ombú, Funcional y Voran, además de botas de PVC de caña larga con y sin puntera de acero."
     },
     {
       "pregunta": "¿Tienen botines de seguridad con puntera de acero?",
-      "respuesta": "Sí. Diforza tiene botines, zapatos y zapatillas de seguridad con puntera de acero, y también modelos con puntera plástica, según el uso y el riesgo de cada puesto."
+      "respuesta": "Sí. Diforza tiene botines, zapatos y zapatillas de seguridad con puntera de acero, y también modelos con puntera de aluminio (más livianos) o plástica, según el uso y el riesgo de cada puesto."
     },
     {
       "pregunta": "¿Qué talles de calzado de seguridad manejan?",
-      "respuesta": "Diforza tiene calzado de seguridad para todo el personal, incluidos talles especiales grandes. Con la cotización te enviamos la curva de talles de cada modelo."
+      "respuesta": "La mayoría de los modelos va del 34 o 35 al 47, el botín Ombú Francés llega al 49 y los modelos para mujer van del 34 al 42. Con la cotización te enviamos la curva de talles de cada modelo."
     },
     {
       "pregunta": "¿Tienen calzado para la industria alimenticia?",
-      "respuesta": "Sí. Diforza tiene botas frigoríficas blancas de media caña, con y sin puntera de acero, y zapatos de seguridad blancos, pensados para plantas de alimentos y pisos húmedos."
+      "respuesta": "Sí. Diforza tiene botas de PVC blancas de caña larga, con y sin puntera de acero, y botines y zapatos de seguridad blancos (Conwork 25BAF y 41ZA línea White, Voran Aquiles), pensados para plantas de alimentos y pisos húmedos."
     },
     {
       "pregunta": "¿Tienen botas de lluvia con puntera de acero?",
-      "respuesta": "Sí. Diforza tiene botas de lluvia con y sin puntera de acero y botas industriales de caña larga para obra, campo y trabajos a la intemperie."
+      "respuesta": "Sí. Diforza tiene botas de PVC de caña larga Ombú, en negro y blanco, con y sin puntera de acero, para obra, campo, plantas húmedas y trabajos a la intemperie."
     },
     {
       "pregunta": "¿Puedo reponer el mismo modelo de botín más adelante?",

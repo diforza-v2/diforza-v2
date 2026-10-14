@@ -10,11 +10,11 @@
     "eyebrow": "Indumentaria de trabajo para empresas",
     "acento": "con talles y reposición asegurada",
     "titulo": "Indumentaria de trabajo para tu empresa,",
-    "bajada": "Camisas, pantalones, camperas y conjuntos de trabajo. Stock permanente, talles completos y la posibilidad de personalizar con el logo de tu empresa.[[Validar personalización]]",
+    "bajada": "Camisas, pantalones, camperas y conjuntos de trabajo. Stock permanente, talles completos y la posibilidad de personalizar con el logo de tu empresa.",
     "beneficios": [
       {
         "icono": "talles",
-        "texto": "Talles del XS al XXXL[[Validar]]"
+        "texto": "Talles del XS al 6XL"
       },
       {
         "icono": "caja",
@@ -29,8 +29,8 @@
     "ctaCatalogo": "Descargar catálogo"
   },
   "confianza": {
-    "agrupado": false,
-    "texto": "Indumentaria de trabajo con las especificaciones técnicas que tu actividad requiere.[[Validar normas aplicables]]",
+    "agrupado": true,
+    "texto": "Indumentaria de trabajo de línea propia, con continuidad para reponer siempre la misma prenda.",
     "marcas": [
       {
         "etiqueta": "Marca propia",
@@ -40,13 +40,25 @@
         "sub": "Trabajo que protege"
       },
       {
-        "etiqueta": "Marca distribuida",
-        "src": "/img/logo-ombu.webp",
-        "alt": "Ombú",
-        "chico": true,
-        "sub": " "
+        "etiqueta": "Marca propia",
+        "src": "/img/logo-agio.webp",
+        "alt": "Agio",
+        "chico": true
       }
-    ]
+    ],
+    "grupo": {
+      "etiqueta": "Marcas distribuidas",
+      "logos": [
+        {
+          "src": "/img/logo-ombu.webp",
+          "alt": "Ombú",
+          "chico": true
+        }
+      ],
+      "palabras": [
+        "Geotex"
+      ]
+    }
   },
   "lineas": {
     "tituloAncho": false,
@@ -60,23 +72,23 @@
       },
       {
         "icono": "pantalon",
-        "texto": "Pantalones y cargos"
-      },
-      {
-        "icono": "conjunto",
-        "texto": "Conjuntos y ambos"
+        "texto": "Pantalones, cargos y bermudas"
       },
       {
         "icono": "campera",
-        "texto": "Camperas y abrigo"
+        "texto": "Camperas, buzos y chalecos"
       },
       {
         "icono": "remera",
         "texto": "Remeras y chombas"
       },
       {
-        "icono": "delantal",
-        "texto": "Delantales y guardapolvos"
+        "icono": "conjunto",
+        "texto": "Mamelucos y ambos"
+      },
+      {
+        "icono": "gota",
+        "texto": "Capas y trajes de lluvia"
       },
       {
         "icono": "alta-visibilidad",
@@ -84,7 +96,7 @@
       },
       {
         "icono": "llama",
-        "texto": "Indumentaria ignífuga / especial[[Validar disponibilidad]]"
+        "texto": "Mamelucos ignífugos y descartables"
       }
     ]
   },
@@ -102,12 +114,12 @@
       {
         "icono": "talles-trazo2",
         "titulo": "Talles reales y completos",
-        "texto": "El talle grande no es un problema a resolver, es parte del stock.[[Validar rango]]"
+        "texto": "Remeras, chombas y ambos del XS al 6XL; camisas y pantalones del 36 al 64. El talle grande no es un problema a resolver, es parte del stock."
       },
       {
         "icono": "estrella",
         "titulo": "Personalización con tu logo",
-        "texto": "Bordado o estampado con la identidad de tu empresa.[[Validar proceso, mínimos, plazos]]"
+        "texto": "Bordado, estampa, transfer o vinilo con la identidad de tu empresa. Antes de producir aprobás el diseño, la ubicación y el tamaño del logo."
       },
       {
         "icono": "persona",
@@ -148,7 +160,7 @@
   },
   "normativa": {
     "titulo": "La ropa de trabajo <br/> también es un elemento <br/> de protección",
-    "bajada": "Según la actividad, la indumentaria tiene requisitos específicos: alta visibilidad, resistencia al fuego, protección contra salpicaduras. No es lo mismo vestir una planta de alimentos que una obra en ruta.[[Pendiente normas IRAM]]",
+    "bajada": "Según la actividad, la indumentaria tiene requisitos específicos: alta visibilidad, resistencia al fuego, protección contra salpicaduras. Para riesgo de llama o arco eléctrico tenemos mamelucos ignífugos Geotex certificados (NFPA 2112 · ISO 11612 · IRAM 3859) y, para polvo y salpicaduras, mamelucos descartables laminados ZIAO con informe de ensayo SGS.",
     "cta": "Consultar qué corresponde a mi actividad",
     "marcas": [
       {
@@ -167,20 +179,20 @@
   },
   "pasos": [
     "Nos contás cuánta gente equipás y en qué actividad.",
-    "Te proponemos prenda, tela y talles; si querés, con muestra previa.[[Validar]]",
+    "Te proponemos prenda, tela y talles; en pedidos grandes, con prendas de muestra o prueba de talles.",
     "Coordinamos la entrega y, si aplica, la personalización.",
     "Quedás con la línea estandarizada y reposición ágil."
   ],
   "garantia": {
-    "titulo": "Garantía[[Borrador · Validar]]",
+    "titulo": "Garantía",
     "items": [
       {
         "icono": "escudo-check-fino",
-        "texto": "Garantía por defectos de fabricación en todos nuestros productos."
+        "texto": "Garantía ante defectos de materiales, fabricación, confección o personalización."
       },
       {
         "icono": "cambio",
-        "texto": "Cambios sin cargo por talle o defecto dentro de [X] días con el producto sin uso."
+        "texto": "Cambios de prendas estándar sin uso y con etiqueta. Lo personalizado lo aprobás (talles, muestra y logo) antes de producir."
       },
       {
         "icono": "caja",
@@ -195,11 +207,11 @@
     },
     {
       "pregunta": "¿Puedo personalizar la ropa de trabajo con el logo de mi empresa?",
-      "respuesta": "Sí. Como la indumentaria de Diforza es de fabricación propia, se personaliza con el logo de tu empresa en bordado, estampado o transfer, y se puede sumar cinta reflectiva o colores a pedido. Antes de producir te enviamos el diseño para aprobar."
+      "respuesta": "Sí. Como la indumentaria de Diforza es de fabricación propia, se personaliza con el logo de tu empresa en bordado, estampa, transfer o vinilo, y se puede sumar cinta reflectiva o colores especiales. Antes de producir te enviamos el diseño o una muestra para aprobar; lo personalizado lleva tiempo de confección y te confirmamos el plazo con la cotización."
     },
     {
       "pregunta": "¿Qué talles de uniformes de trabajo tienen?",
-      "respuesta": "Diforza tiene talles para todo el personal, desde XS hasta talles especiales grandes. Con la cotización te enviamos la tabla de talles de cada prenda para que armes el pedido sin errores."
+      "respuesta": "Diforza tiene talles para todo el personal: remeras, chombas y ambos del XS al 6XL, y camisas y pantalones del 36 al 64 (el pantalón clásico llega al 68). Con la cotización te enviamos la tabla de talles de cada prenda para que armes el pedido sin errores."
     },
     {
       "pregunta": "¿Puedo reponer el mismo modelo de uniforme más adelante?",
@@ -207,7 +219,7 @@
     },
     {
       "pregunta": "¿Tienen ropa de trabajo de alta visibilidad y para lluvia?",
-      "respuesta": "Sí. Diforza tiene camisas y pantalones reflectivos, mamelucos de alta visibilidad y chalecos reflectivos, además de capas y trajes de lluvia y una línea nueva de indumentaria impermeable de fabricación propia."
+      "respuesta": "Sí. Diforza tiene chalecos reflectivos, mamelucos de alta visibilidad, pantalones con cintas reflectivas y camisas con cinta reflectiva opcional, además de capas y trajes de lluvia de línea propia en amarillo y azul marino."
     },
     {
       "pregunta": "¿Venden ropa de trabajo por mayor? ¿Hay pedido mínimo?",
