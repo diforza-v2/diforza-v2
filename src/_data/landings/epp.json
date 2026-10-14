@@ -57,12 +57,22 @@
           "src": "/img/brand-skiway.webp",
           "alt": "Skyway",
           "chico": true
+        },
+        {
+          "src": "/img/logo-bls.webp",
+          "alt": "BLS",
+          "chico": true
+        },
+        {
+          "src": "/img/logo-depascale.svg",
+          "alt": "De Pascale",
+          "chico": true
+        },
+        {
+          "src": "/img/logo-conoflex.webp",
+          "alt": "Conoflex",
+          "chico": true
         }
-      ],
-      "palabras": [
-        "BLS",
-        "De Pascale",
-        "Conoflex"
       ]
     }
   },

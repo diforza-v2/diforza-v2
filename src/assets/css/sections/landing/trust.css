@@ -257,3 +257,69 @@
     height: 44px;
   }
 }
+
+/* ---- Bloque con varios logos bajo una misma etiqueta (marcas propias de indumentaria, 14 oct) ---- */
+.trust--grouped .trust__brand--multi {
+  grid-template-rows: auto auto;
+}
+
+.trust--grouped .trust__brand--multi .trust__logos {
+  gap: 10px 28px;
+}
+
+.trust--grouped .trust__brand--multi .trust__logos img {
+  height: 34px;
+}
+
+@media (--xl) {
+  .trust--grouped .trust__brand--multi .trust__logos img {
+    height: 40px;
+  }
+}
+
+@media (--below-md) {
+  .trust--grouped .trust__brand--multi {
+    grid-column: 1 / -1;
+  }
+
+  .trust--grouped .trust__brand--multi .trust__logos img {
+    height: 28px;
+  }
+}
+
+/* ---- Logos de calzado sin aire alrededor (Funcional, Voran): más bajos para igualar el peso visual de Ombú ---- */
+.trust--grouped .trust__logos img[src*="logo-funcional"],
+.trust--grouped .trust__logos img[src*="logo-voran"] {
+  height: 20px;
+}
+
+@media (--xl) {
+  .trust--grouped .trust__logos img[src*="logo-funcional"],
+  .trust--grouped .trust__logos img[src*="logo-voran"] {
+    height: 22px;
+  }
+}
+
+@media (--below-md) {
+  .trust--grouped .trust__logos img[src*="logo-funcional"],
+  .trust--grouped .trust__logos img[src*="logo-voran"] {
+    height: 17px;
+  }
+}
+
+/* ---- Logos de EPP (BLS, De Pascale, Conoflex): alto según la proporción de cada uno ---- */
+.trust--grouped .trust__logos img[src*="logo-bls"] { height: 24px; }
+.trust--grouped .trust__logos img[src*="logo-depascale"] { height: 36px; }
+.trust--grouped .trust__logos img[src*="logo-conoflex"] { height: 20px; }
+
+@media (--xl) {
+  .trust--grouped .trust__logos img[src*="logo-bls"] { height: 26px; }
+  .trust--grouped .trust__logos img[src*="logo-depascale"] { height: 40px; }
+  .trust--grouped .trust__logos img[src*="logo-conoflex"] { height: 22px; }
+}
+
+@media (--below-md) {
+  .trust--grouped .trust__logos img[src*="logo-bls"] { height: 20px; }
+  .trust--grouped .trust__logos img[src*="logo-depascale"] { height: 30px; }
+  .trust--grouped .trust__logos img[src*="logo-conoflex"] { height: 17px; }
+}

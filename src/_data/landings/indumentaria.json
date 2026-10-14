@@ -33,17 +33,22 @@
     "texto": "Indumentaria de trabajo de línea propia, con continuidad para reponer siempre la misma prenda.",
     "marcas": [
       {
-        "etiqueta": "Marca propia",
-        "src": "/img/brand-diforza.webp",
-        "alt": "Diforza",
+        "etiqueta": "Marcas propias",
         "principal": true,
-        "sub": "Trabajo que protege"
-      },
-      {
-        "etiqueta": "Marca propia",
-        "src": "/img/logo-agio.webp",
-        "alt": "Agio",
-        "chico": true
+        "logos": [
+          {
+            "src": "/img/brand-diforza.webp",
+            "alt": "Diforza"
+          },
+          {
+            "src": "/img/logo-agio.webp",
+            "alt": "Agio"
+          },
+          {
+            "src": "/img/brand-ziao.webp",
+            "alt": "ZIAO"
+          }
+        ]
       }
     ],
     "grupo": {

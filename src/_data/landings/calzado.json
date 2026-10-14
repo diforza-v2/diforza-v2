@@ -48,11 +48,17 @@
           "src": "/img/logo-ombu.webp",
           "alt": "Ombú",
           "chico": true
+        },
+        {
+          "src": "/img/logo-funcional.webp",
+          "alt": "Funcional",
+          "chico": true
+        },
+        {
+          "src": "/img/logo-voran.svg",
+          "alt": "Voran",
+          "chico": true
         }
-      ],
-      "palabras": [
-        "Funcional",
-        "Voran"
       ]
     }
   },
