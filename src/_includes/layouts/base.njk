@@ -37,8 +37,8 @@ window.dataLayer.push({ ecommerce: null });
 window.dataLayer.push({ event: 'view_item', ecommerce: { items: [{{ { item_id: p.id, item_name: p.nombre, item_brand: p.marca, item_category: p.linea.nombre, item_category2: p.sub.nombre, item_variant: (p.variantes[0].nombre if p.variantes and p.variantes.length > 1 else undefined) } | dump | safe }}] } });
 {%- endif %}
 </script>
-{%- if site.gtmId and site.gtmEnabled %}{# gtmEnabled: false hasta publicar la versión de GTM preparada para el sitio nuevo (doc 08 §14) #}
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','{{ site.gtmId }}');</script>
+{%- if site.gtmId %}{# gtmEnabled: false hasta publicar la versión de GTM preparada para el sitio nuevo (doc 08 §14). Con false igual carga GTM en modo Vista previa (Tag Assistant abre la URL con ?gtm_debug=; queda en sessionStorage para las páginas siguientes). #}
+<script>(function(){var on={{ "true" if site.gtmEnabled else "false" }};try{if(/[?&]gtm_debug=/.test(location.search))sessionStorage.setItem('dfz_gtm_debug','1');if(sessionStorage.getItem('dfz_gtm_debug')==='1')on=true;}catch(e){}if(!on)return;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','{{ site.gtmId }}');})();</script>
 {%- endif %}
 </head>
 <body>
