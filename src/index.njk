@@ -326,38 +326,8 @@ pageJs: /assets/js/landing.js
     </div>
   </div>
 
-  <div class="benefits__problem reveal">
-    <div class="benefits__problem-box">
-      <p>¿Inconvenientes con los proveedores de EPP?<br><strong>No debería ser parte de tu rutina diaria</strong></p>
-    </div>
-    <div class="benefits__problem-list">
-      <div class="accordion">
-        <details open>
-          <summary>Líneas paradas por falta de stock
-            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <p class="accordion__panel">Si falta el EPP certificado, el operario no entra a la planta. El verdadero costo no es la compra: es la producción frenada por una entrega colgada.</p>
-        </details>
-        <details>
-          <summary>Papeleo eterno con 4 proveedores distintos
-            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <p class="accordion__panel">Uno para calzado, otro para indumentaria, otro para respiradores. Cuatro cuentas corrientes, cuatro remitos que revisar y cuatro teléfonos a los que reclamar.</p>
-        </details>
-        <details>
-          <summary>Vendedores que no asesoran
-            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <p class="accordion__panel">Te ofrecen lo que tienen acumulado en su depósito, no lo que tu matriz de riesgo requiere. Al final, la responsabilidad normativa queda de tu lado.</p>
-        </details>
-        <details>
-          <summary>Sos solo un número de pedido
-            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <p class="accordion__panel">Ante un accidente o una inspección urgente, necesitás respuestas en el acto. En los grandes call centers nadie conoce cómo funciona tu operación.</p>
-        </details>
-      </div>
-    </div>
+  <div class="benefits__clients reveal">
+{% include "partials/clients-marquee.njk" %}
   </div>
 
   <div class="benefits__reviews reveal">

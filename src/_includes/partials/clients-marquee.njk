@@ -1,0 +1,21 @@
+{#- Carrusel de clientes (logos grises). Uso: {% include "partials/clients-marquee.njk" %} -#}
+{%- set lista = [] -%}
+{%- for i in range(0, clientes.privado | length) -%}
+  {%- set lista = (lista.push(clientes.privado[i]), lista) -%}
+  {%- if clientes.publico[i] %}{% set lista = (lista.push(clientes.publico[i]), lista) %}{% endif -%}
+{%- endfor %}
+<div class="clients">
+  <div class="clients__head">
+    <p class="clients__title">Empresas e instituciones que confían en nosotros</p>
+    <p class="clients__sub">Más de 700 empresas y organismos públicos nos compraron desde 2023</p>
+  </div>
+  <div class="clients__viewport">
+    <ul class="clients__track">
+      {%- for pass in [0, 1] %}
+      {%- for c in lista %}
+      <li{% if pass %} aria-hidden="true"{% endif %}><img src="/img/clientes/{{ c.slug }}.webp" alt="{{ c.nombre if not pass else '' }}" width="400" height="200" loading="lazy" decoding="async"></li>
+      {%- endfor %}
+      {%- endfor %}
+    </ul>
+  </div>
+</div>

@@ -39,6 +39,7 @@
 @import "sections/home/featured-products.css" layer(sections);
 @import "sections/home/spotlight.css" layer(sections);
 @import "sections/benefits.css" layer(sections);
+@import "sections/clients.css" layer(sections);
 @import "sections/home/compliance.css" layer(sections);
 @import "sections/home/factory.css" layer(sections);
 @import "sections/faq.css" layer(sections);

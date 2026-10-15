@@ -1,4 +1,4 @@
-{#- Diferenciales + bloque problema + reseñas. Datos: L.diferenciales; reseñas en _data/reviews.json -#}
+{#- Diferenciales + carrusel de clientes + bloque problema + reseñas. Datos: L.diferenciales; reseñas en _data/reviews.json -#}
 {%- set B = L.diferenciales %}
 <section class="benefits benefits--landing">
   <div class="benefits__head">
@@ -23,6 +23,10 @@
     </div>
     {%- endfor %}
   </div>
+  <div class="benefits__clients reveal">
+{% include "partials/clients-marquee.njk" %}
+  </div>
+
   <div class="benefits__problem reveal">
     <div class="benefits__problem-box">
       <h2 class="benefits__problem-title">{{ B.problema.titulo | rich | safe }}</h2>
