@@ -11,7 +11,7 @@
     "display": "011 5956-9713"
   },
   "gtmId": "GTM-WKV5ZHCT",
-  "gtmEnabled": false,
+  "gtmEnabled": true,
   "turnstile": {
     "siteKey": ""
   },
