@@ -79,23 +79,161 @@
   },
   "remera": {
    "titulo": "Remeras de trabajo para empresas",
-   "descripcion": "Remeras de trabajo de algodón para uniformes de empresa, personalizables con bordado o estampado. Stock permanente, factura A y envíos a todo el país."
+   "descripcion": "Remeras de trabajo de algodón para uniformes de empresa, personalizables con bordado o estampado. Stock permanente, factura A y envíos a todo el país.",
+   "intro": "Remeras de trabajo de jersey manga corta y manga larga, con costuras reforzadas, talles del XS al 6XL y logo bordado o estampado.",
+   "guia": {
+    "titulo": "Remeras para uniformes de trabajo",
+    "bloques": [
+     {
+      "titulo": "Para qué tareas",
+      "texto": "La remera es la prenda fresca del uniforme para depósitos, logística, eventos, atención al público, mantenimiento liviano y verano. La de manga larga protege los brazos del sol y del roce."
+     },
+     {
+      "titulo": "Personalización",
+      "texto": "Estampamos o bordamos el logo de tu empresa y armamos el pedido por talle, del XS al 6XL, para todo el personal."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Las remeras se pueden personalizar?",
+     "respuesta": "Sí, con logo bordado o estampado, en pecho, manga o espalda."
+    },
+    {
+     "pregunta": "¿Qué talles hay?",
+     "respuesta": "Del XS al 6XL, en manga corta y manga larga."
+    }
+   ]
   },
   "chomba": {
    "titulo": "Chombas de trabajo para empresas",
-   "descripcion": "Chombas de piqué para uniformes de trabajo, en varios colores y con tu logo bordado. Stock permanente, factura A y envíos a todo el país."
+   "descripcion": "Chombas de piqué para uniformes de trabajo, en varios colores y con tu logo bordado. Stock permanente, factura A y envíos a todo el país.",
+   "intro": "Chombas de piqué manga corta y manga larga para uniformes de trabajo, con cuello y puños tejidos, talles del XS al 6XL y logo bordado.",
+   "guia": {
+    "titulo": "Chombas para uniformes de empresa",
+    "bloques": [
+     {
+      "titulo": "Prolija y cómoda",
+      "texto": "La chomba de piqué es la prenda más elegida para personal de atención al público, vendedores, choferes, supervisores y técnicos que visitan clientes: es fresca, se lava fácil y queda prolija con el logo bordado."
+     },
+     {
+      "titulo": "Talles y colores",
+      "texto": "Del XS al 6XL, en manga corta y manga larga. Consultanos los colores disponibles para tu uniforme."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿La chomba se puede bordar?",
+     "respuesta": "Sí, el bordado del logo en el pecho es la personalización más pedida en chombas."
+    },
+    {
+     "pregunta": "¿Hay chombas manga larga?",
+     "respuesta": "Sí, la chomba clásica Diforza se fabrica en manga corta y manga larga."
+    }
+   ]
   },
   "camisa": {
    "titulo": "Camisas de trabajo para empresas",
-   "descripcion": "Camisas de trabajo de grafa y gabardina, manga larga y corta, para uniformes de empresa. Personalizables con tu logo. Stock permanente y factura A."
+   "descripcion": "Camisas de trabajo de grafa y gabardina, manga larga y corta, para uniformes de empresa. Personalizables con tu logo. Stock permanente y factura A.",
+   "intro": "Camisas de trabajo de gabardina Diforza y de grafa Ombú, manga larga, con bolsillos con tapa, talles del 36 al 64 y tu logo bordado o estampado.",
+   "guia": {
+    "titulo": "Cómo elegir camisas de trabajo",
+    "bloques": [
+     {
+      "titulo": "Gabardina o grafa",
+      "items": [
+       "<strong>Gabardina Diforza (8 oz sanforizada):</strong> no encoge, mantiene el color y se personaliza con el logo; ideal para uniformes de empresa.",
+       "<strong>Grafa Ombú (100 % algodón, sarga):</strong> la camisa de trabajo clásica, pre-encogida, con tratamiento anti-olor y algodón certificado ARA."
+      ]
+     },
+     {
+      "titulo": "Detalles que suman",
+      "texto": "Dos bolsillos en el pecho con tapa y botón para anotadores y lapiceras, costuras reforzadas y, a pedido, <strong>cinta reflectiva</strong> para trabajo cerca del tránsito."
+     },
+     {
+      "titulo": "Uniforme completo",
+      "texto": "Combiná la camisa con el pantalón del mismo color y tela para que el uniforme sea parejo. Repetimos el mismo pedido cada temporada."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Pueden bordar el logo de la empresa en la camisa?",
+     "respuesta": "Sí, bordamos o estampamos el logo en el pecho o en la espalda."
+    },
+    {
+     "pregunta": "¿Qué talles hay?",
+     "respuesta": "Del 36 al 64 en la camisa Diforza y del 36 al 60 en la Ombú."
+    }
+   ]
   },
   "buzo": {
    "titulo": "Buzos de trabajo: polar y friza",
-   "descripcion": "Buzos de trabajo polar con medio cierre y de friza para uniformes de empresa, personalizables con tu logo. Stock permanente y envíos a todo el país."
+   "descripcion": "Buzos de trabajo polar con medio cierre y de friza para uniformes de empresa, personalizables con tu logo. Stock permanente y envíos a todo el país.",
+   "intro": "Buzos de trabajo de friza con cuello redondo y polar con medio cierre, con costuras reforzadas, talles del S al XXXL y logo bordado.",
+   "guia": {
+    "titulo": "Cómo elegir buzos de trabajo",
+    "bloques": [
+     {
+      "titulo": "Friza o polar",
+      "items": [
+       "<strong>Friza de algodón:</strong> abrigada y resistente, con cintura y puños de ribb; para depósitos, talleres y trabajo en interiores.",
+       "<strong>Polar antipeeling medio cierre:</strong> liviano, abriga sin peso, no hace bolitas y seca rápido; ideal como capa intermedia debajo de una campera."
+      ]
+     },
+     {
+      "titulo": "Uniforme de invierno",
+      "texto": "Los buzos se personalizan con el logo de la empresa y combinan con las camperas y chalecos de la línea."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Qué es el polar antipeeling?",
+     "respuesta": "Es un polar tratado para que no se formen bolitas con el uso y los lavados."
+    },
+    {
+     "pregunta": "¿Qué talles hay?",
+     "respuesta": "Del S al XXXL."
+    }
+   ]
   },
   "campera": {
    "titulo": "Camperas de trabajo: trucker, polar y rompeviento",
-   "descripcion": "Camperas de trabajo trucker, polar y rompeviento para empresas, con tu logo bordado. Talles completos, stock permanente y factura A."
+   "descripcion": "Camperas de trabajo trucker, polar y rompeviento para empresas, con tu logo bordado. Talles completos, stock permanente y factura A.",
+   "intro": "Camperas de trabajo trucker, polar y rompeviento con capucha, y camperas de descarne para soldador De Pascale, en talles del S al 5XL.",
+   "guia": {
+    "titulo": "Cómo elegir camperas de trabajo",
+    "bloques": [
+     {
+      "titulo": "Según el frío y la tarea",
+      "items": [
+       "<strong>Trucker:</strong> la más abrigada, con guata de 150 g, forro matelaseado, cuello de polar y capucha; para trabajo al aire libre en invierno.",
+       "<strong>Rompeviento Silver con capucha:</strong> corta el viento y abriga; para logística, obra y vigilancia.",
+       "<strong>Polar:</strong> liviana, para interiores o como capa intermedia."
+      ]
+     },
+     {
+      "titulo": "Para soldadura",
+      "texto": "La <strong>campera de descarne</strong> De Pascale protege del calor radiante, las salpicaduras de metal fundido y el contacto breve con la llama. Talles L al 5XL."
+     },
+     {
+      "titulo": "Con tu logo",
+      "texto": "Todas las camperas de la línea Diforza se bordan con el logo de la empresa."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Cuál es la campera de trabajo más abrigada?",
+     "respuesta": "La trucker Diforza, con guata de 150 g, forro matelaseado, cuello forrado en polar y capucha."
+    },
+    {
+     "pregunta": "¿Tienen camperas para soldador?",
+     "respuesta": "Sí, de cuero descarne De Pascale, que protegen de chispas, salpicaduras de metal fundido y calor radiante."
+    }
+   ]
   },
   "chaleco": {
    "titulo": "Chalecos reflectivos y de trabajo",
@@ -214,23 +352,158 @@
   },
   "sanidad-y-gastronomia": {
    "titulo": "Ambos, guardapolvos y ropa de gastronomía",
-   "descripcion": "Ambos, guardapolvos, cofias, delantales de cocinero y descartables para sanidad, laboratorios y gastronomía. Stock permanente y factura A."
+   "descripcion": "Ambos, guardapolvos, cofias, delantales de cocinero y descartables para sanidad, laboratorios y gastronomía. Stock permanente y factura A.",
+   "intro": "Ambos, pantalones de ambo, cofias, delantales de cocinero, cubre calzado y barbijos tricapa con certificado ANMAT para sanidad, laboratorios y gastronomía.",
+   "guia": {
+    "titulo": "Indumentaria para sanidad, laboratorios y gastronomía",
+    "bloques": [
+     {
+      "titulo": "Prendas reutilizables",
+      "items": [
+       "<strong>Ambo:</strong> chaqueta con escote en V y pantalón con cintura elastizada, del XS al 6XL; también por pieza.",
+       "<strong>Delantal de cocinero de grafa</strong> y <strong>delantal de PVC</strong> para cocina y producción.",
+       "<strong>Cofia de tela</strong> reutilizable."
+      ]
+     },
+     {
+      "titulo": "Descartables",
+      "texto": "Cofias, cubre calzado y barbijos tricapa con certificado ANMAT para visitas a planta, laboratorios, cocinas y áreas limpias, donde se exige no contaminar el producto."
+     },
+     {
+      "titulo": "Personalización",
+      "texto": "Los ambos y chaquetas se bordan con el logo de la empresa o institución."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿El barbijo tricapa sirve como protección respiratoria industrial?",
+     "respuesta": "No. El barbijo tricapa es de uso sanitario e higiénico. Para polvo, humos o vapores hace falta una mascarilla FFP2 o FFP3 o una semimáscara con filtros."
+    },
+    {
+     "pregunta": "¿Los ambos se venden por pieza?",
+     "respuesta": "Sí, el ambo se vende completo o por pieza (chaqueta o pantalón)."
+    }
+   ]
   },
   "ropa-primera-piel": {
    "titulo": "Ropa térmica de primera piel para trabajo",
-   "descripcion": "Remeras, pantalones y medias térmicas de primera piel para trabajo en frío y cámaras frigoríficas. Stock permanente y envíos a todo el país."
+   "descripcion": "Remeras, pantalones y medias térmicas de primera piel para trabajo en frío y cámaras frigoríficas. Stock permanente y envíos a todo el país.",
+   "intro": "Equipo térmico de primera piel (remera manga larga y calza) elástico y ajustado, para trabajo en frío, cámaras frigoríficas e intemperie en invierno.",
+   "guia": {
+    "titulo": "Ropa térmica para trabajar en frío",
+    "bloques": [
+     {
+      "titulo": "Qué es la primera piel",
+      "texto": "Es la capa que va pegada al cuerpo, debajo del uniforme. Mantiene el calor corporal y aleja la transpiración de la piel, que es lo que más enfría cuando se trabaja en cámaras de frío o a la intemperie."
+     },
+     {
+      "titulo": "Sistema de capas",
+      "texto": "Para frío intenso se combina con un buzo polar y una campera trucker o un mameluco térmico. Talles 1, 2 y 3, color negro."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Para qué sirve la ropa de primera piel?",
+     "respuesta": "Para mantener el calor del cuerpo y alejar la humedad de la piel en trabajos con frío, como cámaras frigoríficas, reparto y obra en invierno."
+    },
+    {
+     "pregunta": "¿Qué talles tiene el equipo térmico?",
+     "respuesta": "Talles 1, 2 y 3, con calce ajustado."
+    }
+   ]
   },
   "delantales": {
    "titulo": "Delantales de PVC para industria",
-   "descripcion": "Delantales de PVC con refuerzo para industria alimenticia, frigoríficos y limpieza. Stock permanente, factura A y envíos a todo el país."
+   "descripcion": "Delantales de PVC con refuerzo para industria alimenticia, frigoríficos y limpieza. Stock permanente, factura A y envíos a todo el país.",
+   "intro": "Delantales de PVC blancos con refuerzo para industria alimenticia y limpieza, y delantales de descarne para soldador De Pascale.",
+   "guia": {
+    "titulo": "Cómo elegir un delantal de trabajo",
+    "bloques": [
+     {
+      "titulo": "PVC: impermeable y lavable",
+      "texto": "El delantal de PVC Diforza (0,90 × 1,20 m, blanco, con refuerzo) protege la ropa de agua, sangre, grasa y productos de limpieza. Es el estándar en frigoríficos, carnicerías, plantas de alimentos, pescaderías y lavaderos."
+     },
+     {
+      "titulo": "Descarne para soldador",
+      "texto": "El delantal de cuero descarne De Pascale protege de chispas, salpicaduras de metal fundido y calor radiante. Hay versión estándar, reforzada y con refuerzo radiológico de goma plomada."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Qué delantal se usa en la industria alimenticia?",
+     "respuesta": "El delantal de PVC blanco: es impermeable, se lava y desinfecta fácil y deja ver la suciedad."
+    },
+    {
+     "pregunta": "¿Tienen delantales para soldar?",
+     "respuesta": "Sí, de cuero descarne De Pascale, en versión estándar, reforzada y con goma plomada."
+    }
+   ]
   },
   "gorras": {
    "titulo": "Gorras de trabajo para empresas",
-   "descripcion": "Gorras de 5 y 6 gajos, tapa nuca y gorros para uniformes de trabajo, personalizables con tu logo. Stock permanente y factura A."
+   "descripcion": "Gorras de 5 y 6 gajos, tapa nuca y gorros para uniformes de trabajo, personalizables con tu logo. Stock permanente y factura A.",
+   "intro": "Gorras de trabajo de algodón y poliéster con visera y cierre regulable, de talle único, personalizables con el logo de tu empresa.",
+   "guia": {
+    "titulo": "Gorras para uniformes de trabajo",
+    "bloques": [
+     {
+      "titulo": "Protección del sol y uniforme",
+      "texto": "La gorra completa el uniforme del personal que trabaja al aire libre: reparto, obra, agro, eventos y vigilancia. Tiene cierre regulable para que sirva a todos con un solo talle."
+     },
+     {
+      "titulo": "Personalización",
+      "texto": "Es una de las prendas más pedidas para bordar el logo de la empresa. Si se necesita protección contra golpes en la cabeza, ver la <a href=\"/productos/epp/proteccion-craneal/\">gorra con casquete</a>."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Las gorras se pueden bordar?",
+     "respuesta": "Sí, con el logo de tu empresa en el frente o en el costado."
+    },
+    {
+     "pregunta": "¿Una gorra de trabajo protege contra golpes?",
+     "respuesta": "No. Para golpes leves contra objetos fijos existe la gorra con casquete, y donde hay caída de objetos hace falta casco."
+    }
+   ]
   },
   "botas": {
    "titulo": "Botas de seguridad y botas de PVC",
-   "descripcion": "Botas industriales Ombú de PVC con y sin puntera, caña larga, náuticas y waders para industria y frigoríficos. Stock permanente y factura A."
+   "descripcion": "Botas industriales Ombú de PVC con y sin puntera, caña larga, náuticas y waders para industria y frigoríficos. Stock permanente y factura A.",
+   "intro": "Botas de PVC Ombú de caña larga, con puntera de acero o sin puntera, para frigoríficos, industria alimenticia, limpieza, agro y trabajo con agua.",
+   "guia": {
+    "titulo": "Cómo elegir botas de trabajo",
+    "bloques": [
+     {
+      "titulo": "Botas de PVC: para agua, barro y lavado",
+      "texto": "La bota de PVC es impermeable, se lava fácil y no absorbe olores, por eso es la estándar en frigoríficos, plantas de alimentos, lavaderos, limpieza, tambos y agro. La caña larga protege la pierna de salpicaduras y del agua."
+     },
+     {
+      "titulo": "Con o sin puntera",
+      "items": [
+       "<strong>Con puntera de acero:</strong> cuando hay riesgo de caída de objetos o de aplastamiento (carga de cajones, movimiento de mercadería, máquinas).",
+       "<strong>Sin puntera:</strong> para limpieza, lavado o tareas donde no hay riesgo de golpe en el pie; es más liviana."
+      ]
+     },
+     {
+      "titulo": "Color y talles",
+      "texto": "Se usan negras para trabajo general y blancas en la industria alimenticia, donde la higiene tiene que verse. Talles del 36 al 46."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Las botas de PVC sirven para frigoríficos?",
+     "respuesta": "Sí, son las más usadas en frigoríficos y plantas de alimentos porque son impermeables y se lavan y desinfectan con facilidad."
+    },
+    {
+     "pregunta": "¿Qué diferencia hay entre la bota con y sin puntera?",
+     "respuesta": "La bota con puntera de acero protege los dedos de golpes y aplastamiento; la sin puntera es más liviana y alcanza cuando no hay riesgo de caída de objetos."
+    }
+   ]
   },
   "botines": {
    "titulo": "Botines de seguridad con puntera",
@@ -283,11 +556,71 @@
   },
   "zapatillas": {
    "titulo": "Zapatillas de seguridad con puntera",
-   "descripcion": "Zapatillas de seguridad livianas Conwork, Ombú y Funcional con puntera, para logística e industria liviana. Talles completos y stock permanente."
+   "descripcion": "Zapatillas de seguridad livianas Conwork, Ombú y Funcional con puntera, para logística e industria liviana. Talles completos y stock permanente.",
+   "intro": "Zapatillas de seguridad Conwork y Funcional con puntera de acero o aluminio, livianas y con suela dieléctrica, para logística, depósitos e industria liviana.",
+   "guia": {
+    "titulo": "Cuándo conviene una zapatilla de seguridad",
+    "bloques": [
+     {
+      "titulo": "Liviana y con la misma protección",
+      "texto": "La zapatilla de seguridad tiene puntera y suela de seguridad con sello IRAM, pero con diseño deportivo y menos peso. Es la elección para centros de distribución, depósitos, repartidores, mantenimiento liviano y personal que camina muchos kilómetros por turno."
+     },
+     {
+      "titulo": "Puntera de aluminio o acero",
+      "texto": "La mayoría de los modelos llevan <strong>puntera de aluminio</strong>, que protege igual que la de acero y pesa menos. La Funcional Lander tiene puntera de acero."
+     },
+     {
+      "titulo": "Modelos para mujer",
+      "texto": "La Funcional Bali está hecha para pie de mujer, del 34 al 42. El resto de los modelos va del 34 al 47."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Las zapatillas de seguridad están certificadas?",
+     "respuesta": "Sí, todos los modelos publicados tienen sello IRAM y suela dieléctrica. La ficha técnica de cada modelo se descarga desde su página."
+    },
+    {
+     "pregunta": "¿Hay zapatillas de seguridad para mujer?",
+     "respuesta": "Sí, la Funcional Bali, del 34 al 42, y también hay botines para mujer como el Funcional Capri."
+    }
+   ]
   },
   "zapatos": {
    "titulo": "Zapatos de seguridad con puntera",
-   "descripcion": "Zapatos de seguridad Conwork, Ombú, Funcional y Voran con puntera, para planta y oficina técnica. Talles completos, stock permanente y factura A."
+   "descripcion": "Zapatos de seguridad Conwork, Ombú, Funcional y Voran con puntera, para planta y oficina técnica. Talles completos, stock permanente y factura A.",
+   "intro": "Zapatos de seguridad Conwork, Ombú, Funcional y Voran con puntera de acero o aluminio y suela dieléctrica, con sello IRAM, para planta, depósito y supervisión.",
+   "guia": {
+    "titulo": "Cómo elegir zapatos de seguridad",
+    "bloques": [
+     {
+      "titulo": "Zapato o botín",
+      "texto": "El zapato tiene la misma protección en la puntera y la suela que el botín, pero deja libre el tobillo: es más fresco y cómodo para supervisores, técnicos, choferes, logística liviana y personal que alterna planta y oficina. Donde hay riesgo de torceduras o terreno irregular conviene el botín."
+     },
+     {
+      "titulo": "Puntera",
+      "items": [
+       "<strong>Acero:</strong> la más resistente.",
+       "<strong>Aluminio:</strong> misma protección con menos peso.",
+       "<strong>Plástica:</strong> no metálica, más liviana y no activa detectores de metales (Ombú Prusiano)."
+      ]
+     },
+     {
+      "titulo": "Códigos de protección adicional",
+      "texto": "Algunos modelos indican riesgos extra cubiertos, por ejemplo <strong>E</strong> (absorción de energía en el talón), <strong>HI</strong> y <strong>CI</strong> (aislación del calor y del frío) y <strong>WR</strong> (resistencia al agua). Todos los modelos tienen sello IRAM y su ficha técnica descargable."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Un zapato de seguridad protege igual que un botín?",
+     "respuesta": "La puntera y la suela protegen igual. La diferencia es que el botín cubre el tobillo, así que conviene en terrenos irregulares o con riesgo de torcedura."
+    },
+    {
+     "pregunta": "¿Hay zapatos de seguridad livianos?",
+     "respuesta": "Sí, los modelos con puntera de aluminio o plástica pesan menos que los de acero, con la misma protección contra impactos."
+    }
+   ]
   },
   "proteccion-auditiva": {
    "titulo": "Protectores auditivos: tapones y de copa",
@@ -381,7 +714,41 @@
   },
   "proteccion-facial": {
    "titulo": "Protectores faciales y visores",
-   "descripcion": "Protectores faciales Libus planos, burbuja, para arco eléctrico y malla forestal, con soportes y adaptadores para casco. Stock permanente."
+   "descripcion": "Protectores faciales Libus planos, burbuja, para arco eléctrico y malla forestal, con soportes y adaptadores para casco. Stock permanente.",
+   "intro": "Protectores faciales Libus planos, burbuja, de color, contra arco eléctrico y malla forestal, con soportes y adaptadores para casco.",
+   "guia": {
+    "titulo": "Cómo elegir un protector facial",
+    "bloques": [
+     {
+      "titulo": "Visor según el riesgo",
+      "items": [
+       "<strong>Plano (PETG):</strong> salpicaduras y partículas en tareas generales.",
+       "<strong>Burbuja de policarbonato:</strong> más resistente al impacto y con mejor cobertura; para amoladoras, desbaste y herramientas de corte (EN 166 · ANSI Z87.1).",
+       "<strong>De color (gris, verde oscuro W3, espejado):</strong> exteriores con sol o tareas cercanas a soldadura.",
+       "<strong>Contra arco eléctrico:</strong> visor Arc Flash con ATPV 12 cal/cm² (NFPA 70E HRC 2) para trabajos eléctricos.",
+       "<strong>Malla forestal:</strong> para motosierras, desmalezadoras y poda (EN 1731)."
+      ]
+     },
+     {
+      "titulo": "Cómo se monta",
+      "texto": "El visor va en un <strong>soporte con arnés</strong> (estándar o a cremallera) o en el casco con un <strong>adaptador</strong> Libus. El protector facial se usa siempre sobre anteojos de seguridad: protege la cara, pero los anteojos protegen los ojos si se levanta el visor."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿El protector facial reemplaza a los anteojos de seguridad?",
+     "respuesta": "No. El protector facial se usa junto con anteojos de seguridad, que siguen protegiendo los ojos cuando el visor se levanta."
+    },
+    {
+     "pregunta": "¿Qué protector facial sirve para amoladora?",
+     "respuesta": "El visor burbuja de policarbonato, más resistente al impacto, montado en soporte o en casco."
+    },
+    {
+     "pregunta": "¿Tienen protección facial contra arco eléctrico?",
+     "respuesta": "Sí, el protector Libus Arc Flash, con ATPV 12 cal/cm² (NFPA 70E HRC 2)."
+    }
+   ]
   },
   "proteccion-ocular": {
    "titulo": "Anteojos y antiparras de seguridad",
@@ -542,27 +909,216 @@
   },
   "altura": {
    "titulo": "Arneses de seguridad y equipos para altura",
-   "descripcion": "Arneses anticaídas SKY, colas de amarre, conectores, salvacaídas y mosquetones para trabajo en altura. Stock permanente y factura A."
+   "descripcion": "Arneses anticaídas SKY, colas de amarre, conectores, salvacaídas y mosquetones para trabajo en altura. Stock permanente y factura A.",
+   "intro": "Arneses anticaídas SKY tipo paracaidista, amarres con amortiguador, conectores de anclaje, salvacaídas, mosquetones y accesorios para trabajo en altura.",
+   "guia": {
+    "titulo": "Cómo armar un sistema anticaídas",
+    "bloques": [
+     {
+      "titulo": "Los tres elementos del sistema",
+      "texto": "Un sistema anticaídas funciona solo si están los tres elementos y son compatibles:",
+      "items": [
+       "<strong>Arnés de cuerpo completo</strong> (tipo paracaidista): distribuye la fuerza de la caída en piernas, cadera y torso.",
+       "<strong>Elemento de conexión:</strong> amarre con amortiguador, salvacaídas sobre soga o cable, o línea de vida.",
+       "<strong>Punto de anclaje:</strong> una estructura resistente, o un conector de anclaje tipo corbata o circular."
+      ]
+     },
+     {
+      "titulo": "Amarre anticaídas o de sujeción",
+      "items": [
+       "<strong>Anticaídas (con amortiguador):</strong> detiene una caída; se conecta a la argolla dorsal o frontal. El doble en Y permite estar siempre enganchado al pasar de un anclaje a otro.",
+       "<strong>De sujeción o posicionamiento:</strong> sostiene al trabajador en su lugar (postes, estructuras) y se conecta a las argollas de la cintura. No sirve para detener caídas."
+      ]
+     },
+     {
+      "titulo": "Después de una caída",
+      "texto": "El <strong>dispositivo antitrauma</strong> permite apoyar los pies mientras se espera el rescate y reduce el riesgo de síndrome de suspensión. Todo equipo que frenó una caída se reemplaza, y antes de cada uso se revisan costuras, cintas, hebillas y mosquetones."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Desde qué altura hay que usar arnés?",
+     "respuesta": "En la construcción, para trabajos a más de 2 metros de altura con riesgo de caída (Decreto 911/96). El servicio de higiene y seguridad define el sistema según la tarea."
+    },
+    {
+     "pregunta": "¿Qué diferencia hay entre un amarre anticaídas y uno de sujeción?",
+     "respuesta": "El anticaídas tiene amortiguador y detiene una caída; el de sujeción solo posiciona al trabajador y nunca debe usarse para frenar una caída."
+    },
+    {
+     "pregunta": "¿Para qué sirve el arnés con toma frontal?",
+     "respuesta": "La toma frontal permite conectar sistemas de ascenso o líneas de vida verticales delante del cuerpo, además de la dorsal."
+    }
+   ]
   },
   "senalizacion": {
    "titulo": "Conos, cintas y señalización de seguridad",
-   "descripcion": "Conos viales Conoflex y De Pascale, delineadores, cinta de peligro, banderas y chalecos reflectivos para obra y vía pública. Stock permanente."
+   "descripcion": "Conos viales Conoflex y De Pascale, delineadores, cinta de peligro, banderas y chalecos reflectivos para obra y vía pública. Stock permanente.",
+   "intro": "Conos viales Conoflex y De Pascale de 20 a 120 cm, delineadores, cinta de peligro, cadenas, mallas, banderas, bandoleras y cinta reflectiva vehicular.",
+   "guia": {
+    "titulo": "Cómo elegir conos y señalización",
+    "bloques": [
+     {
+      "titulo": "Conos según el uso",
+      "items": [
+       "<strong>20 a 50 cm:</strong> señalización interna, estacionamientos, depósitos y entrenamiento.",
+       "<strong>70 a 75 cm:</strong> el tamaño estándar para obras en la vía pública y calles urbanas.",
+       "<strong>90 a 120 cm:</strong> rutas y autopistas, donde se necesita ver el cono desde lejos y a velocidad."
+      ]
+     },
+     {
+      "titulo": "Material",
+      "texto": "Los conos de <strong>PVC flexible</strong> recuperan la forma si un vehículo los pisa y son más pesados y estables; los de <strong>polietileno</strong> son más livianos y económicos. Con base de goma o base cuadrada pesada, resisten mejor el viento."
+     },
+     {
+      "titulo": "Delimitar áreas",
+      "texto": "Para cerrar zonas de trabajo: cinta de peligro o de precaución, cadena plástica, malla naranja y delineadores rebatibles."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Qué altura de cono se usa en la vía pública?",
+     "respuesta": "En calles urbanas se usan conos de 70 a 75 cm y en rutas y autopistas, de 90 a 120 cm, siempre con bandas reflectivas."
+    },
+    {
+     "pregunta": "¿Qué diferencia hay entre un cono de PVC y uno de polietileno?",
+     "respuesta": "El de PVC flexible tiene memoria: vuelve a su forma si lo pisan y es más estable. El de polietileno es más liviano y económico."
+    },
+    {
+     "pregunta": "¿Venden cinta de peligro por rollo?",
+     "respuesta": "Sí, la cinta de peligro Diforza viene en rollos de 100 y 200 m, y la de precaución De Pascale en 200 m."
+    }
+   ]
   },
   "proteccion-soldadura": {
    "titulo": "Máscaras para soldar y protección de soldador",
-   "descripcion": "Máscaras para soldar fotosensibles Libus, antiparras, campera, delantal, mangas, polainas y guantes de descarne. Stock permanente y factura A."
+   "descripcion": "Máscaras para soldar fotosensibles Libus, antiparras, campera, delantal, mangas, polainas y guantes de descarne. Stock permanente y factura A.",
+   "intro": "Máscaras para soldar fotosensibles y flip-up Libus, antiparras, y campera, delantal, mangas, polainas y guantes de descarne para soldador.",
+   "guia": {
+    "titulo": "Cómo equipar a un soldador",
+    "bloques": [
+     {
+      "titulo": "Protección de cara y ojos",
+      "items": [
+       "<strong>Máscara fotosensible (Strong Welder 1000):</strong> el filtro se oscurece solo al encender el arco; tono variable y certificación EN 175 / EN 379. Comodidad y productividad para el soldador habitual.",
+       "<strong>Máscara flip-up (Strong Welder 500):</strong> con porta filtro rebatible para filtro fijo de 50 × 105 mm.",
+       "<strong>Antiparra flip-up:</strong> para oxicorte y soldadura liviana."
+      ]
+     },
+     {
+      "titulo": "Ropa de descarne",
+      "texto": "Campera, delantal, mangas y polainas de <strong>cuero descarne</strong> protegen del calor radiante, las salpicaduras de metal fundido y el contacto breve con la llama. Los guantes de soldador llevan costura de Kevlar, que no se quema."
+     },
+     {
+      "titulo": "Guantes",
+      "texto": "Para soldadura conviene un guante de descarne largo, forrado, con norma EN 407 de calor (como el WorkSafe LBWR) o con costura de Kevlar (De Pascale 50202)."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Qué ventaja tiene una máscara fotosensible?",
+     "respuesta": "Permite ver la pieza con el visor claro y se oscurece automáticamente al iniciar el arco, sin levantar la máscara."
+    },
+    {
+     "pregunta": "¿Por qué los guantes de soldador llevan costura de Kevlar?",
+     "respuesta": "Porque el hilo de Kevlar resiste el calor y no se quema con las chispas, así el guante no se descose."
+    }
+   ]
   },
   "ergonomia": {
    "titulo": "Fajas lumbares y rodilleras de trabajo",
-   "descripcion": "Faja lumbar Diforza modelo Full para tareas de carga y rodilleras de trabajo. Talles S a 3XL, stock permanente y envíos a todo el país."
+   "descripcion": "Faja lumbar Diforza modelo Full para tareas de carga y rodilleras de trabajo. Talles S a 3XL, stock permanente y envíos a todo el país.",
+   "intro": "Faja lumbar Diforza modelo Full para tareas de carga y rodilleras de trabajo WorkSafe con cubierta de PVC y espuma de alta densidad.",
+   "guia": {
+    "titulo": "Faja lumbar y rodilleras: cuándo usarlas",
+    "bloques": [
+     {
+      "titulo": "Faja lumbar",
+      "texto": "La faja Diforza modelo Full tiene ballenas traseras, bandas laterales regulables y tiradores. Da soporte a la zona lumbar en tareas de levantamiento y movimiento de cargas. Se complementa con la capacitación en levantamiento seguro, que es lo que más previene lesiones. Talles S al 3XL según el contorno de cintura."
+     },
+     {
+      "titulo": "Rodilleras",
+      "texto": "Las rodilleras WorkSafe KP011 tienen cubierta de PVC y espuma multicapa; protegen en trabajos de rodillas: colocación de pisos, plomería, electricidad, mantenimiento y jardinería."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Cómo se elige el talle de la faja lumbar?",
+     "respuesta": "Por el contorno de cintura; la tabla de talles está en la página de la faja Diforza modelo Full."
+    },
+    {
+     "pregunta": "¿Para qué trabajos sirven las rodilleras?",
+     "respuesta": "Para tareas que se hacen de rodillas, como colocación de pisos, plomería, instalaciones eléctricas y jardinería."
+    }
+   ]
   },
   "kits": {
    "titulo": "Kits de EPP Libus: forestal, jardinero y más",
-   "descripcion": "Kits de protección Libus prearmados: forestal, jardinero, desmalezador, herramientas de corte y mecánico. Stock permanente y factura A."
+   "descripcion": "Kits de protección Libus prearmados: forestal, jardinero, desmalezador, herramientas de corte y mecánico. Stock permanente y factura A.",
+   "intro": "Kits de EPP Libus prearmados: forestal, jardinero, desmalezador, herramientas de corte y mecánico, con protección facial y auditiva compatible.",
+   "guia": {
+    "titulo": "Kits de protección Libus: cuál elegir",
+    "bloques": [
+     {
+      "titulo": "Qué incluye cada kit",
+      "items": [
+       "<strong>Forestal:</strong> casco Milenium Class, arnés a cremallera, mentonera, adaptador, malla forestal y protector auditivo L-340 para casco; para motosierra y poda.",
+       "<strong>Jardinero y desmalezador:</strong> malla forestal con soporte y protector auditivo (de copa en el jardinero, tapones Quantum en el desmalezador); para desmalezadoras y bordeadoras.",
+       "<strong>Herramientas de corte:</strong> protector facial burbuja con soporte y protector auditivo de copa; para amoladoras.",
+       "<strong>Mecánico:</strong> protector facial plano y protector auditivo Alternative; para mecanizado liviano."
+      ]
+     },
+     {
+      "titulo": "Ventaja del kit",
+      "texto": "Todos los componentes son compatibles entre sí y vienen listos para usar, con la ficha técnica de Libus."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Qué kit sirve para motosierra?",
+     "respuesta": "El kit forestal Libus: casco, malla forestal y protector auditivo montados juntos."
+    },
+    {
+     "pregunta": "¿Los componentes del kit se venden por separado?",
+     "respuesta": "Sí, la mayoría de los componentes (soportes, mallas, visores y protectores auditivos) también están en el catálogo por separado."
+    }
+   ]
   },
   "emergencias": {
    "titulo": "Botiquines, lavaojos y matafuegos",
-   "descripcion": "Botiquines, estaciones lavaojos, botellas lavaojos y matafuegos para empresas e industria. Stock permanente, factura A y envíos a todo el país."
+   "descripcion": "Botiquines, estaciones lavaojos, botellas lavaojos y matafuegos para empresas e industria. Stock permanente, factura A y envíos a todo el país.",
+   "intro": "Botiquines metálicos, estaciones y botellas lavaojos y extintores de polvo ABC para equipar a la empresa ante emergencias.",
+   "guia": {
+    "titulo": "Equipamiento de emergencias para la empresa",
+    "bloques": [
+     {
+      "titulo": "Extintores",
+      "texto": "El extintor de polvo químico ABC sirve para fuegos de clase <strong>A</strong> (sólidos como madera, papel o tela), <strong>B</strong> (líquidos inflamables) y <strong>C</strong> (equipos eléctricos energizados). Hay de 2,5 kg (potencial 3A-20BC) y 5 kg (6A-40BC), presurizados y con manómetro."
+     },
+     {
+      "titulo": "Lavaojos",
+      "texto": "Donde se manipulan químicos o hay riesgo de partículas en los ojos tiene que haber un lavaojos a mano. Se recomienda enjuagar al menos 15 minutos. La estación North 3826 se fija a la pared con dos botellas de 1 litro."
+     },
+     {
+      "titulo": "Botiquín",
+      "texto": "El botiquín metálico Practy N.º 16 trae 24 elementos de primeros auxilios (gasas, vendas, apósitos y más) en una caja de chapa para colgar."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Para qué fuegos sirve un extintor ABC?",
+     "respuesta": "Para fuegos de sólidos (A), líquidos inflamables (B) y equipos eléctricos energizados (C)."
+    },
+    {
+     "pregunta": "¿Cuánto tiempo hay que enjuagar los ojos con el lavaojos?",
+     "respuesta": "Se recomienda enjuagar al menos 15 minutos y después consultar a un médico."
+    }
+   ]
   }
  }
 }
