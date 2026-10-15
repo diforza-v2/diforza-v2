@@ -70,7 +70,40 @@
       return new Promise(function(res){ setTimeout(res, 1200); }).then(function(){ return post(data, opts.keepalive); });
     }).then(function(j){ j.data = data; return j; }, function(err){ err.data = data; throw err; });
     p.eventId = data.event_id;   // mismo id para GTM (deduplicación pixel/CAPI)
+    p.userData = hashUser(data); // email/teléfono en SHA-256 para conversiones avanzadas de Google Ads
     return p;
+  }
+  // Conversiones avanzadas (doc 08 §7): datos normalizados y hasheados en el navegador.
+  // Solo se usan en la etiqueta de Google Ads del lead; nunca van en texto al dataLayer.
+  function sha256(str){
+    return crypto.subtle.digest('SHA-256', new TextEncoder().encode(str)).then(function(b){
+      return Array.prototype.map.call(new Uint8Array(b), function(x){ return ('0' + x.toString(16)).slice(-2); }).join('');
+    });
+  }
+  function normEmail(e){
+    e = (e || '').trim().toLowerCase();
+    var m = e.match(/^([^@]+)@(gmail|googlemail)\.com$/);
+    return m ? m[1].replace(/\./g, '') + '@' + m[2] + '.com' : e;
+  }
+  function phoneE164(t){            // celular AR → +549 + 10 dígitos (sin 0 ni 15)
+    var d = (t || '').replace(/\D/g, '').replace(/^00/, '');
+    if (d.indexOf('54') === 0) d = d.slice(2);
+    d = d.replace(/^0/, '');
+    if (d.charAt(0) === '9' && d.length === 11) d = d.slice(1);
+    if (d.length === 12) for (var i = 2; i <= 4; i++) if (d.substr(i, 2) === '15'){ d = d.slice(0, i) + d.slice(i + 2); break; }
+    return d.length === 10 ? '+549' + d : '';
+  }
+  function hashUser(data){
+    try {
+      if (!window.crypto || !crypto.subtle || !window.TextEncoder) return Promise.resolve(undefined);
+      var em = normEmail(data.email), ph = phoneE164(data.telefono);
+      return Promise.all([em ? sha256(em) : '', ph ? sha256(ph) : '']).then(function(h){
+        var u = {};
+        if (h[0]) u.sha256_email_address = h[0];
+        if (h[1]) u.sha256_phone_number = h[1];
+        return (h[0] || h[1]) ? u : undefined;
+      }).catch(function(){ return undefined; });
+    } catch(e){ return Promise.resolve(undefined); }
   }
   function waFallback(data){
     var num = (window.SITE && window.SITE.whatsapp) || '5491163513333';
@@ -363,7 +396,9 @@
     var sent = window.DifLead && window.DifLead.send(form, { keepalive: true });
     if (sent) sent.catch(function(err){ console.warn('[lead] catálogo no enviado', err && err.message); });
     try { sessionStorage.setItem(KEY, '1'); } catch(err){}
-    track('generate_lead', { form_id: 'catalogo', event_id: sent ? sent.eventId : undefined });
+    (sent && sent.userData ? sent.userData : Promise.resolve(undefined)).then(function(ud){
+      track('generate_lead', { form_id: 'catalogo', event_id: sent ? sent.eventId : undefined, user_data: ud });
+    });
     stepForm.hidden = true;
     stepDone.hidden = false;
     download();

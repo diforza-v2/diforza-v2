@@ -163,10 +163,11 @@
       var sent = window.DifLead.send(form);
       var landingId = (form.querySelector('[name="landing"]') || {}).value || '';
       var rubro = (form.querySelector('[name="rubro"]') || {}).value || '';
-      sent.then(function(){
+      sent.then(function(){ return sent.userData; }).then(function(ud){
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({ event: 'generate_lead', form_id: 'cotizacion', lead_type: 'cotizacion',
-          landing_id: landingId, industry: rubro || undefined, event_id: sent.eventId, page_path: location.pathname });
+          landing_id: landingId, industry: rubro || undefined, event_id: sent.eventId, page_path: location.pathname,
+          user_data: ud });
         form.innerHTML =
           '<div class="lead-form__ok" role="status">' +
           '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>' +
