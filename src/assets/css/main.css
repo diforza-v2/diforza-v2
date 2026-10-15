@@ -51,6 +51,7 @@
 @import "sections/landing/quote.css" layer(sections);
 @import "sections/landing/catalog.css" layer(sections);
 @import "sections/legal.css" layer(sections);
+@import "sections/about.css" layer(sections);
 @import "sections/notfound.css" layer(sections);
 @import "sections/catalog/catalog-head.css" layer(sections);
 @import "sections/catalog/pdp.css" layer(sections);

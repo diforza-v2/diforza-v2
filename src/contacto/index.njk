@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+title: "Contacto: WhatsApp, teléfono y dirección | Diforza"
+description: "Contactá a Diforza por WhatsApp, teléfono o email. Albariño 2245, Mataderos, CABA. Lunes a viernes de 8 a 17 h. Envíos a todo el país con factura A."
+waText: "Hola, quiero hacer una consulta para mi empresa."
+pageJs: /assets/js/landing.js
+---
+{#- Página Contacto (doc 20 §8.2). Datos en site.json. -#}
+{%- set waHref = "https://wa.me/" + site.whatsapp.number + "?text=" + (waText | urlencode) %}
+<main>
+  <section class="page-hero">
+    <div class="page-hero__inner">
+      <p class="page-hero__eyebrow">Contacto</p>
+      <h1>Hablemos de lo que necesita tu empresa</h1>
+      <p class="page-hero__lead">Escribinos por WhatsApp, llamanos o pasá por Mataderos. Te respondemos en el día y enviamos a todo el país con factura A.</p>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-section__inner contact-grid">
+      <div>
+        <h2>Datos de contacto</h2>
+        <ul class="contact-list">
+          <li><span class="contact-list__label">WhatsApp</span><a href="{{ waHref }}" data-js="wa" target="_blank" rel="noopener">{{ site.whatsapp.display }}</a></li>
+          <li><span class="contact-list__label">Teléfono</span><a href="tel:{{ site.phone.number }}">{{ site.phone.display }}</a></li>
+          <li><span class="contact-list__label">Email</span><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><span class="contact-list__label">Dirección</span><a href="{{ site.address.maps }}" target="_blank" rel="noopener">{{ site.seo.direccion.calle }}, Mataderos ({{ site.seo.direccion.cp }}), CABA</a></li>
+          <li><span class="contact-list__label">Horario</span><span>{{ site.hours }}</span></li>
+        </ul>
+      </div>
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps?q={{ ('Diforza, ' + site.seo.direccion.calle + ', ' + site.seo.direccion.cp + ' CABA') | urlencode }}&output=embed" title="Mapa: Diforza, {{ site.seo.direccion.calle }}, Mataderos, CABA" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section about-section--alt">
+    <div class="about-section__inner">
+      <h2>Cómo comprar</h2>
+      <ul class="about-cards">
+        <li><h3>1. Contanos qué necesitás</h3><p>Por WhatsApp o con el formulario de abajo: productos, cantidades, talles y si querés el logo de tu empresa.</p></li>
+        <li><h3>2. Te enviamos la cotización</h3><p>Te respondemos en el día con precios, plazos y la recomendación técnica si la necesitás.</p></li>
+        <li><h3>3. Recibís el pedido</h3><p>Facturamos con factura A y enviamos a todo el país. Mirá el <a href="/productos/">catálogo online</a> mientras tanto.</p></li>
+      </ul>
+    </div>
+  </section>
+
+{%- set L = { cotizacion: { titulo: "Pedí tu cotización", respuesta: home.cotizacion.respuesta, catalogo: home.cotizacion.catalogo, landingId: "contacto", formTitulo: home.cotizacion.formTitulo, formBoton: home.cotizacion.formBoton } } %}
+{% include "sections/landing/quote.njk" %}
+</main>
+<script type="application/ld+json">{{ {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "url": site.url + "/contacto/",
+  "name": "Contacto | Diforza",
+  "about": { "@id": site.url + "/#organization" }
+} | dump | safe }}</script>

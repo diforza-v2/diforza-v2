@@ -989,8 +989,8 @@
 /productos/botin-industrial-25baf /productos/calzado/botines/ 301
 /productos/camisa-de-trabajo/ /productos/camisa-clasica-diforza/ 301
 /productos/camisa-de-trabajo /productos/camisa-clasica-diforza/ 301
-/ar/contacto/ / 301
-/ar/contacto / 301
+/ar/contacto/ /contacto/ 301
+/ar/contacto /contacto/ 301
 /cartuchos-y-accesorios/ /productos/epp/proteccion-respiratoria/ 301
 /cartuchos-y-accesorios /productos/epp/proteccion-respiratoria/ 301
 /cintas-y-chalecos/ /productos/epp/senalizacion/ 301
@@ -1135,8 +1135,8 @@
 /proteccion-respiratoria/respiradores-descartables /productos/epp/proteccion-respiratoria/ 301
 /proteccion-respiratoria/respiradores-libres-de-mantenimiento/ /productos/epp/proteccion-respiratoria/ 301
 /proteccion-respiratoria/respiradores-libres-de-mantenimiento /productos/epp/proteccion-respiratoria/ 301
-/quienessomos/ / 301
-/quienessomos / 301
+/quienessomos/ /nosotros/ 301
+/quienessomos /nosotros/ 301
 /vialidad-y-senalizacion/ /productos/epp/senalizacion/ 301
 /vialidad-y-senalizacion /productos/epp/senalizacion/ 301
 /vialidad-y-senalizacion/arneses-anticaidas-completos/ /productos/epp/altura/ 301
