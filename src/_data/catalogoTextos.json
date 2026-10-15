@@ -30,7 +30,52 @@
  "subcategorias": {
   "pantalones": {
    "titulo": "Pantalones de trabajo: cargo, clásico y bermuda",
-   "descripcion": "Pantalones de trabajo cargo, clásicos y elastizados para empresas, en varios colores y talles. Fabricación propia, con tu logo. Stock permanente y factura A."
+   "descripcion": "Pantalones de trabajo cargo, clásicos y elastizados para empresas, en varios colores y talles. Fabricación propia, con tu logo. Stock permanente y factura A.",
+   "intro": "Pantalones de trabajo cargo, clásicos y elastizados de gabardina y grafa, de fabricación propia y de Ombú, con talles del 36 al 68 y tu logo bordado.",
+   "guia": {
+    "titulo": "Cómo elegir pantalones de trabajo",
+    "intro": "El pantalón es la prenda que más se gasta en el uniforme. Elegir bien la tela y el modelo hace que dure más y que el personal trabaje cómodo.",
+    "bloques": [
+     {
+      "titulo": "Cargo o clásico",
+      "items": [
+       "<strong>Cargo:</strong> suma bolsillos laterales con tapa para herramientas, celular o anotador; es el más pedido en logística, mantenimiento y obra.",
+       "<strong>Clásico:</strong> corte recto y bolsillos tradicionales; queda más prolijo para atención al público, choferes y supervisores.",
+       "<strong>Elastizado:</strong> la gabardina con elastano acompaña el movimiento; ideal para tareas con mucha flexión."
+      ]
+     },
+     {
+      "titulo": "La tela: gabardina o grafa",
+      "texto": "Los pantalones Diforza son de <strong>gabardina de 8 oz sanforizada</strong> (no encoge al lavarse) y los Ombú, de <strong>grafa 100 % algodón</strong> en sarga. Las dos aguantan lavados industriales; la grafa es la tela tradicional del pantalón de trabajo en Argentina."
+     },
+     {
+      "titulo": "Alta visibilidad",
+      "texto": "Para tareas en la vía pública, playas de carga o de noche hay modelos con <strong>cintas reflectivas</strong> en las piernas."
+     },
+     {
+      "titulo": "Talles y personalización",
+      "texto": "Hay talles del 36 al 68 según el modelo, en varios colores. Bordamos o estampamos el logo de tu empresa y repetimos el mismo pedido cada temporada para que el uniforme sea siempre igual."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Qué es la grafa?",
+     "respuesta": "Es una tela de algodón de tejido sarga, muy resistente, que se usa desde hace décadas en la ropa de trabajo en Argentina. Ombú es la marca más conocida de pantalones de grafa."
+    },
+    {
+     "pregunta": "¿Los pantalones encogen al lavarlos?",
+     "respuesta": "La gabardina de los pantalones Diforza es sanforizada: tiene un tratamiento que evita que encoja con los lavados."
+    },
+    {
+     "pregunta": "¿Pueden llevar el logo de la empresa?",
+     "respuesta": "Sí. Personalizamos con bordado o estampado el logo de tu empresa en pantalones, camisas, camperas y el resto de la indumentaria."
+    },
+    {
+     "pregunta": "¿Hasta qué talle hay?",
+     "respuesta": "Según el modelo, del 36 al 68. Si necesitás talles especiales consultanos por WhatsApp."
+    }
+   ]
   },
   "remera": {
    "titulo": "Remeras de trabajo para empresas",
@@ -54,15 +99,118 @@
   },
   "chaleco": {
    "titulo": "Chalecos reflectivos y de trabajo",
-   "descripcion": "Chalecos reflectivos de alta visibilidad, polar, trucker y de geólogo para empresas. Personalizables con tu logo. Stock permanente y factura A."
+   "descripcion": "Chalecos reflectivos de alta visibilidad, polar, trucker y de geólogo para empresas. Personalizables con tu logo. Stock permanente y factura A.",
+   "intro": "Chalecos reflectivos de alta visibilidad, chalecos de geólogo con bolsillos de carga, polar y trucker para uniformes de trabajo, personalizables con tu logo.",
+   "guia": {
+    "titulo": "Cómo elegir chalecos de trabajo",
+    "bloques": [
+     {
+      "titulo": "Chaleco reflectivo de alta visibilidad",
+      "texto": "Hace visible a la persona de día por el color flúo y de noche por las bandas reflectivas. Es el elemento básico para trabajos en la vía pública, obras, playas de carga, estacionamientos y depósitos con autoelevadores. Si un auto lo ilumina, las bandas devuelven la luz hacia el conductor."
+     },
+     {
+      "titulo": "Chaleco de geólogo",
+      "texto": "De gabardina, con bolsillos frontales y de carga para herramientas e instrumentos, y cinta reflectiva 3M adelante y atrás. Lo usan supervisores, topógrafos, inspectores y personal de campo."
+     },
+     {
+      "titulo": "Chalecos de abrigo",
+      "texto": "El <strong>polar</strong> y el <strong>trucker</strong> (cortaviento con forro) suman abrigo al uniforme sin quitar movilidad en los brazos. El trucker va del XS al 6XL."
+     },
+     {
+      "titulo": "Personalización",
+      "texto": "Bordamos o estampamos el logo de la empresa en todos los chalecos; en los reflectivos se puede estampar en la espalda sin tapar las bandas."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Chaleco reflectivo, refractario o reflectante?",
+     "respuesta": "Es lo mismo: el nombre correcto es chaleco reflectivo (o reflectante). Se le dice refractario por error, pero refractario es lo que resiste altas temperaturas."
+    },
+    {
+     "pregunta": "¿Cuándo es obligatorio el chaleco reflectivo?",
+     "respuesta": "Siempre que se trabaja expuesto al tránsito de vehículos o máquinas, de día o de noche: vía pública, obras, rutas, playas de carga y depósitos con autoelevadores. El servicio de higiene y seguridad de la empresa lo define en el análisis de riesgo del puesto."
+    },
+    {
+     "pregunta": "¿Pueden estampar el logo en el chaleco reflectivo?",
+     "respuesta": "Sí, en la espalda o en el pecho, sin tapar las bandas reflectivas."
+    }
+   ]
   },
   "mameluco": {
    "titulo": "Mamelucos de trabajo y descartables",
-   "descripcion": "Mamelucos de gabardina, de alta visibilidad y descartables laminados ZIAO para industria. Talles completos, stock permanente y factura A."
+   "descripcion": "Mamelucos de gabardina, de alta visibilidad y descartables laminados ZIAO para industria. Talles completos, stock permanente y factura A.",
+   "intro": "Mamelucos de trabajo de gabardina, de alta visibilidad, térmicos, ignífugos Geotex y descartables laminados ZIAO, en talles del XS al 5XL.",
+   "guia": {
+    "titulo": "Cómo elegir un mameluco",
+    "intro": "El mameluco (también llamado overol o enterito) protege todo el cuerpo con una sola prenda. El tipo depende del riesgo de la tarea.",
+    "bloques": [
+     {
+      "titulo": "Tipos de mameluco",
+      "items": [
+       "<strong>Gabardina:</strong> el clásico de taller, mantenimiento e industria; resistente y lavable.",
+       "<strong>Alta visibilidad:</strong> gabardina 100 % algodón con cinta reflectiva 3M en pecho y piernas, para trabajos cerca del tránsito.",
+       "<strong>Térmico:</strong> acolchado y con capucha, para cámaras de frío y trabajo a la intemperie en invierno.",
+       "<strong>Ignífugo (Geotex):</strong> tela de algodón y poliamida resistente a la llama, con normas NFPA 2112, ISO 11612 e IEC 61482 para riesgo de fuego repentino y arco eléctrico.",
+       "<strong>Descartable laminado ZIAO:</strong> de un solo uso, para pintura, limpieza, mantenimiento sucio y tareas con polvo."
+      ]
+     },
+     {
+      "titulo": "Descartables ZIAO: 63 g o 55 g",
+      "texto": "Son de tecnología SFL (polipropileno con film laminado de polietileno), con capucha y elásticos en puños, cintura y tobillos. El de <strong>63 g</strong> es más resistente al roce y el de <strong>55 g</strong>, más liviano y fresco. ZIAO es la marca propia de Diforza."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Mameluco, overol y enterito son lo mismo?",
+     "respuesta": "Sí, son distintos nombres para la prenda de trabajo de una pieza que cubre torso, brazos y piernas."
+    },
+    {
+     "pregunta": "¿Qué mameluco sirve para trabajos con riesgo de fuego o arco eléctrico?",
+     "respuesta": "El mameluco ignífugo Geotex, certificado con NFPA 2112, ISO 11612 e IEC 61482, entre otras normas. Para arco eléctrico hay que verificar el nivel de protección que exige el puesto."
+    },
+    {
+     "pregunta": "¿Para qué se usa un mameluco descartable?",
+     "respuesta": "Para tareas sucias o con polvo en las que conviene tirar la prenda al terminar: pintura, limpieza, mantenimiento de equipos, desinfección y visitas a planta."
+    }
+   ]
   },
   "traje-de-lluvia": {
    "titulo": "Trajes y capas de lluvia para trabajo",
-   "descripcion": "Trajes y capas de lluvia impermeables para trabajo al aire libre, en amarillo y azul, talles hasta 5XL. Stock permanente, factura A y envíos."
+   "descripcion": "Trajes y capas de lluvia impermeables para trabajo al aire libre, en amarillo y azul, talles hasta 5XL. Stock permanente, factura A y envíos.",
+   "intro": "Trajes de lluvia de campera y pantalón y capas impermeables con capucha, en amarillo y azul, talles hasta 5XL y reflectivos a pedido.",
+   "guia": {
+    "titulo": "Traje o capa de lluvia: cuál conviene",
+    "bloques": [
+     {
+      "titulo": "Traje de lluvia (campera + pantalón)",
+      "texto": "Cubre todo el cuerpo y deja las piernas libres para caminar, subir escaleras o andar en moto. Es el más pedido para trabajo al aire libre todo el día: obra, mantenimiento, reparto, seguridad, agro. Tiene capucha con cordón, cierre con broches y pantalón con cintura elastizada. Talles S al 3XL."
+     },
+     {
+      "titulo": "Capa de lluvia",
+      "texto": "Se pone y se saca rápido sobre la ropa y llega por debajo de la rodilla. Conviene para tareas cortas bajo la lluvia, porterías, controles y personal que entra y sale. Talles S al 5XL."
+     },
+     {
+      "titulo": "Visibilidad",
+      "texto": "Con lluvia baja la visibilidad: para trabajos cerca del tránsito se pueden pedir con <strong>cintas reflectivas</strong> y conviene elegir el color amarillo."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Los trajes de lluvia tienen reflectivos?",
+     "respuesta": "Sí, a pedido se pueden hacer con cintas reflectivas. Consultá el plazo al cotizar."
+    },
+    {
+     "pregunta": "¿Qué talles hay?",
+     "respuesta": "El traje de lluvia va del S al 3XL y la capa del S al 5XL."
+    },
+    {
+     "pregunta": "¿Venden por cantidad?",
+     "respuesta": "Sí, con factura A y envíos a todo el país. Es uno de los productos con más demanda en otoño e invierno: conviene cotizar con anticipación."
+    }
+   ]
   },
   "sanidad-y-gastronomia": {
    "titulo": "Ambos, guardapolvos y ropa de gastronomía",
@@ -86,7 +234,52 @@
   },
   "botines": {
    "titulo": "Botines de seguridad con puntera",
-   "descripcion": "Botines de seguridad Conwork, Ombú, Funcional y Voran con puntera de acero o composite. Talles completos, stock permanente y factura A."
+   "descripcion": "Botines de seguridad Conwork, Ombú, Funcional y Voran con puntera de acero o composite. Talles completos, stock permanente y factura A.",
+   "intro": "Botines de seguridad con puntera de acero o de aluminio y suela dieléctrica, con sello IRAM, para industria, logística y construcción.",
+   "guia": {
+    "titulo": "Cómo elegir botines de seguridad",
+    "intro": "Un botín de seguridad protege el pie del aplastamiento y de los golpes por la puntera, y del resbalón y la descarga eléctrica por la suela. Para elegir bien hay que mirar tres cosas: la puntera, la suela y el uso real del puesto.",
+    "bloques": [
+     {
+      "titulo": "Puntera de acero, aluminio o composite",
+      "items": [
+       "<strong>Acero:</strong> la más resistente y la más usada en industria pesada, construcción y depósitos.",
+       "<strong>Aluminio:</strong> protege igual pero pesa menos; conviene para jornadas largas de pie o mucho desplazamiento.",
+       "<strong>Composite (no metálica):</strong> no conduce el frío ni la electricidad y no activa detectores de metales; la usan plantas con control de acceso y frigoríficos. En Diforza está en zapatillas Ombú."
+      ]
+     },
+     {
+      "titulo": "La suela",
+      "texto": "Todos los botines de esta categoría tienen suela de PU bidensidad o multidensidad <strong>dieléctrica</strong>: la capa interna amortigua y la externa resiste el desgaste, los hidrocarburos y el deslizamiento. Para pisos con agua, aceite o grasa conviene un dibujo profundo y una suela resistente a hidrocarburos."
+     },
+     {
+      "titulo": "Normas y certificación",
+      "texto": "En Argentina el calzado de seguridad se certifica con la norma <strong>IRAM 3610</strong> (requisitos de puntera, suela y aislación). Todos los modelos publicados tienen sello IRAM; la ficha técnica de cada uno se puede descargar desde su página."
+     },
+     {
+      "titulo": "Talles y modelos para mujer",
+      "texto": "Hay botines del 34 al 49 según el modelo, y el Funcional Capri está diseñado para pie de mujer. Para equipar a todo el personal te armamos el pedido por talle y repetimos la misma compra cada temporada."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Qué diferencia hay entre puntera de acero y de composite?",
+     "respuesta": "Las dos cumplen la misma protección contra impactos y aplastamiento. La de acero es la más tradicional y económica; la de composite no es metálica, pesa menos, no transmite frío ni electricidad y no activa detectores de metales."
+    },
+    {
+     "pregunta": "¿Los botines de seguridad son dieléctricos?",
+     "respuesta": "Los modelos de esta categoría tienen suela de poliuretano dieléctrica. Para trabajos con tensión hay que verificar en la ficha técnica el ensayo de aislación de cada modelo y complementar con el resto de los elementos de protección eléctrica."
+    },
+    {
+     "pregunta": "¿Qué norma tiene que cumplir el calzado de seguridad en Argentina?",
+     "respuesta": "La norma IRAM 3610, que fija los requisitos de la puntera, la suela y la resistencia del calzado. Los botines que vende Diforza tienen sello IRAM."
+    },
+    {
+     "pregunta": "¿Venden por cantidad para toda la empresa?",
+     "respuesta": "Sí. Diforza vende a empresas con factura A, arma el pedido por talle para todo el personal y envía a todo el país. Pedí tu cotización por WhatsApp o desde el formulario."
+    }
+   ]
   },
   "zapatillas": {
    "titulo": "Zapatillas de seguridad con puntera",
@@ -98,11 +291,93 @@
   },
   "proteccion-auditiva": {
    "titulo": "Protectores auditivos: tapones y de copa",
-   "descripcion": "Protectores auditivos Libus de copa, para casco y de vincha, y tapones Quantum, con NRR y ficha técnica. Stock permanente y factura A."
+   "descripcion": "Protectores auditivos Libus de copa, para casco y de vincha, y tapones Quantum, con NRR y ficha técnica. Stock permanente y factura A.",
+   "intro": "Protectores auditivos Libus de copa, para casco y de vincha, y tapones Quantum premoldeados y de espuma, con su atenuación NRR y normas EN 352 y ANSI.",
+   "guia": {
+    "titulo": "Cómo elegir protección auditiva",
+    "intro": "En Argentina, la exposición a ruido de 85 dB(A) o más en una jornada de 8 horas exige protección auditiva (Resolución MTEySS 295/03). El protector correcto depende del nivel de ruido, del tiempo de uso y de si se usa casco.",
+    "bloques": [
+     {
+      "titulo": "Tapón o protector de copa",
+      "items": [
+       "<strong>Tapones endoaurales:</strong> livianos y frescos, ideales para uso continuo y calor. Los premoldeados Quantum se lavan y reutilizan; los de espuma son descartables y atenúan más.",
+       "<strong>Protectores de copa:</strong> se ponen y se sacan rápido, buenos para ruido intermitente; hay versiones con vincha, para nuca y para casco.",
+       "<strong>Detectables:</strong> los Quantum DETECT tienen un inserto metálico para la industria alimenticia."
+      ]
+     },
+     {
+      "titulo": "Qué es el NRR",
+      "texto": "El <strong>NRR</strong> (índice de reducción de ruido, en dB) indica cuánto atenúa el protector en laboratorio; el <strong>SNR</strong> es su equivalente europeo. En la práctica la atenuación real es menor, por eso hay que elegir con margen y capacitar en la colocación. En esta categoría van de NRR 23 a NRR 32 dB."
+     },
+     {
+      "titulo": "Con casco",
+      "texto": "Los modelos L-320, L-340 y L-360 para casco se fijan al casco Libus con fichas adaptadoras y se rebaten cuando no hacen falta."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿A partir de cuántos decibeles es obligatorio el protector auditivo?",
+     "respuesta": "Con una exposición de 85 dB(A) o más en una jornada de 8 horas, según la Resolución MTEySS 295/03. El servicio de higiene y seguridad mide el ruido y define el protector."
+    },
+    {
+     "pregunta": "¿Qué protege más, el tapón o el de copa?",
+     "respuesta": "Depende del modelo: en esta categoría el tapón de espuma Quantum Foam tiene NRR 32 dB y los de copa, entre 23 y 25 dB. Con ruido muy alto se pueden usar los dos juntos."
+    },
+    {
+     "pregunta": "¿Los protectores de copa se pueden usar con casco?",
+     "respuesta": "Sí, los Libus L-320, L-340 y L-360 tienen versión para casco, con fichas adaptadoras para cascos Libus."
+    }
+   ]
   },
   "proteccion-craneal": {
    "titulo": "Cascos de seguridad y accesorios",
-   "descripcion": "Cascos de seguridad Libus Milenium Class y Andes, gorras con casquete, arneses y mentoneras, con certificación IRAM. Stock permanente y factura A."
+   "descripcion": "Cascos de seguridad Libus Milenium Class y Andes, gorras con casquete, arneses y mentoneras, con certificación IRAM. Stock permanente y factura A.",
+   "intro": "Cascos de seguridad Libus Milenium Class y Andes, gorras con casquete, arneses de repuesto y mentoneras, con certificación IRAM 3620 y ANSI/ISEA Z89.1.",
+   "guia": {
+    "titulo": "Cómo elegir un casco de seguridad",
+    "intro": "El casco protege de la caída de objetos y de los golpes contra estructuras. Lo que define la protección es el casco más el arnés interior, que absorbe el impacto.",
+    "bloques": [
+     {
+      "titulo": "Normas",
+      "texto": "En Argentina los cascos se certifican con <strong>IRAM 3620</strong>; los modelos Libus también cumplen <strong>ANSI/ISEA Z89.1</strong>, la norma estadounidense que clasifica el tipo de impacto y la clase eléctrica."
+     },
+     {
+      "titulo": "Arnés y accesorios",
+      "items": [
+       "<strong>Arnés estándar o a cremallera:</strong> el de cremallera se ajusta con una perilla sin sacarse el casco.",
+       "<strong>Mentonera:</strong> evita que el casco se caiga al agacharse o trabajar en altura.",
+       "<strong>Visor y protector auditivo:</strong> el Milenium Class acepta visor y protectores de copa para casco Libus."
+      ]
+     },
+     {
+      "titulo": "Gorra con casquete: no es un casco",
+      "texto": "La gorra con casquete protege de golpes leves contra objetos fijos (por ejemplo, en mantenimiento o en depósitos con estanterías bajas), pero <strong>no reemplaza al casco</strong> donde hay riesgo de caída de objetos."
+     },
+     {
+      "titulo": "Colores",
+      "texto": "Muchas empresas usan colores para identificar funciones (por ejemplo, blanco para supervisión). Los cascos se pueden personalizar con el logo de la empresa."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Qué norma tiene que cumplir un casco de seguridad en Argentina?",
+     "respuesta": "La norma IRAM 3620. Los cascos Libus Milenium Class y Andes están certificados IRAM 3620 y además ANSI/ISEA Z89.1."
+    },
+    {
+     "pregunta": "¿Cada cuánto se cambia el casco?",
+     "respuesta": "Siempre que recibió un golpe fuerte o tiene fisuras, deformaciones o decoloración por el sol. Además hay que respetar la vida útil que indica el fabricante en el casco y en la ficha técnica. El arnés se cambia antes que el casco."
+    },
+    {
+     "pregunta": "¿El casco viene con arnés?",
+     "respuesta": "El Milenium Class se vende sin suspensión, para elegir el arnés estándar o a cremallera. Los arneses Libus se venden también como repuesto."
+    },
+    {
+     "pregunta": "¿La gorra con casquete sirve como casco?",
+     "respuesta": "No. Protege de golpes leves contra objetos fijos, pero no cumple la norma de casco de seguridad y no protege de la caída de objetos."
+    }
+   ]
   },
   "proteccion-facial": {
    "titulo": "Protectores faciales y visores",
@@ -110,15 +385,160 @@
   },
   "proteccion-ocular": {
    "titulo": "Anteojos y antiparras de seguridad",
-   "descripcion": "Anteojos de seguridad y antiparras Libus y De Pascale, con lentes transparentes, grises y antiempañantes. Ficha técnica, stock permanente y factura A."
+   "descripcion": "Anteojos de seguridad y antiparras Libus y De Pascale, con lentes transparentes, grises y antiempañantes. Ficha técnica, stock permanente y factura A.",
+   "intro": "Anteojos de seguridad y antiparras Libus y De Pascale con lente de policarbonato, filtro UV, antirrayadura y antiempaño, certificados EN 166 y ANSI Z87.1.",
+   "guia": {
+    "titulo": "Cómo elegir anteojos de seguridad",
+    "bloques": [
+     {
+      "titulo": "Anteojo o antiparra",
+      "items": [
+       "<strong>Anteojo:</strong> para partículas y proyecciones frontales y laterales en tareas generales; es más liviano y cómodo para todo el turno.",
+       "<strong>Antiparra:</strong> sella alrededor de los ojos; se usa con salpicaduras de líquidos, polvo fino o partículas que pueden entrar por los costados.",
+       "<strong>Antiparra de malla:</strong> para forestación y desmalezado (astillas y vegetación)."
+      ]
+     },
+     {
+      "titulo": "Color de la lente",
+      "items": [
+       "<strong>Transparente:</strong> interiores y tareas generales.",
+       "<strong>Gris:</strong> exteriores con sol.",
+       "<strong>Outdoor/indoor:</strong> para quien entra y sale (por ejemplo, autoelevadoristas).",
+       "<strong>Amarillo:</strong> mejora el contraste con poca luz.",
+       "<strong>Verde oscuro (W3, W5):</strong> para tareas cercanas a soldadura u oxicorte, según el tono."
+      ]
+     },
+     {
+      "titulo": "Tratamientos y normas",
+      "texto": "<strong>HC</strong> es antirrayadura y <strong>AF</strong>, antiempaño (clave con barbijo o en cámaras de frío). Los anteojos Libus están certificados con la norma europea <strong>EN 166</strong> y varios también con la estadounidense <strong>ANSI Z87.1</strong> (marca Z87+ para alto impacto)."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Qué significa AF y HC en un anteojo de seguridad?",
+     "respuesta": "AF es el tratamiento antiempaño (anti-fog) y HC, el antirrayadura (hard coat). Algunos modelos se venden con uno u otro tratamiento."
+    },
+    {
+     "pregunta": "¿Hay anteojos de seguridad para usar sobre lentes recetados?",
+     "respuesta": "El Libus Hayat tiene un armazón desmontable para colocar lentes recetados. Consultanos por otras opciones según el puesto."
+    },
+    {
+     "pregunta": "¿Qué norma deben cumplir los anteojos de seguridad?",
+     "respuesta": "La norma europea EN 166 (también adoptada por IRAM) o la estadounidense ANSI Z87.1. Los modelos Libus que vende Diforza cumplen EN 166 y varios también ANSI Z87.1."
+    }
+   ]
   },
   "proteccion-respiratoria": {
    "titulo": "Mascarillas FFP2, semimáscaras y filtros",
-   "descripcion": "Mascarillas descartables FFP2 y FFP3 BLS, semimáscaras, máscaras completas, filtros y barbijos para industria. Ficha técnica y stock permanente."
+   "descripcion": "Mascarillas descartables FFP2 y FFP3 BLS, semimáscaras, máscaras completas, filtros y barbijos para industria. Ficha técnica y stock permanente.",
+   "intro": "Mascarillas descartables FFP2 y FFP3, semimáscaras, máscaras completas y filtros BLS para polvo, humos, gases y vapores, con su norma EN y ficha técnica.",
+   "guia": {
+    "titulo": "Cómo elegir protección respiratoria",
+    "intro": "Primero hay que saber contra qué se protege: <strong>partículas</strong> (polvo, humos, nieblas) o <strong>gases y vapores</strong>. Después, cuánta concentración hay y cuántas horas se usa.",
+    "bloques": [
+     {
+      "titulo": "Mascarillas descartables: FFP1, FFP2 y FFP3",
+      "texto": "Se certifican con la norma <strong>EN 149</strong>. La FFP2 filtra al menos el 94 % de las partículas y la FFP3, al menos el 99 %. Las marcas de la mascarilla indican además:",
+      "items": [
+       "<strong>NR:</strong> de un solo turno. <strong>R:</strong> reutilizable en más de un turno.",
+       "<strong>D:</strong> pasó el ensayo de dolomita (no se tapa rápido con polvo).",
+       "Con <strong>válvula</strong>: menos calor y humedad en jornadas largas; sin válvula: para industria alimenticia o donde no hay que contaminar el ambiente.",
+       "Con <strong>carbón activado</strong>: suma protección contra olores molestos."
+      ]
+     },
+     {
+      "titulo": "Semimáscaras y máscaras con filtros",
+      "texto": "Para gases y vapores, o para uso diario prolongado, conviene una semimáscara reutilizable (EN 140) o una máscara completa (EN 136, que también protege los ojos) con filtros intercambiables. Los filtros se identifican por letra y color:",
+      "items": [
+       "<strong>A</strong> (marrón): gases y vapores orgánicos (solventes, pinturas).",
+       "<strong>B</strong> (gris): gases inorgánicos (cloro, sulfuro de hidrógeno).",
+       "<strong>E</strong> (amarillo): gases ácidos (dióxido de azufre).",
+       "<strong>K</strong> (verde): amoníaco y derivados.",
+       "<strong>P</strong> (blanco): partículas, en clases P1, P2 y P3."
+      ]
+     },
+     {
+      "titulo": "¿FFP2 o N95?",
+      "texto": "Son equivalentes en la práctica: la FFP2 es la clasificación europea (EN 149, mínimo 94 %) y la N95, la estadounidense (NIOSH, mínimo 95 %). Las mascarillas BLS que vende Diforza están certificadas por EN 149."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Qué diferencia hay entre una mascarilla FFP2 y una FFP3?",
+     "respuesta": "La FFP2 filtra al menos el 94 % de las partículas y se usa para polvo y humos de riesgo medio; la FFP3 filtra al menos el 99 % y se usa con partículas más tóxicas o en mayor concentración."
+    },
+    {
+     "pregunta": "¿Cada cuánto se cambian los filtros de una semimáscara?",
+     "respuesta": "Los de partículas, cuando cuesta respirar porque se taparon. Los de gases y vapores, cuando se empieza a sentir olor o según las horas de uso que indique el fabricante. Guardarlos en bolsa cerrada extiende su vida útil."
+    },
+    {
+     "pregunta": "¿Para qué sirve la válvula de exhalación?",
+     "respuesta": "Deja salir el aire exhalado con menos esfuerzo y reduce el calor y la humedad dentro de la mascarilla. No se recomienda donde hay que proteger el producto o el ambiente, como en la industria alimenticia."
+    },
+    {
+     "pregunta": "¿Qué filtro uso para pintura con solventes?",
+     "respuesta": "Un filtro A (marrón) para los vapores orgánicos, combinado con un prefiltro o filtro P si además hay niebla de pintura. Consultanos y te recomendamos el filtro BLS según el producto que usan."
+    }
+   ]
   },
   "proteccion-manos": {
    "titulo": "Guantes de trabajo y de seguridad",
-   "descripcion": "Guantes de nitrilo, anticorte, de vaqueta, PVC, látex y para soldador, de WorkSafe y De Pascale. Stock permanente, factura A y envíos."
+   "descripcion": "Guantes de nitrilo, anticorte, de vaqueta, PVC, látex y para soldador, de WorkSafe y De Pascale. Stock permanente, factura A y envíos.",
+   "intro": "Guantes de trabajo de nitrilo, látex, PVC, vaqueta, descarne, anticorte, dieléctricos y para frío, de WorkSafe y De Pascale, con su código de protección EN 388 o IRAM.",
+   "guia": {
+    "titulo": "Cómo elegir guantes de trabajo",
+    "intro": "No hay un guante para todo: el guante correcto depende del riesgo principal de la tarea (corte, abrasión, químicos, calor, frío o electricidad) y de cuánta destreza necesita la mano.",
+    "bloques": [
+     {
+      "titulo": "Cómo leer el código EN 388",
+      "texto": "La norma <strong>EN 388</strong> (y su equivalente IRAM 3607-3608) califica la protección mecánica con una serie de números y letras. Por ejemplo, <strong>4X43C</strong>:",
+      "items": [
+       "1.º dígito: resistencia a la <strong>abrasión</strong> (0 a 4).",
+       "2.º: <strong>corte</strong> por cuchilla circular (0 a 5; X si no aplica).",
+       "3.º: <strong>desgarro</strong> (0 a 4).",
+       "4.º: <strong>perforación</strong> (0 a 4).",
+       "Letra: <strong>corte</strong> según ISO 13997 (A a F; F es el máximo).",
+       "P al final: protección contra <strong>impacto</strong> en el dorso."
+      ]
+     },
+     {
+      "titulo": "Guante según la tarea",
+      "items": [
+       "<strong>Manipulación general y armado:</strong> poliéster con baño de poliuretano o nitrilo; dan agarre y sensibilidad.",
+       "<strong>Riesgo de corte</strong> (chapa, vidrio, metalurgia): anticorte HPPE con nivel C, D o superior; con TPR en el dorso si hay golpes.",
+       "<strong>Construcción y carga pesada:</strong> vaqueta, descarne o nitrilo pesado.",
+       "<strong>Líquidos, aceites y químicos:</strong> nitrilo con baño completo, PVC o látex neoprene; verificar en la ficha el químico.",
+       "<strong>Soldadura:</strong> descarne largo con costura Kevlar, con norma EN 407 de calor.",
+       "<strong>Trabajo con tensión:</strong> guantes dieléctricos de látex por clase (00 a 2) según EN 60903.",
+       "<strong>Frío:</strong> guantes con interior de acrílico."
+      ]
+     },
+     {
+      "titulo": "Talles",
+      "texto": "Los guantes se piden por número (del 6 al 11 según el modelo). Un guante grande resta agarre y uno chico se rompe antes: conviene relevar el talle de cada operario."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Qué guante sirve para riesgo de corte?",
+     "respuesta": "Uno anticorte de fibra HPPE con nivel de corte C o superior según EN 388 (ISO 13997). Por ejemplo, los WorkSafe AP1306 (4X43F) o H2101 (4X43C)."
+    },
+    {
+     "pregunta": "¿Qué significa el código EN 388 4X43C?",
+     "respuesta": "Abrasión nivel 4, corte por cuchilla circular no aplicable (X), desgarro 4, perforación 3 y corte ISO 13997 nivel C."
+    },
+    {
+     "pregunta": "¿Qué guante uso para aceites e hidrocarburos?",
+     "respuesta": "Un guante con baño de nitrilo, mejor con baño completo si la mano se moja. El nitrilo resiste aceites y grasas mejor que el látex."
+    },
+    {
+     "pregunta": "¿Tienen guantes dieléctricos?",
+     "respuesta": "Sí, guantes de látex natural De Pascale en clases 00, 0, 1 y 2 según EN 60903. La clase se elige según la tensión de trabajo."
+    }
+   ]
   },
   "altura": {
    "titulo": "Arneses de seguridad y equipos para altura",

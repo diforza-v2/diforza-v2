@@ -19,13 +19,53 @@ eleventyComputed:
 {%- set crumbsLd = [{ "@type": "ListItem", position: 1, name: "Productos", item: site.url + "/productos/" }, { "@type": "ListItem", position: 2, name: LT.titulo, item: site.url + s.linea.url }, { "@type": "ListItem", position: 3, name: s.nombre }] %}
 {%- set marcas = s.facetas.marcas | pluck("nombre") %}
 {%- set headTitle = s.nombre %}
-{%- set headLead = s.total + (" producto" if s.total == 1 else " productos") + (" de " + (marcas | listaY) if marcas.length else "") + ". Stock permanente, factura A y envíos a todo el país." %}
+{%- set ST = catalogoTextos.subcategorias[s.id] or {} %}
+{%- set headLead = (ST.intro + " " if ST.intro else "") + s.total + (" producto" if s.total == 1 else " productos") + (" de " + (marcas | listaY) if marcas.length else "") + ". Stock permanente, factura A y envíos a todo el país." %}
 <main class="catalog-page">
 {%- include "catalogo/head.njk" %}
 {%- set items = s.productos %}
 {%- set facetas = s.facetas %}
 {%- set scope = "sub" %}
 {%- include "catalogo/listado.njk" %}
+{%- if ST.guia or ST.faq %}
+  <section class="cat-guide" aria-labelledby="cat-guide-title">
+    <div class="cat-guide__inner">
+{%- if ST.guia %}
+      <h2 id="cat-guide-title">{{ ST.guia.titulo }}</h2>
+{%- if ST.guia.intro %}
+      <p>{{ ST.guia.intro | safe }}</p>
+{%- endif %}
+{%- for b in ST.guia.bloques %}
+      <h3>{{ b.titulo }}</h3>
+{%- if b.texto %}
+      <p>{{ b.texto | safe }}</p>
+{%- endif %}
+{%- if b.items %}
+      <ul>
+{%- for it in b.items %}
+        <li>{{ it | safe }}</li>
+{%- endfor %}
+      </ul>
+{%- endif %}
+{%- endfor %}
+{%- endif %}
+{%- if ST.faq %}
+      <h2 class="cat-guide__faq-title"{% if not ST.guia %} id="cat-guide-title"{% endif %}>Preguntas frecuentes sobre {{ s.nombre | lower }}</h2>
+      <div class="accordion">
+{%- for q in ST.faq %}
+        <details{% if loop.first %} open{% endif %}>
+          <summary>{{ q.pregunta }} {{ icons['ui-chevron'] | safe }}</summary>
+          <p class="accordion__panel">{{ q.respuesta | safe }}</p>
+        </details>
+{%- endfor %}
+      </div>
+{%- endif %}
+      <p class="cat-guide__more">¿Necesitás asesoramiento para elegir? Conocé la línea completa en <a href="{{ s.linea.landing }}">{{ LT.titulo | lower }} para empresas</a> o escribinos por WhatsApp y te ayudamos según el puesto de trabajo.</p>
+    </div>
+  </section>
+{%- set faqItems = ST.faq %}
+{% include "partials/faq-schema.njk" %}
+{%- endif %}
   <nav class="cat-siblings" aria-label="Otras categorías de {{ LT.titulo | lower }}">
     <p class="cat-siblings__title">Más en {{ LT.titulo | lower }}</p>
     <ul class="cat-siblings__list" role="list">

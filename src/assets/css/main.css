@@ -57,6 +57,7 @@
 @import "sections/catalog/related.css" layer(sections);
 @import "sections/catalog/lines-tiles.css" layer(sections);
 @import "sections/catalog/catalog-list.css" layer(sections);
+@import "sections/catalog/guide.css" layer(sections);
 
 /* utilities */
 @import "utilities.css" layer(utilities);
