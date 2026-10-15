@@ -1,0 +1,314 @@
+/* Página de marca ZIAO (/ziao/) */
+.ziao-hero {
+  padding: calc(var(--nav-h) + 40px) var(--pad) 56px;
+  color: var(--white);
+  background:
+    radial-gradient(90% 140% at 100% 0%, rgb(var(--rgb-orange) / 14%) 0%, transparent 55%),
+    linear-gradient(160deg, var(--navy) 0%, var(--navy-950) 100%);
+}
+
+.ziao-hero__inner {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (--lg) {
+  .ziao-hero {
+    padding-bottom: 72px;
+    padding-top: calc(var(--nav-h) + 56px);
+  }
+
+  .ziao-hero__inner {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 56px;
+  }
+}
+
+.ziao-hero__logo {
+  display: block;
+  width: 140px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.ziao-hero h1 {
+  margin: 0;
+  font-size: var(--fs-36);
+  line-height: 1.1;
+  color: var(--white);
+}
+
+@media (--md) {
+  .ziao-hero h1 {
+    font-size: var(--fs-48);
+  }
+}
+
+.ziao-hero .ctas {
+  margin-top: 28px;
+}
+
+.ziao-hero__media {
+  margin: 0;
+}
+
+.ziao-hero__media img {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: var(--radius-16);
+}
+
+.about-section .ziao-eyebrow {
+  color: var(--orange);
+}
+
+/* Producto */
+.ziao-product,
+.ziao-uses,
+.ziao-sizes {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+
+@media (--lg) {
+  .ziao-product {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 56px;
+  }
+
+  .ziao-uses {
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+  }
+
+  .ziao-sizes {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 56px;
+  }
+}
+
+.ziao-product__media,
+.ziao-sizes__media {
+  margin: 0;
+}
+
+.ziao-product__media img,
+.ziao-sizes__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--white);
+  border-radius: var(--radius-16);
+}
+
+.ziao-specs {
+  display: grid;
+  margin: 24px 0 0;
+  border-top: 1px solid var(--slate-150);
+}
+
+.ziao-specs div {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--slate-150);
+}
+
+.ziao-specs dt {
+  font-size: var(--fs-12);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--slate-600);
+}
+
+.ziao-specs dd {
+  margin: 0;
+  font-size: var(--fs-16);
+  color: var(--navy);
+}
+
+.ziao-product__links {
+  margin-top: 20px;
+}
+
+.ziao-product__links a,
+.ziao-uses a {
+  font-weight: var(--fw-semibold);
+  color: var(--navy);
+  text-underline-offset: 3px;
+}
+
+/* Usos */
+.ziao-uses__media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.ziao-uses__media video,
+.ziao-uses__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-16);
+  object-fit: cover;
+}
+
+.ziao-list {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ziao-list li {
+  position: relative;
+  font-size: var(--fs-16);
+  line-height: 24px;
+  padding-left: 30px;
+}
+
+.ziao-list li::before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  font-size: var(--fs-12);
+  font-weight: var(--fw-bold);
+  color: var(--white);
+  border-radius: 50%;
+}
+
+.ziao-list--ok li::before {
+  background: var(--navy);
+  content: "✓";
+}
+
+.ziao-list--no li::before {
+  background: var(--orange);
+  content: "✕";
+}
+
+.ziao-list + p {
+  margin-top: 24px;
+}
+
+.ziao-uses__no-title {
+  margin: 28px 0 0;
+  font-size: var(--fs-20);
+  color: var(--navy);
+}
+
+/* Tablas */
+.ziao-table-wrap {
+  overflow-x: auto;
+  background: var(--white);
+  border: 1px solid var(--slate-150);
+  border-radius: var(--radius-12);
+  margin-top: 24px;
+}
+
+.ziao-table {
+  width: 100%;
+  min-width: 560px;
+  font-size: var(--fs-15);
+  border-collapse: collapse;
+}
+
+.ziao-table--sizes {
+  min-width: 0;
+}
+
+.ziao-table th,
+.ziao-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--slate-150);
+  vertical-align: top;
+}
+
+.ziao-table thead th {
+  font-size: var(--fs-12);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--navy);
+}
+
+.ziao-table tbody th {
+  font-weight: var(--fw-semibold);
+  color: var(--navy);
+}
+
+.ziao-table tbody tr:last-child th,
+.ziao-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.ziao-table td strong {
+  display: block;
+  color: var(--navy);
+}
+
+.ziao-table td span {
+  display: block;
+  font-size: var(--fs-14);
+  color: var(--slate-600);
+  margin-top: 2px;
+}
+
+.ziao-faq .accordion {
+  margin-top: 24px;
+}
+
+/* Mobile: la tabla de ensayos pasa a tarjetas y se oculta la foto de detalle */
+@media (--below-md) {
+  .ziao-sizes__media {
+    display: none;
+  }
+
+  .ziao-table--tests {
+    min-width: 0;
+  }
+
+  .ziao-table--tests thead {
+    display: none;
+  }
+
+  .ziao-table--tests tr {
+    display: block;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--slate-150);
+  }
+
+  .ziao-table--tests tbody tr:last-child {
+    border-bottom: 0;
+  }
+
+  .ziao-table--tests th,
+  .ziao-table--tests td {
+    display: block;
+    padding: 0;
+    border: 0;
+  }
+
+  .ziao-table--tests td:nth-child(2) {
+    margin: 2px 0 6px;
+    font-size: var(--fs-13);
+    color: var(--slate-600);
+  }
+}

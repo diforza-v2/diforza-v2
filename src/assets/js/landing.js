@@ -189,4 +189,12 @@
       });
     });
   });
+
+  // Descarga de ficha técnica desde páginas de marca (p. ej. /ziao/): mismo evento que la ficha de producto
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('[data-ficha]');
+    if (!a) return;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'ficha_tecnica', prod_id: a.getAttribute('data-ficha'), file_name: (a.getAttribute('href') || '').split('/').pop(), page_path: location.pathname });
+  });
 })();

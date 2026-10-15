@@ -1161,7 +1161,5 @@
 /vialidad-y-senalizacion/extintores1 /productos/epp/emergencias/ 301
 /vialidad-y-senalizacion/salvacaidas-para-trabajo-vertical/ /productos/epp/altura/ 301
 /vialidad-y-senalizacion/salvacaidas-para-trabajo-vertical /productos/epp/altura/ 301
-/ziao/ /indumentaria-de-trabajo/ 301
-/ziao /indumentaria-de-trabajo/ 301
-/ziao1/ /indumentaria-de-trabajo/ 301
-/ziao1 /indumentaria-de-trabajo/ 301
+/ziao1/ /ziao/ 301
+/ziao1 /ziao/ 301

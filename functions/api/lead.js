@@ -63,6 +63,7 @@ const LANDING_CAT = {           // landingId → Categoria de Interés
   'l2-indumentaria': 'indumentaria',
   'calzado': 'calzado',
   'l3-epp': 'epp',
+  'ziao': 'indumentaria',
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
