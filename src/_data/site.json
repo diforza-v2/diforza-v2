@@ -8,13 +8,14 @@
     "descripcion": "Distribuidora de elementos de protección personal (EPP), indumentaria de trabajo y calzado de seguridad para empresas, con más de 15 años de trayectoria, marca propia ZIAO y stock permanente.",
     "horario": "Mo-Fr 08:00-17:00",
     "direccion": {
-      "calle": "Albariño 2243",
+      "calle": "Albariño 2245",
       "barrio": "Mataderos",
       "ciudad": "Ciudad Autónoma de Buenos Aires",
       "region": "CABA",
-      "pais": "AR"
+      "pais": "AR",
+      "cp": "C1440DUW"
     },
-    "_nota": "Datos para schema.org Organization/Store (base.njk). ⚠ La dirección figura como 2243 acá y como 2245 en docs viejos: validar con Diego y unificar con el Perfil de Empresa en Google."
+    "_nota": "Datos para schema.org Organization/Store (base.njk). Dirección confirmada con el Perfil de Empresa en Google el 15 oct 2026: Albariño 2245, C1440DUW CABA."
   },
   "whatsapp": {
     "number": "5491163513333",
@@ -87,8 +88,8 @@
   },
   "email": "info@diforza.com.ar",
   "address": {
-    "line": "Albariño 2243, Mataderos, CABA",
-    "maps": "https://www.google.com/maps/search/?api=1&query=Diforza+Albari%C3%B1o+2243+CABA"
+    "line": "Albariño 2245, Mataderos, CABA",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Diforza+Albari%C3%B1o+2245+CABA"
   },
   "hours": "Lunes a viernes de 8 a 17 h",
   "legal": {
