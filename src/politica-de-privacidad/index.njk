@@ -3,10 +3,12 @@ layout: layouts/base.njk
 title: "Política de privacidad | Diforza"
 description: "Cómo Diforza (Gennaro SRL) recopila, usa y protege los datos personales que se dejan en este sitio y por WhatsApp."
 waText: "Hola, tengo una consulta sobre mis datos personales."
-actualizado: "7 de octubre de 2026"
+actualizado: "15 de octubre de 2026"
 ---
-{#- Borrador redactado el 7 oct 2026 a partir del contexto del proyecto. Debe revisarlo un abogado
-    antes de publicar. Lo marcado con [[…]] falta confirmar. -#}
+{#- Borrador redactado el 7 oct 2026 a partir del contexto del proyecto; 15 oct 2026: sección 5 ampliada
+    con la medición real del sitio (doc 08: GA4, Google Ads con conversiones avanzadas, píxel y API de
+    conversiones de Meta, Consent Mode). Debe revisarlo un abogado antes de publicar en diforza.com.ar.
+    Lo marcado con [[…]] falta confirmar. -#}
 <main class="legal">
   <div class="legal__inner">
     <p class="legal__eyebrow">Legales</p>
@@ -48,7 +50,8 @@ actualizado: "7 de octubre de 2026"
     </ul>
     <p>Nuestros servicios están pensados para empresas. Te pedimos que no nos envíes datos sensibles (por ejemplo, de salud, origen racial o afiliación sindical) ni datos de terceros sin su autorización.</p>
     <h3>Datos que se recopilan automáticamente</h3>
-    <p>Al navegar el sitio se registran datos técnicos: dirección IP aproximada, tipo de dispositivo y navegador, páginas visitadas, cómo llegaste al sitio (por ejemplo, desde un anuncio o un buscador) y las acciones que hacés, como tocar el botón de WhatsApp, enviar un formulario o descargar el catálogo. Ver la sección <a href="#cookies">Cookies y medición</a>.</p>
+    <p>Al navegar el sitio se registran datos técnicos: dirección IP, tipo de dispositivo y navegador, páginas y productos visitados, búsquedas dentro del catálogo, cómo llegaste al sitio (por ejemplo, desde un anuncio o un buscador, incluidos los parámetros de campaña del link) y las acciones que hacés, como tocar el botón de WhatsApp o el teléfono, enviar un formulario o descargar el catálogo o una ficha técnica. Ver la sección <a href="#cookies">Cookies y medición</a>.</p>
+    <p>Cuando enviás un formulario, junto con tus datos guardamos el origen de tu visita (la campaña o el sitio desde el que llegaste) para saber qué canales nos traen consultas.</p>
 
     <h2 id="finalidad">3. Para qué los usamos</h2>
     <ul>
@@ -66,8 +69,8 @@ actualizado: "7 de octubre de 2026"
     <ul>
       <li><strong>Kommo:</strong> sistema de gestión de clientes (CRM) donde registramos las consultas y conversaciones.</li>
       <li><strong>Meta (WhatsApp Business):</strong> canal de mensajería. WhatsApp trata tus datos también según sus propias políticas.</li>
-      <li><strong>Google (Analytics, Ads y Tag Manager) y Meta (píxel de Facebook e Instagram):</strong> medición del sitio y publicidad.</li>
-      <li><strong>Cloudflare:</strong> alojamiento y seguridad del sitio.</li>
+      <li><strong>Google (Analytics, Ads y Tag Manager) y Meta (píxel y API de conversiones de Facebook e Instagram):</strong> medición del sitio y publicidad. Ver la sección <a href="#cookies">Cookies y medición</a>.</li>
+      <li><strong>Cloudflare:</strong> alojamiento y seguridad del sitio, y una copia de respaldo de los formularios enviados para que ninguna consulta se pierda si falla otro sistema.</li>
       <li><strong>Nuestro equipo comercial y sistema de gestión interno:</strong> para cotizar, facturar y entregar.</li>
     </ul>
     <p>Algunos de estos proveedores almacenan datos en servidores fuera de la Argentina, por ejemplo en Estados Unidos o en la Unión Europea. Al usar el sitio y nuestros canales, aceptás esa transferencia internacional, que se hace con proveedores que aplican medidas de seguridad adecuadas.</p>
@@ -76,11 +79,25 @@ actualizado: "7 de octubre de 2026"
     <h2 id="cookies">5. Cookies y medición</h2>
     <p>Las cookies son pequeños archivos que el navegador guarda en tu dispositivo. Este sitio usa:</p>
     <ul>
-      <li><strong>Necesarias:</strong> para que el sitio funcione y recuerde preferencias básicas.</li>
-      <li><strong>De medición:</strong> Google Analytics, para entender cuántas personas nos visitan y qué páginas usan.</li>
-      <li><strong>De publicidad:</strong> Google Ads y el píxel de Meta, para saber qué anuncios generan consultas y mostrar anuncios de Diforza a quienes visitaron el sitio.</li>
+      <li><strong>Necesarias:</strong> para que el sitio funcione y recuerde preferencias básicas. También guardamos en tu navegador, por hasta 90 días, el origen de tu última visita desde una campaña (por ejemplo, el anuncio en el que hiciste clic), para asociarlo a tu consulta si después completás un formulario.</li>
+      <li><strong>De medición:</strong> Google Analytics (cookies <code>_ga</code>), para entender cuántas personas nos visitan, qué páginas y productos miran y qué acciones hacen. Los datos de Google Analytics se conservan 14 meses.</li>
+      <li><strong>De publicidad:</strong> Google Ads (cookies <code>_gcl_*</code>) y el píxel de Meta (cookies <code>_fbp</code> y <code>_fbc</code>), para saber qué anuncios generan consultas y mostrar anuncios de Diforza a quienes visitaron el sitio.</li>
     </ul>
-    <p>Podés bloquear o borrar las cookies desde la configuración de tu navegador. También podés limitar la publicidad personalizada desde la configuración de anuncios de tu cuenta de Google y desde las preferencias de anuncios de Facebook e Instagram. Si bloqueás cookies, el sitio sigue funcionando.</p>
+    <h3>Cuando enviás un formulario</h3>
+    <p>Para saber qué anuncio generó tu consulta, además de las cookies usamos estas herramientas:</p>
+    <ul>
+      <li><strong>Conversiones avanzadas de Google Ads:</strong> tu navegador transforma tu email y tu teléfono con una función de <em>hash</em> (SHA-256), un cifrado de un solo sentido que no permite recuperar el dato original, y envía ese código a Google junto con el aviso de la consulta. Google lo compara con los datos de sus propios usuarios, también cifrados, para atribuir la consulta a un anuncio, y no lo usa para otros fines.</li>
+      <li><strong>API de conversiones de Meta:</strong> nuestro servidor avisa a Meta que se recibió una consulta. Envía tu email, tu teléfono, tu nombre y tu país cifrados con el mismo método (SHA-256), más tu dirección IP, el tipo de navegador y las cookies de Meta. Meta los usa para medir y mejorar nuestros anuncios.</li>
+    </ul>
+    <p>Nunca enviamos a Google ni a Meta el contenido de tu mensaje ni los datos de tu empresa.</p>
+    <h3>Cómo oponerte</h3>
+    <ul>
+      <li>Podés bloquear o borrar las cookies desde la configuración de tu navegador. Si las bloqueás, el sitio sigue funcionando.</li>
+      <li>Podés desactivar Google Analytics con el <a href="https://tools.google.com/dlpage/gaoptout?hl=es" target="_blank" rel="noopener">complemento de inhabilitación de Google Analytics</a>.</li>
+      <li>Podés limitar la publicidad personalizada en <a href="https://myadcenter.google.com/" target="_blank" rel="noopener">Mi Centro de anuncios de Google</a> y en las <a href="https://accountscenter.facebook.com/ad_preferences" target="_blank" rel="noopener">preferencias de anuncios de Meta</a> (Facebook e Instagram).</li>
+      <li>Podés pedirnos que no usemos tus datos para medir publicidad escribiendo a <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</li>
+    </ul>
+    <p>Si visitás el sitio desde el Espacio Económico Europeo, el Reino Unido o Suiza, las cookies de medición y publicidad están desactivadas por defecto.</p>
 
     <h2 id="conservacion">6. Cuánto tiempo los guardamos</h2>
     <p>Conservamos los datos mientras dure la relación comercial o mientras sean útiles para responder tu consulta y hacer su seguimiento. Después los conservamos solo el tiempo que exijan las obligaciones legales, contables o impositivas, o hasta que pidas que los eliminemos, si no hay una obligación que nos lo impida.</p>
