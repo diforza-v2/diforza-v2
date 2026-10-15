@@ -10,6 +10,14 @@
  *                     "Formulario web Diforza". Sin token → solo respaldo en KV.
  *   KOMMO_SUBDOMAIN   opcional, por defecto "marketingdiforza".
  *   TURNSTILE_SECRET  (secreto, opcional) si está, se exige el captcha Turnstile.
+ *   META_CAPI_TOKEN   (secreto) token de la API de conversiones del dataset
+ *                     Diforza_Web 1644320683756405. Sin token → no se envía a Meta.
+ *   META_TEST_EVENT_CODE  opcional: código de "Probar eventos" (Administrador de
+ *                     eventos). Con código, los eventos van solo a la pestaña de prueba.
+ *   META_API_VERSION  opcional, por defecto "v23.0".
+ * Meta CAPI (doc 08 §8): Lead (cotización) / CatalogDownload (catálogo) con el
+ * mismo event_id que el píxel del navegador → Meta deduplica. En *.pages.dev
+ * solo se envía si hay META_TEST_EVENT_CODE (staging no ensucia el dataset).
  * Bindings:
  *   LEADS             (KV, opcional) respaldo de cada lead, haya llegado o no a Kommo.
  *
@@ -121,19 +129,26 @@ export async function onRequestPost({ request, env }) {
     catch (e) { console.error('kv_put_failed', e && e.message); }
   }
 
-  // 4. Kommo
-  let kommo = { status: 'off' };
-  if (env.KOMMO_TOKEN) {
+  // 4. Kommo y Meta CAPI en paralelo (Meta nunca bloquea ni hace fallar el lead)
+  const kommoP = (async () => {
+    if (!env.KOMMO_TOKEN) return { status: 'off' };
     try {
       const leadId = await sendToKommo(lead, env);
-      kommo = { status: 'ok', lead_id: leadId };
+      return { status: 'ok', lead_id: leadId };
     } catch (e) {
-      kommo = { status: 'error', error: String((e && e.message) || e).slice(0, 500) };
-      console.error('kommo_failed', kommo.error);
+      const k = { status: 'error', error: String((e && e.message) || e).slice(0, 500) };
+      console.error('kommo_failed', k.error);
+      return k;
     }
-  }
+  })();
+  const metaP = sendToMeta(lead, request, env).catch((e) => {
+    const m = { status: 'error', error: String((e && e.message) || e).slice(0, 300) };
+    console.error('meta_capi_failed', m.error);
+    return m;
+  });
+  const [kommo, meta] = await Promise.all([kommoP, metaP]);
   if (saved) {
-    try { await env.LEADS.put(kvKey, JSON.stringify({ lead, kommo, updated: new Date().toISOString() })); } catch {}
+    try { await env.LEADS.put(kvKey, JSON.stringify({ lead, kommo, meta, updated: new Date().toISOString() })); } catch {}
   }
 
   if (kommo.status === 'ok' || saved) return json({ ok: true, id: lead.id, kommo: kommo.status });
@@ -346,4 +361,88 @@ function venceTarea(tipo) {
     }
   }
   return Math.floor((t.getTime() - AR) / 1000);
+}
+
+// ───────────────────────── Meta CAPI ─────────────────────────
+
+const META_DATASET = '1644320683756405';
+
+async function sha256(v) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(v));
+  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
+}
+
+/** Teléfono AR normalizado para Meta (solo dígitos con código de país).
+ *  Devuelve variantes con y sin el 9 de celulares para mejorar la coincidencia. */
+function phonesAR(tel) {
+  let d = (tel || '').replace(/\D/g, '');
+  if (!d) return [];
+  d = d.replace(/^00/, '');
+  if (d.startsWith('54')) d = d.slice(2);
+  d = d.replace(/^0/, '');
+  if (d.startsWith('9') && d.length === 11) d = d.slice(1);
+  if (d.length === 12) {                     // característica + 15 + número (ej. 11 15 5555-1234)
+    for (const i of [2, 3, 4]) if (d.slice(i, i + 2) === '15') { d = d.slice(0, i) + d.slice(i + 2); break; }
+  }
+  if (d.length < 8) return [];
+  return ['54' + d, '549' + d];
+}
+
+function normName(n) {
+  return (n || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-zñ]/g, '');
+}
+
+async function sendToMeta(lead, request, env) {
+  if (!env.META_CAPI_TOKEN) return { status: 'off' };
+  const url = new URL(request.url);
+  const staging = /\.pages\.dev$|^localhost$|^127\./.test(url.hostname);
+  if (staging && !env.META_TEST_EVENT_CODE) return { status: 'skipped_staging' };
+
+  const a = lead.attr;
+  let fbc = a.fbc;
+  if (!fbc && a.fbclid) fbc = `fb.1.${Date.now()}.${a.fbclid}`;
+  const [first] = (lead.nombre || '').trim().split(/\s+/);
+  const user_data = {
+    em: [await sha256(lead.email)],
+    ph: await Promise.all(phonesAR(lead.telefono).map(sha256)),
+    fn: normName(first) ? [await sha256(normName(first))] : undefined,
+    country: [await sha256('ar')],
+    external_id: [await sha256(lead.email)],
+    client_ip_address: request.headers.get('cf-connecting-ip') || undefined,
+    client_user_agent: lead.ua || undefined,
+    fbp: a.fbp || undefined,
+    fbc: fbc || undefined,
+  };
+  if (!user_data.ph.length) delete user_data.ph;
+
+  const event = {
+    event_name: lead.tipo === 'catalogo' ? 'CatalogDownload' : 'Lead',
+    event_time: Math.floor(Date.now() / 1000),
+    event_id: lead.id,                       // = eventID del píxel (deduplicación)
+    action_source: 'website',
+    event_source_url: url.origin + (lead.pagina || '/'),
+    user_data,
+    custom_data: {
+      content_category: lead.tipo,
+      content_name: lead.landing || undefined,
+      lead_type: lead.tipo,
+    },
+  };
+  const body = { data: [event] };
+  if (env.META_TEST_EVENT_CODE) body.test_event_code = env.META_TEST_EVENT_CODE;
+
+  const ver = env.META_API_VERSION || 'v23.0';
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), 5000);
+  try {
+    const r = await fetch(`https://graph.facebook.com/${ver}/${META_DATASET}/events?access_token=${encodeURIComponent(env.META_CAPI_TOKEN)}`, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(body),
+      signal: ctrl.signal,
+    });
+    const text = await r.text();
+    if (!r.ok) throw new Error(`${r.status} ${text.slice(0, 250)}`);
+    return { status: 'ok', test: !!env.META_TEST_EVENT_CODE, event: event.event_name };
+  } finally { clearTimeout(t); }
 }
