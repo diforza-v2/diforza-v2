@@ -15,6 +15,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/img");     // imágenes compartidas
   eleventyConfig.addPassthroughCopy("src/*/img");   // imágenes propias de cada landing
   eleventyConfig.addPassthroughCopy("src/_headers"); // encabezados de Cloudflare Pages (hoy: noindex)
+  eleventyConfig.addPassthroughCopy("src/_redirects"); // 301 de TiendaNube → sitio nuevo (doc 20 §6)
 
   // ---- CSS con Lightning CSS ----
   // Solo se compila main.css (punto de entrada único). El resto son parciales:
@@ -56,6 +57,24 @@ module.exports = function (eleventyConfig) {
   // ["A","B","C"] → "A, B y C"
   eleventyConfig.addFilter("listaY", (l) => (!l || !l.length ? "" : l.length === 1 ? l[0] : l.slice(0, -1).join(", ") + " y " + l[l.length - 1]));
   eleventyConfig.addFilter("absUrls", (list, base) => (list || []).map((u) => (base || "") + u));
+
+  // ---- SEO (doc 20 §5) ----
+  // Título: "<texto> | Diforza" si entra en 60 caracteres; si no, solo el texto (Google corta ~60).
+  eleventyConfig.addFilter("seoTitle", (t) => {
+    t = String(t || "").trim();
+    return (t + " | Diforza").length <= 60 ? t + " | Diforza" : t;
+  });
+  // Meta description: espacios normalizados y recorte en palabra completa (máx. 158 + "…").
+  eleventyConfig.addFilter("clip", (t, max = 158) => {
+    t = String(t || "").replace(/\s+/g, " ").trim();
+    if (t.length <= max) return t;
+    const cut = t.slice(0, max);
+    return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:.\s]+$/, "") + "…";
+  });
+  // URL absoluta a partir de una ruta del sitio ("/x/" → "https://www.diforza.com.ar/x/").
+  eleventyConfig.addFilter("abs", (u, base) => (!u ? "" : /^https?:/.test(u) ? u : (base || "") + u));
+  // Fecha ISO (yyyy-mm-dd) para el sitemap.
+  eleventyConfig.addFilter("isoDate", (d) => new Date(d || Date.now()).toISOString().slice(0, 10));
 
   return {
     dir: {

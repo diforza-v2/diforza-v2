@@ -1,12 +1,148 @@
 {
-  "_nota": "Textos de las páginas del catálogo online (/productos/). Títulos por línea; el resto se arma con los datos.",
-  "productos": {
-    "titulo": "Catálogo de productos",
-    "lead": "Indumentaria de trabajo, calzado de seguridad y EPP para empresas. Stock permanente, factura A y envíos a todo el país: elegí y cotizá por WhatsApp."
+ "_nota": "Textos de las páginas del catálogo online (/productos/). Títulos por línea; el resto se arma con los datos. SEO (doc 20 §4): seoTitulo/seoDescripcion de líneas ({n} = cantidad) y titulo/descripcion por subcategoría.",
+ "productos": {
+  "titulo": "Catálogo de productos",
+  "lead": "Indumentaria de trabajo, calzado de seguridad y EPP para empresas. Stock permanente, factura A y envíos a todo el país: elegí y cotizá por WhatsApp."
+ },
+ "lineas": {
+  "indumentaria": {
+   "titulo": "Indumentaria de trabajo",
+   "lead": "Ropa de trabajo de fabricación propia y primeras marcas, personalizable con el logo de tu empresa.",
+   "link": "Conocé la línea de indumentaria",
+   "seoTitulo": "Catálogo de indumentaria de trabajo",
+   "seoDescripcion": "{n} productos de ropa de trabajo: pantalones, camisas, camperas, mamelucos y lluvia. Fabricación propia, con tu logo. Cotizá por WhatsApp."
   },
-  "lineas": {
-    "indumentaria": { "titulo": "Indumentaria de trabajo", "lead": "Ropa de trabajo de fabricación propia y primeras marcas, personalizable con el logo de tu empresa.", "link": "Conocé la línea de indumentaria" },
-    "calzado": { "titulo": "Calzado de seguridad", "lead": "Botines, zapatos, zapatillas y botas de seguridad certificados, de Conwork, Ombú, Funcional y Voran.", "link": "Conocé la línea de calzado" },
-    "epp": { "titulo": "EPP y protección industrial", "lead": "Elementos de protección personal certificados para cada riesgo: cabeza, ojos, oídos, vías respiratorias, manos, altura y más.", "link": "Conocé la línea de EPP" }
+  "calzado": {
+   "titulo": "Calzado de seguridad",
+   "lead": "Botines, zapatos, zapatillas y botas de seguridad certificados, de Conwork, Ombú, Funcional y Voran.",
+   "link": "Conocé la línea de calzado",
+   "seoTitulo": "Catálogo de calzado de seguridad",
+   "seoDescripcion": "{n} modelos de botines, zapatos, zapatillas y botas de seguridad Conwork, Ombú, Funcional y Voran. Talles completos y stock permanente. Cotizá por WhatsApp."
+  },
+  "epp": {
+   "titulo": "EPP y protección industrial",
+   "lead": "Elementos de protección personal certificados para cada riesgo: cabeza, ojos, oídos, vías respiratorias, manos, altura y más.",
+   "link": "Conocé la línea de EPP",
+   "seoTitulo": "Catálogo de EPP y protección industrial",
+   "seoDescripcion": "{n} elementos de protección personal: cascos, anteojos, protectores auditivos, mascarillas, guantes, arneses y más, con ficha técnica. Cotizá por WhatsApp."
   }
+ },
+ "subcategorias": {
+  "pantalones": {
+   "titulo": "Pantalones de trabajo: cargo, clásico y bermuda",
+   "descripcion": "Pantalones de trabajo cargo, clásicos y elastizados para empresas, en varios colores y talles. Fabricación propia, con tu logo. Stock permanente y factura A."
+  },
+  "remera": {
+   "titulo": "Remeras de trabajo para empresas",
+   "descripcion": "Remeras de trabajo de algodón para uniformes de empresa, personalizables con bordado o estampado. Stock permanente, factura A y envíos a todo el país."
+  },
+  "chomba": {
+   "titulo": "Chombas de trabajo para empresas",
+   "descripcion": "Chombas de piqué para uniformes de trabajo, en varios colores y con tu logo bordado. Stock permanente, factura A y envíos a todo el país."
+  },
+  "camisa": {
+   "titulo": "Camisas de trabajo para empresas",
+   "descripcion": "Camisas de trabajo de grafa y gabardina, manga larga y corta, para uniformes de empresa. Personalizables con tu logo. Stock permanente y factura A."
+  },
+  "buzo": {
+   "titulo": "Buzos de trabajo: polar y friza",
+   "descripcion": "Buzos de trabajo polar con medio cierre y de friza para uniformes de empresa, personalizables con tu logo. Stock permanente y envíos a todo el país."
+  },
+  "campera": {
+   "titulo": "Camperas de trabajo: trucker, polar y rompeviento",
+   "descripcion": "Camperas de trabajo trucker, polar y rompeviento para empresas, con tu logo bordado. Talles completos, stock permanente y factura A."
+  },
+  "chaleco": {
+   "titulo": "Chalecos reflectivos y de trabajo",
+   "descripcion": "Chalecos reflectivos de alta visibilidad, polar, trucker y de geólogo para empresas. Personalizables con tu logo. Stock permanente y factura A."
+  },
+  "mameluco": {
+   "titulo": "Mamelucos de trabajo y descartables",
+   "descripcion": "Mamelucos de gabardina, de alta visibilidad y descartables laminados ZIAO para industria. Talles completos, stock permanente y factura A."
+  },
+  "traje-de-lluvia": {
+   "titulo": "Trajes y capas de lluvia para trabajo",
+   "descripcion": "Trajes y capas de lluvia impermeables para trabajo al aire libre, en amarillo y azul, talles hasta 5XL. Stock permanente, factura A y envíos."
+  },
+  "sanidad-y-gastronomia": {
+   "titulo": "Ambos, guardapolvos y ropa de gastronomía",
+   "descripcion": "Ambos, guardapolvos, cofias, delantales de cocinero y descartables para sanidad, laboratorios y gastronomía. Stock permanente y factura A."
+  },
+  "ropa-primera-piel": {
+   "titulo": "Ropa térmica de primera piel para trabajo",
+   "descripcion": "Remeras, pantalones y medias térmicas de primera piel para trabajo en frío y cámaras frigoríficas. Stock permanente y envíos a todo el país."
+  },
+  "delantales": {
+   "titulo": "Delantales de PVC para industria",
+   "descripcion": "Delantales de PVC con refuerzo para industria alimenticia, frigoríficos y limpieza. Stock permanente, factura A y envíos a todo el país."
+  },
+  "gorras": {
+   "titulo": "Gorras de trabajo para empresas",
+   "descripcion": "Gorras de 5 y 6 gajos, tapa nuca y gorros para uniformes de trabajo, personalizables con tu logo. Stock permanente y factura A."
+  },
+  "botas": {
+   "titulo": "Botas de seguridad y botas de PVC",
+   "descripcion": "Botas industriales Ombú de PVC con y sin puntera, caña larga, náuticas y waders para industria y frigoríficos. Stock permanente y factura A."
+  },
+  "botines": {
+   "titulo": "Botines de seguridad con puntera",
+   "descripcion": "Botines de seguridad Conwork, Ombú, Funcional y Voran con puntera de acero o composite. Talles completos, stock permanente y factura A."
+  },
+  "zapatillas": {
+   "titulo": "Zapatillas de seguridad con puntera",
+   "descripcion": "Zapatillas de seguridad livianas Conwork, Ombú y Funcional con puntera, para logística e industria liviana. Talles completos y stock permanente."
+  },
+  "zapatos": {
+   "titulo": "Zapatos de seguridad con puntera",
+   "descripcion": "Zapatos de seguridad Conwork, Ombú, Funcional y Voran con puntera, para planta y oficina técnica. Talles completos, stock permanente y factura A."
+  },
+  "proteccion-auditiva": {
+   "titulo": "Protectores auditivos: tapones y de copa",
+   "descripcion": "Protectores auditivos Libus de copa, para casco y de vincha, y tapones Quantum, con NRR y ficha técnica. Stock permanente y factura A."
+  },
+  "proteccion-craneal": {
+   "titulo": "Cascos de seguridad y accesorios",
+   "descripcion": "Cascos de seguridad Libus Milenium Class y Andes, gorras con casquete, arneses y mentoneras, con certificación IRAM. Stock permanente y factura A."
+  },
+  "proteccion-facial": {
+   "titulo": "Protectores faciales y visores",
+   "descripcion": "Protectores faciales Libus planos, burbuja, para arco eléctrico y malla forestal, con soportes y adaptadores para casco. Stock permanente."
+  },
+  "proteccion-ocular": {
+   "titulo": "Anteojos y antiparras de seguridad",
+   "descripcion": "Anteojos de seguridad y antiparras Libus y De Pascale, con lentes transparentes, grises y antiempañantes. Ficha técnica, stock permanente y factura A."
+  },
+  "proteccion-respiratoria": {
+   "titulo": "Mascarillas FFP2, semimáscaras y filtros",
+   "descripcion": "Mascarillas descartables FFP2 y FFP3 BLS, semimáscaras, máscaras completas, filtros y barbijos para industria. Ficha técnica y stock permanente."
+  },
+  "proteccion-manos": {
+   "titulo": "Guantes de trabajo y de seguridad",
+   "descripcion": "Guantes de nitrilo, anticorte, de vaqueta, PVC, látex y para soldador, de WorkSafe y De Pascale. Stock permanente, factura A y envíos."
+  },
+  "altura": {
+   "titulo": "Arneses de seguridad y equipos para altura",
+   "descripcion": "Arneses anticaídas SKY, colas de amarre, conectores, salvacaídas y mosquetones para trabajo en altura. Stock permanente y factura A."
+  },
+  "senalizacion": {
+   "titulo": "Conos, cintas y señalización de seguridad",
+   "descripcion": "Conos viales Conoflex y De Pascale, delineadores, cinta de peligro, banderas y chalecos reflectivos para obra y vía pública. Stock permanente."
+  },
+  "proteccion-soldadura": {
+   "titulo": "Máscaras para soldar y protección de soldador",
+   "descripcion": "Máscaras para soldar fotosensibles Libus, antiparras, campera, delantal, mangas, polainas y guantes de descarne. Stock permanente y factura A."
+  },
+  "ergonomia": {
+   "titulo": "Fajas lumbares y rodilleras de trabajo",
+   "descripcion": "Faja lumbar Diforza modelo Full para tareas de carga y rodilleras de trabajo. Talles S a 3XL, stock permanente y envíos a todo el país."
+  },
+  "kits": {
+   "titulo": "Kits de EPP Libus: forestal, jardinero y más",
+   "descripcion": "Kits de protección Libus prearmados: forestal, jardinero, desmalezador, herramientas de corte y mecánico. Stock permanente y factura A."
+  },
+  "emergencias": {
+   "titulo": "Botiquines, lavaojos y matafuegos",
+   "descripcion": "Botiquines, estaciones lavaojos, botellas lavaojos y matafuegos para empresas e industria. Stock permanente, factura A y envíos a todo el país."
+  }
+ }
 }

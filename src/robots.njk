@@ -1,0 +1,11 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+# robots.txt de Diforza (doc 20 §5, T2). Se permite todo menos la API de formularios.
+# Los buscadores con IA (OAI-SearchBot, PerplexityBot, etc.) quedan permitidos: queremos aparecer en sus respuestas.
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: {{ site.url }}/sitemap.xml

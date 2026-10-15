@@ -1,0 +1,21 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+{#- Sitemap (doc 20 §5, T1): todas las páginas indexables con URL absoluta; fichas con sus fotos. -#}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+{%- for item in collections.all %}
+{%- if not item.data.noindex and item.url and item.url.endsWith("/") %}
+  <url>
+    <loc>{{ item.url | abs(site.url) }}</loc>
+    <lastmod>{{ item.date | isoDate }}</lastmod>
+{%- if item.data.p and item.data.p.fotos %}
+{%- for f in item.data.p.fotos | batch(10) | first %}
+    <image:image><image:loc>{{ f | abs(site.url) }}</image:loc></image:image>
+{%- endfor %}
+{%- endif %}
+  </url>
+{%- endif %}
+{%- endfor %}
+</urlset>

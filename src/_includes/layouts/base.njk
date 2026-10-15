@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,69 @@
 {%- if noindex %}
 <meta name="robots" content="noindex">
 {%- endif %}
+{#- SEO (doc 20 §5): canonical absoluta sin parámetros, Open Graph / Twitter y schema de la empresa.
+    Por página: `canonical` (ruta), `ogImage` (ruta o URL), `ogType`. -#}
+{%- set pageUrl = (canonical or page.url) | abs(site.url) %}
+{%- set ogImg = (ogImage or site.seo.ogImage) | abs(site.url) %}
+{%- if not noindex %}
+<link rel="canonical" href="{{ pageUrl }}">
+{%- endif %}
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:locale" content="es_AR">
+<meta property="og:type" content="{{ ogType or 'website' }}">
+<meta property="og:title" content="{{ ogTitle or title }}">
+{%- if description %}
+<meta property="og:description" content="{{ description }}">
+{%- endif %}
+<meta property="og:url" content="{{ pageUrl }}">
+<meta property="og:image" content="{{ ogImg }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/img/logo-diforza.png" type="image/png">
+<script type="application/ld+json">{{ {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": site.url + "/#organization",
+      "name": site.name,
+      "legalName": site.legal.razonSocial,
+      "taxID": site.legal.cuit,
+      "url": site.url + "/",
+      "logo": site.seo.logo | abs(site.url),
+      "description": site.seo.descripcion,
+      "email": site.email,
+      "telephone": site.phone.number,
+      "sameAs": [site.social.instagram, site.social.facebook, site.social.linkedin]
+    },
+    {
+      "@type": "Store",
+      "@id": site.url + "/#store",
+      "name": site.name,
+      "parentOrganization": { "@id": site.url + "/#organization" },
+      "url": site.url + "/",
+      "image": site.seo.ogImage | abs(site.url),
+      "telephone": site.phone.number,
+      "email": site.email,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": site.seo.direccion.calle,
+        "addressLocality": site.seo.direccion.ciudad,
+        "addressRegion": site.seo.direccion.region,
+        "addressCountry": site.seo.direccion.pais
+      },
+      "openingHours": site.seo.horario,
+      "areaServed": { "@type": "Country", "name": "Argentina" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": site.url + "/#website",
+      "url": site.url + "/",
+      "name": site.name,
+      "inLanguage": "es-AR",
+      "publisher": { "@id": site.url + "/#organization" }
+    }
+  ]
+} | dump | safe }}</script>
 {% include "partials/fonts.njk" %}
 <link rel="stylesheet" href="/assets/css/main.css">
 <script>window.SITE = {{ { whatsapp: site.whatsapp.number, waText: waText, catalogPdf: site.catalogo.pdf } | dump | safe }};</script>

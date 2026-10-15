@@ -3,13 +3,16 @@ layout: layouts/base.njk
 pagination:
   data: catalogoWeb.productos
   size: 1
+  addAllPagesToCollections: true
   alias: p
 permalink: "/productos/{{ p.id }}/"
 pageJs: /assets/js/catalogo.js
 headerFlat: true
 eleventyComputed:
-  title: "{{ p.nombre }} | Diforza"
-  description: "{{ p.descripcion }} {{ p.sub.nombre }} para empresas, con stock permanente. Cotizá por WhatsApp."
+  title: "{{ p.nombre | seoTitle }}"
+  description: "{{ (p.descripcion + ' ' + p.sub.nombre + ' para empresas, con stock permanente. Cotizá por WhatsApp.') | clip }}"
+  ogImage: "{{ p.variantes[0].foto or p.fotos[0] }}"
+  ogType: product
   waText: "Hola, quiero cotizar {{ p.nombre }} para mi empresa."
 ---
 {#- Ficha de producto del catálogo online. Datos: _data/catalogoWeb.js (p = un producto).
@@ -164,5 +167,6 @@ eleventyComputed:
   "sku": p.codigo,
   "category": p.linea.nombre + " > " + p.sub.nombre,
   "image": p.fotos | absUrls(site.url),
-  "url": site.url + p.url
+  "url": site.url + p.url,
+  "@id": site.url + p.url + "#product"
 } | dump | safe }}</script>

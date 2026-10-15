@@ -3,13 +3,14 @@ layout: layouts/base.njk
 pagination:
   data: catalogoWeb.subcategorias
   size: 1
+  addAllPagesToCollections: true
   alias: s
 permalink: "/productos/{{ s.linea.id }}/{{ s.id }}/"
 pageJs: /assets/js/catalogo.js
 headerFlat: true
 eleventyComputed:
-  title: "{{ s.nombre }} para empresas | Diforza"
-  description: "{{ s.total }} productos de {{ s.nombre | lower }} con stock permanente, factura A y envíos a todo el país. Cotizá por WhatsApp."
+  title: "{{ (catalogoTextos.subcategorias[s.id].titulo or (s.nombre + ' para empresas')) | seoTitle }}"
+  description: "{{ (catalogoTextos.subcategorias[s.id].descripcion or (s.total + ' productos de ' + (s.nombre | lower) + ' con stock permanente, factura A y envíos a todo el país. Cotizá por WhatsApp.')) | clip }}"
   waText: "Hola, quiero cotizar {{ s.nombre | lower }} para mi empresa."
 ---
 {#- Página de subcategoría (/productos/<linea>/<subcategoria>/): listado filtrable + categorías hermanas. -#}

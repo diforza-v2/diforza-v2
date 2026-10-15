@@ -1,6 +1,21 @@
 {
   "name": "Diforza",
-  "url": "",
+  "url": "https://www.diforza.com.ar",
+  "_nota_url": "Dominio definitivo, sin barra final. Arma canonical, Open Graph, sitemap, robots y schema (doc 20 §5). En pages.dev el sitio sigue con noindex (_headers).",
+  "seo": {
+    "ogImage": "/img/og/diforza.jpg",
+    "logo": "/img/logo-diforza.png",
+    "descripcion": "Distribuidora de elementos de protección personal (EPP), indumentaria de trabajo y calzado de seguridad para empresas, con más de 15 años de trayectoria, marca propia ZIAO y stock permanente.",
+    "horario": "Mo-Fr 08:00-17:00",
+    "direccion": {
+      "calle": "Albariño 2243",
+      "barrio": "Mataderos",
+      "ciudad": "Ciudad Autónoma de Buenos Aires",
+      "region": "CABA",
+      "pais": "AR"
+    },
+    "_nota": "Datos para schema.org Organization/Store (base.njk). ⚠ La dirección figura como 2243 acá y como 2245 en docs viejos: validar con Diego y unificar con el Perfil de Empresa en Google."
+  },
   "whatsapp": {
     "number": "5491163513333",
     "display": "11 6351-3333",

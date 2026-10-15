@@ -3,13 +3,14 @@ layout: layouts/base.njk
 pagination:
   data: catalogoWeb.lineas
   size: 1
+  addAllPagesToCollections: true
   alias: l
 permalink: "/productos/{{ l.id }}/"
 pageJs: /assets/js/catalogo.js
 headerFlat: true
 eleventyComputed:
-  title: "{{ catalogoTextos.lineas[l.id].titulo }} para empresas: catálogo | Diforza"
-  description: "{{ l.total }} productos de {{ catalogoTextos.lineas[l.id].titulo | lower }}. {{ catalogoTextos.lineas[l.id].lead }}"
+  title: "{{ catalogoTextos.lineas[l.id].seoTitulo | seoTitle }}"
+  description: "{{ (catalogoTextos.lineas[l.id].seoDescripcion | replace('{n}', l.total)) | clip }}"
   waText: "Hola, quiero cotizar {{ catalogoTextos.lineas[l.id].titulo | lower }} para mi empresa."
 ---
 {#- Página de línea del catálogo (/productos/<linea>/): categorías + listado filtrable. La landing de la línea tiene la info comercial. -#}
