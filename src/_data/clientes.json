@@ -1,0 +1,26 @@
+{
+  "privado": [
+    { "slug": "oca", "nombre": "OCA" },
+    { "slug": "aeropuertos-argentina", "nombre": "Aeropuertos Argentina" },
+    { "slug": "edesur", "nombre": "Edesur" },
+    { "slug": "banco-galicia", "nombre": "Banco Galicia" },
+    { "slug": "svitzer", "nombre": "Svitzer" },
+    { "slug": "yazaki", "nombre": "Yazaki" },
+    { "slug": "omint", "nombre": "OMINT" },
+    { "slug": "medicus", "nombre": "Medicus" },
+    { "slug": "bago", "nombre": "Laboratorios Bagó" },
+    { "slug": "boca-juniors", "nombre": "Club Atlético Boca Juniors" }
+  ],
+  "publico": [
+    { "slug": "nucleoelectrica", "nombre": "Nucleoeléctrica Argentina" },
+    { "slug": "hospital-garrahan", "nombre": "Hospital de Pediatría Garrahan" },
+    { "slug": "gendarmeria", "nombre": "Gendarmería Nacional" },
+    { "slug": "unlp", "nombre": "Universidad Nacional de La Plata" },
+    { "slug": "utn", "nombre": "Universidad Tecnológica Nacional" },
+    { "slug": "rosario", "nombre": "Municipalidad de Rosario" },
+    { "slug": "vicente-lopez", "nombre": "Municipio de Vicente López" },
+    { "slug": "moron", "nombre": "Municipio de Morón" },
+    { "slug": "puerto-iguazu", "nombre": "Municipalidad de Puerto Iguazú" },
+    { "slug": "corredores-viales", "nombre": "Corredores Viales" }
+  ]
+}

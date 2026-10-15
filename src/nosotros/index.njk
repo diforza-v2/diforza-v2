@@ -85,8 +85,16 @@ ogImage: /img/nosotros/fachada-diforza.webp
 
   <section class="about-section">
     <div class="about-section__inner">
-      <h2>Empresas que confían en nosotros</h2>
-      <p>{{ "[[Logos o nombres de clientes — los averigua el usuario con Diego (con permiso)]]" | rich | safe }}</p>
+      <h2>Empresas e instituciones que confían en nosotros</h2>
+      <p>Equipamos a empresas de primera línea y somos proveedores del sector público a través de licitaciones en municipios, universidades y organismos nacionales.</p>
+      {%- for grupo in [{ t: "Empresas", items: clientes.privado }, { t: "Sector público", items: clientes.publico }] %}
+      <h3 class="about-clients__title">{{ grupo.t }}</h3>
+      <ul class="about-clients">
+        {%- for c in grupo.items %}
+        <li><img src="/img/clientes/{{ c.slug }}.webp" alt="{{ c.nombre }}" title="{{ c.nombre }}" width="400" height="200" loading="lazy" decoding="async"></li>
+        {%- endfor %}
+      </ul>
+      {%- endfor %}
     </div>
   </section>
 
