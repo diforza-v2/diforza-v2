@@ -1,4 +1,88 @@
 (function(){
+  // Envío de formularios a /api/lead (Function de Cloudflare Pages → Kommo).
+  // 1) Atribución: guarda UTM / gclid / fbclid de la última visita con
+  //    parámetros (90 días) y la primera página + referrer de la sesión.
+  // 2) window.DifLead.send(form): arma el JSON del formulario + atribución,
+  //    envía con timeout de 8 s y 1 reintento. Devuelve Promise<{ok,id}>.
+  // 3) window.DifLead.waFallback(data): link de WhatsApp con los datos en
+  //    texto, para cuando el envío falla (doc 17 §19).
+  var ATTR_KEYS = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','gbraid','wbraid','fbclid'];
+  var LS_KEY = 'dif-attr', SS_KEY = 'dif-visit', TTL = 90 * 864e5;
+  function get(store, k){ try { return JSON.parse(window[store].getItem(k) || 'null'); } catch(e){ return null; } }
+  function set(store, k, v){ try { window[store].setItem(k, JSON.stringify(v)); } catch(e){} }
+  try {
+    var q = new URLSearchParams(location.search), found = {}, any = false;
+    ATTR_KEYS.forEach(function(k){ var v = q.get(k); if (v){ found[k] = v.slice(0, 300); any = true; } });
+    if (any){ found.ts = Date.now(); set('localStorage', LS_KEY, found); }
+    if (!get('sessionStorage', SS_KEY)){
+      var ref = document.referrer && document.referrer.indexOf(location.origin) !== 0 ? document.referrer : '';
+      set('sessionStorage', SS_KEY, { landing_page: location.pathname + location.search, referrer: ref });
+    }
+  } catch(e){}
+
+  function cookie(n){ var m = document.cookie.match('(?:^|; )' + n + '=([^;]*)'); return m ? decodeURIComponent(m[1]) : ''; }
+  function attribution(){
+    var a = {}, saved = get('localStorage', LS_KEY), visit = get('sessionStorage', SS_KEY) || {};
+    if (saved && Date.now() - (saved.ts || 0) < TTL) ATTR_KEYS.forEach(function(k){ if (saved[k]) a[k] = saved[k]; });
+    if (visit.landing_page) a.landing_page = visit.landing_page;
+    if (visit.referrer) a.referrer = visit.referrer;
+    var ga = cookie('_ga').split('.'); if (ga.length >= 4) a.ga_client_id = ga.slice(-2).join('.');
+    if (cookie('_fbp')) a.fbp = cookie('_fbp');
+    if (cookie('_fbc')) a.fbc = cookie('_fbc');
+    return a;
+  }
+  function uuid(){
+    if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return 'w' + Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
+  }
+  function collect(form){
+    var fd = new FormData(form), data = { categorias: [] };
+    fd.forEach(function(v, k){
+      if (typeof v !== 'string') return;
+      if (k === 'consentimiento') data[k] = true;
+      else if (form.querySelectorAll('[name="' + k + '"][type=checkbox]').length) data.categorias.push(v);
+      else data[k] = v;
+    });
+    if (!data.pagina) data.pagina = location.pathname;
+    data.attr = attribution();
+    data.event_id = uuid();
+    return data;
+  }
+  function post(data, keepalive){
+    var ctrl = window.AbortController ? new AbortController() : null;
+    var t = ctrl && setTimeout(function(){ ctrl.abort(); }, 8000);
+    return fetch('/api/lead', {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(data), keepalive: !!keepalive, signal: ctrl ? ctrl.signal : undefined
+    }).then(function(r){
+      if (t) clearTimeout(t);
+      return r.json().catch(function(){ return {}; }).then(function(j){
+        if (r.ok && j.ok) return j;
+        var err = new Error(j.error || ('http_' + r.status)); err.status = r.status; err.fields = j.fields; throw err;
+      });
+    });
+  }
+  function send(form, opts){
+    opts = opts || {};
+    var data = collect(form);
+    var p = post(data, opts.keepalive).catch(function(err){
+      if (err.status && err.status < 500) throw err;            // validación/captcha: no se reintenta
+      return new Promise(function(res){ setTimeout(res, 1200); }).then(function(){ return post(data, opts.keepalive); });
+    }).then(function(j){ j.data = data; return j; }, function(err){ err.data = data; throw err; });
+    p.eventId = data.event_id;   // mismo id para GTM (deduplicación pixel/CAPI)
+    return p;
+  }
+  function waFallback(data){
+    var num = (window.SITE && window.SITE.whatsapp) || '5491163513333';
+    var lines = ['Hola, quise enviar el formulario de la web y no se pudo. Mis datos:'];
+    [['Nombre','nombre'],['Empresa','empresa'],['Email','email'],['Teléfono','telefono'],['Rubro','rubro'],['Producto','producto_interes'],['Mensaje','mensaje']]
+      .forEach(function(p){ if (data && data[p[1]]) lines.push(p[0] + ': ' + data[p[1]]); });
+    return 'https://wa.me/' + num + '?text=' + encodeURIComponent(lines.join('\n'));
+  }
+  window.DifLead = { send: send, attribution: attribution, waFallback: waFallback };
+})();
+
+(function(){
   // Header: transparente sobre el hero, navy solido al scrollear.
   var header = document.getElementById('siteHeader');
   if (header){
@@ -192,7 +276,7 @@
   // Ventana "Descargar catálogo": la abren todos los links data-js="catalogo".
   // Formulario corto (empresa, email, teléfono opcional) → descarga inmediata del PDF.
   // Si ya lo completó en esta visita, los siguientes clics descargan directo.
-  // [PENDIENTE] enviar los datos al endpoint de formularios → Kommo (paso 5).
+  // Los datos van a /api/lead (window.DifLead) → Kommo.
   var modal = document.getElementById('catModal');
   if (!modal || typeof modal.showModal !== 'function') return;
   var form = modal.querySelector('[data-js="catalog-form"]');
@@ -274,9 +358,12 @@
     if (first){ first.focus(); return; }
     var hp = form.querySelector('input[name="website"]');
     if (hp && hp.value) return; // bot
-    // [PENDIENTE] fetch al endpoint con new FormData(form) (paso 5)
+    // El lead se envía en segundo plano (keepalive) y la descarga no espera:
+    // si falla, la Function igual lo guarda en el respaldo KV o queda en consola.
+    var sent = window.DifLead && window.DifLead.send(form, { keepalive: true });
+    if (sent) sent.catch(function(err){ console.warn('[lead] catálogo no enviado', err && err.message); });
     try { sessionStorage.setItem(KEY, '1'); } catch(err){}
-    track('generate_lead', {});
+    track('generate_lead', { form_id: 'catalogo', event_id: sent ? sent.eventId : undefined });
     stepForm.hidden = true;
     stepDone.hidden = false;
     download();

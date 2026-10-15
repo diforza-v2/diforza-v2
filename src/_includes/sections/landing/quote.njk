@@ -89,6 +89,7 @@
             <span class="field__error">Para contactarte necesitamos que aceptes la política de privacidad.</span>
           </div>
           <div class="field--full">
+            {%- if site.turnstile.siteKey %}<div class="cf-turnstile" data-sitekey="{{ site.turnstile.siteKey }}" data-appearance="interaction-only" data-action="cotizacion"></div>{%- endif %}
             <button type="submit" class="btn btn--primary lead-form__submit">{{ Q.formBoton }} {{ icons['ui-flecha'] | safe }}</button>
             <p class="lead-form__status" data-js="form-status" role="status" aria-live="polite"></p>
           </div>

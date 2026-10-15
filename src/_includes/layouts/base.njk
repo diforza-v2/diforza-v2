@@ -25,6 +25,9 @@
 <button type="button" class="placeholder-toggle" id="phToggle" aria-pressed="false">Ocultar marcas</button>
 {%- endif %}
 
+{%- if site.turnstile.siteKey %}
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+{%- endif %}
 <script src="/assets/js/main.js"></script>
 {%- if pageJs %}
 <script src="{{ pageJs }}"></script>

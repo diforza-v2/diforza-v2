@@ -100,7 +100,7 @@
 
 (function(){
   // Validación al salir del campo (blur) + envío con estado loading.
-  // [PENDIENTE] endpoint propio + webhook al CRM (doc 05 §7, doc 17 §19).
+  // Envío real con window.DifLead (main.js) → /api/lead → Kommo. Si falla, ofrece WhatsApp con los datos.
   var EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
   function fieldOf(el){ return el.closest('.field'); }
   function valid(el){
@@ -151,17 +151,34 @@
       var status = form.querySelector('[data-js="form-status"]');
       var label = btn.innerHTML;
       btn.disabled = true; btn.textContent = 'Enviando…';
-      // Prototipo: simula el envío. Acá va el fetch al endpoint real; si
-      // falla, se conserva lo cargado y se muestra error recuperable.
-      setTimeout(function(){
+      if (status) status.textContent = '';
+      if (!window.DifLead){ btn.disabled = false; btn.innerHTML = label; return; }
+      var sent = window.DifLead.send(form);
+      var landingId = (form.querySelector('[name="landing"]') || {}).value || '';
+      var rubro = (form.querySelector('[name="rubro"]') || {}).value || '';
+      sent.then(function(){
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'generate_lead', form_id: 'cotizacion', lead_type: 'cotizacion',
+          landing_id: landingId, industry: rubro || undefined, event_id: sent.eventId, page_path: location.pathname });
         form.innerHTML =
           '<div class="lead-form__ok" role="status">' +
           '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M7.5 12.5l3 3 6-6.5"/></svg>' +
           '<h3>¡Gracias! Recibimos tu pedido.</h3><p>Un responsable de cuenta te va a contactar para armar la cotización.</p>' +
           '</div>';
-      }, 900);
-      if (status) status.textContent = '';
-      void label;
+      }).catch(function(err){
+        btn.disabled = false; btn.innerHTML = label;
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'form_error', form_id: 'cotizacion', landing_id: landingId, error_type: (err && err.message) || 'send' });
+        if (!status) return;
+        if (err && err.status === 422){
+          status.textContent = 'Revisá los datos marcados e intentá de nuevo.';
+        } else if (err && err.status === 403){
+          status.textContent = 'No pudimos verificar el envío. Recargá la página e intentá de nuevo.';
+        } else {
+          status.innerHTML = 'Tuvimos un problema al enviar. <a href="' + window.DifLead.waFallback(err && err.data) +
+            '" target="_blank" rel="noopener" data-js="wa">Mandanos tus datos por WhatsApp</a> y te respondemos igual.';
+        }
+      });
     });
   });
 })();
