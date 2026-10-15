@@ -355,7 +355,7 @@
     e.preventDefault();
     var first = null;
     inputs.forEach(function(el){ if (!check(el) && !first) first = el; });
-    if (first){ first.focus(); return; }
+    if (first){ first.focus(); track('form_error', { form_id: 'catalogo', error_type: 'validation' }); return; }
     var hp = form.querySelector('input[name="website"]');
     if (hp && hp.value) return; // bot
     // El lead se envía en segundo plano (keepalive) y la descarga no espera:
@@ -411,4 +411,75 @@
       if (first) first.focus({preventScroll: true});
     });
   });
+})();
+
+(function(){
+  // Medición (doc 08 §4): clics en WhatsApp y teléfono, inicio de formularios,
+  // listas y selección de productos. Todo va al dataLayer, sin datos personales.
+  window.dataLayer = window.dataLayer || [];
+  // Antes de cada evento ecommerce se limpia el objeto anterior (recomendación de GA4)
+  function push(o){ if (o.ecommerce) window.dataLayer.push({ ecommerce: null }); window.dataLayer.push(o); }
+  function uuid(){
+    if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+    return 'w' + Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
+  }
+  // Dónde está el botón (mismos valores para WhatsApp y teléfono)
+  function where(a){
+    var map = [
+      ['[data-js="form-status"]', 'fallback'], ['.wa-float', 'flotante'], ['.header', 'header'],
+      ['.site-footer__cta', 'footer'], ['.site-footer', 'footer_contacto'], ['.cat-modal', 'catalogo_ok'], ['.pdp', 'producto'],
+      ['.product-card', 'producto_tarjeta'], ['.catalog-list, [data-js="catalog"]', 'listado'],
+      ['.hero', 'hero'], ['.quote, #contacto', 'quote'], ['.contact-items, .legal', 'contacto']
+    ];
+    for (var i = 0; i < map.length; i++) if (a.closest(map[i][0])) return map[i][1];
+    return 'otro';
+  }
+  function prodOf(a){
+    var el = a.hasAttribute('data-prod-id') ? a : a.closest('.product-card, .pdp');
+    var src = el && (el.hasAttribute('data-prod-id') ? el : el.querySelector('[data-prod-id]'));
+    return src ? { id: src.getAttribute('data-prod-id'), name: src.getAttribute('data-prod-nombre') } : null;
+  }
+  // Captura: se registra aunque el link abra otra pestaña o la app de WhatsApp
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (/^https?:\/\/(wa\.me|api\.whatsapp\.com)\//.test(href)){
+      if (/api\.whatsapp\.com\/send\?text=/.test(href) && !/phone=/.test(href)) return; // compartir
+      var pr = prodOf(a);
+      push({ event: 'whatsapp_click', wa_url: href.split('?')[0], wa_location: where(a),
+        product_id: pr ? pr.id : undefined, product_name: pr ? pr.name : undefined, event_id: uuid() });
+    } else if (/^tel:/.test(href)){
+      push({ event: 'phone_click', phone_location: where(a), event_id: uuid() });
+    } else if (a.closest('.product-card') && !a.closest('.product-card__cta')){
+      var p2 = prodOf(a);
+      if (p2) push({ event: 'select_item', ecommerce: { item_list_name: listName(), items: [{ item_id: p2.id, item_name: p2.name }] } });
+    }
+  }, true);
+
+  // Inicio de formulario (una vez por formulario y por página)
+  document.querySelectorAll('#form-cotizacion, #form-catalogo').forEach(function(f){
+    var started = false;
+    f.addEventListener('input', function(){
+      if (started) return; started = true;
+      push({ event: 'form_start', form_id: f.id === 'form-catalogo' ? 'catalogo' : 'cotizacion' });
+    });
+  });
+
+  // Lista de productos vista (landings, catálogo, línea, subcategoría). En la ficha
+  // ya va view_item (layout base), así que las tarjetas de "relacionados" no cuentan.
+  function listName(){
+    var c = null;
+    for (var i = window.dataLayer.length - 1; i >= 0; i--){ if (window.dataLayer[i] && window.dataLayer[i].page_type){ c = window.dataLayer[i]; break; } }
+    return c ? c.page_type + (c.linea ? ':' + c.linea : '') : location.pathname;
+  }
+  window.DifTrack = { push: push, uuid: uuid, listName: listName };
+  if (document.querySelector('.pdp')) return;
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.product-card'))
+    .filter(function(c){ return !c.closest('[hidden]') && !c.hidden; }).slice(0, 24);
+  var items = cards.map(function(c, i){
+    var src = c.querySelector('[data-prod-id]');
+    return src ? { item_id: src.getAttribute('data-prod-id'), item_name: src.getAttribute('data-prod-nombre'), index: i } : null;
+  }).filter(Boolean);
+  if (items.length) push({ event: 'view_item_list', ecommerce: { item_list_name: listName(), items: items } });
 })();

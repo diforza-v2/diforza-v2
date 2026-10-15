@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+permalink: /404.html
+eleventyExcludeFromCollections: true
+title: "Página no encontrada | Diforza"
+description: "La página que buscás no existe o cambió de dirección. Buscá en el catálogo de Diforza o escribinos por WhatsApp."
+waText: "Hola, entré a un link de la web que no funciona y quería hacer una consulta."
+headerFlat: true
+noindex: true
+---
+{#- Página 404 (Cloudflare Pages la sirve con código 404 para cualquier URL que no existe).
+    Ofrece: buscador del catálogo, las 3 líneas y WhatsApp. -#}
+<main class="notfound">
+  <div class="notfound__inner">
+    <p class="notfound__code" aria-hidden="true">404</p>
+    <h1 class="notfound__title">No encontramos esta página</h1>
+    <p class="notfound__lead">Puede que el link esté mal escrito o que la página haya cambiado de dirección. Buscá el producto en el catálogo o escribinos y te ayudamos.</p>
+
+    <form class="catalog-search notfound__search" role="search" action="/productos/" method="get">
+      <label class="visually-hidden" for="nfQ">Buscar productos</label>
+      <svg class="catalog-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input class="catalog-search__input" id="nfQ" type="search" name="q" placeholder="Buscar por producto, marca o código" autocomplete="off" enterkeyhint="search">
+      <button class="catalog-search__btn" type="submit">Buscar</button>
+    </form>
+
+    <ul class="notfound__links" role="list">
+      <li><a href="/productos/">Todos los productos</a></li>
+      <li><a href="/indumentaria-de-trabajo/">Indumentaria de trabajo</a></li>
+      <li><a href="/calzado-de-seguridad/">Calzado de seguridad</a></li>
+      <li><a href="/epp-proteccion-industrial/">EPP y protección industrial</a></li>
+    </ul>
+
+    <div class="notfound__actions">
+      <a href="https://wa.me/{{ site.whatsapp.number }}?text={{ waText | urlencode }}" class="btn btn--primary btn--icon" data-js="wa" target="_blank" rel="noopener">{% include "partials/icon-wa.njk" %}{{ site.cta.whatsapp }}</a>
+      <a href="/" class="btn btn--outline">Ir al inicio</a>
+    </div>
+  </div>
+</main>

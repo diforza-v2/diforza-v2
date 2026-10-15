@@ -1,0 +1,99 @@
+/* ==========================================================================
+   Página 404 — banda azul como .catalog-head (le da fondo al header, que es
+   transparente arriba de todo). Una columna centrada: código, título, buscador
+   del catálogo, links a las líneas y CTAs (WhatsApp + inicio)
+   ========================================================================== */
+
+.notfound {
+  padding: calc(var(--nav-h) + 56px) var(--pad) 88px;
+  color: var(--white);
+  background:
+    radial-gradient(90% 140% at 100% 0%, rgb(var(--rgb-orange) / 14%) 0%, transparent 55%),
+    linear-gradient(160deg, var(--navy) 0%, var(--navy-950) 100%);
+}
+
+@media (--lg) {
+  .notfound {
+    padding-bottom: 120px;
+    padding-top: calc(var(--nav-h) + 88px);
+  }
+}
+
+.notfound__inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.notfound__code {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.14em;
+  color: var(--orange-300);
+}
+
+.notfound__title {
+  margin: 0;
+  font-size: var(--fs-36);
+  line-height: 1.1;
+  color: var(--white);
+}
+
+@media (--md) {
+  .notfound__title {
+    font-size: var(--fs-48);
+  }
+}
+
+.notfound__lead {
+  max-width: 520px;
+  margin: 16px auto 32px;
+  font-size: var(--fs-16);
+  line-height: 26px;
+  color: var(--slate-300);
+}
+
+.notfound__search {
+  max-width: 520px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgb(var(--rgb-ink-900) / 30%);
+}
+
+.notfound__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.notfound__links a {
+  display: inline-block;
+  padding: 8px 14px;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-medium);
+  text-decoration: none;
+  color: var(--white);
+  background: rgb(var(--rgb-white) / 8%);
+  border: 1px solid rgb(var(--rgb-white) / 28%);
+  border-radius: var(--radius-pill);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.notfound__links a:hover,
+.notfound__links a:focus-visible {
+  color: var(--orange-300);
+  border-color: var(--orange-300);
+}
+
+.notfound__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 36px;
+}

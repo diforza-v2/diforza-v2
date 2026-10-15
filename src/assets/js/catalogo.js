@@ -67,7 +67,7 @@
   // Medición: clic en la ficha técnica
   if (ficha) ficha.addEventListener('click', function(){
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: 'ficha_tecnica', prod_id: ficha.getAttribute('data-prod-id'), page_path: location.pathname });
+    window.dataLayer.push({ event: 'ficha_tecnica', prod_id: ficha.getAttribute('data-prod-id'), file_name: (ficha.getAttribute('href') || '').split('/').pop(), page_path: location.pathname });
   });
 })();
 
@@ -201,6 +201,14 @@
   }
   var tSearch = null;
   function update(){ toUrl(render(true)); }
+  var lastQ = '', tQ;
+  function trackSearch(){
+    var q = qInput ? qInput.value.trim() : '';
+    if (q.length < 3 || q === lastQ) return;
+    lastQ = q;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'search', search_term: q, results: parseInt(countEl.textContent, 10) || 0, page_path: location.pathname });
+  }
   function track(st){
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({ event: 'catalog_filter', search_term: st.q || undefined, filtros: ['sub', 'marca', 'color'].map(function(f){ return st[f].join('|'); }).join(';'), page_path: location.pathname });
@@ -226,12 +234,15 @@
   if (sort) sort.addEventListener('change', function(){ sortItems(); update(); });
   if (search){
     search.addEventListener('submit', function(e){
-      e.preventDefault(); update(); track(state());
+      e.preventDefault(); update(); track(state()); trackSearch();
       var top = root.getBoundingClientRect().top + window.scrollY - (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'), 10) || 80) - 12;
       if (window.scrollY < top - 200) window.scrollTo({ top: top, behavior: 'smooth' });
       if (qInput) qInput.blur();
     });
-    if (qInput) qInput.addEventListener('input', function(){ clearTimeout(tSearch); tSearch = setTimeout(update, 180); });
+    if (qInput) qInput.addEventListener('input', function(){
+      clearTimeout(tSearch); tSearch = setTimeout(update, 180);
+      clearTimeout(tQ); tQ = setTimeout(trackSearch, 1500);
+    });
   }
   root.querySelectorAll('[data-js="cat-clear"]').forEach(function(b){ b.addEventListener('click', clearAll); });
   more.addEventListener('click', function(){

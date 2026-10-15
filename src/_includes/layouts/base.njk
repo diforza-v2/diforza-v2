@@ -7,11 +7,44 @@
 {%- if description %}
 <meta name="description" content="{{ description }}">
 {%- endif %}
+{%- if noindex %}
+<meta name="robots" content="noindex">
+{%- endif %}
 {% include "partials/fonts.njk" %}
 <link rel="stylesheet" href="/assets/css/main.css">
 <script>window.SITE = {{ { whatsapp: site.whatsapp.number, waText: waText, catalogPdf: site.catalogo.pdf } | dump | safe }};</script>
+{#- Medición (doc 08 §3): contexto de la página en el dataLayer ANTES de GTM. Sin datos personales. -#}
+{%- set LANDING_IDS = { indumentaria: "l2-indumentaria", calzado: "calzado", epp: "l3-epp" } %}
+{%- if p and p.linea %}{% set dlType = "producto" %}{% set dlLinea = p.linea.id %}
+{%- elif s and s.linea %}{% set dlType = "subcategoria" %}{% set dlLinea = s.linea.id %}
+{%- elif l and l.id %}{% set dlType = "linea" %}{% set dlLinea = l.id %}
+{%- elif page.url == "/productos/" %}{% set dlType = "catalogo" %}
+{%- elif landingKey %}{% set dlType = "landing" %}{% set dlLinea = landingKey %}
+{%- elif page.url == "/" %}{% set dlType = "home" %}
+{%- elif page.url == "/404.html" %}{% set dlType = "404" %}
+{%- elif page.url and "politica" in page.url %}{% set dlType = "legal" %}
+{%- else %}{% set dlType = "otra" %}{% endif %}
+{%- set dlCtx = { site_version: "v2", page_type: dlType, landing_id: (LANDING_IDS[landingKey] if landingKey else ("home" if dlType == "home" else undefined)), linea: dlLinea } %}
+<script>
+window.dataLayer = window.dataLayer || [];
+(function(){
+  var c = {{ dlCtx | dump | safe }};
+  c.env = /(\.pages\.dev|localhost|127\.0\.0\.1)$/.test(location.hostname) ? 'staging' : 'production';
+  window.dataLayer.push(c);
+})();
+{%- if dlType == "producto" %}
+window.dataLayer.push({ ecommerce: null });
+window.dataLayer.push({ event: 'view_item', ecommerce: { items: [{{ { item_id: p.id, item_name: p.nombre, item_brand: p.marca, item_category: p.linea.nombre, item_category2: p.sub.nombre, item_variant: (p.variantes[0].nombre if p.variantes and p.variantes.length > 1 else undefined) } | dump | safe }}] } });
+{%- endif %}
+</script>
+{%- if site.gtmId and site.gtmEnabled %}{# gtmEnabled: false hasta publicar la versión de GTM preparada para el sitio nuevo (doc 08 §14) #}
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','{{ site.gtmId }}');</script>
+{%- endif %}
 </head>
 <body>
+{%- if site.gtmId and site.gtmEnabled %}
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.gtmId }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+{%- endif %}
 
 {% include "partials/header.njk" %}
 {{ content | safe }}

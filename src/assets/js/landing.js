@@ -54,6 +54,8 @@
       var n = b.getAttribute('data-prod-nombre') || '';
       var c = b.getAttribute('data-prod-codigo') || '';
       setProduct(c ? n + ' (Cód. ' + c + ')' : n);
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'product_inquiry', product_name: n, product_code: c || undefined });
       // Si el producto trae categoría, la tilda en el campo multi-selección (L3)
       var cat = b.getAttribute('data-prod-cat');
       if (cat){
@@ -144,7 +146,12 @@
       var first = null;
       inputs.forEach(function(el){ if (!check(el) && !first) first = el; });
       groups.forEach(function(g){ if (!checkGroup(g) && !first) first = g.querySelector('input'); });
-      if (first){ first.focus(); return; }
+      if (first){
+        first.focus();
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'form_error', form_id: 'cotizacion', error_type: 'validation' });
+        return;
+      }
       var hp = form.querySelector('input[name="website"]');
       if (hp && hp.value) return; // bot
       var btn = form.querySelector('button[type="submit"]');
