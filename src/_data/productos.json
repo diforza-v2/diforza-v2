@@ -60,7 +60,8 @@
             "verde-oliva",
             "verde-benetton",
             "verde-ingles",
-            "blanco"
+            "blanco",
+            "naranja"
           ]
         },
         {
@@ -87,6 +88,7 @@
         {
           "tipo": "colores",
           "valores": [
+            "negro",
             "azul",
             "gris",
             "beige",
@@ -99,7 +101,7 @@
         }
       ],
       "foto": {
-        "src": "/img/catalogo/pantalon-cargo-elastizado-diforza--azul.webp",
+        "src": "/img/catalogo/pantalon-cargo-elastizado-diforza--negro.webp",
         "estado": "producto"
       },
       "empresas": null,
@@ -276,7 +278,7 @@
           "tipo": "colores",
           "valores": [
             "amarillo",
-            "azul-marino"
+            "azul"
           ]
         },
         {
@@ -336,7 +338,7 @@
           "tipo": "colores",
           "valores": [
             "amarillo",
-            "azul-marino"
+            "azul"
           ]
         },
         {
@@ -365,7 +367,8 @@
           "tipo": "colores",
           "valores": [
             "negro",
-            "marron"
+            "marron",
+            "blanco"
           ]
         },
         {
@@ -394,7 +397,8 @@
           "tipo": "colores",
           "valores": [
             "negro",
-            "marron"
+            "marron",
+            "blanco"
           ]
         },
         {
@@ -568,8 +572,6 @@
           "tipo": "colores",
           "valores": [
             "transparente",
-            "gris",
-            "transparente",
             "gris"
           ]
         },
@@ -600,7 +602,15 @@
           "valores": [
             "amarillo",
             "blanco",
-            "azul"
+            "azul",
+            "rojo",
+            "verde",
+            "naranja",
+            "gris",
+            "celeste",
+            "marron",
+            "rosa",
+            "negro"
           ]
         },
         {
@@ -630,9 +640,7 @@
             "transparente",
             "gris",
             "amarillo",
-            "in-out",
-            "transparente",
-            "gris"
+            "in-out"
           ]
         },
         {
@@ -714,9 +722,6 @@
         {
           "tipo": "colores",
           "valores": [
-            "negro",
-            "negro",
-            "negro",
             "negro"
           ]
         },
@@ -744,9 +749,6 @@
         {
           "tipo": "colores",
           "valores": [
-            "verde",
-            "verde",
-            "amarillo",
             "verde"
           ]
         },
@@ -756,7 +758,7 @@
         }
       ],
       "foto": {
-        "src": "/img/catalogo/protector-auditivo-libus-quantum--dispenser.webp",
+        "src": "/img/catalogo/protector-auditivo-libus-quantum--principal.webp",
         "estado": "producto"
       },
       "pendiente": "26 dB según revendedor (ventasxmayor), no figura en la ficha oficial de Libus",
@@ -810,7 +812,7 @@
         }
       ],
       "foto": {
-        "src": "/img/catalogo/protector-auditivo-libus-alternative--vincha.webp",
+        "src": "/img/catalogo/protector-auditivo-libus-alternative--principal.webp",
         "estado": "producto"
       },
       "empresas": 26,
@@ -938,7 +940,6 @@
         {
           "tipo": "colores",
           "valores": [
-            "blanco",
             "blanco"
           ]
         },
