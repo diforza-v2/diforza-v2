@@ -464,6 +464,7 @@
       ['[data-js="form-status"]', 'fallback'], ['.wa-float', 'flotante'], ['.header', 'header'],
       ['.site-footer__cta', 'footer'], ['.site-footer', 'footer_contacto'], ['.cat-modal', 'catalogo_ok'], ['.pdp', 'producto'],
       ['.product-card', 'producto_tarjeta'], ['.catalog-list, [data-js="catalog"]', 'listado'],
+      ['.ziao-uses-grid', 'tarjeta_uso'], ['.ziao-steps, .ziao-uses', 'pasos_compra'],
       ['.hero', 'hero'], ['.quote, #contacto', 'quote'], ['.contact-items, .legal', 'contacto']
     ];
     for (var i = 0; i < map.length; i++) if (a.closest(map[i][0])) return map[i][1];

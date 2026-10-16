@@ -4,10 +4,20 @@ title: "ZIAO: mameluco descartable laminado, marca propia de Diforza"
 description: "ZIAO es la marca propia de Diforza para descartables. Mameluco laminado SFL de 63 g, talles S a XXXL, ensayado por SGS. Caja por 50 unidades y stock permanente."
 waText: "Hola, quiero cotizar mamelucos descartables ZIAO para mi empresa."
 pageJs: /assets/js/landing.js
-ogImage: /img/ziao/mameluco-ziao-laboratorio.webp
+ogImage: /img/og/ziao.jpg
+dlPageType: marca
+dlLandingId: ziao
+dlLinea: indumentaria
 ziao:
   ficha: /assets/docs/fichas/mameluco-laminado-ziao.pdf
   producto: /productos/mameluco-laminado-ziao/
+  usos:
+    - { icono: "gota", titulo: "Limpieza y facility", texto: "Protege la ropa del personal en cada turno, con un costo por unidad bajo.", wa: "limpieza y facility" }
+    - { icono: "escudo-check", titulo: "Industria alimenticia", texto: "Barrera contra la contaminación de la línea. Libre de látex.", wa: "industria alimenticia" }
+    - { icono: "mascara-facial", titulo: "Pintura y fumigación", texto: "Frena salpicaduras leves y polvo sin dar calor: la tela respira.", wa: "pintura o fumigación" }
+    - { icono: "probeta", titulo: "Laboratorios", texto: "Capucha y elásticos en puños y tobillos para trabajar cubierto.", wa: "laboratorio" }
+    - { icono: "portapapeles", titulo: "Mantenimiento e industria", texto: "Polvo, grasa y suciedad: se usa en la tarea y se descarta.", wa: "mantenimiento industrial" }
+    - { icono: "persona", titulo: "Visitas y temporarios", texto: "Equipás a quien llegue en el momento, del talle S al XXXL.", wa: "visitas y personal temporario" }
   ensayos:
     - { prop: "Protección UV", metodo: "AATCC 183:2010", resultado: "UPF 34 · bloquea 95,7 % de UV-A y 97,4 % de UV-B", simple: "Protege la piel del sol en tareas al aire libre." }
     - { prop: "Resistencia a la tracción", metodo: "ISO 13934-1:2013", resultado: "62 N (urdimbre) · 36 N (trama)", simple: "Cuánta fuerza aguanta la tela antes de romperse." }
@@ -39,41 +49,38 @@ ziao:
 {%- set Z = ziao %}
 {%- set waHref = "https://wa.me/" + site.whatsapp.number + "?text=" + (waText | urlencode) %}
 <main class="ziao">
-  <section class="ziao-hero">
-    <div class="ziao-hero__inner">
-      <div class="ziao-hero__copy">
-        <img class="ziao-hero__logo" src="/img/ziao/logo-ziao-blanco.png" alt="ZIAO" width="233" height="98">
-        <p class="page-hero__eyebrow">Marca propia de Diforza</p>
-        <h1>Mameluco descartable laminado ZIAO</h1>
-        <p class="page-hero__lead">Barrera contra polvo, suciedad y salpicaduras leves, que deja respirar. Tela SFL de 63 g ensayada por SGS, talles S a XXXL y stock permanente para equipar a todo tu personal.</p>
-        <div class="ctas">
-          <a href="{{ waHref }}" class="btn btn--primary btn--icon" target="_blank" rel="noopener" data-js="wa">{{ icons['ui-whatsapp'] | safe }} Cotizar por volumen</a>
-          <a href="{{ Z.ficha }}" class="btn btn--whatsapp" target="_blank" rel="noopener" data-ficha="mameluco-laminado-ziao">{{ icons['ui-descarga'] | safe }} Ficha técnica</a>
-        </div>
-      </div>
-      <figure class="ziao-hero__media">
-        <img src="/img/ziao/mameluco-ziao-laboratorio.webp" alt="Persona con mameluco descartable ZIAO, antiparras y barbijo en un laboratorio" width="960" height="1200" fetchpriority="high">
-      </figure>
-    </div>
-  </section>
+{%- set L = { hero: {
+    modificador: "ziao",
+    fondo: { src: "/img/ziao/hero-ziao.webp", ancho: 1682, alto: 2000, alt: "Persona con mameluco descartable ZIAO, antiparras y barbijo en un laboratorio" },
+    logo: { src: "/img/ziao/logo-ziao-azul.png", alt: "ZIAO", ancho: 233, alto: 98 },
+    eyebrow: "Marca propia de Diforza",
+    titulo: "Mameluco descartable laminado ZIAO:",
+    acento: "protección que deja respirar.",
+    bajada: "Barrera contra polvo, suciedad y salpicaduras leves. Tela SFL de 63 g ensayada por SGS y stock permanente para equipar a todo tu personal.",
+    beneficios: [
+      { icono: "escudo-check", texto: "Ensayado por SGS" },
+      { icono: "talles", texto: "Talles S a XXXL" },
+      { icono: "caja", texto: "Caja por 50 unidades" }
+    ],
+    claim: "Barrera<br>que deja<br>respirar",
+    ctaSecundario: { href: Z.ficha, texto: "Ficha técnica", ficha: "mameluco-laminado-ziao" }
+} } %}
+{% include "sections/landing/hero.njk" %}
 
   <section class="about-section">
     <div class="about-section__inner">
-      <h2>Por qué una marca propia</h2>
-      <p>Con ZIAO controlamos el producto de punta a punta: lo que pedimos, lo que llega y lo que entregamos.</p>
-      <ul class="about-cards">
+      <h2>¿Para qué lo necesitás?</h2>
+      <p>Elegí tu tarea y escribinos: te cotizamos por caja de 50 unidades y te asesoramos si es el mameluco adecuado.</p>
+      <ul class="ziao-uses-grid">
+        {%- for u in Z.usos %}
+        {%- set msg = "Hola, necesito mamelucos descartables ZIAO para " + u.wa + ". ¿Me pasan precio por caja?" %}
         <li>
-          <h3>Stock permanente</h3>
-          <p>Lo mantenemos en depósito para que tu pedido salga sin esperar una importación. Ideal para reposiciones frecuentes.</p>
+          <span class="ziao-uses-grid__icon">{{ icons[u.icono] | safe }}</span>
+          <h3>{{ u.titulo }}</h3>
+          <p>{{ u.texto }}</p>
+          <a href="https://wa.me/{{ site.whatsapp.number }}?text={{ msg | urlencode }}" target="_blank" rel="noopener" data-js="wa" aria-label="Cotizar mamelucos para {{ u.titulo | lower }} por WhatsApp">Cotizar por WhatsApp {{ icons['ui-flecha'] | safe }}</a>
         </li>
-        <li>
-          <h3>Importación directa</h3>
-          <p>Lo fabricamos bajo nuestra marca y lo importamos sin intermediarios. Eso se traduce en precio por volumen.</p>
-        </li>
-        <li>
-          <h3>Respaldo técnico</h3>
-          <p>Ficha técnica completa e informe de ensayo de SGS, uno de los laboratorios de ensayo más reconocidos del mundo.</p>
-        </li>
+        {%- endfor %}
       </ul>
     </div>
   </section>
@@ -81,7 +88,7 @@ ziao:
   <section class="about-section about-section--alt">
     <div class="about-section__inner ziao-product">
       <figure class="ziao-product__media">
-        <img src="/img/ziao/mameluco-ziao-frente-espalda.webp" alt="Mameluco descartable ZIAO blanco, vista de frente y de espalda" width="800" height="800" loading="lazy">
+        <img src="/img/ziao/mameluco-ziao-frente-espalda.webp" alt="Mameluco descartable ZIAO blanco, vista de frente y de espalda" width="1000" height="1000" loading="lazy">
       </figure>
       <div>
         <h2>El mameluco, en detalle</h2>
@@ -95,6 +102,13 @@ ziao:
           <div><dt>Presentación</dt><dd>Caja por 50 unidades</dd></div>
           <div><dt>Otros</dt><dd>Libre de látex · no vence si se guarda al resguardo del sol</dd></div>
         </dl>
+        <h3 class="ziao-uses__no-title">Cuándo no corresponde</h3>
+        <ul class="ziao-list ziao-list--no">
+          <li>Fuego directo, soldadura o chispas</li>
+          <li>Químicos peligrosos o altamente corrosivos</li>
+          <li>Tareas que exigen ropa antiestática</li>
+          <li>Lavarlo y volver a usarlo: es descartable</li>
+        </ul>
         <p class="ziao-product__links"><a href="{{ Z.producto }}">Ver el producto en el catálogo</a> · <a href="{{ Z.ficha }}" target="_blank" rel="noopener" data-ficha="mameluco-laminado-ziao">Descargar ficha técnica (PDF)</a></p>
       </div>
     </div>
@@ -107,32 +121,26 @@ ziao:
         <img src="/img/ziao/mameluco-ziao-planta.webp" alt="Operario con mameluco ZIAO manipulando una válvula en una planta industrial" width="900" height="1125" loading="lazy">
       </div>
       <div>
-        <h2>Para qué se usa</h2>
-        <ul class="ziao-list ziao-list--ok">
-          <li>Limpieza y mantenimiento</li>
-          <li>Pintura y fumigación</li>
-          <li>Industria alimenticia y laboratorios</li>
-          <li>Polvo, material particulado y suciedad</li>
-          <li>Salpicaduras leves y sustancias de baja corrosividad</li>
-          <li>Visitas a planta y personal temporario</li>
-        </ul>
-        <h3 class="ziao-uses__no-title">Cuándo no corresponde</h3>
-        <ul class="ziao-list ziao-list--no">
-          <li>Fuego directo, soldadura o chispas</li>
-          <li>Químicos peligrosos o altamente corrosivos</li>
-          <li>Tareas que exigen ropa antiestática</li>
-          <li>Lavarlo y volver a usarlo: es descartable</li>
-        </ul>
-        <p>¿No estás seguro de si es el adecuado para tu tarea? <a href="{{ waHref }}" target="_blank" rel="noopener" data-js="wa">Escribinos</a> y te asesoramos.</p>
+        <h2>Comprá en 3 pasos</h2>
+        <ol class="ziao-steps">
+          <li><strong>Contanos cantidad y talles.</strong> Por WhatsApp o con el formulario de esta página.</li>
+          <li><strong>Te cotizamos en el día.</strong> Precio por caja de 50 unidades, con factura A.</li>
+          <li><strong>Lo recibís enseguida.</strong> Es un producto terminado y en stock: coordinado el pedido, sale de nuestro depósito. Envíos a todo el país.</li>
+        </ol>
+        <p class="ziao-steps__note"><strong>¿Querés verlo antes?</strong> Coordinamos una muestra para que verifiques talle y calidad. <strong>¿Ya sos cliente?</strong> Guardamos tu curva de talles: reponer es un mensaje.</p>
+        <div class="ctas">
+          <a href="{{ waHref }}" class="btn btn--primary btn--icon" target="_blank" rel="noopener" data-js="wa">{{ icons['ui-whatsapp'] | safe }} Cotizar por WhatsApp</a>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="about-section about-section--alt">
     <div class="about-section__inner">
-      <p class="page-hero__eyebrow ziao-eyebrow">Respaldo de ensayo internacional</p>
-      <h2>Ensayado por SGS</h2>
-      <p>La tela del mameluco ZIAO de 63 g fue ensayada por SGS (informe de prueba N° SHHG1401002795SD). Estos son los resultados, con lo que significa cada uno.</p>
+      <p class="page-hero__eyebrow ziao-eyebrow">Para tu legajo de seguridad</p>
+      <h2>Ficha técnica y ensayo de SGS</h2>
+      <p>Con cada compra tenés la ficha técnica del mameluco y los resultados del ensayo de SGS, uno de los laboratorios más reconocidos del mundo (informe N° SHHG1401002795SD). Documentación lista para archivar ante una auditoría o una inspección.</p>
+      <p><a class="btn btn--outline btn--icon ziao-doc-btn" href="{{ Z.ficha }}" target="_blank" rel="noopener" data-ficha="mameluco-laminado-ziao">{{ icons['ui-descarga'] | safe }} Descargar ficha técnica (PDF)</a></p>
       <div class="ziao-table-wrap">
         <table class="ziao-table ziao-table--tests">
           <thead><tr><th scope="col">Propiedad</th><th scope="col">Método de ensayo</th><th scope="col">Resultado</th></tr></thead>
@@ -219,13 +227,34 @@ ziao:
 {% include "partials/faq-schema.njk" %}
 <script type="application/ld+json">{{ {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Mameluco descartable laminado ZIAO",
-  "brand": { "@type": "Brand", "name": "ZIAO", "logo": site.url + "/img/ziao/logo-ziao.png" },
-  "manufacturer": { "@id": site.url + "/#organization" },
-  "url": site.url + "/ziao/",
-  "image": [site.url + "/img/ziao/mameluco-ziao-frente-espalda.webp", site.url + "/img/ziao/mameluco-ziao-laboratorio.webp"],
-  "description": "Mameluco descartable de tela SFL (polipropileno laminado con polietileno) de 63 g, con capucha, cierre frontal y elásticos. Talles S a XXXL. Caja por 50 unidades.",
-  "color": "Blanco",
-  "material": "Polipropileno laminado con polietileno (SFL)"
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": site.url + "/ziao/#webpage",
+      "url": site.url + "/ziao/",
+      "name": title,
+      "description": description,
+      "inLanguage": "es-AR",
+      "isPartOf": { "@id": site.url + "/#website" },
+      "about": { "@id": site.url + "/ziao/#brand" },
+      "primaryImageOfPage": site.url + "/img/ziao/hero-ziao.webp",
+      "breadcrumb": { "@id": site.url + "/ziao/#breadcrumb" }
+    },
+    {
+      "@type": "Brand",
+      "@id": site.url + "/ziao/#brand",
+      "name": "ZIAO",
+      "logo": site.url + "/img/ziao/logo-ziao-azul.png",
+      "url": site.url + "/ziao/",
+      "description": "Marca propia de Diforza para productos descartables: mameluco descartable laminado SFL."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": site.url + "/ziao/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": site.url + "/" },
+        { "@type": "ListItem", "position": 2, "name": "ZIAO", "item": site.url + "/ziao/" }
+      ]
+    }
+  ]
 } | dump | safe }}</script>

@@ -1,4 +1,4 @@
-{#- Hero de landing. Datos: L.hero -#}
+{#- Hero de landing. Datos: L.hero (opcionales: logo, claim, ctaSecundario {href, texto, ficha}) -#}
 {%- set H = L.hero %}
 <section class="hero hero--landing hero--{{ H.modificador }}" data-js="hero">
   <div class="hero__bg">
@@ -14,10 +14,13 @@
     <div class="panel panel--light"></div>
   </div>
 
-  <p class="hero__claim hero-anim hero-anim--4">Equipamos<br>el trabajo<br>real</p>
+  <p class="hero__claim hero-anim hero-anim--4">{{ (H.claim or "Equipamos<br>el trabajo<br>real") | safe }}</p>
 
   <div class="hero__inner">
     <div class="hero__copy">
+      {%- if H.logo %}
+      <img class="hero__logo hero-anim hero-anim--1" src="{{ H.logo.src }}" alt="{{ H.logo.alt }}" width="{{ H.logo.ancho }}" height="{{ H.logo.alto }}">
+      {%- endif %}
       <p class="hero__eyebrow hero-anim hero-anim--1">{{ H.eyebrow | rich | safe }}</p>
 
       <h1 class="hero-anim hero-anim--2">{{ H.titulo | rich | safe }} <span class="accent">{{ H.acento | rich | safe }}</span></h1>
@@ -38,10 +41,17 @@
           {{ icons['ui-whatsapp'] | safe }}
           {{ site.cta.whatsapp }}
         </a>
+        {%- if H.ctaSecundario %}
+        <a href="{{ H.ctaSecundario.href }}" class="btn btn--outline"{% if H.ctaSecundario.ficha %} data-ficha="{{ H.ctaSecundario.ficha }}" target="_blank" rel="noopener"{% endif %}>
+          {{ icons['ui-descarga'] | safe }}
+          {{ H.ctaSecundario.texto }}
+        </a>
+        {%- else %}
         <a href="#catalogo" class="btn btn--outline" data-js="catalogo">
           {{ icons['ui-descarga'] | safe }}
           {{ H.ctaCatalogo }}
         </a>
+        {%- endif %}
       </div>
     </div>
   </div>

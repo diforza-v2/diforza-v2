@@ -85,10 +85,11 @@
 {%- elif page.url == "/productos/" %}{% set dlType = "catalogo" %}
 {%- elif landingKey %}{% set dlType = "landing" %}{% set dlLinea = landingKey %}
 {%- elif page.url == "/" %}{% set dlType = "home" %}
+{%- elif dlPageType %}{% set dlType = dlPageType %}{% set dlLinea = dlLinea %}
 {%- elif page.url == "/404.html" %}{% set dlType = "404" %}
 {%- elif page.url and "politica" in page.url %}{% set dlType = "legal" %}
 {%- else %}{% set dlType = "otra" %}{% endif %}
-{%- set dlCtx = { site_version: "v2", page_type: dlType, landing_id: (LANDING_IDS[landingKey] if landingKey else ("home" if dlType == "home" else undefined)), linea: dlLinea } %}
+{%- set dlCtx = { site_version: "v2", page_type: dlType, landing_id: (LANDING_IDS[landingKey] if landingKey else (dlLandingId or ("home" if dlType == "home" else undefined))), linea: dlLinea } %}
 <script>
 window.dataLayer = window.dataLayer || [];
 (function(){

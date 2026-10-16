@@ -1,67 +1,28 @@
 /* Página de marca ZIAO (/ziao/) */
-.ziao-hero {
-  padding: calc(var(--nav-h) + 40px) var(--pad) 56px;
-  color: var(--white);
-  background:
-    radial-gradient(90% 140% at 100% 0%, rgb(var(--rgb-orange) / 14%) 0%, transparent 55%),
-    linear-gradient(160deg, var(--navy) 0%, var(--navy-950) 100%);
+
+/* Hero: mismo componente y colores que la home y las landings
+   (sections/landing/hero.njk); lo propio de ZIAO es el logo y la foto. */
+.hero--ziao {
+  --hero-pos: 50% 16%;
 }
 
-.ziao-hero__inner {
-  display: grid;
-  gap: 32px;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
+.hero__logo {
+  display: block;
+  width: 116px;
+  height: auto;
+  margin: 0 0 18px;
 }
 
 @media (--lg) {
-  .ziao-hero {
-    padding-bottom: 72px;
-    padding-top: calc(var(--nav-h) + 56px);
+  .hero__logo {
+    width: 150px;
+    margin-bottom: 26px;
   }
 
-  .ziao-hero__inner {
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 56px;
+  /* Encuadre: que entren la cara y el logo del pecho en pantallas anchas */
+  .hero--ziao {
+    --hero-pos: 50% 34%;
   }
-}
-
-.ziao-hero__logo {
-  display: block;
-  width: 140px;
-  height: auto;
-  margin-bottom: 24px;
-}
-
-.ziao-hero h1 {
-  margin: 0;
-  font-size: var(--fs-36);
-  line-height: 1.1;
-  color: var(--white);
-}
-
-@media (--md) {
-  .ziao-hero h1 {
-    font-size: var(--fs-48);
-  }
-}
-
-.ziao-hero .ctas {
-  margin-top: 28px;
-}
-
-.ziao-hero__media {
-  margin: 0;
-}
-
-.ziao-hero__media img {
-  display: block;
-  width: 100%;
-  max-width: 440px;
-  height: auto;
-  margin: 0 auto;
-  border-radius: var(--radius-16);
 }
 
 .about-section .ziao-eyebrow {
@@ -141,7 +102,7 @@
 }
 
 .ziao-product__links a,
-.ziao-uses a {
+.ziao-uses a:not(.btn) {
   font-weight: var(--fw-semibold);
   color: var(--navy);
   text-underline-offset: 3px;
@@ -310,5 +271,197 @@
     margin: 2px 0 6px;
     font-size: var(--fs-13);
     color: var(--slate-600);
+  }
+}
+
+/* El claim vertical cae sobre el fondo claro del laboratorio: no se lee */
+.hero--ziao .hero__claim {
+  display: none;
+}
+
+/* ¿Para qué lo necesitás? — tarjetas por tarea con WhatsApp precargado */
+.ziao-uses-grid {
+  display: grid;
+  gap: 16px;
+  margin: 32px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (--md) {
+  .ziao-uses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (--lg) {
+  .ziao-uses-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+.ziao-uses-grid li {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--slate-150);
+  border-radius: var(--radius-12);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.ziao-uses-grid li:hover {
+  border-color: var(--orange-200);
+  box-shadow: 0 10px 24px rgb(var(--rgb-navy) / 8%);
+}
+
+.ziao-uses-grid__icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--white);
+  background: var(--navy);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.ziao-uses-grid__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.ziao-uses-grid h3 {
+  margin: 0 0 6px;
+  font-size: var(--fs-20);
+  line-height: 1.25;
+  color: var(--navy);
+}
+
+.ziao-uses-grid p {
+  flex: 1;
+  margin: 0 0 16px;
+  font-size: var(--fs-15);
+  line-height: 24px;
+}
+
+.ziao-uses-grid a {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.ziao-uses-grid a svg {
+  width: 16px;
+  height: 16px;
+}
+
+.ziao-uses-grid a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Comprá en 3 pasos */
+.ziao-steps {
+  display: grid;
+  gap: 18px;
+  margin: 24px 0 0;
+  padding: 0;
+  counter-reset: paso;
+  list-style: none;
+}
+
+.ziao-steps li {
+  position: relative;
+  font-size: var(--fs-16);
+  line-height: 25px;
+  counter-increment: paso;
+  padding-left: 52px;
+}
+
+.ziao-steps li::before {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  font-weight: var(--fw-bold);
+  color: var(--white);
+  background: var(--color-primary);
+  border-radius: 50%;
+  content: counter(paso);
+}
+
+.ziao-steps strong {
+  display: block;
+  color: var(--navy);
+}
+
+.ziao-steps__note {
+  margin: 24px 0;
+  padding: 16px 18px;
+  font-size: var(--fs-15);
+  line-height: 24px;
+  background: var(--slate-50);
+  border-radius: var(--radius-12);
+  border-left: 3px solid var(--orange);
+}
+
+.ziao-steps__note strong {
+  color: var(--navy);
+}
+
+.ziao-doc-btn {
+  margin-top: 8px;
+}
+
+.ziao-product .ziao-list {
+  margin-bottom: 24px;
+}
+
+.ziao-uses .ziao-steps {
+  margin-bottom: 28px;
+}
+
+/* Mobile: tarjetas de tareas más compactas (ícono a la izquierda) */
+@media (--below-md) {
+  .ziao-uses-grid {
+    gap: 12px;
+  }
+
+  .ziao-uses-grid li {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 14px;
+    padding: 18px;
+  }
+
+  .ziao-uses-grid__icon {
+    grid-row: span 3;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+  }
+
+  .ziao-uses-grid__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ziao-uses-grid h3 {
+    font-size: var(--fs-18);
+  }
+
+  .ziao-uses-grid p {
+    margin-bottom: 10px;
   }
 }
