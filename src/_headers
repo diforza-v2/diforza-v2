@@ -1,9 +1,12 @@
-# Cloudflare Pages — encabezados HTTP de todo el sitio.
-# [PENDIENTE] Mientras el sitio vive en diforza.pages.dev (sin dominio definitivo) no se indexa en Google.
-# Al conectar el dominio propio: borrar el bloque de X-Robots-Tag.
-/*
+# Cloudflare Pages — encabezados HTTP.
+# noindex SOLO en los dominios de prueba de Cloudflare (diforza.pages.dev y los previews por rama/deploy).
+# El dominio propio (www.diforza.com.ar) queda indexable sin tocar este archivo el día del lanzamiento.
+https://:project.pages.dev/*
   X-Robots-Tag: noindex
 
-# Fuentes e imágenes: no cambian de nombre sin cambiar de archivo → caché larga.
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+# Fuentes: no cambian de nombre sin cambiar de archivo → caché larga.
 /assets/fonts/*
   Cache-Control: public, max-age=31536000, immutable

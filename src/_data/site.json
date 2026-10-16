@@ -3,6 +3,10 @@
   "url": "https://www.diforza.com.ar",
   "_nota_url": "Dominio definitivo, sin barra final. Arma canonical, Open Graph, sitemap, robots y schema (doc 20 §5). En pages.dev el sitio sigue con noindex (_headers).",
   "seo": {
+    "verificacion": {
+      "google": "-5GHz6uoLtQYKLAScYwmYvhOhv0FGpzePWrW4Ifnu2Q",
+      "meta": "6xqm5vf34hxm9cubedacgsnx4ix7c0"
+    },
     "ogImage": "/img/og/diforza.jpg",
     "logo": "/img/logo-diforza.png",
     "descripcion": "Distribuidora de elementos de protección personal (EPP), indumentaria de trabajo y calzado de seguridad para empresas, con más de 15 años de trayectoria, marca propia ZIAO y stock permanente.",

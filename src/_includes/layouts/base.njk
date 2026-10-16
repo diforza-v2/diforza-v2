@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{#- Verificaciones de propiedad del dominio (copiadas de TiendaNube el 15 oct): Search Console y Meta Business.
+    Si se sacan, al pasar el dominio se pierde la verificación. -#}
+<meta name="google-site-verification" content="{{ site.seo.verificacion.google }}">
+<meta name="facebook-domain-verification" content="{{ site.seo.verificacion.meta }}">
 <title>{{ title }}</title>
 {%- if description %}
 <meta name="description" content="{{ description }}">
