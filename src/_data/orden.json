@@ -1,0 +1,227 @@
+{
+ "_nota": "Orden de productos por subcategoría (16 oct 2026, reglas del usuario: Diforza → Agio → Ziao → resto; calzado Conwork → Ombú → Funcional → Voran; EPP por tipo de producto). Fuente: 02_sitio-web/catalogo/orden_propuesta.py → correr orden_aplicar.py. Producto visible que no figure acá va al final de su subcategoría (por ventas).",
+ "subcategorias": {
+  "pantalones": [
+   "pantalon-cargo-diforza",
+   "pantalon-clasico-diforza",
+   "bermuda-cargo-diforza",
+   "pantalon-cargo-elastizado-diforza",
+   "pantalon-clasico-ombu"
+  ],
+  "remera": [
+   "remera-diforza-mc",
+   "remera-diforza-ml"
+  ],
+  "chomba": [
+   "chomba-clasica-diforza-mc"
+  ],
+  "camisa": [
+   "camisa-clasica-diforza",
+   "camisa-clasica-ombu"
+  ],
+  "buzo": [
+   "buzo-friza-diforza",
+   "buzo-polar-medio-cierre-diforza"
+  ],
+  "campera": [
+   "campera-trucker-diforza",
+   "campera-polar-diforza",
+   "campera-rompeviento-silver-diforza",
+   "campera-depascale-descarne"
+  ],
+  "chaleco": [
+   "chaleco-reflectivo-diforza",
+   "chaleco-geologo-diforza",
+   "chaleco-trucker-diforza",
+   "chaleco-polar-diforza"
+  ],
+  "mameluco": [
+   "mameluco-gabardina-diforza",
+   "mameluco-laminado-ziao"
+  ],
+  "traje-de-lluvia": [
+   "capa-de-lluvia-diforza",
+   "traje-de-lluvia-diforza"
+  ],
+  "sanidad-y-gastronomia": [
+   "delantal-pvc-diforza"
+  ],
+  "ropa-primera-piel": [
+   "equipo-primera-piel"
+  ],
+  "delantales": [
+   "delantal-pvc-diforza",
+   "delantal-depascale-descarne"
+  ],
+  "botines": [
+   "botin-conwork-25baf",
+   "botin-conwork-653baf",
+   "botin-ombu-ozono-plus",
+   "botin-ombu-frances",
+   "botin-funcional-frontier",
+   "botin-funcional-street",
+   "botin-funcional-capri-mujer",
+   "botin-voran-apolo",
+   "botin-voran-aquiles",
+   "botin-voran-argos",
+   "botin-voran-neptuno"
+  ],
+  "zapatos": [
+   "zapato-conwork-41za",
+   "zapato-ombu-ozono-plus",
+   "zapato-ombu-prusiano-puntera-acero",
+   "zapato-funcional-city",
+   "zapato-funcional-horizon",
+   "zapato-voran-jano",
+   "zapato-voran-tauro",
+   "zapato-voran-teucro"
+  ],
+  "zapatillas": [
+   "zapatilla-conwork-655za",
+   "zapatilla-funcional-lander",
+   "zapatilla-funcional-soul",
+   "zapatilla-funcional-bali-mujer"
+  ],
+  "botas": [
+   "bota-ombu-pvc-cana-larga-con-puntera",
+   "bota-ombu-pvc-cana-larga-sin-puntera"
+  ],
+  "proteccion-auditiva": [
+   "protector-auditivo-libus-alternative",
+   "protector-auditivo-libus-l-320-vincha",
+   "protector-auditivo-libus-l-340",
+   "protector-auditivo-libus-l-360",
+   "protector-auditivo-libus-l-320",
+   "protector-auditivo-libus-l-340-casco",
+   "protector-auditivo-libus-l-360-casco",
+   "protector-auditivo-libus-quantum",
+   "protector-auditivo-libus-quantum-dispenser-detect",
+   "protector-auditivo-libus-quantum-caja"
+  ],
+  "proteccion-craneal": [
+   "casco-libus-milenium-class",
+   "casco-libus-andes",
+   "gorra-libus-con-casquete",
+   "casquete-libus-ventilado-gorra",
+   "arnes-libus-milenium",
+   "mentonera-libus"
+  ],
+  "proteccion-facial": [
+   "protector-facial-libus-arc-flash",
+   "protector-facial-libus-plano",
+   "protector-facial-libus-burbuja",
+   "malla-facial-libus-forestal",
+   "soporte-libus-protector-facial",
+   "adaptador-libus-casco-facial"
+  ],
+  "proteccion-ocular": [
+   "anteojo-libus-argon-elite",
+   "anteojo-libus-argon",
+   "anteojo-libus-eco-line",
+   "anteojo-libus-eco-sport",
+   "anteojo-libus-neon-plus",
+   "anteojo-libus-neon",
+   "anteojo-libus-hayat",
+   "anteojo-libus-fall-dual",
+   "anteojo-libus-mig",
+   "antiparra-libus-new-classic",
+   "antiparra-libus-explorer",
+   "antiparra-libus-fall-mesh-forestal"
+  ],
+  "proteccion-respiratoria": [
+   "mascara-completa-bls-5700",
+   "mascara-completa-bls-5600",
+   "kit-respirador-bls-4000-next",
+   "semimascara-bls-4000-next-s",
+   "semimascara-bls-4000-next-r",
+   "mascarilla-bls-zer0-32c-fr",
+   "mascarilla-bls-zer0-31",
+   "mascarilla-bls-zer0-30",
+   "mascarilla-bls-522",
+   "filtros-bls-serie-200",
+   "filtros-bls-serie-400"
+  ],
+  "proteccion-manos": [
+   "guante-moteado-blanco-1100fer-gamisol",
+   "guante-vaqueta-certificado",
+   "guante-descarne-puno-corto",
+   "guante-nylon-pu-2101-2102-ws",
+   "guante-latex-texturado-ws-l1101",
+   "guante-nitrilo-espumado-ws-n3605",
+   "guante-nitrilo-puno-de-lona",
+   "guante-nitrilo-pesado-puno-tejido-ws-n1615",
+   "guante-acrilo-nitrilo-ws-15mil",
+   "guante-latex-industrial-ws-latex80gr",
+   "guante-mondongo-latex-ws-l1705",
+   "guante-pvc-rojo-30-cm",
+   "guante-anticorte-ws-h2101",
+   "guante-anticorte-anti-impacto-ws-tx2000",
+   "guante-anticorte-anti-impacto-ws-h5101tpr",
+   "guante-anticorte-antivibratorio-ws-tx5000",
+   "guante-nitrilo-anti-impacto-ws-n2005tpr",
+   "guante-termico-nitrilo-espumado-ws-w2101",
+   "guante-dielectrico-de-pascale",
+   "guante-depascale-soldador-rojo-322175",
+   "guante-soldador-reforzado-largo-ws-lbwr"
+  ],
+  "altura": [
+   "arnes-sky-10404f",
+   "arnes-sky-10403e",
+   "arnes-sky-10420",
+   "arnes-sky-10420f",
+   "amarre-sky-10475e",
+   "amarre-sky-10475er",
+   "amarre-sky-10477e",
+   "amarre-sky-10479e",
+   "amarre-sky-10479p",
+   "amarre-sky-10471er",
+   "amarre-sky-10464er",
+   "salvacaidas-sky-8206a",
+   "mosqueton-oval-sky-af-18k"
+  ],
+  "senalizacion": [
+   "chaleco-reflectivo-diforza",
+   "bandolera-con-reflectivo-naranja",
+   "cono-multiuso-flexible-20",
+   "cono-ciudad-light-50",
+   "cono-ciudad-semiflexible-con-base-50-cm-2051-1r",
+   "econo-semiflexible-sin-base-70",
+   "econo-semiflex-c-base-2pie-70-cm-2071le-2r",
+   "cono-econo-classic-75",
+   "cono-flexible-75-cm-con-reflectivos-ucu0002pv",
+   "cono-rutero-light-1pie-90-cm-1200l-2r-na",
+   "rutero-semiflexible-36",
+   "economax-1pie-100-cm-2081-2r-na",
+   "cono-vencedor-2pie-120-cm-2300-2r",
+   "cono-vencedor-light-2pie-120-cm-2300l-2r",
+   "cono-obrador-classic-2pie-120-cm-2301-classic-2r",
+   "cono-autopista-2pie-120-cm-2401-2p",
+   "cono-delineador-flexible-60",
+   "cono-delineador-flexible-60-desmontable",
+   "tope-de-camion-90",
+   "cinta-peligro-diforza",
+   "bandera-peligro-diforza",
+   "malla-senalizacion-liviana-naranja"
+  ],
+  "proteccion-soldadura": [
+   "mascara-libus-strong-welder-1000",
+   "mascara-libus-strong-welder-500",
+   "guante-depascale-soldador-rojo-322175",
+   "guante-soldador-reforzado-largo-ws-lbwr",
+   "campera-depascale-descarne",
+   "delantal-depascale-descarne",
+   "manga-depascale-descarne",
+   "polainas-depascale-descarne"
+  ],
+  "ergonomia": [
+   "faja-lumbar-diforza",
+   "rodillera-ws-kp011"
+  ],
+  "kits": [
+   "kit-libus-forestal",
+   "kit-libus-desmalezador",
+   "kit-libus-jardinero",
+   "kit-libus-herramientas-de-corte"
+  ]
+ }
+}

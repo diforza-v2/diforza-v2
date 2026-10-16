@@ -78,14 +78,14 @@
       "href": "/calzado-de-seguridad/",
       "subcategorias": [
         {
-          "id": "botas",
-          "nombre": "Botas",
-          "incluye": "Bota industrial Ombú (negra/blanca, con/sin puntera, caña larga), bota de goma náutica, waders"
-        },
-        {
           "id": "botines",
           "nombre": "Botines",
           "incluye": "Conwork (negro, 25BAF, 525BAF, 653, 401BAF), Ombú (Ozono Plus, Francés ojalado con puntera de acero, Krypton, Gema, Sneaker); Funcional (Frontier, Street, Mujer Capri); Voran (Argos, Apolo, Aquiles, Neptuno, Cronos)"
+        },
+        {
+          "id": "zapatos",
+          "nombre": "Zapatos",
+          "incluye": "Conwork (41ZA, 555ZA, 201), Ombú (Ozono Plus, Prusiano, Krypton); Funcional (City, Horizon); Voran (Tauro, Jano, Teucro)"
         },
         {
           "id": "zapatillas",
@@ -93,9 +93,9 @@
           "incluye": "Conwork Nueva Origen 655ZA/641ZA, Ombú (Sneaker, Krypton, Gema, Cobalto); Funcional (Soul, Lander, Mujer Bali)"
         },
         {
-          "id": "zapatos",
-          "nombre": "Zapatos",
-          "incluye": "Conwork (41ZA, 555ZA, 201), Ombú (Ozono Plus, Prusiano, Krypton); Funcional (City, Horizon); Voran (Tauro, Jano, Teucro)"
+          "id": "botas",
+          "nombre": "Botas",
+          "incluye": "Bota industrial Ombú (negra/blanca, con/sin puntera, caña larga), bota de goma náutica, waders"
         }
       ],
       "marcas": [

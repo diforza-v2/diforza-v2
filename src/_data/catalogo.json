@@ -5410,7 +5410,7 @@
    ],
    "colores": [
     "amarillo",
-    "azul-marino"
+    "azul"
    ],
    "talles": "S al 5XL",
    "visible": true,
@@ -5421,7 +5421,7 @@
    "foto": "/img/catalogo/capa-de-lluvia-diforza--amarillo.webp",
    "nombreWeb": "Capa de lluvia Diforza",
    "descripcion": "Impermeable larga con capucha y broches. Amarilla o azul.",
-   "descripcionLarga": "La capa de lluvia Diforza es la más vendida de nuestro catálogo para trabajar bajo la lluvia. Larga, por debajo de la rodilla, cubre el cuerpo y protege la ropa de trabajo. Tiene capucha con cordón de ajuste, cierre frontal con broches a presión y puños elastizados que frenan la entrada de agua. Se ofrece en amarillo, para más visibilidad, y en azul marino, y se puede pedir con cinta reflectiva. Stock permanente para entregas en volumen.",
+   "descripcionLarga": "La capa de lluvia Diforza es la más vendida de nuestro catálogo para trabajar bajo la lluvia. Larga, por debajo de la rodilla, cubre el cuerpo y protege la ropa de trabajo. Tiene capucha con cordón de ajuste, cierre frontal con broches a presión y puños elastizados que frenan la entrada de agua. Se ofrece en amarillo, para más visibilidad, y en azul, y se puede pedir con cinta reflectiva. Stock permanente para entregas en volumen.",
    "specs": {
     "material": "Tela impermeable",
     "largo": "Por debajo de la rodilla",
@@ -5472,13 +5472,13 @@
      "fotoGenerada": false
     },
     {
-     "color": "azul-marino",
-     "colorFabricante": "Azul marino",
-     "foto": "/img/catalogo/capa-de-lluvia-diforza--azul-marino.webp",
-     "fotoGenerada": true
+     "color": "azul",
+     "colorFabricante": "Azul",
+     "foto": "/img/catalogo/capa-de-lluvia-diforza--azul.webp",
+     "fotoGenerada": false
     }
    ],
-   "nota": "Ventas ene–jun: 3.422 u CALLU (34 empresas) + ~27 u manuales (capas verdes y amarillas sin reflectivo). Stock 34.060. Reflectivo = opcional (usuario 10 oct). Azul = recoloreo de DIFORZA 135 (las fotos azules que pasó el usuario son de una capa Pampero → descartadas). Pedir foto real de la capa azul. Material/specs según foto y portada del catálogo → validar."
+   "nota": "Ventas ene–jun: 3.422 u CALLU (34 empresas) + ~27 u manuales (capas verdes y amarillas sin reflectivo). Stock 34.060. Reflectivo = opcional (usuario 10 oct). Azul = recoloreo de DIFORZA 135 (las fotos azules que pasó el usuario son de una capa Pampero → descartadas). Pedir foto real de la capa azul. Material/specs según foto y portada del catálogo → validar. · 16 oct: fotos sin modelo de Yesica (frente + espalda). Color azul = azul real (antes azul marino). Traje: espalda armada desde DIFORZA 130 sin persona y recoloreada (lluvia_fotos_16oct.py)."
   },
   {
    "id": "capa-de-lluvia-ombu",
@@ -8813,7 +8813,7 @@
     }
    ],
    "foto": "/img/catalogo/delantal-pvc-diforza--blanco.webp",
-   "nota": "Ventas ene–jun: 119 u / 7 empresas (DELPVCBL). Stock 4.691. Además se vendieron PVC verde (70 u / 2) y transparente manual (108 u / 1, catering) → ocultos por decisión del usuario, se cotizan igual. Foto real = placa 93 del catálogo (PNG con transparencia). Tiras de ajuste y usos: con IA → validar. Delantales de descarne siguen en EPP › Soldadura.",
+   "nota": "Ventas ene–jun: 119 u / 7 empresas (DELPVCBL). Stock 4.691. Además se vendieron PVC verde (70 u / 2) y transparente manual (108 u / 1, catering) → ocultos por decisión del usuario, se cotizan igual. Foto real = placa 93 del catálogo (PNG con transparencia). Tiras de ajuste y usos: con IA → validar. Delantales de descarne siguen en EPP › Soldadura. · 16 oct: foto sin modelo de Yesica (diforza/delantales/delantal de pvc.png, solo frente).",
    "tambienEn": [
     "sanidad-y-gastronomia"
    ]
@@ -13513,7 +13513,7 @@
      "foto": "/img/catalogo/mameluco-gabardina-diforza--azul-marino.webp"
     }
    ],
-   "nota": "Ventas ene–jun: 39 u / 4 empresas (azul marino). Stock 968. El naranja del ERP (MAMGABDIF-NJ) es el de alta visibilidad (producto aparte). Talles S al 4XL por el usuario (ERP también tiene 36–68). Specs del flyer del usuario."
+   "nota": "Ventas ene–jun: 39 u / 4 empresas (azul marino). Stock 968. El naranja del ERP (MAMGABDIF-NJ) es el de alta visibilidad (producto aparte). Talles S al 4XL por el usuario (ERP también tiene 36–68). Specs del flyer del usuario. · 16 oct: foto sin modelo (frente + espalda de pdf_15/16 sin cabeza, manos ni calzado; mamelucos_fotos_16oct.py)."
   },
   {
    "id": "mameluco-ignifugo-premium-geotex",
@@ -13849,7 +13849,7 @@
     "unidades": 4320,
     "empresas": 20
    },
-   "nota": "Ventas ene–jun: 2.894 u ZIAO (MAMLAMZIAO, todo 63 g) + 1.426 u laminado genérico (MAMELAM), 20 empresas. Stock ZIAO 30.006. Variantes 63 g / 55 g = densidad (mismo color, campo \"etiqueta\"); misma foto. Talles S al 5XL según sitio actual de Diforza (ERP: XS–3XL; ficha: S–3XL) → validar.",
+   "nota": "Ventas ene–jun: 2.894 u ZIAO (MAMLAMZIAO, todo 63 g) + 1.426 u laminado genérico (MAMELAM), 20 empresas. Stock ZIAO 30.006. Variantes 63 g / 55 g = densidad (mismo color, campo \"etiqueta\"); misma foto. Talles S al 5XL según sitio actual de Diforza (ERP: XS–3XL; ficha: S–3XL) → validar. · 16 oct: foto sin modelo de Yesica (ziao/Mono protector blanco_ vista frontal y posterior.png), misma para 63 y 55 g.",
    "foto": "/img/catalogo/mameluco-laminado-ziao--blanco-63-g.webp",
    "nombreWeb": "Mameluco descartable laminado ZIAO",
    "descripcion": "Laminado SFL respirable con capucha. En 63 g y 55 g.",
@@ -18901,7 +18901,7 @@
    ],
    "colores": [
     "amarillo",
-    "azul-marino"
+    "azul"
    ],
    "talles": "S al 3XL",
    "visible": true,
@@ -18912,7 +18912,7 @@
    "foto": "/img/catalogo/traje-de-lluvia-diforza--amarillo.webp",
    "nombreWeb": "Traje de lluvia Diforza",
    "descripcion": "Campera con capucha y pantalón impermeables. Amarillo o azul.",
-   "descripcionLarga": "El traje de lluvia Diforza, de dos piezas, para trabajar con libertad de movimiento bajo la lluvia. La campera tiene capucha con cordón, cierre frontal con broches a presión y dos bolsillos con tapa; el pantalón tiene cintura elastizada para un calce cómodo. Se ofrece en amarillo, para más visibilidad, y en azul marino, y se puede pedir con cinta reflectiva. Stock permanente para entregas en volumen.",
+   "descripcionLarga": "El traje de lluvia Diforza, de dos piezas, para trabajar con libertad de movimiento bajo la lluvia. La campera tiene capucha con cordón, cierre frontal con broches a presión y dos bolsillos con tapa; el pantalón tiene cintura elastizada para un calce cómodo. Se ofrece en amarillo, para más visibilidad, y en azul, y se puede pedir con cinta reflectiva. Stock permanente para entregas en volumen.",
    "specs": {
     "piezas": "Campera + pantalón",
     "material": "Tela impermeable",
@@ -18964,13 +18964,13 @@
      "fotoGenerada": false
     },
     {
-     "color": "azul-marino",
-     "colorFabricante": "Azul marino",
-     "foto": "/img/catalogo/traje-de-lluvia-diforza--azul-marino.webp",
+     "color": "azul",
+     "colorFabricante": "Azul",
+     "foto": "/img/catalogo/traje-de-lluvia-diforza--azul.webp",
      "fotoGenerada": false
     }
    ],
-   "nota": "Ventas ene–jun: 705 u TRAJLLUV (11 empresas) + 150 u manual \"Traje lluvia DPS azul marino\". Stock 9.872. ERP: amarillo y \"azul\" (AZL) → cargado azul marino como la portada del catálogo. Reflectivo = opcional. Azul = fotos reales frente + espalda que pasó el usuario 10 oct (usuario_traje-azul-*). Specs según foto y portada → validar."
+   "nota": "Ventas ene–jun: 705 u TRAJLLUV (11 empresas) + 150 u manual \"Traje lluvia DPS azul marino\". Stock 9.872. ERP: amarillo y \"azul\" (AZL) → cargado azul marino como la portada del catálogo. Reflectivo = opcional. Azul = fotos reales frente + espalda que pasó el usuario 10 oct (usuario_traje-azul-*). Specs según foto y portada → validar. · 16 oct: fotos sin modelo de Yesica (frente + espalda). Color azul = azul real (antes azul marino). Traje: espalda armada desde DIFORZA 130 sin persona y recoloreada (lluvia_fotos_16oct.py)."
   },
   {
    "id": "traje-de-lluvia-ombu",

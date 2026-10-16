@@ -9,6 +9,7 @@ const { productos: TODOS } = require("./catalogo.json");
 const { categorias } = require("./categorias.json");
 const { colores } = require("./colores.json");
 const site = require("./site.json");
+const { subcategorias: ORDEN } = require("./orden.json");
 
 const BASE = "/productos";
 const urlProducto = (id) => `${BASE}/${id}/`;
@@ -132,9 +133,23 @@ const productos = visibles.map((p) => {
   return out;
 });
 
-// Orden por defecto: más vendidos (empresas, después unidades), después A–Z
-const ordenar = (a, b) => b.empresas - a.empresas || b.ventas - a.ventas || a.nombre.localeCompare(b.nombre, "es");
-productos.sort(ordenar);
+// Orden por defecto (16 oct): agrupado según orden.json (líneas y subcategorías en el orden de categorias.json;
+// dentro de cada subcategoría, el orden curado). Lo que no figure en orden.json va al final, por ventas y A–Z.
+const porVentas = (a, b) => b.empresas - a.empresas || b.ventas - a.ventas || a.nombre.localeCompare(b.nombre, "es");
+const POS_SUB = {};
+categorias.forEach((c, li) => c.subcategorias.forEach((s, si) => (POS_SUB[s.id] = li * 100 + si)));
+const posEn = (p, sid) => {
+  const i = (ORDEN[sid] || []).indexOf(p.id);
+  return i < 0 ? 9999 : i;
+};
+// Ordena una lista según la subcategoría con la que cada producto aparece en ese listado (subcat propia, o la de tambienEn si se pide una)
+function ordenarEn(items, subDe) {
+  return items.sort((a, b) => {
+    const sa = subDe(a), sb = subDe(b);
+    return POS_SUB[sa] - POS_SUB[sb] || posEn(a, sa) - posEn(b, sb) || porVentas(a, b);
+  });
+}
+ordenarEn(productos, (p) => p.sub.id);
 const porId = Object.fromEntries(productos.map((p) => [p.id, p]));
 
 // Relacionados: misma subcategoría (y las de tambienEn), hasta 8
@@ -143,7 +158,7 @@ for (const p of productos) {
   p.relacionados = productos.filter((q) => q.id !== p.id && (subs.has(q.sub.id) || q.tambienEn.some((t) => subs.has(t.id)))).slice(0, 8).map((q) => q.card);
 }
 
-const enSub = (sid) => productos.filter((p) => p.sub.id === sid || p.tambienEn.some((t) => t.id === sid));
+const enSub = (sid) => ordenarEn(productos.filter((p) => p.sub.id === sid || p.tambienEn.some((t) => t.id === sid)), () => sid);
 
 // Facetas de un listado: subcategorías, marcas y colores presentes (con cantidad), para los filtros
 const slug = (t) => sinTildes(t).replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -180,7 +195,11 @@ const lineas = categorias.map((c) => {
       return o;
     })
     .filter(Boolean);
-  const items = productos.filter((p) => p.linea.id === c.id || p.tambienEn.some((t) => t.linea === c.id));
+  // En la página de la línea, un producto de otra línea (tambienEn) se ubica en su subcategoría de esta línea
+  const items = ordenarEn(
+    productos.filter((p) => p.linea.id === c.id || p.tambienEn.some((t) => t.linea === c.id)),
+    (p) => (p.linea.id === c.id ? p.sub.id : p.tambienEn.find((t) => t.linea === c.id).id)
+  );
   return { id: c.id, nombre: c.nombre, landing: c.href, portadas: subs.map((x) => x.portada).filter(Boolean).slice(0, 3), url: urlLinea(c.id), total: items.length, subcategorias: subs, productos: items, facetas: facetas(items, c.id) };
 });
 
