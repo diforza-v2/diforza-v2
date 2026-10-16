@@ -169,7 +169,7 @@
     "negro"
    ],
    "talles": "XS al 6XL",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 87,
     "empresas": 1
@@ -244,7 +244,7 @@
     }
    ],
    "foto": "/img/catalogo/ambo-sanidad--azul-marino.webp",
-   "nota": "Ventas ene–jun: 87 u / 1 empresa (AMBSAN). Unifica chaqueta de ambo (CHAQAMBO) y ambo combinado. Base: foto de ambo genérico (Openverse/Flickr CC0, tiene etiquetitas de la marca original Dagacci). FOTOS PROVISORIAS (genéricas CC0 de internet + recoloreos, ver _creditos_licencias.txt) → reemplazar por fotos reales de Diforza. Specs con IA → validar."
+   "nota": "Ventas ene–jun: 87 u / 1 empresa (AMBSAN). Unifica chaqueta de ambo (CHAQAMBO) y ambo combinado. Base: foto de ambo genérico (Openverse/Flickr CC0, tiene etiquetitas de la marca original Dagacci). FOTOS PROVISORIAS (genéricas CC0 de internet + recoloreos, ver _creditos_licencias.txt) → reemplazar por fotos reales de Diforza. Specs con IA → validar. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "casco-libus-andes",
@@ -1556,7 +1556,7 @@
     "gris"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 710,
     "empresas": 3
@@ -1625,7 +1625,7 @@
    ],
    "foto": "/img/catalogo/anteojo-depascale-ucu111b--transparente.webp",
    "fichaTecnica": "/assets/docs/fichas/anteojo-depascale-ucu111b--transparente.pdf",
-   "nota": "Material oficial De Pascale (API) en _assets/fotos_marcas/depascale/UCU111B_* y UCU112B_*. El ERP lo tenía como \"Diforza\" (ANTUCUDP) y \"oscuro\" (ANTUCUOSCDP) = UCU112B gris. De Pascale lo lista como equivalente al Libus Eco Line HC (900558/900555)."
+   "nota": "Material oficial De Pascale (API) en _assets/fotos_marcas/depascale/UCU111B_* y UCU112B_*. El ERP lo tenía como \"Diforza\" (ANTUCUDP) y \"oscuro\" (ANTUCUOSCDP) = UCU112B gris. De Pascale lo lista como equivalente al Libus Eco Line HC (900558/900555). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "anteojo-ucu-oscuro-dps",
@@ -1805,7 +1805,7 @@
     "gris"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 18,
     "empresas": 3
@@ -1874,7 +1874,7 @@
     }
    ],
    "fichaTecnica": "/assets/docs/fichas/antiparra-libus-aviator.pdf",
-   "nota": "Fotos de segutecnica.com, fichas técnicas oficiales de libus.com.ar (_assets/fotos_marcas/libus/ocular/aviator/). Unifica 2 productos del ERP; ventas ene–jun sumadas (empresas sumadas por variante: puede haber repetidas)."
+   "nota": "Fotos de segutecnica.com, fichas técnicas oficiales de libus.com.ar (_assets/fotos_marcas/libus/ocular/aviator/). Unifica 2 productos del ERP; ventas ene–jun sumadas (empresas sumadas por variante: puede haber repetidas). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "antiparra-fravida-1702-trasparente",
@@ -2057,7 +2057,7 @@
     "verde-ingles"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 10,
     "empresas": 1
@@ -2113,7 +2113,7 @@
      "fichaTecnica": "/assets/docs/fichas/antiparra-libus-soldador-flip-up.pdf"
     }
    ],
-   "nota": "Selección del usuario (11 oct). Fotos y ficha oficiales de Libus en _assets/fotos_marcas/libus/soldador/ANTIPARRA FLIP UP/ (fondo gris → blanco). Usa cristal rectangular (no incluido).",
+   "nota": "Selección del usuario (11 oct). Fotos y ficha oficiales de Libus en _assets/fotos_marcas/libus/soldador/ANTIPARRA FLIP UP/ (fondo gris → blanco). Usa cristal rectangular (no incluido). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "fichaTecnica": "/assets/docs/fichas/antiparra-libus-soldador-flip-up.pdf",
    "galeria": [
     "/img/catalogo/antiparra-libus-soldador-flip-up--vista-2.webp",
@@ -2317,7 +2317,7 @@
     "negro"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/arnes-libus-strong-welder--repuesto.webp",
    "nombreWeb": "Arnés a cremallera de repuesto Libus Strong Welder",
    "ventasEneJun2026": null,
@@ -2359,7 +2359,7 @@
      "fotoGenerada": false
     }
    ],
-   "nota": "Selección del usuario (11 oct). Fotos y ficha oficiales de Libus en _assets/fotos_marcas/libus/soldador/ARNÉS STRONG WELDER 510-1000-1500-2000/ (fondo gris → blanco). Sin ficha oficial.",
+   "nota": "Selección del usuario (11 oct). Fotos y ficha oficiales de Libus en _assets/fotos_marcas/libus/soldador/ARNÉS STRONG WELDER 510-1000-1500-2000/ (fondo gris → blanco). Sin ficha oficial. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "galeria": [
     "/img/catalogo/arnes-libus-strong-welder--vista-2.webp"
    ]
@@ -2470,7 +2470,7 @@
     "amarillo"
    ],
    "talles": "Único, regulable",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Arnés anticaídas SKY 10404 con toma dorsal y sujeción en cintura",
    "descripcion": "Toma dorsal, 2 argollas en cintura y protector lumbar de 100 mm.",
    "descripcionLarga": "Arnés completo tipo paracaidista SKY 10404 con toma anticaídas dorsal y dos argollas de sujeción en la cintura para trabajos de posicionamiento. Lleva protector lumbar de cinta de 100 mm y hebillas de regulación en hombros y piernas. Bandas de poliéster de alta tenacidad. Fabricado en Argentina con sello IRAM 3622-1.",
@@ -2529,7 +2529,7 @@
    "foto": "/img/catalogo/arnes-sky-10404--amarillo-y-azul.webp",
    "fichaTecnica": "/assets/docs/fichas/arnes-sky-10404.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10404 (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10404/. ERP lo tiene con marca \"Eslingar\". Talle: único regulable (la ficha no indica talles) → validar con Diego."
+   "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10404 (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10404/. ERP lo tiene con marca \"Eslingar\". Talle: único regulable (la ficha no indica talles) → validar con Diego. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "arnes-standar-4-puntos-3m",
@@ -2872,7 +2872,7 @@
     "celeste"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 2201,
     "empresas": 5
@@ -2929,7 +2929,7 @@
     }
    ],
    "foto": "/img/catalogo/barbijo-tricapa-con-certificado-anmat--celeste.webp",
-   "nota": "Ventas ene–jun: 1.701 u / 4 (BATRAN) + 500 u / 1 barbijo descartable con elástico (unificado). Stock 1.600. Foto de la TiendaNube vieja de Diforza (barbijo SMS celeste). FOTOS PROVISORIAS (genéricas CC0 de internet + recoloreos, ver _creditos_licencias.txt) → reemplazar por fotos reales de Diforza. Specs con IA → validar.",
+   "nota": "Ventas ene–jun: 1.701 u / 4 (BATRAN) + 500 u / 1 barbijo descartable con elástico (unificado). Stock 1.600. Foto de la TiendaNube vieja de Diforza (barbijo SMS celeste). FOTOS PROVISORIAS (genéricas CC0 de internet + recoloreos, ver _creditos_licencias.txt) → reemplazar por fotos reales de Diforza. Specs con IA → validar. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "tambienEn": [
     "sanidad-y-gastronomia"
    ]
@@ -3082,7 +3082,7 @@
     "marron"
    ],
    "talles": "36 al 47",
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/borcegui-ombu-ozono-plus--negro.webp",
    "nombreWeb": "Borceguí de seguridad Ombú Ozono Plus",
    "descripcion": "Caña alta para trabajos exigentes: Cordura, puntera de acero y reflectivos.",
@@ -3106,7 +3106,8 @@
      "fichaTecnica": "/assets/docs/fichas/borcegui-ombu-ozono-plus--marron.pdf"
     }
    ],
-   "fichaTecnica": "/assets/docs/fichas/borcegui-ombu-ozono-plus--negro.pdf"
+   "fichaTecnica": "/assets/docs/fichas/borcegui-ombu-ozono-plus--negro.pdf",
+   "nota": "Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "borcegui-tactico-c-punt-de-acero-base-goma-febo",
@@ -3297,14 +3298,14 @@
    ],
    "colores": [],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 20,
     "empresas": 1
    },
    "nombreWeb": "Botella lavaojos de emergencia",
    "descripcion": "Botella de lavado ocular de emergencia con copa ocular.",
-   "nota": " 13 oct: visible sin foto (stock 47). Pedir a Diego foto o modelo/fabricante."
+   "nota": " 13 oct: visible sin foto (stock 47). Pedir a Diego foto o modelo/fabricante. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "botin-boro-con-puntera-de-acero-cas",
@@ -3424,9 +3425,9 @@
     "negro"
    ],
    "talles": "35 al 47",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": null,
-   "nota": "Alta 9 oct 2026 (Fly 53BAF). No está cargado en el ERP: código BOTCONW53BAF inventado siguiendo el patrón Conwork (provisorio, avisar a Diforza para darlo de alta igual).",
+   "nota": "Alta 9 oct 2026 (Fly 53BAF). No está cargado en el ERP: código BOTCONW53BAF inventado siguiendo el patrón Conwork (provisorio, avisar a Diforza para darlo de alta igual). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "nombreWeb": "Botín de seguridad Conwork Fly 53BAF",
    "lineaMarca": "Fly",
    "descripcion": "100 % cuero, sin partes textiles: más resistente y liviano.",
@@ -4140,7 +4141,7 @@
     "blanco"
    ],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Botiquín metálico Practy N°16 (24 elementos)",
    "descripcion": "Chapa con pintura horneada, 35,5 × 27 × 12,5 cm. 24 elementos.",
    "descripcionLarga": "Botiquín de primeros auxilios Practy N°16, en gabinete de chapa de hierro con pintura horneada blanca, puerta con manija y estantes interiores. Mide 35,5 × 27 × 12,5 cm y viene completo con 24 elementos: gasas, algodón, vendas de 5, 7 y 10 cm, apósitos, tela adhesiva, antiséptico, solución para quemaduras, agua oxigenada, alcohol, guantes descartables, tijera, pinza, termómetro, copita lavaojos, espejo y más. Pensado para cumplir con el botiquín obligatorio en fábricas, obras, depósitos y oficinas.",
@@ -4195,7 +4196,7 @@
    "galeria": [
     "/img/catalogo/botiquin-practy-metalico-n16--vista-2.webp"
    ],
-   "nota": "ERP BOTMET24UN. Sin stock ni ventas ene–jun. Fotos, medidas y contenido de lubeseguridad.com.ar (cód. 11274); Practy no tiene web propia."
+   "nota": "ERP BOTMET24UN. Sin stock ni ventas ene–jun. Fotos, medidas y contenido de lubeseguridad.com.ar (cód. 11274); Practy no tiene web propia. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "botiquin-plastico-11-elementos-13x8x7",
@@ -4571,7 +4572,7 @@
     "naranja"
    ],
    "talles": "—",
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/cadena-plastica-rojo-blanco-x-25-mts--roja-y-blanca.webp",
    "nombreWeb": "Cadena plástica de señalización Conoflex",
    "descripcion": "Cadena de polietileno con filtro UV. Roja/blanca, amarilla/negra o naranja.",
@@ -4637,7 +4638,7 @@
    ],
    "fichaTecnica": "/assets/docs/fichas/cadena-plastica-rojo-blanco-x-25-mts.pdf",
    "ventasEneJun2026": null,
-   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['CADE25', 'CADENAMIX', 'CADSEÑVI']."
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['CADE25', 'CADENAMIX', 'CADSEÑVI']. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "camisa-clasica-diforza",
@@ -6515,7 +6516,7 @@
     "verde"
    ],
    "talles": "XS al 6XL",
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/chomba-clasica-diforza-ml--azul-marino.webp",
    "nombreWeb": "Chomba clásica manga larga Diforza",
    "descripcion": "Piqué de manga larga con cuello tejido y cartera de 2 botones.",
@@ -6592,7 +6593,8 @@
      "foto": "/img/catalogo/chomba-clasica-diforza-ml--verde.webp",
      "fotoGenerada": true
     }
-   ]
+   ],
+   "nota": "Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "cinta-de-precaucion-amarilla-y-negra-x-200mts",
@@ -6607,7 +6609,7 @@
     "amarillo"
    ],
    "talles": "—",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Cinta de precaución amarilla y negra 200 m De Pascale",
    "descripcion": "Cinta de señalización \"PRECAUCIÓN\", rollo de 200 m.",
    "descripcionLarga": "Cinta de señalización amarilla y negra con la leyenda \"PRECAUCIÓN\", liviana (30 micrones), en rollo de 200 m. Para delimitar en forma rápida zonas de trabajo, derrames, sectores en mantenimiento o áreas restringidas. Línea UCU de De Pascale.",
@@ -6662,7 +6664,7 @@
    "foto": "/img/catalogo/cinta-de-precaucion-amarilla-y-negra-x-200mts--amarilla-y-negra.webp",
    "fichaTecnica": "/assets/docs/fichas/cinta-de-precaucion-amarilla-y-negra-x-200mts.pdf",
    "ventasEneJun2026": null,
-   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Códigos ERP ['CINPRECA']."
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Códigos ERP ['CINPRECA']. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "cinta-peligro-x-100-mts",
@@ -6776,7 +6778,7 @@
     "blanco"
    ],
    "talles": "—",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Cinta reflectiva vehicular De Pascale",
    "descripcion": "Rollo de 45,7 m. Roja, blanca o cebrada roja/blanca.",
    "descripcionLarga": "Cinta reflectiva autoadhesiva para vehículos, maquinaria, contenedores y estructuras: hace visibles los bordes y laterales de noche con la luz de los faros. Rollos de 45,7 m, en roja y blanca de 5 cm y cebrada roja/blanca de 7,5 cm. Línea DPC de De Pascale.",
@@ -6847,7 +6849,7 @@
    "foto": "/img/catalogo/cinta-reflectiva-roja--roja-5-cm.webp",
    "fichaTecnica": "/assets/docs/fichas/cinta-reflectiva-roja--roja-5-cm.pdf",
    "ventasEneJun2026": null,
-   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Códigos ERP ['CINRBL', 'CINRECEBBYR', 'CINRERJ']."
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Códigos ERP ['CINRBL', 'CINRECEBBYR', 'CINRERJ']. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "cinta-reflectiva-blanca",
@@ -6922,7 +6924,7 @@
     "blanco"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 3968,
     "empresas": 1
@@ -6990,7 +6992,7 @@
     }
    ],
    "foto": "/img/catalogo/cofia-de-tela-azul--azul.webp",
-   "nota": "Ventas ene–jun: azul 1.976 + gris 997 + blanca 995 u (1 cliente). Stock ~3.900. FOTOS PROVISORIAS (genéricas CC0 de internet + recoloreos, ver _creditos_licencias.txt) → reemplazar por fotos reales de Diforza. Specs con IA → validar."
+   "nota": "Ventas ene–jun: azul 1.976 + gris 997 + blanca 995 u (1 cliente). Stock ~3.900. FOTOS PROVISORIAS (genéricas CC0 de internet + recoloreos, ver _creditos_licencias.txt) → reemplazar por fotos reales de Diforza. Specs con IA → validar. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "cofia-de-tela-blanca",
@@ -7041,7 +7043,7 @@
     "blanco"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 300,
     "empresas": 1
@@ -7097,7 +7099,7 @@
     }
    ],
    "foto": null,
-   "nota": "Ventas ene–jun: 300 u / 1 empresa. Stock 1.000. Sin foto (no se encontró genérica CC0 usable). FOTOS PROVISORIAS (genéricas CC0 de internet + recoloreos, ver _creditos_licencias.txt) → reemplazar por fotos reales de Diforza. Specs con IA → validar."
+   "nota": "Ventas ene–jun: 300 u / 1 empresa. Stock 1.000. Sin foto (no se encontró genérica CC0 usable). FOTOS PROVISORIAS (genéricas CC0 de internet + recoloreos, ver _creditos_licencias.txt) → reemplazar por fotos reales de Diforza. Specs con IA → validar. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "cofia-hongo-de-tela",
@@ -7140,7 +7142,7 @@
     "amarillo"
    ],
    "talles": "—",
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/amarre-sky-10474er--amarillo.webp",
    "nombreWeb": "Amarre de sujeción regulable SKY 10474ER (2 m, mosquetones de 18 y 55 mm)",
    "descripcion": "Cola de posicionamiento de 2 m con mosquetón de 18 mm y de 55 mm.",
@@ -7198,7 +7200,7 @@
    ],
    "fichaTecnica": "/assets/docs/fichas/amarre-sky-10474er.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. El ERP lo tenía con marca \"Diforza\" (WXECV…); es SKY según el usuario."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. El ERP lo tenía con marca \"Diforza\" (WXECV…); es SKY según el usuario. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "amarre-sky-10475e",
@@ -7775,7 +7777,7 @@
     "azul"
    ],
    "talles": "—",
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/conector-anclaje-corbata-sky--1-m.webp",
    "nombreWeb": "Conector de anclaje tipo corbata SKY (1 m / 2 m)",
    "descripcion": "Cinta de anclaje de 50 mm con argolla metálica. 1 m y 2 m.",
@@ -7841,7 +7843,7 @@
    ],
    "fichaTecnica": "/assets/docs/fichas/conector-anclaje-corbata-sky.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. Conectores circulares y corbata: misma foto para todos los largos (es la del fabricante)."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. Conectores circulares y corbata: misma foto para todos los largos (es la del fabricante). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "conector-anclaje-2mts",
@@ -8138,7 +8140,7 @@
    "colores": [
     "naranja"
    ],
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 180,
     "empresas": 3
@@ -8199,7 +8201,7 @@
    ],
    "foto": "/img/catalogo/cono-king-cone-semiflex-70-cm-1570lsf-2r--naranja.webp",
    "fichaTecnica": "/assets/docs/fichas/cono-king-cone-semiflex-70-cm-1570lsf-2r.pdf",
-   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['CONMODKICON']."
+   "nota": "Material oficial del fabricante (Conoflex) en _assets/fotos_marcas/. Códigos ERP ['CONMODKICON']. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "cono-obrador-classic-2pie-120-cm-2301-classic-2r",
@@ -8611,7 +8613,7 @@
     "celeste"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Cubre calzado descartable Diforza",
    "descripcion": "Cubre calzado descartable con elástico. Se pone sobre el zapato.",
    "descripcionLarga": "El cubre calzado descartable Diforza se coloca sobre el zapato para no ingresar suciedad a áreas limpias. Con elástico en la boca para que quede firme. Ideal para visitas a planta, laboratorios, quirófanos e industria alimenticia.",
@@ -8662,7 +8664,7 @@
     }
    ],
    "foto": "/img/catalogo/cubre-calzado-descartable--celeste.webp",
-   "nota": "Sin ventas ene–jun; stock 200. Foto genérica Wikimedia CC0, baja resolución. FOTOS PROVISORIAS (genéricas CC0 de internet + recoloreos, ver _creditos_licencias.txt) → reemplazar por fotos reales de Diforza. Specs con IA → validar."
+   "nota": "Sin ventas ene–jun; stock 200. Foto genérica Wikimedia CC0, baja resolución. FOTOS PROVISORIAS (genéricas CC0 de internet + recoloreos, ver _creditos_licencias.txt) → reemplazar por fotos reales de Diforza. Specs con IA → validar. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "cuello-polar",
@@ -8959,8 +8961,8 @@
     "blanco"
    ],
    "talles": "Único",
-   "visible": true,
-   "nota": "Reactivado 10 oct por el usuario (gastronomía). Sin ventas ni stock ene–jun → confirmar con Diego que lo sigue vendiendo. FOTO PROVISORIA = la del delantal de PVC blanco (placa 93; no se encontró genérica CC0 de delantal de grafa). Specs con IA → validar.",
+   "visible": false,
+   "nota": "Reactivado 10 oct por el usuario (gastronomía). Sin ventas ni stock ene–jun → confirmar con Diego que lo sigue vendiendo. FOTO PROVISORIA = la del delantal de PVC blanco (placa 93; no se encontró genérica CC0 de delantal de grafa). Specs con IA → validar. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "nombreWeb": "Delantal de cocinero de grafa Diforza",
    "descripcion": "Delantal pechera de grafa blanca, con tiras para atar. Para cocina.",
    "descripcionLarga": "El delantal de cocinero Diforza, de grafa blanca, es el clásico de las cocinas profesionales: pechera completa con tira al cuello y tiras largas para atar en la cintura. La grafa es una tela de algodón resistente, que aguanta el uso diario y los lavados a alta temperatura. Ideal para restaurantes, comedores, catering y plantas de alimentos, y se personaliza con el logo del local o la empresa.",
@@ -9041,7 +9043,7 @@
     "azul"
    ],
    "talles": "—",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 20,
     "empresas": 4
@@ -9097,7 +9099,7 @@
    "foto": "/img/catalogo/antitrauma-sky-10441--azul.webp",
    "fichaTecnica": "/assets/docs/fichas/antitrauma-sky-10441.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "econo-semiflex-c-base-2pie-70-cm-2071le-2r",
@@ -9363,7 +9365,7 @@
     "blanco"
    ],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Estación lavaojos portátil de pared North 3826",
    "descripcion": "Estación de pared con 2 botellas de 1 litro para lavado ocular.",
    "descripcionLarga": "La estación lavaojos portátil North/Servus 3826 da una respuesta inmediata ante salpicaduras de productos químicos, polvo o partículas en los ojos. Se fija a la pared con una base plástica de 4 orificios y lleva dos botellas de 1 litro. Cada botella tiene tapa contra la contaminación, tubo de pesca que toma el líquido desde el fondo, copa que se adapta al globo ocular y tubo de descarga con válvula para que el líquido usado no vuelva al recipiente. Se entrega vacía: se carga con solución fisiológica o agua con bactericida, y el contenido se revisa y recambia periódicamente.",
@@ -9421,7 +9423,7 @@
     "/img/catalogo/estacion-lavaojos-north-3826--vista-2.webp",
     "/img/catalogo/estacion-lavaojos-north-3826--vista-3.webp"
    ],
-   "nota": "ERP: ESTACIONLAVOJ \"Paimun\" (distribuidor) = North/Servus 3826. Sin stock ni ventas ene–jun. Fotos y descripción de e-paimun.com.ar. Sin ficha técnica."
+   "nota": "ERP: ESTACIONLAVOJ \"Paimun\" (distribuidor) = North/Servus 3826. Sin stock ni ventas ene–jun. Fotos y descripción de e-paimun.com.ar. Sin ficha técnica. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "faja-lumbar-2xl-ombu",
@@ -9832,13 +9834,13 @@
     "verde-ingles"
    ],
    "talles": "Único (regulable)",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 6474,
     "empresas": 13
    },
    "foto": "/img/catalogo/gorra-diforza--azul.webp",
-   "nota": "Ventas ene–jun: 414 u con código (GORRA azul, 9 empresas) + ~6.060 u manuales con logo (6.000 negras c/logo de 1 cliente, azules c/logo, etc.). Unifica 5 y 6 gajos (9 oct). Colores: azul (foto real DIFORZA 140), azul marino, negro (vendida con logo), blanco y verde inglés del ERP → recoloreos. Tela algodón/poliéster del ERP (GOR6GAJ); resto con IA → validar.",
+   "nota": "Ventas ene–jun: 414 u con código (GORRA azul, 9 empresas) + ~6.060 u manuales con logo (6.000 negras c/logo de 1 cliente, azules c/logo, etc.). Unifica 5 y 6 gajos (9 oct). Colores: azul (foto real DIFORZA 140), azul marino, negro (vendida con logo), blanco y verde inglés del ERP → recoloreos. Tela algodón/poliéster del ERP (GOR6GAJ); resto con IA → validar. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "nombreWeb": "Gorra de trabajo Diforza",
    "descripcion": "Gorra con visera, regulable. Ideal para bordar o estampar el logo.",
    "descripcionLarga": "La gorra de trabajo Diforza protege del sol en las tareas al aire libre y completa el uniforme con la imagen de la empresa. Tiene visera, cierre regulable atrás para un talle único que se adapta a todos, y una tela de algodón y poliéster cómoda y resistente a los lavados. Es la gorra que más personalizan nuestros clientes: se borda o se estampa con el logo de la empresa en el frente. Disponible en varios colores para combinar con el resto de la ropa de trabajo.",
@@ -10178,7 +10180,7 @@
     "amarillo"
    ],
    "talles": "8 al 11",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 85,
     "empresas": 1
@@ -10238,7 +10240,7 @@
    ],
    "foto": "/img/catalogo/guante-anti-impacto--amarillo-y-naranja.webp",
    "fichaTecnica": "/assets/docs/fichas/guante-anti-impacto.pdf",
-   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUAIMPAC']. Talles a validar con Diforza."
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUAIMPAC']. Talles a validar con Diforza. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "guante-anticorte",
@@ -10272,7 +10274,7 @@
     "gris"
    ],
    "talles": "7 al 10",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 200,
     "empresas": 1
@@ -10331,7 +10333,7 @@
    ],
    "foto": "/img/catalogo/guante-anticorte-ap1306-ws--gris.webp",
    "fichaTecnica": "/assets/docs/fichas/guante-anticorte-ap1306-ws.pdf",
-   "nota": "Material oficial del fabricante (WorkSafe) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['9GUANTAPI306WS', 'GUANTAP1306WS']. Talles a validar con Diforza."
+   "nota": "Material oficial del fabricante (WorkSafe) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['9GUANTAPI306WS', 'GUANTAP1306WS']. Talles a validar con Diforza. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "guante-anticorte-anti-impacto-ws-tx2000",
@@ -11140,7 +11142,7 @@
     "negro"
    ],
    "talles": "S al XL",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Guante de látex uso industrial negro De Pascale",
    "descripcion": "Látex negro de 0,6 mm. Para albañilería, cemento y cerámica.",
    "descripcionLarga": "Guante de látex negro de uso industrial, de 0,6 mm de espesor, flexible y cómodo. Es el guante indicado para albañilería, preparación de mezclas de cemento y colocación de cerámicos y porcelanatos: protege la piel de la cal y el cemento y resiste el uso diario. Certificado según IRAM 3607-3608.",
@@ -11195,7 +11197,7 @@
    "foto": "/img/catalogo/guante-latex-negro-industrial--negro.webp",
    "fichaTecnica": "/assets/docs/fichas/guante-latex-negro-industrial.pdf",
    "ventasEneJun2026": null,
-   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUALATINDWS', 'GUALATNE']. Talles a validar con Diforza. 14 oct: el código GUALATINDWS pasó al látex WorkSafe LATEX80GR."
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUALATINDWS', 'GUALATNE']. Talles a validar con Diforza. 14 oct: el código GUALATINDWS pasó al látex WorkSafe LATEX80GR. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "guante-latex-uso-domestico",
@@ -11950,7 +11952,7 @@
     "gris"
    ],
    "talles": "7 al 11",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 600,
     "empresas": 1
@@ -12009,7 +12011,7 @@
    ],
    "foto": "/img/catalogo/guante-sin-cost-anticorte--gris-y-negro.webp",
    "fichaTecnica": "/assets/docs/fichas/guante-sin-cost-anticorte.pdf",
-   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUANTDPS']. Talles a validar con Diforza."
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUANTDPS']. Talles a validar con Diforza. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "guante-depascale-soldador-50202",
@@ -12024,7 +12026,7 @@
     "naranja"
    ],
    "talles": "10",
-   "visible": true,
+   "visible": false,
    "tambienEn": [
     "proteccion-manos"
    ],
@@ -12033,7 +12035,7 @@
     "empresas": 4
    },
    "foto": "/img/catalogo/guante-depascale-soldador-50202--50202.webp",
-   "nota": "11 oct: el ERP lo tenía como Diforza; equivalente De Pascale elegido con el usuario. Fotos y ficha de la API De Pascale en _assets/fotos_marcas/depascale/soldador/guante-soldador-descarne-forrado-kevlar/.",
+   "nota": "11 oct: el ERP lo tenía como Diforza; equivalente De Pascale elegido con el usuario. Fotos y ficha de la API De Pascale en _assets/fotos_marcas/depascale/soldador/guante-soldador-descarne-forrado-kevlar/. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "nombreWeb": "Guante de soldador descarne forrado con costura Kevlar De Pascale 50202",
    "descripcion": "Guante largo de descarne forrado, costura ignífuga de Kevlar.",
    "descripcionLarga": "Guante de soldador De Pascale 50202, el más vendido de la línea de soldadura de Diforza. Cuero descarne americano, largo, forrado por dentro, con refuerzo y doble costura de hilado ignífugo (Kevlar) en la palma: da gran destreza y confort y aguanta chispas y salpicaduras. Certificado IRAM 3607-3608 (EN 388: 4143X).",
@@ -12138,7 +12140,7 @@
     "negro"
    ],
    "talles": "7 al 11",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Guante tejido sin costura recubierto completo en nitrilo De Pascale",
    "descripcion": "Tejido de poliéster sin costura con baño completo de nitrilo negro.",
    "descripcionLarga": "Guante tejido de poliéster sin costuras, recubierto completamente en nitrilo en palma y dorso. Combina la destreza de un guante tejido (nivel 5) con la protección de un baño completo: máximo agarre en piezas frías, húmedas o secas y resistencia a la abrasión y la humedad. Certificado según IRAM 3607-3608.",
@@ -12195,7 +12197,7 @@
    "foto": "/img/catalogo/guante-tejido-bano-completo-nitrilo--negro.webp",
    "fichaTecnica": "/assets/docs/fichas/guante-tejido-bano-completo-nitrilo.pdf",
    "ventasEneJun2026": null,
-   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUABAÑCNIT', 'GUBAÑCNIT']. Talles a validar con Diforza."
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUABAÑCNIT', 'GUBAÑCNIT']. Talles a validar con Diforza. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "guante-tejido-g7-jersey-de-spectra-liso",
@@ -13208,7 +13210,7 @@
     "blanco"
    ],
    "talles": "—",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Línea de anclaje de soga SKY 10552 (20 m, con contrapeso)",
    "descripcion": "Línea de vida vertical de soga de 13 mm y 20 m con contrapeso.",
    "descripcionLarga": "Línea de anclaje vertical SKY 10552: soga trenzada de 13 mm y 20 m, con conector ojal en el extremo superior, contrapeso que la mantiene tensa y hebilla de regulación. Resistencia estática de 2.200 kg. Se usa junto con un salvacaídas para soga para trabajos en fachadas, escaleras y estructuras.",
@@ -13262,7 +13264,7 @@
    "foto": "/img/catalogo/linea-anclaje-sky-10552--blanca.webp",
    "fichaTecnica": "/assets/docs/fichas/linea-anclaje-sky-10552.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "malla-facial-libus-forestal",
@@ -13525,7 +13527,7 @@
     "gris"
    ],
    "talles": "XS al 5XL",
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/mameluco-ignifugo-premium-geotex--azul-marino.webp",
    "nombreWeb": "Mameluco ignífugo premium Geotex",
    "descripcion": "Ignífugo 88 % algodón / 12 % poliamida, con reflectivos ignífugos.",
@@ -13588,7 +13590,7 @@
      "fotoGenerada": true
     }
    ],
-   "nota": "Producto nuevo 10 oct. Info y fotos de geotex.com.ar/productos/mamelucos-ignifugos/mameluco-ignifugo-premium (Geotex ofrece también 100 % algodón; se cargó 88/12 por indicación del usuario). Sitio actual de Diforza: \"MAMELUCO Azul c refl\", marca GEOTEX, XS–5XL. Gris = recoloreo. Sin código ERP → validar con Diego."
+   "nota": "Producto nuevo 10 oct. Info y fotos de geotex.com.ar/productos/mamelucos-ignifugos/mameluco-ignifugo-premium (Geotex ofrece también 100 % algodón; se cargó 88/12 por indicación del usuario). Sitio actual de Diforza: \"MAMELUCO Azul c refl\", marca GEOTEX, XS–5XL. Gris = recoloreo. Sin código ERP → validar con Diego. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "mameluco-termico-diforza",
@@ -13603,9 +13605,9 @@
     "azul-marino"
    ],
    "talles": "S al 4XL",
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/mameluco-termico-diforza--azul-marino.webp",
-   "nota": "Ex \"Mameluco Alaska\" (ERP MAMELALASKA, XS–6XL, sin ventas ni stock). Foto real DIFORZA 35. Specs armadas con IA desde la foto; talles copiados de la gabardina (S al 4XL) por indicación del usuario 10 oct → validar con Diego.",
+   "nota": "Ex \"Mameluco Alaska\" (ERP MAMELALASKA, XS–6XL, sin ventas ni stock). Foto real DIFORZA 35. Specs armadas con IA desde la foto; talles copiados de la gabardina (S al 4XL) por indicación del usuario 10 oct → validar con Diego. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "nombreWeb": "Mameluco térmico Diforza",
    "descripcion": "Acolchado con capucha y cintas reflectivas, para frío intenso.",
    "descripcionLarga": "El mameluco térmico Diforza para trabajar con frío intenso: cámaras frigoríficas, depósitos refrigerados o trabajos al aire libre en invierno. Acolchado de cuerpo entero con capucha, cierre frontal con solapa, cintura y puños ajustables, y cintas reflectivas en pecho, brazos y piernas para ser visto con poca luz. Se personaliza con el logo de la empresa.",
@@ -13672,7 +13674,7 @@
     "naranja"
    ],
    "talles": "44 al 60",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Mameluco de trabajo alta visibilidad Diforza",
    "descripcion": "Gabardina 8 oz 100 % algodón, naranja con cintas 3M de 5 cm.",
    "descripcionLarga": "El mameluco Diforza para trabajar donde hay que ser visto: color naranja con tiras reflectivas 3M gris plata de 5 cm en pecho y piernas, que devuelven la luz de los faros y linternas. Confeccionado en gabardina de 8 oz 100 % algodón, con cuello camisero, costuras dobles reforzadas, bolsillos plaqué y cierre doble camino en el frente. Ideal para vía pública, obra, logística y cualquier tarea cerca de vehículos o maquinaria en movimiento.",
@@ -13728,7 +13730,7 @@
    ],
    "foto": "/img/catalogo/mameluco-alta-visibilidad-diforza--naranja.webp",
    "ventasEneJun2026": null,
-   "nota": "Specs, color y talles de la placa 19 del catálogo PDF. Foto recortada y ampliada de la placa (baja resolución) → pedir foto real. Sin ventas con código ene–jun."
+   "nota": "Specs, color y talles de la placa 19 del catálogo PDF. Foto recortada y ampliada de la placa (baja resolución) → pedir foto real. Sin ventas con código ene–jun. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "mameluco-eco",
@@ -14521,7 +14523,7 @@
     "blanco"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 2050,
     "empresas": 2
@@ -14588,7 +14590,7 @@
    "galeria": [
     "/img/catalogo/mascarilla-bls-502--vista-2.webp"
    ],
-   "nota": "Selección del usuario (11 oct). Marca real BLS (Libus distribuye). Fotos y fichas oficiales que dejó el usuario en _assets/fotos_marcas/libus/respiratoria/; fondo gris normalizado a blanco (_procesadas/)."
+   "nota": "Selección del usuario (11 oct). Marca real BLS (Libus distribuye). Fotos y fichas oficiales que dejó el usuario en _assets/fotos_marcas/libus/respiratoria/; fondo gris normalizado a blanco (_procesadas/). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "mascarilla-n95-plegable-2130c-901801",
@@ -14646,7 +14648,7 @@
     "rojo"
    ],
    "talles": null,
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/extintor-melisam-polvo-abc--rojo-2-5-kg.webp",
    "nombreWeb": "Extintor de polvo ABC Melisam",
    "descripcion": "Polvo químico ABC, 2,5 kg (3A-20BC) y 5 kg (6A-40BC). Con manómetro.",
@@ -14707,7 +14709,7 @@
      "etiqueta": "5 kg"
     }
    ],
-   "nota": "ERP MATAFUEGO (marca \"Eslingar\" en el ERP: error, Eslingar fabrica arneses). Fotos de la TiendaNube vieja de Diforza (SKU EXPQS004 2,5 kg 3A-20BC / EXPQS005 5 kg 6A-40BC) = Melisam. Soporte y manguera según Easy (5 kg). Sello IRAM → validar. También existe el de 1 kg vehicular (EXPQS002) en la TiendaNube vieja, no cargado."
+   "nota": "ERP MATAFUEGO (marca \"Eslingar\" en el ERP: error, Eslingar fabrica arneses). Fotos de la TiendaNube vieja de Diforza (SKU EXPQS004 2,5 kg 3A-20BC / EXPQS005 5 kg 6A-40BC) = Melisam. Soporte y manguera según Easy (5 kg). Sello IRAM → validar. También existe el de 1 kg vehicular (EXPQS002) en la TiendaNube vieja, no cargado. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "medias",
@@ -15445,12 +15447,12 @@
     "azul-marino"
    ],
    "talles": "38 al 60",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 1708,
     "empresas": 1
    },
-   "nota": "Alta 10 oct 2026. En el ERP se factura como artículo manual (\"Pantalon Clasico Ombu Azul C/Reflectivo (Manual)\"), sin código. Ventas ene–jun: 1.708 u, todas de Facility Service S.A. Art. Ombú 55908-10.",
+   "nota": "Alta 10 oct 2026. En el ERP se factura como artículo manual (\"Pantalon Clasico Ombu Azul C/Reflectivo (Manual)\"), sin código. Ventas ene–jun: 1.708 u, todas de Facility Service S.A. Art. Ombú 55908-10. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "nombreWeb": "Pantalón de trabajo clásico Ombú con reflectivos",
    "descripcion": "Grafa Ombú 100 % algodón con cintas reflectivas de alta visibilidad.",
    "descripcionLarga": "El pantalón clásico de Ombú con cintas reflectivas de alta visibilidad, para trabajar con más seguridad en lugares con poca luz o cerca del tránsito vehicular. Confeccionado en Grafa Ombú 100 % algodón de primera calidad. Somos distribuidores oficiales de Ombú.",
@@ -15536,7 +15538,7 @@
     "negro"
    ],
    "talles": "S al 3XL",
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/pantalon-de-ambo--blanco.webp",
    "nombreWeb": "Pantalón de ambo Diforza",
    "descripcion": "Pantalón de ambo con cintura elastizada. Blanco, azul o negro.",
@@ -15598,7 +15600,7 @@
      "fotoGenerada": true
     }
    ],
-   "nota": " FOTOS PROVISORIAS (genéricas CC0 de internet + recoloreos, ver _creditos_licencias.txt) → reemplazar por fotos reales de Diforza. Specs con IA → validar."
+   "nota": " FOTOS PROVISORIAS (genéricas CC0 de internet + recoloreos, ver _creditos_licencias.txt) → reemplazar por fotos reales de Diforza. Specs con IA → validar. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "pantalon-de-trabajo-pampero",
@@ -15833,7 +15835,7 @@
     "amarillo"
    ],
    "talles": "10",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": null,
    "descripcion": "Guante de descarne amarillo con puño largo, para soldadura y trabajos con calor.",
    "descripcionLarga": "Guante de descarne vacuno amarillo, de la línea propia de Diforza, con puño largo gris terminado en ribete rojo. El descarne resiste el calor, las chispas y las salpicaduras de soldadura y protege las manos en trabajos pesados con roce y abrasión. El puño largo cubre la muñeca y el antebrazo. Es el guante de descarne que Diforza publica en su catálogo de soldador, junto con la campera, las mangas, las polainas y el delantal de descarne.",
@@ -15878,7 +15880,7 @@
     }
    ],
    "foto": "/img/catalogo/guante-diforza-descarne-soldador--amarillo.webp",
-   "nota": "11 oct: guante Diforza del catálogo de soldador; decisión del usuario: convive con los De Pascale. Foto del catálogo Diforza (p. 26, baja resolución 287 px) → pedir foto en alta. Sin código ERP propio asignado (el catálogo comercial lista \"GD 10 Guante Americano Descarne Puño Corto\") → confirmar con Diego código, talles y especificaciones."
+   "nota": "11 oct: guante Diforza del catálogo de soldador; decisión del usuario: convive con los De Pascale. Foto del catálogo Diforza (p. 26, baja resolución 287 px) → pedir foto en alta. Sin código ERP propio asignado (el catálogo comercial lista \"GD 10 Guante Americano Descarne Puño Corto\") → confirmar con Diego código, talles y especificaciones. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "guante-diforza-vaqueta-medio-paseo",
@@ -15895,7 +15897,7 @@
     "amarillo"
    ],
    "talles": "8 · 10",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": null,
    "descripcion": "Guante de vaqueta amarilla, medio paseo con puño elástico. Certificado.",
    "descripcionLarga": "Guante de vaqueta amarilla medio paseo, de la línea propia de Diforza, con puño elástico que ajusta en la muñeca. La vaqueta (cuero flor) es suave y da buen tacto, por eso es el guante preferido para soldadura TIG y tareas de precisión, además de usos generales de carga, armado y mantenimiento. Certificado.",
@@ -15942,7 +15944,7 @@
     }
    ],
    "foto": "/img/catalogo/guante-diforza-vaqueta-medio-paseo--amarillo.webp",
-   "nota": "11 oct: guante Diforza del catálogo de soldador; decisión del usuario: convive con los De Pascale. Foto de la tienda Diforza (TiendaNube, talle 10). Sin código ERP propio asignado: las ventas de vaqueta medio paseo (GUAVQT10C/11C) están en guante-vaqueta-certificado (De Pascale Lincoln, Protección de manos) → confirmar con Diego cuál es cuál. Talles 8 y 10 según la tienda."
+   "nota": "11 oct: guante Diforza del catálogo de soldador; decisión del usuario: convive con los De Pascale. Foto de la tienda Diforza (TiendaNube, talle 10). Sin código ERP propio asignado: las ventas de vaqueta medio paseo (GUAVQT10C/11C) están en guante-vaqueta-certificado (De Pascale Lincoln, Protección de manos) → confirmar con Diego cuál es cuál. Talles 8 y 10 según la tienda. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "poncho-de-pvc-con-capucha-color-amarillo",
@@ -16272,7 +16274,7 @@
     "azul-marino"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/protector-auditivo-libus-l-450--principal.webp",
    "nombreWeb": "Protector auditivo de copa Libus L-450",
    "descripcion": "Copa de alta atenuación con banda soft. NRR 25 dB / SNR 31 dB.",
@@ -16325,7 +16327,7 @@
    ],
    "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-l-450.pdf",
    "ventasEneJun2026": null,
-   "nota": "Selección final del usuario (11 oct). Fotos y ficha oficial de libus.com.ar en _assets/fotos_marcas/libus/auditiva/l-450/ (fondo gris claro normalizado a blanco en _procesadas/).",
+   "nota": "Selección final del usuario (11 oct). Fotos y ficha oficial de libus.com.ar en _assets/fotos_marcas/libus/auditiva/l-450/ (fondo gris claro normalizado a blanco en _procesadas/). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "galeria": [
     "/img/catalogo/protector-auditivo-libus-l-450--vista-2.webp",
     "/img/catalogo/protector-auditivo-libus-l-450--vista-3.webp",
@@ -16984,7 +16986,7 @@
     "amarillo"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/protector-facial-libus-burbuja-color--gris.webp",
    "nombreWeb": "Protector facial burbuja Libus de color",
    "ventasEneJun2026": null,
@@ -17052,7 +17054,7 @@
      "fotoGenerada": false
     }
    ],
-   "nota": "Selección del usuario (11 oct). Fotos y ficha oficiales de Libus en _assets/fotos_marcas/libus/facial/PROTECTOR FACIAL BURBUJA DE COLORES/ (fondo gris → blanco). Sin ficha propia (la del burbuja transparente es otro SKU). \"Espejado\" no figura en el ERP; el verde claro 901398 (ERP) no tiene foto → confirmar colores.",
+   "nota": "Selección del usuario (11 oct). Fotos y ficha oficiales de Libus en _assets/fotos_marcas/libus/facial/PROTECTOR FACIAL BURBUJA DE COLORES/ (fondo gris → blanco). Sin ficha propia (la del burbuja transparente es otro SKU). \"Espejado\" no figura en el ERP; el verde claro 901398 (ERP) no tiene foto → confirmar colores. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "galeria": [
     "/img/catalogo/protector-facial-libus-burbuja-color--vista-2.webp",
     "/img/catalogo/protector-facial-libus-burbuja-color--vista-3.webp",
@@ -17086,7 +17088,7 @@
     "transparente"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/protector-facial-libus-cronos--transparente.webp",
    "nombreWeb": "Protector facial Cronos Libus",
    "ventasEneJun2026": null,
@@ -17132,7 +17134,7 @@
      "fichaTecnica": "/assets/docs/fichas/protector-facial-libus-cronos.pdf"
     }
    ],
-   "nota": "Selección del usuario (11 oct). Fotos y ficha oficiales de Libus en _assets/fotos_marcas/libus/facial/PROTECTOR FACIAL CRONOS/ (fondo gris → blanco).",
+   "nota": "Selección del usuario (11 oct). Fotos y ficha oficiales de Libus en _assets/fotos_marcas/libus/facial/PROTECTOR FACIAL CRONOS/ (fondo gris → blanco). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "fichaTecnica": "/assets/docs/fichas/protector-facial-libus-cronos.pdf",
    "galeria": [
     "/img/catalogo/protector-facial-libus-cronos--contexto-1.webp"
@@ -17643,7 +17645,7 @@
     "blanco"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 375,
     "empresas": 3
@@ -17707,7 +17709,7 @@
     "/img/catalogo/mascarilla-bls-classic-129bw--vista-2.webp",
     "/img/catalogo/mascarilla-bls-classic-129bw--vista-3.webp"
    ],
-   "nota": "Selección del usuario (11 oct). Marca real BLS (Libus distribuye). Fotos y fichas oficiales que dejó el usuario en _assets/fotos_marcas/libus/respiratoria/; fondo gris normalizado a blanco (_procesadas/)."
+   "nota": "Selección del usuario (11 oct). Marca real BLS (Libus distribuye). Fotos y fichas oficiales que dejó el usuario en _assets/fotos_marcas/libus/respiratoria/; fondo gris normalizado a blanco (_procesadas/). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "respirador-de-part-desc-c-val-1940",
@@ -18007,7 +18009,7 @@
     "blanco"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 220,
     "empresas": 6
@@ -18070,7 +18072,7 @@
     "/img/catalogo/mascarilla-bls-classic-128bw--vista-2.webp",
     "/img/catalogo/mascarilla-bls-classic-128bw--vista-3.webp"
    ],
-   "nota": "Selección del usuario (11 oct). Marca real BLS (Libus distribuye). Fotos y fichas oficiales que dejó el usuario en _assets/fotos_marcas/libus/respiratoria/; fondo gris normalizado a blanco (_procesadas/)."
+   "nota": "Selección del usuario (11 oct). Marca real BLS (Libus distribuye). Fotos y fichas oficiales que dejó el usuario en _assets/fotos_marcas/libus/respiratoria/; fondo gris normalizado a blanco (_procesadas/). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "mascarilla-bls-522",
@@ -18192,7 +18194,7 @@
     "gris"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "ventasEneJun2026": {
     "unidades": 360,
     "empresas": 3
@@ -18255,7 +18257,7 @@
    "galeria": [
     "/img/catalogo/mascarilla-bls-classic-226b--vista-2.webp"
    ],
-   "nota": "Selección del usuario (11 oct). Marca real BLS (Libus distribuye). Fotos y fichas oficiales que dejó el usuario en _assets/fotos_marcas/libus/respiratoria/; fondo gris normalizado a blanco (_procesadas/)."
+   "nota": "Selección del usuario (11 oct). Marca real BLS (Libus distribuye). Fotos y fichas oficiales que dejó el usuario en _assets/fotos_marcas/libus/respiratoria/; fondo gris normalizado a blanco (_procesadas/). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "respirador-desechable-zer0-32c-ffp3rd",
@@ -18457,7 +18459,7 @@
     "gris"
    ],
    "talles": "—",
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/salvacaidas-sky-h8208--acero.webp",
    "nombreWeb": "Salvacaídas para cable de acero de 8 mm SKY H8208 con amortiguador",
    "descripcion": "Salvacaídas de acero inoxidable para línea de vida de cable de 8 mm.",
@@ -18514,7 +18516,7 @@
    ],
    "fichaTecnica": "/assets/docs/fichas/salvacaidas-sky-h8208.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. El ERP lo describe \"para soga 8 mm\": es para CABLE de acero de 8 mm (ficha)."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. El ERP lo describe \"para soga 8 mm\": es para CABLE de acero de 8 mm (ficha). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "semi-mascara-6200-3m",
@@ -19582,7 +19584,7 @@
     "negro"
    ],
    "talles": "35 al 46",
-   "visible": true,
+   "visible": false,
    "foto": "/img/catalogo/zapato-ombu-prusiano-puntera-plastica--negro.webp",
    "nombreWeb": "Zapato de seguridad Ombú Prusiano con puntera plástica",
    "descripcion": "Puntera plástica liviana, cuello de napa y cinta reflectiva.",
@@ -19597,7 +19599,8 @@
      "colorFabricante": "Negro",
      "foto": "/img/catalogo/zapato-ombu-prusiano-puntera-plastica--negro.webp"
     }
-   ]
+   ],
+   "nota": "Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "zapato-ombu-prusiano-puntera-acero",
@@ -20424,8 +20427,8 @@
     "amarillo"
    ],
    "talles": "Único",
-   "visible": true,
-   "nota": "Material oficial de Libus que dejó el usuario (fotos + ficha/brochure) en _assets/fotos_marcas/libus/craneal/; fondo gris normalizado a blanco (_procesadas/). Ventas de los códigos ERP unificados.",
+   "visible": false,
+   "nota": "Material oficial de Libus que dejó el usuario (fotos + ficha/brochure) en _assets/fotos_marcas/libus/craneal/; fondo gris normalizado a blanco (_procesadas/). Ventas de los códigos ERP unificados. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "codigoFabricante": "J53",
    "foto": "/img/catalogo/casco-libus-milenium-class-visor-t--blanco.webp",
    "nombreWeb": "Casco de seguridad Libus Milenium Class S/V con visor T",
@@ -20573,8 +20576,8 @@
     "transparente"
    ],
    "talles": "Único",
-   "visible": true,
-   "nota": "13 oct: fotos y ficha oficial Libus que dejó el usuario en _assets/fotos_marcas/libus/kits/kit mecanizado/ (fondo gris → blanco en _procesadas/). Libus lo llama \"Kit Mecánico\"; el ERP/TiendaNube \"mecanizado liviano\". Sin código ERP. Ficha sin códigos de componentes (por analogía: 401442, 401440 + visor plano) → confirmar. Sin foto en contexto.",
+   "visible": false,
+   "nota": "13 oct: fotos y ficha oficial Libus que dejó el usuario en _assets/fotos_marcas/libus/kits/kit mecanizado/ (fondo gris → blanco en _procesadas/). Libus lo llama \"Kit Mecánico\"; el ERP/TiendaNube \"mecanizado liviano\". Sin código ERP. Ficha sin códigos de componentes (por analogía: 401442, 401440 + visor plano) → confirmar. Sin foto en contexto. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "codigoFabricante": "902660",
    "foto": "/img/catalogo/kit-libus-mecanico--principal.webp",
    "nombreWeb": "Kit mecánico Libus (mecanizado liviano)",
@@ -20766,8 +20769,8 @@
     "amarillo"
    ],
    "talles": "10",
-   "visible": true,
-   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUANKVHIBT']. Talles a validar con Diforza.",
+   "visible": false,
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos ['GUANKVHIBT']. Talles a validar con Diforza. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "foto": "/img/catalogo/guante-aramida-g7--amarillo.webp",
    "nombreWeb": "Guante de aramida sin costura G7 De Pascale",
    "descripcion": "Tejido de aramida: resistencia al corte y al calor.",
@@ -20838,8 +20841,8 @@
     "azul-marino"
    ],
    "talles": "7 al 11",
-   "visible": true,
-   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos []. Talles a validar con Diforza.",
+   "visible": false,
+   "nota": "Material oficial del fabricante (De Pascale) en _assets/fotos_marcas/. Ventas ene–jun recalculadas sumando códigos []. Talles a validar con Diforza. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "nombreWeb": "Guante de látex neoprene mix flocado De Pascale",
    "descripcion": "Látex + neoprene de 0,7 mm, flocado. Protección química.",
    "descripcionLarga": "Guante de mezcla de látex y neoprene, extra pesado (0,70 mm), con interior flocado. Protege contra riesgos químicos y microorganismos: certificado para metanol (clase 2) y ácido sulfúrico 96 % (clase 5). Es el guante para pintura, manipulación de solventes y resinas, y limpieza industrial.",
@@ -21127,8 +21130,8 @@
     "negro"
    ],
    "talles": "—",
-   "visible": true,
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/.",
+   "visible": false,
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "foto": "/img/catalogo/descensor-8-sky--8-alado.webp",
    "nombreWeb": "Descensor 8 SKY de aluminio (simple y alado)",
    "descripcion": "Descensor en 8 de aluminio, carga hasta 35 kN. Simple y alado.",
@@ -21200,8 +21203,8 @@
     "azul"
    ],
    "talles": "—",
-   "visible": true,
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/.",
+   "visible": false,
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "foto": "/img/catalogo/conector-anclaje-mosqueton-sky-10439--azul.webp",
    "nombreWeb": "Conector de anclaje con mosquetón de 18 mm SKY 10439",
    "descripcion": "Cinta de anclaje de 0,5 m con mosquetón de 18 mm y ojal.",
@@ -21283,7 +21286,7 @@
     "amarillo"
    ],
    "talles": "Único, regulable",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Arnés anticaídas SKY 10404S con toma dorsal y sujeción en cintura",
    "descripcion": "Toma dorsal, 2 argollas en cintura y lumbar de 100 mm. Todo amarillo.",
    "descripcionLarga": "El SKY 10404S es la versión simplificada del 10404: arnés completo tipo paracaidista con toma anticaídas dorsal, dos argollas de sujeción en la cintura y protector lumbar de cinta de 100 mm, con regulación en las piernas. Una opción económica para equipar cuadrillas sin resignar certificación: bandas de poliéster de alta tenacidad y sello IRAM 3622-1, fabricado en Argentina.",
@@ -21342,7 +21345,7 @@
    "foto": "/img/catalogo/arnes-sky-10404s--amarillo.webp",
    "fichaTecnica": "/assets/docs/fichas/arnes-sky-10404s.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10404S (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10404S/. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego."
+   "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10404S (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10404S/. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "arnes-sky-10414",
@@ -21355,7 +21358,7 @@
     "amarillo"
    ],
    "talles": "Único, regulable",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Arnés anticaídas SKY 10414 con amortiguador dorsal incorporado",
    "descripcion": "Arnés simple con amortiguador de caídas fijo en la argolla dorsal.",
    "descripcionLarga": "Arnés simple tipo paracaidista SKY 10414 con amortiguador de caídas incorporado en la argolla dorsal: absorbe la energía del impacto en caso de caída. Cierre frontal con hebilla regulable en el pecho y hebillas de regulación en las piernas, liviano y rápido de colocar. Bandas de poliéster de alta tenacidad, fabricado en Argentina con sello IRAM 3622-1.",
@@ -21414,7 +21417,7 @@
    "foto": "/img/catalogo/arnes-sky-10414--amarillo.webp",
    "fichaTecnica": "/assets/docs/fichas/arnes-sky-10414.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10414 (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10414/. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego."
+   "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10414 (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10414/. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "arnes-sky-10412",
@@ -21427,7 +21430,7 @@
     "amarillo"
    ],
    "talles": "Único, regulable",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Arnés anticaídas SKY 10412 con amarre elastizado de 1,5 m",
    "descripcion": "Arnés listo para usar: incluye amarre elastizado con amortiguador.",
    "descripcionLarga": "El SKY 10412 es un equipo anticaídas completo en un solo producto: arnés tipo paracaidista con toma anticaídas dorsal y elemento de amarre anticaídas elastizado de 1,5 m con amortiguador de caída y mosquetón estampado, ya conectado. El amarre elastizado se recoge solo y no se engancha mientras se trabaja. Bandas de poliéster de alta tenacidad y hebillas de regulación. Fabricado en Argentina por Topsafe.",
@@ -21484,7 +21487,7 @@
    ],
    "foto": "/img/catalogo/arnes-sky-10412--amarillo.webp",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY10412 (Segutécnica) en _assets/fotos_marcas/sky/arnes 10412/. Es el arnés de la placa 'Línea Altura' del catálogo. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego.",
+   "nota": "Foto y ficha técnica oficial SKY10412 (Segutécnica) en _assets/fotos_marcas/sky/arnes 10412/. Es el arnés de la placa 'Línea Altura' del catálogo. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/.",
    "fichaTecnica": "/assets/docs/fichas/arnes-sky-10412.pdf"
   },
   {
@@ -21498,7 +21501,7 @@
     "amarillo"
    ],
    "talles": "—",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Amarre de sujeción regulable SKY 10461ER (1,5 m, 2 mosquetones de 18 mm)",
    "descripcion": "Cola de posicionamiento regulable de 1,5 m con 2 mosquetones de 18 mm.",
    "descripcionLarga": "Elemento de amarre de sujeción SKY 10461ER para trabajos de posicionamiento: cinta de poliéster de alta tenacidad regulable hasta 1,5 m, con dos mosquetones estampados de 18 mm. Se engancha a las argollas de la cintura del arnés y permite trabajar con las dos manos libres. Es el \"amarre regulable\" de nuestro catálogo. Sello IRAM 3622-2.",
@@ -21556,7 +21559,7 @@
    "foto": "/img/catalogo/amarre-sky-10461er--amarillo.webp",
    "fichaTecnica": "/assets/docs/fichas/amarre-sky-10461er.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "amarre-sky-10467e",
@@ -21569,7 +21572,7 @@
     "amarillo"
    ],
    "talles": "—",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Amarre anticaídas elastizado SKY 10467E con amortiguador (1,5 m, 2 mosquetones de 18 mm)",
    "descripcion": "Cola elastizada de 1,5 m con amortiguador y 2 mosquetones de 18 mm.",
    "descripcionLarga": "Elemento de amarre anticaídas elastizado SKY 10467E: cinta de poliéster elastizada de 1,5 m que se recoge sola y no se engancha mientras se trabaja, con amortiguador de caída y dos mosquetones estampados de 18 mm con doble traba de seguridad. Es el \"amarre elastizado\" de nuestro catálogo. Sello IRAM 3622-1.",
@@ -21628,7 +21631,7 @@
    "foto": "/img/catalogo/amarre-sky-10467e--amarillo.webp",
    "fichaTecnica": "/assets/docs/fichas/amarre-sky-10467e.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "conector-anclaje-circular-sky",
@@ -21641,7 +21644,7 @@
     "azul"
    ],
    "talles": "—",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Conector de anclaje circular SKY (0,8 / 1 / 1,3 / 1,5 m)",
    "descripcion": "Lazo de anclaje de cinta para vigas y estructuras. 4 largos.",
    "descripcionLarga": "Conector de anclaje circular SKY: lazo cerrado de cinta de poliéster de alta tenacidad de 25 mm que se pasa alrededor de una viga, columna o estructura para crear un punto de anclaje seguro donde conectar el amarre o el salvacaídas. Dispositivo de anclaje clase B tipo e, en 4 largos: 0,8, 1, 1,3 y 1,5 m. Sello IRAM 3626.",
@@ -21722,7 +21725,7 @@
    "foto": "/img/catalogo/conector-anclaje-circular-sky--0-8-m.webp",
    "fichaTecnica": "/assets/docs/fichas/conector-anclaje-circular-sky.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. Conectores circulares y corbata: misma foto para todos los largos (es la del fabricante)."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. Conectores circulares y corbata: misma foto para todos los largos (es la del fabricante). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "salvacaidas-sky-10511",
@@ -21735,7 +21738,7 @@
     "gris"
    ],
    "talles": "—",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Salvacaídas full para soga de 12 a 14 mm SKY 10511",
    "descripcion": "Salvacaídas deslizante de apertura total para soga de 12 a 14 mm.",
    "descripcionLarga": "Salvacaídas full SKY 10511 para líneas de vida de soga de 12 a 14 mm: se coloca y se retira en cualquier punto de la soga sin desarmar la línea, acompaña al operario y se traba automáticamente ante una caída. Argolla de conexión para el mosquetón del arnés.",
@@ -21783,7 +21786,7 @@
    ],
    "foto": "/img/catalogo/salvacaidas-sky-10511--acero.webp",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. SIN ficha técnica en segutecnica.com (pedir a Topsafe)"
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. SIN ficha técnica en segutecnica.com (pedir a Topsafe) · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "silleta-sky-10542",
@@ -21798,7 +21801,7 @@
     "azul"
    ],
    "talles": "—",
-   "visible": true,
+   "visible": false,
    "nombreWeb": "Silleta de madera con arnés SKY 10542",
    "descripcion": "Silla de madera dura con arnés para trabajos en fachadas.",
    "descripcionLarga": "Silleta SKY 10542 para trabajos suspendidos: asiento de madera dura de 56 × 30 cm con arnés de cinta de poliéster de alta tenacidad de 50 mm y banda de apoyo en cintura y espalda. Pensada para mantenimiento exterior, pintura y limpieza de frentes de edificios. Se usa siempre junto con un sistema anticaídas independiente.",
@@ -21850,7 +21853,7 @@
    "foto": "/img/catalogo/silleta-sky-10542--azul.webp",
    "fichaTecnica": "/assets/docs/fichas/silleta-sky-10542.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "protector-auditivo-libus-l-360-casco",
@@ -21941,7 +21944,7 @@
     "verde-manzana"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "descripcion": "El L-360 en verde flúo de alta visibilidad. Vincha.",
    "descripcionLarga": "El L-360 High Visibility tiene las mismas prestaciones del L-360, el protector de copa de máxima atenuación de la línea L-300, con copas verde flúo que hacen visible al trabajador en obra, vía pública, aeropuertos o depósitos con tránsito de autoelevadores. Copas de ABS, almohadillas de PVC con espuma de poliuretano, regulación de altura multipunto y orejera acolchada para jornadas prolongadas. Cumple EN 352-1 y ANSI S3.19.",
    "beneficios": [
@@ -21998,7 +22001,7 @@
    "foto": "/img/catalogo/protector-auditivo-libus-l-360-hv--principal.webp",
    "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-l-360-hv.pdf",
    "ventasEneJun2026": null,
-   "nota": "Selección final del usuario (11 oct). Fotos y ficha oficial de libus.com.ar en _assets/fotos_marcas/libus/auditiva/l-360 high visibility/ (fondo gris claro normalizado a blanco en _procesadas/)."
+   "nota": "Selección final del usuario (11 oct). Fotos y ficha oficial de libus.com.ar en _assets/fotos_marcas/libus/auditiva/l-360 high visibility/ (fondo gris claro normalizado a blanco en _procesadas/). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "protector-auditivo-libus-l-360-hv-casco",
@@ -22012,7 +22015,7 @@
     "verde-manzana"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "descripcion": "L-360 verde flúo para montar en el casco.",
    "descripcionLarga": "Versión para casco del L-360 High Visibility: máxima atenuación de la línea L-300 con copas verde flúo de alta visibilidad. Reemplaza la vincha por 2 horquillas con soporte giratorio, con 2 posiciones de trabajo y copas que giran 360° en reposo; incluye el par de fichas para cascos Libus. Copas de ABS, almohadillas de PVC con espuma de poliuretano. Cumple EN 352-1 y ANSI S3.19.",
    "beneficios": [
@@ -22071,7 +22074,7 @@
    "foto": "/img/catalogo/protector-auditivo-libus-l-360-hv-casco--principal.webp",
    "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-l-360-hv-casco.pdf",
    "ventasEneJun2026": null,
-   "nota": "Selección final del usuario (11 oct). Fotos y ficha oficial de libus.com.ar en _assets/fotos_marcas/libus/auditiva/l-360 copa highvisibility/ (fondo gris claro normalizado a blanco en _procesadas/)."
+   "nota": "Selección final del usuario (11 oct). Fotos y ficha oficial de libus.com.ar en _assets/fotos_marcas/libus/auditiva/l-360 copa highvisibility/ (fondo gris claro normalizado a blanco en _procesadas/). · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "protector-auditivo-libus-quantum-caja-detect",
@@ -22153,7 +22156,7 @@
     "verde"
    ],
    "talles": "Único",
-   "visible": true,
+   "visible": false,
    "descripcion": "Tapón de espuma descartable y detectable, con cordel.",
    "descripcionLarga": "Quantum Foam RD detectable: tapón de inserción autoexpansible y descartable en espuma de poliuretano ultra-soft hipoalergénica, de diseño cónico y bajo nivel de expansión para una inserción correcta y un sello cómodo. Tiene alma metálica en el cordel e inserto metálico en el tapón, para que el detector de metales lo encuentre si se pierde en la línea de producción. NRR 32 dB / SNR 31 dB.",
    "beneficios": [
@@ -22207,7 +22210,7 @@
    "foto": "/img/catalogo/protector-auditivo-libus-quantum-foam-detect--principal.webp",
    "fichaTecnica": "/assets/docs/fichas/protector-auditivo-libus-quantum-foam-detect.pdf",
    "ventasEneJun2026": null,
-   "nota": "Selección final del usuario (11 oct). Fotos y ficha oficial de libus.com.ar en _assets/fotos_marcas/libus/auditiva/quantum-detec/ (fondo gris claro normalizado a blanco en _procesadas/). Foto de Segutécnica."
+   "nota": "Selección final del usuario (11 oct). Fotos y ficha oficial de libus.com.ar en _assets/fotos_marcas/libus/auditiva/quantum-detec/ (fondo gris claro normalizado a blanco en _procesadas/). Foto de Segutécnica. · Oculto 16 oct: no está en LISTA WEB (stock actual). Para reactivar: visible=true y devolver la 301 a /productos/<id>/."
   },
   {
    "id": "kit-libus-jardinero",
