@@ -2398,7 +2398,7 @@
     "empresas": 12
    },
    "foto": "/img/catalogo/arnes-sky-10404f--amarillo-y-azul.webp",
-   "nombreWeb": "Arnés anticaídas SKY 10404F con toma frontal y protector lumbar",
+   "nombreWeb": "Arnés completo con toma frontal y faja lumbar SKY 10404F",
    "descripcion": "Tomas dorsal y frontal, 2 argollas en cintura y lumbar acolchado.",
    "descripcionLarga": "El SKY 10404F es el arnés más elegido por nuestros clientes. Arnés completo tipo paracaidista con toma anticaídas dorsal y frontal, dos argollas de sujeción en la cintura para posicionamiento y protector lumbar acolchado y forrado de 200 mm que reparte la carga y hace más cómodas las jornadas largas. Bandas de poliéster de alta tenacidad y hebillas de regulación en hombros y piernas para ajustarlo a cada operario. Fabricado en Argentina con sello IRAM 3622-1.",
    "specs": {
@@ -2455,7 +2455,7 @@
    ],
    "fichaTecnica": "/assets/docs/fichas/arnes-sky-10404f.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10404F (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10404F/. Talle: único regulable (la ficha no indica talles) → validar con Diego."
+   "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10404F (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10404F/. Talle: único regulable (la ficha no indica talles) → validar con Diego. · 16 oct: nombre corto como lo diferencia Yesica en el catálogo (completo / 3 / 5 / 6 puntos)."
   },
   {
    "id": "arnes-sky-10404",
@@ -20911,10 +20911,10 @@
    ],
    "talles": "Único, regulable",
    "visible": true,
-   "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10403E (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10403E/. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego.",
+   "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10403E (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10403E/. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego. · 16 oct: nombre corto como lo diferencia Yesica en el catálogo (completo / 3 / 5 / 6 puntos).",
    "codigoFabricante": "SKY10403E",
    "foto": "/img/catalogo/arnes-sky-10403e--amarillo-y-azul.webp",
-   "nombreWeb": "Arnés anticaídas SKY 10403E con cabo de sujeción de 1,5 m",
+   "nombreWeb": "Arnés 3 puntos con amarre de 1,5 m SKY 10403E",
    "descripcion": "Toma dorsal, sujeción en cintura y cabo regulable de 1,5 m incluido.",
    "descripcionLarga": "Arnés completo tipo paracaidista SKY 10403E que viene listo para posicionamiento: toma anticaídas dorsal y cabo de sujeción regulable de 1,5 m fijo a la cintura, con mosquetón estampado en un extremo y argolla de sujeción en el otro. Protector lumbar de cinta de 100 mm y hebillas de regulación en hombros y piernas. Bandas de poliéster de alta tenacidad, fabricado en Argentina con sello IRAM 3622-1.",
    "specs": {
@@ -20985,10 +20985,10 @@
    ],
    "talles": "Único, regulable",
    "visible": true,
-   "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10420 (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10420/. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego.",
+   "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10420 (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10420/. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego. · 16 oct: nombre corto como lo diferencia Yesica en el catálogo (completo / 3 / 5 / 6 puntos).",
    "codigoFabricante": "SKY10420",
    "foto": "/img/catalogo/arnes-sky-10420--amarillo-y-azul.webp",
-   "nombreWeb": "Arnés anticaídas petrolero SKY 10420 con coleta dorsal",
+   "nombreWeb": "Arnés 5 puntos con coleta dorsal SKY 10420",
    "descripcion": "Coleta dorsal de 0,35 m, 4 argollas en cintura y lumbar acolchado.",
    "descripcionLarga": "Arnés petrolero SKY 10420 para trabajos exigentes y de posicionamiento prolongado. Toma anticaídas dorsal con coleta de extensión de 0,35 m que facilita el enganche, cuatro argollas de sujeción en la cintura y protector lumbar acolchado y forrado de 200 mm. Regulación con ojales y hebillas empernadas de acero. Bandas de poliéster de alta tenacidad, fabricado en Argentina con sello IRAM 3622-1.",
    "specs": {
@@ -21058,9 +21058,9 @@
    ],
    "talles": "Único, regulable",
    "visible": true,
-   "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10420F (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10420F/. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego.",
+   "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10420F (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10420F/. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego. · 16 oct: nombre corto como lo diferencia Yesica en el catálogo (completo / 3 / 5 / 6 puntos).",
    "codigoFabricante": "SKY10420F",
-   "nombreWeb": "Arnés anticaídas petrolero SKY 10420F con toma frontal y coleta dorsal",
+   "nombreWeb": "Arnés 6 puntos con toma frontal y coleta SKY 10420F",
    "descripcion": "Coleta dorsal, toma frontal, 4 argollas en cintura y lumbar acolchado.",
    "descripcionLarga": "El SKY 10420F es el arnés petrolero más completo: toma anticaídas dorsal con coleta de extensión de 0,35 m y toma frontal tipo lazo para escaleras con línea de vida o ascenso, cuatro argollas de sujeción en la cintura y protector lumbar acolchado y forrado de 200 mm. Regulación con ojales y hebillas empernadas de acero en cintura y piernas, y hebillas de regulación en hombros. Bandas de poliéster de alta tenacidad, fabricado en Argentina con sello IRAM 3622-1.",
    "specs": {
