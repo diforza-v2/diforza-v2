@@ -10,6 +10,7 @@
 @import "settings/tokens.css" layer(tokens);
 
 /* base */
+@import "base/fonts.css";
 @import "base/global.css" layer(base);
 
 /* components */

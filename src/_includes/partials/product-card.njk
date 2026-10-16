@@ -5,7 +5,11 @@
 <article class="product-card">
   <div class="product-card__media{% if not p.foto %} is-placeholder{% endif %}">
 {%- if p.foto %}
-    <img class="product-card__img" src="{{ p.foto }}" alt="{{ p.nombre }}" loading="lazy" draggable="false">
+{%- if p.foto.startsWith("/img/catalogo/") and not ("/480/" in p.foto) %}
+    <img class="product-card__img" src="{{ p.foto | replace("/img/catalogo/", "/img/catalogo/480/") }}" srcset="{{ p.foto | replace("/img/catalogo/", "/img/catalogo/480/") }} 480w, {{ p.foto }} 1000w" sizes="(max-width: 767px) 48vw, (max-width: 1279px) 32vw, 300px" width="480" height="600" alt="{{ p.nombre }}" loading="lazy" decoding="async" draggable="false">
+{%- else %}
+    <img class="product-card__img" src="{{ p.foto }}" alt="{{ p.nombre }}" loading="lazy" decoding="async" draggable="false">
+{%- endif %}
 {%- else %}
     <span class="product-card__ph">Foto a reemplazar</span>
 {%- endif %}

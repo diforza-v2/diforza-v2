@@ -12,6 +12,7 @@ module.exports = function (eleventyConfig) {
   // Archivos que se copian tal cual (no se procesan como plantillas)
   eleventyConfig.addPassthroughCopy("src/assets/js");
   eleventyConfig.addPassthroughCopy("src/assets/docs"); // catálogo PDF
+  eleventyConfig.addPassthroughCopy("src/assets/fonts"); // fuentes self-hosted (woff2)
   eleventyConfig.addPassthroughCopy("src/img");     // imágenes compartidas
   eleventyConfig.addPassthroughCopy("src/*/img");   // imágenes propias de cada landing
   eleventyConfig.addPassthroughCopy("src/_headers"); // encabezados de Cloudflare Pages (hoy: noindex)
