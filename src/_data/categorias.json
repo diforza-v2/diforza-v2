@@ -52,7 +52,8 @@
         {
           "id": "sanidad-y-gastronomia",
           "nombre": "Sanidad y gastronomía",
-          "incluye": "Ambos, guardapolvos, cofias, cubre barba, delantal de cocinero, descartables (camisolín, cubre calzado, ambo descartable)"
+          "incluye": "Ambos, guardapolvos, cofias, cubre barba, delantal de cocinero, descartables (camisolín, cubre calzado, ambo descartable)",
+          "nota": "Oculta desde el 16 oct 2026 (usuario): sin productos propios; el delantal PVC está en Delantales."
         },
         {
           "id": "ropa-primera-piel",
@@ -64,6 +65,11 @@
           "nombre": "Delantales",
           "incluye": "Delantal de PVC blanco con refuerzo",
           "tambienEn": "Delantal de descarne → EPP › Protección soldadura"
+        },
+        {
+          "id": "accesorios",
+          "nombre": "Accesorios",
+          "incluye": "Faja lumbar Diforza modelo Full (también en EPP › Ergonomía)"
         },
         {
           "id": "gorras",

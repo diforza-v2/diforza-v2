@@ -8799,10 +8799,7 @@
     }
    ],
    "foto": "/img/catalogo/delantal-pvc-diforza--blanco.webp",
-   "nota": "Ventas ene–jun: 119 u / 7 empresas (DELPVCBL). Stock 4.691. Además se vendieron PVC verde (70 u / 2) y transparente manual (108 u / 1, catering) → ocultos por decisión del usuario, se cotizan igual. Foto real = placa 93 del catálogo (PNG con transparencia). Tiras de ajuste y usos: con IA → validar. Delantales de descarne siguen en EPP › Soldadura. · 16 oct: foto sin modelo de Yesica (diforza/delantales/delantal de pvc.png, solo frente).",
-   "tambienEn": [
-    "sanidad-y-gastronomia"
-   ]
+   "nota": "Ventas ene–jun: 119 u / 7 empresas (DELPVCBL). Stock 4.691. Además se vendieron PVC verde (70 u / 2) y transparente manual (108 u / 1, catering) → ocultos por decisión del usuario, se cotizan igual. Foto real = placa 93 del catálogo (PNG con transparencia). Tiras de ajuste y usos: con IA → validar. Delantales de descarne siguen en EPP › Soldadura. · 16 oct: foto sin modelo de Yesica (diforza/delantales/delantal de pvc.png, solo frente)."
   },
   {
    "id": "delantal-de-pvc-verde",
@@ -9508,7 +9505,10 @@
    "galeria": [
     "/img/catalogo/faja-lumbar-diforza--contexto.webp"
    ],
-   "nota": "Ventas ene–jun 13 oct: 676 u con código FAJLUDIF (35 empresas) + 36 u manuales (Demaio 30, UNLP 6). Stock 2XL 169 · M 94 · XL 47 · L 33 · S 15 · 3XL −61. Marca Diforza (catálogo p. 20, ERP \"modelo full\"). Specs y tabla de talles de la faja Ombú art. 68077-13 (mismo diseño) → validar con Diego; 3XL extrapolado. Galería: foto en contexto del catálogo p. 20."
+   "nota": "Ventas ene–jun 13 oct: 676 u con código FAJLUDIF (35 empresas) + 36 u manuales (Demaio 30, UNLP 6). Stock 2XL 169 · M 94 · XL 47 · L 33 · S 15 · 3XL −61. Marca Diforza (catálogo p. 20, ERP \"modelo full\"). Specs y tabla de talles de la faja Ombú art. 68077-13 (mismo diseño) → validar con Diego; 3XL extrapolado. Galería: foto en contexto del catálogo p. 20.",
+   "tambienEn": [
+    "accesorios"
+   ]
   },
   {
    "id": "filtro-2091-p100-3m",

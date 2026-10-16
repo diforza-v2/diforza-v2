@@ -1119,6 +1119,34 @@
      "respuesta": "Se recomienda enjuagar al menos 15 minutos y después consultar a un médico."
     }
    ]
+  },
+  "accesorios": {
+   "titulo": "Accesorios de indumentaria de trabajo",
+   "descripcion": "Faja lumbar Diforza modelo Full para tareas de carga, talles S a 3XL. Stock permanente, factura A y envíos a todo el país.",
+   "intro": "Accesorios para completar el uniforme de trabajo: faja lumbar Diforza modelo Full con ballenas, bandas regulables y tiradores, para tareas de carga.",
+   "guia": {
+    "titulo": "Faja lumbar: cuándo usarla",
+    "bloques": [
+     {
+      "titulo": "Soporte para tareas de carga",
+      "texto": "La faja Diforza modelo Full tiene ballenas traseras, bandas laterales regulables y tiradores cruzados. Da soporte a la zona lumbar al levantar y mover cargas en depósitos, logística y producción. Se complementa con la capacitación en levantamiento seguro."
+     },
+     {
+      "titulo": "Talles",
+      "texto": "Talles S al 3XL según el contorno de cintura. La tabla está en la página de la faja."
+     }
+    ]
+   },
+   "faq": [
+    {
+     "pregunta": "¿Cómo se elige el talle de la faja lumbar?",
+     "respuesta": "Por el contorno de cintura; la tabla de talles está en la página de la faja Diforza modelo Full."
+    },
+    {
+     "pregunta": "¿La faja lumbar se puede pedir junto con la ropa de trabajo?",
+     "respuesta": "Sí. Se cotiza en el mismo pedido que la indumentaria, con stock permanente y factura A."
+    }
+   ]
   }
  }
 }
