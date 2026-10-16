@@ -257,10 +257,10 @@
     "ANVLTCRLIB"
    ],
    "colores": [
+    "rojo",
     "blanco",
     "amarillo",
     "azul",
-    "rojo",
     "verde"
    ],
    "talles": "Único",
@@ -314,6 +314,13 @@
    ],
    "variantes": [
     {
+     "color": "rojo",
+     "colorFabricante": "Rojo",
+     "foto": "/img/catalogo/casco-libus-andes--rojo.webp",
+     "fotoGenerada": false,
+     "fichaTecnica": "/assets/docs/fichas/casco-libus-andes.pdf"
+    },
+    {
      "color": "blanco",
      "colorFabricante": "Blanco",
      "foto": "/img/catalogo/casco-libus-andes--blanco.webp",
@@ -335,13 +342,6 @@
      "fichaTecnica": "/assets/docs/fichas/casco-libus-andes.pdf"
     },
     {
-     "color": "rojo",
-     "colorFabricante": "Rojo",
-     "foto": "/img/catalogo/casco-libus-andes--rojo.webp",
-     "fotoGenerada": false,
-     "fichaTecnica": "/assets/docs/fichas/casco-libus-andes.pdf"
-    },
-    {
      "color": "verde",
      "colorFabricante": "Verde",
      "foto": "/img/catalogo/casco-libus-andes--verde.webp",
@@ -349,7 +349,7 @@
      "fichaTecnica": "/assets/docs/fichas/casco-libus-andes.pdf"
     }
    ],
-   "foto": "/img/catalogo/casco-libus-andes--blanco.webp",
+   "foto": "/img/catalogo/casco-libus-andes--rojo.webp",
    "nota": "Material oficial de Libus que dejó el usuario (fotos + ficha/brochure) en _assets/fotos_marcas/libus/craneal/; fondo gris normalizado a blanco (_procesadas/). Ventas de los códigos ERP unificados. 14 oct: + azul, rojo y verde (LISTA WEB de Diego), fotos de Segutécnica. 14 oct: colores nuevos con fotos oficiales de libus.com (reemplazan Segutécnica).",
    "fichaTecnica": "/assets/docs/fichas/casco-libus-andes.pdf",
    "galeria": [
@@ -5033,7 +5033,7 @@
     "/img/catalogo/campera-depascale-descarne--vista-2.webp",
     "/img/catalogo/campera-depascale-descarne--contexto-1.webp"
    ],
-   "nota": "11 oct: el ERP lo tenía como Diforza; equivalente De Pascale elegido con el usuario. Fotos y ficha de la API De Pascale en _assets/fotos_marcas/depascale/soldador/campera-descarne/. Talles: el ERP vende L al 4XL; De Pascale numera 1 a 11 → confirmar equivalencia. 14 oct: talles L al 5XL según LISTA WEB de Diego."
+   "nota": "11 oct: el ERP lo tenía como Diforza; equivalente De Pascale elegido con el usuario. Fotos y ficha de la API De Pascale en _assets/fotos_marcas/depascale/soldador/campera-descarne/. Talles: el ERP vende L al 4XL; De Pascale numera 1 a 11 → confirmar equivalencia. 14 oct: talles L al 5XL según LISTA WEB de Diego. 16 oct: foto principal de frente (campera descarne soldador depascale.png)."
   },
   {
    "id": "campera-friza-diforza",
@@ -5198,7 +5198,7 @@
    "talles": "S al 4XL",
    "visible": true,
    "foto": "/img/catalogo/campera-rompeviento-silver-diforza--azul-marino.webp",
-   "nota": "Nombre según catálogo Diforza oct 2026 (código ERP CAMPSILV). Foto del catálogo PDF en azul marino. Specs, colores y talles armados con IA (sin info de Diforza, aprobado por el usuario 10 oct) — validar.",
+   "nota": "Nombre según catálogo Diforza oct 2026 (código ERP CAMPSILV). Foto del catálogo PDF en azul marino. Specs, colores y talles armados con IA (sin info de Diforza, aprobado por el usuario 10 oct) — validar. 16 oct: foto nueva de Yesica (cuello alto; la capucha va oculta en el cuello). Verde inglés recoloreado desde esa foto.",
    "nombreWeb": "Campera rompeviento Silver con capucha Diforza",
    "descripcion": "Rompeviento abrigada con capucha, cierre completo y bolsillos.",
    "descripcionLarga": "Una campera rompeviento para trabajar al aire libre con viento y frío. Tela exterior cortaviento, interior abrigado, capucha, cierre frontal completo y bolsillos. Pensada para jornadas a la intemperie en obra, logística o vía pública, y personalizable con el logo de la empresa.",
@@ -5300,10 +5300,8 @@
     "CAMTRUDIF"
    ],
    "colores": [
-    "azul-francia",
-    "negro",
-    "gris",
-    "blanco"
+    "azul-marino",
+    "verde-ingles"
    ],
    "talles": "S al 4XL",
    "visible": true,
@@ -5311,7 +5309,7 @@
     "unidades": 3000,
     "empresas": 34
    },
-   "foto": "/img/catalogo/campera-trucker-diforza--azul-francia.webp",
+   "foto": "/img/catalogo/campera-trucker-diforza--azul-marino.webp",
    "nombreWeb": "Campera de trabajo trucker Diforza",
    "descripcion": "Tela trucker con guata de 150 g, capucha y cuello de polar.",
    "descripcionLarga": "La campera de trabajo que más vendemos para el invierno. Confeccionada en tela trucker, forrada en matelaseado y con relleno de guata de 150 g, abriga en las jornadas más frías sin perder movilidad. Tiene capucha, cuello forrado en polar, cierre frontal con cremallera oculto por solapa, dos bolsillos frontales y un bolsillo interno. Se personaliza con el logo de la empresa y se le puede sumar cinta reflectiva.",
@@ -5359,31 +5357,19 @@
    ],
    "variantes": [
     {
-     "color": "azul-francia",
-     "colorFabricante": "Azul francia",
-     "foto": "/img/catalogo/campera-trucker-diforza--azul-francia.webp",
+     "color": "azul-marino",
+     "colorFabricante": "Azul marino",
+     "foto": "/img/catalogo/campera-trucker-diforza--azul-marino.webp",
      "fotoGenerada": false
     },
     {
-     "color": "negro",
-     "colorFabricante": "Negro",
-     "foto": "/img/catalogo/campera-trucker-diforza--negro.webp",
-     "fotoGenerada": true
-    },
-    {
-     "color": "gris",
-     "colorFabricante": "Gris",
-     "foto": "/img/catalogo/campera-trucker-diforza--gris.webp",
-     "fotoGenerada": true
-    },
-    {
-     "color": "blanco",
-     "colorFabricante": "Blanco",
-     "foto": "/img/catalogo/campera-trucker-diforza--blanco.webp",
+     "color": "verde-ingles",
+     "colorFabricante": "Verde inglés",
+     "foto": "/img/catalogo/campera-trucker-diforza--verde-ingles.webp",
      "fotoGenerada": true
     }
    ],
-   "nota": "Ventas ene–jun 10 oct: 2.484 u con código CAMTRUDIF + ~500 u manuales. Specs dadas por el usuario 10 oct (+ placa \"Campera térmica\"). Colores definidos por el usuario (azul francia, negro, gris, blanco). Ficha/flyer del proveedor en camperas/campera-truckerdiforza-2-*.webp."
+   "nota": "Ventas ene–jun 10 oct: 2.484 u con código CAMTRUDIF + ~500 u manuales. Specs dadas por el usuario 10 oct (+ placa \"Campera térmica\"). Colores definidos por el usuario (azul francia, negro, gris, blanco). Ficha/flyer del proveedor en camperas/campera-truckerdiforza-2-*.webp. 16 oct: foto azul francia discontinuada (usuario/Yesica) -> fotos que tenía la Silver (azul marino real + verde inglés recoloreado); colores ahora azul marino y verde inglés."
   },
   {
    "id": "campera-trucker-eco",
@@ -5671,8 +5657,8 @@
     "CASMILIB"
    ],
    "colores": [
-    "blanco",
     "amarillo",
+    "blanco",
     "azul",
     "rojo",
     "verde",
@@ -5689,7 +5675,7 @@
     "unidades": 2970,
     "empresas": 45
    },
-   "foto": "/img/catalogo/casco-libus-milenium-class--blanco.webp",
+   "foto": "/img/catalogo/casco-libus-milenium-class--amarillo.webp",
    "nombreWeb": "Casco de seguridad Libus Milenium Class S/V",
    "descripcion": "Casco modular de polietileno, visera de 3,5 cm. Sin arnés.",
    "descripcionLarga": "El Milenium Class es el casco de seguridad más vendido de Diforza: casi 3.000 unidades en el primer semestre a 45 empresas. Carcasa de polietileno de diseño moderno y excelente terminación, con visera frontal de 3,5 cm que da una óptima visión superior. Diseño modular para montar protectores faciales, auditivos, oculares y de soldadura, y hebilla trasera para mentonera de 3 puntos. Sin ventilación. Certificado IRAM 3620 y ANSI/ISEA Z89.1. Se vende sin arnés: se combina con cualquiera de los arneses Milenium (estándar o a cremallera, plástico o textil).",
@@ -5740,16 +5726,16 @@
    ],
    "variantes": [
     {
-     "color": "blanco",
-     "colorFabricante": "Blanco",
-     "foto": "/img/catalogo/casco-libus-milenium-class--blanco.webp",
+     "color": "amarillo",
+     "colorFabricante": "Amarillo",
+     "foto": "/img/catalogo/casco-libus-milenium-class--amarillo.webp",
      "fotoGenerada": false,
      "fichaTecnica": "/assets/docs/fichas/casco-libus-milenium-class.pdf"
     },
     {
-     "color": "amarillo",
-     "colorFabricante": "Amarillo",
-     "foto": "/img/catalogo/casco-libus-milenium-class--amarillo.webp",
+     "color": "blanco",
+     "colorFabricante": "Blanco",
+     "foto": "/img/catalogo/casco-libus-milenium-class--blanco.webp",
      "fotoGenerada": false,
      "fichaTecnica": "/assets/docs/fichas/casco-libus-milenium-class.pdf"
     },
@@ -9710,15 +9696,11 @@
    ],
    "colores": [
     "azul-marino",
-    "rojo",
-    "blanco",
-    "negro",
-    "gris",
-    "beige"
+    "negro"
    ],
    "talles": "Único",
    "visible": true,
-   "nota": "Material oficial de Libus que dejó el usuario (fotos + ficha/brochure) en _assets/fotos_marcas/libus/craneal/; fondo gris normalizado a blanco (_procesadas/). Ventas de los códigos ERP unificados.",
+   "nota": "Material oficial de Libus que dejó el usuario (fotos + ficha/brochure) en _assets/fotos_marcas/libus/craneal/; fondo gris normalizado a blanco (_procesadas/). Ventas de los códigos ERP unificados. 16 oct: Solo negra y azul (usuario); roja/blanca/gris/beige quitadas. Fotos nuevas de la negra (principal + 3 vistas).",
    "ventasEneJun2026": {
     "unidades": 15,
     "empresas": 1
@@ -9772,37 +9754,9 @@
      "fichaTecnica": "/assets/docs/fichas/gorra-libus-con-casquete.pdf"
     },
     {
-     "color": "rojo",
-     "colorFabricante": "Roja",
-     "foto": "/img/catalogo/gorra-libus-con-casquete--roja.webp",
-     "fotoGenerada": false,
-     "fichaTecnica": "/assets/docs/fichas/gorra-libus-con-casquete.pdf"
-    },
-    {
-     "color": "blanco",
-     "colorFabricante": "Blanca",
-     "foto": "/img/catalogo/gorra-libus-con-casquete--blanca.webp",
-     "fotoGenerada": false,
-     "fichaTecnica": "/assets/docs/fichas/gorra-libus-con-casquete.pdf"
-    },
-    {
      "color": "negro",
      "colorFabricante": "Negra",
      "foto": "/img/catalogo/gorra-libus-con-casquete--negra.webp",
-     "fotoGenerada": false,
-     "fichaTecnica": "/assets/docs/fichas/gorra-libus-con-casquete.pdf"
-    },
-    {
-     "color": "gris",
-     "colorFabricante": "Gris (visera 3 cm)",
-     "foto": "/img/catalogo/gorra-libus-con-casquete--gris.webp",
-     "fotoGenerada": false,
-     "fichaTecnica": "/assets/docs/fichas/gorra-libus-con-casquete.pdf"
-    },
-    {
-     "color": "beige",
-     "colorFabricante": "Beige",
-     "foto": "/img/catalogo/gorra-libus-con-casquete--beige.webp",
      "fotoGenerada": false,
      "fichaTecnica": "/assets/docs/fichas/gorra-libus-con-casquete.pdf"
     }
@@ -9812,7 +9766,10 @@
     "/img/catalogo/gorra-libus-con-casquete--vista-2.webp",
     "/img/catalogo/gorra-libus-con-casquete--vista-3.webp",
     "/img/catalogo/gorra-libus-con-casquete--vista-4.webp",
-    "/img/catalogo/gorra-libus-con-casquete--contexto-1.webp"
+    "/img/catalogo/gorra-libus-con-casquete--contexto-1.webp",
+    "/img/catalogo/gorra-libus-con-casquete--vista-negra-1.webp",
+    "/img/catalogo/gorra-libus-con-casquete--vista-negra-2.webp",
+    "/img/catalogo/gorra-libus-con-casquete--vista-negra-3.webp"
    ]
   },
   {
@@ -15427,12 +15384,14 @@
     {
      "color": "azul-marino",
      "colorFabricante": "Azul marino",
-     "foto": "/img/catalogo/pantalon-clasico-ombu--azul-marino.webp"
+     "foto": "/img/catalogo/pantalon-clasico-ombu--azul-marino.webp",
+     "fotoGenerada": false
     },
     {
      "color": "azulino",
      "colorFabricante": "Azulino",
-     "foto": "/img/catalogo/pantalon-clasico-ombu--azulino.webp"
+     "foto": "/img/catalogo/pantalon-clasico-ombu--azulino.webp",
+     "fotoGenerada": true
     }
    ]
   },

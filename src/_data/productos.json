@@ -215,10 +215,8 @@
         {
           "tipo": "colores",
           "valores": [
-            "azul-francia",
-            "negro",
-            "gris",
-            "blanco"
+            "azul-marino",
+            "verde-ingles"
           ]
         },
         {
@@ -227,7 +225,7 @@
         }
       ],
       "foto": {
-        "src": "/img/catalogo/campera-trucker-diforza--azul-francia.webp",
+        "src": "/img/catalogo/campera-trucker-diforza--azul-marino.webp",
         "estado": "producto"
       },
       "empresas": 40,
@@ -600,8 +598,8 @@
         {
           "tipo": "colores",
           "valores": [
-            "blanco",
             "amarillo",
+            "blanco",
             "azul"
           ]
         },
@@ -611,7 +609,7 @@
         }
       ],
       "foto": {
-        "src": "/img/catalogo/casco-libus-milenium-class--blanco.webp",
+        "src": "/img/catalogo/casco-libus-milenium-class--amarillo.webp",
         "estado": "producto"
       },
       "empresas": 48,
@@ -1063,44 +1061,184 @@
         "estado": "producto"
       },
       "catalogoId": "botin-ombu-frances"
+    },
+    {
+      "id": "guante-tx2000",
+      "linea": "epp",
+      "subcategoria": "proteccion-manos",
+      "nombre": "Guante anticorte y anti-impacto WorkSafe TX2000",
+      "marca": "WorkSafe",
+      "codigo": "GUANTANTTX2000",
+      "descripcion": "HPPE anticorte nivel C con TPR anti-impacto y palma de nitrilo espumado.",
+      "atributos": [
+        {
+          "tipo": "colores",
+          "valores": [
+            "gris"
+          ]
+        },
+        {
+          "tipo": "talles",
+          "valor": "8 al 11"
+        }
+      ],
+      "foto": {
+        "src": "/img/catalogo/guante-anticorte-anti-impacto-ws-tx2000--gris.webp",
+        "estado": "producto"
+      },
+      "empresas": 0,
+      "catalogoId": "guante-anticorte-anti-impacto-ws-tx2000"
+    },
+    {
+      "id": "casco-andes",
+      "linea": "epp",
+      "subcategoria": "proteccion-craneal",
+      "nombre": "Casco de seguridad Libus Andes",
+      "marca": "Libus",
+      "codigo": "ANBLTCRLIB",
+      "descripcion": "Casco completo: arnés a cremallera, mentonera y reflectivos.",
+      "atributos": [
+        {
+          "tipo": "colores",
+          "valores": [
+            "rojo",
+            "blanco",
+            "amarillo",
+            "azul",
+            "verde"
+          ]
+        },
+        {
+          "tipo": "talles",
+          "valor": "Único"
+        }
+      ],
+      "foto": {
+        "src": "/img/catalogo/casco-libus-andes--rojo.webp",
+        "estado": "producto"
+      },
+      "empresas": 1,
+      "catalogoId": "casco-libus-andes"
+    },
+    {
+      "id": "cono-econo-70",
+      "linea": "epp",
+      "subcategoria": "senalizacion",
+      "nombre": "Cono Econo semiflexible con base 70 cm Conoflex",
+      "marca": "Conoflex",
+      "codigo": "ECONSEMFLEX",
+      "descripcion": "PVC flexible, 70 cm, reflectivo 1 x 10 y 1 x 5 cm.",
+      "atributos": [
+        {
+          "tipo": "colores",
+          "valores": [
+            "naranja"
+          ]
+        }
+      ],
+      "foto": {
+        "src": "/img/catalogo/econo-semiflex-c-base-2pie-70-cm-2071le-2r--naranja.webp",
+        "estado": "producto"
+      },
+      "empresas": 1,
+      "catalogoId": "econo-semiflex-c-base-2pie-70-cm-2071le-2r"
+    },
+    {
+      "id": "protector-l320",
+      "linea": "epp",
+      "subcategoria": "proteccion-auditiva",
+      "nombre": "Protector auditivo de copa Libus L-320",
+      "marca": "Libus",
+      "codigo": null,
+      "descripcion": "Copa de vincha liviana para ruido moderado. NRR 23 dB.",
+      "atributos": [
+        {
+          "tipo": "colores",
+          "valores": [
+            "gris"
+          ]
+        },
+        {
+          "tipo": "talles",
+          "valor": "Único"
+        }
+      ],
+      "foto": {
+        "src": "/img/catalogo/protector-auditivo-libus-l-320-vincha--vincha.webp",
+        "estado": "producto"
+      },
+      "empresas": 0,
+      "catalogoId": "protector-auditivo-libus-l-320-vincha"
+    },
+    {
+      "id": "mascara-5700",
+      "linea": "epp",
+      "subcategoria": "proteccion-respiratoria",
+      "nombre": "Máscara completa reutilizable BLS 5700 (silicona)",
+      "marca": "BLS",
+      "codigo": "MASCOMP5700L",
+      "descripcion": "Máscara de cara completa en silicona, talles S, M y L.",
+      "atributos": [
+        {
+          "tipo": "colores",
+          "valores": [
+            "verde"
+          ]
+        },
+        {
+          "tipo": "talles",
+          "valor": "S · M · L"
+        }
+      ],
+      "foto": {
+        "src": "/img/catalogo/mascara-completa-bls-5700--silicona-s-m-l.webp",
+        "estado": "producto"
+      },
+      "empresas": 3,
+      "catalogoId": "mascara-completa-bls-5700"
     }
   ],
   "destacados": {
-    "_criterio": "Por cantidad de empresas que compran + productos que Diforza quiere impulsar (cuestionario, preg. 18: mamelucos, capas y trajes de lluvia, EPP). Subcategorías mezcladas, badge en la tarjeta.",
+    "_criterio": "Por cantidad de empresas que compran + productos que Diforza quiere impulsar (cuestionario, preg. 18: mamelucos, capas y trajes de lluvia, EPP). Subcategorías mezcladas, badge en la tarjeta. Orden de los 8 primeros por línea definido por el usuario el 16 oct 2026 (bota PVC caña larga al final: es vertical).",
     "indumentaria": [
-      "pantalon-cargo",
+      "pantalon-elastizado",
       "camisa-clasica",
-      "mameluco-ziao",
-      "buzo-polar",
-      "capa-lluvia",
       "remera",
+      "buzo-polar",
+      "traje-lluvia",
+      "capa-lluvia",
+      "mameluco-ziao",
       "chaleco-reflectivo",
+      "pantalon-cargo",
       "mameluco-gabardina",
       "pantalon-clasico",
-      "traje-lluvia",
       "campera-trucker",
-      "chomba-pique",
-      "pantalon-elastizado"
+      "chomba-pique"
     ],
     "calzado": [
       "botin-conwork-negro",
       "zapato-conwork",
-      "bota-cana-larga",
       "zapatilla-conwork",
       "botin-conwork-653",
       "zapato-ombu-ozono",
       "botin-ombu-ozono",
-      "botin-ombu-frances"
+      "botin-ombu-frances",
+      "bota-cana-larga"
     ],
     "epp": [
+      "guante-tx2000",
+      "casco-andes",
       "anteojo-argon",
+      "faja-lumbar",
+      "arnes-anticaida",
+      "cono-econo-70",
+      "protector-l320",
+      "mascara-5700",
       "respirador-522",
       "casco-milenium",
       "protector-quantum",
       "guante-moteado",
       "mascarilla-502",
-      "faja-lumbar",
-      "arnes-anticaida",
       "anteojo-ecoline",
       "semimascara",
       "arnes-cremallera",
