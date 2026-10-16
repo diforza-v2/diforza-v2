@@ -74,3 +74,14 @@ _site/                        ← salida del build. NO se edita ni se sube a git
 - `src/_headers` agrega `X-Robots-Tag: noindex` mientras no haya dominio propio: **borrarlo al conectar el dominio**.
 - Las ramas que no son `main` publican una vista previa en `https://<rama>.diforza.pages.dev`.
 - Detalle, pendientes (dominio, 404, formularios → Kommo) y cómo volver atrás: `../18_infraestructura_y_publicacion.md`.
+
+
+## ⚠️ Fotos de productos: miniaturas
+
+Después de sumar o cambiar fotos en `src/img/catalogo/`, correr:
+
+```
+python _dev/scripts/miniaturas.py
+```
+
+Genera `src/img/catalogo/480/` (las usan las tarjetas de producto vía `srcset`). Si falta una miniatura, el build lo avisa (`[miniaturas] FALTA …`) y la tarjeta usa la foto grande.

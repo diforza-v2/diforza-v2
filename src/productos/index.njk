@@ -19,7 +19,7 @@ headerFlat: true
 {%- for l in catalogoWeb.lineas %}
 {%- set LT = catalogoTextos.lineas[l.id] %}
       <li><a class="cat-line" href="{{ l.url }}">
-        <span class="cat-line__media">{% for f in l.portadas %}<img src="{{ f | replace("/img/catalogo/", "/img/catalogo/480/") }}" alt="" width="200" height="250" loading="lazy" decoding="async">{% endfor %}</span>
+        <span class="cat-line__media">{% for f in l.portadas %}<img src="{{ (f | thumb480) or f }}" alt="" width="200" height="250" loading="lazy" decoding="async">{% endfor %}</span>
         <span class="cat-line__text"><span class="cat-line__name">{{ LT.titulo }}</span><span class="cat-line__n">{{ l.total }} productos · {{ l.subcategorias.length }} categorías</span></span>
         <span class="cat-line__arrow" aria-hidden="true">{{ icons['ui-flecha'] | safe }}</span>
       </a></li>

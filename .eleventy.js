@@ -47,6 +47,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("year", () => new Date().getFullYear());
 
   // Textos de los JSON de landings: [[texto]] → marca de placeholder [VALIDAR]/[PENDIENTE]
+  // Miniatura 480 px del catálogo (src/img/catalogo/480/, las genera _dev/scripts/miniaturas.py).
+  // Red de seguridad: si la miniatura no existe, devuelve la foto original (nunca una foto rota)
+  // y avisa en la consola del build para que se corra el script.
+  const thumbFaltantes = new Set();
+  eleventyConfig.addFilter("thumb480", (u) => {
+    if (!u || !u.startsWith("/img/catalogo/") || u.includes("/480/")) return "";
+    const t = u.replace("/img/catalogo/", "/img/catalogo/480/");
+    if (require("fs").existsSync("src" + t)) return t;
+    if (!thumbFaltantes.has(u)) { thumbFaltantes.add(u); console.warn("[miniaturas] FALTA " + t + " → correr: python _dev/scripts/miniaturas.py"); }
+    return "";
+  });
   eleventyConfig.addFilter("rich", (s) =>
     s == null ? "" : String(s).replace(/\[\[(.+?)\]\]/g, '<span class="placeholder">$1</span>')
   );

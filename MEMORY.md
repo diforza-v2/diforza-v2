@@ -1,3 +1,16 @@
+## 🖼️ FOTOS DE PRODUCTOS → SIEMPRE CORRER `python _dev/scripts/miniaturas.py` (REGLA FIJA)
+
+> **Cada vez que se SUMEN o CAMBIEN fotos de productos en `02_sitio-web/diforza-v2/src/img/catalogo/`, correr desde `02_sitio-web/diforza-v2/`:**
+>
+> ```
+> python _dev/scripts/miniaturas.py
+> ```
+>
+> - Genera las miniaturas 480×600 (`src/img/catalogo/480/`) que usan TODAS las tarjetas de producto (home, landings, catálogo, subcategorías).
+> - Si no se corre: la tarjeta no queda rota (red de seguridad desde el 15 oct: usa la foto grande), pero pesa ~10 veces más y el build avisa con `[miniaturas] FALTA …`.
+> - **Claude debe avisarle al usuario cada vez que cargue fotos nuevas** y correr el script él mismo antes de dar el trabajo por terminado (incluir `src/img/catalogo/480/` en el commit).
+
+
 - [Brief de diseño L1 Institucional](brief_diseno_l1_institucional.md) — brief entregado para el primer boceto de la landing institucional de Diforza (contenido, audiencia, sistema visual, pendientes).
 - [Resumen de sesión — Build HTML/CSS landing L1](resumen_sesion_build_landing_l1.md) — build completo de los 7 sectores + animaciones + footer, archivo canónico en `preview_html/index.html`, deploy preparado en carpeta `upload/`, pendiente pasar fuentes a self-hosted `@font-face`.
 - [Proyecto Diforza v2](proyecto_diforza_v2.md) — nueva versión mejorada de la landing en carpeta `diforza-v2/`, mismo navbar/footer/estilos base, contenido nuevo sector por sector.
