@@ -2398,7 +2398,7 @@
     "empresas": 12
    },
    "foto": "/img/catalogo/arnes-sky-10404f--amarillo-y-azul.webp",
-   "nombreWeb": "Arnés completo con toma frontal y faja lumbar SKY 10404F",
+   "nombreWeb": "Arnés completo con toma frontal y faja lumbar",
    "descripcion": "Tomas dorsal y frontal, 2 argollas en cintura y lumbar acolchado.",
    "descripcionLarga": "El SKY 10404F es el arnés más elegido por nuestros clientes. Arnés completo tipo paracaidista con toma anticaídas dorsal y frontal, dos argollas de sujeción en la cintura para posicionamiento y protector lumbar acolchado y forrado de 200 mm que reparte la carga y hace más cómodas las jornadas largas. Bandas de poliéster de alta tenacidad y hebillas de regulación en hombros y piernas para ajustarlo a cada operario. Fabricado en Argentina con sello IRAM 3622-1.",
    "specs": {
@@ -7220,7 +7220,7 @@
     "unidades": 2,
     "empresas": 1
    },
-   "nombreWeb": "Amarre anticaídas SKY 10475E con amortiguador (1,5 m, mosquetones de 18 y 55 mm)",
+   "nombreWeb": "Amarre con amortiguador 1,5 m",
    "descripcion": "Cola anticaídas de 1,5 m con amortiguador y mosquetones de 18 y 55 mm.",
    "descripcionLarga": "Elemento de amarre anticaídas SKY 10475E: cinta de poliéster de alta tenacidad de 1,5 m con amortiguador de caída, que absorbe la energía del impacto. Mosquetón estampado de 18 mm para la toma dorsal del arnés y forjado de 55 mm para el anclaje, ambos con doble traba de seguridad. Sello IRAM 3622-1.",
    "specs": {
@@ -7278,7 +7278,7 @@
    "foto": "/img/catalogo/amarre-sky-10475e--amarillo.webp",
    "fichaTecnica": "/assets/docs/fichas/amarre-sky-10475e.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. · 16 oct: nombre corto según ficha oficial SKY (la lista de Yesica tiene descripciones cruzadas en 10471ER/10475E/10475ER/10477E/10479E)."
   },
   {
    "id": "amarre-sky-10471er",
@@ -7298,7 +7298,7 @@
     "unidades": 8,
     "empresas": 2
    },
-   "nombreWeb": "Amarre de sujeción regulable SKY 10471ER (1,5 m, mosquetones de 18 y 55 mm)",
+   "nombreWeb": "Amarre de posicionamiento 1,5 m",
    "descripcion": "Cola de posicionamiento de 1,5 m con mosquetón de 18 mm y de 55 mm.",
    "descripcionLarga": "Elemento de amarre de sujeción SKY 10471ER: cinta de poliéster de alta tenacidad regulable hasta 1,5 m, con un mosquetón estampado de 18 mm para el arnés y uno forjado de 55 mm que abraza caños, vigas y estructuras gruesas. Sello IRAM 3622-2.",
    "specs": {
@@ -7355,7 +7355,7 @@
    "foto": "/img/catalogo/amarre-sky-10471er--amarillo.webp",
    "fichaTecnica": "/assets/docs/fichas/amarre-sky-10471er.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. · 16 oct: nombre corto según ficha oficial SKY (la lista de Yesica tiene descripciones cruzadas en 10471ER/10475E/10475ER/10477E/10479E)."
   },
   {
    "id": "amarre-sky-10475er",
@@ -7375,7 +7375,7 @@
     "unidades": 28,
     "empresas": 1
    },
-   "nombreWeb": "Amarre anticaídas regulable SKY 10475ER con amortiguador (2 m, mosquetones de 18 y 55 mm)",
+   "nombreWeb": "Amarre regulable con amortiguador 2 m",
    "descripcion": "Cola anticaídas regulable de 2 a 1,5 m con amortiguador.",
    "descripcionLarga": "Elemento de amarre anticaídas SKY 10475ER: cinta de poliéster de alta tenacidad regulable de 2 a 1,5 m, con amortiguador de caída y mosquetones de doble traba, uno estampado de 18 mm para el arnés y uno forjado de 55 mm para el anclaje. Sello IRAM 3622-1.",
    "specs": {
@@ -7433,7 +7433,7 @@
    "foto": "/img/catalogo/amarre-sky-10475er--amarillo.webp",
    "fichaTecnica": "/assets/docs/fichas/amarre-sky-10475er.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. · 16 oct: nombre corto según ficha oficial SKY (la lista de Yesica tiene descripciones cruzadas en 10471ER/10475E/10475ER/10477E/10479E)."
   },
   {
    "id": "amarre-sky-10479p",
@@ -7454,7 +7454,7 @@
     "empresas": 1
    },
    "foto": "/img/catalogo/amarre-sky-10479p--amarillo.webp",
-   "nombreWeb": "Amarre anticaídas doble SKY 10479P (en Y, cinta plana, con amortiguador)",
+   "nombreWeb": "Amarre doble en Y de cinta plana",
    "descripcion": "Cola doble en Y de cinta plana con amortiguador y 3 mosquetones.",
    "descripcionLarga": "Elemento de amarre anticaídas doble tipo Y SKY 10479P: dos ramas de cinta plana de poliéster con amortiguador de caída, un mosquetón estampado de 18 mm para el arnés y dos de 55 mm para el anclaje, todos con doble traba. Permite cambiar de punto de anclaje sin quedar nunca desenganchado. Sello IRAM 3622-1.",
    "specs": {
@@ -7511,7 +7511,7 @@
    ],
    "fichaTecnica": "/assets/docs/fichas/amarre-sky-10479p.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. · 16 oct: nombre corto según ficha oficial SKY (la lista de Yesica tiene descripciones cruzadas en 10471ER/10475E/10475ER/10477E/10479E)."
   },
   {
    "id": "cola-elastizada-1-5-amortiguador-mosqueton-18mm-y-55mm",
@@ -7548,7 +7548,7 @@
     "empresas": 3
    },
    "foto": "/img/catalogo/amarre-sky-10477e--amarillo.webp",
-   "nombreWeb": "Amarre anticaídas elastizado SKY 10477E con amortiguador (1,5 m, mosquetones de 18 y 55 mm)",
+   "nombreWeb": "Amarre elastizado con amortiguador 1,5 m",
    "descripcion": "Cola elastizada de 1,5 m con amortiguador y mosquetones de 18 y 55 mm.",
    "descripcionLarga": "Elemento de amarre anticaídas elastizado SKY 10477E: cinta de poliéster elastizada de 1,5 m que se recoge sola, con amortiguador de caída, un mosquetón estampado de 18 mm para el arnés y uno forjado de 55 mm para anclarse a caños y estructuras, ambos con doble traba. Sello IRAM 3622-1.",
    "specs": {
@@ -7605,7 +7605,7 @@
    ],
    "fichaTecnica": "/assets/docs/fichas/amarre-sky-10477e.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. El ERP lo tenía con marca \"Diforza\" (WXECV…); es SKY según el usuario."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. El ERP lo tenía con marca \"Diforza\" (WXECV…); es SKY según el usuario. · 16 oct: nombre corto según ficha oficial SKY (la lista de Yesica tiene descripciones cruzadas en 10471ER/10475E/10475ER/10477E/10479E)."
   },
   {
    "id": "amarre-sky-10464er",
@@ -7626,7 +7626,7 @@
     "empresas": 2
    },
    "foto": "/img/catalogo/amarre-sky-10464er--amarillo.webp",
-   "nombreWeb": "Amarre de sujeción regulable SKY 10464ER (2 m, 2 mosquetones de 18 mm)",
+   "nombreWeb": "Amarre de posicionamiento 2 m",
    "descripcion": "Cola de posicionamiento regulable de 2 m con 2 mosquetones de 18 mm.",
    "descripcionLarga": "Elemento de amarre de sujeción SKY 10464ER: cinta de poliéster de alta tenacidad regulable hasta 2 m, con dos mosquetones estampados de 18 mm. Para posicionarse en estructuras, postes o torres con las manos libres, enganchado a las argollas de la cintura del arnés. Sello IRAM 3622-2.",
    "specs": {
@@ -7682,7 +7682,7 @@
    ],
    "fichaTecnica": "/assets/docs/fichas/amarre-sky-10464er.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. · 16 oct: nombre corto según ficha oficial SKY (la lista de Yesica tiene descripciones cruzadas en 10471ER/10475E/10475ER/10477E/10479E)."
   },
   {
    "id": "amarre-sky-10479e",
@@ -7703,7 +7703,7 @@
     "empresas": 4
    },
    "foto": "/img/catalogo/amarre-sky-10479e--amarillo.webp",
-   "nombreWeb": "Amarre anticaídas doble elastizado SKY 10479E (en Y, 1,5 m, con amortiguador)",
+   "nombreWeb": "Amarre doble en Y elastizado",
    "descripcion": "Cola doble en Y elastizada con amortiguador y 3 mosquetones.",
    "descripcionLarga": "Elemento de amarre anticaídas doble tipo Y SKY 10479E: dos ramas elastizadas de 1,5 m con amortiguador de caída, un mosquetón estampado de 18 mm para el arnés y dos forjados de 55 mm. Con dos ramas el operario siempre queda enganchado al pasar de un punto de anclaje a otro (conexión 100 %). Es el \"amarre anticaídas doble\" de nuestro catálogo. Sello IRAM 3622-1.",
    "specs": {
@@ -7761,7 +7761,7 @@
    ],
    "fichaTecnica": "/assets/docs/fichas/amarre-sky-10479e.pdf",
    "lineaMarca": "Topsafe",
-   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/."
+   "nota": "Foto y ficha técnica oficial SKY (segutecnica.com) en _assets/fotos_marcas/sky/. · 16 oct: nombre corto según ficha oficial SKY (la lista de Yesica tiene descripciones cruzadas en 10471ER/10475E/10475ER/10477E/10479E)."
   },
   {
    "id": "conector-anclaje-corbata-sky",
@@ -20914,7 +20914,7 @@
    "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10403E (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10403E/. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego. · 16 oct: nombre corto como lo diferencia Yesica en el catálogo (completo / 3 / 5 / 6 puntos).",
    "codigoFabricante": "SKY10403E",
    "foto": "/img/catalogo/arnes-sky-10403e--amarillo-y-azul.webp",
-   "nombreWeb": "Arnés 3 puntos con amarre de 1,5 m SKY 10403E",
+   "nombreWeb": "Arnés 3 puntos con amarre de 1,5 m",
    "descripcion": "Toma dorsal, sujeción en cintura y cabo regulable de 1,5 m incluido.",
    "descripcionLarga": "Arnés completo tipo paracaidista SKY 10403E que viene listo para posicionamiento: toma anticaídas dorsal y cabo de sujeción regulable de 1,5 m fijo a la cintura, con mosquetón estampado en un extremo y argolla de sujeción en el otro. Protector lumbar de cinta de 100 mm y hebillas de regulación en hombros y piernas. Bandas de poliéster de alta tenacidad, fabricado en Argentina con sello IRAM 3622-1.",
    "specs": {
@@ -20988,7 +20988,7 @@
    "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10420 (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10420/. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego. · 16 oct: nombre corto como lo diferencia Yesica en el catálogo (completo / 3 / 5 / 6 puntos).",
    "codigoFabricante": "SKY10420",
    "foto": "/img/catalogo/arnes-sky-10420--amarillo-y-azul.webp",
-   "nombreWeb": "Arnés 5 puntos con coleta dorsal SKY 10420",
+   "nombreWeb": "Arnés 5 puntos con coleta dorsal",
    "descripcion": "Coleta dorsal de 0,35 m, 4 argollas en cintura y lumbar acolchado.",
    "descripcionLarga": "Arnés petrolero SKY 10420 para trabajos exigentes y de posicionamiento prolongado. Toma anticaídas dorsal con coleta de extensión de 0,35 m que facilita el enganche, cuatro argollas de sujeción en la cintura y protector lumbar acolchado y forrado de 200 mm. Regulación con ojales y hebillas empernadas de acero. Bandas de poliéster de alta tenacidad, fabricado en Argentina con sello IRAM 3622-1.",
    "specs": {
@@ -21060,7 +21060,7 @@
    "visible": true,
    "nota": "Foto (frente + espalda) y ficha técnica oficial SKY10420F (Segutécnica/Topsafe) en _assets/fotos_marcas/sky/arnes 10420F/. Sin código en el ERP (está en el catálogo comercial 2026 de Diforza). Talle: único regulable (la ficha no indica talles) → validar con Diego. · 16 oct: nombre corto como lo diferencia Yesica en el catálogo (completo / 3 / 5 / 6 puntos).",
    "codigoFabricante": "SKY10420F",
-   "nombreWeb": "Arnés 6 puntos con toma frontal y coleta SKY 10420F",
+   "nombreWeb": "Arnés 6 puntos con toma frontal y coleta",
    "descripcion": "Coleta dorsal, toma frontal, 4 argollas en cintura y lumbar acolchado.",
    "descripcionLarga": "El SKY 10420F es el arnés petrolero más completo: toma anticaídas dorsal con coleta de extensión de 0,35 m y toma frontal tipo lazo para escaleras con línea de vida o ascenso, cuatro argollas de sujeción en la cintura y protector lumbar acolchado y forrado de 200 mm. Regulación con ojales y hebillas empernadas de acero en cintura y piernas, y hebillas de regulación en hombros. Bandas de poliéster de alta tenacidad, fabricado en Argentina con sello IRAM 3622-1.",
    "specs": {
