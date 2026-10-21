@@ -1,0 +1,194 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: marcasWeb.lista
+  size: 1
+  alias: marca
+  addAllPagesToCollections: true
+permalink: "/marcas/{{ marca.slug }}/"
+pageJs: /assets/js/landing.js
+dlPageType: marca
+eleventyComputed:
+  title: "{{ marca.title | seoTitle }}"
+  description: "{{ marca.description | clip }}"
+  waText: "{{ marca.waText }}"
+  ogImage: "{{ marca.hero.og or (marca.fotos[0].src if marca.fotos.length else '') }}"
+  headerFlat: "{{ '' if marca.hero.foto else 'true' }}"
+  dlLandingId: "{{ marca.landingId }}"
+  dlLinea: "{{ marca.linea }}"
+---
+{#- Página de marca (/marcas/<slug>/), pensada como destino de campañas por marca y para las búsquedas
+    de marca (plan SEO §8.1). Contenido: _data/marcas.json · productos: _data/marcasWeb.js (salen de catalogo.json). -#}
+{%- set M = marca %}
+{%- set waHref = "https://wa.me/" + site.whatsapp.number + "?text=" + (M.waText | urlencode) %}
+{%- set agrupar = M.total > 12 and M.grupos.length > 1 %}
+{%- set crumbs = [{ nombre: "Inicio", url: "/" }, { nombre: "Marcas", url: "/marcas/" }, { nombre: M.marca }] %}
+{%- set crumbsLd = [{ "@type": "ListItem", position: 1, name: "Inicio", item: site.url + "/" }, { "@type": "ListItem", position: 2, name: "Marcas", item: site.url + "/marcas/" }, { "@type": "ListItem", position: 3, name: M.marca }] %}
+<main class="brand-page">
+{%- if M.hero.foto %}
+{#- Hero con foto: el mismo componente que la home, las landings y /ziao/ -#}
+{%- set L = { hero: {
+    modificador: M.slug,
+    fondo: M.hero.foto,
+    logo: ({ src: M.logo.src, alt: M.marca, ancho: M.logo.ancho, alto: M.logo.alto } if M.logo else undefined),
+    eyebrow: M.hero.eyebrow,
+    titulo: M.hero.titulo,
+    acento: M.hero.acento,
+    bajada: M.hero.bajada,
+    beneficios: M.hero.beneficios,
+    claim: M.hero.claim,
+    ctaSecundario: { href: "#productos", texto: "Ver los " + M.total + " productos", sinIcono: true }
+} } %}
+{% include "sections/landing/hero.njk" %}
+<script type="application/ld+json">{{ { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": crumbsLd } | dump | safe }}</script>
+{%- else %}
+  <section class="brand-hero">
+    <div class="brand-hero__inner">
+{%- include "catalogo/breadcrumbs.njk" %}
+      <div class="brand-hero__row">
+        <div class="brand-hero__copy">
+{%- if M.logo %}
+          <span class="brand-hero__logo"><img src="{{ M.logo.src }}" alt="{{ M.marca }}" width="{{ M.logo.ancho }}" height="{{ M.logo.alto }}"></span>
+{%- endif %}
+          <p class="brand-hero__eyebrow">{{ M.hero.eyebrow }}</p>
+          <h1 class="brand-hero__title">{{ M.hero.titulo }} <span>{{ M.hero.acento }}</span></h1>
+          <p class="brand-hero__lead">{{ M.hero.bajada }}</p>
+          <ul class="brand-hero__benefits">
+{%- for b in M.hero.beneficios %}
+            <li>{{ icons[b.icono] | safe }}<span>{{ b.texto }}</span></li>
+{%- endfor %}
+          </ul>
+          <div class="ctas">
+            <a href="{{ waHref }}" class="btn btn--primary btn--icon" data-js="wa" target="_blank" rel="noopener">{{ icons['ui-whatsapp'] | safe }} {{ site.cta.whatsapp }}</a>
+            <a href="#productos" class="btn brand-hero__more">Ver los {{ M.total }} productos</a>
+          </div>
+        </div>
+{%- if M.fotos.length %}
+        <ul class="brand-hero__photos" role="list">
+{%- for f in M.fotos %}
+          <li><a href="{{ f.url }}"><img src="{{ f.src }}" alt="{{ f.alt }}" width="1000" height="1250"{% if loop.first %} fetchpriority="high"{% else %} loading="lazy"{% endif %} decoding="async"></a></li>
+{%- endfor %}
+        </ul>
+{%- endif %}
+      </div>
+    </div>
+  </section>
+{%- endif %}
+
+  <section class="brand-products" id="productos" aria-labelledby="brand-products-title">
+    <div class="brand-products__inner">
+      <div class="brand-products__head">
+        <h2 id="brand-products-title">{{ M.productosTitulo }}</h2>
+        <p>{{ M.productosBajada }}</p>
+      </div>
+{%- if agrupar %}
+      <nav class="brand-products__nav" aria-label="Categorías de {{ M.marca }}">
+        <ul role="list">
+{%- for g in M.grupos %}
+          <li><a href="#{{ g.id }}">{{ g.nombre }} <span>{{ g.productos.length }}</span></a></li>
+{%- endfor %}
+        </ul>
+      </nav>
+{%- endif %}
+{%- for g in (M.grupos if agrupar else [{ id: "todos", productos: M.productos }]) %}
+      <div class="brand-products__group{% if agrupar %} brand-products__group--sub{% endif %}"{% if agrupar %} id="{{ g.id }}"{% endif %}>
+{%- if agrupar %}
+        <div class="brand-products__group-head">
+          <h3>{{ g.nombre }} {{ M.marca }}</h3>
+          <a href="{{ g.url }}">Ver toda la categoría {{ icons['ui-flecha'] | safe }}</a>
+        </div>
+{%- endif %}
+        <ul class="catalog-grid" role="list">
+{%- for it in g.productos %}
+{%- set p = it.card %}
+          <li class="catalog-grid__item">
+{%- include "partials/product-card.njk" %}
+          </li>
+{%- endfor %}
+        </ul>
+      </div>
+{%- endfor %}
+{%- if M.masModelos %}
+      <div class="brand-more">
+        <div>
+          <p class="brand-more__title">{{ M.masModelos.titulo }}</p>
+          <p>{{ M.masModelos.texto }}</p>
+        </div>
+        <a href="https://wa.me/{{ site.whatsapp.number }}?text={{ M.masModelos.wa | urlencode }}" class="btn btn--primary btn--icon" data-js="wa" target="_blank" rel="noopener">{{ icons['ui-whatsapp'] | safe }} Consultar modelo</a>
+      </div>
+{%- endif %}
+    </div>
+  </section>
+
+  <section class="about-section about-section--alt">
+    <div class="about-section__inner">
+      <h2>Por qué comprar {{ M.marca }} en Diforza</h2>
+      <ul class="brand-why" role="list">
+{%- for c in M.porQue %}
+        <li>
+          <h3>{{ c.titulo }}</h3>
+          <p>{{ c.texto }}</p>
+        </li>
+{%- endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-section__inner brand-about">
+      <div>
+        <h2>{{ M.sobre.titulo }}</h2>
+{%- for t in M.sobre.parrafos %}
+        <p>{{ t }}</p>
+{%- endfor %}
+      </div>
+      <aside class="brand-about__card">
+{%- if M.logo %}
+        <img src="{{ M.logo.src }}" alt="" width="{{ M.logo.ancho }}" height="{{ M.logo.alto }}" loading="lazy">
+{%- else %}
+        <p class="brand-about__name">{{ M.marca }}</p>
+{%- endif %}
+        <p>{{ M.sobre.diforza }}</p>
+        <a href="{{ waHref }}" class="btn btn--primary btn--icon" data-js="wa" target="_blank" rel="noopener">{{ icons['ui-whatsapp'] | safe }} {{ site.cta.whatsapp }}</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="about-section about-section--alt">
+    <div class="about-section__inner">
+{% include "partials/clients-marquee.njk" %}
+    </div>
+  </section>
+
+{#- Preguntas frecuentes: el mismo bloque que la home y las landings (incluye el FAQPage) -#}
+{%- set L = { faq: M.faq, faqTitulo: "Preguntas frecuentes sobre " + M.marca } %}
+{% include "sections/landing/faq.njk" %}
+
+{%- set L = { cotizacion: { titulo: M.cotizacion.titulo, respuesta: home.cotizacion.respuesta, catalogo: home.cotizacion.catalogo, landingId: M.landingId, formTitulo: home.cotizacion.formTitulo, formBoton: home.cotizacion.formBoton } } %}
+{% include "sections/landing/quote.njk" %}
+</main>
+{%- set itemsLd = [] %}
+{%- for it in M.productos %}{% set itemsLd = (itemsLd.push({ "@type": "ListItem", position: loop.index, url: site.url + it.url, name: it.nombre }), itemsLd) %}{% endfor %}
+<script type="application/ld+json">{{ {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": site.url + M.url + "#webpage",
+      "url": site.url + M.url,
+      "name": title,
+      "description": description,
+      "inLanguage": "es-AR",
+      "isPartOf": { "@id": site.url + "/#website" },
+      "about": { "@id": site.url + M.url + "#brand" },
+      "mainEntity": { "@type": "ItemList", "numberOfItems": M.total, "itemListElement": itemsLd }
+    },
+    {
+      "@type": "Brand",
+      "@id": site.url + M.url + "#brand",
+      "name": M.marca,
+      "logo": (site.url + M.logo.src) if M.logo else undefined,
+      "url": site.url + M.url
+    }
+  ]
+} | dump | safe }}</script>

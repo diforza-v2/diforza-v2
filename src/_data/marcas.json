@@ -1,0 +1,1133 @@
+{
+  "_nota": "Páginas de marca /marcas/<slug>/ (plan SEO §8.1, adelantadas el 20 oct 2026 para campañas de Google Ads por marca). Los productos salen solos de catalogo.json (marca + visible). Datos de las marcas: Libus → Ámbito, 6 jun 2024 (n6011252); Conwork → conwork.net/institucional; Ombú → La Nación (nid2473655) y calzadosombu.com. Pendiente confirmar con Diego: si se puede decir 'distribuidor oficial' de Conwork y Ombú, y publicar las cifras de ventas. 20 oct (tarde): se sumaron BLS, De Pascale, WorkSafe, SKY, Conoflex, Funcional y Voran. SKY y Voran sin hero con foto (no hay fotos en uso): banda azul con 3 fotos de producto. 'otras' = marcas con página propia fuera de /marcas/ (ZIAO en /ziao/).",
+  "lista": [
+    {
+      "slug": "libus",
+      "marca": "Libus",
+      "linea": "epp",
+      "landingId": "marca-libus",
+      "logo": {
+        "src": "/img/logo-libus.webp",
+        "ancho": 151,
+        "alto": 51
+      },
+      "title": "Libus: cascos, anteojos y protectores auditivos",
+      "description": "Cascos Libus Milenium y Andes, anteojos, protectores auditivos y faciales y máscaras de soldar para empresas. Socios de Libus, factura A y envíos al país.",
+      "waText": "Hola, quiero cotizar productos Libus para mi empresa.",
+      "hero": {
+        "_foto": "Hero con foto (como home/landings/ZIAO): kit desmalezador Libus en uso. Original 800×800 de _assets/fotos_marcas/libus/kits/kit desmalezador/desmalezador.jpg, ampliada ×2 con IA (EDSR) → _assets/heros/libus_hero_desmalezador_1600_x2.webp (20 oct 2026).",
+        "foto": {
+          "src": "/img/marcas/hero-libus.webp",
+          "ancho": 1400,
+          "alto": 1400,
+          "srcMobile": "/img/marcas/hero-libus-m.webp",
+          "anchoMobile": 900,
+          "altoMobile": 900,
+          "alt": "Trabajador con casco porta visor naranja y malla facial Libus del kit desmalezador, al aire libre"
+        },
+        "og": "/img/og/libus.jpg",
+        "eyebrow": "Socios estratégicos de Libus",
+        "titulo": "Libus para empresas:",
+        "acento": "cascos, anteojos y protección auditiva.",
+        "bajada": "Trabajamos con Libus desde hace 7 años. Tenemos cascos, anteojos, protectores auditivos y faciales, máscaras de soldar y kits, con la ficha técnica de cada producto y stock permanente.",
+        "beneficios": [
+          {
+            "icono": "apreton",
+            "texto": "Socios de Libus"
+          },
+          {
+            "icono": "documento",
+            "texto": "Ficha técnica de cada producto"
+          },
+          {
+            "icono": "camion",
+            "texto": "Envíos a todo el país"
+          }
+        ],
+        "fotos": [
+          "casco-libus-milenium-class",
+          "anteojo-libus-argon",
+          "protector-auditivo-libus-l-360"
+        ]
+      },
+      "ordenGrupos": [
+        "proteccion-craneal",
+        "proteccion-ocular",
+        "proteccion-auditiva",
+        "proteccion-facial",
+        "proteccion-soldadura",
+        "kits"
+      ],
+      "productosTitulo": "Productos Libus con stock",
+      "productosBajada": "Todos con su ficha técnica. Elegí el producto y cotizalo por WhatsApp, o pedinos el equipo completo por puesto de trabajo.",
+      "sobre": {
+        "titulo": "Sobre Libus",
+        "parrafos": [
+          "Libus es una empresa argentina de elementos de protección personal. Nació en 2004 dentro de una fábrica familiar de Berazategui que produce desde 1952, y hoy también fabrica en Brasil, Chile y México.",
+          "Trabaja siete líneas de protección: craneal, ocular, facial, auditiva, respiratoria, soldadura y detección de gases."
+        ],
+        "diforza": "En Diforza sumamos Libus hace 7 años, cuando empezamos con la protección craneal, auditiva y respiratoria. El equipo de Libus nos capacitó en cada producto, y con ese conocimiento te ayudamos a elegir el equipo para cada puesto."
+      },
+      "porQue": [
+        {
+          "titulo": "Socios de Libus",
+          "texto": "Trabajamos juntos desde hace 7 años. Vendemos producto original, con la ficha técnica del fabricante."
+        },
+        {
+          "titulo": "Casco + accesorios",
+          "texto": "Te armamos el casco completo: arnés, mentonera, protector auditivo o facial, todo compatible."
+        },
+        {
+          "titulo": "Stock permanente",
+          "texto": "Reponés el mismo modelo cuando lo necesitás, para el personal nuevo o por desgaste."
+        },
+        {
+          "titulo": "Factura A y envíos",
+          "texto": "Sin pedido mínimo. Envíos a todo el país o retiro por Mataderos, CABA."
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Diforza vende productos Libus originales?",
+          "respuesta": "Sí. Diforza es socio estratégico de Libus desde hace 7 años y vende productos originales, con la ficha técnica del fabricante para tu legajo de Higiene y Seguridad."
+        },
+        {
+          "pregunta": "¿Qué certificación tienen los cascos Libus?",
+          "respuesta": "Los cascos Libus Milenium Class y Andes están certificados según IRAM 3620 y ANSI/ISEA Z89.1. La certificación figura en la ficha técnica que te enviamos con cada producto."
+        },
+        {
+          "pregunta": "¿El casco Milenium Class viene con arnés?",
+          "respuesta": "No. El Milenium Class se vende sin arnés y se combina con el arnés Milenium que prefieras, estándar o a cremallera. El casco Andes, en cambio, viene completo: arnés a cremallera de 8 puntos, mentonera y reflectivos."
+        },
+        {
+          "pregunta": "¿Puedo montar un protector auditivo o facial en el casco?",
+          "respuesta": "Sí. Los cascos Libus son modulares: aceptan los protectores auditivos de copa L-320, L-340 y L-360 en su versión para casco, y protectores faciales con su adaptador. Te armamos el conjunto compatible."
+        },
+        {
+          "pregunta": "¿Qué anteojos de seguridad Libus tienen?",
+          "respuesta": "Tenemos los anteojos Libus Argon, Argon Elite, Eco Line, Eco Sport, Neon, Neon Plus, MIG, Fall Dual y Hayat, y las antiparras New Classic, Explorer y Fall Mesh forestal."
+        },
+        {
+          "pregunta": "¿Hay pedido mínimo? ¿Hacen envíos?",
+          "respuesta": "No hay pedido mínimo: cotizamos desde algunas unidades hasta el equipamiento de toda una planta. Hacemos envíos a empresas de todo el país o podés retirar por nuestro depósito en Mataderos, CABA. Emitimos factura A."
+        },
+        {
+          "pregunta": "¿Cómo pido una cotización de productos Libus?",
+          "respuesta": "Escribinos por WhatsApp al 11 6351-3333 o completá el formulario de esta página. Para cotizar nos sirve saber qué productos necesitás, la cantidad y la zona de entrega. Te respondemos en el día."
+        }
+      ],
+      "cotizacion": {
+        "titulo": "Cotizá productos Libus para tu empresa"
+      }
+    },
+    {
+      "slug": "conwork",
+      "marca": "Conwork",
+      "linea": "calzado",
+      "landingId": "marca-conwork",
+      "logo": {
+        "src": "/img/logo-conwork.webp",
+        "ancho": 255,
+        "alto": 51
+      },
+      "title": "Calzado de seguridad Conwork: botines y zapatos",
+      "description": "Botines, zapatos y zapatillas de seguridad Conwork para empresas: sello IRAM 3610, puntera de acero o aluminio, talles del 35 al 47 y stock permanente.",
+      "waText": "Hola, quiero cotizar calzado de seguridad Conwork para mi empresa.",
+      "hero": {
+        "_foto": "Foto oficial de Conwork (slider de conwork.net, zapatilla Nexus 900ZA en un depósito): _assets/heros/01-slider-landing-NEXUS.jpg, 1600×900 (20 oct 2026).",
+        "foto": {
+          "src": "/img/marcas/hero-conwork.webp",
+          "ancho": 1600,
+          "alto": 900,
+          "srcMobile": "/img/marcas/hero-conwork-m.webp",
+          "anchoMobile": 960,
+          "altoMobile": 540,
+          "alt": "Trabajador con zapatillas de seguridad Conwork marrones caminando en un depósito con estanterías"
+        },
+        "og": "/img/og/conwork.jpg",
+        "eyebrow": "Calzado de seguridad Conwork",
+        "titulo": "Conwork para empresas:",
+        "acento": "el calzado que más piden nuestros clientes.",
+        "bajada": "Botines, zapatos y zapatillas de seguridad Conwork con sello IRAM 3610, puntera de acero o aluminio y suela dieléctrica. Talles del 35 al 47 y stock permanente para reponer siempre el mismo modelo.",
+        "beneficios": [
+          {
+            "icono": "escudo-check",
+            "texto": "Sello IRAM 3610"
+          },
+          {
+            "icono": "talles",
+            "texto": "Talles del 35 al 47"
+          },
+          {
+            "icono": "caja",
+            "texto": "Stock permanente"
+          }
+        ],
+        "fotos": [
+          "botin-conwork-25baf",
+          "zapatilla-conwork-655za",
+          "zapato-conwork-41za"
+        ]
+      },
+      "productosTitulo": "Calzado Conwork con stock",
+      "productosBajada": "Pasanos la curva de talles de tu personal y te cotizamos en el día.",
+      "masModelos": {
+        "titulo": "¿Buscás otro modelo Conwork?",
+        "texto": "Consultanos por borcegos, botines Allworks y Fly, zapatos antiperforantes o la zapatilla Nexus: te confirmamos disponibilidad y plazo.",
+        "wa": "Hola, busco otro modelo de calzado Conwork para mi empresa. ¿Me confirman disponibilidad?"
+      },
+      "sobre": {
+        "titulo": "Sobre Conwork",
+        "parrafos": [
+          "Conwork es una fábrica argentina y familiar de calzado de seguridad, con planta en San Justo, provincia de Buenos Aires, y unos 50 años de trayectoria.",
+          "Sus modelos combinan capellada de cuero, puntera de acero o aluminio y suela de poliuretano bidensidad dieléctrica, con sello IRAM 3610:2015."
+        ],
+        "diforza": "Conwork es la marca de calzado que más vendemos. El botín 25BAF es el producto que más empresas nos compran: lo eligieron 78 empresas en el primer semestre de 2026."
+      },
+      "porQue": [
+        {
+          "titulo": "El más pedido",
+          "texto": "El botín Conwork 25BAF es el calzado que más empresas nos compran. Lo conocemos a fondo."
+        },
+        {
+          "titulo": "Curva de talles",
+          "texto": "Del 35 al 47. Guardamos la curva de tu empresa para que reponer sea un mensaje."
+        },
+        {
+          "titulo": "Stock permanente",
+          "texto": "Mismo modelo, misma calidad, cada vez que tengas que equipar a alguien nuevo."
+        },
+        {
+          "titulo": "Factura A y envíos",
+          "texto": "Sin pedido mínimo. Envíos a todo el país o retiro por Mataderos, CABA."
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Diforza vende calzado Conwork original?",
+          "respuesta": "Sí. Conwork es la marca de calzado de seguridad que más vende Diforza, y cada modelo se entrega original, con su ficha técnica."
+        },
+        {
+          "pregunta": "¿El calzado Conwork está certificado?",
+          "respuesta": "Sí. Los botines, zapatos y zapatillas Conwork que vendemos tienen sello IRAM 3610:2015, la norma argentina de calzado de seguridad. La ficha técnica de cada modelo está en su página."
+        },
+        {
+          "pregunta": "¿Puntera de acero o de aluminio?",
+          "respuesta": "El botín 25BAF y el zapato 41ZA tienen puntera de acero. El botín 653BAF y la zapatilla 655ZA tienen puntera de aluminio, que es más liviana y se siente menos en jornadas largas."
+        },
+        {
+          "pregunta": "¿Tienen Conwork blanco para la industria alimenticia?",
+          "respuesta": "Sí. El botín 25BAF y el zapato 41ZA vienen en blanco (línea White), fáciles de limpiar, para laboratorios y plantas frigoríficas, lácteas y de alimentos."
+        },
+        {
+          "pregunta": "¿Qué talles de Conwork manejan?",
+          "respuesta": "El botín 25BAF y el zapato 41ZA van del 35 al 47; el botín 653BAF y la zapatilla 655ZA, del 35 al 46. Con la cotización te confirmamos la curva disponible."
+        },
+        {
+          "pregunta": "¿Tienen otros modelos de Conwork?",
+          "respuesta": "Sí, podemos conseguir otros modelos de la marca, como borcegos, botines Allworks y Fly o zapatos antiperforantes. Escribinos y te confirmamos disponibilidad y plazo."
+        },
+        {
+          "pregunta": "¿Hay pedido mínimo? ¿Hacen envíos?",
+          "respuesta": "No hay pedido mínimo: cotizamos desde algunos pares hasta el calzado de toda la planta. Hacemos envíos a empresas de todo el país o podés retirar por nuestro depósito en Mataderos, CABA. Emitimos factura A."
+        }
+      ],
+      "cotizacion": {
+        "titulo": "Pasanos tu curva de talles y te cotizamos Conwork"
+      }
+    },
+    {
+      "slug": "ombu",
+      "marca": "Ombú",
+      "linea": "calzado",
+      "landingId": "marca-ombu",
+      "logo": {
+        "src": "/img/logo-ombu.webp",
+        "ancho": 151,
+        "alto": 51
+      },
+      "title": "Ombú: calzado de seguridad y ropa de trabajo",
+      "description": "Botines, zapatos y botas de seguridad Ombú, y camisa y pantalón de grafa Ombú para empresas. Puntera de acero, sello IRAM, factura A y envíos a todo el país.",
+      "waText": "Hola, quiero cotizar productos Ombú para mi empresa.",
+      "hero": {
+        "_foto": "Foto de Ombú del botín Ozono Plus marrón en una planta: _assets/fotos_marcas/ombu/botin-ozono-marron/ozon-5292….webp, 1024×1024 (20 oct 2026).",
+        "foto": {
+          "src": "/img/marcas/hero-ombu.webp",
+          "ancho": 1024,
+          "alto": 1024,
+          "srcMobile": "/img/marcas/hero-ombu-m.webp",
+          "anchoMobile": 800,
+          "altoMobile": 800,
+          "alt": "Operario con botines de seguridad Ombú Ozono Plus marrones trabajando en una planta industrial"
+        },
+        "og": "/img/og/ombu.jpg",
+        "eyebrow": "Calzado y ropa de trabajo Ombú",
+        "titulo": "Ombú para empresas:",
+        "acento": "calzado de seguridad y grafa de trabajo.",
+        "bajada": "Botines, zapatos y botas de seguridad Ombú con puntera de acero, y la camisa y el pantalón clásicos de grafa Ombú 100 % algodón. Talles completos y stock permanente.",
+        "beneficios": [
+          {
+            "icono": "escudo-check",
+            "texto": "Calzado con sello IRAM"
+          },
+          {
+            "icono": "talles",
+            "texto": "Botines hasta el talle 49"
+          },
+          {
+            "icono": "caja",
+            "texto": "Stock permanente"
+          }
+        ],
+        "fotos": [
+          "botin-ombu-frances",
+          "pantalon-clasico-ombu",
+          "bota-ombu-pvc-cana-larga-con-puntera"
+        ]
+      },
+      "ordenGrupos": [
+        "botines",
+        "zapatos",
+        "botas",
+        "pantalones",
+        "camisa"
+      ],
+      "productosTitulo": "Productos Ombú con stock",
+      "productosBajada": "Calzado de seguridad y ropa de trabajo para equipar a todo tu personal con una sola marca.",
+      "sobre": {
+        "titulo": "Sobre Ombú",
+        "parrafos": [
+          "Ombú es una de las marcas de ropa de trabajo más conocidas de la Argentina: nació en 1945 como marca de Grafa, y su tela de grafa es sinónimo de ropa de trabajo.",
+          "También tiene una línea de calzado de seguridad, con puntera de acero, suela de poliuretano dieléctrica y sello IRAM."
+        ],
+        "diforza": "En Diforza tenemos el calzado Ombú más pedido por las empresas y la camisa y el pantalón clásicos de grafa, para que equipes a tu personal de pies a cabeza con una sola marca."
+      },
+      "porQue": [
+        {
+          "titulo": "De pies a cabeza",
+          "texto": "Calzado, camisa y pantalón Ombú en un solo pedido, con una sola factura."
+        },
+        {
+          "titulo": "Talles completos",
+          "texto": "Botín Francés del 34 al 49, pantalón y camisa hasta el talle 60."
+        },
+        {
+          "titulo": "Stock permanente",
+          "texto": "Reponés el mismo modelo cuando lo necesitás, para el personal nuevo o por desgaste."
+        },
+        {
+          "titulo": "Factura A y envíos",
+          "texto": "Sin pedido mínimo. Envíos a todo el país o retiro por Mataderos, CABA."
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué productos Ombú vende Diforza?",
+          "respuesta": "Diforza vende calzado de seguridad Ombú (botín Francés, botín y zapato Ozono Plus, zapato Prusiano y botas de PVC de caña larga, con y sin puntera de acero) y la camisa y el pantalón clásicos de grafa Ombú."
+        },
+        {
+          "pregunta": "¿El calzado Ombú está certificado?",
+          "respuesta": "Sí. Los botines y zapatos Ombú que vendemos tienen puntera de acero certificada, suela de poliuretano bidensidad dieléctrica y sello IRAM. Cada modelo tiene su ficha técnica."
+        },
+        {
+          "pregunta": "¿De qué tela es la ropa de trabajo Ombú?",
+          "respuesta": "La camisa y el pantalón clásicos son de grafa Ombú 100 % algodón, sarga 2/1, pre-encogida y con terminación anti-olor. La camisa tiene además certificación ARA (Algodón Responsable Argentino)."
+        },
+        {
+          "pregunta": "¿Qué talles de Ombú manejan?",
+          "respuesta": "El botín Francés va del 34 al 49; los botines y zapatos Ozono Plus y Prusiano, del 36 al 47; las botas de PVC, del 36 al 46. El pantalón va del 38 al 60 y la camisa, del 36 al 60."
+        },
+        {
+          "pregunta": "¿Tienen botas de lluvia Ombú con puntera de acero?",
+          "respuesta": "Sí. Tenemos botas de PVC Ombú de caña larga con y sin puntera de acero, para obra, campo, plantas húmedas y trabajos a la intemperie."
+        },
+        {
+          "pregunta": "¿Hay pedido mínimo? ¿Hacen envíos?",
+          "respuesta": "No hay pedido mínimo: cotizamos desde algunas unidades hasta la ropa y el calzado de toda la planta. Hacemos envíos a empresas de todo el país o podés retirar por nuestro depósito en Mataderos, CABA. Emitimos factura A."
+        },
+        {
+          "pregunta": "¿Cómo pido una cotización de productos Ombú?",
+          "respuesta": "Escribinos por WhatsApp al 11 6351-3333 o completá el formulario de esta página. Para cotizar nos sirve saber qué productos necesitás, la cantidad por talle y la zona de entrega. Te respondemos en el día."
+        }
+      ],
+      "cotizacion": {
+        "titulo": "Cotizá Ombú para tu empresa"
+      }
+    },
+    {
+      "slug": "bls",
+      "marca": "BLS",
+      "linea": "epp",
+      "landingId": "marca-bls",
+      "logo": {
+        "src": "/img/logo-bls.webp",
+        "ancho": 400,
+        "alto": 193
+      },
+      "title": "BLS: mascarillas FFP2 y FFP3, semimáscaras y filtros",
+      "description": "Protección respiratoria BLS para empresas: mascarillas FFP2 y FFP3, semimáscaras y máscaras completas reutilizables y filtros para cada riesgo. Factura A y envíos.",
+      "waText": "Hola, quiero cotizar protección respiratoria BLS para mi empresa.",
+      "hero": {
+        "_foto": "Foto oficial BLS (Zero 30 NV): _assets/fotos_marcas/bls/zero 30 nv/BLS_Zero30NV_1924.jpg (20 oct 2026).",
+        "foto": {
+          "src": "/img/marcas/hero-bls.webp",
+          "ancho": 1600,
+          "alto": 1066,
+          "srcMobile": "/img/marcas/hero-bls-m.webp",
+          "anchoMobile": 900,
+          "altoMobile": 600,
+          "alt": "Trabajador con mascarilla descartable BLS Zer0 30 FFP3"
+        },
+        "og": "/img/og/bls.jpg",
+        "eyebrow": "Protección respiratoria BLS",
+        "titulo": "BLS para empresas:",
+        "acento": "protección respiratoria italiana.",
+        "bajada": "Mascarillas descartables FFP2 y FFP3, semimáscaras y máscaras completas reutilizables, y los filtros para cada una. Te ayudamos a elegir el filtro correcto para cada riesgo.",
+        "beneficios": [
+          {
+            "icono": "respirador",
+            "texto": "Filtros para cada riesgo"
+          },
+          {
+            "icono": "documento",
+            "texto": "Ficha técnica de cada producto"
+          },
+          {
+            "icono": "caja",
+            "texto": "Repuestos con stock"
+          }
+        ],
+        "fotos": [
+          "mascarilla-bls-zer0-30",
+          "semimascara-bls-4000-next-r",
+          "mascara-completa-bls-5600"
+        ]
+      },
+      "productosTitulo": "Productos BLS con stock",
+      "productosBajada": "Elegí el producto y cotizalo por WhatsApp, o contanos a qué contaminante está expuesto tu personal y te recomendamos el equipo.",
+      "sobre": {
+        "titulo": "Sobre BLS",
+        "parrafos": [
+          "BLS es una empresa italiana dedicada 100 % a la protección respiratoria desde hace más de 50 años. Diseña sus propias máquinas y fabrica en Italia y en España.",
+          "Su línea va de las mascarillas descartables FFP2 y FFP3 a las semimáscaras y máscaras completas reutilizables, con filtros para gases, vapores y partículas."
+        ],
+        "diforza": "En la Argentina, BLS llega a través de Libus, nuestro socio estratégico. Por eso tenemos la línea con stock y el mismo asesoramiento técnico para elegir el equipo de cada puesto."
+      },
+      "porQue": [
+        {
+          "titulo": "El filtro correcto",
+          "texto": "Te ayudamos a elegir el filtro según el contaminante: gases, vapores, partículas o una combinación."
+        },
+        {
+          "titulo": "Repuestos siempre",
+          "texto": "Filtros y prefiltros con stock para que la semimáscara no quede parada."
+        },
+        {
+          "titulo": "Stock permanente",
+          "texto": "Reponés el mismo producto cuando lo necesitás, para el personal nuevo o por desgaste."
+        },
+        {
+          "titulo": "Factura A y envíos",
+          "texto": "Sin pedido mínimo. Envíos a todo el país o retiro por Mataderos, CABA."
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué diferencia hay entre una mascarilla FFP2 y una FFP3?",
+          "respuesta": "Es el nivel de filtración de partículas según la norma EN 149: la FFP2 filtra como mínimo el 94 % y la FFP3 como mínimo el 99 %. La FFP3 es la indicada para polvos y partículas más peligrosos."
+        },
+        {
+          "pregunta": "¿Qué filtro necesito para mi semimáscara?",
+          "respuesta": "Depende del contaminante. Las letras indican contra qué protege cada filtro: A, vapores orgánicos; B, gases inorgánicos; E, gases ácidos; K, amoníaco; y P, partículas. Contanos con qué producto trabaja tu personal y te indicamos el filtro."
+        },
+        {
+          "pregunta": "¿Los filtros de la semimáscara 4000 Next sirven para la máscara completa?",
+          "respuesta": "Sí. La semimáscara 4000 Next y las máscaras completas 5600 y 5700 usan los mismos filtros BLS serie 200, con conexión de bayoneta b-lock. Los filtros serie 400 son de rosca RD40 y sirven para otras máscaras."
+        },
+        {
+          "pregunta": "¿Mascarilla con válvula o sin válvula?",
+          "respuesta": "Las dos protegen igual a quien la usa. La válvula ayuda a exhalar y reduce el calor y la humedad dentro de la mascarilla, por eso es más cómoda en jornadas largas o con mucho esfuerzo físico."
+        },
+        {
+          "pregunta": "¿Hay pedido mínimo? ¿Hacen envíos?",
+          "respuesta": "No hay pedido mínimo: cotizamos desde algunas unidades hasta el equipamiento de toda una planta. Hacemos envíos a empresas de todo el país o podés retirar por nuestro depósito en Mataderos, CABA. Emitimos factura A."
+        },
+        {
+          "pregunta": "¿Cómo pido una cotización de productos BLS?",
+          "respuesta": "Escribinos por WhatsApp al 11 6351-3333 o completá el formulario de esta página. Para cotizar nos sirve saber qué productos necesitás, a qué contaminante está expuesto tu personal y la cantidad. Te respondemos en el día."
+        }
+      ],
+      "cotizacion": {
+        "titulo": "Cotizá BLS para tu empresa"
+      }
+    },
+    {
+      "slug": "de-pascale",
+      "marca": "De Pascale",
+      "linea": "epp",
+      "landingId": "marca-de-pascale",
+      "logo": {
+        "src": "/img/logo-depascale.svg",
+        "ancho": 156,
+        "alto": 117
+      },
+      "ordenGrupos": [
+        "proteccion-manos",
+        "proteccion-soldadura",
+        "senalizacion"
+      ],
+      "title": "De Pascale: guantes, soldadura y señalización",
+      "description": "Guantes De Pascale de vaqueta, descarne, nitrilo, PVC y dieléctricos, ropa de descarne para soldador y señalización. Industria nacional, factura A y envíos.",
+      "waText": "Hola, quiero cotizar productos De Pascale para mi empresa.",
+      "hero": {
+        "_foto": "Foto oficial De Pascale (guante de soldador rojo 322175): _assets/fotos_marcas/depascale/soldador/guante-descarne-soldador-rojo/322175--foto3.jpg (20 oct 2026).",
+        "foto": {
+          "src": "/img/marcas/hero-de-pascale.webp",
+          "ancho": 1200,
+          "alto": 1800,
+          "srcMobile": "/img/marcas/hero-de-pascale-m.webp",
+          "anchoMobile": 800,
+          "altoMobile": 1200,
+          "alt": "Soldador trabajando con guantes de descarne rojos De Pascale"
+        },
+        "og": "/img/og/de-pascale.jpg",
+        "eyebrow": "Industria nacional desde 1974",
+        "titulo": "De Pascale para empresas:",
+        "acento": "guantes, soldadura y señalización.",
+        "bajada": "Guantes de vaqueta, descarne, nitrilo, PVC y dieléctricos, la línea de descarne para soldador y elementos de señalización, de una marca argentina con más de 50 años.",
+        "beneficios": [
+          {
+            "icono": "escudo-check",
+            "texto": "Normas IRAM y EN"
+          },
+          {
+            "icono": "mano",
+            "texto": "Guantes para cada tarea"
+          },
+          {
+            "icono": "llama",
+            "texto": "Línea completa para soldador"
+          }
+        ],
+        "fotos": [
+          "guante-depascale-soldador-rojo-322175",
+          "guante-dielectrico-de-pascale",
+          "campera-depascale-descarne"
+        ]
+      },
+      "productosTitulo": "Productos De Pascale con stock",
+      "productosBajada": "Guantes, protección para soldador y señalización. Elegí el producto y cotizalo por WhatsApp.",
+      "sobre": {
+        "titulo": "Sobre De Pascale",
+        "parrafos": [
+          "De Pascale es una empresa argentina que apuesta a la industria nacional desde 1974, con sede en Aldo Bonzi, provincia de Buenos Aires.",
+          "Trabaja varias líneas: DP (cuero, izaje y altura), DPS (guantes y calzado), Nubus (ropa de trabajo) y UCU (seguridad industrial y vial)."
+        ],
+        "diforza": "En Diforza tenemos los guantes De Pascale que más se usan en la industria, la línea completa de descarne para soldador y elementos de señalización, con stock para reponer siempre el mismo producto."
+      },
+      "porQue": [
+        {
+          "titulo": "Soldador completo",
+          "texto": "Guantes, campera, delantal, mangas y polainas de descarne en un solo pedido."
+        },
+        {
+          "titulo": "Guantes dieléctricos",
+          "texto": "Clases 00 a 2 según la tensión de trabajo, con norma EN 60903."
+        },
+        {
+          "titulo": "Stock permanente",
+          "texto": "Reponés el mismo producto cuando lo necesitás, para el personal nuevo o por desgaste."
+        },
+        {
+          "titulo": "Factura A y envíos",
+          "texto": "Sin pedido mínimo. Envíos a todo el país o retiro por Mataderos, CABA."
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué guantes De Pascale tienen?",
+          "respuesta": "Tenemos guantes de vaqueta Lincoln, de descarne americano, de soldador de descarne rojo, de nitrilo con puño de lona, de PVC rojo de 30, 35 y 40 cm y dieléctricos de látex clases 00 a 2."
+        },
+        {
+          "pregunta": "¿Tienen guantes dieléctricos?",
+          "respuesta": "Sí. Los guantes dieléctricos De Pascale son de látex natural aislante, con norma EN 60903, en clases 00, 0, 1 y 2. La clase se elige según la tensión con la que se trabaja: consultanos y te indicamos la que corresponde."
+        },
+        {
+          "pregunta": "¿Qué incluye la línea para soldador?",
+          "respuesta": "Campera, delantal (estándar, reforzado y con refuerzo radiológico), mangas y polainas de cuero descarne, y el guante de soldador de descarne rojo forrado. Protegen del calor radiante, las salpicaduras de metal fundido y el breve contacto con llama."
+        },
+        {
+          "pregunta": "¿Qué significan los números IRAM de los guantes?",
+          "respuesta": "Son los niveles de resistencia mecánica según IRAM 3607-3608, equivalentes a la norma EN 388: abrasión, corte, desgarro y perforación, en ese orden. Cuanto más alto es el número, más resistente es el guante."
+        },
+        {
+          "pregunta": "¿Hay pedido mínimo? ¿Hacen envíos?",
+          "respuesta": "No hay pedido mínimo: cotizamos desde algunas unidades hasta el equipamiento de toda una planta. Hacemos envíos a empresas de todo el país o podés retirar por nuestro depósito en Mataderos, CABA. Emitimos factura A."
+        },
+        {
+          "pregunta": "¿Cómo pido una cotización de productos De Pascale?",
+          "respuesta": "Escribinos por WhatsApp al 11 6351-3333 o completá el formulario de esta página. Para cotizar nos sirve saber qué productos necesitás, la cantidad y la zona de entrega. Te respondemos en el día."
+        }
+      ],
+      "cotizacion": {
+        "titulo": "Cotizá De Pascale para tu empresa"
+      }
+    },
+    {
+      "slug": "worksafe",
+      "marca": "WorkSafe",
+      "linea": "epp",
+      "landingId": "marca-worksafe",
+      "logo": {
+        "src": "/img/logo-worksafe.webp",
+        "ancho": 91,
+        "alto": 51
+      },
+      "ordenGrupos": [
+        "proteccion-manos",
+        "proteccion-soldadura",
+        "ergonomia"
+      ],
+      "title": "Guantes WorkSafe: anticorte, nitrilo y látex",
+      "description": "Guantes WorkSafe para empresas: anticorte, anti-impacto y antivibratorios, de nitrilo, látex y poliuretano, para frío y soldador. Norma EN 388, factura A y envíos.",
+      "waText": "Hola, quiero cotizar guantes WorkSafe para mi empresa.",
+      "hero": {
+        "_foto": "Foto de WorkSafe en uso (guante N1501 levantando un ladrillo), elegida por el usuario: _assets/heros/d_nq_np_814691-…-1024-1024.webp (20 oct 2026). Antes: guante TX2000 sobre fondo gris.",
+        "foto": {
+          "src": "/img/marcas/hero-worksafe.webp",
+          "ancho": 1024,
+          "alto": 1024,
+          "srcMobile": "/img/marcas/hero-worksafe-m.webp",
+          "anchoMobile": 800,
+          "altoMobile": 800,
+          "alt": "Trabajador con guantes WorkSafe de nitrilo negros levantando un ladrillo en una obra"
+        },
+        "og": "/img/og/worksafe.jpg",
+        "eyebrow": "Guantes de seguridad WorkSafe",
+        "titulo": "WorkSafe para empresas:",
+        "acento": "un guante para cada tarea.",
+        "bajada": "Guantes anticorte, anti-impacto y antivibratorios, de nitrilo, látex y poliuretano, para frío y para soldador, con su nivel EN 388 y stock para reponer.",
+        "beneficios": [
+          {
+            "icono": "escudo-check",
+            "texto": "Certificados EN 388"
+          },
+          {
+            "icono": "mano",
+            "texto": "Anticorte y anti-impacto"
+          },
+          {
+            "icono": "caja",
+            "texto": "Stock permanente"
+          }
+        ],
+        "fotos": [
+          "guante-anticorte-anti-impacto-ws-tx2000",
+          "guante-nitrilo-espumado-ws-n3605",
+          "guante-anticorte-ws-h2101"
+        ]
+      },
+      "productosTitulo": "Productos WorkSafe con stock",
+      "productosBajada": "Contanos qué tarea hace tu personal y te recomendamos el guante: corte, impacto, químicos, agua, frío o soldadura.",
+      "sobre": {
+        "titulo": "Sobre WorkSafe",
+        "parrafos": [
+          "WorkSafe es una empresa argentina, con sede en la Ciudad de Buenos Aires, con más de 15 años en la fabricación y comercialización de elementos de protección personal.",
+          "Su línea de guantes cubre desde el uso general hasta el corte, el impacto, la vibración, los químicos, el frío y la soldadura, con el nivel de protección EN 388 de cada modelo."
+        ],
+        "diforza": "En Diforza tenemos los guantes WorkSafe más pedidos por las empresas y te ayudamos a elegir el modelo según la tarea, para que el guante proteja y además se use."
+      },
+      "porQue": [
+        {
+          "titulo": "Guante por tarea",
+          "texto": "Corte, impacto, químicos, agua, frío o soldadura: te recomendamos el modelo justo."
+        },
+        {
+          "titulo": "Nivel EN 388",
+          "texto": "Cada guante con su nivel de protección, para tu matriz de riesgos."
+        },
+        {
+          "titulo": "Stock permanente",
+          "texto": "Reponés el mismo producto cuando lo necesitás, para el personal nuevo o por desgaste."
+        },
+        {
+          "titulo": "Factura A y envíos",
+          "texto": "Sin pedido mínimo. Envíos a todo el país o retiro por Mataderos, CABA."
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué significa el código EN 388 de los guantes?",
+          "respuesta": "Son los niveles de protección mecánica del guante: abrasión, corte por cuchilla, desgarro y perforación (números), corte según ISO (letra de A a F) y, si aparece una P, protección contra impactos. Por ejemplo, el TX2000 es 4543CP."
+        },
+        {
+          "pregunta": "¿Qué guante anticorte me conviene?",
+          "respuesta": "El H2101 tiene nivel de corte C. El TX2000 suma protección anti-impacto en el dorso. El H5101TPR llega al nivel D con anti-impacto y doble baño de nitrilo, y el TX5000 agrega almohadillas antivibratorias para herramientas que vibran."
+        },
+        {
+          "pregunta": "¿Tienen guantes para químicos o para trabajar con agua?",
+          "respuesta": "Sí. Para químicos y líquidos tenemos el de acrilo nitrilo verde de 15 mil, el de nitrilo pesado N1615 y el de látex industrial de 80 g. Para manipular piezas húmedas o aceitosas, los de baño completo de nitrilo o látex."
+        },
+        {
+          "pregunta": "¿Tienen guantes para frío?",
+          "respuesta": "Sí. El WorkSafe W2101 tiene interior de acrílico y baño de nitrilo espumado, para cámaras de frío, logística refrigerada y trabajo al aire libre en invierno."
+        },
+        {
+          "pregunta": "¿Hay pedido mínimo? ¿Hacen envíos?",
+          "respuesta": "No hay pedido mínimo: cotizamos desde algunas unidades hasta el equipamiento de toda una planta. Hacemos envíos a empresas de todo el país o podés retirar por nuestro depósito en Mataderos, CABA. Emitimos factura A."
+        },
+        {
+          "pregunta": "¿Cómo pido una cotización de guantes WorkSafe?",
+          "respuesta": "Escribinos por WhatsApp al 11 6351-3333 o completá el formulario de esta página. Para cotizar nos sirve saber qué tarea hace tu personal, la cantidad por talle y la zona de entrega. Te respondemos en el día."
+        }
+      ],
+      "cotizacion": {
+        "titulo": "Cotizá WorkSafe para tu empresa"
+      }
+    },
+    {
+      "slug": "sky",
+      "marca": "SKY",
+      "linea": "epp",
+      "landingId": "marca-sky",
+      "logo": null,
+      "title": "Arneses SKY y amarres para trabajo en altura",
+      "description": "Arneses de seguridad SKY de 3 a 6 puntos, amarres con amortiguador, de posicionamiento y dobles en Y, mosquetones y salvacaídas. Industria nacional, factura A y envíos.",
+      "waText": "Hola, quiero cotizar equipos SKY para trabajo en altura para mi empresa.",
+      "hero": {
+        "_foto": "Referencia del usuario (operario en andamio con arnés amarillo y azul tipo SKY y amarre): _assets/heros/D_NQ_NP_926707-MLA92399319929_092025-O.webp 500×500, ampliada ×2 con IA (EDSR) → _assets/heros/sky_hero_x2_1000.webp (20 oct 2026). No es foto oficial de Topsafe.",
+        "foto": {
+          "src": "/img/marcas/hero-sky.webp",
+          "ancho": 1000,
+          "alto": 1000,
+          "srcMobile": "/img/marcas/hero-sky-m.webp",
+          "anchoMobile": 800,
+          "altoMobile": 800,
+          "alt": "Operario con casco y arnés de seguridad enganchado trabajando en un andamio"
+        },
+        "og": "/img/og/sky.jpg",
+        "eyebrow": "Trabajo en altura SKY",
+        "titulo": "Arneses SKY:",
+        "acento": "trabajo en altura con industria nacional.",
+        "bajada": "Arneses de cuerpo completo, amarres con amortiguador, de posicionamiento y dobles en Y, mosquetones y salvacaídas, fabricados en la Argentina por Topsafe.",
+        "beneficios": [
+          {
+            "icono": "arnes",
+            "texto": "Arneses de 3 a 6 puntos"
+          },
+          {
+            "icono": "documento",
+            "texto": "Ficha técnica de cada producto"
+          },
+          {
+            "icono": "escudo-check",
+            "texto": "Fabricación nacional"
+          }
+        ],
+        "fotos": [
+          "arnes-sky-10420f",
+          "amarre-sky-10479e",
+          "mosqueton-oval-sky-af-18k"
+        ]
+      },
+      "productosTitulo": "Productos SKY con stock",
+      "productosBajada": "Contanos qué tarea en altura hace tu personal y te armamos el equipo completo: arnés, amarre y conectores.",
+      "sobre": {
+        "titulo": "Sobre SKY",
+        "parrafos": [
+          "SKY es la marca de equipos para trabajo en altura de Topsafe, una empresa argentina con planta en Berisso, provincia de Buenos Aires.",
+          "Su línea incluye arneses tipo paracaidista, amarres anticaídas y de posicionamiento, mosquetones, salvacaídas y accesorios, con ficha técnica de cada producto."
+        ],
+        "diforza": "En Diforza tenemos los arneses y amarres SKY que más se usan en construcción, mantenimiento y montajes, y te ayudamos a armar el equipo completo para cada tarea en altura."
+      },
+      "porQue": [
+        {
+          "titulo": "Equipo completo",
+          "texto": "Arnés, amarre y conectores compatibles entre sí, en un solo pedido."
+        },
+        {
+          "titulo": "Fabricación nacional",
+          "texto": "Producto argentino con ficha técnica para tu legajo de seguridad."
+        },
+        {
+          "titulo": "Stock permanente",
+          "texto": "Reponés el mismo producto cuando lo necesitás, para el personal nuevo o por desgaste."
+        },
+        {
+          "titulo": "Factura A y envíos",
+          "texto": "Sin pedido mínimo. Envíos a todo el país o retiro por Mataderos, CABA."
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Qué arnés de seguridad necesito?",
+          "respuesta": "Para detener una caída se usa un arnés de cuerpo completo con anclaje dorsal. Si además hay que posicionarse (por ejemplo, en postes o estructuras), conviene uno con argollas en la cintura. La toma frontal sirve para escaleras y sistemas de ascenso. Te ayudamos a elegir según la tarea."
+        },
+        {
+          "pregunta": "¿Qué diferencia hay entre un amarre con amortiguador y uno de posicionamiento?",
+          "respuesta": "El amarre con amortiguador es anticaídas: absorbe la energía si el trabajador cae. El de posicionamiento sirve para sostenerse en el puesto de trabajo con las manos libres, pero no está pensado para detener una caída."
+        },
+        {
+          "pregunta": "¿Para qué sirve un amarre doble en Y?",
+          "respuesta": "Permite desplazarse por una estructura sin quedar nunca desconectado: se engancha una rama en el nuevo punto de anclaje antes de soltar la otra."
+        },
+        {
+          "pregunta": "¿Cada cuánto hay que revisar el arnés?",
+          "respuesta": "Antes de cada uso hay que revisar cintas, costuras y herrajes, y retirar el equipo si tiene cortes, desgaste o deformaciones. Un arnés o amarre que detuvo una caída se reemplaza."
+        },
+        {
+          "pregunta": "¿Hay pedido mínimo? ¿Hacen envíos?",
+          "respuesta": "No hay pedido mínimo: cotizamos desde algunas unidades hasta el equipamiento de toda una planta. Hacemos envíos a empresas de todo el país o podés retirar por nuestro depósito en Mataderos, CABA. Emitimos factura A."
+        },
+        {
+          "pregunta": "¿Cómo pido una cotización de productos SKY?",
+          "respuesta": "Escribinos por WhatsApp al 11 6351-3333 o completá el formulario de esta página. Para cotizar nos sirve saber qué tarea en altura hace tu personal, la cantidad y la zona de entrega. Te respondemos en el día."
+        }
+      ],
+      "cotizacion": {
+        "titulo": "Cotizá SKY para tu empresa"
+      },
+      "_logo": "Sin logo: brand-skiway.webp es de Skiway (calzado), no de SKY/Topsafe. Pedir el logo oficial de SKY a Yesica/Topsafe (20 oct 2026)."
+    },
+    {
+      "slug": "conoflex",
+      "marca": "Conoflex",
+      "linea": "epp",
+      "landingId": "marca-conoflex",
+      "logo": {
+        "src": "/img/logo-conoflex.webp",
+        "ancho": 310,
+        "alto": 61
+      },
+      "title": "Conos Conoflex: señalización vial e industrial",
+      "description": "Conos Conoflex de PVC flexible y polietileno de 20 a 120 cm, delineadores rebatibles y topes de camión, con bandas reflectivas. Fabricación nacional, factura A y envíos.",
+      "waText": "Hola, quiero cotizar conos Conoflex para mi empresa.",
+      "hero": {
+        "_foto": "Posteo de Instagram de Conoflex (fila de conos naranjas frente a un edificio), elegido por el usuario el 20 oct: _assets/heros/images (13).jpg 399×501 → se borraron el texto y el logo (inpaint) y se amplió ×4 con IA → _assets/heros/conoflex_conos_limpia_x4.webp. Hero anterior: slider de delineadores (_assets/heros/conoflex_delineadores_slider02_recorte.jpg).",
+        "foto": {
+          "src": "/img/marcas/hero-conoflex.webp",
+          "ancho": 1200,
+          "alto": 1507,
+          "srcMobile": "/img/marcas/hero-conoflex-m.webp",
+          "anchoMobile": 800,
+          "altoMobile": 1005,
+          "alt": "Fila de conos de señalización naranjas Conoflex con bandas reflectivas frente a un edificio"
+        },
+        "og": "/img/og/conoflex.jpg",
+        "eyebrow": "Señalización vial Conoflex",
+        "titulo": "Conoflex para empresas:",
+        "acento": "conos y delineadores que se ven.",
+        "bajada": "Conos de PVC flexible y de polietileno de 20 a 120 cm, delineadores rebatibles y topes de camión, con bandas reflectivas, fabricados en la Argentina.",
+        "beneficios": [
+          {
+            "icono": "cono",
+            "texto": "Conos de 20 a 120 cm"
+          },
+          {
+            "icono": "escudo-check",
+            "texto": "Fabricación nacional"
+          },
+          {
+            "icono": "camion",
+            "texto": "Envíos a todo el país"
+          }
+        ],
+        "fotos": [
+          "cono-vencedor-2pie-120-cm-2300-2r",
+          "cono-delineador-flexible-60",
+          "cono-rutero-light-1pie-90-cm-1200l-2r-na"
+        ]
+      },
+      "productosTitulo": "Productos Conoflex con stock",
+      "productosBajada": "Contanos dónde los vas a usar (planta, depósito, estacionamiento, obra o ruta) y te recomendamos el cono.",
+      "sobre": {
+        "titulo": "Sobre Conoflex",
+        "parrafos": [
+          "Conoflex es una empresa argentina con más de 25 años fabricando elementos de señalización y seguridad vial, con planta en Ituzaingó, provincia de Buenos Aires.",
+          "Su línea va de los conos y delineadores a los reductores de velocidad, las barreras y la señalización urbana."
+        ],
+        "diforza": "En Diforza tenemos los conos Conoflex más usados en plantas, depósitos, estacionamientos y obras, y te ayudamos a elegir la altura y el material para cada lugar."
+      },
+      "porQue": [
+        {
+          "titulo": "El cono justo",
+          "texto": "Altura, material y base según dónde lo uses: interior, estacionamiento, obra o ruta."
+        },
+        {
+          "titulo": "Fabricación nacional",
+          "texto": "Conos argentinos con bandas reflectivas y repuesto asegurado."
+        },
+        {
+          "titulo": "Stock permanente",
+          "texto": "Reponés el mismo producto cuando lo necesitás, para el personal nuevo o por desgaste."
+        },
+        {
+          "titulo": "Factura A y envíos",
+          "texto": "Sin pedido mínimo. Envíos a todo el país o retiro por Mataderos, CABA."
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Cono de PVC flexible o de polietileno?",
+          "respuesta": "El de PVC flexible es más pesado y estable, y recupera su forma si lo pisa un vehículo: es el indicado para rutas, obras y tránsito pesado. El de polietileno es más liviano y económico, ideal para estacionamientos, plantas y uso interno."
+        },
+        {
+          "pregunta": "¿Qué altura de cono necesito?",
+          "respuesta": "Como referencia: 20 cm para uso interior y deportivo, de 50 a 75 cm para estacionamientos, plantas y depósitos, y de 90 a 120 cm para obras, calles y rutas, donde tienen que verse de lejos."
+        },
+        {
+          "pregunta": "¿Los conos tienen bandas reflectivas?",
+          "respuesta": "Sí, la mayoría de los modelos trae una o dos bandas reflectivas para que se vean de noche. El cono multiuso de 20 cm no lleva reflectivo."
+        },
+        {
+          "pregunta": "¿Qué es un delineador rebatible?",
+          "respuesta": "Es un poste flexible que se inclina cuando un vehículo lo golpea y vuelve a su posición. Se usa para separar carriles, marcar sendas peatonales en plantas y ordenar estacionamientos."
+        },
+        {
+          "pregunta": "¿Hay pedido mínimo? ¿Hacen envíos?",
+          "respuesta": "No hay pedido mínimo: cotizamos desde algunas unidades hasta el equipamiento de toda una planta. Hacemos envíos a empresas de todo el país o podés retirar por nuestro depósito en Mataderos, CABA. Emitimos factura A."
+        },
+        {
+          "pregunta": "¿Cómo pido una cotización de conos Conoflex?",
+          "respuesta": "Escribinos por WhatsApp al 11 6351-3333 o completá el formulario de esta página. Para cotizar nos sirve saber qué modelos y alturas necesitás, la cantidad y la zona de entrega. Te respondemos en el día."
+        }
+      ],
+      "cotizacion": {
+        "titulo": "Cotizá Conoflex para tu empresa"
+      }
+    },
+    {
+      "slug": "funcional",
+      "marca": "Funcional",
+      "linea": "calzado",
+      "landingId": "marca-funcional",
+      "logo": {
+        "src": "/img/logo-funcional.webp",
+        "ancho": 340,
+        "alto": 40
+      },
+      "ordenGrupos": [
+        "botines",
+        "zapatos",
+        "zapatillas"
+      ],
+      "title": "Calzado de seguridad Funcional: liviano y para mujer",
+      "description": "Botines, zapatos y zapatillas de seguridad Funcional con puntera de aluminio, suela dieléctrica y sello IRAM. Modelos ultralivianos y línea para mujer del 34 al 42.",
+      "waText": "Hola, quiero cotizar calzado de seguridad Funcional para mi empresa.",
+      "hero": {
+        "_foto": "Foto oficial Funcional (Capri negra): _assets/fotos_marcas/funcional/capri/CAPRINEGRA_01.png (20 oct 2026).",
+        "foto": {
+          "src": "/img/marcas/hero-funcional.webp",
+          "ancho": 1071,
+          "alto": 1381,
+          "srcMobile": "/img/marcas/hero-funcional-m.webp",
+          "anchoMobile": 800,
+          "altoMobile": 1032,
+          "alt": "Trabajadora con botines de seguridad Funcional Capri negros"
+        },
+        "og": "/img/og/funcional.jpg",
+        "eyebrow": "Calzado de seguridad Funcional",
+        "titulo": "Funcional para empresas:",
+        "acento": "calzado ultraliviano, también para mujer.",
+        "bajada": "Botines, zapatos y zapatillas de seguridad con puntera de aluminio, suela dieléctrica y sello IRAM. Modelos ultralivianos y una línea para mujer del 34 al 42.",
+        "beneficios": [
+          {
+            "icono": "escudo-check",
+            "texto": "Sello IRAM"
+          },
+          {
+            "icono": "persona",
+            "texto": "Línea para mujer"
+          },
+          {
+            "icono": "talles",
+            "texto": "Talles del 34 al 47"
+          }
+        ],
+        "fotos": [
+          "botin-funcional-capri-mujer",
+          "zapatilla-funcional-soul",
+          "zapato-funcional-city"
+        ]
+      },
+      "productosTitulo": "Calzado Funcional con stock",
+      "productosBajada": "Pasanos la curva de talles de tu personal y te cotizamos en el día.",
+      "sobre": {
+        "titulo": "Sobre Funcional",
+        "parrafos": [
+          "Funcional es una marca argentina de calzado de seguridad de Maincal, la misma empresa que fabrica Voran.",
+          "Se destaca por sus modelos ultralivianos con puntera de aluminio y por tener una línea pensada para mujer."
+        ],
+        "diforza": "En Diforza tenemos los modelos Funcional más pedidos, incluida la línea para mujer, para que todo tu personal use calzado de seguridad de su talle y cómodo."
+      },
+      "porQue": [
+        {
+          "titulo": "Línea para mujer",
+          "texto": "Botín Capri y zapatilla Bali, del 34 al 42, con horma femenina."
+        },
+        {
+          "titulo": "Ultralivianos",
+          "texto": "Puntera de aluminio y suela multidensidad para jornadas largas de pie."
+        },
+        {
+          "titulo": "Stock permanente",
+          "texto": "Reponés el mismo producto cuando lo necesitás, para el personal nuevo o por desgaste."
+        },
+        {
+          "titulo": "Factura A y envíos",
+          "texto": "Sin pedido mínimo. Envíos a todo el país o retiro por Mataderos, CABA."
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿El calzado Funcional está certificado?",
+          "respuesta": "Sí. Los modelos Funcional que vendemos tienen sello IRAM y suela de poliuretano multidensidad dieléctrica. Cada modelo tiene su ficha en la página del producto."
+        },
+        {
+          "pregunta": "¿Puntera de aluminio o de acero?",
+          "respuesta": "La de aluminio protege igual y pesa menos, por eso los modelos ultralivianos de Funcional la usan. La zapatilla Lander es la que trae puntera de acero."
+        },
+        {
+          "pregunta": "¿Tienen calzado de seguridad para mujer?",
+          "respuesta": "Sí. El botín Funcional Capri y la zapatilla Bali están hechos para mujer, con talles del 34 al 42."
+        },
+        {
+          "pregunta": "¿Qué talles de Funcional manejan?",
+          "respuesta": "Los modelos de hombre van del 34 al 47 y los de mujer, del 34 al 42. Con la cotización te confirmamos la curva disponible."
+        },
+        {
+          "pregunta": "¿Hay pedido mínimo? ¿Hacen envíos?",
+          "respuesta": "No hay pedido mínimo: cotizamos desde algunas unidades hasta el equipamiento de toda una planta. Hacemos envíos a empresas de todo el país o podés retirar por nuestro depósito en Mataderos, CABA. Emitimos factura A."
+        },
+        {
+          "pregunta": "¿Cómo pido una cotización de calzado Funcional?",
+          "respuesta": "Escribinos por WhatsApp al 11 6351-3333 o completá el formulario de esta página. Para cotizar nos sirve saber qué modelo necesitás, la cantidad de pares por talle y la zona de entrega. Te respondemos en el día."
+        }
+      ],
+      "cotizacion": {
+        "titulo": "Cotizá Funcional para tu empresa"
+      }
+    },
+    {
+      "slug": "voran",
+      "marca": "Voran",
+      "linea": "calzado",
+      "landingId": "marca-voran",
+      "logo": {
+        "src": "/img/logo-voran.svg",
+        "ancho": 181,
+        "alto": 37
+      },
+      "ordenGrupos": [
+        "botines",
+        "zapatos"
+      ],
+      "title": "Calzado de seguridad Voran: botines y zapatos",
+      "description": "Botines y zapatos de seguridad Voran Industrial Flex con puntera de acero, suela dieléctrica y sello IRAM, del 34 al 47. Incluye modelo blanco. Factura A y envíos.",
+      "waText": "Hola, quiero cotizar calzado de seguridad Voran para mi empresa.",
+      "hero": {
+        "_foto": "Foto oficial de Voran (línea Industrial Flex, zapato en uso con sierra): _assets/heros/Ind_Flex_Carrusel_01.webp 800×834, ampliada ×2 con IA (EDSR) → _assets/heros/voran_hero_x2_1600.webp (20 oct 2026).",
+        "foto": {
+          "src": "/img/marcas/hero-voran.webp",
+          "ancho": 1400,
+          "alto": 1460,
+          "srcMobile": "/img/marcas/hero-voran-m.webp",
+          "anchoMobile": 800,
+          "altoMobile": 834,
+          "alt": "Trabajador con zapatos de seguridad Voran Industrial Flex usando una sierra"
+        },
+        "og": "/img/og/voran.jpg",
+        "eyebrow": "Calzado de seguridad Voran",
+        "titulo": "Voran para empresas:",
+        "acento": "línea Industrial Flex.",
+        "bajada": "Botines y zapatos de seguridad con puntera de acero, suela de poliuretano bidensidad dieléctrica y sello IRAM, del 34 al 47. Incluye el botín Aquiles blanco para la industria alimenticia.",
+        "beneficios": [
+          {
+            "icono": "escudo-check",
+            "texto": "Sello IRAM"
+          },
+          {
+            "icono": "talles",
+            "texto": "Talles del 34 al 47"
+          },
+          {
+            "icono": "caja",
+            "texto": "Stock permanente"
+          }
+        ],
+        "fotos": [
+          "botin-voran-apolo",
+          "botin-voran-aquiles",
+          "zapato-voran-tauro"
+        ]
+      },
+      "productosTitulo": "Calzado Voran con stock",
+      "productosBajada": "Pasanos la curva de talles de tu personal y te cotizamos en el día.",
+      "sobre": {
+        "titulo": "Sobre Voran",
+        "parrafos": [
+          "Voran es una marca argentina de calzado de seguridad de Maincal, la misma empresa que fabrica Funcional.",
+          "Su línea Industrial Flex combina capellada de cuero, puntera de acero y suela de poliuretano bidensidad dieléctrica, con sello IRAM."
+        ],
+        "diforza": "En Diforza tenemos los botines y zapatos Voran Industrial Flex con stock, incluido el modelo blanco para plantas de alimentos."
+      },
+      "porQue": [
+        {
+          "titulo": "Industrial Flex",
+          "texto": "Puntera de acero y suela bidensidad dieléctrica para el trabajo diario."
+        },
+        {
+          "titulo": "Modelo blanco",
+          "texto": "Botín Aquiles blanco, fácil de limpiar, para la industria alimenticia."
+        },
+        {
+          "titulo": "Stock permanente",
+          "texto": "Reponés el mismo producto cuando lo necesitás, para el personal nuevo o por desgaste."
+        },
+        {
+          "titulo": "Factura A y envíos",
+          "texto": "Sin pedido mínimo. Envíos a todo el país o retiro por Mataderos, CABA."
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿El calzado Voran está certificado?",
+          "respuesta": "Sí. Los botines y zapatos Voran Industrial Flex que vendemos tienen sello IRAM, puntera de acero y suela de poliuretano bidensidad dieléctrica."
+        },
+        {
+          "pregunta": "¿Tienen calzado Voran blanco para la industria alimenticia?",
+          "respuesta": "Sí, el botín Voran Aquiles viene en blanco, fácil de limpiar, para plantas de alimentos, frigoríficos y laboratorios."
+        },
+        {
+          "pregunta": "¿Tienen algún modelo antiestático?",
+          "respuesta": "Sí, el botín Voran Argos es antiestático, para ambientes donde hay que evitar la acumulación de electricidad estática."
+        },
+        {
+          "pregunta": "¿Qué talles de Voran manejan?",
+          "respuesta": "Todos los modelos van del 34 al 47. Con la cotización te confirmamos la curva disponible."
+        },
+        {
+          "pregunta": "¿Hay pedido mínimo? ¿Hacen envíos?",
+          "respuesta": "No hay pedido mínimo: cotizamos desde algunas unidades hasta el equipamiento de toda una planta. Hacemos envíos a empresas de todo el país o podés retirar por nuestro depósito en Mataderos, CABA. Emitimos factura A."
+        },
+        {
+          "pregunta": "¿Cómo pido una cotización de calzado Voran?",
+          "respuesta": "Escribinos por WhatsApp al 11 6351-3333 o completá el formulario de esta página. Para cotizar nos sirve saber qué modelo necesitás, la cantidad de pares por talle y la zona de entrega. Te respondemos en el día."
+        }
+      ],
+      "cotizacion": {
+        "titulo": "Cotizá Voran para tu empresa"
+      }
+    }
+  ],
+  "otras": [
+    {
+      "marca": "ZIAO",
+      "url": "/ziao/",
+      "logo": {
+        "src": "/img/logo-ziao.webp"
+      },
+      "texto": "Marca propia · mameluco descartable"
+    }
+  ]
+}

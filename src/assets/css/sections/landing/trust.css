@@ -246,14 +246,16 @@
 
 @media (--md) {
   .trust--grouped .trust__brand--main img,
-  .trust--grouped .trust__brand > img.is-sm {
+  .trust--grouped .trust__brand > img.is-sm,
+  .trust--grouped .trust__brand > .trust__link > img.is-sm {
     height: 40px;
   }
 }
 
 @media (--xl) {
   .trust--grouped .trust__brand--main img,
-  .trust--grouped .trust__brand > img.is-sm {
+  .trust--grouped .trust__brand > img.is-sm,
+  .trust--grouped .trust__brand > .trust__link > img.is-sm {
     height: 44px;
   }
 }
@@ -322,4 +324,9 @@
   .trust--grouped .trust__logos img[src*="logo-bls"] { height: 20px; }
   .trust--grouped .trust__logos img[src*="logo-depascale"] { height: 30px; }
   .trust--grouped .trust__logos img[src*="logo-conoflex"] { height: 17px; }
+}
+
+/* Logo con link a su página de marca (/marcas/<slug>/): el <a> no altera el layout */
+.trust__link {
+  display: contents;
 }

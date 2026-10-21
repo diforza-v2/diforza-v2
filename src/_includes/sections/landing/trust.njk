@@ -1,4 +1,5 @@
-{#- Franja de confianza / marcas. Datos: L.confianza (agrupado: true → variante con grupo de marcas distribuidas) -#}
+{#- Franja de confianza / marcas. Datos: L.confianza (agrupado: true → variante con grupo de marcas distribuidas).
+    Un logo con `href` linkea a su página de marca (/marcas/<slug>/). -#}
 {%- set T = L.confianza %}
 <section class="trust{% if T.agrupado %} trust--grouped{% endif %}">
   <div class="trust__inner reveal">
@@ -10,11 +11,11 @@
         {%- if m.logos %}
         <div class="trust__logos">
           {%- for g in m.logos %}
-          <img src="{{ g.src }}" alt="{{ g.alt }}">
+          {% if g.href %}<a class="trust__link" href="{{ g.href }}">{% endif %}<img src="{{ g.src }}" alt="{{ g.alt }}">{% if g.href %}</a>{% endif %}
           {%- endfor %}
         </div>
         {%- else %}
-        <img src="{{ m.src }}" alt="{{ m.alt }}"{% if m.chico %} class="is-sm"{% endif %}>
+        {% if m.href %}<a class="trust__link" href="{{ m.href }}">{% endif %}<img src="{{ m.src }}" alt="{{ m.alt }}"{% if m.chico %} class="is-sm"{% endif %}>{% if m.href %}</a>{% endif %}
         {%- endif %}
         {%- if m.sub is defined %}
         <p class="trust__sub">{{ m.sub | rich | safe }}</p>
@@ -26,7 +27,7 @@
         <p class="trust__label">{{ T.grupo.etiqueta | rich | safe }}</p>
         <div class="trust__logos">
           {%- for g in T.grupo.logos %}
-          <img src="{{ g.src }}" alt="{{ g.alt }}"{% if g.chico %} class="is-sm"{% endif %}>
+          {% if g.href %}<a class="trust__link" href="{{ g.href }}">{% endif %}<img src="{{ g.src }}" alt="{{ g.alt }}"{% if g.chico %} class="is-sm"{% endif %}>{% if g.href %}</a>{% endif %}
           {%- endfor %}
           {%- for w in T.grupo.palabras %}
           <span class="trust__word">{{ w | rich | safe }}</span>

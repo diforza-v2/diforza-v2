@@ -1,4 +1,4 @@
-{#- Hero de landing. Datos: L.hero (opcionales: logo, claim, ctaSecundario {href, texto, ficha}) -#}
+{#- Hero de landing. Datos: L.hero (opcionales: logo, claim, ctaSecundario {href, texto, ficha, sinIcono}) -#}
 {%- set H = L.hero %}
 <section class="hero hero--landing hero--{{ H.modificador }}" data-js="hero">
   <div class="hero__bg">
@@ -43,7 +43,7 @@
         </a>
         {%- if H.ctaSecundario %}
         <a href="{{ H.ctaSecundario.href }}" class="btn btn--outline"{% if H.ctaSecundario.ficha %} data-ficha="{{ H.ctaSecundario.ficha }}" target="_blank" rel="noopener"{% endif %}>
-          {{ icons['ui-descarga'] | safe }}
+          {% if not H.ctaSecundario.sinIcono %}{{ icons['ui-descarga'] | safe }}{% endif %}
           {{ H.ctaSecundario.texto }}
         </a>
         {%- else %}

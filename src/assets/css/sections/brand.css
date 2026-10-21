@@ -1,0 +1,732 @@
+/* ==========================================================================
+   Páginas de marca (/marcas/<slug>/ y /marcas/)
+   Marcado: src/marcas/marca.njk e index.njk. Datos: _data/marcas.json + marcasWeb.js.
+   Banda azul con fotos reales de producto (no hay fotos de ambiente por marca),
+   grilla de productos del catálogo (.catalog-grid), tarjetas y FAQ.
+   ========================================================================== */
+
+.brand-page {
+  background: var(--white);
+}
+
+/* Hero: banda azul (mismo fondo que .catalog-head) */
+.brand-hero {
+  position: relative;
+  padding: calc(var(--nav-h) + 20px) var(--pad) 40px;
+  overflow: hidden;
+  color: var(--white);
+  background:
+    radial-gradient(90% 140% at 100% 0%, rgb(var(--rgb-orange) / 14%) 0%, transparent 55%),
+    linear-gradient(160deg, var(--navy) 0%, var(--navy-950) 100%);
+}
+
+.brand-hero__inner {
+  max-width: var(--shell);
+  margin: 0 auto;
+}
+
+.brand-hero__row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+  margin: 22px 0 0;
+}
+
+.brand-hero__logo {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 18px;
+  padding: 10px 18px;
+  background: var(--white);
+  border-radius: var(--radius-12);
+}
+
+.brand-hero__logo img {
+  width: auto;
+  height: 30px;
+}
+
+.brand-hero__eyebrow {
+  margin: 0 0 10px;
+  font-size: var(--fs-12);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--orange-300);
+}
+
+.brand-hero__title {
+  margin: 0;
+  font-size: var(--fs-32);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+
+.brand-hero__title span {
+  display: block;
+  color: var(--orange-300);
+}
+
+.brand-hero__lead {
+  max-width: 600px;
+  margin: 16px 0 0;
+  font-size: var(--fs-15);
+  line-height: 1.6;
+  color: rgb(var(--rgb-white) / 82%);
+}
+
+.brand-hero__benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 22px 0 26px;
+  padding: 0;
+  list-style: none;
+}
+
+.brand-hero__benefits li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-semibold);
+  line-height: 1.35;
+}
+
+.brand-hero__benefits svg {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  color: var(--orange-300);
+}
+
+.brand-hero .ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.brand-hero__more {
+  color: var(--white);
+  border: 2px solid rgb(var(--rgb-white) / 55%);
+}
+
+.brand-hero__more:hover {
+  border-color: var(--white);
+}
+
+/* Fotos de producto: 3 tarjetas blancas */
+.brand-hero__photos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brand-hero__photos a {
+  display: block;
+  overflow: hidden;
+  background: var(--white);
+  border-radius: var(--radius-14);
+  box-shadow: 0 12px 30px rgb(var(--rgb-ink-950) / 35%);
+  transition: transform 0.2s ease;
+}
+
+.brand-hero__photos a:hover {
+  transform: translateY(-3px);
+}
+
+.brand-hero__photos img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+}
+
+@media (--md) {
+  .brand-hero__title {
+    font-size: var(--fs-42);
+  }
+
+  .brand-hero__lead {
+    font-size: var(--fs-16);
+  }
+
+  .brand-hero__benefits {
+    gap: 14px 28px;
+    flex-flow: row wrap;
+  }
+
+  .brand-hero__photos {
+    gap: 16px;
+    max-width: 640px;
+  }
+}
+
+@media (--lg) {
+  .brand-hero {
+    padding-bottom: 64px;
+    padding-top: calc(var(--nav-h) + 28px);
+  }
+
+  .brand-hero__row {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 56px;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .brand-hero__logo img {
+    height: 36px;
+  }
+
+  /* Mosaico: la primera foto grande a la izquierda, las otras dos apiladas */
+  .brand-hero__photos {
+    grid-template-columns: 1.35fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: none;
+  }
+
+  .brand-hero__photos li:first-child {
+    grid-row: 1 / span 2;
+  }
+
+  .brand-hero__photos li:first-child a,
+  .brand-hero__photos li:first-child img {
+    height: 100%;
+  }
+}
+
+@media (--xl) {
+  .brand-hero__title {
+    font-size: var(--fs-50);
+  }
+}
+
+/* Productos */
+.brand-products {
+  padding: 48px var(--pad) 56px;
+}
+
+.brand-products__inner {
+  max-width: var(--shell);
+  margin: 0 auto;
+}
+
+.brand-products__head h2 {
+  margin: 0 0 8px;
+  font-size: var(--fs-28);
+  line-height: 1.2;
+  color: var(--navy);
+}
+
+.brand-products__head p {
+  max-width: 680px;
+  margin: 0 0 24px;
+  font-size: var(--fs-15);
+  line-height: 1.6;
+  color: var(--slate-800);
+}
+
+.brand-products__nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.brand-products__nav a {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 9px 14px;
+  font-size: var(--fs-13);
+  font-weight: var(--fw-semibold);
+  text-decoration: none;
+  color: var(--navy);
+  background: var(--slate-50);
+  border: 1px solid var(--slate-150);
+  border-radius: var(--radius-pill);
+}
+
+.brand-products__nav a:hover {
+  border-color: var(--navy);
+}
+
+.brand-products__nav span {
+  font-size: var(--fs-12);
+  color: var(--slate-600);
+}
+
+.brand-products__group {
+  scroll-margin-top: calc(var(--nav-h) + 16px);
+}
+
+.brand-products__group + .brand-products__group,
+.brand-products__nav + .brand-products__group {
+  margin-top: 36px;
+}
+
+.brand-products__group-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 0 0 16px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid var(--slate-150);
+}
+
+.brand-products__group-head h3 {
+  margin: 0;
+  font-size: var(--fs-20);
+  color: var(--navy);
+}
+
+.brand-products__group-head a {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  font-size: var(--fs-13);
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.brand-products__group-head a:hover {
+  text-decoration: underline;
+}
+
+.brand-products__group-head svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (--md) {
+  .brand-products__head h2 {
+    font-size: var(--fs-36);
+  }
+
+  .brand-products__head p {
+    font-size: var(--fs-16);
+  }
+}
+
+@media (--lg) {
+  .brand-products {
+    padding-bottom: 80px;
+    padding-top: 72px;
+  }
+}
+
+/* "¿Buscás otro modelo?" — banda debajo de la grilla */
+.brand-more {
+  display: grid;
+  gap: 16px;
+  align-items: center;
+  margin: 28px 0 0;
+  padding: 22px 22px 24px;
+  color: var(--navy);
+  background: var(--orange-50);
+  border: 1px dashed var(--orange-300);
+  border-radius: var(--radius-16);
+}
+
+.brand-more p {
+  margin: 0;
+  font-size: var(--fs-15);
+  line-height: 1.55;
+  color: var(--slate-800);
+}
+
+.brand-more .brand-more__title {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-size: var(--fs-20);
+  font-weight: var(--fw-bold);
+  line-height: 1.25;
+  color: var(--navy);
+}
+
+.brand-more .btn {
+  justify-self: start;
+}
+
+@media (--md) {
+  .brand-more {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 32px;
+    padding: 24px 32px;
+  }
+}
+
+/* Productos agrupados por categoría: el título del grupo ya dice la categoría */
+.brand-products__group--sub .product-card__sub {
+  display: none;
+}
+
+/* Secciones de contenido al mismo ancho que el hero y la grilla */
+.brand-page .about-section__inner {
+  max-width: var(--shell);
+}
+
+/* Por qué comprar en Diforza */
+.brand-why {
+  display: grid;
+  gap: 16px;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brand-why li {
+  padding: 22px 22px 24px;
+  background: var(--white);
+  border: 1px solid var(--slate-150);
+  border-radius: var(--radius-12);
+  border-top: 3px solid var(--color-accent);
+}
+
+.brand-why h3 {
+  margin: 0 0 8px;
+  font-size: var(--fs-18);
+  line-height: 1.25;
+  color: var(--navy);
+}
+
+.about-section .brand-why p {
+  margin: 0;
+  font-size: var(--fs-15);
+  line-height: 24px;
+}
+
+@media (--md) {
+  .brand-why {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (--lg) {
+  .brand-why {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Sobre la marca */
+.brand-about {
+  display: grid;
+  gap: 28px;
+  align-items: center;
+}
+
+.brand-about__card {
+  padding: 28px;
+  background: var(--slate-50);
+  border: 1px solid var(--slate-150);
+  border-radius: var(--radius-16);
+}
+
+.brand-about__card img {
+  display: block;
+  width: auto;
+  height: 34px;
+  margin: 0 0 16px;
+}
+
+.about-section .brand-about__card p {
+  margin: 0 0 20px;
+  font-size: var(--fs-16);
+  color: var(--navy);
+}
+
+@media (--lg) {
+  .brand-about {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 64px;
+  }
+}
+
+/* Índice /marcas/ */
+.brand-index {
+  padding: 40px var(--pad) 72px;
+}
+
+.brand-index__inner {
+  max-width: var(--shell);
+  margin: 0 auto;
+}
+
+.brand-index__list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brand-index__card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  height: 100%;
+  padding: 18px 20px;
+  text-decoration: none;
+  color: var(--navy);
+  background: var(--white);
+  border: 1px solid var(--slate-150);
+  border-radius: var(--radius-16);
+  box-shadow: 0 4px 18px rgb(var(--rgb-navy) / 6%);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.brand-index__card:hover {
+  box-shadow: 0 10px 28px rgb(var(--rgb-navy) / 12%);
+  transform: translateY(-2px);
+}
+
+.brand-index__logo {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 56px;
+}
+
+.brand-index__logo img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 40px;
+}
+
+.brand-index__text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-index__name {
+  font-family: var(--font-display);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-bold);
+}
+
+.brand-index__n {
+  font-size: var(--fs-13);
+  color: var(--slate-600);
+}
+
+.brand-index__arrow svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-primary);
+}
+
+.brand-index__title {
+  margin: 44px 0 16px;
+  font-size: var(--fs-22);
+  color: var(--navy);
+}
+
+.brand-index__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brand-index__chips a {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 9px 14px;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-semibold);
+  text-decoration: none;
+  color: var(--navy);
+  background: var(--slate-50);
+  border: 1px solid var(--slate-150);
+  border-radius: var(--radius-pill);
+}
+
+.brand-index__chips a:hover {
+  border-color: var(--navy);
+}
+
+.brand-index__chips span {
+  font-size: var(--fs-12);
+  color: var(--slate-600);
+}
+
+@media (--md) {
+  .brand-index__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+/* Hero con foto (componente de las landings, .hero--landing): encuadre por marca */
+.hero--libus {
+  --hero-pos: 50% 18%;
+}
+
+/* El claim vertical cae sobre el visor: no se lee */
+.hero--libus .hero__claim {
+  display: none;
+}
+
+@media (--lg) {
+  .hero--libus {
+    --hero-pos: 50% top;
+  }
+}
+
+/* Conwork: el calzado está en la mitad izquierda de la foto → encuadre a la izquierda */
+.hero--conwork {
+  --hero-pos: 22% center;
+}
+
+.hero--conwork .hero__claim {
+  display: none;
+}
+
+/* Logo ancho (255×51): un poco más grande que el de ZIAO para que se lea */
+.hero--conwork .hero__logo {
+  width: 170px;
+}
+
+@media (--lg) {
+  .hero--conwork {
+    --hero-pos: 0% center;
+  }
+
+  .hero--conwork .hero__bg {
+    left: 44%;
+    mask-image: linear-gradient(90deg, transparent 0, var(--black) 22%);
+  }
+
+  .hero--conwork .hero__logo {
+    width: 200px;
+  }
+}
+
+/* Ombú: los botines están abajo en la foto */
+.hero--ombu {
+  --hero-pos: 50% 88%;
+}
+
+.hero--ombu .hero__claim {
+  display: none;
+}
+
+@media (--lg) {
+  .hero--ombu {
+    --hero-pos: 60% 70%;
+  }
+}
+
+/* Encuadres de las marcas sumadas el 20 oct (tarde). Mobile: franja 4:3 debajo del texto. */
+.hero--bls { --hero-pos: 46% 22%; }
+.hero--de-pascale { --hero-pos: 50% 52%; }
+.hero--worksafe { --hero-pos: 60% 45%; }
+.hero--funcional { --hero-pos: 50% 72%; }
+.hero--conoflex { --hero-pos: 50% 58%; }
+
+.hero--bls .hero__claim,
+.hero--de-pascale .hero__claim,
+.hero--worksafe .hero__claim,
+.hero--funcional .hero__claim,
+.hero--conoflex .hero__claim {
+  display: none;
+}
+
+@media (--lg) {
+  .hero--bls { --hero-pos: 44% center; }
+  .hero--de-pascale { --hero-pos: 50% 40%; }
+  .hero--worksafe { --hero-pos: 60% center; }
+  .hero--funcional { --hero-pos: 50% 60%; }
+  .hero--conoflex { --hero-pos: 50% 45%; }
+
+  /* El cono principal está a la izquierda de la foto: fundido corto para no lavarlo */
+  .hero--conoflex .hero__bg {
+    left: 44%;
+    mask-image: linear-gradient(90deg, transparent 0, var(--black) 12%);
+  }
+}
+
+/* Logos altos (De Pascale, BLS): más chicos que el ancho estándar */
+.hero--de-pascale .hero__logo {
+  width: 84px;
+}
+
+.hero--bls .hero__logo {
+  width: 120px;
+}
+
+@media (--lg) {
+  .hero--de-pascale .hero__logo {
+    width: 100px;
+  }
+
+  .hero--bls .hero__logo {
+    width: 140px;
+  }
+}
+
+/* Voran: el zapato está abajo a la derecha de la foto */
+.hero--voran {
+  --hero-pos: 55% 72%;
+}
+
+.hero--voran .hero__claim {
+  display: none;
+}
+
+@media (--lg) {
+  .hero--voran {
+    --hero-pos: 60% 70%;
+  }
+}
+
+/* SKY: operario en el andamio, cabeza arriba al centro */
+.hero--sky {
+  --hero-pos: 55% 30%;
+}
+
+.hero--sky .hero__claim {
+  display: none;
+}
+
+@media (--lg) {
+  .hero--sky {
+    --hero-pos: 55% center;
+  }
+}
+
+/* Marca sin logo (SKY): el nombre en texto */
+.brand-index__wordmark,
+.about-section .brand-about__name {
+  font-family: var(--font-display);
+  font-size: var(--fs-28);
+  font-weight: var(--fw-black);
+  letter-spacing: 0.04em;
+  color: var(--navy);
+}
+
+.about-section .brand-about__name {
+  margin: 0 0 12px;
+}

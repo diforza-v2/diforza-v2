@@ -36,6 +36,7 @@
         "etiqueta": "Socio estratégico oficial",
         "src": "/img/brand-libus.webp",
         "alt": "Libus",
+        "href": "/marcas/libus/",
         "principal": true
       },
       {
@@ -54,11 +55,6 @@
           "chico": true
         },
         {
-          "src": "/img/brand-skiway.webp",
-          "alt": "Skyway",
-          "chico": true
-        },
-        {
           "src": "/img/logo-bls.webp",
           "alt": "BLS",
           "chico": true
@@ -73,6 +69,9 @@
           "alt": "Conoflex",
           "chico": true
         }
+      ],
+      "palabras": [
+        "SKY"
       ]
     }
   },

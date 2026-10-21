@@ -57,7 +57,7 @@ eleventyComputed:
       </div>
 
       <div class="pdp-info">
-        <p class="pdp-info__brand">{{ p.marca }}{% if p.lineaMarca %} <span>· Línea {{ p.lineaMarca }}</span>{% endif %}</p>
+        <p class="pdp-info__brand">{% if marcasWeb.url[p.marca] %}<a href="{{ marcasWeb.url[p.marca] }}">{{ p.marca }}</a>{% else %}{{ p.marca }}{% endif %}{% if p.lineaMarca %} <span>· Línea {{ p.lineaMarca }}</span>{% endif %}</p>
         <h1 class="pdp-info__title">{{ p.nombre }}</h1>
 {%- if p.descripcion %}
         <p class="pdp-info__lead">{{ p.descripcion }}</p>
@@ -122,7 +122,7 @@ eleventyComputed:
 {%- if p.talles %}
           <div class="pdp-specs__row"><dt>Talles</dt><dd>{{ p.talles }}</dd></div>
 {%- endif %}
-          <div class="pdp-specs__row"><dt>Marca</dt><dd>{{ p.marca }}{% if p.distribuidor %} (distribuidor: {{ p.distribuidor }}){% endif %}</dd></div>
+          <div class="pdp-specs__row"><dt>Marca</dt><dd>{% if marcasWeb.url[p.marca] %}<a href="{{ marcasWeb.url[p.marca] }}">{{ p.marca }}</a>{% else %}{{ p.marca }}{% endif %}{% if p.distribuidor %} (distribuidor: {{ p.distribuidor }}){% endif %}</dd></div>
         </dl>
       </section>
 {%- endif %}

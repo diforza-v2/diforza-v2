@@ -36,7 +36,7 @@
       {
         "etiqueta": "Línea principal",
         "src": "/img/logo-conwork.webp",
-        "alt": "Conwork",
+        "alt": "Conwork", "href": "/marcas/conwork/",
         "principal": true,
         "chico": true
       }
@@ -46,7 +46,7 @@
       "logos": [
         {
           "src": "/img/logo-ombu.webp",
-          "alt": "Ombú",
+          "alt": "Ombú", "href": "/marcas/ombu/",
           "chico": true
         },
         {

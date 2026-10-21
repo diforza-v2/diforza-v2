@@ -1179,3 +1179,34 @@
 /proteccion-ocular/anteojos-de-seguridad/page/* /productos/epp/proteccion-ocular/ 301
 /proteccion-respiratoria/page/* /productos/epp/proteccion-respiratoria/ 301
 /vialidad-y-senalizacion/page/* /productos/epp/senalizacion/ 301
+# Reglas propias (no vienen de TiendaNube). Las agrega build_redirects.py al final. 20 oct 2026.
+# /productos/<marca>/ → página de marca (una sola URL por búsqueda de marca; ver sesiones.md)
+/productos/libus/ /marcas/libus/ 301
+/productos/libus /marcas/libus/ 301
+/productos/conwork/ /marcas/conwork/ 301
+/productos/conwork /marcas/conwork/ 301
+/productos/ombu/ /marcas/ombu/ 301
+/productos/ombu /marcas/ombu/ 301
+/productos/bls/ /marcas/bls/ 301
+/productos/bls /marcas/bls/ 301
+/productos/de-pascale/ /marcas/de-pascale/ 301
+/productos/de-pascale /marcas/de-pascale/ 301
+/productos/depascale/ /marcas/de-pascale/ 301
+/productos/depascale /marcas/de-pascale/ 301
+/productos/worksafe/ /marcas/worksafe/ 301
+/productos/worksafe /marcas/worksafe/ 301
+/productos/sky/ /marcas/sky/ 301
+/productos/sky /marcas/sky/ 301
+/productos/conoflex/ /marcas/conoflex/ 301
+/productos/conoflex /marcas/conoflex/ 301
+/productos/funcional/ /marcas/funcional/ 301
+/productos/funcional /marcas/funcional/ 301
+/productos/voran/ /marcas/voran/ 301
+/productos/voran /marcas/voran/ 301
+/marcas/depascale/ /marcas/de-pascale/ 301
+/marcas/depascale /marcas/de-pascale/ 301
+# ZIAO tiene su página en /ziao/ (URL histórica de TiendaNube)
+/marcas/ziao/ /ziao/ 301
+/marcas/ziao /ziao/ 301
+/productos/ziao/ /ziao/ 301
+/productos/ziao /ziao/ 301

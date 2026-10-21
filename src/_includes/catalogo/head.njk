@@ -1,5 +1,6 @@
 {#- Banda azul de las páginas de listado del catálogo: migas, título, bajada, buscador.
-    Recibe: crumbs/crumbsLd (migas), headTitle, headLead, headLink {url, texto} (opcional), searchLabel. -#}
+    Recibe: crumbs/crumbsLd (migas), headTitle, headLead, headLink {url, texto} (opcional), searchLabel,
+    searchAction (opcional: página que hace la búsqueda, p. ej. "/productos/" desde /marcas/). -#}
 <div class="catalog-head">
   <div class="catalog-head__inner">
 {%- include "catalogo/breadcrumbs.njk" %}
@@ -11,7 +12,7 @@
         <a class="catalog-head__link" href="{{ headLink.url }}">{{ headLink.texto }} {{ icons['ui-flecha'] | safe }}</a>
 {%- endif %}
       </div>
-      <form class="catalog-search" role="search" action="" method="get" data-js="cat-search">
+      <form class="catalog-search" role="search" action="{{ searchAction or '' }}" method="get" data-js="cat-search">
         <label class="visually-hidden" for="catQ">{{ searchLabel or "Buscar productos" }}</label>
         <svg class="catalog-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
         <input class="catalog-search__input" id="catQ" type="search" name="q" placeholder="{{ searchLabel or 'Buscar por producto, marca o código' }}" autocomplete="off" enterkeyhint="search">

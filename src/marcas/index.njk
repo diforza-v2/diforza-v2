@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+title: "Marcas de EPP, calzado e indumentaria de trabajo | Diforza"
+description: "Las marcas que trabaja Diforza: Libus, Conwork, Ombú, BLS, WorkSafe, De Pascale, SKY, Conoflex, Funcional, Voran y ZIAO. Productos originales con ficha técnica, stock permanente y factura A."
+waText: "Hola, quiero consultar por una marca para mi empresa."
+headerFlat: true
+dlPageType: marcas
+dlLandingId: marcas
+---
+{#- Índice de marcas (/marcas/): páginas de marca propias + el resto de las marcas del catálogo (link al catálogo filtrado). -#}
+{%- set crumbs = [{ nombre: "Inicio", url: "/" }, { nombre: "Marcas" }] %}
+{%- set crumbsLd = [{ "@type": "ListItem", position: 1, name: "Inicio", item: site.url + "/" }, { "@type": "ListItem", position: 2, name: "Marcas" }] %}
+{%- set headTitle = "Marcas que trabajamos" %}
+{%- set headLead = "Productos originales de las marcas líderes, con su ficha técnica, stock permanente y factura A. Elegí la marca y cotizá por WhatsApp." %}
+{%- set searchAction = "/productos/" %}
+{%- set conPagina = (marcasWeb.lista | pluck("marca")).concat(["Ziao", "ZIAO"]) %}
+<main class="catalog-page">
+{%- include "catalogo/head.njk" %}
+  <section class="brand-index">
+    <div class="brand-index__inner">
+      <ul class="brand-index__list" role="list">
+{%- for m in marcasWeb.lista %}
+        <li><a class="brand-index__card" href="{{ m.url }}">
+          <span class="brand-index__logo">{% if m.logo %}<img src="{{ m.logo.src }}" alt="{{ m.marca }}" width="{{ m.logo.ancho }}" height="{{ m.logo.alto }}" loading="lazy">{% else %}<span class="brand-index__wordmark">{{ m.marca }}</span>{% endif %}</span>
+          <span class="brand-index__text"><span class="brand-index__name">{{ m.marca }}</span><span class="brand-index__n">{{ m.total }} productos</span></span>
+          <span class="brand-index__arrow" aria-hidden="true">{{ icons['ui-flecha'] | safe }}</span>
+        </a></li>
+{%- endfor %}
+{%- for m in marcas.otras %}
+        <li><a class="brand-index__card" href="{{ m.url }}">
+          <span class="brand-index__logo"><img src="{{ m.logo.src }}" alt="{{ m.marca }}" loading="lazy"></span>
+          <span class="brand-index__text"><span class="brand-index__name">{{ m.marca }}</span><span class="brand-index__n">{{ m.texto }}</span></span>
+          <span class="brand-index__arrow" aria-hidden="true">{{ icons['ui-flecha'] | safe }}</span>
+        </a></li>
+{%- endfor %}
+      </ul>
+      <h2 class="brand-index__title">Otras marcas del catálogo</h2>
+      <ul class="brand-index__chips" role="list">
+{%- for m in catalogoWeb.facetas.marcas %}{% if m.nombre not in conPagina %}
+        <li><a href="/productos/?marca={{ m.id }}">{{ m.nombre }} <span>{{ m.n }}</span></a></li>
+{%- endif %}{% endfor %}
+      </ul>
+    </div>
+  </section>
+</main>

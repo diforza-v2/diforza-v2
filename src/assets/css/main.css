@@ -42,6 +42,7 @@
 @import "sections/benefits.css" layer(sections);
 @import "sections/clients.css" layer(sections);
 @import "sections/ziao.css" layer(sections);
+@import "sections/brand.css" layer(sections);
 @import "sections/home/compliance.css" layer(sections);
 @import "sections/home/factory.css" layer(sections);
 @import "sections/faq.css" layer(sections);

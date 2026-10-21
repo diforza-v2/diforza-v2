@@ -64,6 +64,16 @@ const LANDING_CAT = {           // landingId → Categoria de Interés
   'calzado': 'calzado',
   'l3-epp': 'epp',
   'ziao': 'indumentaria',
+  'marca-libus': 'epp',          // páginas de marca /marcas/<slug>/ (20 oct 2026)
+  'marca-conwork': 'calzado',
+  'marca-ombu': 'calzado',
+  'marca-bls': 'epp',
+  'marca-de-pascale': 'epp',
+  'marca-worksafe': 'epp',
+  'marca-sky': 'epp',
+  'marca-conoflex': 'epp',
+  'marca-funcional': 'calzado',
+  'marca-voran': 'calzado',
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;

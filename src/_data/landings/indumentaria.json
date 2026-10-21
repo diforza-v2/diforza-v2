@@ -56,7 +56,7 @@
       "logos": [
         {
           "src": "/img/logo-ombu.webp",
-          "alt": "Ombú",
+          "alt": "Ombú", "href": "/marcas/ombu/",
           "chico": true
         }
       ],

@@ -166,6 +166,11 @@
   color: var(--color-primary);
 }
 
+.pdp-info__brand a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
 .pdp-info__brand span {
   font-weight: var(--fw-semibold);
   color: var(--slate-600);
