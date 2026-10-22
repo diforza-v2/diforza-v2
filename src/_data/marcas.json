@@ -1,6 +1,133 @@
 {
-  "_nota": "Páginas de marca /marcas/<slug>/ (plan SEO §8.1, adelantadas el 20 oct 2026 para campañas de Google Ads por marca). Los productos salen solos de catalogo.json (marca + visible). Datos de las marcas: Libus → Ámbito, 6 jun 2024 (n6011252); Conwork → conwork.net/institucional; Ombú → La Nación (nid2473655) y calzadosombu.com. Pendiente confirmar con Diego: si se puede decir 'distribuidor oficial' de Conwork y Ombú, y publicar las cifras de ventas. 20 oct (tarde): se sumaron BLS, De Pascale, WorkSafe, SKY, Conoflex, Funcional y Voran. SKY y Voran sin hero con foto (no hay fotos en uso): banda azul con 3 fotos de producto. 'otras' = marcas con página propia fuera de /marcas/ (ZIAO en /ziao/).",
+  "_nota": "Páginas de marca /marcas/<slug>/ (plan SEO §8.1, adelantadas el 20 oct 2026 para campañas de Google Ads por marca). Los productos salen solos de catalogo.json (marca + visible). Datos de las marcas: Libus → Ámbito, 6 jun 2024 (n6011252); Conwork → conwork.net/institucional; Ombú → La Nación (nid2473655) y calzadosombu.com. Pendiente confirmar con Diego: si se puede decir 'distribuidor oficial' de Conwork y Ombú, y publicar las cifras de ventas. 20 oct (tarde): se sumaron BLS, De Pascale, WorkSafe, SKY, Conoflex, Funcional y Voran. SKY y Voran sin hero con foto (no hay fotos en uso): banda azul con 3 fotos de producto. 'otras' = marcas con página propia fuera de /marcas/ (ZIAO en /ziao/). 21 oct 2026: se sumó Diforza (marca propia, primera de la lista) y Agio en 'otras' con página propia en /agio/ (producto único, mismo formato que /ziao/).",
   "lista": [
+    {
+      "slug": "diforza",
+      "marca": "Diforza",
+      "linea": "indumentaria",
+      "landingId": "marca-diforza",
+      "logo": {
+        "src": "/img/brand-diforza.webp",
+        "ancho": 174,
+        "alto": 70
+      },
+      "ordenGrupos": [
+        "pantalones",
+        "camisa",
+        "chomba",
+        "remera",
+        "buzo",
+        "campera",
+        "chaleco",
+        "mameluco",
+        "traje-de-lluvia",
+        "ropa-primera-piel",
+        "delantales",
+        "ergonomia",
+        "senalizacion"
+      ],
+      "sinGrupos": true,
+      "title": "Ropa de trabajo de fabricación propia",
+      "description": "Indumentaria de trabajo Diforza confeccionada en nuestro taller de Mataderos: pantalones, camisas, camperas, chalecos y mamelucos con el logo de tu empresa.",
+      "waText": "Hola, quiero cotizar indumentaria de trabajo Diforza para mi empresa.",
+      "hero": {
+        "_foto": "Misma foto que la landing de indumentaria (operario y operaria con ropa Diforza azul marino en un depósito): src/indumentaria-de-trabajo/img/hero-indumentaria.webp (21 oct 2026).",
+        "foto": {
+          "src": "/indumentaria-de-trabajo/img/hero-indumentaria.webp",
+          "ancho": 1672,
+          "alto": 941,
+          "alt": "Operario y operaria con indumentaria de trabajo Diforza azul marino en un depósito"
+        },
+        "og": "/img/og/marca-diforza.jpg",
+        "eyebrow": "Marca propia de Diforza",
+        "titulo": "Indumentaria de trabajo Diforza:",
+        "acento": "fabricada en nuestro taller.",
+        "bajada": "Pantalones, camisas, camperas, chalecos y mamelucos que cortamos y confeccionamos en Mataderos, CABA. Con el logo de tu empresa y stock para reponer siempre la misma prenda.",
+        "beneficios": [
+          {
+            "icono": "camisa",
+            "texto": "Fabricación propia"
+          },
+          {
+            "icono": "escudo-check",
+            "texto": "Con el logo de tu empresa"
+          },
+          {
+            "icono": "caja",
+            "texto": "Stock permanente"
+          }
+        ],
+        "fotos": [
+          "pantalon-cargo-diforza",
+          "camisa-clasica-diforza",
+          "campera-trucker-diforza"
+        ]
+      },
+      "productosTitulo": "Prendas Diforza con stock",
+      "productosBajada": "Contanos cuántas personas hay que vestir y con qué prendas: te cotizamos en el día.",
+      "masModelos": {
+        "titulo": "¿Necesitás otra prenda o un color especial?",
+        "texto": "Como la fabricamos nosotros, podemos sumar cinta reflectiva, colores especiales o prendas que no ves en el catálogo. Consultanos y te confirmamos plazo.",
+        "wa": "Hola, necesito indumentaria Diforza con una prenda o un color especial. ¿Me pueden asesorar?",
+        "boton": "Consultar"
+      },
+      "sobre": {
+        "titulo": "Sobre Diforza",
+        "parrafos": [
+          "Diforza es una empresa familiar que empezó hace 15 años fabricando indumentaria de trabajo personalizada. En nuestro taller de Mataderos cortamos, confeccionamos y personalizamos cada prenda con bordado, estampado o sublimado.",
+          "Con el tiempo sumamos elementos de protección personal y calzado de seguridad, pero la ropa de trabajo con nuestra marca sigue siendo el corazón de la empresa. También son nuestras ZIAO (descartables) y Agio (indumentaria técnica)."
+        ],
+        "diforza": "Al ser fabricantes, controlamos la calidad de cada prenda y mantenemos los mismos modelos y colores año tras año: tu equipo siempre vestido igual."
+      },
+      "porQue": [
+        {
+          "titulo": "Fabricación propia",
+          "texto": "Cortamos y confeccionamos en nuestro taller de Mataderos, con gabardina sanforizada y costuras reforzadas."
+        },
+        {
+          "titulo": "Con el logo de tu empresa",
+          "texto": "Bordado, estampado o sublimado. Antes de producir te mandamos el diseño para aprobar."
+        },
+        {
+          "titulo": "Reponés la misma prenda",
+          "texto": "Modelos y colores de línea: el personal nuevo se viste igual que el resto."
+        },
+        {
+          "titulo": "Talles para todos",
+          "texto": "Pantalones y camisas del 36 al 68 según el modelo, remeras y chombas del XS al 6XL."
+        }
+      ],
+      "faq": [
+        {
+          "pregunta": "¿Diforza fabrica su propia ropa de trabajo?",
+          "respuesta": "Sí. Las prendas con marca Diforza se cortan y confeccionan en nuestro taller de Mataderos, CABA. Por eso podemos personalizarlas, mantener los mismos modelos en el tiempo y responder rápido a los pedidos de reposición."
+        },
+        {
+          "pregunta": "¿Qué prendas tiene la marca Diforza?",
+          "respuesta": "Pantalones cargo y clásicos, bermudas, camisas, chombas, remeras, buzos, camperas, chalecos (reflectivos, polar, trucker y geólogo), mamelucos, capas y trajes de lluvia, delantales y ropa térmica. También hay elementos de señalización y una faja lumbar con nuestra marca."
+        },
+        {
+          "pregunta": "¿Se puede bordar el logo de mi empresa?",
+          "respuesta": "Sí. Personalizamos con bordado, estampado o sublimado y podemos sumar cinta reflectiva. Antes de producir te enviamos el diseño o una muestra para aprobar; el plazo te lo confirmamos con la cotización."
+        },
+        {
+          "pregunta": "¿Qué talles tienen?",
+          "respuesta": "Los pantalones y camisas van del 36 al 68 según el modelo (el clásico es el que llega al 68), y las remeras y chombas, del XS al 6XL. Con la cotización te mandamos la tabla de talles de cada prenda."
+        },
+        {
+          "pregunta": "¿Hay pedido mínimo? ¿Hacen envíos?",
+          "respuesta": "No hay pedido mínimo: cotizamos desde algunas prendas hasta los uniformes de toda la planta. Hacemos envíos a empresas de todo el país o podés retirar por nuestro depósito en Mataderos, CABA. Emitimos factura A."
+        },
+        {
+          "pregunta": "¿Cómo pido una cotización de ropa Diforza?",
+          "respuesta": "Escribinos por WhatsApp al 11 6351-3333 o completá el formulario de esta página. Para cotizar nos sirve saber qué prendas necesitás, cuántas por talle, el color y si llevan el logo de tu empresa. Te respondemos en el día."
+        }
+      ],
+      "cotizacion": {
+        "titulo": "Cotizá ropa de trabajo Diforza para tu empresa"
+      },
+      "porQueTitulo": "Por qué elegir la ropa de trabajo Diforza"
+    },
     {
       "slug": "libus",
       "marca": "Libus",
@@ -1128,6 +1255,14 @@
         "src": "/img/logo-ziao.webp"
       },
       "texto": "Marca propia · mameluco descartable"
+    },
+    {
+      "marca": "Agio",
+      "url": "/agio/",
+      "logo": {
+        "src": "/img/logo-agio.webp"
+      },
+      "texto": "Marca propia · pantalón cargo elastizado"
     }
   ]
 }

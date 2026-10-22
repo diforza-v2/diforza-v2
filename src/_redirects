@@ -1210,3 +1210,11 @@
 /marcas/ziao /ziao/ 301
 /productos/ziao/ /ziao/ 301
 /productos/ziao /ziao/ 301
+
+# Marcas propias con página (21 oct 2026): Diforza en /marcas/diforza/, Agio en /agio/ (como ZIAO)
+/productos/diforza/ /marcas/diforza/ 301
+/productos/diforza /marcas/diforza/ 301
+/marcas/agio/ /agio/ 301
+/marcas/agio /agio/ 301
+/productos/agio/ /agio/ 301
+/productos/agio /agio/ 301

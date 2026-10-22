@@ -21,7 +21,8 @@ eleventyComputed:
     de marca (plan SEO §8.1). Contenido: _data/marcas.json · productos: _data/marcasWeb.js (salen de catalogo.json). -#}
 {%- set M = marca %}
 {%- set waHref = "https://wa.me/" + site.whatsapp.number + "?text=" + (M.waText | urlencode) %}
-{%- set agrupar = M.total > 12 and M.grupos.length > 1 %}
+{#- sinGrupos (marcas.json): grilla única aunque haya muchos productos (Diforza: muchas subcategorías de 1–2 productos) -#}
+{%- set agrupar = M.total > 12 and M.grupos.length > 1 and not M.sinGrupos %}
 {%- set crumbs = [{ nombre: "Inicio", url: "/" }, { nombre: "Marcas", url: "/marcas/" }, { nombre: M.marca }] %}
 {%- set crumbsLd = [{ "@type": "ListItem", position: 1, name: "Inicio", item: site.url + "/" }, { "@type": "ListItem", position: 2, name: "Marcas", item: site.url + "/marcas/" }, { "@type": "ListItem", position: 3, name: M.marca }] %}
 <main class="brand-page">
@@ -114,7 +115,7 @@ eleventyComputed:
           <p class="brand-more__title">{{ M.masModelos.titulo }}</p>
           <p>{{ M.masModelos.texto }}</p>
         </div>
-        <a href="https://wa.me/{{ site.whatsapp.number }}?text={{ M.masModelos.wa | urlencode }}" class="btn btn--primary btn--icon" data-js="wa" target="_blank" rel="noopener">{{ icons['ui-whatsapp'] | safe }} Consultar modelo</a>
+        <a href="https://wa.me/{{ site.whatsapp.number }}?text={{ M.masModelos.wa | urlencode }}" class="btn btn--primary btn--icon" data-js="wa" target="_blank" rel="noopener">{{ icons['ui-whatsapp'] | safe }} {{ M.masModelos.boton or "Consultar modelo" }}</a>
       </div>
 {%- endif %}
     </div>
@@ -122,7 +123,7 @@ eleventyComputed:
 
   <section class="about-section about-section--alt">
     <div class="about-section__inner">
-      <h2>Por qué comprar {{ M.marca }} en Diforza</h2>
+      <h2>{{ M.porQueTitulo or ("Por qué comprar " + M.marca + " en Diforza") }}</h2>
       <ul class="brand-why" role="list">
 {%- for c in M.porQue %}
         <li>

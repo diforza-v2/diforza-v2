@@ -74,6 +74,8 @@ const LANDING_CAT = {           // landingId → Categoria de Interés
   'marca-conoflex': 'epp',
   'marca-funcional': 'calzado',
   'marca-voran': 'calzado',
+  'marca-diforza': 'indumentaria', // 21 oct 2026
+  'agio': 'indumentaria',          // /agio/ (21 oct 2026)
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;

@@ -1,7 +1,7 @@
 // Páginas de marca (/marcas/<slug>/): une el contenido de marcas.json con los productos
 // visibles de esa marca del catálogo online (catalogoWeb.js), agrupados por subcategoría
 // en el orden del catálogo. Producto nuevo de la marca en catalogo.json → aparece solo.
-const { lista } = require("./marcas.json");
+const { lista, otras = [] } = require("./marcas.json");
 const catalogoWeb = require("./catalogoWeb.js");
 
 const BASE = "/marcas";
@@ -35,7 +35,9 @@ const marcas = lista.map((m) => {
   };
 });
 
-// marca (como figura en catalogo.json) → URL de su página, para linkear desde fichas
+// marca (como figura en catalogo.json) → URL de su página, para linkear desde fichas.
+// Incluye las marcas con página propia fuera de /marcas/ (ZIAO → /ziao/, Agio → /agio/).
 const url = Object.fromEntries(marcas.map((m) => [m.marca, m.url]));
+for (const o of otras) url[o.marca] = url[o.marca[0] + o.marca.slice(1).toLowerCase()] = o.url;
 
 module.exports = { base: BASE, lista: marcas, url };

@@ -43,6 +43,7 @@
         "etiqueta": "Marca propia",
         "src": "/img/brand-ziao.webp",
         "alt": "ZIAO",
+        "href": "/ziao/",
         "chico": true
       }
     ],

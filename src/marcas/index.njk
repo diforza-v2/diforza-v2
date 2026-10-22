@@ -1,19 +1,19 @@
 ---
 layout: layouts/base.njk
 title: "Marcas de EPP, calzado e indumentaria de trabajo | Diforza"
-description: "Las marcas que trabaja Diforza: Libus, Conwork, Ombú, BLS, WorkSafe, De Pascale, SKY, Conoflex, Funcional, Voran y ZIAO. Productos originales con ficha técnica, stock permanente y factura A."
+description: "Marcas propias Diforza, ZIAO y Agio, y las líderes que trabajamos: Libus, Conwork, Ombú, BLS, WorkSafe, De Pascale, SKY, Conoflex, Funcional y Voran."
 waText: "Hola, quiero consultar por una marca para mi empresa."
 headerFlat: true
 dlPageType: marcas
 dlLandingId: marcas
+pageJs: /assets/js/landing.js
 ---
-{#- Índice de marcas (/marcas/): páginas de marca propias + el resto de las marcas del catálogo (link al catálogo filtrado). -#}
+{#- Índice de marcas (/marcas/): tarjetas de las páginas de marca + descarga del catálogo + contacto (21 oct 2026: se sacaron los chips "Otras marcas del catálogo"). -#}
 {%- set crumbs = [{ nombre: "Inicio", url: "/" }, { nombre: "Marcas" }] %}
 {%- set crumbsLd = [{ "@type": "ListItem", position: 1, name: "Inicio", item: site.url + "/" }, { "@type": "ListItem", position: 2, name: "Marcas" }] %}
 {%- set headTitle = "Marcas que trabajamos" %}
 {%- set headLead = "Productos originales de las marcas líderes, con su ficha técnica, stock permanente y factura A. Elegí la marca y cotizá por WhatsApp." %}
 {%- set searchAction = "/productos/" %}
-{%- set conPagina = (marcasWeb.lista | pluck("marca")).concat(["Ziao", "ZIAO"]) %}
 <main class="catalog-page">
 {%- include "catalogo/head.njk" %}
   <section class="brand-index">
@@ -34,12 +34,17 @@ dlLandingId: marcas
         </a></li>
 {%- endfor %}
       </ul>
-      <h2 class="brand-index__title">Otras marcas del catálogo</h2>
-      <ul class="brand-index__chips" role="list">
-{%- for m in catalogoWeb.facetas.marcas %}{% if m.nombre not in conPagina %}
-        <li><a href="/productos/?marca={{ m.id }}">{{ m.nombre }} <span>{{ m.n }}</span></a></li>
-{%- endif %}{% endfor %}
-      </ul>
+      <div class="brand-more brand-more--catalog">
+        <div>
+          <p class="brand-more__title">Descargá el catálogo completo</p>
+          <p>Indumentaria, calzado y EPP de todas nuestras marcas en un solo PDF. Se descarga al instante.</p>
+        </div>
+        <a href="#catalogo" class="btn btn--primary btn--icon" data-js="catalogo">{{ icons['ui-descarga'] | safe }} {{ home.cotizacion.catalogo }}</a>
+      </div>
     </div>
   </section>
+
+{#- Cierre de contacto: el mismo bloque que la home y las landings -#}
+{%- set L = { cotizacion: { titulo: "Contanos qué marca necesitás", respuesta: home.cotizacion.respuesta, catalogo: home.cotizacion.catalogo, landingId: "marcas", formTitulo: home.cotizacion.formTitulo, formBoton: home.cotizacion.formBoton } } %}
+{% include "sections/landing/quote.njk" %}
 </main>

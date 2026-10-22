@@ -1,0 +1,239 @@
+---
+layout: layouts/base.njk
+title: "Pantalón cargo elastizado Agio, marca propia de Diforza"
+description: "Agio es la marca propia de Diforza para indumentaria técnica. Pantalón de trabajo cargo elastizado de fabricación propia, 6 bolsillos, 5 colores y tu logo."
+waText: "Hola, quiero cotizar pantalones cargo elastizados Agio para mi empresa."
+pageJs: /assets/js/landing.js
+ogImage: /img/og/agio.jpg
+dlPageType: marca
+dlLandingId: agio
+dlLinea: indumentaria
+agio:
+  producto: /productos/pantalon-cargo-elastizado-diforza/
+  usos:
+    - { icono: "portapapeles", titulo: "Mantenimiento", texto: "Para agacharse, arrodillarse y subir escaleras sin que el pantalón tire.", wa: "mantenimiento" }
+    - { icono: "caja", titulo: "Logística y depósito", texto: "Carga y descarga todo el día, con los bolsillos cargo a mano.", wa: "logística y depósito" }
+    - { icono: "rayo", titulo: "Instalaciones", texto: "Electricistas, gasistas e instaladores que trabajan en posiciones incómodas.", wa: "instalaciones" }
+    - { icono: "casco", titulo: "Construcción", texto: "Gabardina resistente y costuras reforzadas para el uso intensivo en obra.", wa: "construcción" }
+    - { icono: "camion", titulo: "Técnicos en campo", texto: "Mucho movimiento, auto y calle: cómodo de la mañana a la noche.", wa: "técnicos en campo" }
+    - { icono: "persona", titulo: "Uniforme de equipo", texto: "5 colores y el logo de tu empresa bordado o estampado.", wa: "el uniforme de mi equipo" }
+  colores:
+    - { id: "negro", nombre: "Negro", foto: "/img/catalogo/pantalon-cargo-elastizado-diforza--negro.webp" }
+    - { id: "azul", nombre: "Azul", foto: "/img/catalogo/pantalon-cargo-elastizado-diforza--azul.webp" }
+    - { id: "gris", nombre: "Gris", foto: "/img/catalogo/pantalon-cargo-elastizado-diforza--gris.webp" }
+    - { id: "beige", nombre: "Beige", foto: "/img/catalogo/pantalon-cargo-elastizado-diforza--beige.webp" }
+    - { id: "verde", nombre: "Verde", foto: "/img/catalogo/pantalon-cargo-elastizado-diforza--verde.webp" }
+  comparacion:
+    - [Tela, "Gabardina sanforizada elastizada", "Gabardina 8 oz sanforizada"]
+    - [Movilidad, "La tela se estira con cada movimiento", "Tela sin elastizar"]
+    - [Bolsillos, "6: 2 delanteros, 2 traseros y 2 cargo con tapa", "6 con tapa y velcro"]
+    - [Talles, "46 al 52", "38 al 60"]
+    - [Colores, "Negro, azul, gris, beige y verde", "Azul marino, beige, negro, gris y azulino"]
+    - [Ideal para, "Tareas con mucho movimiento", "Uso general e intensivo"]
+  faq:
+    - { pregunta: "¿Qué es Agio?", respuesta: "Agio es la marca propia de Diforza para indumentaria técnica, pensada para usos específicos. Su primer producto es el pantalón de trabajo cargo elastizado, que confeccionamos en nuestro taller de Mataderos, CABA." }
+    - { pregunta: "¿En qué se diferencia del pantalón cargo Diforza?", respuesta: "Los dos son cargo de gabardina sanforizada y de fabricación propia. El Agio suma tela elastizada: acompaña el movimiento cuando hay que agacharse, arrodillarse o subir escaleras. El cargo Diforza es el clásico de uso general y tiene una curva de talles más amplia (38 al 60)." }
+    - { pregunta: "¿Qué talles y colores hay?", respuesta: "Talles del 46 al 52, en negro, azul, gris, beige y verde. Si necesitás otro talle, consultanos y te confirmamos disponibilidad." }
+    - { pregunta: "¿Se puede personalizar con el logo de mi empresa?", respuesta: "Sí. Lo bordamos o estampamos con el logo de tu empresa. Antes de producir te enviamos el diseño para aprobar y el plazo te lo confirmamos con la cotización." }
+    - { pregunta: "¿Encoge con el lavado?", respuesta: "No. La gabardina es sanforizada: no encoge ni pierde la forma después del lavado." }
+    - { pregunta: "¿Hay pedido mínimo? ¿Hacen envíos?", respuesta: "No hay pedido mínimo: cotizamos desde algunas unidades hasta el uniforme de toda la planta. Hacemos envíos a empresas de todo el país o podés retirar por nuestro depósito en Mataderos, CABA. Emitimos factura A." }
+    - { pregunta: "¿Cómo pido una cotización?", respuesta: "Escribinos por WhatsApp al 11 6351-3333 o completá el formulario de esta página. Para cotizar nos sirve saber cuántos pantalones necesitás por talle, el color y si llevan el logo de tu empresa. Te respondemos en el día." }
+---
+{#- Página de marca Agio (21 oct 2026). Producto único: pantalón cargo elastizado (catalogo.json → pantalon-cargo-elastizado-diforza).
+    Mismo formato que /ziao/. Fotos reales de Diego: _assets/fotos_marcas/agio/ (negro y verde); azul, gris y beige son recoloreadas.
+    Sin ficha técnica ni tabla de talles todavía: composición, gramaje y curva de talles a validar con Diego. -#}
+{%- set Z = agio %}
+{%- set waHref = "https://wa.me/" + site.whatsapp.number + "?text=" + (waText | urlencode) %}
+<main class="ziao agio">
+{%- set L = { hero: {
+    modificador: "agio",
+    fondo: { src: "/img/agio/hero-agio.webp", ancho: 2112, alto: 1600, srcMobile: "/img/agio/hero-agio-m.webp", anchoMobile: 800, altoMobile: 1000, alt: "Pantalón de trabajo cargo elastizado Agio negro, de frente y de espalda, con la etiqueta de cuero en la cintura" },
+    logo: { src: "/img/agio/logo-agio.webp", alt: "Agio", ancho: 246, alto: 128 },
+    eyebrow: "Marca propia de Diforza",
+    titulo: "Pantalón de trabajo cargo elastizado Agio:",
+    acento: "libertad para moverte.",
+    bajada: "Un cargo de gabardina con tela elastizada para las tareas en las que hay que agacharse, arrodillarse o subir escaleras todo el día. Fabricación propia y con el logo de tu empresa.",
+    beneficios: [
+      { icono: "pantalon", texto: "Tela elastizada" },
+      { icono: "talles", texto: "Talles 46 al 52" },
+      { icono: "camisa", texto: "5 colores" }
+    ],
+    claim: "Libertad<br>para<br>moverte",
+    ctaSecundario: { href: "#colores", texto: "Ver los 5 colores", sinIcono: true }
+} } %}
+{% include "sections/landing/hero.njk" %}
+
+  <section class="about-section">
+    <div class="about-section__inner">
+      <h2>¿Para qué lo necesitás?</h2>
+      <p>Elegí la tarea y escribinos: te cotizamos por cantidad y te asesoramos si es el pantalón adecuado para tu equipo.</p>
+      <ul class="ziao-uses-grid">
+        {%- for u in Z.usos %}
+        {%- set msg = "Hola, necesito pantalones cargo elastizados Agio para " + u.wa + ". ¿Me pasan precio?" %}
+        <li>
+          <span class="ziao-uses-grid__icon">{{ icons[u.icono] | safe }}</span>
+          <h3>{{ u.titulo }}</h3>
+          <p>{{ u.texto }}</p>
+          <a href="https://wa.me/{{ site.whatsapp.number }}?text={{ msg | urlencode }}" target="_blank" rel="noopener" data-js="wa" aria-label="Cotizar pantalones Agio para {{ u.titulo | lower }} por WhatsApp">Cotizar por WhatsApp {{ icons['ui-flecha'] | safe }}</a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="about-section about-section--alt">
+    <div class="about-section__inner ziao-product">
+      <figure class="ziao-product__media">
+        <img src="/img/agio/pantalon-agio-verde-frente-espalda.webp" alt="Pantalón cargo elastizado Agio verde, vista de frente y de espalda" width="1000" height="1000" loading="lazy">
+      </figure>
+      <div>
+        <h2>El pantalón, en detalle</h2>
+        <p>Corte cargo en <strong>gabardina sanforizada elastizada</strong>: la resistencia de la ropa de trabajo con la comodidad de una tela que se estira con cada movimiento.</p>
+        <dl class="ziao-specs">
+          <div><dt>Tela</dt><dd>Gabardina sanforizada elastizada</dd></div>
+          <div><dt>Bolsillos</dt><dd>6: 2 delanteros, 2 traseros con tapa y 2 cargo laterales con tapa</dd></div>
+          <div><dt>Cierre</dt><dd>Botón metálico</dd></div>
+          <div><dt>Costuras</dt><dd>Reforzadas, para uso intensivo</dd></div>
+          <div><dt>Talles</dt><dd>46 al 52</dd></div>
+          <div><dt>Colores</dt><dd>Negro, azul, gris, beige y verde</dd></div>
+          <div><dt>Detalle</dt><dd>Etiqueta de cuero con el logo Agio en la cintura</dd></div>
+          <div><dt>Tu logo</dt><dd>Bordado o estampado con el logo de tu empresa</dd></div>
+        </dl>
+        <p class="ziao-product__links"><a href="{{ Z.producto }}">Ver el producto en el catálogo</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="colores">
+    <div class="about-section__inner">
+      <h2>Elegí el color</h2>
+      <p>El mismo pantalón en 5 colores, para que cada sector de tu empresa tenga el suyo.</p>
+      <ul class="agio-colors" role="list">
+        {%- for c in Z.colores %}
+        {%- set th = c.foto | thumb480 %}
+        <li>
+          <a href="https://wa.me/{{ site.whatsapp.number }}?text={{ ('Hola, quiero cotizar pantalones cargo elastizados Agio color ' + (c.nombre | lower) + ' para mi empresa.') | urlencode }}" target="_blank" rel="noopener" data-js="wa" aria-label="Cotizar el pantalón Agio {{ c.nombre | lower }} por WhatsApp">
+            <img src="{{ th or c.foto }}" alt="Pantalón cargo elastizado Agio {{ c.nombre | lower }}" width="480" height="600" loading="lazy" decoding="async">
+            <span>{{ c.nombre }}</span>
+          </a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="about-section about-section--alt">
+    <div class="about-section__inner ziao-uses">
+      <div class="ziao-uses__media">
+        <img src="/img/agio/pantalon-agio-negro-frente-espalda.webp" alt="Pantalón cargo elastizado Agio negro, vista de frente y de espalda" width="1000" height="1000" loading="lazy">
+      </div>
+      <div>
+        <h2>Comprá en 3 pasos</h2>
+        <ol class="ziao-steps">
+          <li><strong>Contanos cantidad, talles y color.</strong> Por WhatsApp o con el formulario de esta página.</li>
+          <li><strong>Te cotizamos en el día.</strong> Con factura A y, si querés, el logo de tu empresa.</li>
+          <li><strong>Lo recibís donde lo necesitás.</strong> Envíos a todo el país o retiro por Mataderos, CABA.</li>
+        </ol>
+        <p class="ziao-steps__note"><strong>¿Querés verlo antes?</strong> Coordinamos una muestra para que verifiques talle y calidad. <strong>¿Ya sos cliente?</strong> Guardamos tu curva de talles: reponer es un mensaje.</p>
+        <div class="ctas">
+          <a href="{{ waHref }}" class="btn btn--primary btn--icon" target="_blank" rel="noopener" data-js="wa">{{ icons['ui-whatsapp'] | safe }} Cotizar por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-section__inner">
+      <h2>¿Cargo elastizado o cargo clásico?</h2>
+      <p>Los dos son de fabricación propia. La diferencia está en la tela y en el uso.</p>
+      <div class="ziao-table-wrap">
+        <table class="ziao-table agio-table">
+          <thead><tr><th scope="col"><span class="visually-hidden">Característica</span></th><th scope="col">Cargo elastizado Agio</th><th scope="col"><a href="/productos/pantalon-cargo-diforza/">Cargo Diforza</a></th></tr></thead>
+          <tbody>
+            {%- for r in Z.comparacion %}
+            <tr><th scope="row">{{ r[0] }}</th><td>{{ r[1] }}</td><td>{{ r[2] }}</td></tr>
+            {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section about-section--alt">
+    <div class="about-section__inner">
+{% include "partials/clients-marquee.njk" %}
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-section__inner">
+      <h2>Las marcas propias de Diforza</h2>
+      <ul class="about-cards">
+        <li>
+          <h3>Diforza</h3>
+          <p>Indumentaria de trabajo de fabricación propia, personalizada con el logo de tu empresa. <a href="/marcas/diforza/">Ver la marca Diforza</a>.</p>
+        </li>
+        <li>
+          <h3>ZIAO</h3>
+          <p>Descartables con stock permanente. Hoy, el mameluco laminado SFL. <a href="/ziao/">Ver ZIAO</a>.</p>
+        </li>
+        <li>
+          <h3>Agio</h3>
+          <p>Indumentaria técnica para usos específicos. Hoy, el pantalón cargo elastizado. <a href="{{ Z.producto }}">Ver el pantalón</a>.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="about-section about-section--alt">
+    <div class="about-section__inner ziao-faq">
+      <h2>Preguntas frecuentes sobre Agio</h2>
+      <div class="accordion">
+        {%- for q in Z.faq %}
+        <details{% if loop.first %} open{% endif %}>
+          <summary>{{ q.pregunta }} {{ icons['ui-chevron'] | safe }}</summary>
+          <p class="accordion__panel">{{ q.respuesta }}</p>
+        </details>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+
+{%- set L = { cotizacion: { titulo: "Cotizá pantalones Agio para tu empresa", respuesta: home.cotizacion.respuesta, catalogo: home.cotizacion.catalogo, landingId: "agio", formTitulo: home.cotizacion.formTitulo, formBoton: home.cotizacion.formBoton } } %}
+{% include "sections/landing/quote.njk" %}
+</main>
+{%- set faqItems = Z.faq %}
+{% include "partials/faq-schema.njk" %}
+<script type="application/ld+json">{{ {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": site.url + "/agio/#webpage",
+      "url": site.url + "/agio/",
+      "name": title,
+      "description": description,
+      "inLanguage": "es-AR",
+      "isPartOf": { "@id": site.url + "/#website" },
+      "about": { "@id": site.url + "/agio/#brand" },
+      "primaryImageOfPage": site.url + "/img/agio/hero-agio.webp",
+      "breadcrumb": { "@id": site.url + "/agio/#breadcrumb" }
+    },
+    {
+      "@type": "Brand",
+      "@id": site.url + "/agio/#brand",
+      "name": "Agio",
+      "logo": site.url + "/img/agio/logo-agio.webp",
+      "url": site.url + "/agio/",
+      "description": "Marca propia de Diforza para indumentaria técnica: pantalón de trabajo cargo elastizado."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": site.url + "/agio/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": site.url + "/" },
+        { "@type": "ListItem", "position": 2, "name": "Agio", "item": site.url + "/agio/" }
+      ]
+    }
+  ]
+} | dump | safe }}</script>

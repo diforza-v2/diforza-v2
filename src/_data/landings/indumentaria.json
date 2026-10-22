@@ -38,15 +38,18 @@
         "logos": [
           {
             "src": "/img/brand-diforza.webp",
-            "alt": "Diforza"
+            "alt": "Diforza",
+            "href": "/marcas/diforza/"
           },
           {
             "src": "/img/logo-agio.webp",
-            "alt": "Agio"
+            "alt": "Agio",
+            "href": "/agio/"
           },
           {
             "src": "/img/brand-ziao.webp",
-            "alt": "ZIAO"
+            "alt": "ZIAO",
+            "href": "/ziao/"
           }
         ]
       }
