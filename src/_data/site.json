@@ -38,43 +38,129 @@
   "nav": [
     {
       "label": "Productos",
-      "href": "/productos/"
+      "href": "/productos/",
+      "panel": "productos",
+      "activo": [
+        "/productos/",
+        "/indumentaria-de-trabajo/",
+        "/calzado-de-seguridad/",
+        "/epp-proteccion-industrial/"
+      ],
+      "lineas": {
+        "indumentaria": "Indumentaria",
+        "calzado": "Calzado",
+        "epp": "EPP y protección"
+      },
+      "destacadas": {
+        "indumentaria": [
+          "pantalones",
+          "campera",
+          "chaleco",
+          "mameluco",
+          "remera",
+          "buzo"
+        ],
+        "calzado": [
+          "botines",
+          "zapatos",
+          "zapatillas",
+          "botas"
+        ],
+        "epp": [
+          "proteccion-manos",
+          "proteccion-ocular",
+          "proteccion-respiratoria",
+          "proteccion-auditiva",
+          "proteccion-craneal",
+          "altura",
+          "senalizacion"
+        ]
+      }
     },
     {
-      "label": "Indumentaria",
-      "href": "/indumentaria-de-trabajo/"
-    },
-    {
-      "label": "Calzado",
-      "href": "/calzado-de-seguridad/"
-    },
-    {
-      "label": "EPP y protección",
-      "href": "/epp-proteccion-industrial/"
+      "label": "Marcas",
+      "href": "/marcas/",
+      "panel": "marcas",
+      "activo": [
+        "/marcas/",
+        "/agio/",
+        "/ziao/"
+      ],
+      "grupos": [
+        {
+          "titulo": "Propias",
+          "marcas": [
+            "diforza",
+            "agio",
+            "ziao"
+          ]
+        },
+        {
+          "titulo": "Calzado",
+          "marcas": [
+            "conwork",
+            "ombu",
+            "funcional",
+            "voran"
+          ]
+        },
+        {
+          "titulo": "EPP",
+          "marcas": [
+            "libus",
+            "bls",
+            "de-pascale",
+            "worksafe",
+            "sky",
+            "conoflex"
+          ]
+        }
+      ]
     }
   ],
   "footer": {
     "about": "Distribuidora de EPP e indumentaria de trabajo. Más de 15 años equipando a empresas de todo el país, con stock permanente.",
-    "categorias": [
+    "_nota": "Footer (22 oct 2026): Productos (catálogo) · Marcas (sale de nav → grupos) · Soluciones para empresas (las 3 landings: único link interno a ellas desde el sitio, con el texto de su búsqueda principal) · Diforza (páginas + contacto). Versión anterior en _archivo/footer_antes_22oct2026/.",
+    "productos": [
       {
         "label": "Todos los productos",
         "href": "/productos/"
       },
       {
-        "label": "Indumentaria general de trabajo",
+        "label": "Indumentaria",
+        "href": "/productos/indumentaria/"
+      },
+      {
+        "label": "Calzado",
+        "href": "/productos/calzado/"
+      },
+      {
+        "label": "EPP y protección",
+        "href": "/productos/epp/"
+      }
+    ],
+    "soluciones": [
+      {
+        "label": "Indumentaria de trabajo para empresas",
         "href": "/indumentaria-de-trabajo/"
+      },
+      {
+        "label": "Calzado de seguridad para empresas",
+        "href": "/calzado-de-seguridad/"
       },
       {
         "label": "EPP y protección industrial",
         "href": "/epp-proteccion-industrial/"
+      }
+    ],
+    "empresa": [
+      {
+        "label": "Nosotros",
+        "href": "/nosotros/"
       },
       {
-        "label": "Calzado de seguridad",
-        "href": "/calzado-de-seguridad/"
-      },
-      {
-        "label": "Marcas",
-        "href": "/marcas/"
+        "label": "Contacto",
+        "href": "/contacto/"
       }
     ]
   },
@@ -113,5 +199,6 @@
   "cta": {
     "whatsapp": "Cotizar por WhatsApp",
     "catalogo": "Descargar catálogo"
-  }
+  },
+  "_navNota": "Navbar (22 oct 2026): Productos ▾ y Marcas ▾. Paneles: líneas y subcategorías salen de catalogoWeb.js (destacadas = ids de subcategoría, en ese orden); marcas de marcas.json (lista + otras, por slug). Versión anterior en _archivo/navbar_antes_22oct2026/."
 }

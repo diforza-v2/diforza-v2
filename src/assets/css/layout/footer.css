@@ -1,6 +1,8 @@
 /* ==========================================================================
    Footer del sitio (todas las páginas)
-   4 columnas en desktop: marca · productos · contacto · redes + CTA.
+   22 oct 2026: marca (+ redes y CTA) · Productos · Marcas · Soluciones para
+   empresas (landings) · Diforza (páginas + contacto). xl: 5 columnas;
+   lg: la marca va en una fila arriba y debajo las 4 columnas de links.
    Barra inferior con razón social, CUIT y política de privacidad.
    ========================================================================== */
 
@@ -42,12 +44,60 @@
     grid-template-columns: 1fr 1fr;
     gap: 48px 40px;
   }
+
+  .site-footer__brand {
+    grid-column: 1 / -1;
+  }
 }
 
+/* Desktop: columnas al ancho de su contenido y el espacio sobrante repartido
+   en partes iguales entre ellas (space-between) → separaciones parejas. */
 @media (--lg) {
   .site-footer__grid {
-    grid-template-columns: 1.35fr 1fr 1.35fr 1fr;
-    gap: 40px;
+    grid-template-columns: repeat(4, auto);
+    gap: 48px 32px;
+    justify-content: space-between;
+  }
+}
+
+/* Notebook 13-14": la marca en una fila (logo · texto · redes · CTA) */
+@media (--lg-only) {
+  .site-footer__brand {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 32px;
+    align-items: center;
+  }
+
+  .site-footer__brand .site-footer__about {
+    max-width: 30ch;
+    margin: 0;
+  }
+
+  .site-footer__brand .site-footer__social,
+  .site-footer__brand .site-footer__cta {
+    margin: 0;
+  }
+
+  .site-footer__brand .site-footer__social {
+    margin-left: auto;
+  }
+}
+
+@media (--xl) {
+  .site-footer__grid {
+    grid-template-columns: minmax(0, 260px) repeat(4, auto);
+  }
+
+  .site-footer__brand {
+    grid-column: auto;
+  }
+}
+
+@media (--2xl) {
+  .site-footer__grid {
+    grid-template-columns: minmax(0, 290px) repeat(4, auto);
+    column-gap: 40px;
   }
 }
 
@@ -70,17 +120,34 @@
   line-height: 22px;
 }
 
-.site-footer__partners {
-  margin: 16px 0 0;
-  font-size: var(--fs-12);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: rgb(var(--rgb-white) / 60%);
+/* Marcas: 2 columnas que se llenan hacia abajo (1ª: propias + calzado, 2ª: EPP; 13 marcas → 7 filas) + "Ver todas" */
+.site-footer__col.site-footer__col--marcas ul {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: repeat(7, auto);
+  column-gap: 28px;
+  grid-auto-flow: column;
 }
 
-.site-footer__partners strong {
-  font-weight: var(--fw-bold);
-  color: var(--white);
+.site-footer__more {
+  display: inline-block;
+  font-size: var(--fs-13);
+  font-weight: var(--fw-semibold);
+  margin-top: 16px;
+}
+
+.site-footer .site-footer__more {
+  color: var(--orange);
+}
+
+.site-footer__more::after {
+  content: "→";
+  margin-left: 6px;
+}
+
+/* Landings: textos largos, se cortan en 2 líneas parejas */
+.site-footer__col--soluciones ul {
+  max-width: 200px;
 }
 
 /* ---- Columnas ---- */
@@ -129,6 +196,7 @@
 .site-footer__social {
   display: flex;
   gap: 10px;
+  margin-top: 24px;
 }
 
 .site-footer__social a {
@@ -169,7 +237,7 @@
   padding: 14px 24px;
   font-size: var(--fs-12-5);
   text-decoration: none;
-  margin-top: 28px;
+  margin-top: 24px;
 }
 
 .site-footer__cta svg {

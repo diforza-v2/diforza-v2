@@ -61,7 +61,7 @@
     "items": [
       {
         "titulo": "Indumentaria de trabajo",
-        "href": "/indumentaria-de-trabajo/",
+        "href": "/productos/indumentaria/",
         "img": "/img/cat-home-indumentaria.webp",
         "alt": "Operario con uniforme de trabajo azul Diforza",
         "texto": "Fabricación propia en Mataderos. Uniformes con el logo de tu empresa y reposición del mismo modelo.",
@@ -77,7 +77,7 @@
       },
       {
         "titulo": "Calzado de seguridad",
-        "href": "/calzado-de-seguridad/",
+        "href": "/productos/calzado/",
         "img": "/img/cat-home-calzado.webp",
         "alt": "Botines de seguridad negros en una planta industrial",
         "texto": "Botines, zapatos y zapatillas con puntera para obra, planta y logística. CONWORK y Ombú.",
@@ -93,7 +93,7 @@
       },
       {
         "titulo": "EPP y protección industrial",
-        "href": "/epp-proteccion-industrial/",
+        "href": "/productos/epp/",
         "img": "/img/cat-home-epp.webp",
         "alt": "Operario con casco y protector auditivo en una planta",
         "texto": "Socios oficiales de Libus. Cada elemento con su ficha técnica para tus registros de la SRT.",

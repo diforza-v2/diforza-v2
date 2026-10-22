@@ -202,6 +202,19 @@
   opacity: 0;
 }
 
+/* Con un panel del menú abierto (Productos ▾ / Marcas ▾) la copia que cruza
+   el navbar se oculta para no tapar el panel (visibility: la animación de
+   entrada fija la opacidad) */
+html:has(.nav__item--panel.is-open) .hero__worker--over {
+  visibility: hidden;
+}
+
+@media (hover: hover) {
+  html:has(.nav__item--panel:hover) .hero__worker--over {
+    visibility: hidden;
+  }
+}
+
 /* Sin medida util (o header mas alto que el operario) no se dibuja nada */
 .hero__worker--over[data-over="0"] {
   display: none;

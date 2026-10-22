@@ -1,18 +1,27 @@
-{#- Footer de todas las páginas. Datos en src/_data/site.json; lo que falta se marca con [[placeholder]]. -#}
+{#- Footer de todas las páginas (22 oct 2026): marca · Productos · Marcas · Soluciones para empresas · Contacto.
+    Nosotros, Contacto y Política de privacidad van en la barra inferior.
+    Datos en src/_data/site.json (footer; las marcas salen de nav → grupos). Lo que falta se marca con [[placeholder]].
+    Versión anterior: _archivo/footer_antes_22oct2026/. -#}
 {%- set waHref = "https://wa.me/" + site.whatsapp.number + "?text=" + ((waText or site.whatsapp.text) | urlencode) %}
+{%- set navMarcas = [] %}
+{%- for item in site.nav %}{% if item.panel == "marcas" %}{% set navMarcas = item.grupos %}{% endif %}{% endfor %}
 <footer class="site-footer theme-dark">
   <div class="site-footer__grid">
     <div class="site-footer__brand">
       <img src="/img/logo-blanco.webp" alt="{{ site.name }}">
       <p class="site-footer__about">{{ site.footer.about }}</p>
-      <p class="site-footer__partners">Marcas propias <strong>ZIAO</strong> y <strong>AGIO</strong> · Socio estratégico <strong>Libus</strong></p>
-      <p class="site-footer__partners"><a href="/nosotros/">Nosotros</a> · <a href="/ziao/">ZIAO</a> · <a href="/agio/">Agio</a> · <a href="/contacto/">Contacto</a></p>
+      {%- set socialClass = "site-footer__social" %}
+      {% include "partials/social-links.njk" %}
+{%- if not (site.social.instagram and site.social.linkedin and site.social.facebook) %}
+      <p class="site-footer__note">{{ "[[Links de redes]]" | rich | safe }}</p>
+{%- endif %}
+      <a href="{{ waHref }}" class="btn btn--primary site-footer__cta" data-js="wa" target="_blank" rel="noopener">{% include "partials/icon-wa.njk" %}Cotizar por WhatsApp</a>
     </div>
 
     <nav class="site-footer__col" aria-label="Productos">
       <p class="site-footer__title">Productos</p>
       <ul>
-{%- for c in site.footer.categorias %}
+{%- for c in site.footer.productos %}
         <li><a href="{{ c.href }}"{% if c.href == page.url %} aria-current="page"{% endif %}>{{ c.label }}</a></li>
 {%- endfor %}
         <li><a href="{{ site.catalogo.href }}" data-js="catalogo">Descargar catálogo</a></li>
@@ -22,28 +31,44 @@
       </ul>
     </nav>
 
+    <nav class="site-footer__col site-footer__col--marcas" aria-label="Marcas">
+      <p class="site-footer__title">Marcas</p>
+      <ul>
+{%- for g in navMarcas %}{% for slug in g.marcas %}
+{%- for m in marcasWeb.lista %}{% if m.slug == slug %}
+        <li><a href="{{ m.url }}"{% if m.url == page.url %} aria-current="page"{% endif %}>{{ m.marca }}</a></li>
+{%- endif %}{% endfor %}
+{%- for o in marcas.otras %}{% if o.url == "/" + slug + "/" %}
+        <li><a href="{{ o.url }}"{% if o.url == page.url %} aria-current="page"{% endif %}>{{ o.marca }}</a></li>
+{%- endif %}{% endfor %}
+{%- endfor %}{% endfor %}
+      </ul>
+      <a class="site-footer__more" href="{{ marcasWeb.base }}/">Ver todas las marcas</a>
+    </nav>
+
+    <nav class="site-footer__col site-footer__col--soluciones" aria-label="Soluciones para empresas">
+      <p class="site-footer__title">Soluciones para empresas</p>
+      <ul>
+{%- for c in site.footer.soluciones %}
+        <li><a href="{{ c.href }}"{% if c.href == page.url %} aria-current="page"{% endif %}>{{ c.label }}</a></li>
+{%- endfor %}
+      </ul>
+    </nav>
+
     <div class="site-footer__col">
       <p class="site-footer__title">Contacto</p>
       <ul class="site-footer__contact">
 {% include "partials/contact-items.njk" %}
       </ul>
     </div>
-
-    <div class="site-footer__col">
-      <p class="site-footer__title">Seguinos</p>
-      {%- set socialClass = "site-footer__social" %}
-      {% include "partials/social-links.njk" %}
-{%- if not (site.social.instagram and site.social.linkedin and site.social.facebook) %}
-      <p class="site-footer__note">{{ "[[Links de redes]]" | rich | safe }}</p>
-{%- endif %}
-      <a href="{{ waHref }}" class="btn btn--primary site-footer__cta" data-js="wa" target="_blank" rel="noopener">{% include "partials/icon-wa.njk" %}Cotizar por WhatsApp</a>
-    </div>
   </div>
 
   <div class="site-footer__bottom">
     <p>© {{ year }} {{ site.legal.razonSocial }} · {{ site.name }}. Todos los derechos reservados.</p>
-    <p>CUIT {% if site.legal.cuit %}{{ site.legal.cuit }}{% else %}{{ "[[CUIT]]" | rich | safe }}{% endif %}
-      · {% if site.legal.privacidad %}<a href="{{ site.legal.privacidad }}">Política de privacidad</a>{% else %}<span>Política de privacidad {{ "[[URL]]" | rich | safe }}</span>{% endif %}</p>
+    <p class="site-footer__links">
+{%- for c in site.footer.empresa %}<a href="{{ c.href }}"{% if c.href == page.url %} aria-current="page"{% endif %}>{{ c.label }}</a> · {% endfor -%}
+      {% if site.legal.privacidad %}<a href="{{ site.legal.privacidad }}">Política de privacidad</a>{% else %}<span>Política de privacidad {{ "[[URL]]" | rich | safe }}</span>{% endif %}</p>
+    <p>CUIT {% if site.legal.cuit %}{{ site.legal.cuit }}{% else %}{{ "[[CUIT]]" | rich | safe }}{% endif %}</p>
     <div class="site-footer__fiscal">
 {%- if site.legal.dataFiscal.url and site.legal.dataFiscal.img %}
       <a href="{{ site.legal.dataFiscal.url }}" target="_blank" rel="noopener"><img src="{{ site.legal.dataFiscal.img }}" alt="Data Fiscal ARCA" width="44" height="60" loading="lazy"></a>

@@ -1,15 +1,72 @@
-{#- Header de todas las páginas. Links en site.nav; CTA principal = WhatsApp (texto por página: waText). -#}
+{#- Header de todas las páginas (22 oct 2026): Productos ▾ · Marcas ▾ · buscador · Catálogo PDF · WhatsApp.
+    Menú en site.nav; los paneles leen líneas/subcategorías de catalogoWeb y marcas de marcas.json (lista + otras).
+    Desktop: el panel se abre con hover (con mouse) o con la flecha / tap (teclado, táctil). Mobile: acordeón.
+    JS: main.js (bloque "Menú"). Versión anterior: _archivo/navbar_antes_22oct2026/. -#}
 {%- set waHref = "https://wa.me/" + site.whatsapp.number + "?text=" + ((waText or site.whatsapp.text) | urlencode) %}
+{%- set pageUrl = page.url or "" %}
 <header class="header{% if headerFlat %} header--flat{% endif %}" id="siteHeader">
   <a href="/" class="header__logo"><img src="/img/logo-blanco.webp" alt="{{ site.name }} — inicio"></a>
   <nav class="nav" id="mainNav" aria-label="Principal">
+    <form class="nav-search" action="/productos/" method="get" role="search">
+      <label class="visually-hidden" for="navSearch">Buscar productos</label>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="navSearch" type="search" name="q" placeholder="Buscar productos" autocomplete="off" enterkeyhint="search">
+    </form>
+    <ul class="nav__list">
 {%- for item in site.nav %}
-    <a href="{{ item.href }}"{% if page.url and page.url.startsWith(item.href) %} aria-current="page"{% endif %}>{{ item.label }}</a>
+{%- set activo = false %}
+{%- for pre in (item.activo or [item.href]) %}{% if pageUrl.startsWith(pre) %}{% set activo = true %}{% endif %}{% endfor %}
+      <li class="nav__item{% if item.panel %} nav__item--panel{% endif %}">
+        <a class="nav__link{% if activo %} is-active{% endif %}" href="{{ item.href }}"{% if pageUrl == item.href %} aria-current="page"{% endif %}>{{ item.label }}</a>
+{%- if item.panel %}
+        <button class="nav__caret" type="button" aria-expanded="false" aria-controls="navPanel-{{ item.panel }}" aria-label="Opciones de {{ item.label }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="nav__panel nav__panel--{{ item.panel }}" id="navPanel-{{ item.panel }}">
+          <div class="nav__box">
+{%- if item.panel == "productos" %}
+            <a class="nav__all" href="{{ catalogoWeb.base }}/">Ver todos los productos <span>{{ catalogoWeb.total }}</span></a>
+            <div class="nav__cols">
+{%- for l in catalogoWeb.lineas %}
+              <div class="nav__col">
+                <a class="nav__title" href="{{ l.url }}">{{ item.lineas[l.id] or l.nombre }}</a>
+                <ul class="nav__subs">
+{%- for sid in item.destacadas[l.id] %}{% for s in l.subcategorias %}{% if s.id == sid %}
+                  <li><a href="{{ s.url }}">{{ s.nombre }}</a></li>
+{%- endif %}{% endfor %}{% endfor %}
+                </ul>
+                <a class="nav__more" href="{{ l.url }}">Ver todo</a>
+              </div>
 {%- endfor %}
-    <a href="{{ site.catalogo.href }}" class="nav__catalog" data-js="catalogo">{% include "partials/icon-download.njk" %}{{ site.catalogo.label }}</a>
+            </div>
+{%- elif item.panel == "marcas" %}
+            <div class="nav__cols">
+{%- for g in item.grupos %}
+              <div class="nav__col">
+                <p class="nav__title">{{ g.titulo }}</p>
+                <ul class="nav__subs">
+{%- for slug in g.marcas %}
+{%- for m in marcasWeb.lista %}{% if m.slug == slug %}
+                  <li><a href="{{ m.url }}">{{ m.marca }}</a></li>
+{%- endif %}{% endfor %}
+{%- for o in marcas.otras %}{% if o.url == "/" + slug + "/" %}
+                  <li><a href="{{ o.url }}">{{ o.marca }}</a></li>
+{%- endif %}{% endfor %}
+{%- endfor %}
+                </ul>
+              </div>
+{%- endfor %}
+            </div>
+            <a class="nav__all nav__all--end" href="{{ marcasWeb.base }}/">Ver todas las marcas</a>
+{%- endif %}
+          </div>
+        </div>
+{%- endif %}
+      </li>
+{%- endfor %}
+    </ul>
+    <a href="{{ site.catalogo.href }}" class="nav__catalog" data-js="catalogo">{% include "partials/icon-download.njk" %}Catálogo PDF</a>
   </nav>
   <a href="{{ waHref }}" class="btn--nav header__cta" data-js="wa" target="_blank" rel="noopener">
-    {% include "partials/icon-wa.njk" %}<span class="header__cta-long">Cotizar por WhatsApp</span><span class="header__cta-short">Cotizar</span>
+    {% include "partials/icon-wa.njk" %}<span class="header__cta-long">Contactar</span><span class="header__cta-short">Contactar</span>
   </a>
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">&#9776;</button>
 </header>

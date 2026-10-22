@@ -85,11 +85,15 @@
   }
 }
 
+/* ---- Menú (22 oct 2026): Productos ▾ · Marcas ▾ · buscador · Catálogo PDF ----
+   Mobile (<1024): panel navy desplegable con buscador arriba y acordeones.
+   Desktop: links a la izquierda; buscador, catálogo y CTA a la derecha.
+   Los paneles se abren con hover (mouse) o con .is-open (flecha, tap, teclado; main.js). */
 .nav {
   display: none;
   flex-direction: column;
-  gap: 20px;
-  align-items: flex-start;
+  gap: 18px;
+  align-items: stretch;
 }
 
 .nav.is-open {
@@ -98,49 +102,48 @@
   right: 0;
   left: 0;
   display: flex;
+  max-height: calc(100dvh - var(--nav-h, 70px));
   padding: 20px 24px 28px;
+  overflow-y: auto;
   background: var(--navy);
   box-shadow: 0 12px 24px rgb(var(--rgb-ink-800) / 25%);
 }
 
-@media (--lg) {
-  .nav {
-    position: static;
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    align-items: center;
-    padding: 0;
-    background: none;
-    box-shadow: none;
-  }
-
-  .header .btn--nav {
-    display: inline-flex;
-  }
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.nav a {
+.nav__item--panel {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.nav__link,
+.nav__catalog {
   position: relative;
   font-size: var(--fs-13);
   font-weight: var(--fw-medium);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
+  white-space: nowrap;
   color: var(--white);
-  padding-bottom: 3px;
 }
 
-@media (--xl) {
-  .nav a {
-    font-size: var(--fs-13-5);
-  }
+.nav__link {
+  padding: 10px 0;
 }
 
-.nav a::after {
+.nav__link::after {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 6px;
   left: 0;
   height: 2px;
   background: var(--orange);
@@ -150,12 +153,164 @@
   transform-origin: left;
 }
 
-.nav a:hover::after,
-.nav a[aria-current="page"]::after {
+.nav__link:hover::after,
+.nav__link.is-active::after {
   transform: scaleX(1);
 }
 
-/* "Catálogo": link secundario con ícono, separado de las categorías (no compite con el CTA) */
+.nav__caret {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  color: var(--white);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav__caret svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.2s ease;
+}
+
+.nav__item.is-open .nav__caret svg {
+  transform: rotate(180deg);
+}
+
+.nav__panel {
+  display: none;
+  grid-column: 1 / -1;
+}
+
+.nav__item.is-open .nav__panel {
+  display: block;
+}
+
+/* Contenido de los paneles (mobile: texto blanco sobre navy) */
+.nav__box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 4px 0 14px 14px;
+  border-left: 2px solid rgb(var(--rgb-white) / 15%);
+}
+
+.nav__cols {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.nav__box a {
+  text-decoration: none;
+  color: rgb(var(--rgb-white) / 85%);
+}
+
+.nav__box a:hover {
+  color: var(--orange);
+}
+
+.nav__title {
+  display: block;
+  margin: 0;
+  font-size: var(--fs-13);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+p.nav__title {
+  color: var(--white);
+}
+
+.nav__box a.nav__title {
+  color: var(--white);
+}
+
+.nav__subs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 6px 0 0;
+  padding: 0;
+  font-size: var(--fs-14);
+  list-style: none;
+}
+
+/* En mobile alcanza con el título de cada línea: las subcategorías destacadas son de desktop */
+.nav__panel--productos .nav__subs,
+.nav__more {
+  display: none;
+}
+
+.nav__all {
+  font-size: var(--fs-14);
+  font-weight: var(--fw-semibold);
+}
+
+.nav__box .nav__all {
+  color: var(--orange);
+}
+
+.nav__all span {
+  font-weight: var(--fw-regular);
+  opacity: 0.7;
+  margin-left: 4px;
+}
+
+.nav__all::after {
+  content: "→";
+  margin-left: 6px;
+}
+
+/* Buscador: en mobile arriba de todo y a lo ancho; en desktop, campo corto a la derecha */
+.nav-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-search svg {
+  position: absolute;
+  left: 14px;
+  width: 17px;
+  height: 17px;
+  color: rgb(var(--rgb-white) / 75%);
+  pointer-events: none;
+}
+
+.nav-search input {
+  width: 100%;
+  height: 44px;
+  padding: 0 16px 0 40px;
+  font: inherit;
+  font-size: var(--fs-14);
+  color: var(--white);
+  background: rgb(var(--rgb-white) / 10%);
+  border: 1px solid rgb(var(--rgb-white) / 25%);
+  border-radius: var(--radius-pill);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    width 0.25s ease;
+  appearance: none;
+  outline: none;
+}
+
+.nav-search input::placeholder {
+  color: rgb(var(--rgb-white) / 70%);
+}
+
+.nav-search input:focus {
+  background: rgb(var(--rgb-white) / 18%);
+  border-color: var(--orange);
+}
+
+/* "Catálogo PDF": link secundario con ícono (no compite con el CTA) */
 .nav__catalog {
   display: inline-flex;
   gap: 8px;
@@ -170,66 +325,223 @@
 }
 
 .nav.is-open .nav__catalog {
-  align-self: stretch;
   border-top: 1px solid rgb(var(--rgb-white) / 15%);
-  padding-top: 20px;
-}
-
-.nav.is-open .nav__catalog::after {
-  display: none;
+  padding-top: 18px;
 }
 
 @media (--lg) {
-  .nav__catalog {
-    border-left: 1px solid rgb(var(--rgb-white) / 25%);
-    padding-left: 24px;
+  .nav {
+    position: static;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    margin: 0 24px 0 40px;
+    padding: 0;
+    background: none;
+    box-shadow: none;
   }
 
-  .nav__catalog::after {
-    left: 24px;
+  .nav__list {
+    flex-direction: row;
+    gap: 28px;
+    order: 1;
+  }
+
+  .nav-search {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .nav__catalog {
+    order: 3;
+  }
+
+  .nav-search input {
+    width: 190px;
+    height: 40px;
+  }
+
+  .nav-search input:focus {
+    width: 240px;
+  }
+
+  .nav__item--panel {
+    position: relative;
+    display: flex;
+    gap: 2px;
+  }
+
+  .nav__caret {
+    width: 22px;
+    height: 22px;
+  }
+
+  .nav__caret svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  /* Panel: caja blanca debajo del item. El padding-top transparente es el
+     "puente" que mantiene el hover al bajar el mouse del link a la caja. */
+  .nav__panel {
+    position: absolute;
+    top: 100%;
+    left: -28px;
+    display: block;
+    opacity: 0;
+    transform: translateY(6px);
+    transition:
+      opacity 0.18s ease,
+      transform 0.18s ease,
+      visibility 0.18s;
+    padding-top: 18px;
+    visibility: hidden;
+  }
+
+  .nav__item.is-open .nav__panel {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+  .nav__box {
+    gap: 20px;
+    padding: 26px 30px 24px;
+    color: var(--navy);
+    background: var(--white);
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 24px 48px rgb(var(--rgb-ink-900) / 25%);
+  }
+
+  .nav__cols {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 40px;
+  }
+
+  .nav__box a {
+    color: var(--slate-800);
+  }
+
+  .nav__box a:hover,
+  .nav__box .nav__all {
+    color: var(--orange-700);
+  }
+
+  .nav__box a.nav__title {
+    color: var(--navy);
+  }
+
+  p.nav__title {
+    color: var(--navy);
+  }
+
+  .nav__subs {
+    flex-direction: column;
+    gap: 9px;
+    font-size: var(--fs-15);
+    margin-top: 14px;
+  }
+
+  .nav__panel--productos .nav__subs {
+    display: flex;
+  }
+
+  .nav__more {
+    display: inline-block;
+    font-size: var(--fs-13);
+    font-weight: var(--fw-semibold);
+    margin-top: 14px;
+  }
+
+  .nav__box .nav__more {
+    color: var(--navy);
+  }
+
+  .nav__more::after {
+    content: "→";
+    margin-left: 6px;
+  }
+
+  .nav__all {
+    border-bottom: 1px solid var(--slate-150);
+    padding-bottom: 16px;
+  }
+
+  .nav__all--end {
+    border-bottom: none;
+    border-top: 1px solid var(--slate-150);
+    padding-bottom: 0;
+    padding-top: 16px;
   }
 }
 
-/* Desktop: vuelve el aire original entre links (con "Productos" el menú tiene 5 items) */
+/* Con mouse: el panel se abre al pasar por encima */
+@media (--lg) and (hover: hover) {
+  .nav__item--panel:hover .nav__panel {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+  .nav__item--panel:hover .nav__caret svg {
+    transform: rotate(180deg);
+  }
+}
+
+@media (--xl) {
+  .nav__link,
+  .nav__catalog {
+    font-size: var(--fs-13-5);
+  }
+
+  .nav-search input {
+    width: 220px;
+  }
+
+  .nav-search input:focus {
+    width: 280px;
+  }
+}
+
 @media (--2xl) {
   .nav {
     gap: 32px;
+    margin-left: 56px;
   }
 
-  .nav__catalog {
-    padding-left: 32px;
-  }
-
-  .nav__catalog::after {
-    left: 32px;
+  .nav__list {
+    gap: 36px;
   }
 }
 
-/* Notebook 13-14": achicar separaciones y usar el CTA corto para que entren
-   "Productos", las 3 categorías, "Catálogo" y el CTA en una línea con aire */
+/* Notebook 13-14": separaciones más chicas y CTA corto ("Cotizar" + ícono) */
 @media (--lg-only) {
   .nav {
     gap: 16px;
-    margin: 0 24px 0 16px;
+    margin: 0 18px 0 24px;
   }
 
-  .nav a {
-    white-space: nowrap;
+  .nav__list {
+    gap: 22px;
   }
 
-  .nav__catalog {
-    padding-left: 16px;
+  .nav-search input {
+    width: 194px;
+    font-size: var(--fs-13);
   }
 
-  .nav__catalog::after {
-    left: 16px;
+  .nav-search input:focus {
+    width: 210px;
   }
 
   .header .btn--nav {
     padding: 13px 22px;
   }
 
-  /* En este ancho el CTA usa el label corto ("Cotizar" + ícono de WhatsApp) */
   .header .header__cta-long {
     display: none;
   }

@@ -136,8 +136,21 @@
     // --nav-h: alto real del header publicado como variable CSS. De ahi
     // sale el padding superior del hero, asi el contenido nunca queda
     // detras del navbar en ninguna altura de pantalla.
+    // Alto del header SIN scroll (sin .is-stuck): si la página carga o se
+    // redimensiona ya scrolleada, el header compacto mide menos y el recorte
+    // del operario quedaba corto → al volver arriba el casco aparecía cortado.
+    var naturalH = function(){
+      if (!header.classList.contains('is-stuck')) return header.offsetHeight;
+      header.style.transition = 'none';
+      header.classList.remove('is-stuck');
+      var h = header.offsetHeight;
+      header.classList.add('is-stuck');
+      void header.offsetHeight;
+      header.style.transition = '';
+      return h;
+    };
     var setNavH = function(){
-      document.documentElement.style.setProperty('--nav-h', Math.round(header.offsetHeight) + 'px');
+      document.documentElement.style.setProperty('--nav-h', Math.round(naturalH()) + 'px');
     };
     setNavH();
     window.addEventListener('resize', setNavH, {passive:true});
@@ -151,7 +164,7 @@
       // offsetTop/offsetHeight en vez de getBoundingClientRect: no los afecta
       // el transform de la animacion de entrada, asi la medida es correcta
       // aunque se tome antes de que el operario termine de entrar.
-      var cut = header.offsetHeight - over.offsetTop;
+      var cut = naturalH() - over.offsetTop;
       if (!(cut > 4)){ over.setAttribute('data-over','0'); return; }
       over.removeAttribute('data-over');
       over.style.setProperty('--over-h', Math.round(cut) + 'px');
@@ -266,13 +279,72 @@
   });
 })();
 (function(){
+  // Menú (22 oct 2026): hamburguesa (mobile) + paneles Productos ▾ / Marcas ▾.
+  // Con mouse (≥1024 y hover) el panel abre por CSS y el clic en "Productos"/"Marcas" navega.
+  // Mobile y táctil: el primer toque abre el panel (acordeón); la flecha siempre abre/cierra.
   var toggle = document.getElementById('navToggle');
   var nav = document.getElementById('mainNav');
-  if(!toggle || !nav) return;
-  toggle.addEventListener('click', function(){
+  if(!nav) return;
+  var items = [].slice.call(nav.querySelectorAll('.nav__item--panel'));
+  var mq = window.matchMedia;
+  function conMouse(){ return mq && mq('(min-width: 1024px) and (hover: hover)').matches; }
+  function setOpen(item, open){
+    item.classList.toggle('is-open', open);
+    var b = item.querySelector('.nav__caret');
+    if (b) b.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  function closeAll(except){ items.forEach(function(i){ if (i !== except) setOpen(i, false); }); }
+
+  if (toggle) toggle.addEventListener('click', function(){
     var isOpen = nav.classList.toggle('is-open');
     toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     toggle.textContent = isOpen ? '✕' : '☰';
+    if (!isOpen) closeAll();
+  });
+
+  items.forEach(function(item){
+    var link = item.querySelector('.nav__link');
+    var caret = item.querySelector('.nav__caret');
+    if (caret) caret.addEventListener('click', function(){
+      var open = !item.classList.contains('is-open');
+      closeAll(item); setOpen(item, open);
+    });
+    if (link) link.addEventListener('click', function(e){
+      if (conMouse()) return;
+      var desktop = mq && mq('(min-width: 1024px)').matches;
+      // mobile: el título siempre abre/cierra; táctil en desktop: 1er toque abre, 2do navega
+      if (!desktop || !item.classList.contains('is-open')){
+        e.preventDefault();
+        var open = !item.classList.contains('is-open');
+        closeAll(item); setOpen(item, open);
+      }
+    });
+    item.addEventListener('mouseleave', function(){ if (conMouse()) setOpen(item, false); });
+  });
+  document.addEventListener('click', function(e){
+    if (!e.target.closest('.nav__item--panel')) closeAll();
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key !== 'Escape') return;
+    var open = items.filter(function(i){ return i.classList.contains('is-open'); })[0];
+    if (!open) return;
+    closeAll();
+    var b = open.querySelector('.nav__caret'); if (b) b.focus();
+  });
+
+  // Medición: clic en links del menú y búsquedas desde el header
+  function push(o){ window.dataLayer = window.dataLayer || []; window.dataLayer.push(o); }
+  nav.addEventListener('click', function(e){
+    var a = e.target.closest('a');
+    if (!a || a.getAttribute('data-js') === 'catalogo') return;
+    var panel = a.closest('.nav__panel');
+    push({ event: 'menu_click', menu_item: a.textContent.replace(/\s+/g, ' ').trim(), menu_url: a.getAttribute('href'),
+      menu_panel: panel ? panel.id.replace('navPanel-', '') : '', ubicacion: 'header' });
+  });
+  var form = nav.querySelector('.nav-search');
+  if (form) form.addEventListener('submit', function(){
+    var q = (form.q.value || '').trim();
+    if (q) push({ event: 'search', search_term: q, ubicacion: 'header' });
   });
 })();
 (function(){
