@@ -207,7 +207,7 @@
     if (q.length < 3 || q === lastQ) return;
     lastQ = q;
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: 'search', search_term: q, results: parseInt(countEl.textContent, 10) || 0, page_path: location.pathname });
+    window.dataLayer.push({ event: 'search', search_term: q, results: parseInt(countEl.textContent, 10) || 0, ubicacion: 'catalogo', page_path: location.pathname });
   }
   function track(st){
     window.dataLayer = window.dataLayer || [];
@@ -229,12 +229,24 @@
   if (sort && params.get('orden')) sort.value = params.get('orden');
   sortItems();
   render(true);
+  // Búsqueda que llega desde el buscador del header (main.js deja la marca en sessionStorage)
+  try {
+    var src = JSON.parse(sessionStorage.getItem('dfz_search_src') || 'null');
+    sessionStorage.removeItem('dfz_search_src');
+    if (src && qInput && src.q === qInput.value.trim()){
+      lastQ = src.q;
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'search', search_term: src.q, results: parseInt(countEl.textContent, 10) || 0, ubicacion: src.ubicacion, page_path: location.pathname });
+    }
+  } catch(err){}
 
   boxes.forEach(function(b){ b.addEventListener('change', function(){ update(); track(state()); }); });
   if (sort) sort.addEventListener('change', function(){ sortItems(); update(); });
   if (search){
     search.addEventListener('submit', function(e){
-      e.preventDefault(); update(); track(state()); trackSearch();
+      e.preventDefault();
+      try { sessionStorage.removeItem('dfz_search_src'); } catch(err){} // búsqueda en la misma página: la mide trackSearch
+      update(); track(state()); trackSearch();
       var top = root.getBoundingClientRect().top + window.scrollY - (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'), 10) || 80) - 12;
       if (window.scrollY < top - 200) window.scrollTo({ top: top, behavior: 'smooth' });
       if (qInput) qInput.blur();

@@ -341,10 +341,28 @@
     push({ event: 'menu_click', menu_item: a.textContent.replace(/\s+/g, ' ').trim(), menu_url: a.getAttribute('href'),
       menu_panel: panel ? panel.id.replace('navPanel-', '') : '', ubicacion: 'header' });
   });
-  var form = nav.querySelector('.nav-search');
-  if (form) form.addEventListener('submit', function(){
-    var q = (form.q.value || '').trim();
-    if (q) push({ event: 'search', search_term: q, ubicacion: 'header' });
+  // Buscadores que llevan a /productos/?q= (header, índice de marcas, 404): el evento `search`
+  // lo empuja el catálogo al cargar (catalogo.js), con la cantidad de resultados, así no se
+  // pierde con la navegación. Sin sessionStorage, se empuja acá (sin resultados).
+  // El buscador propio del catálogo (data-js="cat-search" en /productos/) lo mide catalogo.js.
+  document.addEventListener('submit', function(e){
+    var f = e.target;
+    if (!f.matches || !f.matches('form[role="search"]') || !f.q) return;
+    var q = (f.q.value || '').trim();
+    if (!q) return;
+    var ub = f.closest('.header') ? 'header' : f.closest('.notfound') ? 'pagina_404' : (location.pathname.indexOf('/marcas') === 0 ? 'marcas' : 'catalogo');
+    try { sessionStorage.setItem('dfz_search_src', JSON.stringify({ q: q, ubicacion: ub })); }
+    catch(err){ push({ event: 'search', search_term: q, ubicacion: ub }); }
+  }, true);
+  // Footer: mismos datos que el menú, con ubicacion footer (único link interno a las landings)
+  var foot = document.querySelector('.site-footer');
+  if (foot) foot.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="/"]');
+    if (!a || a.getAttribute('data-js') === 'catalogo') return;
+    var col = a.closest('.site-footer__col, .site-footer__bottom');
+    var t = col && col.querySelector('.site-footer__title');
+    push({ event: 'menu_click', menu_item: a.textContent.replace(/\s+/g, ' ').trim(), menu_url: a.getAttribute('href'),
+      menu_panel: t ? t.textContent.trim().toLowerCase() : 'barra_inferior', ubicacion: 'footer' });
   });
 })();
 (function(){
@@ -536,8 +554,8 @@
       ['[data-js="form-status"]', 'fallback'], ['.wa-float', 'flotante'], ['.header', 'header'],
       ['.site-footer__cta', 'footer'], ['.site-footer', 'footer_contacto'], ['.cat-modal', 'catalogo_ok'], ['.pdp', 'producto'],
       ['.product-card', 'producto_tarjeta'], ['.catalog-list, [data-js="catalog"]', 'listado'],
-      ['.ziao-uses-grid', 'tarjeta_uso'], ['.brand-more', 'otro_modelo'], ['.brand-about__card', 'sobre_marca'], ['.ziao-steps, .ziao-uses', 'pasos_compra'],
-      ['.hero, .brand-hero', 'hero'], ['.quote, #contacto', 'quote'], ['.contact-items, .legal', 'contacto']
+      ['.ziao-uses-grid', 'tarjeta_uso'], ['.agio-colors', 'color'], ['.factory', 'fabrica'], ['.notfound', 'pagina_404'], ['.brand-more', 'otro_modelo'], ['.brand-about__card', 'sobre_marca'], ['.ziao-steps, .ziao-uses', 'pasos_compra'],
+      ['.hero, .brand-hero', 'hero'], ['.quote, #contacto', 'quote'], ['.contact-items, .contact-list, .legal', 'contacto']
     ];
     for (var i = 0; i < map.length; i++) if (a.closest(map[i][0])) return map[i][1];
     return 'otro';

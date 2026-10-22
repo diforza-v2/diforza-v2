@@ -112,7 +112,7 @@ agio:
         {%- for c in Z.colores %}
         {%- set th = c.foto | thumb480 %}
         <li>
-          <a href="https://wa.me/{{ site.whatsapp.number }}?text={{ ('Hola, quiero cotizar pantalones cargo elastizados Agio color ' + (c.nombre | lower) + ' para mi empresa.') | urlencode }}" target="_blank" rel="noopener" data-js="wa" aria-label="Cotizar el pantalón Agio {{ c.nombre | lower }} por WhatsApp">
+          <a data-prod-id="{{ Z.producto | replace('/productos/', '') | replace('/', '') }}" data-prod-nombre="Pantalón cargo elastizado Agio {{ c.nombre | lower }}" href="https://wa.me/{{ site.whatsapp.number }}?text={{ ('Hola, quiero cotizar pantalones cargo elastizados Agio color ' + (c.nombre | lower) + ' para mi empresa.') | urlencode }}" target="_blank" rel="noopener" data-js="wa" aria-label="Cotizar el pantalón Agio {{ c.nombre | lower }} por WhatsApp">
             <img src="{{ th or c.foto }}" alt="Pantalón cargo elastizado Agio {{ c.nombre | lower }}" width="480" height="600" loading="lazy" decoding="async">
             <span>{{ c.nombre }}</span>
           </a>
