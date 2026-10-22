@@ -3337,8 +3337,7 @@
    ],
    "colores": [
     "negro",
-    "marron",
-    "blanco"
+    "marron"
    ],
    "talles": "35 al 47",
    "visible": true,
@@ -3346,12 +3345,12 @@
     "unidades": 9048,
     "empresas": 78
    },
-   "nota": "Incluye el \"Botín Conwork negro\" del ERP (BOTCONW/9BOTCONW) = modelo 25BAF (confirmado por el usuario, 8 oct 2026) 14 oct: agregada la variante Blanco (línea White) por LISTA WEB de Diego; fotos de conwork.net (botin-25baf-white).",
+   "nota": "Incluye el \"Botín Conwork negro\" del ERP (BOTCONW/9BOTCONW) = modelo 25BAF (confirmado por el usuario, 8 oct 2026) 14 oct: agregada la variante Blanco (línea White) por LISTA WEB de Diego; fotos de conwork.net (botin-25baf-white). 22 oct: fotos negro y cedro reemplazadas por las de la suela nueva (_assets/fotos_marcas/conwork/botin-25baf/; ojo: 07-cedro-1-16.jpg es en realidad negro). Blanco (línea White) discontinuado: se sacó la variante (fotos en _archivo/botin-25baf_fotos_antes_22oct2026/).",
    "foto": "/img/catalogo/botin-conwork-25baf--negro.webp",
    "nombreWeb": "Botín de seguridad Conwork 25BAF",
    "lineaMarca": "Industrial",
    "descripcion": "El clásico de la industria: cuero, puntera de acero y suela dieléctrica.",
-   "descripcionLarga": "El botín de seguridad más pedido por las empresas. Capellada 100 % cuero flor con doble frontura, cuello y lengüeta acolchados y puntera de acero. Pensado para el trabajo diario en industrias como la petrolera, metalúrgica, agropecuaria y de la construcción. Suela de poliuretano bidensidad dieléctrica, antideslizante y resistente a hidrocarburos. Sello IRAM 3610:2015. Opcional: plantilla antiperforación. También en blanco (línea White), fácil de limpiar, para laboratorios e industrias frigoríficas, lácteas y alimenticias.",
+   "descripcionLarga": "El botín de seguridad más pedido por las empresas. Capellada 100 % cuero flor con doble frontura, cuello y lengüeta acolchados y puntera de acero. Pensado para el trabajo diario en industrias como la petrolera, metalúrgica, agropecuaria y de la construcción. Suela de poliuretano bidensidad dieléctrica, antideslizante y resistente a hidrocarburos. Sello IRAM 3610:2015. Opcional: plantilla antiperforación.",
    "specs": {
     "puntera": "Acero",
     "suela": "PU bidensidad dieléctrica",
@@ -3367,14 +3366,13 @@
      "color": "marron",
      "colorFabricante": "Cedro",
      "foto": "/img/catalogo/botin-conwork-25baf--cedro.webp"
-    },
-    {
-     "color": "blanco",
-     "colorFabricante": "Blanco (línea White)",
-     "foto": "/img/catalogo/botin-conwork-25baf--blanco.webp"
     }
    ],
-   "fichaTecnica": "/assets/docs/fichas/conwork-25baf.pdf"
+   "fichaTecnica": "/assets/docs/fichas/conwork-25baf.pdf",
+   "galeria": [
+    "/img/catalogo/botin-conwork-25baf--negro-2.webp",
+    "/img/catalogo/botin-conwork-25baf--cedro-2.webp"
+   ]
   },
   {
    "id": "botin-conwork-401baf-allworks",
