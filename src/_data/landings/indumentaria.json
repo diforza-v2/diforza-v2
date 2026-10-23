@@ -130,9 +130,9 @@
         "texto": "Bordado, estampa, transfer o vinilo con la identidad de tu empresa. Antes de producir aprobás el diseño, la ubicación y el tamaño del logo."
       },
       {
-        "icono": "persona",
-        "titulo": "Un responsable de cuenta",
-        "texto": "Alguien que ya sabe qué prenda usa tu personal y en qué talles. Reponer es un mensaje, no una licitación."
+        "icono": "caja",
+        "titulo": "Ropa, calzado y EPP: un solo proveedor",
+        "texto": "Además de la indumentaria, tenemos calzado de seguridad y EPP certificado. Un pedido, una factura y un responsable de cuenta que ya sabe qué prenda y qué talles usa tu personal."
       }
     ],
     "problema": {
@@ -212,6 +212,10 @@
     {
       "pregunta": "¿Qué ropa de trabajo fabrica Diforza?",
       "respuesta": "Diforza fabrica su propia indumentaria de trabajo en Mataderos, CABA: camisas y pantalones de gabardina (clásicos y cargo), camperas, buzos, remeras, chombas, mamelucos y ropa de alta visibilidad. Los colores más pedidos son azul marino, beige y gris."
+    },
+    {
+      "pregunta": "¿Puedo sumar calzado y EPP al mismo pedido de ropa de trabajo?",
+      "respuesta": "Sí. Además de la indumentaria, Diforza tiene calzado de seguridad (botines, zapatos, zapatillas y botas Conwork, Ombú, Funcional y Voran) y elementos de protección personal certificados: cascos, guantes, anteojos, protección auditiva y respiratoria y equipos para trabajo en altura. Se cotiza todo junto: un pedido, una sola factura y el mismo responsable de cuenta."
     },
     {
       "pregunta": "¿Puedo personalizar la ropa de trabajo con el logo de mi empresa?",

@@ -146,9 +146,9 @@
         "texto": "Te ayudamos a definir qué elemento corresponde a cada puesto según su riesgo real. La recomendación primero, el producto después."
       },
       {
-        "icono": "caja-trazo2",
-        "titulo": "Stock permanente",
-        "texto": "Mantenemos stock propio de todas las líneas. Cuando la urgencia aparece, no empieza el “te lo pido a fábrica”."
+        "icono": "caja",
+        "titulo": "EPP, ropa y calzado: un solo proveedor",
+        "texto": "Equipá el puesto completo en un pedido: protección, indumentaria y calzado de seguridad, con stock propio. Cuando la urgencia aparece, no empieza el “te lo pido a fábrica”."
       }
     ],
     "problema": {
@@ -228,6 +228,10 @@
     {
       "pregunta": "¿Qué elementos de protección personal vende Diforza?",
       "respuesta": "Diforza vende EPP para empresas: protección craneal, auditiva, ocular, facial y respiratoria, guantes, soldadura, equipos para trabajo en altura y elementos de señalización. Es socio oficial de Libus y trabaja también con BLS, WorkSafe, De Pascale, Skyway y Conoflex."
+    },
+    {
+      "pregunta": "¿Puedo sumar ropa de trabajo y calzado de seguridad al mismo pedido de EPP?",
+      "respuesta": "Sí. Además del EPP, Diforza fabrica indumentaria de trabajo (pantalones, camisas, camperas, chalecos y mamelucos, personalizables con el logo de tu empresa) y tiene calzado de seguridad Conwork, Ombú, Funcional y Voran. Se puede equipar el puesto completo en un pedido, con una sola factura y el mismo responsable de cuenta."
     },
     {
       "pregunta": "¿El EPP está certificado? ¿Entregan ficha técnica?",

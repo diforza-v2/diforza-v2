@@ -115,9 +115,9 @@
         "texto": "Conwork es nuestra línea principal: botines, zapatos y zapatillas con puntera, en negro, marrón y blanco. Lo completamos con Ombú (botas de PVC y clásicos de cuero), Funcional y Voran."
       },
       {
-        "icono": "caja-trazo2",
-        "titulo": "Reposición sostenida",
-        "texto": "El calzado es consumo permanente: la continuidad importa más que el precio unitario. Mantenemos stock propio."
+        "icono": "caja",
+        "titulo": "Calzado, ropa y EPP: un solo proveedor",
+        "texto": "Sumá la indumentaria y el EPP de tu personal al mismo pedido. Un alta de proveedor, una factura y stock propio de las tres líneas."
       },
       {
         "icono": "persona",
@@ -202,6 +202,10 @@
     {
       "pregunta": "¿Qué calzado de seguridad vende Diforza?",
       "respuesta": "Diforza vende botines, zapatos y zapatillas de seguridad CONWORK —su línea principal, con el botín negro como el más pedido— y calzado Ombú, Funcional y Voran, además de botas de PVC de caña larga con y sin puntera de acero."
+    },
+    {
+      "pregunta": "¿Puedo sumar ropa de trabajo y EPP al mismo pedido de calzado?",
+      "respuesta": "Sí. Además del calzado de seguridad, Diforza fabrica indumentaria de trabajo (pantalones, camisas, camperas, chalecos y mamelucos, personalizables con el logo de tu empresa) y vende elementos de protección personal certificados: cascos, guantes, anteojos y protección auditiva y respiratoria. Se cotiza todo junto: un pedido, una sola factura y el mismo responsable de cuenta."
     },
     {
       "pregunta": "¿Tienen botines de seguridad con puntera de acero?",
