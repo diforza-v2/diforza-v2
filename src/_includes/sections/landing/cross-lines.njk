@@ -1,0 +1,58 @@
+{#- Venta cruzada (23 oct 2026): "Equipá a tu personal de pies a cabeza" — las OTRAS dos líneas, con sus subcategorías y marcas.
+    Textos y orden: _data/cruceLineas.json · cantidades: catalogoWeb.cruce[landingKey] · estilos: sections/landing/cross-lines.css -#}
+{%- set E = cruceLineas.encabezado %}
+{%- set X = catalogoWeb.cruce[landingKey] %}
+{%- if X %}
+<section class="xlines" data-js="cross" data-cross-location="landing" data-linea-origen="{{ landingKey }}" aria-labelledby="xlines-title">
+  <div class="xlines__inner">
+    <header class="xlines__head reveal">
+      <div class="xlines__copy">
+        <p class="xlines__eyebrow">{{ E.eyebrow }}</p>
+        <h2 class="xlines__title" id="xlines-title">{{ E.titulo }} <span>{{ E.tituloAcento }}</span></h2>
+        <p class="xlines__lead">{{ X.lead }}</p>
+      </div>
+      <ul class="xlines__proof">
+{%- for pr in E.pruebas %}
+        <li><span class="xlines__proof-ic">{{ icons[pr.icono] | safe }}</span><strong>{{ pr.titulo }}</strong><small>{{ pr.texto }}</small></li>
+{%- endfor %}
+      </ul>
+    </header>
+    <div class="xlines__panels">
+{%- for P in X.paneles %}
+      <article class="xl-panel reveal{% if not loop.first %} reveal--1{% endif %}" data-linea="{{ P.id }}">
+        <a class="xl-panel__media" href="{{ P.url }}" data-cross-type="linea" tabindex="-1" aria-hidden="true">
+          <img src="{{ P.foto }}" alt="" width="800" height="600" loading="lazy" decoding="async">
+        </a>
+        <div class="xl-panel__cap">
+          <span class="xl-panel__count">{{ P.total }} {{ P.unidad }}</span>
+          <h3 class="xl-panel__title"><a href="{{ P.url }}" data-cross-type="linea">{{ P.titulo }}</a></h3>
+          <p class="xl-panel__sub">{{ P.bajada }}</p>
+        </div>
+        <div class="xl-panel__body">
+          <p class="xl-panel__label">Qué encontrás</p>
+          <ul class="xl-tiles" data-n="{{ P.subs.length + (1 if P.resto > 0 else 0) }}">
+{%- for s in P.subs %}
+            <li><a class="xl-tile" href="{{ s.url }}" data-cross-type="subcategoria"><span class="xl-tile__ic">{{ icons[s.icono] | safe }}</span><span class="xl-tile__name">{{ s.nombre }}</span><span class="xl-tile__n">{{ s.texto }}</span></a></li>
+{%- endfor %}
+{%- if P.resto > 0 %}
+            <li><a class="xl-tile xl-tile--more" href="{{ P.url }}" data-cross-type="linea"><span class="xl-tile__name">+{{ P.resto }} categorías más</span><span class="xl-tile__go">{{ icons['ui-flecha'] | safe }}</span></a></li>
+{%- endif %}
+          </ul>
+          <div class="xl-panel__foot">
+            <div class="xl-brands">
+              <p class="xl-panel__label">{{ P.marcasTitulo }}{% if P.sello %} <span class="xl-badge">{{ icons['ui-medalla'] | safe }}{{ P.sello }}</span>{% endif %}</p>
+              <ul class="xl-logos">
+{%- for lg in P.logos %}
+                <li>{% if marcasWeb.url[lg.marca] %}<a href="{{ marcasWeb.url[lg.marca] }}" data-cross-type="marca"><img src="{{ lg.src }}" alt="{{ lg.marca }}" loading="lazy" decoding="async"></a>{% else %}<img src="{{ lg.src }}" alt="{{ lg.marca }}" loading="lazy" decoding="async">{% endif %}</li>
+{%- endfor %}
+              </ul>
+            </div>
+            <a class="xl-cta" href="{{ P.url }}" data-cross-type="linea">{{ P.cta }} {{ icons['ui-flecha'] | safe }}</a>
+          </div>
+        </div>
+      </article>
+{%- endfor %}
+    </div>
+  </div>
+</section>
+{%- endif %}

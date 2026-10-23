@@ -5,7 +5,7 @@ layout: layouts/base.njk
     El contenido sale de src/_data/landings/<landingKey>.json (front matter: landingKey).
     Orden de secciones: L.secciones si el JSON lo define; si no, el orden estándar. -#}
 {%- set L = landings[landingKey] %}
-{%- set secciones = L.secciones or ["hero", "trust", "category-lines", "products", "benefits", "normativa", "steps", "guarantee", "faq", "quote"] %}
+{%- set secciones = L.secciones or ["hero", "trust", "category-lines", "products", "cross-lines", "benefits", "normativa", "steps", "guarantee", "faq", "quote"] %}
 <main>
 {% for s in secciones %}
 {% include "sections/landing/" + s + ".njk" %}

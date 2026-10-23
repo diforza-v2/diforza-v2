@@ -50,6 +50,7 @@
 @import "sections/landing/trust.css" layer(sections);
 @import "sections/landing/category-lines.css" layer(sections);
 @import "sections/landing/products.css" layer(sections);
+@import "sections/landing/cross-lines.css" layer(sections);
 @import "sections/landing/reviews.css" layer(sections);
 @import "sections/landing/steps.css" layer(sections);
 @import "sections/landing/guarantee.css" layer(sections);

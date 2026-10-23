@@ -162,23 +162,29 @@ for (const p of productos) {
   p.relacionados = enSub(p.sub.id).filter((q) => q.id !== p.id).slice(0, 8).map((q) => q.card);
 }
 
-// Venta cruzada (22 oct): "Completá el equipo" en la ficha → productos de las OTRAS líneas, según complementos.json
-// (1 por subcategoría, hasta 4; rota entre los 3 primeros del orden curado para que fichas vecinas no muestren lo mismo).
-const { complementos: COMPL, porLinea: COMPL_LINEA } = require("./complementos.json");
+// Venta cruzada (22 oct): "Completá el equipo" en la ficha → el resto del equipo (indumentaria + calzado + EPP de OTRAS
+// subcategorías), según complementos.json: 1 producto por subcategoría, hasta 4, con tope por línea (calzado 1);
+// rota entre los 3 primeros del orden curado para que fichas vecinas no muestren lo mismo.
+const { complementos: COMPL, porLinea: COMPL_LINEA, topes: TOPES } = require("./complementos.json");
 const totalLinea = Object.fromEntries(categorias.map((c) => [c.id, productos.filter((p) => p.linea.id === c.id).length]));
 const topSub = {};
 const topDe = (sid) => (topSub[sid] = topSub[sid] || enSub(sid).filter((x) => x.card.foto).slice(0, 3));
 for (const p of productos) {
   const pos = Math.max(0, enSub(p.sub.id).findIndex((x) => x.id === p.id));
-  const usados = new Set();
+  const propias = new Set([p.sub.id, ...p.tambienEn.map((t) => t.id)]);
+  const usados = new Set([p.id]);
+  const porLin = {};
   const out = [];
-  for (const sid of COMPL[p.sub.id] || COMPL_LINEA[p.linea.id] || []) {
+  for (const sid of [...new Set([...(COMPL[p.sub.id] || []), ...(COMPL_LINEA[p.linea.id] || [])])]) {
     if (out.length >= 4) break;
-    if (!SUBS[sid] || SUBS[sid].linea === p.linea.id) continue;
-    const cand = topDe(sid).filter((x) => !usados.has(x.id) && x.linea.id !== p.linea.id);
+    if (!SUBS[sid] || propias.has(sid)) continue;
+    const lin = SUBS[sid].linea;
+    if ((porLin[lin] || 0) >= (TOPES[lin] || 4)) continue;
+    const cand = topDe(sid).filter((x) => !usados.has(x.id) && !x.tambienEn.some((t) => propias.has(t.id)) && !propias.has(x.sub.id));
     if (!cand.length) continue;
     const q = cand[pos % cand.length];
     usados.add(q.id);
+    porLin[lin] = (porLin[lin] || 0) + 1;
     out.push({ ...q.card, linea: q.linea.id });
   }
   p.completa = out;
@@ -232,4 +238,27 @@ const lineas = categorias.map((c) => {
 // Categorías hermanas (pie de la página de subcategoría)
 for (const l of lineas) for (const sc of l.subcategorias) sc.hermanas = l.subcategorias.filter((h) => h.id !== sc.id).map((h) => ({ nombre: h.nombre, url: h.url, total: h.total }));
 
-module.exports = { base: BASE, productos, porId, lineas, subcategorias, facetas: facetas(productos), total: productos.length };
+// Venta cruzada (23 oct): banda de las landings con las otras dos líneas (config en cruceLineas.json)
+const CRUCE = require("./cruceLineas.json");
+const panelLinea = (id) => {
+  const c = CRUCE.lineas[id];
+  const l = lineas.find((x) => x.id === id);
+  const conProductos = new Map(l.subcategorias.map((s) => [s.id, s]));
+  const subs = c.subs
+    .filter(([sid]) => conProductos.has(sid))
+    .slice(0, 5)
+    .map(([sid, icono, nombre]) => ({ id: sid, icono, nombre, total: conProductos.get(sid).total, url: conProductos.get(sid).url }));
+  const singular = c.unidad.replace(/s$/, "");
+  subs.forEach((s) => (s.texto = `${s.total} ${s.total === 1 ? singular : c.unidad}`));
+  return { ...c, id, url: l.url, total: totalLinea[id], subs, resto: l.subcategorias.length - subs.length, logos: c.logos.map(([archivo, marca]) => ({ src: `/img/${archivo}`, marca })) };
+};
+const cruce = Object.fromEntries(
+  categorias.map((c) => {
+    const otras = categorias.filter((x) => x.id !== c.id).map((x) => x.id);
+    const E = CRUCE.encabezado;
+    const lead = E.lead.replace("{actual}", E.nombres[c.id]).replace("{otras}", otras.map((o) => E.nombresOtras[o]).join(" y "));
+    return [c.id, { lead, paneles: otras.map(panelLinea) }];
+  })
+);
+
+module.exports = { base: BASE, productos, porId, lineas, subcategorias, facetas: facetas(productos), total: productos.length, cruce };

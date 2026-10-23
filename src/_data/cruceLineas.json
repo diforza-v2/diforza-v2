@@ -1,0 +1,49 @@
+{
+  "_nota": "Venta cruzada (23 oct 2026): banda 'Equipá a tu personal de pies a cabeza' de las landings (sections/landing/cross-lines.njk). Cada landing muestra las OTRAS dos líneas. 'subs' = subcategorías en orden de prioridad (se muestran las primeras 5 con productos; el resto va en '+N categorías más'). Las cantidades salen del catálogo (catalogoWeb.js → cruce). Logos: archivo en src/img/ + nombre de marca (si tiene página en marcasWeb.url, el logo linkea). Ver 01_estrategia/venta_cruzada_web.md.",
+  "encabezado": {
+    "eyebrow": "Un solo proveedor",
+    "titulo": "Equipá a tu personal",
+    "tituloAcento": "de pies a cabeza",
+    "lead": "Además {actual}, en Diforza tenés {otras}, con stock permanente. Sumalo al mismo pedido.",
+    "nombres": { "indumentaria": "de la ropa de trabajo", "calzado": "del calzado", "epp": "de EPP" },
+    "nombresOtras": { "indumentaria": "indumentaria", "calzado": "calzado de seguridad", "epp": "EPP certificado" },
+    "pruebas": [
+      { "icono": "documento", "titulo": "Una factura", "texto": "y un alta de proveedor" },
+      { "icono": "persona", "titulo": "Un vendedor", "texto": "que conoce tu cuenta" },
+      { "icono": "camion", "titulo": "Una entrega", "texto": "a todo el país" }
+    ]
+  },
+  "lineas": {
+    "indumentaria": {
+      "titulo": "Indumentaria de trabajo",
+      "bajada": "Fabricación propia, personalizable con tu logo",
+      "foto": "/img/cat-home-indumentaria.webp",
+      "unidad": "productos",
+      "subs": [["pantalones", "pantalon", "Pantalones"], ["campera", "campera", "Camperas"], ["chaleco", "alta-visibilidad", "Chalecos"], ["mameluco", "conjunto", "Mamelucos"], ["camisa", "camisa", "Camisas"], ["remera", "remera", "Remeras"], ["traje-de-lluvia", "gota", "Trajes de lluvia"]],
+      "marcasTitulo": "Marcas propias",
+      "logos": [["brand-diforza.webp", "Diforza"], ["logo-agio.webp", "Agio"], ["logo-ziao.webp", "ZIAO"]],
+      "cta": "Ver toda la indumentaria"
+    },
+    "calzado": {
+      "titulo": "Calzado de seguridad",
+      "bajada": "Certificado, con puntera de acero, aluminio o plástica",
+      "foto": "/img/cat-home-calzado.webp",
+      "unidad": "modelos",
+      "subs": [["botines", "botin", "Botines"], ["zapatos", "zapato", "Zapatos"], ["zapatillas", "zapatilla", "Zapatillas"], ["botas", "bota", "Botas"]],
+      "marcasTitulo": "Marcas",
+      "logos": [["logo-conwork.webp", "Conwork"], ["logo-ombu.webp", "Ombú"], ["logo-funcional.webp", "Funcional"], ["logo-voran.svg", "Voran"]],
+      "cta": "Ver todo el calzado"
+    },
+    "epp": {
+      "titulo": "EPP y protección industrial",
+      "bajada": "Certificado IRAM, para cada riesgo del puesto",
+      "foto": "/img/cat-home-epp.webp",
+      "unidad": "productos",
+      "subs": [["proteccion-manos", "mano", "Guantes"], ["proteccion-ocular", "anteojos", "Protección ocular"], ["proteccion-auditiva", "auricular", "Protección auditiva"], ["proteccion-craneal", "casco", "Cascos"], ["proteccion-respiratoria", "respirador", "Protección respiratoria"], ["altura", "arnes", "Trabajo en altura"], ["senalizacion", "cono", "Señalización"]],
+      "marcasTitulo": "Marcas",
+      "sello": "Socio oficial de Libus",
+      "logos": [["logo-libus.webp", "Libus"], ["logo-bls.webp", "BLS"], ["logo-depascale.svg", "De Pascale"], ["logo-worksafe.webp", "WorkSafe"], ["logo-conoflex.webp", "Conoflex"]],
+      "cta": "Ver todo el EPP"
+    }
+  }
+}

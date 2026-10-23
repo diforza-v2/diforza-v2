@@ -583,16 +583,17 @@
     }
   }, true);
 
-  // Venta cruzada (22 oct): clics en "Completá el equipo" de la ficha → otra línea
+  // Venta cruzada: clics en "Completá el equipo" (ficha, 22 oct) y en la banda de líneas de las landings (23 oct)
   document.addEventListener('click', function(e){
     var a = e.target.closest && e.target.closest('[data-js="cross"] a[href]');
     if (!a) return;
     var sec = a.closest('[data-js="cross"]');
     var dest = a.closest('[data-linea]');
     var esLinea = a.classList.contains('catalog-cross__line');
-    var tipo = esLinea ? 'linea' : (/wa\.me|api\.whatsapp\.com/.test(a.getAttribute('href')) ? 'whatsapp' : 'producto');
-    var pr = esLinea ? null : prodOf(a);
-    push({ event: 'cross_click', cross_location: 'ficha', cross_type: tipo,
+    var tipo = a.getAttribute('data-cross-type') || (esLinea ? 'linea' : (/wa\.me|api\.whatsapp\.com/.test(a.getAttribute('href')) ? 'whatsapp' : 'producto'));
+    var pr = (esLinea || a.hasAttribute('data-cross-type')) ? null : prodOf(a);
+    push({ event: 'cross_click', cross_location: sec.getAttribute('data-cross-location') || 'ficha', cross_type: tipo,
+      cross_url: a.getAttribute('href'),
       linea_origen: sec.getAttribute('data-linea-origen'), linea_destino: dest ? dest.getAttribute('data-linea') : undefined,
       product_id: pr ? pr.id : undefined, product_name: pr ? pr.name : undefined });
   }, true);
