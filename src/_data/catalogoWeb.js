@@ -152,13 +152,38 @@ function ordenarEn(items, subDe) {
 ordenarEn(productos, (p) => p.sub.id);
 const porId = Object.fromEntries(productos.map((p) => [p.id, p]));
 
-// Relacionados: misma subcategoría (y las de tambienEn), hasta 8
+const enSub = (sid) => ordenarEn(productos.filter((p) => p.sub.id === sid || p.tambienEn.some((t) => t.id === sid)), () => sid);
+
+// Relacionados ("Más productos de <subcategoría>"): SOLO la subcategoría principal del producto (incluye los de otras
+// subcategorías que también figuran en esta, p. ej. la campera de descarne en Protección soldadura), en el orden curado, hasta 8.
+// No se suman las subcategorías de tambienEn del producto: el chaleco reflectivo (también en Señalización) traía conos,
+// y la campera de descarne (también en Campera) traía camperas comunes (corregido 22 oct).
 for (const p of productos) {
-  const subs = new Set([p.sub.id, ...p.tambienEn.map((t) => t.id)]);
-  p.relacionados = productos.filter((q) => q.id !== p.id && (subs.has(q.sub.id) || q.tambienEn.some((t) => subs.has(t.id)))).slice(0, 8).map((q) => q.card);
+  p.relacionados = enSub(p.sub.id).filter((q) => q.id !== p.id).slice(0, 8).map((q) => q.card);
 }
 
-const enSub = (sid) => ordenarEn(productos.filter((p) => p.sub.id === sid || p.tambienEn.some((t) => t.id === sid)), () => sid);
+// Venta cruzada (22 oct): "Completá el equipo" en la ficha → productos de las OTRAS líneas, según complementos.json
+// (1 por subcategoría, hasta 4; rota entre los 3 primeros del orden curado para que fichas vecinas no muestren lo mismo).
+const { complementos: COMPL, porLinea: COMPL_LINEA } = require("./complementos.json");
+const totalLinea = Object.fromEntries(categorias.map((c) => [c.id, productos.filter((p) => p.linea.id === c.id).length]));
+const topSub = {};
+const topDe = (sid) => (topSub[sid] = topSub[sid] || enSub(sid).filter((x) => x.card.foto).slice(0, 3));
+for (const p of productos) {
+  const pos = Math.max(0, enSub(p.sub.id).findIndex((x) => x.id === p.id));
+  const usados = new Set();
+  const out = [];
+  for (const sid of COMPL[p.sub.id] || COMPL_LINEA[p.linea.id] || []) {
+    if (out.length >= 4) break;
+    if (!SUBS[sid] || SUBS[sid].linea === p.linea.id) continue;
+    const cand = topDe(sid).filter((x) => !usados.has(x.id) && x.linea.id !== p.linea.id);
+    if (!cand.length) continue;
+    const q = cand[pos % cand.length];
+    usados.add(q.id);
+    out.push({ ...q.card, linea: q.linea.id });
+  }
+  p.completa = out;
+  p.otrasLineas = categorias.filter((c) => c.id !== p.linea.id).map((c) => ({ id: c.id, url: urlLinea(c.id), total: totalLinea[c.id] }));
+}
 
 // Facetas de un listado: subcategorías, marcas y colores presentes (con cantidad), para los filtros
 const slug = (t) => sinTildes(t).replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");

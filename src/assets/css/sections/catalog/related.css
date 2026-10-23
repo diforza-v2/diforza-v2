@@ -54,3 +54,130 @@
 .catalog-related__all:hover {
   text-decoration: underline;
 }
+
+/* --------------------------------------------------------------------------
+   Venta cruzada · "Completá el equipo" (.catalog-cross) — 22 oct 2026
+   Productos de las otras líneas, entre la ficha y "Más productos de…".
+   -------------------------------------------------------------------------- */
+
+.catalog-cross {
+  padding: 48px 0 56px;
+  background: var(--white);
+  border-top: 1px solid var(--slate-150);
+}
+
+@media (--lg) {
+  .catalog-cross {
+    padding: 64px 0 80px;
+  }
+}
+
+.catalog-cross__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 var(--pad);
+  margin-bottom: 24px;
+}
+
+.catalog-cross__copy {
+  max-width: 640px;
+}
+
+.catalog-cross__eyebrow {
+  margin: 0 0 6px;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.catalog-cross__title {
+  margin: 0;
+  font-size: var(--fs-24);
+  line-height: 1.15;
+  color: var(--navy);
+}
+
+@media (--xl) {
+  .catalog-cross__title {
+    font-size: var(--fs-32);
+  }
+}
+
+.catalog-cross__lead {
+  margin: 8px 0 0;
+  font-size: var(--fs-16);
+  line-height: 1.5;
+  color: var(--slate-800);
+}
+
+.catalog-cross__lines {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (--md) {
+  .catalog-cross__lines {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+  }
+}
+
+.catalog-cross__lines li {
+  display: flex;
+}
+
+.catalog-cross__line {
+  display: inline-grid;
+  flex: 1;
+  grid-template-columns: auto auto;
+  column-gap: 12px;
+  align-items: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: var(--navy);
+  border: 1px solid var(--slate-200);
+  border-radius: 8px;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+.catalog-cross__line span {
+  font-size: var(--fs-16);
+  font-weight: var(--fw-bold);
+}
+
+.catalog-cross__line small {
+  grid-row: 2;
+  font-size: var(--fs-14);
+  color: var(--slate-650);
+}
+
+.catalog-cross__line svg {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  width: 16px;
+  height: 16px;
+  color: var(--color-primary);
+}
+
+.catalog-cross__line:hover {
+  background: var(--slate-50);
+  border-color: var(--slate-400);
+}
+
+/* Tablet (grilla de 3): se muestran 3 para no dejar una tarjeta sola en la segunda fila */
+@media (--md) and (--below-lg) {
+  .catalog-cross .product-grid__item:nth-child(n + 4) {
+    display: none;
+  }
+}

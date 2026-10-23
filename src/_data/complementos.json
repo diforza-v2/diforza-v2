@@ -1,0 +1,38 @@
+{
+  "_nota": "Venta cruzada (22 oct 2026): bloque 'Completá el equipo' de la ficha de producto. Para cada subcategoría, las subcategorías de OTRAS líneas que se muestran (en orden; se toma 1 producto por subcategoría, hasta 4, rotando entre los 3 primeros del orden curado). Si una subcategoría no figura, se usa 'porLinea'. Ver 01_estrategia/venta_cruzada_web.md.",
+  "complementos": {
+    "pantalones": ["botines", "proteccion-manos", "proteccion-craneal", "proteccion-ocular"],
+    "remera": ["botines", "proteccion-craneal", "proteccion-ocular", "proteccion-manos"],
+    "chomba": ["zapatos", "proteccion-ocular", "proteccion-auditiva", "proteccion-manos"],
+    "camisa": ["botines", "proteccion-craneal", "proteccion-ocular", "proteccion-manos"],
+    "buzo": ["botines", "proteccion-manos", "proteccion-craneal", "proteccion-auditiva"],
+    "campera": ["botines", "proteccion-manos", "proteccion-craneal", "proteccion-ocular"],
+    "chaleco": ["botines", "proteccion-craneal", "senalizacion", "proteccion-manos"],
+    "mameluco": ["botines", "proteccion-respiratoria", "proteccion-manos", "proteccion-ocular"],
+    "traje-de-lluvia": ["botas", "proteccion-manos", "proteccion-craneal", "senalizacion"],
+    "ropa-primera-piel": ["botines", "proteccion-manos", "proteccion-craneal", "proteccion-auditiva"],
+    "delantales": ["botas", "proteccion-manos", "proteccion-facial", "proteccion-respiratoria"],
+
+    "botines": ["pantalones", "proteccion-manos", "camisa", "proteccion-craneal"],
+    "zapatos": ["pantalones", "proteccion-ocular", "chomba", "proteccion-manos"],
+    "zapatillas": ["pantalones", "proteccion-auditiva", "remera", "proteccion-ocular"],
+    "botas": ["traje-de-lluvia", "proteccion-manos", "pantalones", "proteccion-respiratoria"],
+
+    "proteccion-auditiva": ["pantalones", "botines", "remera", "zapatillas"],
+    "proteccion-craneal": ["pantalones", "botines", "camisa", "chaleco"],
+    "proteccion-facial": ["mameluco", "botines", "pantalones", "delantales"],
+    "proteccion-ocular": ["pantalones", "zapatos", "camisa", "botines"],
+    "proteccion-respiratoria": ["mameluco", "botines", "pantalones", "botas"],
+    "proteccion-manos": ["pantalones", "botines", "campera", "zapatos"],
+    "altura": ["pantalones", "botines", "campera", "chaleco"],
+    "senalizacion": ["chaleco", "botines", "traje-de-lluvia", "pantalones"],
+    "proteccion-soldadura": ["pantalones", "botines", "camisa", "mameluco"],
+    "ergonomia": ["pantalones", "zapatos", "remera", "zapatillas"],
+    "kits": ["pantalones", "botines", "campera", "chaleco"]
+  },
+  "porLinea": {
+    "indumentaria": ["botines", "proteccion-manos", "proteccion-craneal", "proteccion-ocular"],
+    "calzado": ["pantalones", "proteccion-manos", "camisa", "proteccion-craneal"],
+    "epp": ["pantalones", "botines", "camisa", "zapatos"]
+  }
+}

@@ -583,6 +583,20 @@
     }
   }, true);
 
+  // Venta cruzada (22 oct): clics en "Completá el equipo" de la ficha → otra línea
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('[data-js="cross"] a[href]');
+    if (!a) return;
+    var sec = a.closest('[data-js="cross"]');
+    var dest = a.closest('[data-linea]');
+    var esLinea = a.classList.contains('catalog-cross__line');
+    var tipo = esLinea ? 'linea' : (/wa\.me|api\.whatsapp\.com/.test(a.getAttribute('href')) ? 'whatsapp' : 'producto');
+    var pr = esLinea ? null : prodOf(a);
+    push({ event: 'cross_click', cross_location: 'ficha', cross_type: tipo,
+      linea_origen: sec.getAttribute('data-linea-origen'), linea_destino: dest ? dest.getAttribute('data-linea') : undefined,
+      product_id: pr ? pr.id : undefined, product_name: pr ? pr.name : undefined });
+  }, true);
+
   // Inicio de formulario (una vez por formulario y por página)
   document.querySelectorAll('#form-cotizacion, #form-catalogo').forEach(function(f){
     var started = false;

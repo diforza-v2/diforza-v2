@@ -147,6 +147,34 @@ eleventyComputed:
     </div>
   </article>
 
+{%- if p.completa.length %}
+  {#- Venta cruzada (22 oct 2026): productos de las otras líneas. Mapa en _data/complementos.json -#}
+  <section class="catalog-cross" data-js="cross" data-linea-origen="{{ p.linea.id }}" aria-labelledby="cross-title">
+    <div class="catalog-cross__head">
+      <div class="catalog-cross__copy">
+        <p class="catalog-cross__eyebrow">Un solo proveedor para todo tu personal</p>
+        <h2 class="catalog-cross__title" id="cross-title">Completá el equipo</h2>
+        {%- set CN = { indumentaria: "ropa de trabajo", calzado: "calzado de seguridad", epp: "EPP" } %}
+        <p class="catalog-cross__lead">Además de {{ CN[p.linea.id] }}, en Diforza tenés {% for l in p.otrasLineas %}{{ CN[l.id] }}{% if not loop.last %} y {% endif %}{% endfor %}. Cotizá todo en un solo pedido, con un mismo vendedor y una sola factura.</p>
+      </div>
+      <ul class="catalog-cross__lines">
+{%- for l in p.otrasLineas %}
+        <li><a class="catalog-cross__line" href="{{ l.url }}" data-linea="{{ l.id }}"><span>{{ catalogoTextos.lineas[l.id].titulo }}</span><small>{{ l.total }} productos</small>{{ icons['ui-flecha'] | safe }}</a></li>
+{%- endfor %}
+      </ul>
+    </div>
+    <div class="product-grid">
+      <div class="product-grid__track">
+{%- for p in p.completa %}
+        <div class="product-grid__item" data-linea="{{ p.linea }}">
+{%- include "partials/product-card.njk" %}
+        </div>
+{%- endfor %}
+      </div>
+    </div>
+  </section>
+{%- endif %}
+
 {%- if p.relacionados.length %}
   <section class="catalog-related">
     <div class="catalog-related__head">
