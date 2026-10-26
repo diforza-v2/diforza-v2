@@ -625,3 +625,20 @@
   }).filter(Boolean);
   if (items.length) push({ event: 'view_item_list', ecommerce: { item_list_name: listName(), items: items } });
 })();
+
+// Video de Nosotros (26 oct 2026): arranca sin sonido y en loop; el botón activa/desactiva el sonido.
+// Con "reducir movimiento" no arranca solo: el botón lo reproduce con sonido.
+(function(){
+  var v = document.querySelector('[data-js="about-video"]');
+  var b = document.querySelector('[data-js="about-video-sound"]');
+  if (!v || !b) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce){ v.removeAttribute('autoplay'); v.pause(); }
+  b.addEventListener('click', function(){
+    var on = v.muted;
+    v.muted = !on;
+    if (on){ v.currentTime = 0; v.play(); }
+    b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    b.setAttribute('aria-label', on ? 'Silenciar' : 'Activar sonido');
+  });
+})();

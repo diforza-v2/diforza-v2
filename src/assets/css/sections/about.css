@@ -123,6 +123,58 @@
   border-radius: var(--radius-16);
 }
 
+/* Video corto de Diego (26 oct 2026): vertical 9:16, sin sonido y en loop; botón de sonido abajo a la derecha */
+.about-person__media {
+  position: relative;
+  max-width: 420px;
+}
+
+.about-person__video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  background: var(--navy);
+  border-radius: var(--radius-16);
+  object-fit: cover;
+}
+
+.about-person__sound {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  color: var(--white);
+  background: rgb(var(--rgb-navy) / 60%);
+  border: 1px solid rgb(var(--rgb-white) / 35%);
+  border-radius: var(--radius-round);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+}
+
+.about-person__sound:hover,
+.about-person__sound:focus-visible {
+  background: rgb(var(--rgb-navy) / 85%);
+}
+
+.about-person__sound svg {
+  width: 20px;
+  height: 20px;
+}
+
+.about-person__sound .is-on,
+.about-person__sound[aria-pressed="true"] .is-off {
+  display: none;
+}
+
+.about-person__sound[aria-pressed="true"] .is-on {
+  display: block;
+}
+
 .about-person blockquote {
   margin: 16px 0 0;
   padding: 0 0 0 16px;

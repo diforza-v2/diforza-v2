@@ -28,7 +28,16 @@ ogImage: /img/nosotros/fachada-diforza.webp
         <p>Lo que no cambió es la forma de trabajar: <strong>estar, acompañar y no decir que no</strong>. Stock permanente, factura A, envíos a todo el país y asesoramiento para elegir el elemento correcto para cada puesto.</p>
       </div>
       <figure class="about-person">
-        <img src="/img/nosotros/diego-lo-tartaro.webp" alt="Diego Lo Tartaro, director comercial de Diforza" width="800" height="1000" loading="lazy">
+        {#- Video corto de Diego (26 oct 2026; original en _assets/videos/video_corto_diforza_diego.mp4, re-codificado H.264 CRF 26 + faststart).
+            Arranca solo, sin sonido y en loop; el botón activa el sonido (JS en main.js, bloque "Video de Nosotros").
+            La foto anterior (diego-lo-tartaro.webp) sigue en uso como imagen del schema Person. -#}
+        <div class="about-person__media">
+          <video class="about-person__video" data-js="about-video" src="/img/nosotros/diego-lo-tartaro.mp4" poster="/img/nosotros/diego-lo-tartaro-poster.webp" width="576" height="1024" autoplay muted loop playsinline preload="metadata" aria-label="Diego Lo Tartaro, director comercial de Diforza, en la oficina de Diforza"></video>
+          <button type="button" class="about-person__sound" data-js="about-video-sound" aria-pressed="false" aria-label="Activar sonido">
+            <svg class="is-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+            <svg class="is-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+          </button>
+        </div>
         <blockquote>“Lo nuestro es fabricación de indumentaria, y queríamos sumar un producto que nos dé el mismo compromiso, el estar y el acompañamiento.”</blockquote>
         <figcaption><strong>Diego Lo Tartaro</strong> · Director comercial</figcaption>
       </figure>
