@@ -13,6 +13,10 @@
       { "icono": "camion", "titulo": "Una entrega", "texto": "a todo el país" }
     ]
   },
+  "grilla": {
+    "_nota": "Venta cruzada punto A (26 oct 2026): tarjeta de otra línea intercalada en la grilla de las páginas de línea y subcategoría (posiciones 8 y 16; se ocultan al filtrar o buscar). Orden de las líneas: en subcategoría, según complementos.json; en línea, el de categorias.json. Subcategorías de la tarjeta: hasta 3 (en subcategoría, las complementarias primero). Partial: catalogo/cross-card.njk · CSS: sections/catalog/cross-card.css · JS: catalogo.js.",
+    "eyebrows": ["¿Equipás al personal completo?", "Sumalo al mismo pedido"]
+  },
   "lineas": {
     "indumentaria": {
       "titulo": "Indumentaria de trabajo",

@@ -1,5 +1,6 @@
 {#- Listado filtrable del catálogo (todas las tarjetas se renderizan; el JS filtra, ordena y pagina).
-    Recibe: items (productos de catalogoWeb), facetas, scope ("todo" | "linea" | "sub"). JS: assets/js/catalogo.js -#}
+    Recibe: items (productos de catalogoWeb), facetas, scope ("todo" | "linea" | "sub"), y en línea/subcategoría
+    lineaId + grilla (tarjetas de las otras líneas, venta cruzada punto A). JS: assets/js/catalogo.js -#}
 <section class="catalog-list" data-js="catalog" id="listado" aria-label="Productos">
   <div class="catalog-list__inner">
     <aside class="catalog-filters" id="catFilters" data-js="cat-filters" aria-label="Filtros">
@@ -71,6 +72,13 @@
 {%- include "partials/product-card.njk" %}
         </li>
 {%- endfor %}
+{%- if scope != "todo" %}
+{%- for T in grilla %}
+        <li class="catalog-grid__item catalog-grid__item--cross" data-js="cat-promo cross" data-cross-location="listado" data-linea-origen="{{ lineaId }}" hidden>
+{%- include "catalogo/cross-card.njk" %}
+        </li>
+{%- endfor %}
+{%- endif %}
       </ul>
 
       <div class="catalog-empty" data-js="cat-empty" hidden>

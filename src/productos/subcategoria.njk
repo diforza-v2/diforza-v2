@@ -26,6 +26,8 @@ eleventyComputed:
 {%- set items = s.productos %}
 {%- set facetas = s.facetas %}
 {%- set scope = "sub" %}
+{%- set lineaId = s.linea.id %}
+{%- set grilla = s.cruceGrilla %}
 {%- include "catalogo/listado.njk" %}
 {%- if ST.guia or ST.faq %}
   <section class="cat-guide" aria-labelledby="cat-guide-title">

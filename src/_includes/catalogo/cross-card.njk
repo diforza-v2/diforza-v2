@@ -1,0 +1,20 @@
+{#- Venta cruzada punto A (26 oct 2026): tarjeta de otra línea intercalada en la grilla de línea y subcategoría.
+    Recibe T (catalogoWeb → lineas[].cruceGrilla / subcategorias[].cruceGrilla). La ubica catalogo.js (posiciones 8 y 16)
+    y la oculta al filtrar o buscar. Medición: cross_click con cross_location = listado (main.js). CSS: sections/catalog/cross-card.css -#}
+<article class="xcard" data-linea="{{ T.id }}">
+  <div class="xcard__media">
+    <img src="{{ T.foto }}" alt="" width="800" height="600" loading="lazy" decoding="async">
+    <span class="xcard__count">{{ T.total }} {{ T.unidad }}</span>
+  </div>
+  <div class="xcard__body">
+    <p class="xcard__eyebrow">{{ T.eyebrow }}</p>
+    <h3 class="xcard__title"><a class="xcard__link" href="{{ T.url }}" data-cross-type="linea">{{ T.titulo }}</a></h3>
+    <p class="xcard__lead">{{ T.bajada }}</p>
+    <ul class="xcard__subs" role="list">
+{%- for s in T.subs %}
+      <li><a href="{{ s.url }}" data-cross-type="subcategoria">{% if s.icono and icons[s.icono] %}<span class="xcard__ic">{{ icons[s.icono] | safe }}</span>{% endif %}{{ s.nombre }}</a></li>
+{%- endfor %}
+    </ul>
+    <span class="xcard__cta" aria-hidden="true">{{ T.cta }} {{ icons['ui-flecha'] | safe }}</span>
+  </div>
+</article>

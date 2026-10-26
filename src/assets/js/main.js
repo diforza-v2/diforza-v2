@@ -583,11 +583,12 @@
     }
   }, true);
 
-  // Venta cruzada: clics en "Completá el equipo" (ficha, 22 oct) y en la banda de líneas de las landings (23 oct)
+  // Venta cruzada: clics en "Completá el equipo" (ficha, 22 oct), en la banda de líneas de las landings (23 oct)
+  // y en las tarjetas de otras líneas intercaladas en los listados (26 oct, cross_location = listado)
   document.addEventListener('click', function(e){
-    var a = e.target.closest && e.target.closest('[data-js="cross"] a[href]');
+    var a = e.target.closest && e.target.closest('[data-js~="cross"] a[href]');
     if (!a) return;
-    var sec = a.closest('[data-js="cross"]');
+    var sec = a.closest('[data-js~="cross"]');
     var dest = a.closest('[data-linea]');
     var esLinea = a.classList.contains('catalog-cross__line');
     var tipo = a.getAttribute('data-cross-type') || (esLinea ? 'linea' : (/wa\.me|api\.whatsapp\.com/.test(a.getAttribute('href')) ? 'whatsapp' : 'producto'));

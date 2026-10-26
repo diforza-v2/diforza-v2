@@ -2,7 +2,9 @@
    1) Ficha de producto — variantes: cambian foto, nombre, ficha técnica y el mensaje de WhatsApp; ?v=<n> en la URL.
       Galería: miniaturas que cambian la foto principal.
    2) Listados (catálogo, línea, subcategoría) — buscador, filtros (categoría, marca, color) con contadores,
-      orden y "Ver más" de a 24. Estado en la URL (?q=&sub=&marca=&color=&orden=) para compartir links. */
+      orden y "Ver más" de a 24. Estado en la URL (?q=&sub=&marca=&color=&orden=) para compartir links.
+      Venta cruzada (26 oct): en línea y subcategoría, tarjetas de las otras líneas en las posiciones 8 y 16
+      (la 1.ª va al final si hay menos de 8 productos; la 2.ª solo con 15 o más). Se ocultan al filtrar o buscar. */
 (function(){
   var pdp = document.querySelector('[data-js="pdp"]');
   if (!pdp) return;
@@ -77,6 +79,8 @@
   var PAGE = 24;
   var grid = root.querySelector('[data-js="cat-grid"]');
   var items = Array.prototype.slice.call(grid.querySelectorAll('[data-js="cat-item"]'));
+  var promos = Array.prototype.slice.call(grid.querySelectorAll('[data-js~="cat-promo"]'));
+  var PROMO_POS = [7, 14]; // índice del producto visible ANTES del cual va cada tarjeta (slots 8 y 16)
   var panel = root.querySelector('[data-js="cat-filters"]');
   var scrim = root.querySelector('.catalog-filters__scrim');
   var openBtn = root.querySelector('[data-js="cat-filters-open"]');
@@ -149,6 +153,7 @@
     countWord.textContent = n === 1 ? 'producto' : 'productos';
     if (countBtn) countBtn.textContent = n;
     empty.hidden = n > 0;
+    placePromos(st, list.slice(0, shown));
     more.hidden = n <= shown;
     if (!more.hidden) more.textContent = 'Ver más productos (' + (n - shown) + ')';
 
@@ -188,6 +193,18 @@
     var nf = st.sub.length + st.marca.length + st.color.length;
     if (badge){ badge.hidden = !nf; badge.textContent = nf; }
     return st;
+  }
+
+  function placePromos(st, vis){
+    var libre = !st.q && !st.sub.length && !st.marca.length && !st.color.length;
+    promos.forEach(function(pr, k){
+      var pos = PROMO_POS[k];
+      var ok = libre && pos !== undefined && (k === 0 ? vis.length > 0 : vis.length > pos);
+      pr.hidden = !ok;
+      if (!ok) return;
+      var ref = vis[pos] || vis[vis.length - 1].nextSibling;
+      if (ref !== pr && pr.nextSibling !== ref) grid.insertBefore(pr, ref);
+    });
   }
 
   function toUrl(st){

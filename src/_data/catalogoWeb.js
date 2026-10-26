@@ -261,4 +261,30 @@ const cruce = Object.fromEntries(
   })
 );
 
+// Venta cruzada punto A (26 oct): tarjetas de las otras líneas intercaladas en la grilla de línea y subcategoría
+// (posiciones 8 y 16, las ubica catalogo.js). En subcategoría, las líneas y sus subcategorías siguen complementos.json.
+const tarjetaLinea = (destId, pref, i) => {
+  const P = panelLinea(destId);
+  const l = lineas.find((x) => x.id === destId);
+  const byId = new Map(l.subcategorias.map((s) => [s.id, s]));
+  const conf = new Map(CRUCE.lineas[destId].subs.map(([sid, icono, nombre]) => [sid, { icono, nombre }]));
+  const ids = [...new Set([...pref.filter((sid) => byId.has(sid)), ...P.subs.map((s) => s.id)])].slice(0, 3);
+  return {
+    id: destId, titulo: P.titulo, bajada: P.bajada, url: P.url, foto: P.foto, total: P.total, unidad: P.unidad, cta: P.cta,
+    eyebrow: CRUCE.grilla.eyebrows[i] || CRUCE.grilla.eyebrows[0],
+    subs: ids.map((sid) => ({ nombre: (conf.get(sid) || {}).nombre || byId.get(sid).nombre, icono: (conf.get(sid) || {}).icono, url: byId.get(sid).url })),
+  };
+};
+const grillaCruce = (lineaId, subId) => {
+  const pref = subId ? COMPL[subId] || [] : [];
+  const lineaDe = (sid) => (SUBS[sid] ? SUBS[sid].linea : null);
+  const otras = categorias.map((c) => c.id).filter((id) => id !== lineaId);
+  const orden = [...new Set([...pref.map(lineaDe).filter((id) => id && id !== lineaId), ...otras])];
+  return orden.map((id, i) => tarjetaLinea(id, pref.filter((sid) => lineaDe(sid) === id), i));
+};
+for (const l of lineas) {
+  l.cruceGrilla = grillaCruce(l.id);
+  for (const sc of l.subcategorias) sc.cruceGrilla = grillaCruce(l.id, sc.id);
+}
+
 module.exports = { base: BASE, productos, porId, lineas, subcategorias, facetas: facetas(productos), total: productos.length, cruce };

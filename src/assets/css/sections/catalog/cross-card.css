@@ -1,0 +1,235 @@
+/* ==========================================================================
+   Catálogo · tarjeta de otra línea intercalada en la grilla (.xcard) — venta cruzada punto A (26 oct 2026)
+   Mismo ancho que una tarjeta de producto, pero en azul con foto: se lee como "otra puerta", no como producto.
+   Marcado: _includes/catalogo/cross-card.njk · posición: assets/js/catalogo.js (slots 8 y 16).
+   Mobile (2 columnas): foto + título + CTA; las subcategorías aparecen desde md.
+   ========================================================================== */
+
+.xcard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  color: var(--white);
+  background: var(--navy);
+  border-radius: var(--radius-16);
+  box-shadow: 0 4px 18px rgb(var(--rgb-navy) / 14%);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+@media (hover: hover) {
+  .xcard:hover {
+    box-shadow: 0 14px 30px rgb(var(--rgb-navy) / 26%);
+    transform: translateY(-3px);
+  }
+
+  .xcard:hover .xcard__media img {
+    transform: scale(1.04);
+  }
+
+  .xcard:hover .xcard__cta svg {
+    transform: translateX(3px);
+  }
+}
+
+/* Foto con degradé hacia el azul del cuerpo */
+.xcard__media {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+@media (--md) {
+  .xcard__media {
+    aspect-ratio: 5 / 4;
+  }
+}
+
+.xcard__media img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease;
+  object-fit: cover;
+}
+
+.xcard__media::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgb(var(--rgb-navy) / 0%) 45%, var(--navy) 100%);
+  content: "";
+}
+
+.xcard__count {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: var(--z-layer-1);
+  padding: 4px 9px;
+  font-size: var(--fs-11);
+  font-weight: var(--fw-bold);
+  color: var(--navy);
+  background: var(--white);
+  border-radius: var(--radius-pill);
+}
+
+.xcard__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  padding: 4px 12px 14px;
+}
+
+@media (--md) {
+  .xcard__body {
+    gap: 8px;
+    padding: 4px 18px 18px;
+  }
+}
+
+.xcard__eyebrow {
+  margin: 0;
+  font-size: var(--fs-11);
+  font-weight: var(--fw-bold);
+  line-height: 1.3;
+  color: var(--orange-300);
+}
+
+@media (--md) {
+  .xcard__eyebrow {
+    font-size: var(--fs-12-5);
+  }
+}
+
+.xcard__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-black);
+  line-height: 1.15;
+}
+
+@media (--md) {
+  .xcard__title {
+    font-size: var(--fs-20);
+  }
+}
+
+.xcard__lead {
+  display: none;
+}
+
+@media (--md) {
+  .xcard__lead {
+    display: block;
+    margin: 0;
+    font-size: var(--fs-13);
+    line-height: 1.45;
+    color: rgb(var(--rgb-white) / 78%);
+  }
+}
+
+/* El título cubre toda la tarjeta; las subcategorías quedan por encima */
+.xcard__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.xcard__link::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+}
+
+.xcard__link:focus-visible {
+  outline: none;
+}
+
+.xcard:has(.xcard__link:focus-visible) {
+  outline: 3px solid var(--orange-300);
+  outline-offset: 3px;
+}
+
+.xcard__subs {
+  display: none;
+}
+
+@media (--md) {
+  .xcard__subs {
+    position: relative;
+    z-index: var(--z-layer-1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 6px 0 4px;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.xcard__subs a {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  padding: 6px 10px;
+  font-size: var(--fs-12-5);
+  font-weight: var(--fw-semibold);
+  text-decoration: none;
+  color: var(--white);
+  background: rgb(var(--rgb-white) / 10%);
+  border: 1px solid rgb(var(--rgb-white) / 22%);
+  border-radius: var(--radius-pill);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.xcard__subs a:hover,
+.xcard__subs a:focus-visible {
+  background: rgb(var(--rgb-white) / 20%);
+  border-color: rgb(var(--rgb-white) / 50%);
+}
+
+.xcard__ic {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+}
+
+.xcard__ic svg {
+  width: 100%;
+  height: 100%;
+}
+
+.xcard__cta {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 12px;
+  font-size: var(--fs-12-5);
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-on-primary);
+  background: var(--color-primary);
+  border-radius: var(--radius-pill);
+  margin-top: auto;
+}
+
+@media (--md) {
+  .xcard__cta {
+    padding: 11px 16px;
+    font-size: var(--fs-14);
+  }
+}
+
+.xcard__cta svg {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
