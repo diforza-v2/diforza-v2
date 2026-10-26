@@ -231,3 +231,126 @@
   font-size: var(--fs-11-5);
   color: var(--slate-600);
 }
+
+/* ---- "Para el mismo puesto" (venta cruzada punto C, 26 oct 2026): subcategorías de otras líneas ----
+   Va antes de .cat-siblings y comparte su fondo. Mobile: filas; md+: 3 tarjetas. */
+.cat-puesto {
+  padding: 36px var(--pad) 8px;
+  background: var(--slate-75);
+  border-top: 1px solid var(--slate-150);
+}
+
+.cat-puesto + .cat-siblings {
+  border-top: 0;
+  padding-top: 24px;
+}
+
+.cat-puesto__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--fs-22);
+  font-weight: var(--fw-black);
+  color: var(--navy);
+}
+
+.cat-puesto__lead {
+  margin: 4px 0 16px;
+  font-size: var(--fs-14);
+  color: var(--slate-600);
+}
+
+.cat-puesto__list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (--md) {
+  .cat-puesto__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 960px;
+  }
+}
+
+.cat-puesto__tile {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  height: 100%;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--navy);
+  background: var(--white);
+  border: 1.5px solid var(--slate-200);
+  border-radius: var(--radius-14);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+@media (hover: hover) {
+  .cat-puesto__tile:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 10px 24px rgb(var(--rgb-navy) / 10%);
+    transform: translateY(-2px);
+  }
+
+  .cat-puesto__tile:hover .cat-puesto__go {
+    color: var(--color-primary);
+    transform: translateX(3px);
+  }
+}
+
+.cat-puesto__ic {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--color-primary);
+  background: var(--orange-50);
+  border-radius: var(--radius-12);
+}
+
+.cat-puesto__ic svg {
+  width: 28px;
+  height: 28px;
+}
+
+.cat-puesto__txt {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.cat-puesto__txt strong {
+  font-size: var(--fs-16);
+  font-weight: var(--fw-bold);
+}
+
+.cat-puesto__txt small {
+  font-size: var(--fs-13);
+  color: var(--slate-600);
+}
+
+.cat-puesto__go {
+  display: flex;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  color: var(--slate-450);
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.cat-puesto__go svg {
+  width: 100%;
+  height: 100%;
+}

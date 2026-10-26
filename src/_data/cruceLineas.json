@@ -17,6 +17,12 @@
     "_nota": "Venta cruzada punto A (26 oct 2026): tarjeta de otra línea intercalada en la grilla de las páginas de línea y subcategoría (posiciones 8 y 16; se ocultan al filtrar o buscar). Orden de las líneas: en subcategoría, según complementos.json; en línea, el de categorias.json. Subcategorías de la tarjeta: hasta 3 (en subcategoría, las complementarias primero). Partial: catalogo/cross-card.njk · CSS: sections/catalog/cross-card.css · JS: catalogo.js.",
     "eyebrows": ["¿Equipás al personal completo?", "Sumalo al mismo pedido"]
   },
+  "puesto": {
+    "_nota": "Venta cruzada punto C (26 oct 2026): 'Para el mismo puesto' al pie de cada subcategoría → 3 subcategorías de OTRAS líneas, en el orden de complementos.json (se completa con porLinea). Íconos: los de 'lineas.*.subs' + estos extras. Partial: catalogo/puesto.njk · CSS: sections/catalog/lines-tiles.css.",
+    "titulo": "Para el mismo puesto",
+    "lead": "Lo que suelen pedir junto con {sub}, en el mismo pedido.",
+    "iconos": { "chomba": "remera", "buzo": "campera", "ropa-primera-piel": "remera", "delantales": "delantal", "sanidad-y-gastronomia": "camisa", "proteccion-facial": "mascara-facial", "proteccion-soldadura": "llama", "ergonomia": "persona", "kits": "caja", "emergencias": "escudo-check" }
+  },
   "lineas": {
     "indumentaria": {
       "titulo": "Indumentaria de trabajo",

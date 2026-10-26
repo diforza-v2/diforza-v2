@@ -68,6 +68,7 @@ eleventyComputed:
 {%- set faqItems = ST.faq %}
 {% include "partials/faq-schema.njk" %}
 {%- endif %}
+{%- include "catalogo/puesto.njk" %}
   <nav class="cat-siblings" aria-label="Otras categorías de {{ LT.titulo | lower }}">
     <p class="cat-siblings__title">Más en {{ LT.titulo | lower }}</p>
     <ul class="cat-siblings__list" role="list">

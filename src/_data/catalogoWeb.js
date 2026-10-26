@@ -282,8 +282,22 @@ const grillaCruce = (lineaId, subId) => {
   const orden = [...new Set([...pref.map(lineaDe).filter((id) => id && id !== lineaId), ...otras])];
   return orden.map((id, i) => tarjetaLinea(id, pref.filter((sid) => lineaDe(sid) === id), i));
 };
+// Venta cruzada punto C (26 oct): "Para el mismo puesto" al pie de la subcategoría → 3 subcategorías de otras líneas
+const ICONO_SUB = { ...CRUCE.puesto.iconos, ...Object.fromEntries(Object.values(CRUCE.lineas).flatMap((c) => c.subs.map(([sid, icono]) => [sid, icono]))) };
+const NOMBRE_SUB = Object.fromEntries(Object.values(CRUCE.lineas).flatMap((c) => c.subs.map(([sid, , nombre]) => [sid, nombre]))); // nombres cortos (Guantes, Cascos)
+const SUB_OBJ = new Map(lineas.flatMap((l) => l.subcategorias.map((s) => [s.id, s])));
+const mismoPuesto = (lineaId, subId) =>
+  [...new Set([...(COMPL[subId] || []), ...(COMPL_LINEA[lineaId] || [])])]
+    .filter((sid) => SUB_OBJ.has(sid) && SUBS[sid].linea !== lineaId)
+    .slice(0, 3)
+    .map((sid) => {
+      const o = SUB_OBJ.get(sid);
+      const unidad = CRUCE.lineas[o.linea.id].unidad;
+      return { id: sid, nombre: NOMBRE_SUB[sid] || o.nombre, url: o.url, linea: o.linea.id, icono: ICONO_SUB[sid], texto: `${o.total} ${o.total === 1 ? unidad.replace(/s$/, "") : unidad}` };
+    });
 for (const l of lineas) {
   l.cruceGrilla = grillaCruce(l.id);
+  for (const sc of l.subcategorias) sc.mismoPuesto = mismoPuesto(l.id, sc.id);
   for (const sc of l.subcategorias) sc.cruceGrilla = grillaCruce(l.id, sc.id);
 }
 

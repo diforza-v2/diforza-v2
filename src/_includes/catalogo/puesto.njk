@@ -1,0 +1,19 @@
+{#- Venta cruzada punto C (26 oct 2026): "Para el mismo puesto" al pie de la subcategoría → subcategorías de OTRAS líneas.
+    Recibe s (subcategoría). Datos: catalogoWeb → s.mismoPuesto · textos: cruceLineas.puesto · CSS: sections/catalog/lines-tiles.css
+    Medición: cross_click con cross_location = subcategoria (main.js) -#}
+{%- if s.mismoPuesto.length %}
+{%- set CP = cruceLineas.puesto %}
+<section class="cat-puesto" data-js="cross" data-cross-location="subcategoria" data-linea-origen="{{ s.linea.id }}" aria-labelledby="cat-puesto-title">
+  <h2 class="cat-puesto__title" id="cat-puesto-title">{{ CP.titulo }}</h2>
+  <p class="cat-puesto__lead">{{ CP.lead | replace("{sub}", s.nombre | lower) }}</p>
+  <ul class="cat-puesto__list" role="list">
+{%- for t in s.mismoPuesto %}
+    <li data-linea="{{ t.linea }}"><a class="cat-puesto__tile" href="{{ t.url }}" data-cross-type="subcategoria">
+      <span class="cat-puesto__ic">{% if icons[t.icono] %}{{ icons[t.icono] | safe }}{% endif %}</span>
+      <span class="cat-puesto__txt"><strong>{{ t.nombre }}</strong><small>{{ t.texto }}</small></span>
+      <span class="cat-puesto__go">{{ icons['ui-flecha'] | safe }}</span>
+    </a></li>
+{%- endfor %}
+  </ul>
+</section>
+{%- endif %}
