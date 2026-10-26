@@ -1,0 +1,7 @@
+---
+permalink: /productos/indice.json
+eleventyExcludeFromCollections: true
+---
+{#- Venta cruzada punto B (26 oct 2026): índice de búsqueda de todo el catálogo [id, líneas, texto]. Lo usa catalogo.js
+    cuando una búsqueda dentro de una línea o subcategoría da 0 resultados. Datos: catalogoWeb.indice -#}
+{{ catalogoWeb.indice | dump | safe }}

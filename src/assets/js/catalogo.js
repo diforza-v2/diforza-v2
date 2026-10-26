@@ -4,7 +4,9 @@
    2) Listados (catálogo, línea, subcategoría) — buscador, filtros (categoría, marca, color) con contadores,
       orden y "Ver más" de a 24. Estado en la URL (?q=&sub=&marca=&color=&orden=) para compartir links.
       Venta cruzada (26 oct): en línea y subcategoría, tarjetas de las otras líneas en las posiciones 8 y 16
-      (la 1.ª va al final si hay menos de 8 productos; la 2.ª solo con 15 o más). Se ocultan al filtrar o buscar. */
+      (la 1.ª va al final si hay menos de 8 productos; la 2.ª solo con 15 o más). Se ocultan al filtrar o buscar.
+      Búsqueda sin resultados (26 oct): si la búsqueda da 0 en la línea o subcategoría pero hay coincidencias en otra
+      parte del catálogo (/productos/indice.json), "Encontramos N resultados para 'x' en <línea> →". */
 (function(){
   var pdp = document.querySelector('[data-js="pdp"]');
   if (!pdp) return;
@@ -96,6 +98,14 @@
   var qInput = search ? search.querySelector('input[name="q"]') : null;
   var boxes = Array.prototype.slice.call(root.querySelectorAll('.catalog-filters input[type="checkbox"]'));
   var shown = PAGE;
+  var scope = root.getAttribute('data-scope');
+  var lineaActual = root.getAttribute('data-cat-linea');
+  var elsewhere = root.querySelector('[data-js~="cat-elsewhere"]');
+  var elseTitle = root.querySelector('[data-js="cat-elsewhere-title"]');
+  var elseList = root.querySelector('[data-js="cat-elsewhere-list"]');
+  var emptyTitle = root.querySelector('[data-js="cat-empty-title"]');
+  var EMPTY_TXT = emptyTitle ? emptyTitle.textContent : '';
+  var indicePromise = null;
 
   var norm = function(s){ return (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim(); };
   var KEY = { sub: 's', marca: 'm', color: 'c' };
@@ -153,6 +163,7 @@
     countWord.textContent = n === 1 ? 'producto' : 'productos';
     if (countBtn) countBtn.textContent = n;
     empty.hidden = n > 0;
+    buscarAfuera(st, n);
     placePromos(st, list.slice(0, shown));
     more.hidden = n <= shown;
     if (!more.hidden) more.textContent = 'Ver más productos (' + (n - shown) + ')';
@@ -193,6 +204,48 @@
     var nf = st.sub.length + st.marca.length + st.color.length;
     if (badge){ badge.hidden = !nf; badge.textContent = nf; }
     return st;
+  }
+
+  // Búsqueda sin resultados → coincidencias en el resto del catálogo, agrupadas por línea
+  function buscarAfuera(st, n){
+    if (!elsewhere) return;
+    elsewhere.hidden = true;
+    if (emptyTitle) emptyTitle.textContent = EMPTY_TXT;
+    if (n > 0 || !st.q || items.some(function(el){ return matchQ(el, st.q); })) return;
+    var q = st.q, raw = qInput.value.trim();
+    if (!indicePromise) indicePromise = fetch('/productos/indice.json').then(function(r){ return r.json(); }).catch(function(){ indicePromise = null; return null; });
+    indicePromise.then(function(ix){
+      if (!ix || state().q !== q) return;
+      var propios = {};
+      grid.querySelectorAll('[data-prod-id]').forEach(function(a){ propios[a.getAttribute('data-prod-id')] = 1; });
+      var words = q.split(/\s+/), cuenta = {}, orden = [];
+      ix.productos.forEach(function(p){
+        if (propios[p[0]] || !words.every(function(w){ return p[2].indexOf(w) > -1; })) return;
+        p[1].split(' ').forEach(function(l){
+          if (!cuenta[l]){ cuenta[l] = 0; orden.push(l); }
+          cuenta[l]++;
+        });
+      });
+      if (!orden.length) return;
+      orden.sort(function(a, b){ return cuenta[b] - cuenta[a]; });
+      elseTitle.textContent = 'No hay resultados para “' + raw + '” ' + (scope === 'sub' ? 'en esta categoría' : 'en esta línea') + ', pero lo tenemos en:';
+      elseList.innerHTML = '';
+      orden.forEach(function(l){
+        var L = ix.lineas[l]; if (!L) return;
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.className = 'catalog-elsewhere__link';
+        a.href = L.url + '?q=' + encodeURIComponent(raw);
+        a.setAttribute('data-cross-type', 'busqueda');
+        a.setAttribute('data-linea', l);
+        a.innerHTML = '<span class="catalog-elsewhere__name"><b class="catalog-elsewhere__n"></b> </span><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 10h13m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+        a.firstChild.firstChild.textContent = cuenta[l] + (cuenta[l] === 1 ? ' producto' : ' productos');
+        a.firstChild.appendChild(document.createTextNode((l === lineaActual && scope === 'sub' ? 'en otras categorías de ' : 'en ') + L.titulo));
+        li.appendChild(a); elseList.appendChild(li);
+      });
+      if (emptyTitle) emptyTitle.textContent = '¿No es lo que buscabas?';
+      elsewhere.hidden = false;
+    });
   }
 
   function placePromos(st, vis){

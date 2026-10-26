@@ -287,4 +287,13 @@ for (const l of lineas) {
   for (const sc of l.subcategorias) sc.cruceGrilla = grillaCruce(l.id, sc.id);
 }
 
-module.exports = { base: BASE, productos, porId, lineas, subcategorias, facetas: facetas(productos), total: productos.length, cruce };
+// Venta cruzada punto B (26 oct): índice liviano de todo el catálogo para la búsqueda sin resultados en una línea o
+// subcategoría ("Encontramos N resultados en <otra línea>"). Se publica en /productos/indice.json (src/productos/indice.njk)
+// y catalogo.js lo pide solo cuando una búsqueda da 0. Mismo texto de búsqueda que data-t de las tarjetas.
+const indice = {
+  lineas: Object.fromEntries(categorias.map((c) => [c.id, { titulo: CRUCE.lineas[c.id].titulo, url: urlLinea(c.id) }])),
+  // [id, líneas en cuya página aparece (la propia + tambienEn), texto]
+  productos: productos.map((p) => [p.id, [...new Set([p.linea.id, ...p.tambienEn.map((t) => t.linea)])].join(" "), p.filtro.t]),
+};
+
+module.exports = { indice, base: BASE, productos, porId, lineas, subcategorias, facetas: facetas(productos), total: productos.length, cruce };

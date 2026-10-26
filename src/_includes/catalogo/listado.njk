@@ -1,7 +1,7 @@
 {#- Listado filtrable del catálogo (todas las tarjetas se renderizan; el JS filtra, ordena y pagina).
     Recibe: items (productos de catalogoWeb), facetas, scope ("todo" | "linea" | "sub"), y en línea/subcategoría
     lineaId + grilla (tarjetas de las otras líneas, venta cruzada punto A). JS: assets/js/catalogo.js -#}
-<section class="catalog-list" data-js="catalog" id="listado" aria-label="Productos">
+<section class="catalog-list" data-js="catalog" data-scope="{{ scope }}" data-cat-linea="{{ lineaId if scope != 'todo' }}" id="listado" aria-label="Productos">
   <div class="catalog-list__inner">
     <aside class="catalog-filters" id="catFilters" data-js="cat-filters" aria-label="Filtros">
       <div class="catalog-filters__head">
@@ -82,7 +82,13 @@
       </ul>
 
       <div class="catalog-empty" data-js="cat-empty" hidden>
-        <p class="catalog-empty__title">No encontramos productos con esos filtros.</p>
+{%- if scope != "todo" %}
+        <div class="catalog-elsewhere" data-js="cat-elsewhere cross" data-cross-location="sin_resultados" data-linea-origen="{{ lineaId }}" hidden>
+          <p class="catalog-elsewhere__title" data-js="cat-elsewhere-title"></p>
+          <ul class="catalog-elsewhere__list" role="list" data-js="cat-elsewhere-list"></ul>
+        </div>
+{%- endif %}
+        <p class="catalog-empty__title" data-js="cat-empty-title">No encontramos productos con esos filtros.</p>
         <p class="catalog-empty__text">Probá con otra búsqueda o escribinos: trabajamos muchos más artículos de los que ves acá.</p>
         <div class="catalog-empty__ctas">
           <button type="button" class="catalog-empty__clear" data-js="cat-clear">Limpiar filtros</button>
