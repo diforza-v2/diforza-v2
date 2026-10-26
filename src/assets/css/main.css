@@ -66,6 +66,7 @@
 @import "sections/catalog/catalog-list.css" layer(sections);
 @import "sections/catalog/cross-card.css" layer(sections);
 @import "sections/catalog/guide.css" layer(sections);
+@import "sections/industria.css" layer(sections);
 
 /* utilities */
 @import "utilities.css" layer(utilities);

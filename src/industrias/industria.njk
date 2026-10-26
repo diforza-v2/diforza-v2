@@ -1,0 +1,129 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: industriasWeb.lista
+  size: 1
+  alias: ind
+permalink: "/{{ ind.id }}/"
+noindex: true
+dlPageType: industria
+eleventyComputed:
+  title: "{{ ind.seoTitulo }}"
+  description: "{{ ind.seoDescripcion }}"
+  waText: "{{ ind.wa }}"
+---
+{#- Página por industria (venta cruzada punto 6) — PROTOTIPO 26 oct 2026: noindex, sin links desde el sitio.
+    Lo más pedido por la industria, agrupado por línea + categorías + normativa + FAQ.
+    Datos: _data/industrias.json → _data/industriasWeb.js · CSS: sections/industria.css · medición: wa_location = industria -#}
+{%- set waHref = "https://wa.me/" + site.whatsapp.number + "?text=" + (ind.wa | urlencode) %}
+{%- set E = cruceLineas.encabezado %}
+<main class="ind-page">
+  <section class="page-hero ind-hero">
+    <div class="page-hero__inner">
+      <p class="page-hero__eyebrow">{{ ind.eyebrow }}</p>
+      <h1>{{ ind.titulo }}</h1>
+      <p class="page-hero__lead">{{ ind.lead }}</p>
+      <div class="ind-hero__ctas ind-cta">
+        <a class="btn btn--primary btn--icon" href="{{ waHref }}" target="_blank" rel="noopener">{% include "partials/icon-wa.njk" %} Cotizar por WhatsApp</a>
+        <a class="ind-hero__link" href="#lo-mas-pedido">Ver lo más pedido {{ icons['ui-flecha'] | safe }}</a>
+      </div>
+      <ul class="ind-hero__proof" role="list">
+{%- for pr in E.pruebas %}
+        <li><span>{{ icons[pr.icono] | safe }}</span><p><strong>{{ pr.titulo }}</strong> {{ pr.texto }}</p></li>
+{%- endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="ind-cats" aria-labelledby="ind-cats-title">
+    <div class="ind-wrap">
+      <h2 class="ind-h2" id="ind-cats-title">Qué buscás para tu obra</h2>
+      <ul class="ind-cats__list" role="list">
+{%- for c in ind.categorias %}
+        <li><a class="cat-puesto__tile" href="{{ c.url }}">
+          <span class="cat-puesto__ic">{% if icons[c.icono] %}{{ icons[c.icono] | safe }}{% endif %}</span>
+          <span class="cat-puesto__txt"><strong>{{ c.nombre }}</strong><small>{{ c.texto }}</small></span>
+          <span class="cat-puesto__go">{{ icons['ui-flecha'] | safe }}</span>
+        </a></li>
+{%- endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="ind-top" id="lo-mas-pedido" aria-labelledby="ind-top-title">
+    <div class="ind-wrap">
+      <h2 class="ind-h2" id="ind-top-title">Lo más pedido para {{ ind.nombre | lower }}</h2>
+      <p class="ind-sub">Los productos que más nos piden las empresas del rubro. Todos con stock permanente.</p>
+    </div>
+{%- for g in ind.grupos %}
+{%- if g.items.length %}
+    <div class="ind-group">
+      <div class="ind-wrap ind-group__head">
+        <div>
+          <h3>{{ g.titulo }}</h3>
+          <p>{{ g.bajada }}</p>
+        </div>
+        <a class="ind-group__all" href="{{ g.url }}">{{ g.linkTexto }} {{ icons['ui-flecha'] | safe }}</a>
+      </div>
+{%- set items = g.items %}
+{%- include "partials/product-grid.njk" %}
+    </div>
+{%- endif %}
+{%- endfor %}
+  </section>
+
+  <section class="ind-norm" aria-labelledby="ind-norm-title">
+    <div class="ind-wrap">
+      <h2 class="ind-h2" id="ind-norm-title">{{ ind.normativa.titulo }}</h2>
+      <ul>
+{%- for t in ind.normativa.items %}
+        <li>{{ icons['escudo-check-fino'] | safe }}<span>{{ t | safe }}</span></li>
+{%- endfor %}
+      </ul>
+      <p class="ind-norm__note">{{ ind.normativa.nota }}</p>
+    </div>
+  </section>
+
+  <section class="ind-faq" aria-labelledby="ind-faq-title">
+    <div class="ind-wrap">
+      <h2 class="ind-h2" id="ind-faq-title">Preguntas frecuentes</h2>
+      <div class="accordion">
+{%- for q in ind.faq %}
+        <details{% if loop.first %} open{% endif %}>
+          <summary>{{ q.pregunta }} {{ icons['ui-chevron'] | safe }}</summary>
+          <p class="accordion__panel">{{ q.respuesta }}</p>
+        </details>
+{%- endfor %}
+      </div>
+    </div>
+  </section>
+{%- set faqItems = ind.faq %}
+{% include "partials/faq-schema.njk" %}
+
+  <section class="ind-final ind-cta" aria-labelledby="ind-final-title">
+    <div class="ind-wrap ind-final__inner">
+      <div>
+        <h2 id="ind-final-title">¿Necesitás algo que no está acá?</h2>
+        <p>Trabajamos muchos más artículos de los que ves en la web. Contanos qué necesita tu obra y te armamos la cotización.</p>
+      </div>
+      <div class="ind-final__ctas">
+        <a class="btn btn--primary btn--icon" href="{{ waHref }}" target="_blank" rel="noopener">{% include "partials/icon-wa.njk" %} Cotizar por WhatsApp</a>
+        <a class="ind-final__link" href="/productos/">Ver el catálogo completo</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="ind-more" aria-labelledby="ind-more-title">
+    <div class="ind-wrap">
+      <h2 class="ind-h2" id="ind-more-title">Otras industrias</h2>
+      <ul class="ind-more__list" role="list">
+{%- for o in industriasWeb.lista %}{% if o.id != ind.id %}
+        <li><a class="ind-more__tile" href="/{{ o.id }}/">{{ o.nombre }}</a></li>
+{%- endif %}{% endfor %}
+{%- for o in industriasWeb.proximas %}
+        <li><span class="ind-more__tile is-soon">{{ o }}<small>Próximamente</small></span></li>
+{%- endfor %}
+      </ul>
+    </div>
+  </section>
+</main>

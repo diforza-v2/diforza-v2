@@ -551,7 +551,7 @@
   // Dónde está el botón (mismos valores para WhatsApp y teléfono)
   function where(a){
     var map = [
-      ['[data-js="form-status"]', 'fallback'], ['.wa-float', 'flotante'], ['.header', 'header'],
+      ['.ind-cta', 'industria'], ['[data-js="form-status"]', 'fallback'], ['.wa-float', 'flotante'], ['.header', 'header'],
       ['.site-footer__cta', 'footer'], ['.site-footer', 'footer_contacto'], ['.cat-modal', 'catalogo_ok'], ['.pdp', 'producto'],
       ['.product-card', 'producto_tarjeta'], ['.catalog-list, [data-js="catalog"]', 'listado'],
       ['.ziao-uses-grid', 'tarjeta_uso'], ['.agio-colors', 'color'], ['.factory', 'fabrica'], ['.notfound', 'pagina_404'], ['.brand-more', 'otro_modelo'], ['.brand-about__card', 'sobre_marca'], ['.ziao-steps, .ziao-uses', 'pasos_compra'],

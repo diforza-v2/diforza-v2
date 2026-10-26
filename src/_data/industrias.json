@@ -1,0 +1,38 @@
+{
+  "_nota": "Páginas por industria (venta cruzada punto 6, reemplaza a los 'kits' descartados el 26 oct 2026). URL /<id>/. BLOQUEO: solo se genera la página si tiene \"publicar\": true (hoy ninguna: segunda etapa). Para verla en local sin publicarla: INDUSTRIAS_BORRADOR=1 npx eleventy --serve. Además lleva noindex hasta validarla con Yesica/Diego. 'grupos' = lo más pedido por esa industria, por línea (ids de catalogo.json; los no visibles se omiten; orden = importancia). 'categorias' = subcategorías para la industria (ids de categorias.json). Datos resueltos en _data/industriasWeb.js · template src/industrias/industria.njk · CSS sections/industria.css. Ver 01_estrategia/kits_por_rubro.md.",
+  "lista": [
+    {
+      "id": "construccion",
+      "publicar": false,
+      "nombre": "Construcción",
+      "seoTitulo": "Ropa de trabajo, calzado y EPP para construcción | Diforza",
+      "seoDescripcion": "Cascos, guantes, anteojos, botines de seguridad y ropa de trabajo con tu logo para constructoras y contratistas. Stock permanente, factura A y envíos a todo el país.",
+      "eyebrow": "Industrias · Construcción y obra",
+      "titulo": "Ropa de trabajo, calzado y EPP para la construcción",
+      "lead": "Equipamos a constructoras, contratistas y empresas de montaje con EPP certificado, calzado de seguridad y ropa de trabajo con tu logo. Stock permanente y todo en un solo pedido.",
+      "wa": "Hola, somos una empresa de construcción y queremos cotizar equipamiento para el personal de obra.",
+      "grupos": [
+        { "linea": "epp", "titulo": "EPP para obra", "bajada": "Cabeza, ojos, oídos, manos, respiración y altura.", "productos": ["casco-libus-milenium-class", "anteojo-libus-argon", "protector-auditivo-libus-quantum", "guante-vaqueta-certificado", "guante-nitrilo-puno-de-lona", "mascarilla-bls-522", "arnes-sky-10403e", "protector-auditivo-libus-l-340-casco", "mentonera-libus", "anteojo-libus-eco-line"] },
+        { "linea": "calzado", "titulo": "Calzado de seguridad", "bajada": "Botines y botas con puntera, para obra seca y con agua.", "productos": ["botin-conwork-25baf", "botin-conwork-653baf", "botin-ombu-ozono-plus", "bota-ombu-pvc-cana-larga-con-puntera"] },
+        { "linea": "indumentaria", "titulo": "Ropa de trabajo", "bajada": "Fabricación propia, personalizada con el logo de tu empresa.", "productos": ["pantalon-cargo-diforza", "camisa-clasica-diforza", "campera-trucker-diforza", "chaleco-reflectivo-diforza", "remera-diforza-mc", "buzo-friza-diforza", "mameluco-gabardina-diforza", "capa-de-lluvia-diforza"] },
+        { "linea": "epp", "titulo": "Señalización de obra", "bajada": "Para delimitar zonas de trabajo y la vía pública.", "productos": ["cinta-peligro-diforza", "malla-senalizacion-liviana-naranja", "cono-vencedor-2pie-120-cm-2300-2r", "bandera-peligro-diforza"], "link": "senalizacion" }
+      ],
+      "categorias": ["proteccion-craneal", "proteccion-manos", "proteccion-ocular", "proteccion-auditiva", "altura", "botines", "pantalones", "chaleco", "senalizacion"],
+      "normativa": {
+        "titulo": "Lo que pide la normativa en obra",
+        "items": [
+          "El <strong>Decreto 911/96</strong> (higiene y seguridad en la construcción) obliga a la empresa a entregar los elementos de protección personal adecuados a los riesgos de cada tarea.",
+          "Cada entrega se registra en la <strong>constancia de la Resolución SRT 299/11</strong>, firmada por el trabajador.",
+          "En trabajos con riesgo de caída a distinto nivel corresponde el <strong>arnés con su cabo de sujeción</strong>."
+        ],
+        "nota": "Te asesoramos para elegir cada elemento según el relevamiento de riesgos de tu servicio de higiene y seguridad."
+      },
+      "faq": [
+        { "pregunta": "¿Tienen stock para equipar a toda una cuadrilla?", "respuesta": "Sí. Trabajamos con stock permanente de los productos más pedidos para obra, así que podemos armar pedidos de varios operarios con talles distintos." },
+        { "pregunta": "¿Puedo pedir ropa, calzado y EPP en el mismo pedido?", "respuesta": "Sí. Comprás todo en un solo pedido, con una factura y una entrega." },
+        { "pregunta": "¿La ropa se puede personalizar con el logo de la empresa?", "respuesta": "Sí. Fabricamos la ropa de trabajo y la personalizamos con bordado, estampado o sublimado." }
+      ]
+    }
+  ],
+  "proximas": ["Logística y transporte", "Servicios generales y limpieza", "Industria y planta"]
+}
