@@ -16,6 +16,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/img");     // imágenes compartidas
   eleventyConfig.addPassthroughCopy("src/*/img");   // imágenes propias de cada landing
   eleventyConfig.addPassthroughCopy("src/_headers"); // encabezados de Cloudflare Pages (hoy: noindex)
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");          // favicon en la raíz (27 oct 2026)
+  eleventyConfig.addPassthroughCopy("src/apple-touch-icon.png"); // ícono de iOS en la raíz
   eleventyConfig.addPassthroughCopy("src/_redirects"); // 301 de TiendaNube → sitio nuevo (doc 20 §6)
 
   // ---- CSS con Lightning CSS ----

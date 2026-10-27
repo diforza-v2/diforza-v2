@@ -1218,3 +1218,7 @@
 /marcas/agio /agio/ 301
 /productos/agio/ /agio/ 301
 /productos/agio /agio/ 301
+
+# Buscador de TiendaNube (/search/?q=…) → buscador del catálogo (la query se conserva: /productos/?q=…) — 27 oct 2026
+/search/ /productos/ 301
+/search /productos/ 301
