@@ -1163,7 +1163,55 @@
 /vialidad-y-senalizacion/salvacaidas-para-trabajo-vertical /productos/epp/altura/ 301
 /ziao1/ /ziao/ 301
 /ziao1 /ziao/ 301
-# Paginación de TiendaNube (…/page/N/) → destino de la categoría
+# Reglas propias (no vienen de TiendaNube). Las agrega build_redirects.py al final. 20 oct 2026.
+# /productos/<marca>/ → página de marca (una sola URL por búsqueda de marca; ver sesiones.md)
+/productos/libus/ /marcas/libus/ 301
+/productos/libus /marcas/libus/ 301
+/productos/conwork/ /marcas/conwork/ 301
+/productos/conwork /marcas/conwork/ 301
+/productos/ombu/ /marcas/ombu/ 301
+/productos/ombu /marcas/ombu/ 301
+/productos/bls/ /marcas/bls/ 301
+/productos/bls /marcas/bls/ 301
+/productos/de-pascale/ /marcas/de-pascale/ 301
+/productos/de-pascale /marcas/de-pascale/ 301
+/productos/depascale/ /marcas/de-pascale/ 301
+/productos/depascale /marcas/de-pascale/ 301
+/productos/worksafe/ /marcas/worksafe/ 301
+/productos/worksafe /marcas/worksafe/ 301
+/productos/sky/ /marcas/sky/ 301
+/productos/sky /marcas/sky/ 301
+/productos/conoflex/ /marcas/conoflex/ 301
+/productos/conoflex /marcas/conoflex/ 301
+/productos/funcional/ /marcas/funcional/ 301
+/productos/funcional /marcas/funcional/ 301
+/productos/voran/ /marcas/voran/ 301
+/productos/voran /marcas/voran/ 301
+/marcas/depascale/ /marcas/de-pascale/ 301
+/marcas/depascale /marcas/de-pascale/ 301
+# ZIAO tiene su página en /ziao/ (URL histórica de TiendaNube)
+/marcas/ziao/ /ziao/ 301
+/marcas/ziao /ziao/ 301
+/productos/ziao/ /ziao/ 301
+/productos/ziao /ziao/ 301
+
+# Marcas propias con página (21 oct 2026): Diforza en /marcas/diforza/, Agio en /agio/ (como ZIAO)
+/productos/diforza/ /marcas/diforza/ 301
+/productos/diforza /marcas/diforza/ 301
+/marcas/agio/ /agio/ 301
+/marcas/agio /agio/ 301
+/productos/agio/ /agio/ 301
+/productos/agio /agio/ 301
+
+# Buscador de TiendaNube (/search/?q=…) → buscador del catálogo (la query se conserva: /productos/?q=…) — 27 oct 2026
+/search/ /productos/ 301
+/search /productos/ 301
+# Productos viejos de TiendaNube que ya no estaban en la tienda pero Google los tiene (Search Console 404, 28 oct 2026)
+/productos/camperon-anorak-con-reflectivo-azul/ /productos/indumentaria/campera/ 301
+/productos/camperon-anorak-con-reflectivo-azul /productos/indumentaria/campera/ 301
+/productos/campera-sin-reflectivo-azul/ /productos/indumentaria/campera/ 301
+/productos/campera-sin-reflectivo-azul /productos/indumentaria/campera/ 301
+# Paginación de TiendaNube (…/page/N/) → destino de la categoría. VAN AL FINAL: Cloudflare cuenta como "dinámica" toda regla que esté después de la primera con comodín (límite 100).
 /productos/page/* /productos/ 301
 /productos1/page/* /productos/ 301
 /productos1/indumentaria/mamelucos-descartables/page/* /productos/indumentaria/mameluco/ 301
@@ -1251,53 +1299,5 @@
 /vialidad-y-senalizacion/extintores/page/* /productos/epp/ 301
 /vialidad-y-senalizacion/extintores1/page/* /productos/epp/ 301
 /vialidad-y-senalizacion/salvacaidas-para-trabajo-vertical/page/* /productos/epp/altura/ 301
-/ziao/page/* (misma URL) 301
+/ziao/page/* /ziao/ 301
 /ziao1/page/* /ziao/ 301
-# Reglas propias (no vienen de TiendaNube). Las agrega build_redirects.py al final. 20 oct 2026.
-# /productos/<marca>/ → página de marca (una sola URL por búsqueda de marca; ver sesiones.md)
-/productos/libus/ /marcas/libus/ 301
-/productos/libus /marcas/libus/ 301
-/productos/conwork/ /marcas/conwork/ 301
-/productos/conwork /marcas/conwork/ 301
-/productos/ombu/ /marcas/ombu/ 301
-/productos/ombu /marcas/ombu/ 301
-/productos/bls/ /marcas/bls/ 301
-/productos/bls /marcas/bls/ 301
-/productos/de-pascale/ /marcas/de-pascale/ 301
-/productos/de-pascale /marcas/de-pascale/ 301
-/productos/depascale/ /marcas/de-pascale/ 301
-/productos/depascale /marcas/de-pascale/ 301
-/productos/worksafe/ /marcas/worksafe/ 301
-/productos/worksafe /marcas/worksafe/ 301
-/productos/sky/ /marcas/sky/ 301
-/productos/sky /marcas/sky/ 301
-/productos/conoflex/ /marcas/conoflex/ 301
-/productos/conoflex /marcas/conoflex/ 301
-/productos/funcional/ /marcas/funcional/ 301
-/productos/funcional /marcas/funcional/ 301
-/productos/voran/ /marcas/voran/ 301
-/productos/voran /marcas/voran/ 301
-/marcas/depascale/ /marcas/de-pascale/ 301
-/marcas/depascale /marcas/de-pascale/ 301
-# ZIAO tiene su página en /ziao/ (URL histórica de TiendaNube)
-/marcas/ziao/ /ziao/ 301
-/marcas/ziao /ziao/ 301
-/productos/ziao/ /ziao/ 301
-/productos/ziao /ziao/ 301
-
-# Marcas propias con página (21 oct 2026): Diforza en /marcas/diforza/, Agio en /agio/ (como ZIAO)
-/productos/diforza/ /marcas/diforza/ 301
-/productos/diforza /marcas/diforza/ 301
-/marcas/agio/ /agio/ 301
-/marcas/agio /agio/ 301
-/productos/agio/ /agio/ 301
-/productos/agio /agio/ 301
-
-# Buscador de TiendaNube (/search/?q=…) → buscador del catálogo (la query se conserva: /productos/?q=…) — 27 oct 2026
-/search/ /productos/ 301
-/search /productos/ 301
-# Productos viejos de TiendaNube que ya no estaban en la tienda pero Google los tiene (Search Console 404, 28 oct 2026)
-/productos/camperon-anorak-con-reflectivo-azul/ /productos/indumentaria/campera/ 301
-/productos/camperon-anorak-con-reflectivo-azul /productos/indumentaria/campera/ 301
-/productos/campera-sin-reflectivo-azul/ /productos/indumentaria/campera/ 301
-/productos/campera-sin-reflectivo-azul /productos/indumentaria/campera/ 301
