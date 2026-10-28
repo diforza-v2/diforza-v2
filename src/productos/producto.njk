@@ -188,13 +188,17 @@ eleventyComputed:
 </main>
 <script type="application/ld+json">{{ {
   "@context": "https://schema.org",
-  "@type": "Product",
+  "@type": "ItemPage",
+  "@id": site.url + p.url + "#webpage",
+  "url": site.url + p.url,
   "name": p.nombre,
   "description": p.descripcionLarga or p.descripcion,
-  "brand": { "@type": "Brand", "name": p.marca },
-  "sku": p.codigo,
-  "category": p.linea.nombre + " > " + p.sub.nombre,
+  "about": { "@type": "Brand", "name": p.marca },
+  "identifier": p.codigo,
+  "keywords": p.linea.nombre + ", " + p.sub.nombre + ", " + p.marca,
   "image": p.fotos | absUrls(site.url),
-  "url": site.url + p.url,
-  "@id": site.url + p.url + "#product"
+  "primaryImageOfPage": (p.fotos | absUrls(site.url))[0],
+  "inLanguage": "es-AR",
+  "isPartOf": { "@id": site.url + "/#website" },
+  "publisher": { "@id": site.url + "/#organization" }
 } | dump | safe }}</script>
